@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DACH Map with Postal Code Highlights</title>
+    <!-- JSVectorMap CSS from CDN -->
+    <link rel="stylesheet" href="jsvectormap.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        #map {
+            height: 600px;
+            width: 100%;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+        .controls {
+            margin-bottom: 20px;
+        }
+        button {
+            margin-right: 10px;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+    <!-- JSVectorMap JS from CDN -->
+    <script src="jsvectormap.js"></script>
+
+    <script src="map_de_mill.js"></script>
+    <script src="map_at_mill.js"></script>
+    <script src="map_ch_mill.js"></script>
+</head>
+<body>
+    <div id="map"></div>
+
+    <script>
+        let currentMap = null;
+        let currentData = null;
+
+        const mapData = {
+        };
+
+        function initMap(data) {
+            if (currentMap) {
+                currentMap.destroy();
+            }
+
+            const scale = {
+                default: '#e4e4e7',
+                present: '#ffcc00'
+            };
+
+            currentMap = new jsVectorMap({
+                selector: '#map',
+                map: 'de_mill',
+                backgroundColor: 'transparent',
+                regionStyle: {
+                    initial: {
+                        fill: '#000000',
+                        stroke: '#AAAAAA',
+                        strokeWidth: 0.2
+                    },
+                    // hover: {
+                    //     fill: '#ffcc00'
+                    // }
+                },
+                series: {
+                    regions: [{
+                        scale: scale,
+                        attribute: 'fill',
+                        values: data
+                    }]
+                },
+                zoomButtons: {show: true},
+                zoomOnScroll: true
+            });
+        }
+
+        function loadMapData() {
+            initMap(mapData);  // Binary highlight
+        }
+
+        // Initialize with detailed data on load
+        window.addEventListener('DOMContentLoaded', loadMapData);
+    </script>
+</body>
+</html>
