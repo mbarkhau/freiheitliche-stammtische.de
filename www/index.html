@@ -1,100 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DACH Map with Postal Code Highlights</title>
-    <!-- JSVectorMap CSS from CDN -->
+    <title>Freiheitliche Stammtische</title>
+
+    <link rel="preload" href="markers.json" as="fetch" type="application/json" crossorigin="anonymous">
     <link rel="stylesheet" href="jsvectormap.css">
     <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --container-bg: #1e1e1e;
+            --border-color: #333;
+            --table-header-bg: #2c2c2c;
+            --table-row-hover: #2a2a2a;
+            --map-bg: #1e1e1e;
+            --map-region-fill: #555555;
+            --map-region-stroke: #777777;
+            --button-bg: #333;
+            --button-text: #e0e0e0;
+        }
+
+        [data-theme="light"] {
+            --bg-color: #fff;
+            --text-color: #333;
+            --container-bg: #fff;
+            --border-color: #bbb;
+            --table-header-bg: #f8f9fa;
+            --table-row-hover: #ccc;
+            --map-bg: #fff;
+            --map-region-fill: #333333;
+            --map-region-stroke: #AAAAAA;
+            --button-bg: #e0e0e0;
+            --button-text: #333;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            transition: background-color 300ms ease, color 300ms ease;
         }
-        #map {
-            height: 600px;
+
+        .container {
+            display: flex;
+            flex: 1;
+            height: 100%;
             width: 100%;
-            border: 1px solid #ccc;
-            margin-bottom: 20px;
+            overflow: hidden;
         }
-        .controls {
-            margin-bottom: 20px;
+
+        /* Mobile Layout (Default or via Media Query) */
+        @media (max-aspect-ratio: 1/1) {
+            .container {
+                flex-direction: column;
+            }
+
+            #map-container {
+                height: 50%;
+                width: 100%;
+            }
+
+            #table-container {
+                height: 50%;
+                width: 100%;
+            }
         }
-        button {
-            margin-right: 10px;
-            padding: 8px 16px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 4px;
+
+        /* Desktop Layout */
+        @media (min-aspect-ratio: 1/1) {
+            .container {
+                flex-direction: row;
+            }
+
+            #map-container {
+                height: 100%;
+                width: 50%;
+            }
+
+            #table-container {
+                height: 100%;
+                width: 50%;
+            }
+        }
+
+        #map-container {
+            position: relative;
+            background: var(--map-bg);
+            border-right: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            transition: background-color 300ms ease, border-color 300ms ease;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+
+        #table-container {
+            background: var(--container-bg);
+            box-sizing: border-box;
+            overflow-y: auto;
+            overflow-x: auto;
+            /* Allow horizontal scrolling */
+            transition: background-color 300ms ease;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: var(--text-color);
+            transition: color 300ms ease;
+        }
+
+        table {
+            /* width: 100%;  Remove fixed width to allow expansion */
+            min-width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 12px 16px;
+            /* Increased horizontal padding */
+            border-bottom: 1px solid var(--border-color);
+            white-space: nowrap;
+            /* Prevent text wrapping */
+            transition: border-color 300ms ease, color 300ms ease, background-color 300ms ease;
+        }
+
+        th {
+            background-color: var(--table-header-bg);
+            color: var(--text-color);
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            /* Ensure header stays on top of content */
+            transition: background-color 300ms ease, color 300ms ease;
+        }
+
+        tr:hover {
+            background-color: var(--table-row-hover);
+        }
+
+        tr.highlight {
+            background-color: var(--table-row-hover);
+            outline: 2px solid var(--border-color);
+        }
+
+        tr.selected {
+            background-color: var(--table-row-hover);
+            outline: 2px solid #007bff;
+            /* Distinct outline for selection */
+        }
+
+        th.sort {
             cursor: pointer;
         }
-        button:hover {
-            background-color: #0056b3;
+
+        th.sort.asc::after {
+            content: " ▲";
+        }
+
+        th.sort.desc::after {
+            content: " ▼";
+        }
+
+        #theme-toggle {
+            position: absolute;
+            top: 1%;
+            right: 51%;
+            z-index: 1000;
+            background: var(--button-bg);
+            color: var(--button-text);
+            border: 1px solid var(--border-color);
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: background-color 300ms ease, color 300ms ease, border-color 300ms ease;
+        }
+
+        @media (max-aspect-ratio: 1/1) {
+            #theme-toggle {
+                right: 1%;
+            }
         }
     </style>
 
-    <!-- JSVectorMap JS from CDN -->
+    <!-- <script src="list.min.js"></script> -->
+    <script src="list.js"></script>
+    <!-- <script src="jsvectormap.min.js"></script> -->
     <script src="jsvectormap.js"></script>
 
     <script src="map_de_mill.js"></script>
-    <script src="map_at_mill.js"></script>
-    <script src="map_ch_mill.js"></script>
+    <!-- <script src="map_at_mill.js"></script> -->
+    <!-- <script src="map_ch_mill.js"></script> -->
 </head>
+
 <body>
-    <div id="map"></div>
+    <div class="container">
+        <button id="theme-toggle" aria-label="Toggle Dark Mode">⏾</button>
+        <div id="map-container">
+            <div id="map"></div>
+        </div>
+        <div id="table-container">
+            <div id="termine-list" class="table-wrapper">
+                <table id="termine-table">
+                    <thead>
+                        <tr>
+                            <th class="sort" data-sort="date">Datum</th>
+                            <th class="sort" data-sort="dow">Tag</th>
+                            <th class="sort" data-sort="time">Uhrzeit</th>
+                            <th class="sort" data-sort="name">Name</th>
+                            <th class="sort" data-sort="plz">PLZ</th>
+                            <th class="sort" data-sort="orga">Veranstalter</th>
+                            <th class="sort" data-sort="kontakt">Kontakt</th>
+                            <th class="sort" data-sort="link">Link</th>
+                        </tr>
+                    </thead>
+                    <tbody class="list">
+                        <!-- Rows will be populated by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
     <script>
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+            if (newTheme === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+            }
+
+            localStorage.setItem('theme', newTheme);
+            const button = document.getElementById('theme-toggle');
+            button.textContent = newTheme === 'light' ? '⏾' : '✹';
+        }
+
+        document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+
+        function initTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            // If saved theme is light, apply it. Otherwise (dark or null), do nothing (default is dark).
+            if (savedTheme === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+                document.getElementById('theme-toggle').textContent = '⏾';
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+                document.getElementById('theme-toggle').textContent = '✹';
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', initTheme);
+
+
+        let isTableHovering = false;
+
+        function populateTable(termine) {
+            const tbody = document.querySelector('#termine-table tbody');
+            tbody.innerHTML = '';
+
+            termine.forEach((t, i) => {
+                const row = document.createElement('tr');
+                row.id = 'marker-' + i;
+                row.innerHTML = `
+                    <td class="date">${t.date || ''}</td>
+                    <td class="dow">${t.dow || ''}</td>
+                    <td class="time">${t.time || ''}</td>
+                    <td class="name">${t.name || ''}</td>
+                    <td class="plz">${t.plz || ''}</td>
+                    <td class="orga">${t.orga || ''}</td>
+                    <td class="kontakt">${t.kontakt || ''}</td>
+                    <td class="link">${t.link || ''}</td>
+                `;
+
+                row.addEventListener('mouseenter', () => {
+                    isTableHovering = true;
+                    const markerIndex = i;
+                    // jsVectorMap renders markers in order. We try to find them by class.
+                    // Note: This relies on internal implementation details of jsVectorMap (DOM structure).
+                    const markers = document.querySelectorAll('.jvm-marker');
+                    if (markers && markers[markerIndex]) {
+                        const marker = markers[markerIndex];
+                        marker.dispatchEvent(new MouseEvent('mouseover', { bubbles: true }));
+                        // Tooltip positioning often requires mousemove
+                        const rect = marker.getBoundingClientRect();
+                        marker.dispatchEvent(new MouseEvent('mousemove', {
+                            bubbles: true,
+                            clientX: rect.left + rect.width / 2,
+                            clientY: rect.top + rect.height / 2
+                        }));
+                    }
+                });
+
+                row.addEventListener('mouseleave', () => {
+                    isTableHovering = false;
+                    const markerIndex = i;
+                    const markers = document.querySelectorAll('.jvm-marker');
+                    if (markers && markers[markerIndex]) {
+                        markers[markerIndex].dispatchEvent(new MouseEvent('mouseout', { bubbles: true }));
+                    }
+                });
+
+                tbody.appendChild(row);
+            });
+        }
+
         let currentMap = null;
-        let currentData = null;
+        let termineList = null;
 
-        const mapData = {
-        };
+        const cityMarkers = [
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [48.3772, 10.2522], name: 'Augsburg' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [52.0241, 8.5290], name: 'Bielefeld' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.7374, 7.0982], name: 'Bonn' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.8278, 12.9214], name: 'Chemnitz' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.5136, 7.4653], name: 'Dortmund' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.0504, 13.7373], name: 'Dresden' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.2277, 6.7735], name: 'Düsseldorf' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.9848, 11.0299], name: 'Erfurt' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.4556, 7.0116], name: 'Essen' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.1109, 8.6821], name: 'Frankfurt' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [47.9990, 7.8421], name: 'Freiburg' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [53.5511, 9.9937], name: 'Hamburg' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [52.3759, 9.7320], name: 'Hannover' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.9271, 11.5892], name: 'Jena' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.0069, 8.4037], name: 'Karlsruhe' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.3127, 9.4797], name: 'Kassel' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [54.3233, 10.1228], name: 'Kiel' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.3569, 7.5890], name: 'Koblenz' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.9375, 6.9603], name: 'Köln' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.3397, 12.3731], name: 'Leipzig' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.4718, 8.4512], name: 'Ludwigshafen' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [53.8655, 10.6866], name: 'Lübeck' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [52.1205, 11.6276], name: 'Magdeburg' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.9929, 8.2473], name: 'Mainz' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.4875, 8.4660], name: 'Mannheim' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [48.1351, 11.5820], name: 'Munich' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.4521, 11.0767], name: 'Nürnberg' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.0134, 12.1016], name: 'Regensburg' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [54.0924, 12.0991], name: 'Rostock' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.23265, 6.99619], name: 'Saarbrücken' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [48.7758, 9.1829], name: 'Stuttgart' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.7597, 6.6415], name: 'Trier' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.0375, 8.2660], name: 'Wiesbaden' },
+            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.2637, 7.2006], name: 'Wuppertal' },
+        ];
 
-        function initMap(data) {
+        function initMap(mapMarkers, cityMarkers) {
             if (currentMap) {
                 currentMap.destroy();
             }
 
-            const scale = {
-                default: '#e4e4e7',
-                present: '#ffcc00'
-            };
-
             currentMap = new jsVectorMap({
+                markersSelectable: true,
+                markersSelectableOne: true,
                 selector: '#map',
                 map: 'de_mill',
                 backgroundColor: 'transparent',
                 regionStyle: {
                     initial: {
-                        fill: '#000000',
+                        fill: '#333333',
                         stroke: '#AAAAAA',
                         strokeWidth: 0.2
                     },
-                    // hover: {
-                    //     fill: '#ffcc00'
-                    // }
                 },
-                series: {
-                    regions: [{
-                        scale: scale,
-                        attribute: 'fill',
-                        values: data
-                    }]
+                zoomButtons: false,
+                zoomOnScroll: true,
+                markers: [...mapMarkers, ...cityMarkers],
+                onMarkerTooltipShow: function (event, tooltip, index) {
+                    console.log('onMarkerTooltipShow', arguments);
+                    document.querySelectorAll('tr.highlight').forEach(row => {
+                        row.classList.remove('highlight');
+                    });
+
+                    const dataIndex = index;
+                    if (dataIndex >= 0) {
+                        const row = document.getElementById('marker-' + dataIndex);
+                        if (row) {
+                            row.classList.add('highlight');
+                            if (!isTableHovering) {
+                                row.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                            }
+                        }
+                    }
                 },
-                zoomButtons: {show: true},
-                zoomOnScroll: true
+                onMarkerTooltipHide: function () {
+                    console.log('onMarkerTooltipHide', arguments);
+
+                },
+                onMarkerClick: function (event, index) {
+                    const dataIndex = index;
+                    if (dataIndex >= 0) {
+                        // Remove selected class from all rows
+                        document.querySelectorAll('tr.selected').forEach(row => {
+                            row.classList.remove('selected');
+                        });
+
+                        const row = document.getElementById('marker-' + dataIndex);
+                        if (row) {
+                            row.classList.add('selected');
+                            row.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                        }
+                    }
+                }
             });
         }
 
-        function loadMapData() {
-            initMap(mapData);  // Binary highlight
+        async function loadData() {
+            const response = await fetch('markers.json');
+            const markers = await response.json();
+
+            // 1. Populate Table
+            populateTable(markers);
+
+            // 2. Initialize List.js
+            termineList = new List('termine-list', {
+                valueNames: ['date', 'name', 'plz', 'orga', 'kontakt', 'link']
+            });
+            // Default sort by date
+            termineList.sort('date', { order: "asc" });
+
+            // 3. Populate Map Markers
+            const mapMarkers = markers
+                .map(t => ({
+                    name: t.name,
+                    coords: t.coords,
+                    style: { fill: '#007bff' }
+                }));
+
+            initMap(mapMarkers, cityMarkers);
         }
 
-        // Initialize with detailed data on load
-        window.addEventListener('DOMContentLoaded', loadMapData);
+        window.addEventListener('DOMContentLoaded', loadData);
     </script>
 </body>
+
 </html>
