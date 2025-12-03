@@ -34,17 +34,6 @@
     "orga": "DIE LIBERTÄREN"
   },
   {
-    "name": "Libertäres Treffen Dortmund",
-    "beginn": "2025-12-04 19:00",
-    "ende": "2025-12-04 23:00",
-    "woche": "KW49",
-    "wochentag": "Thursday",
-    "plz": "44263",
-    "kontakt": "Alexander Expander",
-    "orga": "Bündnis Libertärer",
-    "e-mail": "info@buendnis-libertaerer.de"
-  },
-  {
     "name": "Libertärer Stammtisch Göppingen/Esslingen",
     "beginn": "2025-12-04 19:00",
     "ende": "2025-12-04 23:00",
@@ -70,15 +59,15 @@
     "telegram": "https://t.me/+WgMHpki_VXZkYWIy"
   },
   {
-    "name": "Libertärer Stammtisch in Balingen / Württemberg",
-    "beginn": "2025-12-11 19:30",
-    "ende": "2025-12-10 22:00",
+    "name": "Libertäres Treffen Dortmund",
+    "beginn": "2025-12-11 19:00",
+    "ende": "2025-12-11 23:00",
     "woche": "KW50",
     "wochentag": "Thursday",
-    "plz": "72336",
-    "kontakt": "Fritz Maulbetsch",
-    "orga": "DIE LIBERTÄREN",
-    "telegram": "@FreeFritz"
+    "plz": "44263",
+    "kontakt": "Alexander Expander",
+    "orga": "Bündnis Libertärer",
+    "e-mail": "info@buendnis-libertaerer.de"
   },
   {
     "name": "Libertärer Stammtisch Magdeburg",
@@ -92,6 +81,17 @@
     "e-mail": "events@die-libertaeren.de"
   },
   {
+    "name": "Libertärer Stammtisch in Balingen / Württemberg",
+    "beginn": "2025-12-11 19:30",
+    "ende": "2025-12-10 22:00",
+    "woche": "KW50",
+    "wochentag": "Thursday",
+    "plz": "72336",
+    "kontakt": "Fritz Maulbetsch",
+    "orga": "DIE LIBERTÄREN",
+    "telegram": "@FreeFritz"
+  },
+  {
     "name": "Marktradikales Meetup Grevenbroich",
     "beginn": "2025-12-12 19:00",
     "ende": "2025-12-12 23:00",
@@ -101,6 +101,26 @@
     "kontakt": "Martin Moczarski",
     "orga": "Die Marktradikalen",
     "e-mail": "moczarski@ef-magazin.de"
+  },
+  {
+    "name": "Libertäres Treffen in Meißen / Sachsen",
+    "beginn": "2025-12-16 19:00",
+    "ende": "2025-12-16 23:00",
+    "woche": "KW51",
+    "wochentag": "Tuesday",
+    "plz": "01662",
+    "orga": "DIE LIBERTÄREN"
+  },
+  {
+    "name": "Libertäres Grilltreffen bei München",
+    "beginn": "2025-12-18 19:00",
+    "ende": "2025-12-18 22:00",
+    "woche": "KW51",
+    "wochentag": "Thursday",
+    "plz": "85276",
+    "kontakt": "Florian Handwerker",
+    "orga": "DIE LIBERTÄREN",
+    "e-mail": "florian.handwerker@die-libertaeren.de"
   },
   {
     "name": "Libertärer Stammtisch Kaiserslautern",

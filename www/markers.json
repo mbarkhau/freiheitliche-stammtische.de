@@ -42,20 +42,6 @@
     "link": null
   },
   {
-    "name": "Libertäres Treffen Dortmund",
-    "plz": "44263",
-    "coords": [
-      51.4865748,
-      7.4974155
-    ],
-    "date": "2025-12-04",
-    "dow": "Do.",
-    "time": "19:00 - 23:00",
-    "orga": "Bündnis Libertärer",
-    "kontakt": "Alexander Expander",
-    "link": null
-  },
-  {
     "name": "Libertärer Stammtisch Göppingen/Esslingen",
     "plz": "73033",
     "coords": [
@@ -84,18 +70,18 @@
     "link": "https://signal.group/#CjQKIOy_pCi_ZxLZJMwHHuu44_UTBli-ZUyKeHyxUPxRXbOjEhCewcjd0LonOnGLHZ1vmaH1"
   },
   {
-    "name": "Libertärer Stammtisch in Balingen / Württemberg",
-    "plz": "72336",
+    "name": "Libertäres Treffen Dortmund",
+    "plz": "44263",
     "coords": [
-      48.2700199,
-      8.8685516
+      51.4865748,
+      7.4974155
     ],
     "date": "2025-12-11",
     "dow": "Do.",
-    "time": "19:30 - 22:00",
-    "orga": "DIE LIBERTÄREN",
-    "kontakt": "Fritz Maulbetsch",
-    "link": "@FreeFritz"
+    "time": "19:00 - 23:00",
+    "orga": "Bündnis Libertärer",
+    "kontakt": "Alexander Expander",
+    "link": null
   },
   {
     "name": "Libertärer Stammtisch Magdeburg",
@@ -112,6 +98,20 @@
     "link": null
   },
   {
+    "name": "Libertärer Stammtisch in Balingen / Württemberg",
+    "plz": "72336",
+    "coords": [
+      48.2700199,
+      8.8685516
+    ],
+    "date": "2025-12-11",
+    "dow": "Do.",
+    "time": "19:30 - 22:00",
+    "orga": "DIE LIBERTÄREN",
+    "kontakt": "Fritz Maulbetsch",
+    "link": "@FreeFritz"
+  },
+  {
     "name": "Marktradikales Meetup Grevenbroich",
     "plz": "41515",
     "coords": [
@@ -123,6 +123,34 @@
     "time": "19:00 - 23:00",
     "orga": "Die Marktradikalen",
     "kontakt": "Martin Moczarski",
+    "link": null
+  },
+  {
+    "name": "Libertäres Treffen in Meißen / Sachsen",
+    "plz": "01662",
+    "coords": [
+      51.1615404,
+      13.4838596
+    ],
+    "date": "2025-12-16",
+    "dow": "Di.",
+    "time": "19:00 - 23:00",
+    "orga": "DIE LIBERTÄREN",
+    "kontakt": null,
+    "link": null
+  },
+  {
+    "name": "Libertäres Grilltreffen bei München",
+    "plz": "85276",
+    "coords": [
+      48.5434775,
+      11.4838556
+    ],
+    "date": "2025-12-18",
+    "dow": "Do.",
+    "time": "19:00 - 22:00",
+    "orga": "DIE LIBERTÄREN",
+    "kontakt": "Florian Handwerker",
     "link": null
   }
 ]
