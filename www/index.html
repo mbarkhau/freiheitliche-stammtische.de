@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freiheitliche Stammtische</title>
 
-    <link rel="preload" href="markers.json" as="fetch" type="application/json" crossorigin="anonymous">
+    <link rel="preload" href="termine.json" as="fetch" type="application/json" crossorigin="anonymous">
     <link rel="stylesheet" href="jsvectormap.css">
     <style>
         :root {
@@ -68,7 +68,8 @@
                 width: 100%;
             }
 
-            #table-container {
+            /* #info-container will take the other 50% */
+            #info-container {
                 height: 50%;
                 width: 100%;
             }
@@ -85,7 +86,7 @@
                 width: 50%;
             }
 
-            #table-container {
+            #info-container {
                 height: 100%;
                 width: 50%;
             }
@@ -104,13 +105,54 @@
             height: 100%;
         }
 
-        #table-container {
+        #info-container {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
             background: var(--container-bg);
+            transition: background-color 300ms ease;
+        }
+
+        #selection-panel {
+            padding: 20px;
+            border-bottom: 1px solid var(--border-color);
+            background: var(--container-bg);
+            /* Match container or slightly different? Match for now */
+            color: var(--text-color);
+            display: none;
+            /* Hidden by default until selection */
+            flex-shrink: 0;
+            /* Verify content determines height */
+            /* max-height: 40%;  Optional: limit height so table is always visible */
+            overflow-y: auto;
+            transition: background-color 300ms ease, color 300ms ease;
+        }
+
+        #selection-panel h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        #selection-panel p {
+            margin: 5px 0;
+            line-height: 1.4;
+        }
+
+        #selection-panel .field-label {
+            font-weight: bold;
+            color: #888;
+            margin-right: 5px;
+        }
+
+        #table-container {
+            /* background: var(--container-bg);  Moved to info-container */
             box-sizing: border-box;
             overflow-y: auto;
             overflow-x: auto;
             /* Allow horizontal scrolling */
-            transition: background-color 300ms ease;
+            /* transition: background-color 300ms ease; Removed redundancy */
+            flex: 1;
+            /* Take remaining space */
         }
 
         h2 {
@@ -160,6 +202,10 @@
             background-color: var(--table-row-hover);
             outline: 2px solid #007bff;
             /* Distinct outline for selection */
+        }
+
+        tr.past-date {
+            opacity: 0.5;
         }
 
         th.sort {
@@ -212,25 +258,33 @@
         <div id="map-container">
             <div id="map"></div>
         </div>
-        <div id="table-container">
-            <div id="termine-list" class="table-wrapper">
-                <table id="termine-table">
-                    <thead>
-                        <tr>
-                            <th class="sort" data-sort="date">Datum</th>
-                            <th class="sort" data-sort="dow">Tag</th>
-                            <th class="sort" data-sort="time">Uhrzeit</th>
-                            <th class="sort" data-sort="name">Name</th>
-                            <th class="sort" data-sort="plz">PLZ</th>
-                            <th class="sort" data-sort="orga">Veranstalter</th>
-                            <th class="sort" data-sort="kontakt">Kontakt</th>
-                            <th class="sort" data-sort="link">Link</th>
-                        </tr>
-                    </thead>
-                    <tbody class="list">
-                        <!-- Rows will be populated by JS -->
-                    </tbody>
-                </table>
+        <div id="info-container">
+            <div id="selection-panel">
+                <h3>Details</h3>
+                <div id="selection-content">
+                    <p class="placeholder">Wähle einen Termin auf der Karte aus, um Details zu sehen.</p>
+                </div>
+            </div>
+            <div id="table-container">
+                <div id="termine-list" class="table-wrapper">
+                    <table id="termine-table">
+                        <thead>
+                            <tr>
+                                <th class="sort" data-sort="date">Datum</th>
+                                <th class="sort" data-sort="dow">Tag</th>
+                                <th class="sort" data-sort="time">Uhrzeit</th>
+                                <th class="sort" data-sort="name">Name</th>
+                                <th class="sort" data-sort="plz">PLZ</th>
+                                <th class="sort" data-sort="orga">Veranstalter</th>
+                                <th class="sort" data-sort="kontakt">Kontakt</th>
+                                <th class="sort" data-sort="link">Link</th>
+                            </tr>
+                        </thead>
+                        <tbody class="list">
+                            <!-- Rows will be populated by JS -->
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
@@ -273,10 +327,14 @@
         function populateTable(termine) {
             const tbody = document.querySelector('#termine-table tbody');
             tbody.innerHTML = '';
+            const today = new Date().toISOString().split('T')[0];
 
             termine.forEach((t, i) => {
                 const row = document.createElement('tr');
                 row.id = 'marker-' + i;
+                if (t.date && t.date < today) {
+                    row.classList.add('past-date');
+                }
                 row.innerHTML = `
                     <td class="date">${t.date || ''}</td>
                     <td class="dow">${t.dow || ''}</td>
@@ -324,43 +382,43 @@
         let termineList = null;
 
         const cityMarkers = [
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [48.3772, 10.2522], name: 'Augsburg' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [52.0241, 8.5290], name: 'Bielefeld' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.7374, 7.0982], name: 'Bonn' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.8278, 12.9214], name: 'Chemnitz' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.5136, 7.4653], name: 'Dortmund' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.0504, 13.7373], name: 'Dresden' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.2277, 6.7735], name: 'Düsseldorf' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.9848, 11.0299], name: 'Erfurt' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.4556, 7.0116], name: 'Essen' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.1109, 8.6821], name: 'Frankfurt' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [47.9990, 7.8421], name: 'Freiburg' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [53.5511, 9.9937], name: 'Hamburg' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [52.3759, 9.7320], name: 'Hannover' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.9271, 11.5892], name: 'Jena' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.0069, 8.4037], name: 'Karlsruhe' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.3127, 9.4797], name: 'Kassel' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [54.3233, 10.1228], name: 'Kiel' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.3569, 7.5890], name: 'Koblenz' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.9375, 6.9603], name: 'Köln' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.3397, 12.3731], name: 'Leipzig' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.4718, 8.4512], name: 'Ludwigshafen' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [53.8655, 10.6866], name: 'Lübeck' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [52.1205, 11.6276], name: 'Magdeburg' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.9929, 8.2473], name: 'Mainz' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.4875, 8.4660], name: 'Mannheim' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [48.1351, 11.5820], name: 'Munich' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.4521, 11.0767], name: 'Nürnberg' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.0134, 12.1016], name: 'Regensburg' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [54.0924, 12.0991], name: 'Rostock' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.23265, 6.99619], name: 'Saarbrücken' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [48.7758, 9.1829], name: 'Stuttgart' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.7597, 6.6415], name: 'Trier' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.0375, 8.2660], name: 'Wiesbaden' },
-            { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.2637, 7.2006], name: 'Wuppertal' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [48.3772, 10.2522], name: 'Augsburg' },
+            // // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [52.0241, 8.5290], name: 'Bielefeld' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.7374, 7.0982], name: 'Bonn' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.8278, 12.9214], name: 'Chemnitz' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.5136, 7.4653], name: 'Dortmund' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.0504, 13.7373], name: 'Dresden' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.2277, 6.7735], name: 'Düsseldorf' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.9848, 11.0299], name: 'Erfurt' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.4556, 7.0116], name: 'Essen' },
+            // // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.1109, 8.6821], name: 'Frankfurt' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [47.9990, 7.8421], name: 'Freiburg' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [53.5511, 9.9937], name: 'Hamburg' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [52.3759, 9.7320], name: 'Hannover' },
+            // // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.9271, 11.5892], name: 'Jena' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.0069, 8.4037], name: 'Karlsruhe' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.3127, 9.4797], name: 'Kassel' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [54.3233, 10.1228], name: 'Kiel' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.3569, 7.5890], name: 'Koblenz' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.9375, 6.9603], name: 'Köln' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.3397, 12.3731], name: 'Leipzig' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.4718, 8.4512], name: 'Ludwigshafen' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [53.8655, 10.6866], name: 'Lübeck' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [52.1205, 11.6276], name: 'Magdeburg' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.9929, 8.2473], name: 'Mainz' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.4875, 8.4660], name: 'Mannheim' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [48.1351, 11.5820], name: 'Munich' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.4521, 11.0767], name: 'Nürnberg' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.0134, 12.1016], name: 'Regensburg' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [54.0924, 12.0991], name: 'Rostock' },
+            // // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.23265, 6.99619], name: 'Saarbrücken' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [48.7758, 9.1829], name: 'Stuttgart' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.7597, 6.6415], name: 'Trier' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.0375, 8.2660], name: 'Wiesbaden' },
+            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.2637, 7.2006], name: 'Wuppertal' },
         ];
 
-        function initMap(mapMarkers, cityMarkers) {
+        function initMap(mapMarkers, cityMarkers, events) {
             if (currentMap) {
                 currentMap.destroy();
             }
@@ -382,13 +440,14 @@
                 zoomOnScroll: true,
                 markers: [...mapMarkers, ...cityMarkers],
                 onMarkerTooltipShow: function (event, tooltip, index) {
-                    console.log('onMarkerTooltipShow', arguments);
+                    // console.log('onMarkerTooltipShow', arguments);
                     document.querySelectorAll('tr.highlight').forEach(row => {
                         row.classList.remove('highlight');
                     });
 
                     const dataIndex = index;
-                    if (dataIndex >= 0) {
+                    // Only highlight if it corresponds to an event marker
+                    if (dataIndex >= 0 && dataIndex < mapMarkers.length) {
                         const row = document.getElementById('marker-' + dataIndex);
                         if (row) {
                             row.classList.add('highlight');
@@ -399,33 +458,80 @@
                     }
                 },
                 onMarkerTooltipHide: function () {
-                    console.log('onMarkerTooltipHide', arguments);
-
+                    // console.log('onMarkerTooltipHide', arguments);
                 },
                 onMarkerClick: function (event, index) {
-                    const dataIndex = index;
-                    if (dataIndex >= 0) {
-                        // Remove selected class from all rows
-                        document.querySelectorAll('tr.selected').forEach(row => {
-                            row.classList.remove('selected');
-                        });
+                    // Ignore clicks on city markers for the selection panel logic
+                    if (index >= mapMarkers.length) return;
 
-                        const row = document.getElementById('marker-' + dataIndex);
-                        if (row) {
-                            row.classList.add('selected');
-                            row.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                        }
-                    }
+                    const clickedMarker = events[index];
+                    if (!clickedMarker) return;
+
+                    // Identify all events at this exact location
+                    const targetCoords = JSON.stringify(clickedMarker.coords);
+
+                    // Map to preserve original index for row highlighting
+                    const candidates = events.map((t, i) => ({ ...t, originalIndex: i }))
+                        .filter(t => JSON.stringify(t.coords) === targetCoords);
+
+                    if (candidates.length === 0) return;
+                    updateSelectionPanel(candidates[0]);
                 }
             });
         }
 
+        function updateSelectionPanel(termin) {
+            // Update Selection Panel content
+            const panel = document.getElementById('selection-panel');
+            const content = document.getElementById('selection-content');
+
+            content.innerHTML = `
+                <p><span class="field-label">Name:</span> ${termin.name || ''}</p>
+                <p><span class="field-label">Datum:</span> ${termin.date || ''} (${termin.dow || ''})</p>
+                <p><span class="field-label">Uhrzeit:</span> ${termin.time || ''}</p>
+                <p><span class="field-label">PLZ:</span> ${termin.plz || ''}</p>
+                <p><span class="field-label">Veranstalter:</span> ${termin.orga || ''}</p>
+                <p><span class="field-label">Kontakt:</span> ${termin.kontakt || ''}</p>
+                <p><span class="field-label">Link:</span> ${termin.link ? `<a href="${termin.link}" target="_blank">Link</a>` : ''}</p>
+            `;
+            panel.style.display = 'block';
+
+            // Update Table Selection
+            document.querySelectorAll('tr.selected').forEach(row => {
+                row.classList.remove('selected');
+            });
+
+            const rowId = 'marker-' + termin.originalIndex;
+            const row = document.getElementById(rowId);
+            if (row) {
+                row.classList.add('selected');
+                row.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        }
+        function initSelection(termine) {
+            // Filter for termine today or in the future
+            const today = new Date().toISOString().split('T')[0];
+            const nextTermine = termine.filter(t => t.date >= today);
+
+            // Sort future termine ascending (earliest first)
+            nextTermine.sort((a, b) => a.date.localeCompare(b.date));
+
+            if (nextTermine.length > 0) {
+                updateSelectionPanel(nextTermine[0]);
+            } else {
+                // Fallback: If no future termine, pick the latest past termin
+                const pastTermin = termine.filter(t => t.date < today);
+                pastTermin.sort((a, b) => b.date.localeCompare(a.date)); // Latest first
+                updateSelectionPanel(pastTermin[0]);
+            }
+        }
+
         async function loadData() {
-            const response = await fetch('markers.json');
-            const markers = await response.json();
+            const response = await fetch('termine.json');
+            const termine = await response.json();
 
             // 1. Populate Table
-            populateTable(markers);
+            populateTable(termine);
 
             // 2. Initialize List.js
             termineList = new List('termine-list', {
@@ -435,14 +541,24 @@
             termineList.sort('date', { order: "asc" });
 
             // 3. Populate Map Markers
-            const mapMarkers = markers
-                .map(t => ({
-                    name: t.name,
-                    coords: t.coords,
-                    style: { fill: '#007bff' }
-                }));
+            const mapMarkers = termine
+                .map(function (t) {
+                    const style = {}
 
-            initMap(mapMarkers, cityMarkers);
+                    if (t.orga == 'DIE LIBERTÄREN') {
+                        style.image = '/img/die-libertaeren-logo.png'
+                    } else {
+                        style.fill = "#007bff"
+                    }
+                    return {
+                        name: t.name,
+                        coords: t.coords,
+                        style: style,
+                    }
+                });
+
+            initMap(mapMarkers, cityMarkers, termine);
+            initSelection(termine)
         }
 
         window.addEventListener('DOMContentLoaded', loadData);

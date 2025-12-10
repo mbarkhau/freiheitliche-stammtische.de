@@ -5,6 +5,8 @@
 #   "pudb", "ipython",
 #   "requests",
 #   "geopy",
+#   "qrcode",
+#   "Pillow",
 # ]
 # ///
 """
@@ -30,9 +32,11 @@ import time
 import json
 import logging
 import pathlib as pl
+import hashlib as hl
 import argparse
 import typing as typ
 
+import qrcode
 import requests
 import disk_cache
 from utils import cli
@@ -148,34 +152,41 @@ def main(argv: list[str] = sys.argv[1:]) -> int:
         json.dump(termine, fobj, indent=2, ensure_ascii=False)
     log.info(f"Saved {len(termine)} items to www/termine.json")
 
-    # Generate markers.json for the map
-    markers = []
-    for entry in termine:
+    # Generate termine.json for the map
+    event_items = []
+    for termin in termine:
+        link = termin.get('signal') or termin.get('telegram')
+        if link:
+            link_path = www_dir / "img" / ("qr_" + hl.sha1(link.encode("utf-8")).hexdigest() + ".png")
+            img = qrcode.make(link)
+            img.save(link_path)
+
+        termin["plz"] = termin["plz"].strip()
+        lat, lon = geolocate(termin["plz"])
+        if not (lat and lon):
+            continue
+
         try:
-            entry["plz"] = entry["plz"].strip()
-            lat, lon = geolocate(entry["plz"])
-            if lat and lon:
-                markers.append({
-                    "name": entry.get("name", entry.get("ort", "Unknown")),
-                    "plz": entry["plz"],
-                    "coords": [lat, lon],
-                    "date": entry['beginn'].split(" ")[0],
-                    "dow": EN_DE_WEEKDAYS.get(entry['wochentag'], entry['wochentag']),
-                    "time": entry['beginn'].split(" ")[1] + " - " + entry['ende'].split(" ")[1],
-                    "orga": entry.get('orga'),
-                    "kontakt": entry.get('kontakt'),
-                    "link": entry.get('signal') or entry.get('telegram'),
-                    # "style": {"fill": "blue"} # Optional: different color for these markers
-                })
+            event_items.append({
+                "name": termin.get("name", termin.get("ort", "Unknown")),
+                "plz": termin["plz"],
+                "coords": [lat, lon],
+                "date": termin['beginn'].split(" ")[0],
+                "dow": EN_DE_WEEKDAYS.get(termin['wochentag'], termin['wochentag']),
+                "time": termin['beginn'].split(" ")[1] + " - " + termin['ende'].split(" ")[1],
+                "orga": termin.get('orga'),
+                "kontakt": termin.get('kontakt'),
+                "link": link,
+            })
         except Exception as err:
-            log.warning(f"Skipping invalid entry: {entry}")
-            log.warning(f"Error: {err}")
+            log.warning(f"Skipping invalid termin: {termin}")
+            log.warning(f"Error: {repr(err)}")
     
     www_dir = pl.Path("www")
     www_dir.mkdir(exist_ok=True)
-    with (www_dir / "markers.json").open(mode="w", encoding="utf-8") as fobj:
-        json.dump(markers, fobj, indent=2, ensure_ascii=False)
-    log.info(f"Saved {len(markers)} markers to www/markers.json")
+    with (www_dir / "termine.json").open(mode="w", encoding="utf-8") as fobj:
+        json.dump(event_items, fobj, indent=2, ensure_ascii=False)
+    log.info(f"Saved {len(termine)} termine to www/termine.json")
 
     log.info(f"Downloading 'kontakte'...")
     kontakte = list(download_gsheet(sheet_id=args.sheet_id, sheet_name='kontakte'))

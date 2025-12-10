@@ -1,134 +1,142 @@
 [
   {
     "name": "Libertäres Grilltreffen bei München",
-    "beginn": "2025-09-05 18:00",
-    "ende": "2025-09-05 22:00",
-    "woche": "KW36",
-    "wochentag": "Friday",
     "plz": "85276",
-    "kontakt": "Florian Handwerker",
+    "coords": [
+      48.5434775,
+      11.4838556
+    ],
+    "date": "2025-09-05",
+    "dow": "Fr.",
+    "time": "18:00 - 22:00",
     "orga": "DIE LIBERTÄREN",
-    "e-mail": "florian.handwerker@die-libertaeren.de"
+    "kontakt": "Florian Handwerker",
+    "link": null
   },
   {
-    "name": "Libertärer Stammtisch FFM",
-    "beginn": "2025-11-04 00:00",
-    "ende": "2025-11-04 23:00",
-    "woche": "KW45",
-    "wochentag": "Tuesday",
+    "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
-    "kontakt": "Lukas Schroth",
+    "coords": [
+      50.1028505,
+      8.6881252
+    ],
+    "date": "2025-11-04",
+    "dow": "Di.",
+    "time": "00:00 - 23:00",
     "orga": "DIE LIBERTÄREN",
-    "signal": "https://signal.group/#CjQKIOy_pCi_ZxLZJMwHHuu44_UTBli-ZUyKeHyxUPxRXbOjEhCewcjd0LonOnGLHZ1vmaH1",
-    "e-mail": "LNB@maulbetsch.net",
-    "telegram": "https://t.me/+WgMHpki_VXZkYWIy"
+    "kontakt": "Lukas Schroth",
+    "link": "https://signal.group/#CjQKIOy_pCi_ZxLZJMwHHuu44_UTBli-ZUyKeHyxUPxRXbOjEhCewcjd0LonOnGLHZ1vmaH1"
   },
   {
     "name": "Libertärer Stammtisch Hamburg",
-    "beginn": "2025-12-03 19:00",
-    "ende": "2025-12-03 23:00",
-    "woche": "KW49",
-    "wochentag": "Wednesday",
     "plz": "20095",
+    "coords": [
+      53.5512868,
+      9.9992216
+    ],
+    "date": "2025-12-03",
+    "dow": "Mi.",
+    "time": "19:00 - 23:00",
+    "orga": "DIE LIBERTÄREN",
     "kontakt": "Ferdinand Steinhöfel",
-    "orga": "DIE LIBERTÄREN"
+    "link": null
   },
   {
     "name": "Libertärer Stammtisch Göppingen/Esslingen",
-    "beginn": "2025-12-04 19:00",
-    "ende": "2025-12-04 23:00",
-    "woche": "KW49",
-    "wochentag": "Thursday",
     "plz": "73033",
-    "kontakt": "Dieter Kirschmann",
+    "coords": [
+      48.7088631,
+      9.6538145
+    ],
+    "date": "2025-12-04",
+    "dow": "Do.",
+    "time": "19:00 - 23:00",
     "orga": "DIE LIBERTÄREN",
-    "e-mail": "dieter.kirschmann@die-libertaeren.de"
+    "kontakt": "Dieter Kirschmann",
+    "link": null
   },
   {
-    "name": "Libertärer Stammtisch FFM",
-    "beginn": "2025-12-08 19:00",
-    "ende": "2025-12-08 23:00",
-    "woche": "KW50",
-    "wochentag": "Monday",
+    "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
-    "kontakt": "Lukas Schroth",
+    "coords": [
+      50.1028505,
+      8.6881252
+    ],
+    "date": "2025-12-08",
+    "dow": "Mo.",
+    "time": "19:00 - 23:00",
     "orga": "DIE LIBERTÄREN",
-    "tournus": "Erste Woche im Monat",
-    "signal": "https://signal.group/#CjQKIOy_pCi_ZxLZJMwHHuu44_UTBli-ZUyKeHyxUPxRXbOjEhCewcjd0LonOnGLHZ1vmaH1",
-    "e-mail": "LNB@maulbetsch.net",
-    "telegram": "https://t.me/+WgMHpki_VXZkYWIy"
+    "kontakt": "Lukas Schroth",
+    "link": "https://signal.group/#CjQKIOy_pCi_ZxLZJMwHHuu44_UTBli-ZUyKeHyxUPxRXbOjEhCewcjd0LonOnGLHZ1vmaH1"
   },
   {
     "name": "Libertäres Treffen Dortmund",
-    "beginn": "2025-12-11 19:00",
-    "ende": "2025-12-11 23:00",
-    "woche": "KW50",
-    "wochentag": "Thursday",
     "plz": "44263",
-    "kontakt": "Alexander Expander",
+    "coords": [
+      51.4865748,
+      7.4974155
+    ],
+    "date": "2025-12-11",
+    "dow": "Do.",
+    "time": "19:00 - 23:00",
     "orga": "Bündnis Libertärer",
-    "e-mail": "info@buendnis-libertaerer.de"
+    "kontakt": "Alexander Expander",
+    "link": null
   },
   {
     "name": "Libertärer Stammtisch Magdeburg",
-    "beginn": "2025-12-11 19:00",
-    "ende": "2025-12-11 22:00",
-    "woche": "KW50",
-    "wochentag": "Thursday",
     "plz": "39104",
-    "kontakt": "Mathias Hummel",
+    "coords": [
+      52.1151882,
+      11.630882
+    ],
+    "date": "2025-12-11",
+    "dow": "Do.",
+    "time": "19:00 - 22:00",
     "orga": "DIE LIBERTÄREN",
-    "e-mail": "events@die-libertaeren.de"
+    "kontakt": "Mathias Hummel",
+    "link": null
   },
   {
     "name": "Libertärer Stammtisch in Balingen / Württemberg",
-    "beginn": "2025-12-11 19:30",
-    "ende": "2025-12-10 22:00",
-    "woche": "KW50",
-    "wochentag": "Thursday",
     "plz": "72336",
-    "kontakt": "Fritz Maulbetsch",
+    "coords": [
+      48.2700199,
+      8.8685516
+    ],
+    "date": "2025-12-11",
+    "dow": "Do.",
+    "time": "19:30 - 22:00",
     "orga": "DIE LIBERTÄREN",
-    "telegram": "@FreeFritz"
-  },
-  {
-    "name": "Marktradikales Meetup Grevenbroich",
-    "beginn": "2025-12-12 19:00",
-    "ende": "2025-12-12 23:00",
-    "woche": "KW50",
-    "wochentag": "Friday",
-    "plz": "41515",
-    "kontakt": "Martin Moczarski",
-    "orga": "Die Marktradikalen",
-    "e-mail": "moczarski@ef-magazin.de"
+    "kontakt": "Fritz Maulbetsch",
+    "link": "@FreeFritz"
   },
   {
     "name": "Libertäres Treffen in Meißen / Sachsen",
-    "beginn": "2025-12-16 19:00",
-    "ende": "2025-12-16 23:00",
-    "woche": "KW51",
-    "wochentag": "Tuesday",
     "plz": "01662",
-    "orga": "DIE LIBERTÄREN"
+    "coords": [
+      51.1615404,
+      13.4838596
+    ],
+    "date": "2025-12-16",
+    "dow": "Di.",
+    "time": "19:00 - 23:00",
+    "orga": "DIE LIBERTÄREN",
+    "kontakt": null,
+    "link": null
   },
   {
-    "name": "Libertäres Grilltreffen bei München",
-    "beginn": "2025-12-18 19:00",
-    "ende": "2025-12-18 22:00",
-    "woche": "KW51",
-    "wochentag": "Thursday",
-    "plz": "85276",
-    "kontakt": "Florian Handwerker",
-    "orga": "DIE LIBERTÄREN",
-    "e-mail": "florian.handwerker@die-libertaeren.de"
-  },
-  {
-    "name": "Libertärer Stammtisch Kaiserslautern",
-    "woche": "KW52",
-    "wochentag": "Saturday",
-    "plz": "67657",
-    "kontakt": "Tim Leonhardt",
-    "orga": "DIE LIBERTÄREN",
-    "e-mail": "tim.leonhardt@die-libertaeren.de"
+    "name": "Marktradikales Meetup Grevenbroich",
+    "plz": "41515",
+    "coords": [
+      51.0819233,
+      6.6057095
+    ],
+    "date": "2025-12-19",
+    "dow": "Fr.",
+    "time": "00:00 - 23:00",
+    "orga": "Die Marktradikalen",
+    "kontakt": "Martin Moczarski",
+    "link": null
   }
 ]
