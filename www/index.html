@@ -522,6 +522,8 @@
                     const val = e.target.value;
                     termineList.search(val, customSearchFunction);
                 }, 150));
+                // Set initial focus
+                tableSearchInput.focus();
             }
 
             globalTermine = termine;
