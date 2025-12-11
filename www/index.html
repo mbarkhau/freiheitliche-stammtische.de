@@ -20,7 +20,7 @@
 
 <body>
     <div class="container">
-        <button id="theme-toggle" aria-label="Toggle Dark Mode">⏾</button>
+        <button id="theme-toggle" aria-label="Toggle Dark Mode">☾</button>
         <div id="top-pane">
             <div id="map-container">
                 <div id="map"></div>
@@ -72,7 +72,8 @@
 
             localStorage.setItem('theme', newTheme);
             const button = document.getElementById('theme-toggle');
-            button.textContent = newTheme === 'light' ? '⏾' : '✹';
+            button.textContent = newTheme === 'light' ? '☾' : '✹';
+
 
             if (globalMapMarkers && globalTermine) {
                 initMap(globalMapMarkers, globalTermine);
@@ -86,7 +87,8 @@
             // If saved theme is light, apply it. Otherwise (dark or null), do nothing (default is dark).
             if (savedTheme === 'light') {
                 document.documentElement.setAttribute('data-theme', 'light');
-                document.getElementById('theme-toggle').textContent = '⏾';
+                document.getElementById('theme-toggle').textContent = '☾';
+
             } else {
                 document.documentElement.removeAttribute('data-theme');
                 document.getElementById('theme-toggle').textContent = '✹';
@@ -307,7 +309,7 @@
                     initial: {
                         fill: colors.fill,
                         stroke: colors.stroke,
-                        strokeWidth: 0.2
+                        strokeWidth: 0.5
                     },
                 },
                 zoomButtons: false,
@@ -426,7 +428,7 @@
 
             // Create markers and build mapping
             const mapMarkers = Object.values(groups).map((group, markerIndex) => {
-                const style = { fill: "#007bff" };
+                const style = { initial: { fill: "#333", r: 9 } };
                 const coords = group[0].coords;
                 const ids = group.map(t => t.originalIndex);
 
@@ -497,7 +499,7 @@
                 tableSearchInput.addEventListener('input', debounce(function (e) {
                     const val = e.target.value;
                     termineList.search(val, customSearchFunction);
-                }, 350));
+                }, 150));
             }
 
             globalTermine = termine;
