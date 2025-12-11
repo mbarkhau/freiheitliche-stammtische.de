@@ -108,6 +108,7 @@ CITIES = [
     { 'population':  201048, 'coords': [51.3127,  9.4797], 'name': 'Kassel' },
     { 'population':  182971, 'coords': [49.2327,  6.9962], 'name': 'Saarbrücken' },
     { 'population':  176110, 'coords': [49.4718,  8.4512], 'name': 'Ludwigshafen' },
+    { 'population':  155756, 'coords': [49.4103,  8.6971], 'name': 'Heidelberg' },
     { 'population':  151389, 'coords': [49.0134, 12.1016], 'name': 'Regensburg' },
     { 'population':  115298, 'coords': [50.3569,  7.5890], 'name': 'Koblenz' },
     { 'population':  108056, 'coords': [50.9271, 11.5892], 'name': 'Jena' },
@@ -122,8 +123,6 @@ def find_nearest_city(lat: float, lon: float) -> tuple[dict, float] | None:
         dist = geodesic((lat, lon), city['coords']).km
         # breakpoint()
         is_much_closer = (nearest_dist - dist) > 8
-        if (lat, lon) == (51.0819233, 6.6057095):
-            print(int(is_much_closer), city['name'].ljust(20), nearest_dist - dist)
 
         if is_much_closer:
             nearest_dist = dist
