@@ -17,14 +17,29 @@
             --table-font-size: 14px;
             --table-header-bg: #2c2c2c;
             --table-row-hover: #2a2a2a;
-            --map-bg: #1e1e1e;
-            --map-region-fill: #555555;
-            --map-region-stroke: #777777;
+            --map-bg: #555;
+            --map-region-fill: #111;
+            --map-region-stroke: #888;
             --button-bg: #333;
             --button-text: #e0e0e0;
-            --scrollbar-bg: #1e1e1e;
-            --scrollbar-thumb: #555;
+            --scrollbar-bg: #222;
+            --scrollbar-thumb: #888;
             --scrollbar-thumb-hover: #777;
+        }
+
+        [data-theme="light"] {
+            --bg-color: #fff;
+            --text-color: #333;
+            --container-bg: #fff;
+            --border-color: #bbb;
+            --table-header-bg: #eee;
+            --table-row-hover: #ccc;
+            --map-bg: #AAA;
+            --map-region-fill: #EEE;
+            --button-bg: #e0e0e0;
+            --button-text: #333;
+            --scrollbar-bg: #eee;
+            --scrollbar-thumb-hover: #aaa;
         }
 
         /* Custom Scrollbar Styles */
@@ -50,23 +65,6 @@
 
         ::-webkit-scrollbar-corner {
             background: var(--scrollbar-bg);
-        }
-
-        [data-theme="light"] {
-            --bg-color: #fff;
-            --text-color: #333;
-            --container-bg: #fff;
-            --border-color: #bbb;
-            --table-header-bg: #f8f9fa;
-            --table-row-hover: #ccc;
-            --map-bg: #fff;
-            --map-region-fill: #333333;
-            --map-region-stroke: #AAAAAA;
-            --button-bg: #e0e0e0;
-            --button-text: #333;
-            --scrollbar-bg: #f8f9fa;
-            --scrollbar-thumb: #ccc;
-            --scrollbar-thumb-hover: #aaa;
         }
 
         body {
@@ -98,6 +96,17 @@
             transition: height 300ms ease;
         }
 
+        #selection-panel {
+            width: 40em;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 42em) {
+            #selection-panel {
+                font-size: 2.5vw;
+            }
+        }
+
         /* Mobile/Portrait Layout */
         @media (max-aspect-ratio: 1/1) {
             #top-pane {
@@ -108,18 +117,11 @@
             }
 
             #map-container {
-                height: 50vh;
+                height: 33vh;
                 /* Fixed height for map on mobile */
                 width: 100%;
             }
 
-            #selection-panel {
-                width: 100%;
-                max-height: 50vh;
-                /* Prevent it from taking too much space */
-                border-right: none;
-                border-bottom: 1px solid var(--border-color);
-            }
         }
 
         /* Desktop/Landscape Layout */
@@ -134,16 +136,10 @@
             #map-container {
                 height: 100%;
                 flex: 1;
-                /* Takes remaining width */
-                border-bottom: none;
             }
 
             #selection-panel {
-                width: 40em;
                 height: 100%;
-                border-bottom: none;
-                border-left: 1px solid var(--border-color);
-                /* Separator */
             }
         }
 
@@ -160,10 +156,7 @@
         }
 
         #selection-panel {
-            /* width: 40em;  Moved to media query */
-            /* margin: 0 auto; Removed */
-            padding: 10px;
-            background: var(--container-bg);
+            padding: 1em;
             color: var(--text-color);
             display: none;
             /* Hidden by default until selection */
@@ -316,17 +309,40 @@
             background: var(--container-bg);
             border-bottom: 1px solid var(--border-color);
             transition: background-color 300ms ease, border-color 300ms ease;
+            position: relative;
+            /* For absolute positioning of clear button */
         }
 
         .filter-panel input {
             width: 100%;
             padding: 8px;
+            padding-right: 30px;
+            /* Make space for the clear button */
             box-sizing: border-box;
             border: none;
             background: var(--bg-color);
             color: var(--text-color);
             font-size: var(--table-font-size);
             transition: background-color 300ms ease, color 300ms ease, border-color 300ms ease;
+        }
+
+        #clear-filter {
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: transparent;
+            border: none;
+            color: var(--text-color);
+            font-size: 16px;
+            cursor: pointer;
+            padding: 0 5px;
+            /* display: none; Removed to make it always visible */
+            z-index: 10;
+        }
+
+        #clear-filter:hover {
+            color: #888;
         }
 
         .filter-panel input:focus {
@@ -361,6 +377,7 @@
         <div id="table-container">
             <div class="filter-panel">
                 <input class="search" placeholder="Suche..." aria-label="Suche">
+                <button id="clear-filter" aria-label="Suche leeren">×</button>
             </div>
             <div id="termine-list" class="table-wrapper">
                 <table id="termine-table">
@@ -399,6 +416,10 @@
             localStorage.setItem('theme', newTheme);
             const button = document.getElementById('theme-toggle');
             button.textContent = newTheme === 'light' ? '⏾' : '✹';
+
+            if (globalMapMarkers && globalTermine) {
+                initMap(globalMapMarkers, globalTermine);
+            }
         }
 
         document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
@@ -538,11 +559,21 @@
             };
         }
 
+        function getMapColors() {
+            const style = getComputedStyle(document.documentElement);
+            return {
+                fill: style.getPropertyValue('--map-region-fill').trim() || '#333333',
+                stroke: style.getPropertyValue('--map-region-stroke').trim() || '#AAAAAA'
+            };
+        }
+
         function initMap(mapMarkers, events) {
             if (currentMap) {
                 currentMap.destroy();
             }
             document.getElementById('map').innerHTML = '';
+
+            const colors = getMapColors();
 
             currentMap = new jsVectorMap({
                 markersSelectable: true,
@@ -552,8 +583,8 @@
                 backgroundColor: 'transparent',
                 regionStyle: {
                     initial: {
-                        fill: '#333333',
-                        stroke: '#AAAAAA',
+                        fill: colors.fill,
+                        stroke: colors.stroke,
                         strokeWidth: 0.2
                     },
                 },
@@ -561,7 +592,6 @@
                 zoomOnScroll: true,
                 markers: [...mapMarkers],
                 onMarkerTooltipShow: function (event, tooltip, index) {
-                    // console.log('onMarkerTooltipShow', arguments);
                     document.querySelectorAll('tr.highlight').forEach(row => {
                         row.classList.remove('highlight');
                     });
@@ -656,14 +686,11 @@
             // Preserve original index for reliable lookup
             termine = termine.map((t, i) => ({ ...t, originalIndex: i }));
 
-            // 1. Populate Table
             populateTable(termine);
 
-            // 2. Initialize List.js
-            termineList = new List('termine-list', {
+            termineList = new List('table-container', {
                 valueNames: ['date', 'time', 'city', 'name', 'plz', 'orga', 'kontakt', 'link']
             });
-            // Default sort by date
             termineList.sort('date', { order: "asc" });
 
             // Update selection panel on search
@@ -686,13 +713,8 @@
             // 3. Populate Map Markers
             const mapMarkers = termine
                 .map(function (t) {
-                    const style = {}
+                    const style = { fill: "#007bff" }
 
-                    if (t.orga == 'DIE LIBERTÄREN') {
-                        style.image = '/img/die-libertaeren-logo.png'
-                    } else {
-                        style.fill = "#007bff"
-                    }
                     return {
                         name: t.name,
                         coords: t.coords,
@@ -718,6 +740,23 @@
         }, 150);
 
         window.addEventListener('resize', handleResize);
+
+        // Filter clear button logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.querySelector('.filter-panel .search');
+            const clearButton = document.getElementById('clear-filter');
+
+            if (searchInput && clearButton) {
+                // Clear input on click
+                clearButton.addEventListener('click', () => {
+                    searchInput.value = '';
+                    if (termineList) {
+                        termineList.search('');
+                    }
+                    searchInput.focus();
+                });
+            }
+        });
     </script>
 </body>
 
