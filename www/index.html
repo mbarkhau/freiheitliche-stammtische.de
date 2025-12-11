@@ -248,7 +248,6 @@
             position: sticky;
             top: 0;
             z-index: 1;
-            /* Ensure header stays on top of content */
             transition: background-color 300ms ease, color 300ms ease;
         }
 
@@ -265,7 +264,6 @@
         tr.selected {
             background-color: var(--table-row-hover);
             outline: 2px solid #007bff;
-            /* Distinct outline for selection */
         }
 
         tr.past-date {
@@ -336,9 +334,9 @@
             border: none;
             color: var(--text-color);
             font-size: 16px;
+            font-weight: bold;
             cursor: pointer;
             padding: 0 5px;
-            /* display: none; Removed to make it always visible */
             z-index: 10;
         }
 
@@ -378,7 +376,7 @@
         <div id="table-container">
             <div class="filter-panel">
                 <input class="table-search" placeholder="Suche..." aria-label="Suche">
-                <button id="clear-filter" aria-label="Suche leeren">🗙</button>
+                <button id="clear-filter" aria-label="Suche leeren">✕</button>
             </div>
             <div id="termine-list" class="table-wrapper">
                 <table id="termine-table">
