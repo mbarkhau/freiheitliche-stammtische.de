@@ -44,6 +44,9 @@ from utils import cli
 from geopy.geocoders import Nominatim
 from geopy.distance import geodesic
 
+from PIL import Image
+
+
 log = logging.getLogger(name="gsheet_util.py")
 
 
@@ -226,11 +229,24 @@ def main(argv: list[str] = sys.argv[1:]) -> int:
     # Generate termine.json for the map
     event_items = []
     for termin in termine:
-        link = termin.get('signal') or termin.get('telegram')
+        link = termin.get('telegram') or termin.get('signal')
         if link:
-            link_path = www_dir / "img" / ("qr_" + hl.sha1(link.encode("utf-8")).hexdigest() + ".png")
-            img = qrcode.make(link)
-            img.save(link_path)
+            link_qr_path = www_dir / "img" / ("qr_" + hl.sha1(link.encode("utf-8")).hexdigest() + ".png")
+            img = qrcode.make(link, version=6, error_correction=qrcode.constants.ERROR_CORRECT_M)
+            if termin.get('telegram'):
+                overlay = Image.open(www_dir / "img" / "telegram_128.png")
+            elif termin.get('signal'):
+                overlay = Image.open(www_dir / "img" / "signal_128.png")
+            else:
+                raise ValueError(f"Unknown link type: {termin}")
+
+            overlay = overlay.convert("RGBA")
+            overlay = overlay.resize((96, 96))
+            img = img.convert("RGBA")
+            img.paste(overlay, (img.width // 2 - overlay.width // 2, img.height // 2 - overlay.height // 2), overlay)
+            img.save(link_qr_path)
+        else:
+            link_qr_path = None
 
         termin["plz"] = termin["plz"].strip()
         lat, lon = geolocate(termin["plz"])
@@ -259,6 +275,7 @@ def main(argv: list[str] = sys.argv[1:]) -> int:
                 "orga_www": termin.get('orga_webseite'),
                 "kontakt": termin.get('kontakt'),
                 "link": link,
+                "link_qr": "img/" + link_qr_path.name if link_qr_path else None,
             })
         except Exception as err:
             log.warning(f"Skipping invalid termin: {termin}")

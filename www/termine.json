@@ -14,7 +14,8 @@
     "orga": "DIE LIBERTÄREN",
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Florian Handwerker",
-    "link": null
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
@@ -31,7 +32,8 @@
     "orga": "DIE LIBERTÄREN",
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Lukas Schroth",
-    "link": "https://signal.group/#CjQKIOy_pCi_ZxLZJMwHHuu44_UTBli-ZUyKeHyxUPxRXbOjEhCewcjd0LonOnGLHZ1vmaH1"
+    "link": "https://t.me/+WgMHpki_VXZkYWIy",
+    "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
   },
   {
     "name": "Marktradikales Meetup Berlin",
@@ -48,7 +50,8 @@
     "orga": null,
     "orga_www": null,
     "kontakt": null,
-    "link": "https://t.me/marktradikalberlin"
+    "link": "https://t.me/marktradikalberlin",
+    "link_qr": "img/qr_fc1dec9239b71c671798da58566d8276a729df26.png"
   },
   {
     "name": "Libertärer Stammtisch Hamburg",
@@ -65,7 +68,8 @@
     "orga": "DIE LIBERTÄREN",
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Ferdinand Steinhöfel",
-    "link": null
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Göppingen/Esslingen",
@@ -82,7 +86,8 @@
     "orga": "DIE LIBERTÄREN",
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Dieter Kirschmann",
-    "link": null
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
@@ -99,7 +104,8 @@
     "orga": "DIE LIBERTÄREN",
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Lukas Schroth",
-    "link": "https://signal.group/#CjQKIOy_pCi_ZxLZJMwHHuu44_UTBli-ZUyKeHyxUPxRXbOjEhCewcjd0LonOnGLHZ1vmaH1"
+    "link": "https://t.me/+WgMHpki_VXZkYWIy",
+    "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
   },
   {
     "name": "Libertäres Treffen Dortmund",
@@ -116,7 +122,8 @@
     "orga": "Bündnis Libertärer",
     "orga_www": "https://buendnis-libertaerer.de/",
     "kontakt": "Alexander Expander",
-    "link": null
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Magdeburg",
@@ -133,7 +140,8 @@
     "orga": "DIE LIBERTÄREN",
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Mathias Hummel",
-    "link": null
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch in Balingen / Württemberg",
@@ -150,7 +158,8 @@
     "orga": null,
     "orga_www": null,
     "kontakt": "Fritz Maulbetsch",
-    "link": "@FreeFritz"
+    "link": "https://t.me/FreeFritz",
+    "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0.png"
   },
   {
     "name": "Libertärer Krypto Stammtisch Berlin",
@@ -167,7 +176,8 @@
     "orga": "Partei der Vernunft",
     "orga_www": "https://www.parteidervernunft.de/",
     "kontakt": null,
-    "link": null
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertäres Treffen in Meißen / Sachsen",
@@ -184,7 +194,8 @@
     "orga": "DIE LIBERTÄREN",
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": null,
-    "link": null
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Marktradikales Meetup Grevenbroich",
@@ -201,7 +212,8 @@
     "orga": "Eigentümlich Frei",
     "orga_www": "https://ef-magazin.de/",
     "kontakt": "Martin Moczarski",
-    "link": null
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Hamburg",
@@ -218,6 +230,7 @@
     "orga": "DIE LIBERTÄREN",
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Ferdinand Steinhöfel",
-    "link": null
+    "link": null,
+    "link_qr": null
   }
 ]

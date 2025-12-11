@@ -48,7 +48,6 @@
                             <th class="sort" data-sort="name">Name</th>
                             <th class="sort" data-sort="orga">Veranstalter</th>
                             <th class="sort" data-sort="kontakt">Kontakt</th>
-                            <th class="sort" data-sort="link">Link</th>
                         </tr>
                     </thead>
                     <tbody class="list">
@@ -164,7 +163,6 @@
                     <td class="name">${t.name || ''}</td>
                     <td class="orga">${t.orga_www ? `<a href="${t.orga_www}" target="_blank">${t.orga || 'Link'}</a>` : (t.orga || '')}</td>
                     <td class="kontakt">${t.kontakt || ''}</td>
-                    <td class="link">${t.link || ''}</td>
                 `;
 
                 row.addEventListener('mouseenter', () => {
@@ -374,7 +372,7 @@
                 <p><span class="field-label">PLZ:</span> ${termin.plz ? `<a href="https://maps.google.com/?q=${termin.plz}}" target="_blank">${termin.plz} 🧭</a>` : ''}</p>
                 <p><span class="field-label">Kontakt:</span> ${termin.kontakt || ''}</p>
                 <p><span class="field-label">Veranstalter:</span> ${termin.orga_www ? `<a href="${termin.orga_www}" target="_blank">${termin.orga || 'Link'}</a>` : (termin.orga || '')}</p>
-                <p><span class="field-label">Link:</span> ${termin.link ? `<a href="${termin.link}" target="_blank">Link</a>` : ''}</p>
+                ${termin.link_qr ? `<div style="margin-top: 10px;"><a href="${termin.link}" target="_blank"><img src="${termin.link_qr}" alt="QR Code" style="max-width: 200px; display: block;"></a></div>` : ''}
             `;
             panel.style.display = 'block';
 
@@ -472,7 +470,7 @@
             populateTable(termine);
 
             termineList = new List('table-container', {
-                valueNames: ['date', 'time', 'plz', 'city', 'name', 'orga', 'kontakt', 'link']
+                valueNames: ['date', 'time', 'plz', 'city', 'name', 'orga', 'kontakt']
             });
             termineList.sort('date', { order: "asc" });
 
