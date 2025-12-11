@@ -12,6 +12,7 @@
     "dow": "Fr.",
     "time": "18:00 - 22:00",
     "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Florian Handwerker",
     "link": null
   },
@@ -28,6 +29,7 @@
     "dow": "Di.",
     "time": "00:00 - 23:00",
     "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Lukas Schroth",
     "link": "https://signal.group/#CjQKIOy_pCi_ZxLZJMwHHuu44_UTBli-ZUyKeHyxUPxRXbOjEhCewcjd0LonOnGLHZ1vmaH1"
   },
@@ -44,6 +46,7 @@
     "dow": "Mi.",
     "time": "19:00 - 23:00",
     "orga": null,
+    "orga_www": null,
     "kontakt": null,
     "link": "https://t.me/marktradikalberlin"
   },
@@ -60,6 +63,7 @@
     "dow": "Mi.",
     "time": "19:00 - 23:00",
     "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Ferdinand Steinhöfel",
     "link": null
   },
@@ -76,6 +80,7 @@
     "dow": "Do.",
     "time": "19:00 - 23:00",
     "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Dieter Kirschmann",
     "link": null
   },
@@ -92,6 +97,7 @@
     "dow": "Mo.",
     "time": "19:00 - 23:00",
     "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Lukas Schroth",
     "link": "https://signal.group/#CjQKIOy_pCi_ZxLZJMwHHuu44_UTBli-ZUyKeHyxUPxRXbOjEhCewcjd0LonOnGLHZ1vmaH1"
   },
@@ -108,6 +114,7 @@
     "dow": "Do.",
     "time": "19:00 - 23:00",
     "orga": "Bündnis Libertärer",
+    "orga_www": "https://buendnis-libertaerer.de/",
     "kontakt": "Alexander Expander",
     "link": null
   },
@@ -124,6 +131,7 @@
     "dow": "Do.",
     "time": "19:00 - 22:00",
     "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Mathias Hummel",
     "link": null
   },
@@ -139,7 +147,8 @@
     "date": "2025-12-11",
     "dow": "Do.",
     "time": "19:30 - 22:00",
-    "orga": "DIE LIBERTÄREN",
+    "orga": null,
+    "orga_www": null,
     "kontakt": "Fritz Maulbetsch",
     "link": "@FreeFritz"
   },
@@ -156,6 +165,7 @@
     "dow": "Fr.",
     "time": "19:00 - 23:00",
     "orga": "Partei der Vernunft",
+    "orga_www": "https://www.parteidervernunft.de/",
     "kontakt": null,
     "link": null
   },
@@ -172,6 +182,7 @@
     "dow": "Di.",
     "time": "19:00 - 23:00",
     "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
     "kontakt": null,
     "link": null
   },
@@ -187,7 +198,8 @@
     "date": "2025-12-19",
     "dow": "Fr.",
     "time": "00:00 - 23:00",
-    "orga": "Die Marktradikalen",
+    "orga": "Eigentümlich Frei",
+    "orga_www": "https://ef-magazin.de/",
     "kontakt": "Martin Moczarski",
     "link": null
   },
@@ -204,6 +216,7 @@
     "dow": "Mi.",
     "time": "19:00 - 23:00",
     "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Ferdinand Steinhöfel",
     "link": null
   }

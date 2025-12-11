@@ -274,7 +274,7 @@ th.sort.desc::after {
 #theme-toggle {
     position: absolute;
     top: 1%;
-    right: 41em;
+    right: 41rem;
     z-index: 1000;
     background: var(--button-bg);
     color: var(--button-text);
@@ -341,4 +341,12 @@ th.sort.desc::after {
 .filter-panel input:focus {
     outline: none;
     border-color: #007bff;
+}
+
+#selection-panel a,
+#selection-panel a:visited,
+#termine-table a,
+#termine-table a:visited {
+    color: inherit;
+    text-decoration: underline;
 }
