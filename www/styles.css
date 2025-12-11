@@ -279,10 +279,15 @@ th.sort.desc::after {
     background: var(--button-bg);
     color: var(--button-text);
     border: 1px solid var(--border-color);
-    padding: 8px 12px;
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 20px;
     transition: background-color 300ms ease, color 300ms ease, border-color 300ms ease;
 }
 
