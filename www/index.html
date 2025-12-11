@@ -481,11 +481,33 @@
                 const searchInput = document.querySelector('.filter-panel .table-search');
                 if (searchInput && searchInput.value.trim() !== '') {
                     if (list.visibleItems.length > 0) {
-                        const firstItem = list.visibleItems[0];
-                        const originalIndex = parseInt(firstItem.elm.id.replace('marker-', ''));
-                        const termin = termine[originalIndex];
-                        if (termin) {
-                            updateSelectionPanel(termin);
+                        const today = new Date().toISOString().split('T')[0];
+
+                        // Map visible items to their termin objects
+                        const visibleTermine = list.visibleItems.map(item => {
+                            const originalIndex = parseInt(item.elm.id.replace('marker-', ''));
+                            return termine[originalIndex];
+                        }).filter(t => t);
+
+                        let bestTermin = null;
+
+                        // 1. Try to find the next up event (future, >= today)
+                        // We must sort explicitly because the table might be sorted by another column
+                        const futureTermine = visibleTermine.filter(t => t.date >= today);
+                        if (futureTermine.length > 0) {
+                            futureTermine.sort((a, b) => a.date.localeCompare(b.date));
+                            bestTermin = futureTermine[0];
+                        } else {
+                            // 2. If no future events, find the most recent past event (< today)
+                            const pastTermine = visibleTermine.filter(t => t.date < today);
+                            if (pastTermine.length > 0) {
+                                pastTermine.sort((a, b) => b.date.localeCompare(a.date));
+                                bestTermin = pastTermine[0];
+                            }
+                        }
+
+                        if (bestTermin) {
+                            updateSelectionPanel(bestTermin);
                         }
                     }
                 }
