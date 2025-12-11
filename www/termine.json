@@ -2,6 +2,8 @@
   {
     "name": "Libertäres Grilltreffen bei München",
     "plz": "85276",
+    "city": "München",
+    "city_dist": 46.0,
     "coords": [
       48.5434775,
       11.4838556
@@ -16,6 +18,8 @@
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
+    "city": "Frankfurt",
+    "city_dist": 1.0,
     "coords": [
       50.1028505,
       8.6881252
@@ -30,6 +34,8 @@
   {
     "name": "Libertärer Stammtisch Hamburg",
     "plz": "20095",
+    "city": "Hamburg",
+    "city_dist": 0.4,
     "coords": [
       53.5512868,
       9.9992216
@@ -44,6 +50,8 @@
   {
     "name": "Libertärer Stammtisch Göppingen/Esslingen",
     "plz": "73033",
+    "city": "Stuttgart",
+    "city_dist": 35.4,
     "coords": [
       48.7088631,
       9.6538145
@@ -58,6 +66,8 @@
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
+    "city": "Frankfurt",
+    "city_dist": 1.0,
     "coords": [
       50.1028505,
       8.6881252
@@ -72,6 +82,8 @@
   {
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
+    "city": "Dortmund",
+    "city_dist": 3.7,
     "coords": [
       51.4865748,
       7.4974155
@@ -86,6 +98,8 @@
   {
     "name": "Libertärer Stammtisch Magdeburg",
     "plz": "39104",
+    "city": "Magdeburg",
+    "city_dist": 0.6,
     "coords": [
       52.1151882,
       11.630882
@@ -100,9 +114,11 @@
   {
     "name": "Libertärer Stammtisch in Balingen / Württemberg",
     "plz": "72336",
+    "city": "Stuttgart",
+    "city_dist": 60.9,
     "coords": [
-      48.2700199,
-      8.8685516
+      48.2697736,
+      8.8682239
     ],
     "date": "2025-12-11",
     "dow": "Do.",
@@ -114,6 +130,8 @@
   {
     "name": "Libertäres Treffen in Meißen / Sachsen",
     "plz": "01662",
+    "city": "Dresden",
+    "city_dist": 21.6,
     "coords": [
       51.1615404,
       13.4838596
@@ -128,6 +146,8 @@
   {
     "name": "Marktradikales Meetup Grevenbroich",
     "plz": "41515",
+    "city": "Düsseldorf",
+    "city_dist": 20.0,
     "coords": [
       51.0819233,
       6.6057095
@@ -137,6 +157,22 @@
     "time": "00:00 - 23:00",
     "orga": "Die Marktradikalen",
     "kontakt": "Martin Moczarski",
+    "link": null
+  },
+  {
+    "name": "Libertärer Krypto Stammtisch Berlin",
+    "plz": "10117",
+    "city": "Berlin",
+    "city_dist": 1.2,
+    "coords": [
+      52.5175184,
+      13.3877686
+    ],
+    "date": "2025-12-12",
+    "dow": "Fr.",
+    "time": "19:00 - 23:00",
+    "orga": "Partei der Vernunft",
+    "kontakt": null,
     "link": null
   }
 ]

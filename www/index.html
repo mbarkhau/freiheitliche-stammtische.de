@@ -14,6 +14,7 @@
             --text-color: #e0e0e0;
             --container-bg: #1e1e1e;
             --border-color: #333;
+            --table-font-size: 14px;
             --table-header-bg: #2c2c2c;
             --table-row-hover: #2a2a2a;
             --map-bg: #1e1e1e;
@@ -21,6 +22,34 @@
             --map-region-stroke: #777777;
             --button-bg: #333;
             --button-text: #e0e0e0;
+            --scrollbar-bg: #1e1e1e;
+            --scrollbar-thumb: #555;
+            --scrollbar-thumb-hover: #777;
+        }
+
+        /* Custom Scrollbar Styles */
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--scrollbar-bg);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--scrollbar-thumb);
+            border-radius: 5px;
+            border: 2px solid var(--scrollbar-bg);
+            /* Padding around thumb */
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--scrollbar-thumb-hover);
+        }
+
+        ::-webkit-scrollbar-corner {
+            background: var(--scrollbar-bg);
         }
 
         [data-theme="light"] {
@@ -35,6 +64,9 @@
             --map-region-stroke: #AAAAAA;
             --button-bg: #e0e0e0;
             --button-text: #333;
+            --scrollbar-bg: #f8f9fa;
+            --scrollbar-thumb: #ccc;
+            --scrollbar-thumb-hover: #aaa;
         }
 
         body {
@@ -51,52 +83,74 @@
 
         .container {
             display: flex;
+            flex-direction: column;
             flex: 1;
             height: 100%;
             width: 100%;
             overflow: hidden;
         }
 
-        /* Mobile Layout (Default or via Media Query) */
+        #top-pane {
+            display: flex;
+            width: 100%;
+            /* Default to mobile behavior */
+            flex-direction: column;
+            transition: height 300ms ease;
+        }
+
+        /* Mobile/Portrait Layout */
         @media (max-aspect-ratio: 1/1) {
-            .container {
-                flex-direction: column;
+            #top-pane {
+                /* On mobile, height is determined by children content, 
+                   but map has specific height logic. */
+                height: auto;
+                flex: 0 0 auto;
             }
 
             #map-container {
-                height: 50%;
+                height: 50vh;
+                /* Fixed height for map on mobile */
                 width: 100%;
             }
 
-            /* #info-container will take the other 50% */
-            #info-container {
-                height: 50%;
+            #selection-panel {
                 width: 100%;
+                max-height: 50vh;
+                /* Prevent it from taking too much space */
+                border-right: none;
+                border-bottom: 1px solid var(--border-color);
             }
         }
 
-        /* Desktop Layout */
+        /* Desktop/Landscape Layout */
         @media (min-aspect-ratio: 1/1) {
-            .container {
+            #top-pane {
                 flex-direction: row;
+                height: 50%;
+                /* Fixed 50% height for top pane on desktop */
+                border-bottom: 1px solid var(--border-color);
             }
 
             #map-container {
                 height: 100%;
-                width: 50%;
+                flex: 1;
+                /* Takes remaining width */
+                border-bottom: none;
             }
 
-            #info-container {
+            #selection-panel {
+                width: 40em;
                 height: 100%;
-                width: 50%;
+                border-bottom: none;
+                border-left: 1px solid var(--border-color);
+                /* Separator */
             }
         }
 
         #map-container {
             position: relative;
             background: var(--map-bg);
-            border-right: 1px solid var(--border-color);
-            border-bottom: 1px solid var(--border-color);
+            /* border-right: 1px solid var(--border-color); Moved to media query logic */
             transition: background-color 300ms ease, border-color 300ms ease;
         }
 
@@ -105,27 +159,31 @@
             height: 100%;
         }
 
-        #info-container {
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            background: var(--container-bg);
-            transition: background-color 300ms ease;
-        }
-
         #selection-panel {
-            padding: 20px;
-            border-bottom: 1px solid var(--border-color);
+            /* width: 40em;  Moved to media query */
+            /* margin: 0 auto; Removed */
+            padding: 10px;
             background: var(--container-bg);
-            /* Match container or slightly different? Match for now */
             color: var(--text-color);
             display: none;
             /* Hidden by default until selection */
             flex-shrink: 0;
-            /* Verify content determines height */
-            /* max-height: 40%;  Optional: limit height so table is always visible */
             overflow-y: auto;
             transition: background-color 300ms ease, color 300ms ease;
+            box-sizing: border-box;
+        }
+
+
+        #selection-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 20px;
+            /* Allow rows to be dense if content varies, though 1fr 1fr is standard */
+            word-break: break-word;
+        }
+
+        .full-width {
+            grid-column: 1 / -1;
         }
 
         #selection-panel h3 {
@@ -147,12 +205,22 @@
         #table-container {
             /* background: var(--container-bg);  Moved to info-container */
             box-sizing: border-box;
-            overflow-y: auto;
-            overflow-x: auto;
+            background: var(--container-bg);
             /* Allow horizontal scrolling */
             /* transition: background-color 300ms ease; Removed redundancy */
             flex: 1;
             /* Take remaining space */
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        #termine-list {
+            flex: 1;
+            width: 100%;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
         }
 
         h2 {
@@ -170,9 +238,10 @@
 
         th,
         td {
+            font-size: var(--table-font-size);
+            letter-spacing: -0.3pt;
             text-align: left;
-            padding: 12px 16px;
-            /* Increased horizontal padding */
+            padding: 6px 9px;
             border-bottom: 1px solid var(--border-color);
             white-space: nowrap;
             /* Prevent text wrapping */
@@ -191,6 +260,7 @@
 
         tr:hover {
             background-color: var(--table-row-hover);
+            cursor: pointer;
         }
 
         tr.highlight {
@@ -223,7 +293,7 @@
         #theme-toggle {
             position: absolute;
             top: 1%;
-            right: 51%;
+            right: 41em;
             z-index: 1000;
             background: var(--button-bg);
             color: var(--button-text);
@@ -240,6 +310,29 @@
                 right: 1%;
             }
         }
+
+        .filter-panel {
+            padding: 0;
+            background: var(--container-bg);
+            border-bottom: 1px solid var(--border-color);
+            transition: background-color 300ms ease, border-color 300ms ease;
+        }
+
+        .filter-panel input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: none;
+            background: var(--bg-color);
+            color: var(--text-color);
+            font-size: var(--table-font-size);
+            transition: background-color 300ms ease, color 300ms ease, border-color 300ms ease;
+        }
+
+        .filter-panel input:focus {
+            outline: none;
+            border-color: #007bff;
+        }
     </style>
 
     <!-- <script src="list.min.js"></script> -->
@@ -255,36 +348,39 @@
 <body>
     <div class="container">
         <button id="theme-toggle" aria-label="Toggle Dark Mode">⏾</button>
-        <div id="map-container">
-            <div id="map"></div>
-        </div>
-        <div id="info-container">
+        <div id="top-pane">
+            <div id="map-container">
+                <div id="map"></div>
+            </div>
             <div id="selection-panel">
-                <h3>Details</h3>
                 <div id="selection-content">
                     <p class="placeholder">Wähle einen Termin auf der Karte aus, um Details zu sehen.</p>
                 </div>
             </div>
-            <div id="table-container">
-                <div id="termine-list" class="table-wrapper">
-                    <table id="termine-table">
-                        <thead>
-                            <tr>
-                                <th class="sort" data-sort="date">Datum</th>
-                                <th class="sort" data-sort="dow">Tag</th>
-                                <th class="sort" data-sort="time">Uhrzeit</th>
-                                <th class="sort" data-sort="name">Name</th>
-                                <th class="sort" data-sort="plz">PLZ</th>
-                                <th class="sort" data-sort="orga">Veranstalter</th>
-                                <th class="sort" data-sort="kontakt">Kontakt</th>
-                                <th class="sort" data-sort="link">Link</th>
-                            </tr>
-                        </thead>
-                        <tbody class="list">
-                            <!-- Rows will be populated by JS -->
-                        </tbody>
-                    </table>
-                </div>
+        </div>
+        <div id="table-container">
+            <div class="filter-panel">
+                <input class="search" placeholder="Suche..." aria-label="Suche">
+            </div>
+            <div id="termine-list" class="table-wrapper">
+                <table id="termine-table">
+                    <thead>
+                        <tr>
+                            <th class="sort" data-sort="date">Datum</th>
+                            <th class="sort" data-sort="dow">Tag</th>
+                            <th class="sort" data-sort="time">Uhrzeit</th>
+                            <th class="sort" data-sort="city">Stadt</th>
+                            <th class="sort" data-sort="name">Name</th>
+                            <th class="sort" data-sort="plz">PLZ</th>
+                            <th class="sort" data-sort="orga">Veranstalter</th>
+                            <th class="sort" data-sort="kontakt">Kontakt</th>
+                            <th class="sort" data-sort="link">Link</th>
+                        </tr>
+                    </thead>
+                    <tbody class="list">
+                        <!-- Rows will be populated by JS -->
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
@@ -321,6 +417,49 @@
 
         window.addEventListener('DOMContentLoaded', initTheme);
 
+        function getRelativeDateString(dateStr) {
+            if (!dateStr) return '';
+            const date = new Date(dateStr);
+            // Reset time to midnight for accurate day calculation
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+
+            // Treat the event date as midnight local time to avoid timezone issues
+            // (assuming dateStr is YYYY-MM-DD)
+            const eventDate = new Date(dateStr + 'T00:00:00');
+
+            const diffTime = eventDate - today;
+            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+            if (diffDays === 0) return 'heute';
+            if (diffDays === 1) return 'morgen';
+            if (diffDays === -1) return 'gestern';
+
+            const weeks = Math.abs(Math.round(diffDays / 7));
+            const months = Math.abs(Math.round(diffDays / 30));
+            if (diffDays > 0) {
+                if (months > 2) {
+                    return `in ${months} Monaten`;
+                }
+                if (weeks > 2) {
+                    return `in ${weeks} Wochen`;
+                }
+                return `in ${diffDays} Tagen`;
+            } else {
+                if (months > 2) {
+                    return `vor ${months} Monaten`;
+                }
+                if (weeks > 2) {
+                    return `vor ${weeks} Wochen`;
+                }
+                return `vor ${Math.abs(diffDays)} Tagen`;
+            }
+        }
+
+        function distanceText(dist) {
+            const carDistance = Math.round(dist * 1.3)
+            return carDistance < 20 ? '' : ' (' + carDistance + ' km)';
+        }
 
         let isTableHovering = false;
 
@@ -335,10 +474,12 @@
                 if (t.date && t.date < today) {
                     row.classList.add('past-date');
                 }
+                const relativeDate = getRelativeDateString(t.date);
                 row.innerHTML = `
-                    <td class="date">${t.date || ''}</td>
+                    <td class="date" title="${relativeDate}">${t.date || ''}</td>
                     <td class="dow">${t.dow || ''}</td>
                     <td class="time">${t.time || ''}</td>
+                    <td class="city">${t.city || ''}${distanceText(t.city_dist)}</td>
                     <td class="name">${t.name || ''}</td>
                     <td class="plz">${t.plz || ''}</td>
                     <td class="orga">${t.orga || ''}</td>
@@ -374,54 +515,34 @@
                     }
                 });
 
+                row.addEventListener('click', () => {
+                    updateSelectionPanel(t);
+                });
+
                 tbody.appendChild(row);
             });
         }
 
         let currentMap = null;
         let termineList = null;
+        let globalTermine = null;
+        let globalMapMarkers = null;
 
-        const cityMarkers = [
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [48.3772, 10.2522], name: 'Augsburg' },
-            // // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [52.0241, 8.5290], name: 'Bielefeld' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.7374, 7.0982], name: 'Bonn' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.8278, 12.9214], name: 'Chemnitz' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.5136, 7.4653], name: 'Dortmund' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.0504, 13.7373], name: 'Dresden' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.2277, 6.7735], name: 'Düsseldorf' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.9848, 11.0299], name: 'Erfurt' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.4556, 7.0116], name: 'Essen' },
-            // // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.1109, 8.6821], name: 'Frankfurt' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [47.9990, 7.8421], name: 'Freiburg' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [53.5511, 9.9937], name: 'Hamburg' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [52.3759, 9.7320], name: 'Hannover' },
-            // // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.9271, 11.5892], name: 'Jena' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.0069, 8.4037], name: 'Karlsruhe' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.3127, 9.4797], name: 'Kassel' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [54.3233, 10.1228], name: 'Kiel' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.3569, 7.5890], name: 'Koblenz' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.9375, 6.9603], name: 'Köln' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.3397, 12.3731], name: 'Leipzig' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.4718, 8.4512], name: 'Ludwigshafen' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [53.8655, 10.6866], name: 'Lübeck' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [52.1205, 11.6276], name: 'Magdeburg' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.9929, 8.2473], name: 'Mainz' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.4875, 8.4660], name: 'Mannheim' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [48.1351, 11.5820], name: 'Munich' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.4521, 11.0767], name: 'Nürnberg' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.0134, 12.1016], name: 'Regensburg' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [54.0924, 12.0991], name: 'Rostock' },
-            // // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.23265, 6.99619], name: 'Saarbrücken' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [48.7758, 9.1829], name: 'Stuttgart' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [49.7597, 6.6415], name: 'Trier' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [50.0375, 8.2660], name: 'Wiesbaden' },
-            // { style: { initial: { fill: 'gray', strokeWidth: 0, r: 4 } }, coords: [51.2637, 7.2006], name: 'Wuppertal' },
-        ];
+        function debounce(func, wait) {
+            let timeout;
+            return function () {
+                const context = this;
+                const args = arguments;
+                clearTimeout(timeout);
+                timeout = setTimeout(() => func.apply(context, args), wait);
+            };
+        }
 
-        function initMap(mapMarkers, cityMarkers, events) {
+        function initMap(mapMarkers, events) {
             if (currentMap) {
                 currentMap.destroy();
             }
+            document.getElementById('map').innerHTML = '';
 
             currentMap = new jsVectorMap({
                 markersSelectable: true,
@@ -438,7 +559,7 @@
                 },
                 zoomButtons: false,
                 zoomOnScroll: true,
-                markers: [...mapMarkers, ...cityMarkers],
+                markers: [...mapMarkers],
                 onMarkerTooltipShow: function (event, tooltip, index) {
                     // console.log('onMarkerTooltipShow', arguments);
                     document.querySelectorAll('tr.highlight').forEach(row => {
@@ -485,13 +606,16 @@
             const panel = document.getElementById('selection-panel');
             const content = document.getElementById('selection-content');
 
+            const relativeDate = getRelativeDateString(termin.date);
+
             content.innerHTML = `
-                <p><span class="field-label">Name:</span> ${termin.name || ''}</p>
-                <p><span class="field-label">Datum:</span> ${termin.date || ''} (${termin.dow || ''})</p>
+                <p class="full-width"><span class="field-label">Name:</span> ${termin.name || ''}</p>
+                <p><span class="field-label">Datum:</span> ${termin.date || ''} (${termin.dow || ''}) <span style="color: #888; margin-left: 5px;">${relativeDate}</span></p>
+                <p><span class="field-label">Stadt:</span> ${termin.city || ''}${distanceText(termin.city_dist)}</p>
                 <p><span class="field-label">Uhrzeit:</span> ${termin.time || ''}</p>
                 <p><span class="field-label">PLZ:</span> ${termin.plz || ''}</p>
-                <p><span class="field-label">Veranstalter:</span> ${termin.orga || ''}</p>
                 <p><span class="field-label">Kontakt:</span> ${termin.kontakt || ''}</p>
+                <p><span class="field-label">Veranstalter:</span> ${termin.orga || ''}</p>
                 <p><span class="field-label">Link:</span> ${termin.link ? `<a href="${termin.link}" target="_blank">Link</a>` : ''}</p>
             `;
             panel.style.display = 'block';
@@ -528,17 +652,36 @@
 
         async function loadData() {
             const response = await fetch('termine.json');
-            const termine = await response.json();
+            let termine = await response.json();
+            // Preserve original index for reliable lookup
+            termine = termine.map((t, i) => ({ ...t, originalIndex: i }));
 
             // 1. Populate Table
             populateTable(termine);
 
             // 2. Initialize List.js
             termineList = new List('termine-list', {
-                valueNames: ['date', 'name', 'plz', 'orga', 'kontakt', 'link']
+                valueNames: ['date', 'time', 'city', 'name', 'plz', 'orga', 'kontakt', 'link']
             });
             // Default sort by date
             termineList.sort('date', { order: "asc" });
+
+            // Update selection panel on search
+            termineList.on('updated', function (list) {
+                const searchInput = document.querySelector('.filter-panel .search');
+                // Only auto-select if there is a search query
+                if (searchInput && searchInput.value.trim() !== '') {
+                    if (list.visibleItems.length > 0) {
+                        const firstItem = list.visibleItems[0];
+                        // Extract original index from the row ID (e.g. "marker-123")
+                        const originalIndex = parseInt(firstItem.elm.id.replace('marker-', ''));
+                        const termin = termine[originalIndex];
+                        if (termin) {
+                            updateSelectionPanel(termin);
+                        }
+                    }
+                }
+            });
 
             // 3. Populate Map Markers
             const mapMarkers = termine
@@ -557,11 +700,24 @@
                     }
                 });
 
-            initMap(mapMarkers, cityMarkers, termine);
-            initSelection(termine)
+            globalTermine = termine;
+            globalMapMarkers = mapMarkers;
+
+            initMap(mapMarkers, termine);
+            initSelection(termine);
+            // Trigger resize to ensure map adjusts to the new layout (panel visibility)
+            handleResize();
         }
 
         window.addEventListener('DOMContentLoaded', loadData);
+
+        const handleResize = debounce(function () {
+            if (globalTermine && globalMapMarkers) {
+                initMap(globalMapMarkers, globalTermine);
+            }
+        }, 150);
+
+        window.addEventListener('resize', handleResize);
     </script>
 </body>
 

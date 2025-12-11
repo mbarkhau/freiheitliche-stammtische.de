@@ -125,5 +125,15 @@
     "woche": "KW52",
     "wochentag": "Saturday",
     "plz": "40213"
+  },
+  {
+    "name": "Libertärer Krypto Stammtisch Berlin",
+    "beginn": "2025-12-12 19:00",
+    "ende": "2025-12-12 23:00",
+    "woche": "KW50",
+    "wochentag": "Friday",
+    "plz": "10117",
+    "orga": "Partei der Vernunft",
+    "e-mail": "info@parteidervernunft.de"
   }
 ]

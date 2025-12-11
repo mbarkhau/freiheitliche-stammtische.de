@@ -78,33 +78,43 @@ def cache_ctx(filename: str) -> typ.Generator[CachedDict, None, None]:
     dump_cache(filename)
 
 
-def cache(func: typ.Callable):
-    fname_txt = __file__ + "::" + func.__name__
-    filename = hl.sha1(fname_txt.encode("ascii")).hexdigest()
+def cache(name: str = "__sentinel__"):
+    def decorator(func: typ.Callable):
+        if name == "__sentinel__":
+            fname_txt = __file__ + "::" + func.__name__
+            filename = hl.sha1(fname_txt.encode("ascii")).hexdigest()
+        else:
+            filename = hl.sha1(name.encode("utf-8")).hexdigest()
 
-    @ft.wraps(func)
-    def dec(*args, **kwargs) -> typ.Any:
-        parts = []
-        for arg in args:
-            parts.append(str(arg))
+        @ft.wraps(func)
+        def dec(*args, **kwargs) -> typ.Any:
+            parts = []
+            for arg in args:
+                parts.append(str(arg))
 
-        for key, val in kwargs.items():
-            parts.append(key)
-            parts.append(str(val))
+            for key, val in kwargs.items():
+                parts.append(key)
+                parts.append(str(val))
 
-        key = "-".join(parts)
-        # if key in CACHE:
-        #     if '"area_plz"' in CACHE[key]:
-        #         CACHE.pop(key)
+            key = "-".join(parts)
+            # if key in CACHE:
+            #     if '"area_plz"' in CACHE[key]:
+            #         CACHE.pop(key)
 
-        cache = load_cache(filename)
-        if key not in cache:
-            result = func(*args, **kwargs)
-            cache[key] = json.dumps(result)
-            dump_cache(filename, cache)
-        return json.loads(cache[key])
+            cache = load_cache(filename)
+            if key not in cache:
+                result = func(*args, **kwargs)
+                cache[key] = json.dumps(result)
+                dump_cache(filename, cache)
+            return json.loads(cache[key])
 
-    return dec
+        return dec
+
+    if isinstance(name, str):
+        return decorator
+    else:
+        # assume it's a function
+        return decorator(name)
 
 
 def _main(args: list[str]) -> int:
