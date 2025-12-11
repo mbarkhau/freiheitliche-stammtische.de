@@ -24,6 +24,15 @@
     "telegram": "https://t.me/+WgMHpki_VXZkYWIy"
   },
   {
+    "name": "Marktradikales Meetup Berlin",
+    "beginn": "2025-11-07 19:00",
+    "ende": "2025-11-07 23:00",
+    "woche": "KW02",
+    "wochentag": "Wednesday",
+    "plz": "10117",
+    "telegram": "https://t.me/marktradikalberlin"
+  },
+  {
     "name": "Libertärer Stammtisch Hamburg",
     "beginn": "2025-12-03 19:00",
     "ende": "2025-12-03 23:00",
@@ -92,6 +101,16 @@
     "telegram": "@FreeFritz"
   },
   {
+    "name": "Libertärer Krypto Stammtisch Berlin",
+    "beginn": "2025-12-12 19:00",
+    "ende": "2025-12-12 23:00",
+    "woche": "KW50",
+    "wochentag": "Friday",
+    "plz": "10117",
+    "orga": "Partei der Vernunft",
+    "e-mail": "info@parteidervernunft.de"
+  },
+  {
     "name": "Libertäres Treffen in Meißen / Sachsen",
     "beginn": "2025-12-16 19:00",
     "ende": "2025-12-16 23:00",
@@ -112,6 +131,16 @@
     "e-mail": "moczarski@ef-magazin.de"
   },
   {
+    "name": "Libertärer Stammtisch Hamburg",
+    "beginn": "2026-01-07 19:00",
+    "ende": "2026-01-07 23:00",
+    "woche": "KW02",
+    "wochentag": "Wednesday",
+    "plz": "20095",
+    "kontakt": "Ferdinand Steinhöfel",
+    "orga": "DIE LIBERTÄREN"
+  },
+  {
     "name": "Libertärer Stammtisch Kaiserslautern",
     "woche": "KW52",
     "wochentag": "Saturday",
@@ -125,15 +154,5 @@
     "woche": "KW52",
     "wochentag": "Saturday",
     "plz": "40213"
-  },
-  {
-    "name": "Libertärer Krypto Stammtisch Berlin",
-    "beginn": "2025-12-12 19:00",
-    "ende": "2025-12-12 23:00",
-    "woche": "KW50",
-    "wochentag": "Friday",
-    "plz": "10117",
-    "orga": "Partei der Vernunft",
-    "e-mail": "info@parteidervernunft.de"
   }
 ]

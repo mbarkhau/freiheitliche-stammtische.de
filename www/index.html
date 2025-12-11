@@ -77,6 +77,7 @@
             display: flex;
             flex-direction: column;
             transition: background-color 300ms ease, color 300ms ease;
+            overflow-x: hidden;
         }
 
         .container {
@@ -376,8 +377,8 @@
         </div>
         <div id="table-container">
             <div class="filter-panel">
-                <input class="search" placeholder="Suche..." aria-label="Suche">
-                <button id="clear-filter" aria-label="Suche leeren">×</button>
+                <input class="table-search" placeholder="Suche..." aria-label="Suche">
+                <button id="clear-filter" aria-label="Suche leeren">🗙</button>
             </div>
             <div id="termine-list" class="table-wrapper">
                 <table id="termine-table">
@@ -510,29 +511,33 @@
 
                 row.addEventListener('mouseenter', () => {
                     isTableHovering = true;
-                    const markerIndex = i;
-                    // jsVectorMap renders markers in order. We try to find them by class.
-                    // Note: This relies on internal implementation details of jsVectorMap (DOM structure).
-                    const markers = document.querySelectorAll('.jvm-marker');
-                    if (markers && markers[markerIndex]) {
-                        const marker = markers[markerIndex];
-                        marker.dispatchEvent(new MouseEvent('mouseover', { bubbles: true }));
-                        // Tooltip positioning often requires mousemove
-                        const rect = marker.getBoundingClientRect();
-                        marker.dispatchEvent(new MouseEvent('mousemove', {
-                            bubbles: true,
-                            clientX: rect.left + rect.width / 2,
-                            clientY: rect.top + rect.height / 2
-                        }));
+                    // Use the pre-calculated markerIndex from the event object
+                    const markerIndex = t.markerIndex;
+                    if (markerIndex !== undefined && markerIndex !== null) {
+                        // jsVectorMap renders markers in order.
+                        const markers = document.querySelectorAll('.jvm-marker');
+                        if (markers && markers[markerIndex]) {
+                            const marker = markers[markerIndex];
+                            marker.dispatchEvent(new MouseEvent('mouseover', { bubbles: true }));
+                            // Tooltip positioning often requires mousemove
+                            const rect = marker.getBoundingClientRect();
+                            marker.dispatchEvent(new MouseEvent('mousemove', {
+                                bubbles: true,
+                                clientX: rect.left + rect.width / 2,
+                                clientY: rect.top + rect.height / 2
+                            }));
+                        }
                     }
                 });
 
                 row.addEventListener('mouseleave', () => {
                     isTableHovering = false;
-                    const markerIndex = i;
-                    const markers = document.querySelectorAll('.jvm-marker');
-                    if (markers && markers[markerIndex]) {
-                        markers[markerIndex].dispatchEvent(new MouseEvent('mouseout', { bubbles: true }));
+                    const markerIndex = t.markerIndex;
+                    if (markerIndex !== undefined && markerIndex !== null) {
+                        const markers = document.querySelectorAll('.jvm-marker');
+                        if (markers && markers[markerIndex]) {
+                            markers[markerIndex].dispatchEvent(new MouseEvent('mouseout', { bubbles: true }));
+                        }
                     }
                 });
 
@@ -567,6 +572,67 @@
             };
         }
 
+        // Custom search function to handle parentheses correctly
+        function customSearchFunction(searchString, columns) {
+            // List.js calls this function once, not per item.
+            // We need to iterate over all items and set item.found = true/false.
+
+            // Unescape backslashes added by List.js
+            // List.js does: s.replace(/[-[\]{}()*+?.,\\^$|#]/g, '\\$&');
+            const unescapedString = searchString.replace(/\\(.)/g, '$1');
+            const lowerSearchString = unescapedString.toLowerCase();
+
+            const searchTerms = lowerSearchString.split(/\s+/).filter(t => t.length > 0);
+
+            // Check if termineList is initialized
+            if (!termineList) return;
+
+            const items = termineList.items;
+            for (let k = 0, kl = items.length; k < kl; k++) {
+                const item = items[k];
+                item.found = false;
+
+                if (searchTerms.length === 0) {
+                    item.found = true;
+                    continue;
+                }
+
+                // columns is an array of column names we can search in.
+                // If undefined, search all valueNames.
+                const itemValues = item.values();
+                const cols = columns || termineList.valueNames;
+
+                let allTermsFound = true;
+                // Standard logic: AND for terms
+                for (let i = 0; i < searchTerms.length; i++) {
+                    const term = searchTerms[i];
+                    let termFoundInAnyCol = false;
+
+                    // OR for columns
+                    for (let j = 0; j < cols.length; j++) {
+                        const colName = cols[j];
+                        const val = itemValues[colName];
+                        if (val !== undefined && val !== null) {
+                            const text = String(val).toLowerCase();
+                            if (text.indexOf(term) !== -1) {
+                                termFoundInAnyCol = true;
+                                break;
+                            }
+                        }
+                    }
+
+                    if (!termFoundInAnyCol) {
+                        allTermsFound = false;
+                        break;
+                    }
+                }
+
+                if (allTermsFound) {
+                    item.found = true;
+                }
+            }
+        }
+
         function initMap(mapMarkers, events) {
             if (currentMap) {
                 currentMap.destroy();
@@ -599,12 +665,19 @@
                     const dataIndex = index;
                     // Only highlight if it corresponds to an event marker
                     if (dataIndex >= 0 && dataIndex < mapMarkers.length) {
-                        const row = document.getElementById('marker-' + dataIndex);
-                        if (row) {
-                            row.classList.add('highlight');
-                            if (!isTableHovering) {
-                                row.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                            }
+                        const markerData = mapMarkers[dataIndex];
+                        const ids = markerData.ids;
+                        if (ids && ids.length > 0) {
+                            ids.forEach((id, i) => {
+                                const row = document.getElementById('marker-' + id);
+                                if (row) {
+                                    row.classList.add('highlight');
+                                    // Scroll to the first one only to avoid jumping
+                                    if (i === 0 && !isTableHovering) {
+                                        row.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                                    }
+                                }
+                            });
                         }
                     }
                 },
@@ -612,21 +685,18 @@
                     // console.log('onMarkerTooltipHide', arguments);
                 },
                 onMarkerClick: function (event, index) {
-                    // Ignore clicks on city markers for the selection panel logic
                     if (index >= mapMarkers.length) return;
 
-                    const clickedMarker = events[index];
+                    const clickedMarker = mapMarkers[index];
                     if (!clickedMarker) return;
 
-                    // Identify all events at this exact location
-                    const targetCoords = JSON.stringify(clickedMarker.coords);
-
-                    // Map to preserve original index for row highlighting
-                    const candidates = events.map((t, i) => ({ ...t, originalIndex: i }))
-                        .filter(t => JSON.stringify(t.coords) === targetCoords);
-
-                    if (candidates.length === 0) return;
-                    updateSelectionPanel(candidates[0]);
+                    const searchInput = document.querySelector('.filter-panel .table-search');
+                    if (searchInput && termineList) {
+                        searchInput.value = clickedMarker.name;
+                        termineList.search(clickedMarker.name, customSearchFunction);
+                        // Optional: focus if desired, but user didn't strictly ask.
+                        // searchInput.focus();
+                    }
                 }
             });
         }
@@ -686,6 +756,61 @@
             // Preserve original index for reliable lookup
             termine = termine.map((t, i) => ({ ...t, originalIndex: i }));
 
+            // 1. Deduplicate & Populate Map Markers FIRST
+            const today = new Date().toISOString().split('T')[0];
+            const groups = {};
+
+            termine.forEach(t => {
+                const coordKey = t.coords.join(',');
+                if (!groups[coordKey]) {
+                    groups[coordKey] = [];
+                }
+                groups[coordKey].push(t);
+            });
+
+            // Create markers and build mapping
+            const mapMarkers = Object.values(groups).map((group, markerIndex) => {
+                const style = { fill: "#007bff" };
+                const coords = group[0].coords;
+                const ids = group.map(t => t.originalIndex);
+
+                // Assign markerIndex to each event in the group for reverse lookup
+                group.forEach(t => {
+                    t.markerIndex = markerIndex;
+                });
+
+                // Determine name/tooltip priority
+                const names = new Set(group.map(t => t.name));
+                let markerName = "";
+
+                if (names.size === 1) {
+                    const futureEvents = group.filter(t => t.date >= today)
+                        .sort((a, b) => a.date.localeCompare(b.date));
+
+                    if (futureEvents.length > 0) {
+                        markerName = futureEvents[0].name;
+                    } else {
+                        const pastEvents = group.filter(t => t.date < today)
+                            .sort((a, b) => b.date.localeCompare(a.date));
+                        if (pastEvents.length > 0) {
+                            markerName = pastEvents[0].name;
+                        } else {
+                            markerName = group[0].name;
+                        }
+                    }
+                } else {
+                    markerName = group[0].city;
+                }
+
+                return {
+                    name: markerName,
+                    coords: coords,
+                    style: style,
+                    ids: ids
+                };
+            });
+
+            // 2. Populate Table (now that termine have markerIndex)
             populateTable(termine);
 
             termineList = new List('table-container', {
@@ -695,12 +820,10 @@
 
             // Update selection panel on search
             termineList.on('updated', function (list) {
-                const searchInput = document.querySelector('.filter-panel .search');
-                // Only auto-select if there is a search query
+                const searchInput = document.querySelector('.filter-panel .table-search');
                 if (searchInput && searchInput.value.trim() !== '') {
                     if (list.visibleItems.length > 0) {
                         const firstItem = list.visibleItems[0];
-                        // Extract original index from the row ID (e.g. "marker-123")
                         const originalIndex = parseInt(firstItem.elm.id.replace('marker-', ''));
                         const termin = termine[originalIndex];
                         if (termin) {
@@ -710,17 +833,16 @@
                 }
             });
 
-            // 3. Populate Map Markers
-            const mapMarkers = termine
-                .map(function (t) {
-                    const style = { fill: "#007bff" }
 
-                    return {
-                        name: t.name,
-                        coords: t.coords,
-                        style: style,
-                    }
-                });
+
+            // Attach listener to the new table-search input
+            const tableSearchInput = document.querySelector('.filter-panel .table-search');
+            if (tableSearchInput) {
+                tableSearchInput.addEventListener('input', debounce(function (e) {
+                    const val = e.target.value;
+                    termineList.search(val, customSearchFunction);
+                }, 350));
+            }
 
             globalTermine = termine;
             globalMapMarkers = mapMarkers;
@@ -743,7 +865,7 @@
 
         // Filter clear button logic
         document.addEventListener('DOMContentLoaded', () => {
-            const searchInput = document.querySelector('.filter-panel .search');
+            const searchInput = document.querySelector('.filter-panel .table-search');
             const clearButton = document.getElementById('clear-filter');
 
             if (searchInput && clearButton) {

@@ -32,6 +32,22 @@
     "link": "https://signal.group/#CjQKIOy_pCi_ZxLZJMwHHuu44_UTBli-ZUyKeHyxUPxRXbOjEhCewcjd0LonOnGLHZ1vmaH1"
   },
   {
+    "name": "Marktradikales Meetup Berlin",
+    "plz": "10117",
+    "city": "Berlin",
+    "city_dist": 1.2,
+    "coords": [
+      52.5175184,
+      13.3877686
+    ],
+    "date": "2025-11-07",
+    "dow": "Mi.",
+    "time": "19:00 - 23:00",
+    "orga": null,
+    "kontakt": null,
+    "link": "https://t.me/marktradikalberlin"
+  },
+  {
     "name": "Libertärer Stammtisch Hamburg",
     "plz": "20095",
     "city": "Hamburg",
@@ -128,6 +144,22 @@
     "link": "@FreeFritz"
   },
   {
+    "name": "Libertärer Krypto Stammtisch Berlin",
+    "plz": "10117",
+    "city": "Berlin",
+    "city_dist": 1.2,
+    "coords": [
+      52.5175184,
+      13.3877686
+    ],
+    "date": "2025-12-12",
+    "dow": "Fr.",
+    "time": "19:00 - 23:00",
+    "orga": "Partei der Vernunft",
+    "kontakt": null,
+    "link": null
+  },
+  {
     "name": "Libertäres Treffen in Meißen / Sachsen",
     "plz": "01662",
     "city": "Dresden",
@@ -160,19 +192,19 @@
     "link": null
   },
   {
-    "name": "Libertärer Krypto Stammtisch Berlin",
-    "plz": "10117",
-    "city": "Berlin",
-    "city_dist": 1.2,
+    "name": "Libertärer Stammtisch Hamburg",
+    "plz": "20095",
+    "city": "Hamburg",
+    "city_dist": 0.4,
     "coords": [
-      52.5175184,
-      13.3877686
+      53.5512868,
+      9.9992216
     ],
-    "date": "2025-12-12",
-    "dow": "Fr.",
+    "date": "2026-01-07",
+    "dow": "Mi.",
     "time": "19:00 - 23:00",
-    "orga": "Partei der Vernunft",
-    "kontakt": null,
+    "orga": "DIE LIBERTÄREN",
+    "kontakt": "Ferdinand Steinhöfel",
     "link": null
   }
 ]
