@@ -45,7 +45,7 @@
                             <th class="sort" data-sort="time">Uhrzeit</th>
                             <th class="sort" data-sort="state">Bundesland</th>
                             <th class="sort" data-sort="plz">PLZ</th>
-                            <th class="sort" data-sort="city">Stadt</th>
+                            <th class="sort" data-sort="city">Stadt (Entfernung)</th>
                             <th class="sort" data-sort="name">Name</th>
                             <th class="sort" data-sort="orga">Veranstalter</th>
                             <th class="sort" data-sort="kontakt">Kontakt</th>
@@ -361,6 +361,18 @@
                     if (searchInput && termineList) {
                         searchInput.value = stateCode;
                         termineList.search(stateCode, customSearchFunction);
+                    }
+                }
+            });
+
+            // Handle clicks outside map elements (regions/markers) to clear filter
+            document.getElementById('map').addEventListener('click', function (event) {
+                if (!event.target.closest('.jvm-element')) {
+                    const searchInput = document.querySelector('.filter-panel .table-search');
+                    if (searchInput && termineList) {
+                        searchInput.value = '';
+                        termineList.search('', customSearchFunction);
+                        searchInput.focus();
                     }
                 }
             });
