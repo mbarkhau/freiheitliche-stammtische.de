@@ -2,6 +2,7 @@
   {
     "name": "Libertäres Grilltreffen bei München",
     "plz": "85276",
+    "state": "DE-BY (Bayern)",
     "city": "München",
     "city_dist": 46.0,
     "coords": [
@@ -20,6 +21,7 @@
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
+    "state": "DE-HE (Hessen)",
     "city": "Frankfurt",
     "city_dist": 1.0,
     "coords": [
@@ -38,6 +40,7 @@
   {
     "name": "Marktradikales Meetup Berlin",
     "plz": "10117",
+    "state": "DE-BE (Berlin)",
     "city": "Berlin",
     "city_dist": 1.2,
     "coords": [
@@ -56,6 +59,7 @@
   {
     "name": "Libertärer Stammtisch Hamburg",
     "plz": "20095",
+    "state": "DE-HH (Hamburg)",
     "city": "Hamburg",
     "city_dist": 0.4,
     "coords": [
@@ -74,6 +78,7 @@
   {
     "name": "Libertärer Stammtisch Göppingen/Esslingen",
     "plz": "73033",
+    "state": "DE-BW (Baden-Württemberg)",
     "city": "Stuttgart",
     "city_dist": 35.4,
     "coords": [
@@ -92,6 +97,7 @@
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
+    "state": "DE-HE (Hessen)",
     "city": "Frankfurt",
     "city_dist": 1.0,
     "coords": [
@@ -110,6 +116,7 @@
   {
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
+    "state": "DE-NW (Nordrhein-Westfalen)",
     "city": "Dortmund",
     "city_dist": 3.7,
     "coords": [
@@ -128,6 +135,7 @@
   {
     "name": "Libertärer Stammtisch Magdeburg",
     "plz": "39104",
+    "state": "DE-SN (Sachsen)",
     "city": "Magdeburg",
     "city_dist": 0.6,
     "coords": [
@@ -146,6 +154,7 @@
   {
     "name": "Libertärer Stammtisch in Balingen / Württemberg",
     "plz": "72336",
+    "state": "DE-BW (Baden-Württemberg)",
     "city": "Stuttgart",
     "city_dist": 60.9,
     "coords": [
@@ -164,6 +173,7 @@
   {
     "name": "Libertärer Krypto Stammtisch Berlin",
     "plz": "10117",
+    "state": "DE-BE (Berlin)",
     "city": "Berlin",
     "city_dist": 1.2,
     "coords": [
@@ -182,6 +192,7 @@
   {
     "name": "Libertäres Treffen in Meißen / Sachsen",
     "plz": "01662",
+    "state": "DE-SN (Sachsen)",
     "city": "Dresden",
     "city_dist": 21.6,
     "coords": [
@@ -200,6 +211,7 @@
   {
     "name": "Marktradikales Meetup Grevenbroich",
     "plz": "41515",
+    "state": "DE-NW (Nordrhein-Westfalen)",
     "city": "Düsseldorf",
     "city_dist": 20.0,
     "coords": [
@@ -218,6 +230,7 @@
   {
     "name": "Libertärer Stammtisch Hamburg",
     "plz": "20095",
+    "state": "DE-HH (Hamburg)",
     "city": "Hamburg",
     "city_dist": 0.4,
     "coords": [
@@ -230,6 +243,25 @@
     "orga": "DIE LIBERTÄREN",
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Ferdinand Steinhöfel",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch München",
+    "plz": "80539",
+    "state": "DE-BY (Bayern)",
+    "city": "München",
+    "city_dist": 1.0,
+    "coords": [
+      48.1443613,
+      11.5810699
+    ],
+    "date": "2025-12-18",
+    "dow": "Do.",
+    "time": "18:00 - 22:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Florian Handwerker",
     "link": null,
     "link_qr": null
   }

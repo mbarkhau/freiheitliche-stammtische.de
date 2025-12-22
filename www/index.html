@@ -29,13 +29,13 @@
                 <div id="selection-content">
                     <p class="placeholder">Wähle einen Termin auf der Karte aus, um Details zu sehen.</p>
                 </div>
+                <div class="filter-panel">
+                    <input class="table-search" placeholder="Suche..." aria-label="Suche">
+                    <button id="clear-filter" aria-label="Suche leeren">✕</button>
+                </div>
             </div>
         </div>
         <div id="table-container">
-            <div class="filter-panel">
-                <input class="table-search" placeholder="Suche..." aria-label="Suche">
-                <button id="clear-filter" aria-label="Suche leeren">✕</button>
-            </div>
             <div id="termine-list" class="table-wrapper">
                 <table id="termine-table">
                     <thead>
@@ -43,6 +43,7 @@
                             <th class="sort" data-sort="date">Datum</th>
                             <th class="sort" data-sort="dow">Tag</th>
                             <th class="sort" data-sort="time">Uhrzeit</th>
+                            <th class="sort" data-sort="state">Bundesland</th>
                             <th class="sort" data-sort="plz">PLZ</th>
                             <th class="sort" data-sort="city">Stadt</th>
                             <th class="sort" data-sort="name">Name</th>
@@ -158,6 +159,7 @@
                     <td class="date" title="${relativeDate}">${t.date || ''}</td>
                     <td class="dow">${t.dow || ''}</td>
                     <td class="time">${t.time || ''}</td>
+                    <td class="state">${t.state || ''}</td>
                     <td class="plz">${t.plz || ''}</td>
                     <td class="city">${t.city || ''}${distanceText(t.city_dist)}</td>
                     <td class="name">${t.name || ''}</td>
@@ -350,8 +352,15 @@
                     if (searchInput && termineList) {
                         searchInput.value = clickedMarker.name;
                         termineList.search(clickedMarker.name, customSearchFunction);
-                        // Optional: focus if desired, but user didn't strictly ask.
-                        // searchInput.focus();
+                    }
+                },
+                onRegionClick: function (event, stateCode) {
+                    console.log('onRegionClick', event, stateCode);
+                    // populate the searchInput with the stateCode
+                    const searchInput = document.querySelector('.filter-panel .table-search');
+                    if (searchInput && termineList) {
+                        searchInput.value = stateCode;
+                        termineList.search(stateCode, customSearchFunction);
                     }
                 }
             });
@@ -374,7 +383,7 @@
                 <p><span class="field-label">Veranstalter:</span> ${termin.orga_www ? `<a href="${termin.orga_www}" target="_blank">${termin.orga || 'Link'}</a>` : (termin.orga || '')}</p>
                 ${termin.link_qr ? `<div style="margin-top: 10px;"><a href="${termin.link}" target="_blank"><img src="${termin.link_qr}" alt="QR Code" style="max-width: 200px; display: block;"></a></div>` : ''}
             `;
-            panel.style.display = 'block';
+            panel.style.display = 'flex';
 
             // Update Table Selection
             document.querySelectorAll('tr.selected').forEach(row => {
@@ -470,9 +479,9 @@
             populateTable(termine);
 
             termineList = new List('table-container', {
-                valueNames: ['date', 'time', 'plz', 'city', 'name', 'orga', 'kontakt']
+                valueNames: ['date', 'time', 'state', 'plz', 'city', 'name', 'orga', 'kontakt']
             });
-            termineList.sort('date', { order: "asc" });
+            termineList.sort('date', { order: "desc" });
 
             // Update selection panel on search
             termineList.on('updated', function (list) {

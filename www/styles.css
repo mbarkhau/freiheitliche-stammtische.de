@@ -76,6 +76,7 @@ body {
     height: 100%;
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 #top-pane {
@@ -116,8 +117,13 @@ body {
 
 /* Desktop/Landscape Layout */
 @media (min-aspect-ratio: 1/1) {
+    .container {
+        max-width: 130vh;
+        margin: 0 auto;
+    }
+
     #top-pane {
-        flex-direction: row;
+        flex-direction: row-reverse;
         height: 50%;
         /* Fixed 50% height for top pane on desktop */
         border-bottom: 1px solid var(--border-color);
@@ -147,6 +153,7 @@ body {
 
 #selection-panel {
     padding: 1em;
+    min-height: 24rem;
     color: var(--text-color);
     display: none;
     /* Hidden by default until selection */
@@ -154,6 +161,7 @@ body {
     overflow-y: auto;
     transition: background-color 300ms ease, color 300ms ease;
     box-sizing: border-box;
+    flex-direction: column;
 }
 
 
@@ -163,6 +171,7 @@ body {
     column-gap: 20px;
     /* Allow rows to be dense if content varies, though 1fr 1fr is standard */
     word-break: break-word;
+    margin-bottom: 1em;
 }
 
 .full-width {
@@ -274,7 +283,7 @@ th.sort.desc::after {
 #theme-toggle {
     position: absolute;
     top: 1%;
-    right: 41rem;
+    right: 1%;
     z-index: 1000;
     background: var(--button-bg);
     color: var(--button-text);
@@ -298,9 +307,12 @@ th.sort.desc::after {
 }
 
 .filter-panel {
-    padding: 0;
+    padding: 2px;
+    margin: auto auto 0 auto;
+    min-width: 20em;
     background: var(--container-bg);
-    border-bottom: 1px solid var(--border-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
     transition: background-color 300ms ease, border-color 300ms ease;
     position: relative;
     /* For absolute positioning of clear button */

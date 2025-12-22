@@ -161,6 +161,18 @@
     "e-mail": "tim.leonhardt@die-libertaeren.de"
   },
   {
+    "name": "Libertärer Stammtisch München",
+    "beginn": "2025-12-18 18:00",
+    "ende": "2025-12-18 22:00",
+    "woche": "KW51",
+    "wochentag": "Thursday",
+    "plz": "80539",
+    "kontakt": "Florian Handwerker",
+    "orga": "DIE LIBERTÄREN",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "e-mail": "florian.handwerker@die-libertaeren.de"
+  },
+  {
     "name": "Hayek Club Düsseldorf",
     "woche": "KW52",
     "wochentag": "Saturday",
