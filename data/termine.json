@@ -177,5 +177,16 @@
     "woche": "KW52",
     "wochentag": "Saturday",
     "plz": "40213"
+  },
+  {
+    "name": "Free Cities Berlin Meetup",
+    "beginn": "2026-01-07 19:00",
+    "ende": "2026-01-07 19:00",
+    "woche": "KW02",
+    "wochentag": "Wednesday",
+    "plz": "10969",
+    "kontakt": "Jan Bertram",
+    "orga": "Free Cities Foundation",
+    "telegram": "https://t.me/+QYVsjbuNZblmMTVi"
   }
 ]

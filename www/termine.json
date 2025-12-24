@@ -264,5 +264,24 @@
     "kontakt": "Florian Handwerker",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Free Cities Berlin Meetup",
+    "plz": "10969",
+    "state": "DE-BE (Berlin)",
+    "city": "Berlin",
+    "city_dist": 2.0,
+    "coords": [
+      52.5023538,
+      13.4023459
+    ],
+    "date": "2026-01-07",
+    "dow": "Mi.",
+    "time": "19:00 - 19:00",
+    "orga": "Free Cities Foundation",
+    "orga_www": null,
+    "kontakt": "Jan Bertram",
+    "link": "https://t.me/+QYVsjbuNZblmMTVi",
+    "link_qr": "img/qr_32fb21a4f2ba8144114132edc0cabd7f1cbcbcab.png"
   }
 ]
