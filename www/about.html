@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über Uns - Freiheitliche Stammtische</title>
+    <link rel="icon" type="image/png" href="img/logo_64.png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: var(--container-bg);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            transition: background-color 300ms ease, border-color 300ms ease;
+        }
+
+        h2 {
+            margin-top: 0;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 0.5rem;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="header-left">
+                <img src="img/logo_256.png" alt="Logo" class="site-logo">
+                <h1 class="site-title">Freiheitliche Stammtische</h1>
+            </a>
+            <nav class="header-right">
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">☾</button>
+                <a href="about.html" class="nav-link">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="about-container">
+        <h2>Über dieses Projekt</h2>
+        <p>
+            Willkommen bei den <strong>Freiheitlichen Stammtischen</strong>. Dieses Projekt dient der Vernetzung von
+            freiheitlich denkenden Menschen, die sich in ungezwungener Atmosphäre austauschen möchten.
+        </p>
+        <p>
+            Auf unserer interaktiven Karte finden Sie regelmäßige Treffen, Stammtische und Veranstaltungen in ganz
+            Deutschland. Wir legen Wert auf Eigenverantwortung, Meinungsfreiheit und den konstruktiven Dialog.
+        </p>
+        <h2>Kontakt & Mitmachen</h2>
+        <p>
+            Möchten Sie Ihren eigenen Stammtisch eintragen oder haben Sie Fragen? Nutzen Sie die Kontaktinformationen in
+            der Liste auf der Startseite oder wenden Sie sich an die jeweiligen Veranstalter.
+        </p>
+        <div style="margin-top: 2rem;">
+            <a href="index.html" class="nav-link" style="margin-left: 0;">← Zurück zur Karte</a>
+        </div>
+    </main>
+
+    <script>
+        function initTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+            }
+        }
+        initTheme();
+    </script>
+</body>
+
+</html>

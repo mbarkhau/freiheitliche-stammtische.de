@@ -266,7 +266,7 @@ def main(argv: list[str] = sys.argv[1:]) -> int:
                 "coords": [lat, lon],
                 "date": termin['beginn'].split(" ")[0],
                 "dow": EN_DE_WEEKDAYS.get(termin['wochentag'], termin['wochentag']),
-                "time": termin['beginn'].split(" ")[1] + " - " + termin['ende'].split(" ")[1],
+                "time": termin['uhrzeit'],
                 "orga": termin.get('orga'),
                 "orga_www": termin.get('orga_webseite'),
                 "kontakt": termin.get('kontakt'),

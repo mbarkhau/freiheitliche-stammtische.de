@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freiheitliche Stammtische</title>
 
+    <link rel="icon" type="image/png" href="img/logo_64.png">
+
     <link rel="preload" href="termine.json" as="fetch" type="application/json" crossorigin="anonymous">
     <link rel="stylesheet" href="jsvectormap.css">
     <link rel="stylesheet" href="styles.css">
@@ -19,8 +21,23 @@
 </head>
 
 <body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="header-left">
+                <img src="img/logo_256.png" alt="Logo" class="site-logo">
+                <h1 class="site-title">Freiheitliche Stammtische</h1>
+            </a>
+            <nav class="header-right">
+                <div class="filter-panel">
+                    <input class="table-search" placeholder="Suche..." aria-label="Suche">
+                    <button id="clear-filter" aria-label="Suche leeren">✕</button>
+                </div>
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">☾</button>
+                <a href="about.html" class="nav-link">About</a>
+            </nav>
+        </div>
+    </header>
     <div class="container">
-        <button id="theme-toggle" aria-label="Toggle Dark Mode">☾</button>
         <div id="top-pane">
             <div id="map-container">
                 <div id="map"></div>
@@ -29,10 +46,6 @@
                 <div id="selection-content">
                     <p class="placeholder">Wähle einen Termin auf der Karte aus, um Details zu sehen.</p>
                 </div>
-                <div class="filter-panel">
-                    <input class="table-search" placeholder="Suche..." aria-label="Suche">
-                    <button id="clear-filter" aria-label="Suche leeren">✕</button>
-                </div>
             </div>
         </div>
         <div id="table-container">
@@ -40,8 +53,8 @@
                 <table id="termine-table">
                     <thead>
                         <tr>
-                            <th class="sort" data-sort="date">Datum</th>
                             <th class="sort" data-sort="dow">Tag</th>
+                            <th class="sort" data-sort="date">Datum</th>
                             <th class="sort" data-sort="time">Uhrzeit</th>
                             <th class="sort" data-sort="state">Bundesland</th>
                             <th class="sort" data-sort="plz">PLZ</th>
@@ -156,8 +169,8 @@
                 }
                 const relativeDate = getRelativeDateString(t.date);
                 row.innerHTML = `
-                    <td class="date" title="${relativeDate}">${t.date || ''}</td>
                     <td class="dow">${t.dow || ''}</td>
+                    <td class="date" title="${relativeDate}">${t.date || ''}</td>
                     <td class="time">${t.time || ''}</td>
                     <td class="state">${t.state || ''}</td>
                     <td class="plz">${t.plz || ''}</td>
@@ -386,8 +399,8 @@
             const relativeDate = getRelativeDateString(termin.date);
 
             content.innerHTML = `
-                <p class="full-width"><span class="field-label">Name:</span> ${termin.name || ''}</p>
                 <p><span class="field-label">Datum:</span> ${termin.date || ''} (${termin.dow || ''}) <span style="color: #888; margin-left: 5px;">${relativeDate}</span></p>
+                <p class="full-width"><span class="field-label">Name:</span> ${termin.name || ''}</p>
                 <p><span class="field-label">Stadt:</span> ${termin.city || ''}${distanceText(termin.city_dist)}</p>
                 <p><span class="field-label">Uhrzeit:</span> ${termin.time || ''}</p>
                 <p><span class="field-label">PLZ:</span> ${termin.plz ? `<a href="https://maps.google.com/?q=${termin.plz}}" target="_blank">${termin.plz} 🧭</a>` : ''}</p>
