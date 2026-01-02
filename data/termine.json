@@ -1,16 +1,35 @@
 [
   {
-    "name": "Libertäres Grilltreffen bei München",
-    "beginn": "2025-09-05",
-    "ende": "2025-09-05",
-    "uhrzeit": "ab 18 Uhr",
-    "woche": "KW36",
+    "name": "Free Cities Berlin Meetup",
+    "beginn": "2026-01-07",
+    "ende": "2026-01-07",
+    "uhrzeit": "ab 19 Uhr",
+    "woche": "KW02",
+    "wochentag": "Wednesday",
+    "plz": "10969",
+    "kontakt": "Jan Bertram",
+    "orga": "Free Cities Foundation",
+    "orga_webseite": "https://free-cities.org/meet-ups/",
+    "telegram": "https://t.me/+QYVsjbuNZblmMTVi"
+  },
+  {
+    "name": "Hayek Club Düsseldorf",
+    "uhrzeit": "ab 19 Uhr",
+    "woche": "KW52",
+    "wochentag": "Saturday",
+    "plz": "40213"
+  },
+  {
+    "name": "Libertärer Krypto Stammtisch Berlin",
+    "beginn": "2025-12-12",
+    "ende": "2025-12-12",
+    "uhrzeit": "ab 19 Uhr",
+    "woche": "KW50",
     "wochentag": "Friday",
-    "plz": "85276",
-    "kontakt": "Florian Handwerker",
-    "orga": "DIE LIBERTÄREN",
-    "orga_webseite": "https://die-libertaeren.de/",
-    "e-mail": "florian.handwerker@die-libertaeren.de"
+    "plz": "10117",
+    "orga": "Partei der Vernunft",
+    "orga_webseite": "https://www.parteidervernunft.de/",
+    "e-mail": "info@parteidervernunft.de"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
@@ -26,41 +45,6 @@
     "telegram": "https://t.me/+WgMHpki_VXZkYWIy",
     "signal": "https://signal.group/#CjQKIOy_pCi_ZxLZJMwHHuu44_UTBli-ZUyKeHyxUPxRXbOjEhCewcjd0LonOnGLHZ1vmaH1",
     "e-mail": "LNB@maulbetsch.net"
-  },
-  {
-    "name": "Marktradikales Meetup Berlin",
-    "beginn": "2025-11-07",
-    "ende": "2025-11-07",
-    "uhrzeit": "ab 19 Uhr",
-    "woche": "KW02",
-    "wochentag": "Wednesday",
-    "plz": "10117",
-    "telegram": "https://t.me/marktradikalberlin"
-  },
-  {
-    "name": "Libertärer Stammtisch Hamburg",
-    "beginn": "2025-12-03",
-    "ende": "2025-12-03",
-    "uhrzeit": "ab 19 Uhr",
-    "woche": "KW49",
-    "wochentag": "Wednesday",
-    "plz": "20095",
-    "kontakt": "Ferdinand Steinhöfel",
-    "orga": "DIE LIBERTÄREN",
-    "orga_webseite": "https://die-libertaeren.de/"
-  },
-  {
-    "name": "Libertärer Stammtisch Göppingen/Esslingen",
-    "beginn": "2025-12-04",
-    "ende": "2025-12-04",
-    "uhrzeit": "ab 19 Uhr",
-    "woche": "KW49",
-    "wochentag": "Thursday",
-    "plz": "73033",
-    "kontakt": "Dieter Kirschmann",
-    "orga": "DIE LIBERTÄREN",
-    "orga_webseite": "https://die-libertaeren.de/",
-    "e-mail": "dieter.kirschmann@die-libertaeren.de"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
@@ -95,17 +79,87 @@
     "e-mail": "LNB@maulbetsch.net"
   },
   {
-    "name": "Libertäres Treffen Dortmund",
-    "beginn": "2025-12-11",
-    "ende": "2025-12-11",
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "beginn": "2025-12-04",
+    "ende": "2025-12-04",
+    "uhrzeit": "ab 19:30 Uhr",
+    "woche": "KW49",
+    "wochentag": "Thursday",
+    "plz": "73033",
+    "kontakt": "Dieter Kirschmann",
+    "orga": "DIE LIBERTÄREN",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de"
+  },
+  {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "beginn": "2026-02-05",
+    "ende": "2026-02-05",
+    "uhrzeit": "ab 19:30 Uhr",
+    "woche": "KW06",
+    "wochentag": "Thursday",
+    "plz": "73033",
+    "kontakt": "Dieter Kirschmann",
+    "orga": "DIE LIBERTÄREN",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de"
+  },
+  {
+    "name": "Libertärer Stammtisch Hamburg",
+    "beginn": "2025-12-03",
+    "ende": "2025-12-03",
     "uhrzeit": "ab 19 Uhr",
+    "woche": "KW49",
+    "wochentag": "Wednesday",
+    "plz": "20095",
+    "kontakt": "Ferdinand Steinhöfel",
+    "orga": "DIE LIBERTÄREN",
+    "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Libertärer Stammtisch Hamburg",
+    "beginn": "2026-01-07",
+    "ende": "2026-01-07",
+    "uhrzeit": "ab 19 Uhr",
+    "woche": "KW02",
+    "wochentag": "Wednesday",
+    "plz": "20095",
+    "kontakt": "Ferdinand Steinhöfel",
+    "orga": "DIE LIBERTÄREN",
+    "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Libertärer Stammtisch in Balingen / Württemberg",
+    "beginn": "2025-12-11",
+    "ende": "2025-12-10",
+    "uhrzeit": "ab 19:30 Uhr",
     "woche": "KW50",
     "wochentag": "Thursday",
-    "plz": "44263",
-    "kontakt": "Alexander Expander",
-    "orga": "Bündnis Libertärer",
-    "orga_webseite": "https://buendnis-libertaerer.de/",
-    "e-mail": "info@buendnis-libertaerer.de"
+    "plz": "72336",
+    "kontakt": "Fritz Maulbetsch",
+    "telegram": "https://t.me/FreeFritz"
+  },
+  {
+    "name": "Libertärer Stammtisch in Balingen / Württemberg",
+    "beginn": "2026-01-08",
+    "ende": "2026-01-08",
+    "uhrzeit": "ab 19:30 Uhr",
+    "woche": "KW02",
+    "wochentag": "Thursday",
+    "plz": "72336",
+    "kontakt": "Fritz Maulbetsch",
+    "telegram": "https://t.me/FreeFritz"
+  },
+  {
+    "name": "Libertärer Stammtisch Kaiserslautern",
+    "uhrzeit": "ab 19 Uhr",
+    "woche": "KW52",
+    "wochentag": "Saturday",
+    "plz": "67657",
+    "kontakt": "Tim Leonhardt",
+    "orga": "DIE LIBERTÄREN",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "e-mail": "tim.leonhardt@die-libertaeren.de"
   },
   {
     "name": "Libertärer Stammtisch Magdeburg",
@@ -121,74 +175,17 @@
     "e-mail": "events@die-libertaeren.de"
   },
   {
-    "name": "Libertärer Stammtisch in Balingen / Württemberg",
-    "beginn": "2025-12-11",
-    "ende": "2025-12-10",
-    "uhrzeit": "ab 19 Uhr",
-    "woche": "KW50",
-    "wochentag": "Thursday",
-    "plz": "72336",
-    "kontakt": "Fritz Maulbetsch",
-    "telegram": "https://t.me/FreeFritz"
-  },
-  {
-    "name": "Libertärer Krypto Stammtisch Berlin",
-    "beginn": "2025-12-12",
-    "ende": "2025-12-12",
-    "uhrzeit": "ab 19 Uhr",
-    "woche": "KW50",
-    "wochentag": "Friday",
-    "plz": "10117",
-    "orga": "Partei der Vernunft",
-    "orga_webseite": "https://www.parteidervernunft.de/",
-    "e-mail": "info@parteidervernunft.de"
-  },
-  {
-    "name": "Libertäres Treffen in Meißen / Sachsen",
-    "beginn": "2025-12-16",
-    "ende": "2025-12-16",
-    "uhrzeit": "ab 19 Uhr",
-    "woche": "KW51",
-    "wochentag": "Tuesday",
-    "plz": "01662",
-    "orga": "DIE LIBERTÄREN",
-    "orga_webseite": "https://die-libertaeren.de/"
-  },
-  {
-    "name": "Marktradikales Meetup Grevenbroich",
-    "beginn": "2025-12-19",
-    "ende": "2025-12-12",
-    "uhrzeit": "ab 19 Uhr",
-    "woche": "KW51",
-    "wochentag": "Friday",
-    "plz": "41515",
-    "kontakt": "Martin Moczarski",
-    "orga": "Eigentümlich Frei",
-    "orga_webseite": "https://ef-magazin.de/",
-    "e-mail": "moczarski@ef-magazin.de"
-  },
-  {
-    "name": "Libertärer Stammtisch Hamburg",
-    "beginn": "2026-01-07",
-    "ende": "2026-01-07",
-    "uhrzeit": "ab 19 Uhr",
+    "name": "Libertärer Stammtisch Magdeburg",
+    "beginn": "2026-01-08",
+    "ende": "2026-01-08",
+    "uhrzeit": "ab 19:30 Uhr",
     "woche": "KW02",
-    "wochentag": "Wednesday",
-    "plz": "20095",
-    "kontakt": "Ferdinand Steinhöfel",
-    "orga": "DIE LIBERTÄREN",
-    "orga_webseite": "https://die-libertaeren.de/"
-  },
-  {
-    "name": "Libertärer Stammtisch Kaiserslautern",
-    "uhrzeit": "ab 19 Uhr",
-    "woche": "KW52",
-    "wochentag": "Saturday",
-    "plz": "67657",
-    "kontakt": "Tim Leonhardt",
+    "wochentag": "Thursday",
+    "plz": "39104",
+    "kontakt": "Mathias Hummel",
     "orga": "DIE LIBERTÄREN",
     "orga_webseite": "https://die-libertaeren.de/",
-    "e-mail": "tim.leonhardt@die-libertaeren.de"
+    "e-mail": "events@die-libertaeren.de"
   },
   {
     "name": "Libertärer Stammtisch München",
@@ -204,23 +201,76 @@
     "e-mail": "florian.handwerker@die-libertaeren.de"
   },
   {
-    "name": "Hayek Club Düsseldorf",
-    "uhrzeit": "ab 19 Uhr",
-    "woche": "KW52",
-    "wochentag": "Saturday",
-    "plz": "40213"
+    "name": "Libertäres Grilltreffen bei München",
+    "beginn": "2025-09-05",
+    "ende": "2025-09-05",
+    "uhrzeit": "ab 18 Uhr",
+    "woche": "KW36",
+    "wochentag": "Friday",
+    "plz": "85276",
+    "kontakt": "Florian Handwerker",
+    "orga": "DIE LIBERTÄREN",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "e-mail": "florian.handwerker@die-libertaeren.de"
   },
   {
-    "name": "Free Cities Berlin Meetup",
-    "beginn": "2026-01-07",
-    "ende": "2026-01-07",
+    "name": "Libertäres Treffen Dortmund",
+    "beginn": "2025-12-11",
+    "ende": "2025-12-11",
+    "uhrzeit": "ab 19 Uhr",
+    "woche": "KW50",
+    "wochentag": "Thursday",
+    "plz": "44263",
+    "kontakt": "Alexander Expander",
+    "orga": "Bündnis Libertärer",
+    "orga_webseite": "https://buendnis-libertaerer.de/",
+    "e-mail": "info@buendnis-libertaerer.de"
+  },
+  {
+    "name": "Libertäres Treffen in Meißen / Sachsen",
+    "beginn": "2025-12-16",
+    "ende": "2025-12-16",
+    "uhrzeit": "ab 19 Uhr",
+    "woche": "KW51",
+    "wochentag": "Tuesday",
+    "plz": "01662",
+    "orga": "DIE LIBERTÄREN",
+    "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Marktradikales Meetup Berlin",
+    "beginn": "2025-11-07",
+    "ende": "2025-11-07",
     "uhrzeit": "ab 19 Uhr",
     "woche": "KW02",
     "wochentag": "Wednesday",
-    "plz": "10969",
-    "kontakt": "Jan Bertram",
-    "orga": "Free Cities Foundation",
-    "orga_webseite": "https://free-cities.org/meet-ups/",
-    "telegram": "https://t.me/+QYVsjbuNZblmMTVi"
+    "plz": "10117",
+    "telegram": "https://t.me/marktradikalberlin"
+  },
+  {
+    "name": "Marktradikales Meetup Grevenbroich",
+    "beginn": "2025-12-19",
+    "ende": "2025-12-19",
+    "uhrzeit": "ab 19 Uhr",
+    "woche": "KW51",
+    "wochentag": "Friday",
+    "plz": "41515",
+    "kontakt": "Martin Moczarski",
+    "orga": "Eigentümlich Frei",
+    "orga_webseite": "https://ef-magazin.de/",
+    "e-mail": "moczarski@ef-magazin.de"
+  },
+  {
+    "name": "Marktradikales Meetup Grevenbroich",
+    "beginn": "2026-01-16",
+    "ende": "2026-01-16",
+    "uhrzeit": "ab 19 Uhr",
+    "woche": "KW03",
+    "wochentag": "Friday",
+    "plz": "41515",
+    "kontakt": "Martin Moczarski",
+    "orga": "Eigentümlich Frei",
+    "orga_webseite": "https://ef-magazin.de/",
+    "e-mail": "moczarski@ef-magazin.de"
   }
 ]
