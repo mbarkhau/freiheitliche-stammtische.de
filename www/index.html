@@ -225,6 +225,84 @@
         let globalTermine = null;
         let globalMapMarkers = null;
 
+        const stateFlagUrls = {
+            'DE-BE': '/img/wappen-DE-BE.png',
+            'DE-ST': '/img/wappen-DE-ST.png',
+            'DE-RP': '/img/wappen-DE-RP.png',
+            'DE-BB': '/img/wappen-DE-BB.png',
+            'DE-NI': '/img/wappen-DE-NI.png',
+            'DE-MV': '/img/wappen-DE-MV.png',
+            'DE-TH': '/img/wappen-DE-TH.png',
+            'DE-BW': '/img/wappen-DE-BW.png',
+            'DE-HH': '/img/wappen-DE-HH.png',
+            'DE-SH': '/img/wappen-DE-SH.png',
+            'DE-NW': '/img/wappen-DE-NW.png',
+            'DE-SN': '/img/wappen-DE-SN.png',
+            'DE-HB': '/img/wappen-DE-HB.png',
+            'DE-BY': '/img/wappen-DE-BY.png',
+            'DE-HE': '/img/wappen-DE-HE.png',
+            'DE-SL': '/img/wappen-DE-SL.png',
+
+        };
+
+        function setupMapPatterns(svgElement) {
+            let defs = svgElement.querySelector('defs');
+            if (!defs) {
+                defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
+                svgElement.insertBefore(defs, svgElement.firstChild);
+            }
+
+            // Find all region paths to get their bounding boxes
+            const regions = svgElement.querySelectorAll('.jvm-region');
+            const regionBBoxes = {};
+            regions.forEach(path => {
+                const code = path.getAttribute('data-code');
+                if (code) {
+                    regionBBoxes[code] = path.getBBox();
+                }
+            });
+
+            Object.entries(stateFlagUrls).forEach(([code, url]) => {
+                const patternId = 'flag-' + code;
+                const bbox = regionBBoxes[code];
+                if (!bbox) return;
+
+                const existing = document.getElementById(patternId);
+                if (existing) {return}
+
+                const pattern = document.createElementNS('http://www.w3.org/2000/svg', 'pattern');
+                pattern.setAttribute('id', patternId);
+                pattern.setAttribute('patternUnits', 'userSpaceOnUse');
+                pattern.setAttribute('x', bbox.x);
+                pattern.setAttribute('y', bbox.y);
+                pattern.setAttribute('width', bbox.width);
+                pattern.setAttribute('height', bbox.height);
+
+                // Background Rect (White)
+                const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+                rect.setAttribute('x', '0');
+                rect.setAttribute('y', '0');
+                rect.setAttribute('width', bbox.width);
+                rect.setAttribute('height', bbox.height);
+                rect.setAttribute('fill', '#ffffff');
+                pattern.appendChild(rect);
+
+                // Centered Flag Image - uses 80% of the bounding box space
+                const image = document.createElementNS('http://www.w3.org/2000/svg', 'image');
+                image.setAttribute('href', url);
+                image.setAttributeNS('http://www.w3.org/1999/xlink', 'href', url);
+                image.setAttribute('x', (bbox.width < 100) ? bbox.width * 0.2 : bbox.width / 2 - 50);
+                image.setAttribute('y', (bbox.height < 100) ? bbox.height * 0.2 : bbox.height / 2 - 50);
+                image.setAttribute('width', Math.min(bbox.width * 0.6, 100));
+                image.setAttribute('height', Math.min(bbox.height * 0.6, 100));
+                image.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+
+                pattern.appendChild(image);
+                defs.appendChild(pattern);
+            });
+        }
+
+
         function debounce(func, wait) {
             let timeout;
             return function () {
@@ -320,10 +398,19 @@
                 backgroundColor: 'transparent',
                 regionStyle: {
                     initial: {
-                        fill: colors.fill,
+                        fill: '#ffffff',
                         stroke: colors.stroke,
                         strokeWidth: 0.5
                     },
+                },
+                series: {
+                    regions: [{
+                        attributes: Object.keys(stateFlagUrls).reduce((acc, code) => {
+                            acc[code] = 'url(#flag-' + code + ')';
+                            return acc;
+                        }, {}),
+                        attribute: 'fill'
+                    }]
                 },
                 zoomButtons: false,
                 zoomOnScroll: true,
@@ -377,6 +464,12 @@
                     }
                 }
             });
+
+            // Set up flag patterns in the SVG
+            const svgElement = document.querySelector('#map svg');
+            if (svgElement) {
+                setupMapPatterns(svgElement);
+            }
 
             // Handle clicks outside map elements (regions/markers) to clear filter
             document.getElementById('map').addEventListener('click', function (event) {
