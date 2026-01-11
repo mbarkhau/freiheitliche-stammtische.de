@@ -232,8 +232,10 @@ def main(argv: list[str] = sys.argv[1:]) -> int:
     for termin in termine:
         link = termin.get('telegram') or termin.get('signal')
         if link:
-            link_qr_path = www_dir / "img" / ("qr_" + hl.sha1(link.encode("utf-8")).hexdigest() + ".png")
-            img = qrcode.make(link, version=6, error_correction=qrcode.constants.ERROR_CORRECT_M)
+            qr_digest = hl.sha1(link.encode("utf-8")).hexdigest()
+            link_qr_path = www_dir / "img" / ("qr_" + qr_digest + ".png")
+            box_size = 3
+            img = qrcode.make(link, box_size=box_size, version=6, error_correction=qrcode.constants.ERROR_CORRECT_H)
             if termin.get('telegram'):
                 overlay = Image.open(www_dir / "img" / "telegram_128.png")
             elif termin.get('signal'):
@@ -242,7 +244,7 @@ def main(argv: list[str] = sys.argv[1:]) -> int:
                 raise ValueError(f"Unknown link type: {termin}")
 
             overlay = overlay.convert("RGBA")
-            overlay = overlay.resize((96, 96))
+            overlay = overlay.resize((box_size * 12, box_size * 12))
             img = img.convert("RGBA")
             img.paste(overlay, (img.width // 2 - overlay.width // 2, img.height // 2 - overlay.height // 2), overlay)
             img.save(link_qr_path)
@@ -270,6 +272,7 @@ def main(argv: list[str] = sys.argv[1:]) -> int:
                 "orga": termin.get('orga'),
                 "orga_www": termin.get('orga_webseite'),
                 "kontakt": termin.get('kontakt'),
+                "e-mail": termin.get('e-mail'),
                 "link": link,
                 "link_qr": "img/" + link_qr_path.name if link_qr_path else None,
             })

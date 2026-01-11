@@ -21,6 +21,98 @@
 </head>
 
 <body>
+    <!-- SVG Patterns for State Colors -->
+    <svg style="position: absolute; width: 0; height: 0; pointer-events: none;" aria-hidden="true">
+        <defs>
+            <pattern id="pattern-DE-BW" patternUnits="userSpaceOnUse" width="10" height="10"
+                patternTransform="rotate(45)">
+                <rect width="5" height="10" fill="#111"></rect>
+                <rect x="5" width="5" height="10" fill="#FC0"></rect>
+            </pattern>
+            <pattern id="pattern-DE-BY" patternUnits="userSpaceOnUse" width="10" height="10"
+                patternTransform="rotate(45)">
+                <rect width="5" height="10" fill="#EEE"></rect>
+                <rect x="5" width="5" height="10" fill="#09F"></rect>
+            </pattern>
+            <pattern id="pattern-DE-BE" patternUnits="userSpaceOnUse" width="10" height="10"
+                patternTransform="rotate(45)">
+                <rect width="5" height="10" fill="#EEE"></rect>
+                <rect x="5" width="5" height="10" fill="#D00"></rect>
+            </pattern>
+            <pattern id="pattern-DE-BB" patternUnits="userSpaceOnUse" width="10" height="10"
+                patternTransform="rotate(45)">
+                <rect width="5" height="10" fill="#EEE"></rect>
+                <rect x="5" width="5" height="10" fill="#D00"></rect>
+            </pattern>
+            <pattern id="pattern-DE-HB" patternUnits="userSpaceOnUse" width="8" height="8"
+                patternTransform="rotate(45)">
+                <rect width="4" height="8" fill="#D00"></rect>
+                <rect x="4" width="4" height="8" fill="#EEE"></rect>
+            </pattern>
+            <pattern id="pattern-DE-HH" patternUnits="userSpaceOnUse" width="10" height="10"
+                patternTransform="rotate(45)">
+                <rect width="5" height="10" fill="#D00"></rect>
+                <rect x="5" width="5" height="10" fill="#EEE"></rect>
+            </pattern>
+            <pattern id="pattern-DE-HE" patternUnits="userSpaceOnUse" width="10" height="10"
+                patternTransform="rotate(45)">
+                <rect width="5" height="10" fill="#D00"></rect>
+                <rect x="5" width="5" height="10" fill="#EEE"></rect>
+            </pattern>
+            <pattern id="pattern-DE-MV" patternUnits="userSpaceOnUse" width="12" height="12"
+                patternTransform="rotate(45)">
+                <rect width="3" height="12" fill="#039"></rect>
+                <rect x="3" width="3" height="12" fill="#EEE"></rect>
+                <rect x="6" width="3" height="12" fill="#FC0"></rect>
+                <rect x="9" width="3" height="12" fill="#D00"></rect>
+            </pattern>
+            <pattern id="pattern-DE-NI" patternUnits="userSpaceOnUse" width="12" height="12"
+                patternTransform="rotate(45)">
+                <rect width="4" height="12" fill="#111"></rect>
+                <rect x="4" width="4" height="12" fill="#D00"></rect>
+                <rect x="8" width="4" height="12" fill="#FC0"></rect>
+            </pattern>
+            <pattern id="pattern-DE-NW" patternUnits="userSpaceOnUse" width="12" height="12"
+                patternTransform="rotate(45)">
+                <rect width="4" height="12" fill="#393"></rect>
+                <rect x="4" width="4" height="12" fill="#EEE"></rect>
+                <rect x="8" width="4" height="12" fill="#D00"></rect>
+            </pattern>
+            <pattern id="pattern-DE-RP" patternUnits="userSpaceOnUse" width="12" height="12"
+                patternTransform="rotate(45)">
+                <rect width="4" height="12" fill="#111"></rect>
+                <rect x="4" width="4" height="12" fill="#D00"></rect>
+                <rect x="8" width="4" height="12" fill="#FC0"></rect>
+            </pattern>
+            <pattern id="pattern-DE-SL" patternUnits="userSpaceOnUse" width="12" height="12"
+                patternTransform="rotate(45)">
+                <rect width="4" height="12" fill="#111"></rect>
+                <rect x="4" width="4" height="12" fill="#D00"></rect>
+                <rect x="8" width="4" height="12" fill="#FC0"></rect>
+            </pattern>
+            <pattern id="pattern-DE-SN" patternUnits="userSpaceOnUse" width="10" height="10"
+                patternTransform="rotate(45)">
+                <rect width="5" height="10" fill="#EEE"></rect>
+                <rect x="5" width="5" height="10" fill="#093"></rect>
+            </pattern>
+            <pattern id="pattern-DE-ST" patternUnits="userSpaceOnUse" width="10" height="10"
+                patternTransform="rotate(45)">
+                <rect width="5" height="10" fill="#FC0"></rect>
+                <rect x="5" width="5" height="10" fill="#111"></rect>
+            </pattern>
+            <pattern id="pattern-DE-SH" patternUnits="userSpaceOnUse" width="12" height="12"
+                patternTransform="rotate(45)">
+                <rect width="4" height="12" fill="#039"></rect>
+                <rect x="4" width="4" height="12" fill="#EEE"></rect>
+                <rect x="8" width="4" height="12" fill="#D00"></rect>
+            </pattern>
+            <pattern id="pattern-DE-TH" patternUnits="userSpaceOnUse" width="10" height="10"
+                patternTransform="rotate(45)">
+                <rect width="5" height="10" fill="#EEE"></rect>
+                <rect x="5" width="5" height="10" fill="#D00"></rect>
+            </pattern>
+        </defs>
+    </svg>
     <header class="site-header">
         <div class="header-container">
             <a href="index.html" class="header-left">
@@ -289,38 +381,36 @@
 
             const colors = getMapColors();
 
-            currentMap = new jsVectorMap({
-                markersSelectable: true,
-                markersSelectableOne: true,
-                selector: '#map',
-                map: 'de_mill',
-                backgroundColor: 'transparent',
-                regionStyle: {
-                    initial: {
-                        fill: '#ffffff',
-                        stroke: colors.stroke,
-                        strokeWidth: 0.5
+            try {
+                console.log("Initializing map with markers:", mapMarkers.length);
+                currentMap = new jsVectorMap({
+                    markersSelectable: true,
+                    markersSelectableOne: true,
+                    selector: '#map',
+                    map: 'de_mill',
+                    backgroundColor: 'transparent',
+                    regionStyle: {
+                        initial: {
+                            fill: '#555555', // Solid gray for now
+                            stroke: colors.stroke,
+                            strokeWidth: 0.5
+                        },
                     },
-                },
-                zoomButtons: false,
-                zoomOnScroll: true,
-                markers: [...mapMarkers],
-                onMarkerTooltipShow: function (event, tooltip, index) {
-                    // Marker tooltip only
-                },
-                onMarkerTooltipHide: function () {
-                    // console.log('onMarkerTooltipHide', arguments);
-                },
-                onMarkerClick: function (event, index) {
-                    const marker = globalMapMarkers[index];
-                    const originalIndex = marker.ids[0]; // Get the first event at this location
-                    const termin = globalTermine[originalIndex];
-                    updateSelectionPanel(termin, true);
-                },
-                onRegionClick: function (event, stateCode) {
-                    // Interaction removed as per request
-                },
-            });
+                    zoomButtons: false,
+                    zoomOnScroll: true,
+                    markers: [...mapMarkers],
+                    onMarkerClick: function (event, index) {
+                        const marker = globalMapMarkers[index];
+                        const originalIndex = marker.ids[0];
+                        const termin = globalTermine[originalIndex];
+                        updateSelectionPanel(termin, true);
+                    },
+                    onRegionClick: function (event, stateCode) { },
+                });
+            } catch (e) {
+                console.error("Map Error:", e);
+                document.getElementById('map').innerHTML = '<p style="color: white; padding: 10px;">Fehler beim Laden der Karte.</p>';
+            }
 
 
             // Handle clicks outside map elements (regions/markers) to clear filter
@@ -519,8 +609,7 @@
 
             initMap(mapMarkers, termine);
             initSelection(termine);
-            // Trigger resize to ensure map adjusts to the new layout (panel visibility)
-            handleResize();
+            // handleResize removed to avoid redundant initMap call
         }
 
         window.addEventListener('DOMContentLoaded', loadData);
