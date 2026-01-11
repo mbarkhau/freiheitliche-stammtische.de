@@ -6,7 +6,7 @@
     --table-font-size: 14px;
     --table-header-bg: #2c2c2c;
     --table-row-hover: #2a2a2a;
-    --map-bg: #555;
+    --map-bg: #114477;
     --map-region-fill: #111;
     --map-region-stroke: #888;
     --button-bg: #333;
@@ -23,7 +23,7 @@
     --border-color: #bbb;
     --table-header-bg: #eee;
     --table-row-hover: #ccc;
-    --map-bg: #AAA;
+    --map-bg: #114477;
     --map-region-fill: #EEE;
     --button-bg: #e0e0e0;
     --button-text: #333;
@@ -74,6 +74,7 @@ body {
     flex-direction: column;
     flex: 1;
     height: 100%;
+    /*    height: calc(100% - 13.5rem);*/
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -88,18 +89,73 @@ body {
 }
 
 #selection-panel {
-    width: 40em;
-    margin: 0 auto;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+    background: var(--container-bg);
+    max-height: 90vh;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 2em;
+    width: 30rem;
+    max-width: calc(100vw - 40px);
 }
 
-@media (max-width: 42em) {
-    #selection-panel {
-        font-size: 2.5vw;
-    }
+#modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
 }
+
+#close-selection {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1002;
+}
+
+#close-selection:hover {
+    color: #888;
+}
+
+#map-container {
+    position: relative;
+    background: var(--map-bg);
+    /* border-right: 1px solid var(--border-color); Moved to media query logic */
+    transition: background-color 300ms ease, border-color 300ms ease;
+}
+
+#table-container {
+    /* background: var(--container-bg);  Moved to info-container */
+    box-sizing: border-box;
+    background: var(--container-bg);
+    /* Allow horizontal scrolling */
+    /* transition: background-color 300ms ease; Removed redundancy */
+    flex: 1;
+    /* Take remaining space */
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
 
 /* Mobile/Portrait Layout */
-@media (max-aspect-ratio: 1/1) {
+@media (max-width: 45rem) {
     #top-pane {
         /* On mobile, height is determined by children content, 
            but map has specific height logic. */
@@ -108,15 +164,14 @@ body {
     }
 
     #map-container {
-        height: 33vh;
+        height: 45vh;
         /* Fixed height for map on mobile */
         width: 100%;
     }
-
 }
 
 /* Desktop/Landscape Layout */
-@media (min-aspect-ratio: 1/1) {
+@media (min-width: 45rem) {
     .container {
         max-width: 130vh;
         margin: 0 auto;
@@ -133,18 +188,8 @@ body {
         height: 100%;
         flex: 1;
     }
-
-    #selection-panel {
-        height: 100%;
-    }
 }
 
-#map-container {
-    position: relative;
-    background: var(--map-bg);
-    /* border-right: 1px solid var(--border-color); Moved to media query logic */
-    transition: background-color 300ms ease, border-color 300ms ease;
-}
 
 #map {
     width: 100%;
@@ -152,30 +197,34 @@ body {
 }
 
 #selection-panel {
-    padding: 1em;
-    min-height: 24rem;
     color: var(--text-color);
-    display: none;
-    /* Hidden by default until selection */
-    flex-shrink: 0;
     overflow-y: auto;
     transition: background-color 300ms ease, color 300ms ease;
     box-sizing: border-box;
+    display: none;
     flex-direction: column;
 }
 
 
 #selection-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-    /* Allow rows to be dense if content varies, though 1fr 1fr is standard */
     word-break: break-word;
     margin-bottom: 1em;
+    display: grid;
+    grid-template-columns: 7rem 1fr;
+    gap: 0.5rem 1rem;
+    align-items: baseline;
 }
 
-.full-width {
+#selection-content .placeholder {
+    display: block;
     grid-column: 1 / -1;
+    color: #888;
+    font-style: italic;
+}
+
+#selection-content .qr-container {
+    grid-column: 1 / -1;
+    margin-top: 10px;
 }
 
 #selection-panel h3 {
@@ -183,29 +232,14 @@ body {
     margin-bottom: 10px;
 }
 
-#selection-panel p {
-    margin: 5px 0;
-    line-height: 1.4;
+#selection-content p {
+    display: contents;
 }
 
 #selection-panel .field-label {
     font-weight: bold;
     color: #888;
-    margin-right: 5px;
-}
-
-#table-container {
-    /* background: var(--container-bg);  Moved to info-container */
-    box-sizing: border-box;
-    background: var(--container-bg);
-    /* Allow horizontal scrolling */
-    /* transition: background-color 300ms ease; Removed redundancy */
-    flex: 1;
-    /* Take remaining space */
-    border-top: 1px solid var(--border-color);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+    text-align: right;
 }
 
 #termine-list {
@@ -254,18 +288,9 @@ tr:hover {
     cursor: pointer;
 }
 
-tr.highlight {
-    background-color: var(--table-row-hover);
-    outline: 2px solid var(--border-color);
-}
-
 tr.selected {
     background-color: var(--table-row-hover);
     outline: 2px solid #007bff;
-}
-
-tr.past-date {
-    opacity: 0.5;
 }
 
 th.sort {
@@ -285,8 +310,8 @@ th.sort.desc::after {
     color: var(--button-text);
     border: 1px solid var(--border-color);
     padding: 0;
-    width: 35px;
-    height: 35px;
+    width: 2.5rem;
+    height: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -295,12 +320,6 @@ th.sort.desc::after {
     font-size: 20px;
     transition: background-color 300ms ease, color 300ms ease, border-color 300ms ease;
     flex-shrink: 0;
-}
-
-@media (max-aspect-ratio: 1/1) {
-    #theme-toggle {
-        right: 1%;
-    }
 }
 
 .filter-panel {
@@ -364,6 +383,7 @@ th.sort.desc::after {
     background-color: var(--container-bg);
     border-bottom: 1px solid var(--border-color);
     transition: background-color 300ms ease, border-color 300ms ease;
+    height: 3.5rem;
 }
 
 .header-container {
@@ -373,7 +393,7 @@ th.sort.desc::after {
     padding: 0.5rem 1rem;
 }
 
-@media (min-aspect-ratio: 1/1) {
+@media (min-width: 45rem) {
     .header-container {
         max-width: 130vh;
         margin: 0 auto;

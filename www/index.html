@@ -42,10 +42,12 @@
             <div id="map-container">
                 <div id="map"></div>
             </div>
-            <div id="selection-panel">
-                <div id="selection-content">
-                    <p class="placeholder">Wähle einen Termin auf der Karte aus, um Details zu sehen.</p>
-                </div>
+        </div>
+        <div id="modal-overlay"></div>
+        <div id="selection-panel">
+            <button id="close-selection" aria-label="Schließen">✕</button>
+            <div id="selection-content">
+                <p class="placeholder">Wähle einen Termin auf der Karte aus, um Details zu sehen.</p>
             </div>
         </div>
         <div id="table-container">
@@ -53,13 +55,13 @@
                 <table id="termine-table">
                     <thead>
                         <tr>
-                            <th class="sort" data-sort="dow">Tag</th>
                             <th class="sort" data-sort="date">Datum</th>
+                            <th class="sort" data-sort="dow">Tag</th>
                             <th class="sort" data-sort="time">Uhrzeit</th>
+                            <th class="sort" data-sort="name">Name</th>
                             <th class="sort" data-sort="state">Bundesland</th>
                             <th class="sort" data-sort="plz">PLZ</th>
                             <th class="sort" data-sort="city">Stadt (Entfernung)</th>
-                            <th class="sort" data-sort="name">Name</th>
                             <th class="sort" data-sort="orga">Veranstalter</th>
                             <th class="sort" data-sort="kontakt">Kontakt</th>
                         </tr>
@@ -154,66 +156,38 @@
             return carDistance < 20 ? '' : ' (' + carDistance + ' km)';
         }
 
-        let isTableHovering = false;
+        function formatKontakt(kontakt, email) {
+            if (!kontakt && !email) return '';
+            if (email) {
+                const recipient = kontakt ? `${kontakt.trim()} <${email.trim()}>` : email.trim();
+                return `<a href="mailto:${encodeURIComponent(recipient)}">${kontakt || email}</a>`;
+            }
+            return kontakt || '';
+        }
 
         function populateTable(termine) {
             const tbody = document.querySelector('#termine-table tbody');
             tbody.innerHTML = '';
             const today = new Date().toISOString().split('T')[0];
 
-            termine.forEach((t, i) => {
+            termine.forEach(t => {
                 const row = document.createElement('tr');
-                row.id = 'marker-' + i;
-                if (t.date && t.date < today) {
-                    row.classList.add('past-date');
-                }
+                row.id = 'marker-' + t.originalIndex;
                 const relativeDate = getRelativeDateString(t.date);
                 row.innerHTML = `
-                    <td class="dow">${t.dow || ''}</td>
                     <td class="date" title="${relativeDate}">${t.date || ''}</td>
+                    <td class="dow">${t.dow || ''}</td>
                     <td class="time">${t.time || ''}</td>
+                    <td class="name">${t.name || ''}</td>
                     <td class="state">${t.state || ''}</td>
                     <td class="plz">${t.plz || ''}</td>
                     <td class="city">${t.city || ''}${distanceText(t.city_dist)}</td>
-                    <td class="name">${t.name || ''}</td>
                     <td class="orga">${t.orga_www ? `<a href="${t.orga_www}" target="_blank">${t.orga || 'Link'}</a>` : (t.orga || '')}</td>
-                    <td class="kontakt">${t.kontakt || ''}</td>
+                    <td class="kontakt">${formatKontakt(t.kontakt, t['e-mail'])}</td>
                 `;
 
-                row.addEventListener('mouseenter', () => {
-                    isTableHovering = true;
-                    // Use the pre-calculated markerIndex from the event object
-                    const markerIndex = t.markerIndex;
-                    if (markerIndex !== undefined && markerIndex !== null) {
-                        // jsVectorMap renders markers in order.
-                        const markers = document.querySelectorAll('.jvm-marker');
-                        if (markers && markers[markerIndex]) {
-                            const marker = markers[markerIndex];
-                            marker.dispatchEvent(new MouseEvent('mouseover', { bubbles: true }));
-                            // Tooltip positioning often requires mousemove
-                            const rect = marker.getBoundingClientRect();
-                            marker.dispatchEvent(new MouseEvent('mousemove', {
-                                bubbles: true,
-                                clientX: rect.left + rect.width / 2,
-                                clientY: rect.top + rect.height / 2
-                            }));
-                        }
-                    }
-                });
-
-                row.addEventListener('mouseleave', () => {
-                    isTableHovering = false;
-                    const markerIndex = t.markerIndex;
-                    if (markerIndex !== undefined && markerIndex !== null) {
-                        const markers = document.querySelectorAll('.jvm-marker');
-                        if (markers && markers[markerIndex]) {
-                            markers[markerIndex].dispatchEvent(new MouseEvent('mouseout', { bubbles: true }));
-                        }
-                    }
-                });
-
                 row.addEventListener('click', () => {
-                    updateSelectionPanel(t);
+                    updateSelectionPanel(t, true);
                 });
 
                 tbody.appendChild(row);
@@ -225,82 +199,7 @@
         let globalTermine = null;
         let globalMapMarkers = null;
 
-        const stateFlagUrls = {
-            'DE-BE': '/img/wappen-DE-BE.png',
-            'DE-ST': '/img/wappen-DE-ST.png',
-            'DE-RP': '/img/wappen-DE-RP.png',
-            'DE-BB': '/img/wappen-DE-BB.png',
-            'DE-NI': '/img/wappen-DE-NI.png',
-            'DE-MV': '/img/wappen-DE-MV.png',
-            'DE-TH': '/img/wappen-DE-TH.png',
-            'DE-BW': '/img/wappen-DE-BW.png',
-            'DE-HH': '/img/wappen-DE-HH.png',
-            'DE-SH': '/img/wappen-DE-SH.png',
-            'DE-NW': '/img/wappen-DE-NW.png',
-            'DE-SN': '/img/wappen-DE-SN.png',
-            'DE-HB': '/img/wappen-DE-HB.png',
-            'DE-BY': '/img/wappen-DE-BY.png',
-            'DE-HE': '/img/wappen-DE-HE.png',
-            'DE-SL': '/img/wappen-DE-SL.png',
 
-        };
-
-        function setupMapPatterns(svgElement) {
-            let defs = svgElement.querySelector('defs');
-            if (!defs) {
-                defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
-                svgElement.insertBefore(defs, svgElement.firstChild);
-            }
-
-            // Find all region paths to get their bounding boxes
-            const regions = svgElement.querySelectorAll('.jvm-region');
-            const regionBBoxes = {};
-            regions.forEach(path => {
-                const code = path.getAttribute('data-code');
-                if (code) {
-                    regionBBoxes[code] = path.getBBox();
-                }
-            });
-
-            Object.entries(stateFlagUrls).forEach(([code, url]) => {
-                const patternId = 'flag-' + code;
-                const bbox = regionBBoxes[code];
-                if (!bbox) return;
-
-                const existing = document.getElementById(patternId);
-                if (existing) {return}
-
-                const pattern = document.createElementNS('http://www.w3.org/2000/svg', 'pattern');
-                pattern.setAttribute('id', patternId);
-                pattern.setAttribute('patternUnits', 'userSpaceOnUse');
-                pattern.setAttribute('x', bbox.x);
-                pattern.setAttribute('y', bbox.y);
-                pattern.setAttribute('width', bbox.width);
-                pattern.setAttribute('height', bbox.height);
-
-                // Background Rect (White)
-                const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-                rect.setAttribute('x', '0');
-                rect.setAttribute('y', '0');
-                rect.setAttribute('width', bbox.width);
-                rect.setAttribute('height', bbox.height);
-                rect.setAttribute('fill', '#ffffff');
-                pattern.appendChild(rect);
-
-                // Centered Flag Image - uses 80% of the bounding box space
-                const image = document.createElementNS('http://www.w3.org/2000/svg', 'image');
-                image.setAttribute('href', url);
-                image.setAttributeNS('http://www.w3.org/1999/xlink', 'href', url);
-                image.setAttribute('x', (bbox.width < 100) ? bbox.width * 0.2 : bbox.width / 2 - 50);
-                image.setAttribute('y', (bbox.height < 100) ? bbox.height * 0.2 : bbox.height / 2 - 50);
-                image.setAttribute('width', Math.min(bbox.width * 0.6, 100));
-                image.setAttribute('height', Math.min(bbox.height * 0.6, 100));
-                image.setAttribute('preserveAspectRatio', 'xMidYMid meet');
-
-                pattern.appendChild(image);
-                defs.appendChild(pattern);
-            });
-        }
 
 
         function debounce(func, wait) {
@@ -403,73 +302,26 @@
                         strokeWidth: 0.5
                     },
                 },
-                series: {
-                    regions: [{
-                        attributes: Object.keys(stateFlagUrls).reduce((acc, code) => {
-                            acc[code] = 'url(#flag-' + code + ')';
-                            return acc;
-                        }, {}),
-                        attribute: 'fill'
-                    }]
-                },
                 zoomButtons: false,
                 zoomOnScroll: true,
                 markers: [...mapMarkers],
                 onMarkerTooltipShow: function (event, tooltip, index) {
-                    document.querySelectorAll('tr.highlight').forEach(row => {
-                        row.classList.remove('highlight');
-                    });
-
-                    const dataIndex = index;
-                    // Only highlight if it corresponds to an event marker
-                    if (dataIndex >= 0 && dataIndex < mapMarkers.length) {
-                        const markerData = mapMarkers[dataIndex];
-                        const ids = markerData.ids;
-                        if (ids && ids.length > 0) {
-                            ids.forEach((id, i) => {
-                                const row = document.getElementById('marker-' + id);
-                                if (row) {
-                                    row.classList.add('highlight');
-                                    // Scroll to the first one only to avoid jumping
-                                    if (i === 0 && !isTableHovering) {
-                                        row.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                                    }
-                                }
-                            });
-                        }
-                    }
+                    // Marker tooltip only
                 },
                 onMarkerTooltipHide: function () {
                     // console.log('onMarkerTooltipHide', arguments);
                 },
                 onMarkerClick: function (event, index) {
-                    if (index >= mapMarkers.length) return;
-
-                    const clickedMarker = mapMarkers[index];
-                    if (!clickedMarker) return;
-
-                    const searchInput = document.querySelector('.filter-panel .table-search');
-                    if (searchInput && termineList) {
-                        searchInput.value = clickedMarker.name;
-                        termineList.search(clickedMarker.name, customSearchFunction);
-                    }
+                    const marker = globalMapMarkers[index];
+                    const originalIndex = marker.ids[0]; // Get the first event at this location
+                    const termin = globalTermine[originalIndex];
+                    updateSelectionPanel(termin, true);
                 },
                 onRegionClick: function (event, stateCode) {
-                    console.log('onRegionClick', event, stateCode);
-                    // populate the searchInput with the stateCode
-                    const searchInput = document.querySelector('.filter-panel .table-search');
-                    if (searchInput && termineList) {
-                        searchInput.value = stateCode;
-                        termineList.search(stateCode, customSearchFunction);
-                    }
-                }
+                    // Interaction removed as per request
+                },
             });
 
-            // Set up flag patterns in the SVG
-            const svgElement = document.querySelector('#map svg');
-            if (svgElement) {
-                setupMapPatterns(svgElement);
-            }
 
             // Handle clicks outside map elements (regions/markers) to clear filter
             document.getElementById('map').addEventListener('click', function (event) {
@@ -484,24 +336,29 @@
             });
         }
 
-        function updateSelectionPanel(termin) {
+        function updateSelectionPanel(termin, showModal = false) {
             // Update Selection Panel content
             const panel = document.getElementById('selection-panel');
+            const overlay = document.getElementById('modal-overlay');
             const content = document.getElementById('selection-content');
 
             const relativeDate = getRelativeDateString(termin.date);
 
             content.innerHTML = `
-                <p><span class="field-label">Datum:</span> ${termin.date || ''} (${termin.dow || ''}) <span style="color: #888; margin-left: 5px;">${relativeDate}</span></p>
-                <p class="full-width"><span class="field-label">Name:</span> ${termin.name || ''}</p>
-                <p><span class="field-label">Stadt:</span> ${termin.city || ''}${distanceText(termin.city_dist)}</p>
-                <p><span class="field-label">Uhrzeit:</span> ${termin.time || ''}</p>
-                <p><span class="field-label">PLZ:</span> ${termin.plz ? `<a href="https://maps.google.com/?q=${termin.plz}}" target="_blank">${termin.plz} 🧭</a>` : ''}</p>
-                <p><span class="field-label">Kontakt:</span> ${termin.kontakt || ''}</p>
-                <p><span class="field-label">Veranstalter:</span> ${termin.orga_www ? `<a href="${termin.orga_www}" target="_blank">${termin.orga || 'Link'}</a>` : (termin.orga || '')}</p>
-                ${termin.link_qr ? `<div style="margin-top: 10px;"><a href="${termin.link}" target="_blank"><img src="${termin.link_qr}" alt="QR Code" style="max-width: 200px; display: block;"></a></div>` : ''}
+                <p><span class="field-label">Name:</span> <span>${termin.name || ''}</span></p>
+                <p><span class="field-label">Datum:</span> <span>${termin.date || ''} (${termin.dow || ''}) <span style="color: #888; margin-left: 5px;">${relativeDate}</span></span></p>
+                <p><span class="field-label">Stadt:</span> <span>${termin.city || ''}${distanceText(termin.city_dist)}</span></p>
+                <p><span class="field-label">Uhrzeit:</span> <span>${termin.time || ''}</span></p>
+                <p><span class="field-label">PLZ:</span> <span>${termin.plz ? `<a href="https://maps.google.com/?q=${termin.plz}}" target="_blank">${termin.plz} 🧭</a>` : ''}</span></p>
+                <p><span class="field-label">Kontakt:</span> <span>${formatKontakt(termin.kontakt, termin['e-mail'])}</span></p>
+                <p><span class="field-label">Veranstalter:</span> <span>${termin.orga_www ? `<a href="${termin.orga_www}" target="_blank">${termin.orga || 'Link'}</a>` : (termin.orga || '')}</span></p>
+                ${termin.link_qr ? `<div class="qr-container"><a href="${termin.link}" target="_blank"><img src="${termin.link_qr}" alt="QR Code" style="max-width: 200px; display: block;"></a></div>` : ''}
             `;
-            panel.style.display = 'flex';
+
+            if (showModal) {
+                panel.style.display = 'flex';
+                overlay.style.display = 'block';
+            }
 
             // Update Table Selection
             document.querySelectorAll('tr.selected').forEach(row => {
@@ -516,31 +373,34 @@
             }
         }
         function initSelection(termine) {
-            // Filter for termine today or in the future
             const today = new Date().toISOString().split('T')[0];
             const nextTermine = termine.filter(t => t.date >= today);
-
-            // Sort future termine ascending (earliest first)
             nextTermine.sort((a, b) => a.date.localeCompare(b.date));
 
             if (nextTermine.length > 0) {
-                updateSelectionPanel(nextTermine[0]);
+                updateSelectionPanel(nextTermine[0], false);
             } else {
-                // Fallback: If no future termine, pick the latest past termin
                 const pastTermin = termine.filter(t => t.date < today);
-                pastTermin.sort((a, b) => b.date.localeCompare(a.date)); // Latest first
-                updateSelectionPanel(pastTermin[0]);
+                pastTermin.sort((a, b) => b.date.localeCompare(a.date));
+                updateSelectionPanel(pastTermin[0], false);
             }
+        }
+
+        function closeSelectionModal() {
+            document.getElementById('selection-panel').style.display = 'none';
+            document.getElementById('modal-overlay').style.display = 'none';
         }
 
         async function loadData() {
             const response = await fetch('termine.json');
             let termine = await response.json();
-            // Preserve original index for reliable lookup
+
+            const today = new Date().toISOString().split('T')[0];
+
+            // Map original index to all events for reliable lookup
             termine = termine.map((t, i) => ({ ...t, originalIndex: i }));
 
-            // 1. Deduplicate & Populate Map Markers FIRST
-            const today = new Date().toISOString().split('T')[0];
+            // 1. Deduplicate & Populate Map Markers FIRST (using all events)
             const groups = {};
 
             termine.forEach(t => {
@@ -553,7 +413,9 @@
 
             // Create markers and build mapping
             const mapMarkers = Object.values(groups).map((group, markerIndex) => {
-                const style = { initial: { fill: "#333", r: 9 } };
+                const hasFutureEvent = group.some(t => t.date >= today);
+                const markerColor = hasFutureEvent ? "#333" : "#888";
+                const style = { initial: { fill: markerColor, r: 9 } };
                 const coords = group[0].coords;
                 const ids = group.map(t => t.originalIndex);
 
@@ -593,13 +455,14 @@
                 };
             });
 
-            // 2. Populate Table (now that termine have markerIndex)
-            populateTable(termine);
+            // 2. Populate Table (only future events)
+            const futureTermine = termine.filter(t => t.date >= today);
+            populateTable(futureTermine);
 
             termineList = new List('table-container', {
                 valueNames: ['date', 'time', 'state', 'plz', 'city', 'name', 'orga', 'kontakt']
             });
-            termineList.sort('date', { order: "desc" });
+            termineList.sort('date', { order: "asc" });
 
             // Update selection panel on search
             termineList.on('updated', function (list) {
@@ -632,7 +495,7 @@
                         }
 
                         if (bestTermin) {
-                            updateSelectionPanel(bestTermin);
+                            updateSelectionPanel(bestTermin, false);
                         }
                     }
                 }
@@ -685,6 +548,19 @@
                     searchInput.focus();
                 });
             }
+
+            // Close modal handlers
+            const closeButton = document.getElementById('close-selection');
+            const overlay = document.getElementById('modal-overlay');
+
+            if (closeButton) closeButton.addEventListener('click', closeSelectionModal);
+            if (overlay) overlay.addEventListener('click', closeSelectionModal);
+
+            window.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    closeSelectionModal();
+                }
+            });
         });
     </script>
 </body>

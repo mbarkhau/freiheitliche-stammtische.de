@@ -272,5 +272,16 @@
     "orga": "Eigentümlich Frei",
     "orga_webseite": "https://ef-magazin.de/",
     "e-mail": "moczarski@ef-magazin.de"
+  },
+  {
+    "name": "Libertärer Stammtisch Meißen",
+    "beginn": "2026-01-15",
+    "ende": "2026-01-15",
+    "uhrzeit": "ab 18 Uhr",
+    "woche": "KW03",
+    "wochentag": "Thursday",
+    "plz": "01662",
+    "kontakt": "Joachim Teske",
+    "e-mail": "joachimteske@aol.com"
   }
 ]
