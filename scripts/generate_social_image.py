@@ -51,7 +51,7 @@ def filter_events(events, target_month) -> list[dict]:
     return filtered
 
 
-def draw_gradient(draw, width, height, start_color, end_color):
+def draw_gradient(draw, width, height, start_color, end_color) -> None:
     for i in range(height):
         # Calculate intermediate color
         r = int(start_color[0] + (end_color[0] - start_color[0]) * (i / height))
@@ -59,37 +59,44 @@ def draw_gradient(draw, width, height, start_color, end_color):
         b = int(start_color[2] + (end_color[2] - start_color[2]) * (i / height))
         draw.line([(0, i), (width, i)], fill=(r, g, b))
 
-def draw_text(font, text):
-    pass
+
+def draw_text(draw, text: str, letter_spacing: int = 0, **kwargs) -> None:
+    x, y = kwargs.pop("xy")
+    font = kwargs.pop("font")
+    for char in text:
+        draw.text(text=char, xy=(x, y), font=font, **kwargs)
+        left, top, right, bottom = font.getbbox(char)
+        char_width = right - left
+        x += char_width + letter_spacing
 
 
 DAY_MAP = {
-    "Monday": "Mo.",
-    "Tuesday": "Di.",
-    "Wednesday": "Mi.",
-    "Thursday": "Do.",
-    "Friday": "Fr.",
-    "Saturday": "Sa.",
-    "Sunday": "So.",
+    "Monday"   : "Mo",
+    "Tuesday"  : "Di",
+    "Wednesday": "Mi",
+    "Thursday" : "Do",
+    "Friday"   : "Fr",
+    "Saturday" : "Sa",
+    "Sunday"   : "So",
 }
 
 MONTH_MAP = {
-    "January": "Januar",
-    "February": "Februar",
-    "March": "März",
-    "April": "April",
-    "May": "Mai",
-    "June": "Juni",
-    "July": "Juli",
-    "August": "August",
+    "January"  : "Januar",
+    "February" : "Februar",
+    "March"    : "März",
+    "April"    : "April",
+    "May"      : "Mai",
+    "June"     : "Juni",
+    "July"     : "Juli",
+    "August"   : "August",
     "September": "September",
-    "October": "Oktober",
-    "November": "November",
-    "December": "Dezember"
+    "October"  : "Oktober",
+    "November" : "November",
+    "December" : "Dezember",
 }
 
 
-def generate_image(events, target_month):
+def generate_image(events, target_month) -> None:
     img = Image.new("RGB", (WIDTH, HEIGHT), BG_COLOR)
     draw = ImageDraw.Draw(img)
     
@@ -112,8 +119,7 @@ def generate_image(events, target_month):
     de_month = MONTH_MAP[en_month]
     title_text = f"Treffen im {de_month} {target_month.year}"
     
-    text_xy = (WIDTH//2, 100)
-    draw.text(text=title_text, xy=text_xy, font=title_font, fill=ACCENT_COLOR, anchor="mm")
+    draw.text(text=title_text, xy=(WIDTH//2, 100), font=title_font, fill=ACCENT_COLOR, anchor="mm")
     
     # Elegant double line under title
     draw.line([(100, 150), (WIDTH - 100, 150)], fill=ACCENT_COLOR, width=4)
@@ -126,6 +132,7 @@ def generate_image(events, target_month):
     
     # Center events area
     x_margin = 120
+    prev_display_date = None
     
     for i, event in enumerate(events[:max_events]):
         # Date and Day (Left aligned)
@@ -135,24 +142,29 @@ def generate_image(events, target_month):
         
         date_str = beginn.strftime("%d.%m")
         display_date = f"{short_day} {date_str}"
-        draw.text(text=display_date, xy=(x_margin, y_offset + 5), font=date_font, fill=ACCENT_COLOR)
+        if display_date == prev_display_date:
+            y_offset -= 50
+        else:
+            draw_text(draw, text=display_date, xy=(x_margin, y_offset + 5), font=date_font, letter_spacing=-2, fill=ACCENT_COLOR)
+            prev_display_date = display_date
         
         # Event Name (Offset to the right)
-        name_x = x_margin + 340
+        name_x = x_margin + 280
         
         max_chars = 32
         wrapped_name = textwrap.wrap(event["name"], width=max_chars)
         
         line_y = y_offset + 10
         for line in wrapped_name:
-            draw.text(text=line, xy=(name_x, line_y), font=text_font, fill=TEXT_COLOR)
+            draw_text(draw, text=line, xy=(name_x, line_y), font=text_font, fill=TEXT_COLOR)
             line_y += 42
         
         # Update row height based on number of lines
         y_offset += max(row_height, (len(wrapped_name) * 42) + 20)
         
     if len(events) > max_events:
-        draw.text(text=f"... und {len(events) - max_events} weitere Termine online", xy=(WIDTH//2, y_offset + 20), font=small_font, fill=SECONDARY_TEXT_COLOR, anchor="mm")
+        text = f"... und {len(events) - max_events} weitere Termine online"
+        draw_text(draw, text=text, xy=(WIDTH//2, y_offset + 20), font=small_font, fill=SECONDARY_TEXT_COLOR, anchor="mm")
 
     # Bottom Branding and QR Code
     footer_y = HEIGHT - 100
@@ -167,8 +179,8 @@ def generate_image(events, target_month):
     img.paste(qr_img, (WIDTH - 290, HEIGHT - 290))
 
     footer_text = "freiheitliche-stammtische.de"
-    draw.text((x_margin, HEIGHT - 110), footer_text, font=text_font, fill=ACCENT_COLOR)
-    draw.text((x_margin, HEIGHT - 70), "Alle Libertären Treffen auf einen Blick", font=small_font, fill=SECONDARY_TEXT_COLOR)
+    draw_text(draw, text=footer_text, xy=(x_margin, HEIGHT - 110), font=text_font, fill=ACCENT_COLOR)
+    draw_text(draw, text="Alle Libertären Treffen auf einen Blick", xy=(x_margin, HEIGHT - 70), font=small_font, fill=SECONDARY_TEXT_COLOR)
 
     output_path = OUTPUT_DIR / f"social_events_{target_month.strftime('%Y-%m')}.png"
     img.save(output_path)
