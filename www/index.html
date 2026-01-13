@@ -173,6 +173,9 @@
             termine.forEach(t => {
                 const row = document.createElement('tr');
                 row.id = 'marker-' + t.originalIndex;
+                if (t.date < today) {
+                    row.classList.add('past-event');
+                }
                 const relativeDate = getRelativeDateString(t.date);
                 row.innerHTML = `
                     <td class="date" title="${relativeDate}">${t.date || ''}</td>
@@ -297,7 +300,7 @@
                     backgroundColor: 'transparent',
                     regionStyle: {
                         initial: {
-                            fill: '#FFF', // White regions
+                            fill: '#FFF',
                             stroke: colors.stroke,
                             strokeWidth: 0.5
                         },
@@ -312,12 +315,7 @@
                         updateSelectionPanel(termin, true);
                     },
                     onRegionClick: function (event, code) {
-                        const searchInput = document.querySelector('.filter-panel .table-search');
-                        if (searchInput && termineList) {
-                            searchInput.value = code;
-                            termineList.search(code, customSearchFunction);
-                            searchInput.focus();
-                        }
+                        updateSearch(code);
                     },
                 });
             } catch (e) {
@@ -331,9 +329,7 @@
                 if (!event.target.closest('.jvm-element')) {
                     const searchInput = document.querySelector('.filter-panel .table-search');
                     if (searchInput && termineList) {
-                        searchInput.value = '';
-                        termineList.search('', customSearchFunction);
-                        searchInput.focus();
+                        updateSearch('');
                     }
                 }
             });
@@ -363,23 +359,46 @@
                 overlay.style.display = 'block';
             }
         }
-        function initSelection(termine) {
-            const today = new Date().toISOString().split('T')[0];
-            const nextTermine = termine.filter(t => t.date >= today);
-            nextTermine.sort((a, b) => a.date.localeCompare(b.date));
 
-            if (nextTermine.length > 0) {
-                updateSelectionPanel(nextTermine[0], false);
-            } else {
-                const pastTermin = termine.filter(t => t.date < today);
-                pastTermin.sort((a, b) => b.date.localeCompare(a.date));
-                updateSelectionPanel(pastTermin[0], false);
-            }
+        function defaultTermine() {
+            const today = new Date().toISOString().split('T')[0];
+            const nextTermine = globalTermine.filter(t => t.date >= today);
+            nextTermine.sort((a, b) => a.date.localeCompare(b.date));
+            return nextTermine;
+        }
+
+        function initSelection() {
+            const nextTermine = defaultTermine();
+            updateSelectionPanel(nextTermine[0], false);
         }
 
         function closeSelectionModal() {
             document.getElementById('selection-panel').style.display = 'none';
             document.getElementById('modal-overlay').style.display = 'none';
+        }
+
+        function updateSearch(val) {
+            const today = new Date().toISOString().split('T')[0];
+            const searchInput = document.querySelector('.filter-panel .table-search');
+            if (searchInput) {
+                searchInput.value = val;
+            }
+
+            if (!termineList) return;
+
+            if (val.trim() === '') {
+                // Show only future events if no search
+                termineList.filter(item => {
+                    return item.values().date >= today;
+                });
+            } else {
+                // Show all events if searching
+                termineList.filter(); // remove filter
+            }
+            termineList.search(val, customSearchFunction);
+            if (searchInput) {
+                searchInput.focus();
+            }
         }
 
         async function loadData() {
@@ -446,9 +465,8 @@
                 };
             });
 
-            // 2. Populate Table (only future events)
-            const futureTermine = termine.filter(t => t.date >= today);
-            populateTable(futureTermine);
+            // 2. Populate Table (all events)
+            populateTable(termine);
 
             termineList = new List('table-container', {
                 valueNames: ['date', 'time', 'state', 'plz', 'city', 'name', 'orga', 'kontakt']
@@ -498,11 +516,8 @@
             const tableSearchInput = document.querySelector('.filter-panel .table-search');
             if (tableSearchInput) {
                 tableSearchInput.addEventListener('input', debounce(function (e) {
-                    const val = e.target.value;
-                    termineList.search(val, customSearchFunction);
+                    updateSearch(e.target.value);
                 }, 150));
-                // Set initial focus
-                tableSearchInput.focus();
             }
 
             globalTermine = termine;
@@ -510,7 +525,7 @@
 
             initMap(mapMarkers, termine);
             initSelection(termine);
-            // handleResize removed to avoid redundant initMap call
+            updateSearch('');
         }
 
         window.addEventListener('DOMContentLoaded', loadData);
@@ -531,11 +546,7 @@
             if (searchInput && clearButton) {
                 // Clear input on click
                 clearButton.addEventListener('click', () => {
-                    searchInput.value = '';
-                    if (termineList) {
-                        termineList.search('');
-                    }
-                    searchInput.focus();
+                    updateSearch('');
                 });
             }
 

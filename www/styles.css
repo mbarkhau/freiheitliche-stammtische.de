@@ -14,6 +14,7 @@
     --scrollbar-bg: #222;
     --scrollbar-thumb: #888;
     --scrollbar-thumb-hover: #777;
+    --text-dimmed: #888;
 }
 
 [data-theme="light"] {
@@ -29,6 +30,7 @@
     --button-text: #333;
     --scrollbar-bg: #eee;
     --scrollbar-thumb-hover: #aaa;
+    --text-dimmed: #999;
 }
 
 /* Custom Scrollbar Styles */
@@ -291,6 +293,10 @@ tr:hover {
 tr.selected {
     background-color: var(--table-row-hover);
     outline: 2px solid #007bff;
+}
+
+tr.past-event td {
+    color: var(--text-dimmed);
 }
 
 th.sort {
