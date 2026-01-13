@@ -374,5 +374,15 @@
     "orga_webseite": "https://free-cities.org/meet-ups/",
     "telegram": "https://t.me/+QYVsjbuNZblmMTVi",
     "telegram_group_id": "-1913920402"
+  },
+  {
+    "name": "Hayek Club Magdeburg",
+    "ende": "2026-02-12",
+    "uhrzeit": "ab 18 Uhr",
+    "kw": "#VALUE!",
+    "wochentag": "-2026-02-12",
+    "plz": "39104",
+    "e-mail": "veranstaltung@hayek-magdeburg.de",
+    "telegram": "https://t.me/hayekclubmd"
   }
 ]

@@ -105,8 +105,6 @@ def geolocate(plz: str) -> tuple[Lat, Lon] | None:
     name = loc_raw['display_name']
     state = address.get('ISO3166-2-lvl4')
 
-    print(location.raw)
-
     return (name, state, location.latitude, location.longitude)
 
 
@@ -214,7 +212,6 @@ def main(argv: list[str] = sys.argv[1:]) -> int:
 
         plz_name, plz_state, lat, lon = plz_location
         nearest, city_dist = find_nearest_city(lat, lon)
-        print(plz_name, nearest, city_dist)
 
         try:
             event_items.append({

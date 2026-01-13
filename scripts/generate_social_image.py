@@ -14,7 +14,6 @@ import datetime as dt
 import pathlib as pl
 
 from PIL import Image, ImageDraw, ImageFont
-import qrcode
 
 # Configuration
 WIDTH, HEIGHT = 1080, 1080
@@ -49,15 +48,6 @@ def filter_events(events, target_month) -> list[dict]:
 
     filtered.sort(key=lambda x: x["date"])
     return filtered
-
-
-def draw_gradient(draw, width, height, start_color, end_color) -> None:
-    for i in range(height):
-        # Calculate intermediate color
-        r = int(start_color[0] + (end_color[0] - start_color[0]) * (i / height))
-        g = int(start_color[1] + (end_color[1] - start_color[1]) * (i / height))
-        b = int(start_color[2] + (end_color[2] - start_color[2]) * (i / height))
-        draw.line([(0, i), (width, i)], fill=(r, g, b))
 
 
 def draw_text(draw, text: str, letter_spacing: int = 0, **kwargs) -> None:
@@ -97,26 +87,29 @@ MONTH_MAP = {
 
 
 def generate_image(events, target_month) -> None:
-    img = Image.new("RGB", (WIDTH, HEIGHT), BG_COLOR)
+    bg_path = OUTPUT_DIR / "events_bg.png"
+    if bg_path.exists():
+        img = Image.open(bg_path).convert("RGB")
+        if img.size != (WIDTH, HEIGHT):
+            img = img.resize((WIDTH, HEIGHT), Image.Resampling.LANCZOS)
+    else:
+        img = Image.new("RGB", (WIDTH, HEIGHT), BG_COLOR)
+
     draw = ImageDraw.Draw(img)
     
-    # Background gradient
-    draw_gradient(draw, WIDTH, HEIGHT, (28, 28, 28), (8, 8, 8))
-    
     # Load fonts
-    title_font = ImageFont.truetype("/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf", 64)
-    date_font = ImageFont.truetype("/usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf", 48)
+    date_font = ImageFont.truetype("/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf", 45)
     text_font = ImageFont.truetype("/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf", 56)
     footer_font = ImageFont.truetype("/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf", 42)
     small_font = ImageFont.truetype("/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf", 28)
 
     # Events offset
-    y_offset = 120
+    y_offset = 320
     row_height = 110
     max_events = 8
     
     # Center events area
-    x_margin = 120
+    x_margin = 320
     prev_display_date = None
     
     for i, event in enumerate(events[:max_events]):
@@ -130,43 +123,39 @@ def generate_image(events, target_month) -> None:
         day_str = date.strftime("%d")
         display_date = f"{short_day} {day_str} {short_month}"
         if display_date == prev_display_date:
-            y_offset -= 30
+            y_offset -= 20
         else:
-            draw_text(draw, text=display_date, xy=(x_margin, y_offset + 5), font=date_font, letter_spacing=-2, fill=ACCENT_COLOR)
+            draw.text(text=display_date, xy=(x_margin, y_offset + 25), font=date_font, letter_spacing=-2, fill=ACCENT_COLOR, anchor="rm")
             prev_display_date = display_date
         
-        city_x = x_margin + 320
+        max_chars = 20
+        wrapped_city = textwrap.wrap(event["city"], width=max_chars)
         
-        max_chars = 32
-        wrapped_name = textwrap.wrap(event["city"], width=max_chars)
+        for line in wrapped_city:
+            draw.text(text=line, xy=(x_margin + 50, y_offset - 5), font=text_font, fill=TEXT_COLOR)
+            y_offset += 50
         
-        line_y = y_offset - 5
-        for line in wrapped_name:
-            draw_text(draw, text=line, xy=(city_x, line_y), font=text_font, fill=TEXT_COLOR)
-            line_y += 42
-        
-        # Update row height based on number of lines
-        y_offset += max(row_height, (len(wrapped_name) * 42) + 20)
+        y_offset += 45
         
     if len(events) > max_events:
         text = f"... und {len(events) - max_events} weitere Termine online"
-        draw_text(draw, text=text, xy=(WIDTH//2, y_offset + 20), font=small_font, fill=SECONDARY_TEXT_COLOR, anchor="mm")
+        draw.text(text=text, xy=(WIDTH//2, y_offset + 20), font=small_font, fill=SECONDARY_TEXT_COLOR, anchor="mm")
 
-    # Bottom Branding and QR Code
-    footer_y = HEIGHT - 100
-    
+
     # QR Code
-    qr = qrcode.QRCode(version=1, box_size=4, border=2)
-    qr.add_data(URL)
-    qr.make(fit=True)
-    qr_img = qr.make_image(fill_color="white", back_color="black").convert('RGB')
-    # Make QR slightly accent-tinted or just white on dark
-    qr_img = qr_img.resize((240, 240))
-    img.paste(qr_img, (WIDTH - 290, HEIGHT - 290))
+    # import qrcode
+    # qr = qrcode.QRCode(version=1, box_size=4, border=2)
+    # qr.add_data(URL)
+    # qr.make(fit=True)
+    # qr_img = qr.make_image(fill_color="white", back_color="black").convert('RGB')
 
-    footer_text = "freiheitliche-stammtische.de"
-    draw_text(draw, text=footer_text, xy=(x_margin, HEIGHT - 150), font=footer_font, fill=ACCENT_COLOR)
-    draw_text(draw, text="Alle Libertären Treffen auf einen Blick", xy=(x_margin, HEIGHT - 90), font=small_font, fill=SECONDARY_TEXT_COLOR)
+    # Make QR slightly accent-tinted or just white on dark
+    # qr_img = qr_img.resize((240, 240))
+    # img.paste(qr_img, (WIDTH - 290, HEIGHT - 290))
+
+    # footer_text = "freiheitliche-stammtische.de"
+    # draw_text(draw, text=footer_text, xy=(x_margin, HEIGHT - 150), font=footer_font, fill=ACCENT_COLOR)
+    # draw_text(draw, text="Alle Libertären Treffen auf einen Blick", xy=(x_margin, HEIGHT - 90), font=small_font, fill=SECONDARY_TEXT_COLOR)
 
     output_path = OUTPUT_DIR / f"social_events_{target_month.strftime('%Y-%m')}.png"
     img.save(output_path)
