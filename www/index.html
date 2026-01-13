@@ -153,7 +153,7 @@
                             <th class="sort" data-sort="name">Name</th>
                             <th class="sort" data-sort="state">Bundesland</th>
                             <th class="sort" data-sort="plz">PLZ</th>
-                            <th class="sort" data-sort="city">Stadt (Entfernung)</th>
+                            <th class="sort" data-sort="city">Stadt</th>
                             <th class="sort" data-sort="orga">Veranstalter</th>
                             <th class="sort" data-sort="kontakt">Kontakt</th>
                         </tr>
@@ -243,9 +243,9 @@
             }
         }
 
-        function distanceText(dist) {
-            const carDistance = Math.round(dist * 1.3)
-            return carDistance < 20 ? '' : ' (' + carDistance + ' km)';
+        function cityText(termin) {
+            const dist = termin.city_dist
+            return dist < 15 ? termin.city : ('bei ' + termin.city);
         }
 
         function formatKontakt(kontakt, email) {
@@ -273,7 +273,7 @@
                     <td class="name">${t.name || ''}</td>
                     <td class="state">${t.state || ''}</td>
                     <td class="plz">${t.plz || ''}</td>
-                    <td class="city">${t.city || ''}${distanceText(t.city_dist)}</td>
+                    <td class="city">${cityText(t)}</td>
                     <td class="orga">${t.orga_www ? `<a href="${t.orga_www}" target="_blank">${t.orga || 'Link'}</a>` : (t.orga || '')}</td>
                     <td class="kontakt">${formatKontakt(t.kontakt, t['e-mail'])}</td>
                 `;
@@ -437,9 +437,9 @@
             content.innerHTML = `
                 <p><span class="field-label">Name:</span> <span>${termin.name || ''}</span></p>
                 <p><span class="field-label">Datum:</span> <span>${termin.date || ''} (${termin.dow || ''}) <span style="color: #888; margin-left: 5px;">${relativeDate}</span></span></p>
-                <p><span class="field-label">Stadt:</span> <span>${termin.city || ''}${distanceText(termin.city_dist)}</span></p>
+                <p><span class="field-label">Stadt:</span> <span>${cityText(termin)}</span></p>
                 <p><span class="field-label">Uhrzeit:</span> <span>${termin.time || ''}</span></p>
-                <p><span class="field-label">PLZ:</span> <span>${termin.plz ? `<a href="https://maps.google.com/?q=${termin.plz}}" target="_blank">${termin.plz} 🧭</a>` : ''}</span></p>
+                <p><span class="field-label">PLZ:</span> <span>${termin.plz ? `<a href="https://maps.google.com/?q=${termin.plz},Deutschland" target="_blank">${termin.plz} 🧭</a>` : ''}</span></p>
                 <p><span class="field-label">Kontakt:</span> <span>${formatKontakt(termin.kontakt, termin['e-mail'])}</span></p>
                 <p><span class="field-label">Veranstalter:</span> <span>${termin.orga_www ? `<a href="${termin.orga_www}" target="_blank">${termin.orga || 'Link'}</a>` : (termin.orga || '')}</span></p>
                 ${termin.link_qr ? `<div class="qr-container"><a href="${termin.link}" target="_blank"><img src="${termin.link_qr}" alt="QR Code" style="max-width: 200px; display: block;"></a></div>` : ''}

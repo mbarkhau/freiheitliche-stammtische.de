@@ -24,7 +24,7 @@ ACCENT_COLOR = (255, 215, 0)  # Gold/Yellow accent
 SECONDARY_TEXT_COLOR = (160, 160, 160)
 URL = "https://freiheitliche-stammtische.de"
 
-DATA_PATH = pl.Path("data/termine.json")
+DATA_PATH = pl.Path("www/termine.json")
 OUTPUT_DIR = pl.Path("social_images")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
@@ -41,13 +41,13 @@ def filter_events(events, target_month) -> list[dict]:
     filtered = []
     for event in events:
         try:
-            beginn = dt.datetime.strptime(event["beginn"], "%Y-%m-%d")
+            date = dt.datetime.strptime(event["date"], "%Y-%m-%d")
         except (ValueError, KeyError):
             continue
-        if beginn.year == target_month.year and beginn.month == target_month.month:
+        if date.year == target_month.year and date.month == target_month.month:
             filtered.append(event)
 
-    filtered.sort(key=lambda x: x["beginn"])
+    filtered.sort(key=lambda x: x["date"])
     return filtered
 
 
@@ -81,18 +81,18 @@ DAY_MAP = {
 }
 
 MONTH_MAP = {
-    "January"  : "Januar",
-    "February" : "Februar",
+    "January"  : "Jan",
+    "February" : "Feb",
     "March"    : "März",
     "April"    : "April",
     "May"      : "Mai",
     "June"     : "Juni",
     "July"     : "Juli",
-    "August"   : "August",
-    "September": "September",
-    "October"  : "Oktober",
-    "November" : "November",
-    "December" : "Dezember",
+    "August"   : "Aug",
+    "September": "Sept",
+    "October"  : "Okt",
+    "November" : "Nov",
+    "December" : "Dez",
 }
 
 
@@ -104,29 +104,14 @@ def generate_image(events, target_month) -> None:
     draw_gradient(draw, WIDTH, HEIGHT, (28, 28, 28), (8, 8, 8))
     
     # Load fonts
-    try:
-        title_font = ImageFont.truetype("/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf", 64)
-        date_font = ImageFont.truetype("/usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf", 48)
-        text_font = ImageFont.truetype("/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf", 36)
-        small_font = ImageFont.truetype("/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf", 28)
-    except Exception:
-        title_font = ImageFont.load_default()
-        date_font = ImageFont.load_default()
-        text_font = ImageFont.load_default()
-        small_font = ImageFont.load_default()
-
-    en_month = target_month.strftime("%B")
-    de_month = MONTH_MAP[en_month]
-    title_text = f"Treffen im {de_month} {target_month.year}"
-    
-    draw.text(text=title_text, xy=(WIDTH//2, 100), font=title_font, fill=ACCENT_COLOR, anchor="mm")
-    
-    # Elegant double line under title
-    draw.line([(100, 150), (WIDTH - 100, 150)], fill=ACCENT_COLOR, width=4)
-    draw.line([(150, 162), (WIDTH - 150, 162)], fill=ACCENT_COLOR, width=1)
+    title_font = ImageFont.truetype("/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf", 64)
+    date_font = ImageFont.truetype("/usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf", 48)
+    text_font = ImageFont.truetype("/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf", 56)
+    footer_font = ImageFont.truetype("/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf", 42)
+    small_font = ImageFont.truetype("/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf", 28)
 
     # Events offset
-    y_offset = 220
+    y_offset = 120
     row_height = 110
     max_events = 8
     
@@ -136,27 +121,28 @@ def generate_image(events, target_month) -> None:
     
     for i, event in enumerate(events[:max_events]):
         # Date and Day (Left aligned)
-        beginn = dt.datetime.strptime(event["beginn"], "%Y-%m-%d")
-        day_name = beginn.strftime("%A")
+        date = dt.datetime.strptime(event["date"], "%Y-%m-%d")
+        day_name = date.strftime("%A")
         short_day = DAY_MAP[day_name] + "."
+        month_name = date.strftime("%B")
+        short_month = MONTH_MAP[month_name]
         
-        date_str = beginn.strftime("%d.%m")
-        display_date = f"{short_day} {date_str}"
+        day_str = date.strftime("%d")
+        display_date = f"{short_day} {day_str} {short_month}"
         if display_date == prev_display_date:
-            y_offset -= 50
+            y_offset -= 30
         else:
             draw_text(draw, text=display_date, xy=(x_margin, y_offset + 5), font=date_font, letter_spacing=-2, fill=ACCENT_COLOR)
             prev_display_date = display_date
         
-        # Event Name (Offset to the right)
-        name_x = x_margin + 280
+        city_x = x_margin + 320
         
         max_chars = 32
-        wrapped_name = textwrap.wrap(event["name"], width=max_chars)
+        wrapped_name = textwrap.wrap(event["city"], width=max_chars)
         
-        line_y = y_offset + 10
+        line_y = y_offset - 5
         for line in wrapped_name:
-            draw_text(draw, text=line, xy=(name_x, line_y), font=text_font, fill=TEXT_COLOR)
+            draw_text(draw, text=line, xy=(city_x, line_y), font=text_font, fill=TEXT_COLOR)
             line_y += 42
         
         # Update row height based on number of lines
@@ -179,8 +165,8 @@ def generate_image(events, target_month) -> None:
     img.paste(qr_img, (WIDTH - 290, HEIGHT - 290))
 
     footer_text = "freiheitliche-stammtische.de"
-    draw_text(draw, text=footer_text, xy=(x_margin, HEIGHT - 110), font=text_font, fill=ACCENT_COLOR)
-    draw_text(draw, text="Alle Libertären Treffen auf einen Blick", xy=(x_margin, HEIGHT - 70), font=small_font, fill=SECONDARY_TEXT_COLOR)
+    draw_text(draw, text=footer_text, xy=(x_margin, HEIGHT - 150), font=footer_font, fill=ACCENT_COLOR)
+    draw_text(draw, text="Alle Libertären Treffen auf einen Blick", xy=(x_margin, HEIGHT - 90), font=small_font, fill=SECONDARY_TEXT_COLOR)
 
     output_path = OUTPUT_DIR / f"social_events_{target_month.strftime('%Y-%m')}.png"
     img.save(output_path)
@@ -191,8 +177,8 @@ def main():
         print(f"Error: {DATA_PATH} not found.")
         return
 
-    with open(DATA_PATH, "r") as f:
-        events = json.load(f)
+    with DATA_PATH.open(mode="r") as fobj:
+        events = json.load(fobj)
 
     target_month = get_next_month()
     filtered = filter_events(events, target_month)

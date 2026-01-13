@@ -2,9 +2,9 @@
   {
     "name": "Marktradikales Meetup Grevenbroich",
     "plz": "41515",
-    "state": "DE-NW (Nordrhein-Westfalen)",
-    "city": "Düsseldorf",
-    "city_dist": 20.0,
+    "state": "DE-NW",
+    "city": "Grevenbroich",
+    "city_dist": 1.5,
     "coords": [
       51.0819233,
       6.6057095
@@ -22,9 +22,9 @@
   {
     "name": "Marktradikales Meetup Grevenbroich",
     "plz": "41515",
-    "state": "DE-NW (Nordrhein-Westfalen)",
-    "city": "Düsseldorf",
-    "city_dist": 20.0,
+    "state": "DE-NW",
+    "city": "Grevenbroich",
+    "city_dist": 1.5,
     "coords": [
       51.0819233,
       6.6057095
@@ -42,9 +42,9 @@
   {
     "name": "Marktradikales Meetup Grevenbroich",
     "plz": "41515",
-    "state": "DE-NW (Nordrhein-Westfalen)",
-    "city": "Düsseldorf",
-    "city_dist": 20.0,
+    "state": "DE-NW",
+    "city": "Grevenbroich",
+    "city_dist": 1.5,
     "coords": [
       51.0819233,
       6.6057095
@@ -62,9 +62,9 @@
   {
     "name": "Marktradikales Meetup Berlin",
     "plz": "10117",
-    "state": "DE-BE (Berlin)",
+    "state": "DE-BE",
     "city": "Berlin",
-    "city_dist": 1.2,
+    "city_dist": 0.5,
     "coords": [
       52.5175184,
       13.3877686
@@ -82,9 +82,9 @@
   {
     "name": "Libertäres Treffen in Meißen / Sachsen",
     "plz": "01662",
-    "state": "DE-SN (Sachsen)",
-    "city": "Dresden",
-    "city_dist": 21.6,
+    "state": "DE-SN",
+    "city": "Meißen",
+    "city_dist": 1.0,
     "coords": [
       51.1615404,
       13.4838596
@@ -102,9 +102,9 @@
   {
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
-    "state": "DE-NW (Nordrhein-Westfalen)",
+    "state": "DE-NW",
     "city": "Dortmund",
-    "city_dist": 3.7,
+    "city_dist": 3.8,
     "coords": [
       51.4865748,
       7.4974155
@@ -122,9 +122,9 @@
   {
     "name": "Libertäres Grilltreffen bei München",
     "plz": "85276",
-    "state": "DE-BY (Bayern)",
-    "city": "München",
-    "city_dist": 46.0,
+    "state": "DE-BY",
+    "city": "Pfaffenhofen an der Ilm",
+    "city_dist": 2.4,
     "coords": [
       48.5434775,
       11.4838556
@@ -142,9 +142,9 @@
   {
     "name": "Libertärer Stammtisch München",
     "plz": "80539",
-    "state": "DE-BY (Bayern)",
+    "state": "DE-BY",
     "city": "München",
-    "city_dist": 1.0,
+    "city_dist": 0.9,
     "coords": [
       48.1443613,
       11.5810699
@@ -162,9 +162,9 @@
   {
     "name": "Libertärer Stammtisch Meißen",
     "plz": "01662",
-    "state": "DE-SN (Sachsen)",
-    "city": "Dresden",
-    "city_dist": 21.6,
+    "state": "DE-SN",
+    "city": "Meißen",
+    "city_dist": 1.0,
     "coords": [
       51.1615404,
       13.4838596
@@ -182,9 +182,9 @@
   {
     "name": "Libertärer Stammtisch Magdeburg",
     "plz": "39104",
-    "state": "DE-ST (Sachsen-Anhalt)",
+    "state": "DE-ST",
     "city": "Magdeburg",
-    "city_dist": 0.6,
+    "city_dist": 1.9,
     "coords": [
       52.1151882,
       11.630882
@@ -202,9 +202,9 @@
   {
     "name": "Libertärer Stammtisch Magdeburg",
     "plz": "39104",
-    "state": "DE-ST (Sachsen-Anhalt)",
+    "state": "DE-ST",
     "city": "Magdeburg",
-    "city_dist": 0.6,
+    "city_dist": 1.9,
     "coords": [
       52.1151882,
       11.630882
@@ -222,9 +222,9 @@
   {
     "name": "Libertärer Stammtisch Magdeburg",
     "plz": "39104",
-    "state": "DE-ST (Sachsen-Anhalt)",
+    "state": "DE-ST",
     "city": "Magdeburg",
-    "city_dist": 0.6,
+    "city_dist": 1.9,
     "coords": [
       52.1151882,
       11.630882
@@ -242,9 +242,9 @@
   {
     "name": "Libertärer Stammtisch in Balingen / Württemberg",
     "plz": "72336",
-    "state": "DE-BW (Baden-Württemberg)",
-    "city": "Stuttgart",
-    "city_dist": 60.9,
+    "state": "DE-BW",
+    "city": "Balingen",
+    "city_dist": 1.0,
     "coords": [
       48.2697736,
       8.8682239
@@ -262,9 +262,9 @@
   {
     "name": "Libertärer Stammtisch in Balingen / Württemberg",
     "plz": "72336",
-    "state": "DE-BW (Baden-Württemberg)",
-    "city": "Stuttgart",
-    "city_dist": 60.9,
+    "state": "DE-BW",
+    "city": "Balingen",
+    "city_dist": 1.0,
     "coords": [
       48.2697736,
       8.8682239
@@ -282,9 +282,9 @@
   {
     "name": "Libertärer Stammtisch in Balingen / Württemberg",
     "plz": "72336",
-    "state": "DE-BW (Baden-Württemberg)",
-    "city": "Stuttgart",
-    "city_dist": 60.9,
+    "state": "DE-BW",
+    "city": "Balingen",
+    "city_dist": 1.0,
     "coords": [
       48.2697736,
       8.8682239
@@ -302,9 +302,9 @@
   {
     "name": "Libertärer Stammtisch Hamburg",
     "plz": "20095",
-    "state": "DE-HH (Hamburg)",
+    "state": "DE-HH",
     "city": "Hamburg",
-    "city_dist": 0.4,
+    "city_dist": 0.1,
     "coords": [
       53.5512868,
       9.9992216
@@ -322,9 +322,9 @@
   {
     "name": "Libertärer Stammtisch Hamburg",
     "plz": "20095",
-    "state": "DE-HH (Hamburg)",
+    "state": "DE-HH",
     "city": "Hamburg",
-    "city_dist": 0.4,
+    "city_dist": 0.1,
     "coords": [
       53.5512868,
       9.9992216
@@ -342,9 +342,9 @@
   {
     "name": "Libertärer Stammtisch Hamburg",
     "plz": "20095",
-    "state": "DE-HH (Hamburg)",
+    "state": "DE-HH",
     "city": "Hamburg",
-    "city_dist": 0.4,
+    "city_dist": 0.1,
     "coords": [
       53.5512868,
       9.9992216
@@ -362,9 +362,9 @@
   {
     "name": "Libertärer Stammtisch Hamburg",
     "plz": "20095",
-    "state": "DE-HH (Hamburg)",
+    "state": "DE-HH",
     "city": "Hamburg",
-    "city_dist": 0.4,
+    "city_dist": 0.1,
     "coords": [
       53.5512868,
       9.9992216
@@ -382,9 +382,9 @@
   {
     "name": "Libertärer Stammtisch Göppingen/Esslingen",
     "plz": "73033",
-    "state": "DE-BW (Baden-Württemberg)",
-    "city": "Stuttgart",
-    "city_dist": 35.4,
+    "state": "DE-BW",
+    "city": "Göppingen",
+    "city_dist": 0.6,
     "coords": [
       48.7088631,
       9.6538145
@@ -402,9 +402,9 @@
   {
     "name": "Libertärer Stammtisch Göppingen/Esslingen",
     "plz": "73033",
-    "state": "DE-BW (Baden-Württemberg)",
-    "city": "Stuttgart",
-    "city_dist": 35.4,
+    "state": "DE-BW",
+    "city": "Göppingen",
+    "city_dist": 0.6,
     "coords": [
       48.7088631,
       9.6538145
@@ -422,8 +422,8 @@
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
-    "state": "DE-HE (Hessen)",
-    "city": "Frankfurt",
+    "state": "DE-HE",
+    "city": "Frankfurt am Main",
     "city_dist": 1.0,
     "coords": [
       50.1028505,
@@ -442,8 +442,8 @@
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
-    "state": "DE-HE (Hessen)",
-    "city": "Frankfurt",
+    "state": "DE-HE",
+    "city": "Frankfurt am Main",
     "city_dist": 1.0,
     "coords": [
       50.1028505,
@@ -462,8 +462,8 @@
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
-    "state": "DE-HE (Hessen)",
-    "city": "Frankfurt",
+    "state": "DE-HE",
+    "city": "Frankfurt am Main",
     "city_dist": 1.0,
     "coords": [
       50.1028505,
@@ -482,8 +482,8 @@
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
-    "state": "DE-HE (Hessen)",
-    "city": "Frankfurt",
+    "state": "DE-HE",
+    "city": "Frankfurt am Main",
     "city_dist": 1.0,
     "coords": [
       50.1028505,
@@ -502,9 +502,9 @@
   {
     "name": "Libertärer Krypto Stammtisch Berlin",
     "plz": "10117",
-    "state": "DE-BE (Berlin)",
+    "state": "DE-BE",
     "city": "Berlin",
-    "city_dist": 1.2,
+    "city_dist": 0.5,
     "coords": [
       52.5175184,
       13.3877686
@@ -522,9 +522,9 @@
   {
     "name": "Free Cities Berlin Meetup",
     "plz": "10969",
-    "state": "DE-BE (Berlin)",
+    "state": "DE-BE",
     "city": "Berlin",
-    "city_dist": 2.0,
+    "city_dist": 1.7,
     "coords": [
       52.5023538,
       13.4023459

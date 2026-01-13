@@ -65,10 +65,10 @@ EN_DE_WEEKDAYS = {
 Lat = typ.TypeVar("Lat", bound=float)
 Lon = typ.TypeVar("Lon", bound=float)
 
-APP_USER_AGENT = "freiheitliche-stammtische.de-v0.1"
+APP_USER_AGENT = "freiheitliche-stammtische.de-plz-resolver-v0.01"
 
 _CITIES_PATH = pl.Path("data/cities.json")
-_CITIES_DATA = _CITIES_PATH.open(mode="r", encoding="utf-8")
+_CITIES_DATA = _CITIES_PATH.open(mode="r", encoding="utf-8").read()
 CITIES: list[dict[str, str | int | list[float]]] = json.loads(_CITIES_DATA)
 
 
@@ -92,15 +92,22 @@ def find_nearest_city(lat: float, lon: float) -> tuple[dict | None, float]:
 
 @disk_cache.cache(APP_USER_AGENT)
 @rate_limit(min_interval=1.5)
-def geolocate(plz: str) -> tuple[Lat | None, Lon | None]:
+def geolocate(plz: str) -> tuple[Lat, Lon] | None:
     geolocator = get_geocoder_for_service("nominatim")(user_agent=APP_USER_AGENT)
-    location = geolocator.geocode(f"{plz} Germany")
+    location = geolocator.geocode(f"{plz}, Deutschland", addressdetails=True)
     log.info(f"Geocoded {plz}: {location}")
-    if location:
-        return (location.latitude, location.longitude)
-    else:
+    if location is None:
         log.warning(f"No location found for {plz}")
-        return (None, None)
+        return None
+
+    loc_raw = location.raw
+    address = loc_raw.get('address', {})
+    name = loc_raw['display_name']
+    state = address.get('ISO3166-2-lvl4')
+
+    print(location.raw)
+
+    return (name, state, location.latitude, location.longitude)
 
 
 def _dedent(text: str) -> str:
@@ -201,17 +208,19 @@ def main(argv: list[str] = sys.argv[1:]) -> int:
             link_qr_path = None
 
         termin["plz"] = termin["plz"].strip()
-        lat, lon = geolocate(termin["plz"])
-        if not (lat and lon):
+        plz_location = geolocate(termin["plz"])
+        if plz_location is None:
             continue
 
+        plz_name, plz_state, lat, lon = plz_location
         nearest, city_dist = find_nearest_city(lat, lon)
+        print(plz_name, nearest, city_dist)
 
         try:
             event_items.append({
                 "name": termin.get("name", termin.get("ort", "Unknown")),
                 "plz": termin["plz"],
-                "state": nearest.get("state", "Unknown"),
+                "state": plz_state,
                 "city": nearest.get("name", "Unknown"),
                 "city_dist": round(city_dist, 1),
                 "coords": [lat, lon],
