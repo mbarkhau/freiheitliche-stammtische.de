@@ -410,12 +410,20 @@ th.sort.desc::after {
     }
 }
 
+@media (min-width: 35rem) {
+    .header-right {
+        margin-right: 2rem;
+    }
+    .header-left {
+        margin-left: 2rem;
+    }
+}
+
 .header-left {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: inherit;
-    margin-left: 2rem;
 }
 
 .site-logo {
@@ -434,7 +442,6 @@ th.sort.desc::after {
 .header-right {
     display: flex;
     align-items: center;
-    margin-right: 2rem;
     gap: 1rem;
 }
 
