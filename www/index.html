@@ -58,10 +58,10 @@
                             <th class="sort" data-sort="date">Datum</th>
                             <th class="sort" data-sort="dow">Tag</th>
                             <th class="sort" data-sort="time">Uhrzeit</th>
-                            <th class="sort" data-sort="name">Name</th>
-                            <th class="sort" data-sort="state">Bundesland</th>
-                            <th class="sort" data-sort="plz">PLZ</th>
                             <th class="sort" data-sort="city">Stadt</th>
+                            <th class="sort" data-sort="name">Name</th>
+                            <th class="sort" data-sort="plz">PLZ</th>
+                            <th class="sort" data-sort="state">Bundesland</th>
                             <th class="sort" data-sort="orga">Veranstalter</th>
                             <th class="sort" data-sort="kontakt">Kontakt</th>
                         </tr>
@@ -181,10 +181,10 @@
                     <td class="date" title="${relativeDate}">${t.date || ''}</td>
                     <td class="dow">${t.dow || ''}</td>
                     <td class="time">${t.time || ''}</td>
-                    <td class="name">${t.name || ''}</td>
-                    <td class="state">${t.state || ''}</td>
-                    <td class="plz">${t.plz || ''}</td>
                     <td class="city">${cityText(t)}</td>
+                    <td class="name">${t.name || ''}</td>
+                    <td class="plz">${t.plz || ''}</td>
+                    <td class="state">${t.state || ''}</td>
                     <td class="orga">${t.orga_www ? `<a href="${t.orga_www}" target="_blank">${t.orga || 'Link'}</a>` : (t.orga || '')}</td>
                     <td class="kontakt">${formatKontakt(t.kontakt, t['e-mail'])}</td>
                 `;
@@ -316,6 +316,10 @@
                     },
                     onRegionClick: function (event, code) {
                         updateSearch(code);
+                        // Scroll to table on mobile for better visibility
+                        if (window.innerWidth <= 720) {
+                            document.getElementById('table-container').scrollIntoView({ behavior: 'smooth' });
+                        }
                     },
                 });
             } catch (e) {
@@ -421,11 +425,14 @@
                 groups[coordKey].push(t);
             });
 
+            const isMobile = window.innerWidth <= 720;
+            const markerRadius = isMobile ? 12 : 9;
+
             // Create markers and build mapping
             const mapMarkers = Object.values(groups).map((group, markerIndex) => {
                 const hasFutureEvent = group.some(t => t.date >= today);
                 const markerColor = hasFutureEvent ? "#FA2" : "#888";
-                const style = { initial: { fill: markerColor, r: 9 } };
+                const style = { initial: { fill: markerColor, r: markerRadius } };
                 const coords = group[0].coords;
                 const ids = group.map(t => t.originalIndex);
 
