@@ -183,6 +183,11 @@ body {
 #map {
     width: 100%;
     height: 100%;
+    touch-action: manipulation;
+}
+
+.jvm-element {
+    cursor: pointer !important;
 }
 
 /* Event Cards */

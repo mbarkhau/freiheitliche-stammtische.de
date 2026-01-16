@@ -242,8 +242,6 @@
                     selector: '#map',
                     map: 'de_mill',
                     backgroundColor: 'transparent',
-                    draggable: true,
-                    bindTouchEvents: true,
                     regionStyle: {
                         initial: {
                             fill: colors.fill,
@@ -271,6 +269,14 @@
                         if (window.innerWidth <= 900) {
                             document.getElementById('event-list-container').scrollIntoView({ behavior: 'smooth' });
                         }
+                    },
+                    onLoaded: function (map) {
+                        // Clear search if clicking map backdrop
+                        map.container.querySelector('svg').addEventListener('click', function (e) {
+                            if (e.target.tagName === 'svg' || e.target.id === 'jvm-regions-group') {
+                                updateSearch('');
+                            }
+                        });
                     }
                 });
             } catch (e) {
@@ -397,9 +403,9 @@
                 }
             });
 
-            document.addEventListener('pointerup', (e) => {
+            document.addEventListener('click', (e) => {
                 const overlay = document.getElementById('selection-overlay');
-                if (overlay.style.display === 'block') {
+                if (overlay && overlay.style.display === 'block') {
                     const isOverlay = e.target.closest('#selection-overlay');
                     const isMarker = e.target.closest('.jvm-marker') || e.target.classList.contains('jvm-marker');
                     const isCard = e.target.closest('.event-card');
@@ -408,18 +414,7 @@
                         overlay.style.display = 'none';
                     }
                 }
-
-                // Clear search if clicking map backdrop
-                const mapContainer = document.getElementById('map');
-                if (mapContainer && mapContainer.contains(e.target)) {
-                    const isElement = e.target.closest('.jvm-element');
-                    const isZoomBtn = e.target.closest('.jvm-zoom-btn');
-                    if (!isElement && !isZoomBtn) {
-                        updateSearch('');
-                    }
-                }
             });
-
         }
 
         window.addEventListener('DOMContentLoaded', loadData);
