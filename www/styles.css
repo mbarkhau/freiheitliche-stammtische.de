@@ -272,9 +272,9 @@ body {
 
 .map-overlay {
     position: fixed;
-    top: 50%;
+    top: 40%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-40%);
     z-index: 2000;
 
     min-height: 25rem;
