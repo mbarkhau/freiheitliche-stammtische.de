@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
@@ -10,20 +10,16 @@
 
     <link rel="preload" href="termine.json" as="fetch" type="application/json" crossorigin="anonymous">
     <link rel="stylesheet" href="jsvectormap.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="new_style.css">
 
-    <script src="list.js"></script>
     <script src="jsvectormap.js"></script>
-
     <script src="map_de_mill.js"></script>
-    <!-- <script src="map_at_mill.js"></script> -->
-    <!-- <script src="map_ch_mill.js"></script> -->
 </head>
 
 <body>
     <header class="site-header">
         <div class="header-container">
-            <a href="index.html" class="header-left">
+            <a href="new_index.html" class="header-left">
                 <img src="img/logo_256.png" alt="Logo" class="site-logo">
                 <h1 class="site-title">Freiheitliche Stammtische</h1>
             </a>
@@ -32,97 +28,82 @@
                     <input class="table-search" placeholder="Suche..." aria-label="Suche">
                     <button id="clear-filter" aria-label="Suche leeren">✕</button>
                 </div>
-                <button id="theme-toggle" aria-label="Toggle Dark Mode">☾</button>
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">✹</button>
                 <a href="info.html" class="nav-link">Info</a>
             </nav>
         </div>
     </header>
-    <div class="container">
-        <div id="top-pane">
-            <div id="map-container">
-                <div id="map"></div>
+
+    <main class="main-container">
+        <aside id="event-list-container">
+            <div id="termine-list" class="list">
+                <!-- Cards will be populated by JS -->
             </div>
-        </div>
-        <div id="modal-overlay"></div>
-        <div id="selection-panel">
-            <button id="close-selection" aria-label="Schließen">✕</button>
-            <div id="selection-content">
-                <p class="placeholder">Wähle einen Termin auf der Karte aus, um Details zu sehen.</p>
+        </aside>
+        <section id="map-view-container">
+            <div id="map"></div>
+            <div id="selection-overlay" class="map-overlay">
+                <!-- Selection details like in mockup -->
             </div>
-        </div>
-        <div id="table-container">
-            <div id="termine-list" class="table-wrapper">
-                <table id="termine-table">
-                    <thead>
-                        <tr>
-                            <th class="sort" data-sort="date">Datum</th>
-                            <th class="sort" data-sort="dow">Tag</th>
-                            <th class="sort" data-sort="time">Uhrzeit</th>
-                            <th class="sort" data-sort="city">Stadt</th>
-                            <th class="sort" data-sort="name">Name</th>
-                            <th class="sort" data-sort="plz">PLZ</th>
-                            <th class="sort" data-sort="state">Bundesland</th>
-                            <th class="sort" data-sort="orga">Veranstalter</th>
-                            <th class="sort" data-sort="kontakt">Kontakt</th>
-                        </tr>
-                    </thead>
-                    <tbody class="list">
-                        <!-- Rows will be populated by JS -->
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
     <script>
+        // --- Theme Logic ---
         function toggleTheme() {
             const currentTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
-            if (newTheme === 'light') {
-                document.documentElement.setAttribute('data-theme', 'light');
+            if (newTheme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
             } else {
                 document.documentElement.removeAttribute('data-theme');
             }
 
             localStorage.setItem('theme', newTheme);
             const button = document.getElementById('theme-toggle');
-            button.textContent = newTheme === 'light' ? '☾' : '✹';
-
+            button.textContent = newTheme === 'dark' ? '✹' : '☾';
 
             if (globalMapMarkers && globalTermine) {
                 initMap(globalMapMarkers, globalTermine);
             }
         }
 
-        document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
-
         function initTheme() {
-            const savedTheme = localStorage.getItem('theme');
-            // If saved theme is light, apply it. Otherwise (dark or null), do nothing (default is dark).
-            if (savedTheme === 'light') {
-                document.documentElement.setAttribute('data-theme', 'light');
-                document.getElementById('theme-toggle').textContent = '☾';
+            let savedTheme = localStorage.getItem('theme');
+            if (!savedTheme) {
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    savedTheme = 'dark';
+                }
+            }
 
+            if (savedTheme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
             } else {
                 document.documentElement.removeAttribute('data-theme');
-                document.getElementById('theme-toggle').textContent = '✹';
+            }
+
+            const button = document.getElementById('theme-toggle');
+            if (button) {
+                button.textContent = savedTheme === 'dark' ? '✹' : '☾';
             }
         }
 
-        window.addEventListener('DOMContentLoaded', initTheme);
+        function getMapColors() {
+            const style = getComputedStyle(document.documentElement);
+            return {
+                fill: style.getPropertyValue('--map-fill').trim() || '#fcfcfc',
+                stroke: style.getPropertyValue('--map-stroke').trim() || '#d1d1d1',
+                accent: style.getPropertyValue('--accent-color').trim() || '#c5a059'
+            };
+        }
 
+        // --- Date & Formatting Utilities ---
         function getRelativeDateString(dateStr) {
             if (!dateStr) return '';
-            const date = new Date(dateStr);
-            // Reset time to midnight for accurate day calculation
             const today = new Date();
             today.setHours(0, 0, 0, 0);
-
-            // Treat the event date as midnight local time to avoid timezone issues
-            // (assuming dateStr is YYYY-MM-DD)
             const eventDate = new Date(dateStr + 'T00:00:00');
-
             const diffTime = eventDate - today;
             const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
@@ -133,26 +114,29 @@
             const weeks = Math.abs(Math.round(diffDays / 7));
             const months = Math.abs(Math.round(diffDays / 30));
             if (diffDays > 0) {
-                if (months > 2) {
-                    return `in ${months} Monaten`;
-                }
-                if (weeks > 2) {
-                    return `in ${weeks} Wochen`;
-                }
+                if (months > 2) return `in ${months} Monaten`;
+                if (weeks > 2) return `in ${weeks} Wochen`;
                 return `in ${diffDays} Tagen`;
             } else {
-                if (months > 2) {
-                    return `vor ${months} Monaten`;
-                }
-                if (weeks > 2) {
-                    return `vor ${weeks} Wochen`;
-                }
+                if (months > 2) return `vor ${months} Monaten`;
+                if (weeks > 2) return `vor ${weeks} Wochen`;
                 return `vor ${Math.abs(diffDays)} Tagen`;
             }
         }
 
+        const MONTH_NAMES = ["JAN", "FEB", "MÄR", "APR", "MAI", "JUN", "JUL", "AUG", "SEP", "OKT", "NOV", "DEZ"];
+
+        function getDetailedDate(dateStr) {
+            const date = new Date(dateStr + 'T00:00:00');
+            return {
+                dayNum: date.getDate(),
+                month: MONTH_NAMES[date.getMonth()],
+                yearSuffix: String(date.getFullYear()).slice(2)
+            };
+        }
+
         function cityText(termin) {
-            const dist = termin.city_dist
+            const dist = termin.city_dist;
             return dist < 15 ? termin.city : ('bei ' + termin.city);
         }
 
@@ -165,40 +149,75 @@
             return kontakt || '';
         }
 
-        function populateTable(termine) {
-            const tbody = document.querySelector('#termine-table tbody');
-            tbody.innerHTML = '';
+        // --- Card List Management ---
+        function populateList(termine) {
+            const listContainer = document.querySelector('#termine-list');
+            listContainer.innerHTML = '';
             const today = new Date().toISOString().split('T')[0];
 
             termine.forEach(t => {
-                const row = document.createElement('tr');
-                row.id = 'marker-' + t.originalIndex;
+                const dateInfo = getDetailedDate(t.date);
+                const card = document.createElement('div');
+                card.className = 'event-card';
+                card.id = 'marker-' + t.originalIndex;
+                card.dataset.date = t.date; // Store date for filtering
+
                 if (t.date < today) {
-                    row.classList.add('past-event');
+                    card.classList.add('past-event');
+                    card.style.opacity = '0.6';
                 }
-                const relativeDate = getRelativeDateString(t.date);
-                row.innerHTML = `
-                    <td class="date" title="${relativeDate}">${t.date || ''}</td>
-                    <td class="dow">${t.dow || ''}</td>
-                    <td class="time">${t.time || ''}</td>
-                    <td class="city">${cityText(t)}</td>
-                    <td class="name">${t.name || ''}</td>
-                    <td class="plz">${t.plz || ''}</td>
-                    <td class="state">${t.state || ''}</td>
-                    <td class="orga">${t.orga_www ? `<a href="${t.orga_www}" target="_blank">${t.orga || 'Link'}</a>` : (t.orga || '')}</td>
-                    <td class="kontakt">${formatKontakt(t.kontakt, t['e-mail'])}</td>
+
+                // Hidden search content for better search accuracy
+                const searchContent = [
+                    t.name, t.city, t.plz, t.state, t.orga, t.kontakt, t['e-mail'], t.date, t.dow
+                ].filter(v => v).join(' ').toLowerCase();
+
+                card.innerHTML = `
+                    <div class="search-content" style="display: none;">${searchContent}</div>
+                    <div class="date-badge">
+                        <span class="day-name">${t.dow || ''}</span>
+                        <div class="day-month">
+                            <span class="day-num">${dateInfo.dayNum}</span>
+                            <span class="month">${dateInfo.month}</span>
+                        </div>
+                        <span class="relative-date">${getRelativeDateString(t.date)}</span>
+                    </div>
+                    <div class="event-info">
+                        <h3 class="event-title">${t.name || ''}</h3>
+                        <div class="event-detail">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span>${t.plz || ''} ${cityText(t)}</span>
+                        </div>
+                        <div class="event-detail">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            <span>${t.time ? t.time : ''}</span>
+                        </div>
+                        <div class="event-detail">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            <span>${t.orga || ''}</span>
+                        </div>
+                    </div>
                 `;
 
-                row.addEventListener('click', () => {
+                card.addEventListener('click', () => {
                     updateSelectionPanel(t, true);
+                    // On mobile, maybe don't scroll map into view automatically if user is browsing cards?
+                    // But we want to show the marker on the map too.
+                    if (currentMap) {
+                        currentMap.setFocus({
+                            coords: t.coords,
+                            scale: 3,
+                            animate: true
+                        });
+                    }
                 });
 
-                tbody.appendChild(row);
+                listContainer.appendChild(card);
             });
         }
 
+        // --- Map Logic ---
         let currentMap = null;
-        let termineList = null;
         let globalTermine = null;
         let globalMapMarkers = null;
 
@@ -212,75 +231,6 @@
             };
         }
 
-        function getMapColors() {
-            const style = getComputedStyle(document.documentElement);
-            return {
-                fill: style.getPropertyValue('--map-region-fill').trim() || '#333333',
-                stroke: style.getPropertyValue('--map-region-stroke').trim() || '#AAAAAA'
-            };
-        }
-
-        // Custom search function to handle parentheses correctly
-        function customSearchFunction(searchString, columns) {
-            // List.js calls this function once, not per item.
-            // We need to iterate over all items and set item.found = true/false.
-
-            // Unescape backslashes added by List.js
-            // List.js does: s.replace(/[-[\]{}()*+?.,\\^$|#]/g, '\\$&');
-            const unescapedString = searchString.replace(/\\(.)/g, '$1');
-            const lowerSearchString = unescapedString.toLowerCase();
-
-            const searchTerms = lowerSearchString.split(/\s+/).filter(t => t.length > 0);
-
-            // Check if termineList is initialized
-            if (!termineList) return;
-
-            const items = termineList.items;
-            for (let k = 0, kl = items.length; k < kl; k++) {
-                const item = items[k];
-                item.found = false;
-
-                if (searchTerms.length === 0) {
-                    item.found = true;
-                    continue;
-                }
-
-                // columns is an array of column names we can search in.
-                // If undefined, search all valueNames.
-                const itemValues = item.values();
-                const cols = columns || termineList.valueNames;
-
-                let allTermsFound = true;
-                // Standard logic: AND for terms
-                for (let i = 0; i < searchTerms.length; i++) {
-                    const term = searchTerms[i];
-                    let termFoundInAnyCol = false;
-
-                    // OR for columns
-                    for (let j = 0; j < cols.length; j++) {
-                        const colName = cols[j];
-                        const val = itemValues[colName];
-                        if (val !== undefined && val !== null) {
-                            const text = String(val).toLowerCase();
-                            if (text.indexOf(term) !== -1) {
-                                termFoundInAnyCol = true;
-                                break;
-                            }
-                        }
-                    }
-
-                    if (!termFoundInAnyCol) {
-                        allTermsFound = false;
-                        break;
-                    }
-                }
-
-                if (allTermsFound) {
-                    item.found = true;
-                }
-            }
-        }
-
         function initMap(mapMarkers, events) {
             if (currentMap) {
                 currentMap.destroy();
@@ -288,11 +238,9 @@
             document.getElementById('map').innerHTML = '';
 
             const colors = getMapColors();
-            const scale = Math.min(2, Math.max(1, window.innerWidth / (window.innerHeight / 1.5)));
 
             try {
                 currentMap = new jsVectorMap({
-                    focusOn: { coords: [51, 10], scale: scale },
                     markersSelectable: true,
                     markersSelectableOne: true,
                     selector: '#map',
@@ -300,9 +248,9 @@
                     backgroundColor: 'transparent',
                     regionStyle: {
                         initial: {
-                            fill: '#FFF',
+                            fill: colors.fill,
                             stroke: colors.stroke,
-                            strokeWidth: 0.5
+                            strokeWidth: 0.8
                         },
                     },
                     zoomButtons: false,
@@ -316,260 +264,136 @@
                     },
                     onRegionClick: function (event, code) {
                         updateSearch(code);
-                        // Scroll to table on mobile for better visibility
-                        if (window.innerWidth <= 720) {
-                            document.getElementById('table-container').scrollIntoView({ behavior: 'smooth' });
+                        if (window.innerWidth <= 900) {
+                            document.getElementById('event-list-container').scrollIntoView({ behavior: 'smooth' });
                         }
-                    },
+                    }
                 });
             } catch (e) {
                 console.error("Map Error:", e);
-                document.getElementById('map').innerHTML = '<p style="color: white; padding: 10px;">Fehler beim Laden der Karte.</p>';
+                document.getElementById('map').innerHTML = '<p style="padding: 20px;">Fehler beim Laden der Karte.</p>';
             }
-
-
-            // Handle clicks outside map elements (regions/markers) to clear filter
-            document.getElementById('map').addEventListener('click', function (event) {
-                if (!event.target.closest('.jvm-element')) {
-                    const searchInput = document.querySelector('.filter-panel .table-search');
-                    if (searchInput && termineList) {
-                        updateSearch('');
-                    }
-                }
-            });
         }
 
-        function updateSelectionPanel(termin, showModal = false) {
-            // Update Selection Panel content
-            const panel = document.getElementById('selection-panel');
-            const overlay = document.getElementById('modal-overlay');
-            const content = document.getElementById('selection-content');
-
-            const relativeDate = getRelativeDateString(termin.date);
-
-            content.innerHTML = `
-                <p><span class="field-label">Name:</span> <span>${termin.name || ''}</span></p>
-                <p><span class="field-label">Datum:</span> <span>${termin.date || ''} (${termin.dow || ''}) <span style="color: #888; margin-left: 5px;">${relativeDate}</span></span></p>
-                <p><span class="field-label">Stadt:</span> <span>${cityText(termin)}</span></p>
-                <p><span class="field-label">Uhrzeit:</span> <span>${termin.time || ''}</span></p>
-                <p><span class="field-label">PLZ:</span> <span>${termin.plz ? `<a href="https://maps.google.com/?q=${termin.plz},Deutschland" target="_blank">${termin.plz} 🧭</a>` : ''}</span></p>
-                <p><span class="field-label">Kontakt:</span> <span>${formatKontakt(termin.kontakt, termin['e-mail'])}</span></p>
-                <p><span class="field-label">Veranstalter:</span> <span>${termin.orga_www ? `<a href="${termin.orga_www}" target="_blank">${termin.orga || 'Link'}</a>` : (termin.orga || '')}</span></p>
-                ${termin.link_qr ? `<div class="qr-container"><a href="${termin.link}" target="_blank"><img src="${termin.link_qr}" alt="QR Code" style="max-width: 200px; display: block;"></a></div>` : ''}
-            `;
-
-            if (showModal) {
-                panel.style.display = 'flex';
+        function updateSelectionPanel(termin, showOverlay = true) {
+            const overlay = document.getElementById('selection-overlay');
+            if (showOverlay) {
                 overlay.style.display = 'block';
+                const relativeDate = getRelativeDateString(termin.date);
+                overlay.innerHTML = `
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+                        <h4 style="margin: 0; font-size: 1.1rem;">${termin.name || ''}</h4>
+                        <button onclick="document.getElementById('selection-overlay').style.display='none'" class="map-overlay-close">✕</button>
+                    </div>
+                    <div style="font-size: 0.9rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.25rem;">
+                        <div>${termin.date || ''} (${termin.dow || ''}) — ${relativeDate}</div>
+                        <div><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> <a href="https://maps.google.com/?q=${termin.plz},${cityText(termin)},Deutschland" target="_blank">${termin.plz || ''} ${cityText(termin)}</a></div>
+                        <div><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> ${termin.time || ''}</div>
+                        <div><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg> ${formatKontakt(termin.kontakt, termin['e-mail'])}</div>
+                        <div style="margin-top: 0.5rem;">Veranstalter: ${termin.orga_www ? `<a href="${termin.orga_www}" target="_blank">${termin.orga || 'Link'}</a>` : (termin.orga || '')}</div>
+                        ${termin.link_qr ? `<div style="margin-top: 0.5rem;"><img src="${termin.link_qr}" alt="QR Code" style="width: 100%; max-width: 150px; border-radius: 4px;"></div>` : ''}
+                    </div>
+                `;
+            } else {
+                overlay.style.display = 'none';
             }
-        }
-
-        function defaultTermine() {
-            const today = new Date().toISOString().split('T')[0];
-            const nextTermine = globalTermine.filter(t => t.date >= today);
-            nextTermine.sort((a, b) => a.date.localeCompare(b.date));
-            return nextTermine;
-        }
-
-        function initSelection() {
-            const nextTermine = defaultTermine();
-            updateSelectionPanel(nextTermine[0], false);
-        }
-
-        function closeSelectionModal() {
-            document.getElementById('selection-panel').style.display = 'none';
-            document.getElementById('modal-overlay').style.display = 'none';
         }
 
         function updateSearch(val) {
             const today = new Date().toISOString().split('T')[0];
             const searchInput = document.querySelector('.filter-panel .table-search');
-            if (searchInput) {
-                searchInput.value = val;
-            }
-
-            if (!termineList) return;
+            if (searchInput) searchInput.value = val;
 
             if (val.trim() === '') {
-                // Show only future events if no search
-                termineList.filter(item => {
-                    return item.values().date >= today;
+                document.querySelectorAll('.event-card').forEach(card => {
+                    if (card.dataset.date < today) {
+                        card.style.display = 'none';
+                    } else {
+                        card.style.display = 'flex';
+                    }
                 });
             } else {
-                // Show all events if searching
-                termineList.filter(); // remove filter
-            }
-            termineList.search(val, customSearchFunction);
-            if (searchInput) {
-                searchInput.focus();
+                // Show all matches (including past) and check search string
+                const lowerVal = val.toLowerCase();
+                document.querySelectorAll('.event-card').forEach(card => {
+                    const searchContent = card.querySelector('.search-content').textContent;
+                    if (searchContent.includes(lowerVal)) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
             }
         }
 
         async function loadData() {
+            initTheme();
             const response = await fetch('termine.json');
             let termine = await response.json();
-
             const today = new Date().toISOString().split('T')[0];
 
             // Map original index to all events for reliable lookup
             termine = termine.map((t, i) => ({ ...t, originalIndex: i }));
 
-            // 1. Deduplicate & Populate Map Markers FIRST (using all events)
-            const groups = {};
+            // Sort by date ASC
+            termine.sort((a, b) => (a.date || '').localeCompare(b.date || ''));
 
+            // Group markers
+            const groups = {};
             termine.forEach(t => {
                 const coordKey = t.coords.join(',');
-                if (!groups[coordKey]) {
-                    groups[coordKey] = [];
-                }
+                if (!groups[coordKey]) groups[coordKey] = [];
                 groups[coordKey].push(t);
             });
 
-            const isMobile = window.innerWidth <= 720;
-            const markerRadius = isMobile ? 12 : 9;
+            const markerRadius = window.innerWidth <= 720 ? 10 : 7;
+            const colors = getMapColors();
 
-            // Create markers and build mapping
             const mapMarkers = Object.values(groups).map((group, markerIndex) => {
                 const hasFutureEvent = group.some(t => t.date >= today);
-                const markerColor = hasFutureEvent ? "#FA2" : "#888";
-                const style = { initial: { fill: markerColor, r: markerRadius } };
+                const markerColor = hasFutureEvent ? colors.accent : "#888";
                 const coords = group[0].coords;
                 const ids = group.map(t => t.originalIndex);
 
-                // Assign markerIndex to each event in the group for reverse lookup
-                group.forEach(t => {
-                    t.markerIndex = markerIndex;
-                });
-
-                // Determine name/tooltip priority
-                const names = new Set(group.map(t => t.name));
-                let markerName = "";
-
-                if (names.size === 1) {
-                    const futureEvents = group.filter(t => t.date >= today)
-                        .sort((a, b) => a.date.localeCompare(b.date));
-
-                    if (futureEvents.length > 0) {
-                        markerName = futureEvents[0].name;
-                    } else {
-                        const pastEvents = group.filter(t => t.date < today)
-                            .sort((a, b) => b.date.localeCompare(a.date));
-                        if (pastEvents.length > 0) {
-                            markerName = pastEvents[0].name;
-                        } else {
-                            markerName = group[0].name;
-                        }
-                    }
-                } else {
-                    markerName = group[0].city;
-                }
-
                 return {
-                    name: markerName,
+                    name: group[0].city,
                     coords: coords,
-                    style: style,
+                    style: { initial: { fill: markerColor, r: markerRadius, stroke: "#333", strokeWidth: 1 } },
                     ids: ids
                 };
             });
 
-            // 2. Populate Table (all events)
-            populateTable(termine);
+            globalTermine = termine;
+            globalMapMarkers = mapMarkers;
 
-            termineList = new List('table-container', {
-                valueNames: ['date', 'time', 'state', 'plz', 'city', 'name', 'orga', 'kontakt']
-            });
-            termineList.sort('date', { order: "asc" });
+            populateList(termine);
+            initMap(mapMarkers, termine);
 
-            // Update selection panel on search
-            termineList.on('updated', function (list) {
-                const searchInput = document.querySelector('.filter-panel .table-search');
-                if (searchInput && searchInput.value.trim() !== '') {
-                    if (list.visibleItems.length > 0) {
-                        const today = new Date().toISOString().split('T')[0];
+            // Initialization: Hide past events by default
+            updateSearch('');
 
-                        // Map visible items to their termin objects
-                        const visibleTermine = list.visibleItems.map(item => {
-                            const originalIndex = parseInt(item.elm.id.replace('marker-', ''));
-                            return termine[originalIndex];
-                        }).filter(t => t);
-
-                        let bestTermin = null;
-
-                        // 1. Try to find the next up event (future, >= today)
-                        // We must sort explicitly because the table might be sorted by another column
-                        const futureTermine = visibleTermine.filter(t => t.date >= today);
-                        if (futureTermine.length > 0) {
-                            futureTermine.sort((a, b) => a.date.localeCompare(b.date));
-                            bestTermin = futureTermine[0];
-                        } else {
-                            // 2. If no future events, find the most recent past event (< today)
-                            const pastTermine = visibleTermine.filter(t => t.date < today);
-                            if (pastTermine.length > 0) {
-                                pastTermine.sort((a, b) => b.date.localeCompare(a.date));
-                                bestTermin = pastTermine[0];
-                            }
-                        }
-
-                        if (bestTermin) {
-                            updateSelectionPanel(bestTermin, false);
-                        }
-                    }
-                }
-            });
-
-
-
-            // Attach listener to the new table-search input
-            const tableSearchInput = document.querySelector('.filter-panel .table-search');
-            if (tableSearchInput) {
-                tableSearchInput.addEventListener('input', debounce(function (e) {
+            // Search logic
+            const searchInput = document.querySelector('.filter-panel .table-search');
+            if (searchInput) {
+                searchInput.addEventListener('input', debounce(function (e) {
                     updateSearch(e.target.value);
                 }, 150));
             }
 
-            globalTermine = termine;
-            globalMapMarkers = mapMarkers;
+            const clearButton = document.getElementById('clear-filter');
+            if (clearButton) {
+                clearButton.addEventListener('click', () => updateSearch(''));
+            }
 
-            initMap(mapMarkers, termine);
-            initSelection(termine);
-            updateSearch('');
+            const themeBtn = document.getElementById('theme-toggle');
+            if (themeBtn) themeBtn.addEventListener('click', toggleTheme);
+
         }
 
         window.addEventListener('DOMContentLoaded', loadData);
-
-        const handleResize = debounce(function () {
-            if (globalTermine && globalMapMarkers) {
-                initMap(globalMapMarkers, globalTermine);
-            }
-        }, 150);
-
-        window.addEventListener('resize', handleResize);
-
-        // Filter clear button logic
-        document.addEventListener('DOMContentLoaded', () => {
-            const searchInput = document.querySelector('.filter-panel .table-search');
-            const clearButton = document.getElementById('clear-filter');
-
-            if (searchInput && clearButton) {
-                // Clear input on click
-                clearButton.addEventListener('click', () => {
-                    updateSearch('');
-                });
-            }
-
-            // Close modal handlers
-            const closeButton = document.getElementById('close-selection');
-            const overlay = document.getElementById('modal-overlay');
-
-            if (closeButton) closeButton.addEventListener('click', closeSelectionModal);
-            if (overlay) overlay.addEventListener('click', closeSelectionModal);
-
-            window.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape') {
-                    closeSelectionModal();
-                }
-            });
-        });
+        window.addEventListener('resize', debounce(() => {
+            if (globalMapMarkers) initMap(globalMapMarkers, globalTermine);
+        }, 150));
     </script>
 </body>
 
