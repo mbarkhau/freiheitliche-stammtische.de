@@ -197,7 +197,9 @@
     },
     flush: function flush() {
       Object.keys(eventRegistry).forEach(function (event) {
-        EventHandler.off(eventRegistry[event].selector, event, eventRegistry[event].handler);
+        if (eventRegistry[event]) {
+          EventHandler.off(eventRegistry[event].selector, event, eventRegistry[event].handler);
+        }
       });
     },
     getEventRegistry: function getEventRegistry() {
