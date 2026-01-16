@@ -254,8 +254,14 @@
                     markers: [...mapMarkers],
                     onMarkerClick: function (event, index) {
                         const marker = globalMapMarkers[index];
-                        const originalIndex = marker.ids[0];
-                        const termin = globalTermine[originalIndex];
+                        const today = new Date().toISOString().split('T')[0];
+
+                        // Find all events for this marker
+                        const markerTermine = globalTermine.filter(t => marker.ids.includes(t.originalIndex));
+
+                        // Find the first future event, or fallback to the first event
+                        const termin = markerTermine.find(t => t.date >= today) || markerTermine[0];
+
                         updateSelectionPanel(termin, true);
                     },
                     onRegionClick: function (event, code) {
@@ -382,6 +388,35 @@
 
             const themeBtn = document.getElementById('theme-toggle');
             if (themeBtn) themeBtn.addEventListener('click', toggleTheme);
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    document.getElementById('selection-overlay').style.display = 'none';
+                }
+            });
+
+            document.addEventListener('click', (e) => {
+                const overlay = document.getElementById('selection-overlay');
+                if (overlay.style.display === 'block') {
+                    const isOverlay = e.target.closest('#selection-overlay');
+                    const isMarker = e.target.closest('.jvm-marker') || e.target.classList.contains('jvm-marker');
+                    const isCard = e.target.closest('.event-card');
+
+                    if (!isOverlay && !isMarker && !isCard) {
+                        overlay.style.display = 'none';
+                    }
+                }
+
+                // Clear search if clicking map backdrop
+                const mapContainer = document.getElementById('map');
+                if (mapContainer && mapContainer.contains(e.target)) {
+                    const isElement = e.target.closest('.jvm-element');
+                    const isZoomBtn = e.target.closest('.jvm-zoom-btn');
+                    if (!isElement && !isZoomBtn) {
+                        updateSearch('');
+                    }
+                }
+            });
 
         }
 
