@@ -40,6 +40,8 @@ body {
     color: var(--text-color);
     line-height: 1.5;
     height: 100vh;
+    height: 100dvh;
+    /* Dynamic viewport height for modern browsers */
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -52,9 +54,11 @@ body {
     border-bottom: 1px solid var(--border-color);
     box-shadow: var(--shadow-sm);
     z-index: 1000;
-    height: 4rem;
+    min-height: 4rem;
+    height: auto;
     display: flex;
     align-items: center;
+    padding: 0.5rem 0;
 }
 
 .header-container {
@@ -65,6 +69,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 }
 
 .header-left {
@@ -82,6 +87,7 @@ body {
 
 .site-title {
     font-size: 1.25rem;
+    line-height: 1.1em;
     font-weight: 700;
     margin: 0;
 }
@@ -100,7 +106,8 @@ body {
     border: 1px solid var(--border-color);
     border-radius: 6px;
     padding: 0.25rem 0.5rem;
-    min-width: 250px;
+    min-width: 200px;
+    max-width: 350px;
 }
 
 .filter-panel input {
@@ -338,7 +345,8 @@ body {
     }
 
     #map-view-container {
-        flex: 0 0 40vh;
+        flex: 0 0 45vh;
+        /* Slightly more space for map on medium screens */
         width: 100%;
         border-bottom: 1px solid var(--border-color);
     }
@@ -354,7 +362,7 @@ body {
 
 @media (max-width: 600px) {
     .site-title {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .header-container {
@@ -362,15 +370,11 @@ body {
     }
 
     .filter-panel {
-        min-width: 120px;
-    }
-
-    .header-right {
-        gap: 0.5rem;
+        flex: 0.5;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .site-title {
         font-size: 0.9rem;
     }
