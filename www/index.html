@@ -242,6 +242,8 @@
                     selector: '#map',
                     map: 'de_mill',
                     backgroundColor: 'transparent',
+                    draggable: true,
+                    bindTouchEvents: true,
                     regionStyle: {
                         initial: {
                             fill: colors.fill,
@@ -395,7 +397,7 @@
                 }
             });
 
-            document.addEventListener('click', (e) => {
+            document.addEventListener('pointerup', (e) => {
                 const overlay = document.getElementById('selection-overlay');
                 if (overlay.style.display === 'block') {
                     const isOverlay = e.target.closest('#selection-overlay');
