@@ -39,6 +39,15 @@
             <div id="termine-list" class="list">
                 <!-- Cards will be populated by JS -->
             </div>
+            <div id="no-results" class="no-results" style="display: none;">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+                <p>Keine Stammtische gefunden</p>
+            </div>
         </aside>
         <section id="map-view-container">
             <div id="map"></div>
@@ -131,7 +140,7 @@
             return {
                 dayNum: date.getDate(),
                 month: MONTH_NAMES[date.getMonth()],
-                yearSuffix: String(date.getFullYear()).slice(2)
+                year: String(date.getFullYear())
             };
         }
 
@@ -180,6 +189,7 @@
                             <span class="day-num">${dateInfo.dayNum}</span>
                             <span class="month">${dateInfo.month}</span>
                         </div>
+                        <span class="year">${dateInfo.year}</span>
                         <span class="relative-date">${getRelativeDateString(t.date)}</span>
                     </div>
                     <div class="event-info">
@@ -313,12 +323,14 @@
             const searchInput = document.querySelector('.filter-panel .table-search');
             if (searchInput) searchInput.value = val;
 
+            let matchCount = 0;
             if (val.trim() === '') {
                 document.querySelectorAll('.event-card').forEach(card => {
                     if (card.dataset.date < today) {
                         card.style.display = 'none';
                     } else {
                         card.style.display = 'flex';
+                        matchCount++;
                     }
                 });
             } else {
@@ -328,10 +340,16 @@
                     const searchContent = card.querySelector('.search-content').textContent;
                     if (searchContent.includes(lowerVal)) {
                         card.style.display = 'flex';
+                        matchCount++;
                     } else {
                         card.style.display = 'none';
                     }
                 });
+            }
+
+            const noResults = document.getElementById('no-results');
+            if (noResults) {
+                noResults.style.display = matchCount === 0 ? 'flex' : 'none';
             }
         }
 

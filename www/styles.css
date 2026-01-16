@@ -1,7 +1,7 @@
 :root {
     --bg-color: #f4f1ea;
-    --text-color: #2c2c2c;
-    --text-muted: #6c757d;
+    --text-color: #000000;
+    --text-muted: #333333;
     --card-bg: #ffffff;
     --border-color: #e0ddd5;
     --accent-color: #c5a059;
@@ -18,8 +18,8 @@
 
 [data-theme="dark"] {
     --bg-color: #1a1a1a;
-    --text-color: #e0e0e0;
-    --text-muted: #a0a0a0;
+    --text-color: #ffffff;
+    --text-muted: #dddddd;
     --card-bg: #2d2d2d;
     --border-color: #404040;
     --accent-color: #d4af37;
@@ -211,8 +211,8 @@ body {
 }
 
 .date-badge {
-    flex: 0 0 105px;
-    height: 95px;
+    flex: 0 0 115px;
+    height: 115px;
     background-color: var(--accent-color);
     color: var(--accent-contrast);
     border-radius: 12px;
@@ -238,7 +238,6 @@ body {
     gap: 4px;
     line-height: 1;
 }
-
 .date-badge .day-num {
     font-size: 1.2rem;
 }
@@ -248,10 +247,15 @@ body {
     text-transform: uppercase;
 }
 
+.date-badge .year {
+    font-size: 1.0rem;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
 .date-badge .relative-date {
-    font-size: 0.75rem;
+    font-size: 0.95rem;
     font-weight: 400;
-    margin-top: 4px;
     opacity: 0.9;
 }
 
@@ -259,11 +263,12 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 0.25rem;
 }
 
 .event-title {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 700;
     margin: 0;
     color: var(--text-color);
@@ -273,7 +278,7 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 1.0rem;
     color: var(--text-muted);
 }
 
@@ -407,4 +412,28 @@ body {
     border-radius: 8px !important;
     padding: 0.5rem 1rem !important;
     box-shadow: var(--shadow-md) !important;
+}
+
+.no-results {
+    padding: 3rem 1.5rem;
+    text-align: center;
+    color: var(--text-muted);
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    border: 2px dashed var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.no-results svg {
+    opacity: 0.5;
+    color: var(--accent-color);
+}
+
+.no-results p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
