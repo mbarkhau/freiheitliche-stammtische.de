@@ -225,31 +225,24 @@ body {
     text-align: center;
 }
 
-.date-badge .day-name {
-    font-size: 0.9rem;
+.date-badge .day-name-num {
+    font-size: 1.3rem;
     text-transform: uppercase;
     opacity: 0.9;
     margin-bottom: 2px;
 }
 
-.date-badge .day-month {
+.date-badge .day-month-year {
     display: flex;
     align-items: center;
     gap: 4px;
     line-height: 1;
 }
-.date-badge .day-num {
-    font-size: 1.2rem;
-}
 
-.date-badge .month {
+.date-badge .month,
+.date-badge .year {
     font-size: 1.1rem;
     text-transform: uppercase;
-}
-
-.date-badge .year {
-    font-size: 1.0rem;
-    font-weight: 500;
     opacity: 0.9;
 }
 

@@ -184,12 +184,11 @@
                 card.innerHTML = `
                     <div class="search-content" style="display: none;">${searchContent}</div>
                     <div class="date-badge">
-                        <span class="day-name">${t.dow || ''}</span>
-                        <div class="day-month">
-                            <span class="day-num">${dateInfo.dayNum}</span>
+                        <span class="day-name-num">${t.dow || ''} ${dateInfo.dayNum}</span>
+                        <div class="day-month-year">
                             <span class="month">${dateInfo.month}</span>
+                            <span class="year">${dateInfo.year}</span>
                         </div>
-                        <span class="year">${dateInfo.year}</span>
                         <span class="relative-date">${getRelativeDateString(t.date)}</span>
                     </div>
                     <div class="event-info">
