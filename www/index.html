@@ -163,8 +163,18 @@
             const listContainer = document.querySelector('#termine-list');
             listContainer.innerHTML = '';
             const today = new Date().toISOString().split('T')[0];
+            let separatorAdded = false;
 
             termine.forEach(t => {
+                if (!separatorAdded && t.date >= today) {
+                    const separator = document.createElement('div');
+                    separator.className = 'list-separator';
+                    separator.id = 'future-separator';
+                    separator.innerHTML = '<hr/>';
+                    listContainer.appendChild(separator);
+                    separatorAdded = true;
+                }
+
                 const dateInfo = getDetailedDate(t.date);
                 const card = document.createElement('div');
                 card.className = 'event-card';
@@ -246,6 +256,8 @@
 
             try {
                 currentMap = new jsVectorMap({
+                    focusOn: { coords: [51, 10], scale: 0.9 },
+                    zoomMin: 0.9,
                     markersSelectable: true,
                     markersSelectableOne: true,
                     selector: '#map',
@@ -276,7 +288,7 @@
                     onRegionClick: function (event, code) {
                         updateSearch(code);
                         if (window.innerWidth <= 900) {
-                            document.getElementById('event-list-container').scrollIntoView({ behavior: 'smooth' });
+                            document.getElementById('event-list-container').scrollIntoView({ behavior: 'auto' });
                         }
                     },
                     onLoaded: function (map) {
@@ -318,32 +330,48 @@
         }
 
         function updateSearch(val) {
-            const today = new Date().toISOString().split('T')[0];
             const searchInput = document.querySelector('.filter-panel .table-search');
             if (searchInput) searchInput.value = val;
 
+            const today = new Date().toISOString().split('T')[0];
+            let firstFutureCard = null;
             let matchCount = 0;
+            let futureMatchCount = 0;
+
             if (val.trim() === '') {
                 document.querySelectorAll('.event-card').forEach(card => {
-                    if (card.dataset.date < today) {
-                        card.style.display = 'none';
-                    } else {
-                        card.style.display = 'flex';
-                        matchCount++;
+                    card.style.display = 'flex';
+                    matchCount++;
+                    if (card.dataset.date >= today) {
+                        futureMatchCount++;
+                        if (!firstFutureCard) firstFutureCard = card;
                     }
                 });
             } else {
-                // Show all matches (including past) and check search string
                 const lowerVal = val.toLowerCase();
                 document.querySelectorAll('.event-card').forEach(card => {
                     const searchContent = card.querySelector('.search-content').textContent;
                     if (searchContent.includes(lowerVal)) {
                         card.style.display = 'flex';
                         matchCount++;
+                        if (card.dataset.date >= today) {
+                            futureMatchCount++;
+                            if (!firstFutureCard) firstFutureCard = card;
+                        }
                     } else {
                         card.style.display = 'none';
                     }
                 });
+            }
+
+            const separator = document.getElementById('future-separator');
+            if (separator) {
+                if (futureMatchCount > 0) {
+                    separator.style.display = 'flex';
+                    separator.scrollIntoView({ behavior: 'auto', block: 'start' });
+                } else {
+                    separator.style.display = 'none';
+                }
             }
 
             const noResults = document.getElementById('no-results');
@@ -395,7 +423,6 @@
             populateList(termine);
             initMap(mapMarkers, termine);
 
-            // Initialization: Hide past events by default
             updateSearch('');
 
             // Search logic

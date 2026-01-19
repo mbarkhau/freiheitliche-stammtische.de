@@ -430,3 +430,27 @@ body {
     font-size: 1.1rem;
     font-weight: 500;
 }
+
+/* List Separator */
+.list-separator {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    color: var(--accent-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+}
+
+.list-separator::before,
+.list-separator::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--border-color);
+}
+
+.list-separator span {
+    padding: 0 1rem;
+}
