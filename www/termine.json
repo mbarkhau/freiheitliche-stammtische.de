@@ -578,5 +578,25 @@
     "e-mail": null,
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Milei-Konferenz 2026",
+    "plz": "04435",
+    "state": "DE-SN",
+    "city": "Schkeuditz",
+    "city_dist": 0.4,
+    "coords": [
+      51.3971471,
+      12.2217017
+    ],
+    "date": "2026-03-14",
+    "dow": "Sa.",
+    "time": "10:00",
+    "orga": "Milei Institut",
+    "orga_www": "https://www.milei-institut.de/milei-konferenz-2026/",
+    "kontakt": null,
+    "e-mail": null,
+    "link": null,
+    "link_qr": null
   }
 ]

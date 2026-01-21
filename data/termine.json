@@ -413,5 +413,16 @@
     "kontakt": "Jean-Pierre",
     "orga": "Statenlos",
     "orga_webseite": "https://staatenlos.ch/"
+  },
+  {
+    "name": "Milei-Konferenz 2026",
+    "beginn": "2026-03-14",
+    "ende": "2026-03-14",
+    "uhrzeit": "10:00",
+    "kw": "KW11",
+    "wochentag": "Saturday",
+    "plz": "04435",
+    "orga": "Milei Institut",
+    "orga_webseite": "https://www.milei-institut.de/milei-konferenz-2026/"
   }
 ]

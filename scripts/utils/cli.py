@@ -116,7 +116,7 @@ def init_logging(args: argparse.Namespace) -> None:
 
     logging.basicConfig(
         level=level,
-        format="%(asctime)s.%(msecs)03d - %(levelname)s - %(message)s",
+        format="%(asctime)s.%(msecs)03d - %(name)s - %(levelname)s - %(message)s",
         datefmt="%Y-%m-%dT%H:%M:%S",
     )
 
