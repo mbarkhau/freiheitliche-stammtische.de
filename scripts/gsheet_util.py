@@ -205,15 +205,15 @@ def main(argv: list[str] = sys.argv[1:]) -> int:
         else:
             link_qr_path = None
 
-        termin["plz"] = termin["plz"].strip()
-        plz_location = geolocate(termin["plz"])
-        if plz_location is None:
-            continue
-
-        plz_name, plz_state, lat, lon = plz_location
-        nearest, city_dist = find_nearest_city(lat, lon)
-
         try:
+            termin["plz"] = termin["plz"].strip()
+            plz_location = geolocate(termin["plz"])
+            if plz_location is None:
+                continue
+
+            plz_name, plz_state, lat, lon = plz_location
+            nearest, city_dist = find_nearest_city(lat, lon)
+
             event_items.append({
                 "name": termin.get("name", termin.get("ort", "Unknown")),
                 "plz": termin["plz"],
@@ -231,7 +231,7 @@ def main(argv: list[str] = sys.argv[1:]) -> int:
                 "link": link,
                 "link_qr": "img/" + link_qr_path.name if link_qr_path else None,
             })
-        except Exception as err:
+        except KeyError as err:
             log.warning(f"Skipping invalid termin: {termin}")
             log.warning(f"Error: {repr(err)}")
     

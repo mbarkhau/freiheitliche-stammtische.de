@@ -424,5 +424,42 @@
     "plz": "04435",
     "orga": "Milei Institut",
     "orga_webseite": "https://www.milei-institut.de/milei-konferenz-2026/"
+  },
+  {
+    "name": "Libertärer Stammtisch Mittelhessen",
+    "beginn": "2025-12-17",
+    "ende": "2025-12-17",
+    "uhrzeit": "19:00",
+    "kw": "KW51",
+    "wochentag": "Wednesday",
+    "plz": "35396",
+    "telegram": "https://t.me/+kDTzmac3wJYwMzIy",
+    "infotext": "Jeder dritte Mittwoch"
+  },
+  {
+    "name": "Libertärer Stammtisch Mittelhessen",
+    "beginn": "2026-01-21",
+    "ende": "2026-01-21",
+    "uhrzeit": "19:00",
+    "kw": "KW04",
+    "wochentag": "Wednesday",
+    "plz": "35396",
+    "telegram": "https://t.me/+kDTzmac3wJYwMzIy",
+    "infotext": "Jeder dritte Mittwoch"
+  },
+  {
+    "name": "Libertärer Stammtisch Mittelhessen",
+    "beginn": "2026-02-18",
+    "ende": "2026-02-18",
+    "uhrzeit": "19:00",
+    "kw": "KW08",
+    "wochentag": "Wednesday",
+    "plz": "35396",
+    "telegram": "https://t.me/+kDTzmac3wJYwMzIy",
+    "infotext": "Jeder dritte Mittwoch"
+  },
+  {
+    "kw": "KW52",
+    "wochentag": "Saturday"
   }
 ]
