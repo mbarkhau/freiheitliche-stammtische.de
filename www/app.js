@@ -115,6 +115,35 @@
 		return kontakt || '';
 	}
 
+	function cardHtml(t) {
+		const dateInfo = getDetailedDate(t.date);
+		// Hidden search content for better search accuracy
+		const searchParts = [t.name, t.city, t.plz, t.state, t.orga, t.kontakt, t['e-mail'], t.date, t.dow]
+		const searchContent = searchParts.join(' ').toLowerCase();
+
+		return `
+		<div class="search-content" style="display: none;">${searchContent}</div>
+		<div class="date-badge">
+			<span class="day-name-num">${t.dow || ''} ${dateInfo.dayNum}</span>
+			<div class="day-month-year">
+				<span class="month">${dateInfo.month}</span>
+				<span class="year">${dateInfo.year}</span>
+			</div>
+			<span class="relative-date">${getRelativeDateString(t.date)}</span>
+		</div>
+		<div class="event-info">
+			<h3 class="event-title">${t.name || ''}</h3>
+			<div class="event-detail">
+				<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+				<span>${t.plz || ''} ${cityText(t)}</span>
+			</div>
+			<div class="event-detail">
+				<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+				<span>${t.orga || ''}</span>
+			</div>
+		</div>`;
+	}
+
 	// --- Card List Management ---
 	function populateList(termine) {
 		const listContainer = document.querySelector('#termine-list');
@@ -131,7 +160,6 @@
 				separatorAdded = true;
 			}
 
-			const dateInfo = getDetailedDate(t.date);
 			const card = document.createElement('div');
 			card.className = 'event-card';
 			card.id = 'marker-' + t.originalIndex;
@@ -142,33 +170,7 @@
 				card.style.opacity = '0.6';
 			}
 
-			// Hidden search content for better search accuracy
-			const searchContent = [
-				t.name, t.city, t.plz, t.state, t.orga, t.kontakt, t['e-mail'], t.date, t.dow
-			].filter(v => v).join(' ').toLowerCase();
-
-			card.innerHTML = `
-	<div class="search-content" style="display: none;">${searchContent}</div>
-	<div class="date-badge">
-	  <span class="day-name-num">${t.dow || ''} ${dateInfo.dayNum}</span>
-	  <div class="day-month-year">
-		<span class="month">${dateInfo.month}</span>
-		<span class="year">${dateInfo.year}</span>
-	  </div>
-	  <span class="relative-date">${getRelativeDateString(t.date)}</span>
-	</div>
-	<div class="event-info">
-	  <h3 class="event-title">${t.name || ''}</h3>
-	  <div class="event-detail">
-		<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-		<span>${t.plz || ''} ${cityText(t)}</span>
-	  </div>
-	  <div class="event-detail">
-		<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-		<span>${t.orga || ''}</span>
-	  </div>
-	</div>
-	`;
+			card.innerHTML = cardHtml(t);
 
 			card.addEventListener('click', () => {
 				updateSelectionPanel(t, true);

@@ -1,3 +1,6 @@
 __pycache__
 
-freiheitliche-stammtische-app.session
+*.session
+data/*bot.json
+data/*bot.tmp*
+

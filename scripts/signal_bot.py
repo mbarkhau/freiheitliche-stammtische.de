@@ -30,7 +30,7 @@ import signalbot
 log = logging.getLogger(name="signal_bot.py")
 
 def main(argv: list[str] = sys.argv[1:]) -> int:
-    args = cli.parse_args(argv, __doc__)
+    subcmd, args = cli.parse_args(argv, __doc__)
     cli.init_logging(args)
 
     log.info("Starting signal bot")

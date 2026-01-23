@@ -91,7 +91,7 @@ def read_json_list(path: str) -> list:
 
 
 def main(argv: list[str] = sys.argv[1:]) -> int:
-    args = cli.parse_args(argv, doc=__doc__, defaults=_cli_defaults)
+    subcmd, args = cli.parse_args(argv, doc=__doc__, defaults=_cli_defaults)
     cli.init_logging(args)
 
     # Source of truth for populations and names

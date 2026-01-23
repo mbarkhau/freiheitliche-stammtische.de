@@ -162,7 +162,7 @@ _cli_defaults = {
 
 
 def main(argv: list[str] = sys.argv[1:]) -> int:
-    args = cli.parse_args(argv, doc=__doc__, defaults=_cli_defaults)
+    subcmd, args = cli.parse_args(argv, doc=__doc__, defaults=_cli_defaults)
     cli.init_logging(args)
 
     data_dir = pl.Path("data")

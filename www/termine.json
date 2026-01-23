@@ -576,8 +576,68 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": "Jean-Pierre",
     "e-mail": null,
-    "link": null,
-    "link_qr": null
+    "link": "https://t.me/+cegpCV1FIdE3ZjA6",
+    "link_qr": "img/qr_4e956e97ac0c32be17255cdda426331625df8b02.png"
+  },
+  {
+    "name": "Staatenlos Düsseldorf",
+    "plz": "40217",
+    "state": "DE-NW",
+    "city": "Düsseldorf",
+    "city_dist": 1.4,
+    "coords": [
+      51.2131204,
+      6.774469
+    ],
+    "date": "2026-01-29",
+    "dow": "Do.",
+    "time": "18:00",
+    "orga": "Statenlos",
+    "orga_www": "https://staatenlos.ch/",
+    "kontakt": "Pascal",
+    "e-mail": null,
+    "link": "https://t.me/+rrA7PWQ67lc4NDFi",
+    "link_qr": "img/qr_2effdff9fdd526a9f8965c70f77d7770a02da2d4.png"
+  },
+  {
+    "name": "Staatenlos Neuss",
+    "plz": "41460",
+    "state": "DE-NW",
+    "city": "Düsseldorf",
+    "city_dist": 5.1,
+    "coords": [
+      51.2074219,
+      6.708413
+    ],
+    "date": "2025-12-05",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Statenlos",
+    "orga_www": "https://staatenlos.ch/",
+    "kontakt": "Svenja",
+    "e-mail": null,
+    "link": "https://t.me/+rGevpBnAjmUzMmRi",
+    "link_qr": "img/qr_04fc92be141d28598b01457941262d0cd63141a1.png"
+  },
+  {
+    "name": "Staatenlos Neuss",
+    "plz": "41461",
+    "state": "DE-BY",
+    "city": "München",
+    "city_dist": 1.9,
+    "coords": [
+      48.1426663,
+      11.5517123
+    ],
+    "date": "2026-02-06",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Statenlos",
+    "orga_www": "https://staatenlos.ch/",
+    "kontakt": "Svenja",
+    "e-mail": null,
+    "link": "https://t.me/+rGevpBnAjmUzMmRi",
+    "link_qr": "img/qr_04fc92be141d28598b01457941262d0cd63141a1.png"
   },
   {
     "name": "Milei-Konferenz 2026",

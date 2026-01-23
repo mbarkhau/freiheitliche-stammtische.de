@@ -412,7 +412,47 @@
     "plz": "60439",
     "kontakt": "Jean-Pierre",
     "orga": "Statenlos",
-    "orga_webseite": "https://staatenlos.ch/"
+    "orga_webseite": "https://staatenlos.ch/",
+    "telegram": "https://t.me/+cegpCV1FIdE3ZjA6"
+  },
+  {
+    "name": "Staatenlos Düsseldorf",
+    "beginn": "2026-01-29",
+    "ende": "2026-01-29",
+    "uhrzeit": "18:00",
+    "kw": "KW05",
+    "wochentag": "Thursday",
+    "plz": "40217",
+    "kontakt": "Pascal",
+    "orga": "Statenlos",
+    "orga_webseite": "https://staatenlos.ch/",
+    "telegram": "https://t.me/+rrA7PWQ67lc4NDFi"
+  },
+  {
+    "name": "Staatenlos Neuss",
+    "beginn": "2025-12-05",
+    "ende": "2025-12-05",
+    "uhrzeit": "19:00",
+    "kw": "KW06",
+    "wochentag": "Friday",
+    "plz": "41460",
+    "kontakt": "Svenja",
+    "orga": "Statenlos",
+    "orga_webseite": "https://staatenlos.ch/",
+    "telegram": "https://t.me/+rGevpBnAjmUzMmRi"
+  },
+  {
+    "name": "Staatenlos Neuss",
+    "beginn": "2026-02-06",
+    "ende": "2026-02-06",
+    "uhrzeit": "19:00",
+    "kw": "KW06",
+    "wochentag": "Friday",
+    "plz": "41461",
+    "kontakt": "Svenja",
+    "orga": "Statenlos",
+    "orga_webseite": "https://staatenlos.ch/",
+    "telegram": "https://t.me/+rGevpBnAjmUzMmRi"
   },
   {
     "name": "Milei-Konferenz 2026",
@@ -433,8 +473,8 @@
     "kw": "KW51",
     "wochentag": "Wednesday",
     "plz": "35396",
-    "telegram": "https://t.me/+kDTzmac3wJYwMzIy",
-    "infotext": "Jeder dritte Mittwoch"
+    "tournus": "Jeder dritte Mittwoch",
+    "telegram": "https://t.me/+kDTzmac3wJYwMzIy"
   },
   {
     "name": "Libertärer Stammtisch Mittelhessen",
@@ -444,8 +484,8 @@
     "kw": "KW04",
     "wochentag": "Wednesday",
     "plz": "35396",
-    "telegram": "https://t.me/+kDTzmac3wJYwMzIy",
-    "infotext": "Jeder dritte Mittwoch"
+    "tournus": "Jeder dritte Mittwoch",
+    "telegram": "https://t.me/+kDTzmac3wJYwMzIy"
   },
   {
     "name": "Libertärer Stammtisch Mittelhessen",
@@ -455,8 +495,8 @@
     "kw": "KW08",
     "wochentag": "Wednesday",
     "plz": "35396",
-    "telegram": "https://t.me/+kDTzmac3wJYwMzIy",
-    "infotext": "Jeder dritte Mittwoch"
+    "tournus": "Jeder dritte Mittwoch",
+    "telegram": "https://t.me/+kDTzmac3wJYwMzIy"
   },
   {
     "kw": "KW52",

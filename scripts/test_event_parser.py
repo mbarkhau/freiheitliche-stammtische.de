@@ -12,7 +12,7 @@ import json
 # Add scripts to path to import telegram_bot
 sys.path.append(os.path.join(os.getcwd(), 'scripts'))
 
-from telegram_bot import parse_event_info
+from telegram_bot_v2 import parse_event_info
 
 def test_parse_event_info():
     test_cases = [
@@ -37,8 +37,8 @@ Time: ab 19 Uhr
 Location: 10117""",
             "expected": {
                 "name": "Crypto Meetup Berlin",
-                "beginn": "12.12.2025",
-                "uhrzeit": "ab 19 Uhr",
+                "beginn": "2025-12-12",
+                "uhrzeit": "19:00",
                 "plz": "10117"
             }
         },
@@ -51,7 +51,7 @@ Ort: 01662""",
             "expected": {
                 "name": "Stammtisch Meißen",
                 "beginn": "2026-01-15",
-                "uhrzeit": "18 Uhr",
+                "uhrzeit": "18:00",
                 "plz": "01662"
             }
         }
