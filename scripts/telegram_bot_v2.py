@@ -21,14 +21,19 @@ Usage:
     ./scripts/telegram_bot_v2.py new-chat --entity <entity_id> [OPTIONS]
     ./scripts/telegram_bot_v2.py history [OPTIONS]
     ./scripts/telegram_bot_v2.py listen [OPTIONS]
+    ./scripts/telegram_bot_v2.py find-chat --search <query> [OPTIONS]
+    ./scripts/telegram_bot_v2.py find-user --search <query> [OPTIONS]
 
 Commands:
     new-chat           Register a new chat
     history            Print recent chat history
     listen             Listen to updates
+    find-chat          Search for a chat by name to get its ID
+    find-user          Search for a user by name/username
 
 Options:
     -e --entity <entity_id>     Entity ID (Chat/Group/DM)
+    -s --search <query>         Search query for find-chat
     -v, --verbose               Enable verbose logging
     -q, --quiet                 Enable quiet logging
     -h, --help                  Show this help message and exit
@@ -92,8 +97,8 @@ _CLIENT: "telethon.TelegramClient" = None
 def init_telethon_client() -> "telethon.TelegramClient":
     global _CLIENT
 
-    import telethon
     if _CLIENT is None:
+        import telethon
         _CLIENT = telethon.TelegramClient(FSTISCH_APP_TITLE, FSTISCH_API_ID, FSTISCH_API_HASH)
     return _CLIENT
 
@@ -105,8 +110,6 @@ def _load_known_chat_ids() -> list[int]:
 
 
 async def _resolve_entity(client: "telethon.TelegramClient", chat_id_str: str) -> "telethon.types.TypeEntity":
-    import telethon.types as ttypes
-    
     # 1. Try direct lookup (smartest)
     try:
         raw_id = int(chat_id_str)
@@ -119,6 +122,7 @@ async def _resolve_entity(client: "telethon.TelegramClient", chat_id_str: str) -
         raw_id = int(chat_id_str)
         abs_id = abs(raw_id)
         lookups = []
+        import telethon.types as ttypes
         
         if chat_id_str.startswith("-100"):
             # Definitely a Channel/Supergroup
@@ -286,6 +290,13 @@ def _save_event(chat_id: str, event_info: dict) -> None:
 
 def _iter_records(recent_msgs, history_map):
     for msg in reversed(recent_msgs):
+        if msg.text and "Limburg" in msg.text:
+            print("######################")
+            print(getattr(msg, 'reply_to_top_id', None))
+            print(getattr(msg.reply_to, 'reply_to_top_id', None))
+            print("######################")
+            breakpoint()
+
         if msg.id in history_map:
             continue
 
@@ -305,6 +316,9 @@ def _iter_records(recent_msgs, history_map):
             "sender_name": sender,
             "text": msg.text,
         }
+
+        if msg.reply_to and getattr(msg.reply_to, 'reply_to_top_id', None):
+            record["topic_id"] = msg.reply_to.reply_to_top_id
 
         event_info = parse_event_info(msg.text)
         if event_info:
@@ -498,6 +512,7 @@ async def _new_chat(entity_id: str) -> None:
         
         # Determine type
         import telethon.types as ttypes
+
         etype = "unknown"
         if isinstance(entity, ttypes.User):
             etype = "user"
@@ -522,9 +537,29 @@ async def _new_chat(entity_id: str) -> None:
             "username": username,
             "first_name": first_name,
             "last_name": last_name,
-            "date_added": dt.datetime.now(tz=dt.timezone.utc).isoformat()
+            "date_added": dt.datetime.now(tz=dt.timezone.utc).isoformat(),
+            "owner": None,
+            "admins": []
         }
         
+        # Fetch Admin/Owner Info
+        if etype in ("group", "supergroup", "channel"):
+            try:
+                import telethon.tl.types as ttltypes
+                participants = await client.get_participants(entity, filter=ttltypes.ChannelParticipantsAdmins)
+                
+                admins = []
+                for p in participants:
+                    name = p.first_name or p.username or str(p.id)
+                    info = {"id": p.id, "name": name}
+                    if isinstance(p.participant, ttltypes.ChannelParticipantCreator):
+                        record["owner"] = info
+                    else:
+                        admins.append(info)
+                record["admins"] = admins
+            except Exception as ex:
+                log.warning(f"Could not fetch admin info for new chat {chat_id}: {ex}")
+
         # Save state
         state = _load_state(path=STATE_FILE)
         if "chats" not in state:
@@ -539,6 +574,109 @@ async def _new_chat(entity_id: str) -> None:
         
         # Fetch history
         await print_recent_chat_messages([chat_id])
+
+
+async def _find_chat(query: str) -> None:
+    client = init_telethon_client()
+    async with client:
+        log.info(f"Searching for chats matching: {query}")
+        dialogs = await client.get_dialogs()
+        
+        matches = []
+        q = query.lower()
+        for d in dialogs:
+            title = d.name or ""
+            username = getattr(d.entity, 'username', "") or ""
+            if q in title.lower() or q in username.lower():
+                matches.append(d)
+        
+        if not matches:
+            print(f"No chats found matching '{query}'")
+            return
+            
+        print(f"Found {len(matches)} matches:")
+        print("-" * 80)
+        
+        import telethon.types as ttypes
+        import telethon.tl.types as ttltypes
+
+        for m in matches:
+            ent = m.entity
+            etype = "unknown"
+            if isinstance(ent, ttypes.User):
+                etype = "user"
+            elif isinstance(ent, ttypes.Chat):
+                etype = "group"
+            elif isinstance(ent, ttypes.Channel):
+                 etype = "supergroup" if ent.megagroup else "channel"
+            
+            username = getattr(ent, 'username', None)
+            identifier = m.name or username or str(ent.id)
+            print(f"[{etype.upper()}] {identifier} (ID: {ent.id})")
+
+            # Fetch Admin/Owner Info
+            if etype in ("group", "supergroup", "channel"):
+                try:
+                    admins = await client.get_participants(ent, filter=ttltypes.ChannelParticipantsAdmins)
+                    
+                    creator_names = []
+                    admin_names = []
+                    
+                    for admin in admins:
+                        # participant attribute holds the 'ChannelParticipant...' object
+                        p = admin.participant
+                        name = admin.first_name or admin.username or str(admin.id)
+                        
+                        if isinstance(p, ttltypes.ChannelParticipantCreator):
+                            creator_names.append(f"{name} ({admin.id})")
+                        else:
+                            admin_names.append(f"{name} ({admin.id})")
+                    
+                    if creator_names:
+                        print(f"  Owner: {', '.join(creator_names)}")
+                    if admin_names:
+                        print(f"  Admins: {', '.join(admin_names)}")
+                    if not creator_names and not admin_names:
+                        print("  (No admin info accessible)")
+                except Exception as ex:
+                    print(f"  (Could not fetch admin info: {ex})")
+            
+            print("-" * 40)
+
+
+async def _find_user(query: str) -> None:
+    client = init_telethon_client()
+    async with client:
+        from telethon.tl.functions.contacts import SearchRequest
+        log.info(f"Searching for users matching: {query}")
+        result = await client(SearchRequest(q=query, limit=50))
+        
+        users = result.users
+        if not users:
+            print(f"No users found matching '{query}'")
+            return
+            
+        print(f"Found {len(users)} matches:")
+        print("-" * 80)
+        
+        for u in users:
+            username = u.username or "(no username)"
+            name = f"{u.first_name or ''} {u.last_name or ''}".strip() or "(no name)"
+            phone = u.phone or "(no phone)"
+            web_link = f"https://web.telegram.org/a/#{u.id}"
+            print(f"[USER] {name} - @{username}")
+            print(f"       Phone: {phone}")
+            print(f"       ID   : {u.id}")
+            print(f"       Link : {web_link}")
+        print("-" * 80)
+
+
+def find_chat_command(query: str, args) -> None:
+    asyncio.run(_find_chat(query))
+
+
+def find_user_command(query: str, args) -> None:
+    asyncio.run(_find_user(query))
 
 
 def new_chat_command(entity_id: str, args) -> None:
@@ -572,6 +710,36 @@ def main(argv: list[str] = sys.argv[1:]) -> int:
         return 0
     elif subcmd == "listen":
         listen_command(args)
+        return 0
+    elif subcmd == "find-chat":
+        search = args.search
+        if not search and argv:
+            # Fallback for positional arg if flag not used
+            for item in reversed(argv):
+                if item != "find-chat" and not item.startswith("-"):
+                    search = item
+                    break
+        
+        if not search:
+            print("Error: --search is required for find-chat")
+            return 1
+            
+        find_chat_command(search, args)
+        return 0
+    elif subcmd == "find-user":
+        search = args.search
+        if not search and argv:
+            # Fallback for positional arg if flag not used
+            for item in reversed(argv):
+                if item != "find-user" and not item.startswith("-"):
+                    search = item
+                    break
+        
+        if not search:
+            print("Error: --search is required for find-user")
+            return 1
+            
+        find_user_command(search, args)
         return 0
     else:
         print(__doc__)

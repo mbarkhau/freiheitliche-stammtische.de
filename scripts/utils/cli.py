@@ -229,6 +229,7 @@ def _json_dumps_pretty(obj: dict | list | str | int | float | bool | None, lvl: 
     else:
         raise ValueError("Unsupported type: " + type(obj).__name__)
 
+
 def json_dumps_pretty(obj: dict | list | str | int | float | bool | None) -> str:
     fallback = json.dumps(obj, indent=2)
     expected = json.loads(fallback)

@@ -2,21 +2,23 @@
   {
     "name": "Manuel Barkhau",
     "organisation": "DIE LIBERTÄREN",
+    "telegram": "@ManuelBTC21",
+    "telegram_id": "601316285",
     "info": "IT/Webseite",
     "e-mail": "manuel.barkhau@die-libertaeren.de",
-    "x/twitter": "@ManuelBTC21",
-    "telegram": "@ManuelBTC21",
-    "signal": "manu.21"
+    "x/twitter": "@ManuelBTC21"
   },
   {
     "name": "Lukas Schroth",
     "organisation": "DIE LIBERTÄREN",
+    "telegram_id": "1473328156",
     "info": "Stammtisch FFM, Bundesstammtischleiter",
     "e-mail": "lukas.schroth@die-libertaeren.de"
   },
   {
     "name": "Ferdinand Steinhöfel",
     "organisation": "DIE LIBERTÄREN",
+    "telegram_id": "7765069487",
     "info": "Stammtisch Hamburg, Mitgliederbeauftragter",
     "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
     "x/twitter": "@FSteinhoefel"
@@ -24,18 +26,20 @@
   {
     "name": "Dr. Mathias Hummel",
     "organisation": "DIE LIBERTÄREN",
+    "telegram": "@DIE_LIBERTAEREN_Vorsitzender",
+    "telegram_id": "1665059689",
     "info": "Stammtisch Magdeburg, Bundesvorstand",
     "e-mail": "mathias.hummel@die-libertaeren.de",
-    "x/twitter": "@hummel_mathias",
-    "telegram": "@DIE_LIBERTAEREN_Vorsitzender"
+    "x/twitter": "@hummel_mathias"
   },
   {
     "name": "Florian Handwerker",
     "organisation": "DIE LIBERTÄREN",
+    "telegram": "@FlorianHandwerker",
+    "telegram_id": "905745339",
     "info": "Stammtisch München, Bundesgeschäftsführer",
     "e-mail": "florian.handwerker@die-libertaeren.de",
-    "x/twitter": "@Florian Handwerker",
-    "telegram": "@FlorianHandwerker"
+    "x/twitter": "@Florian Handwerker"
   },
   {
     "name": "Caroline Krause",
@@ -44,5 +48,31 @@
   },
   {
     "organisation": "Team Freiheit"
+  },
+  {
+    "name": "Sven? ...ja!",
+    "organisation": "Staatenlos",
+    "telegram": "@Sven_jaaa",
+    "telegram_id": "602694468",
+    "info": "Staatenlos MeetUp Neuss (und Umgebung)"
+  },
+  {
+    "name": "Fritz Maulbetsch",
+    "telegram": "@FreeFritz",
+    "telegram_id": "1437111783",
+    "info": "Libertärer Stammtisch in Balingen"
+  },
+  {
+    "name": "Joachim Teske",
+    "telegram_id": "7698777822",
+    "info": "Libertärer Stammtisch in Meißen",
+    "e-mail": "lukas.schroth@die-libertaeren.de"
+  },
+  {
+    "name": "Alexander Expander",
+    "organisation": "Bündnis Libertärer",
+    "telegram_id": "1617605672",
+    "info": "Libertäres Treffen Dortmund",
+    "e-mail": "info@buendnis-libertaerer.de"
   }
 ]

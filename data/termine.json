@@ -11,7 +11,7 @@
     "orga": "Free Cities Foundation",
     "orga_webseite": "https://free-cities.org/meet-ups/",
     "telegram": "https://t.me/+QYVsjbuNZblmMTVi",
-    "telegram_group_id": "-1913920402"
+    "telegram_group_id": "1913920402"
   },
   {
     "name": "Hayek Club Düsseldorf",
@@ -30,7 +30,8 @@
     "kontakt": "Frank Törmer",
     "e-mail": "veranstaltung@hayek-magdeburg.de",
     "orga_webseite": "https://hayek-magdeburg.de",
-    "telegram": "https://t.me/hayekclubmd"
+    "telegram": "https://t.me/hayekclubmd",
+    "telegram_group_id": "2086641832"
   },
   {
     "name": "Libertärer Krypto Stammtisch Berlin",
@@ -57,8 +58,7 @@
     "orga": "DIE LIBERTÄREN",
     "orga_webseite": "https://die-libertaeren.de/",
     "telegram": "https://t.me/+WgMHpki_VXZkYWIy",
-    "telegram_group_id": "-4548923345",
-    "signal": "https://signal.group/#CjQKIOy_pCi_ZxLZJMwHHuu44_UTBli-ZUyKeHyxUPxRXbOjEhCewcjd0LonOnGLHZ1vmaH1"
+    "telegram_group_id": "3687428973"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
@@ -74,8 +74,7 @@
     "orga_webseite": "https://die-libertaeren.de/",
     "tournus": "Erste Woche im Monat",
     "telegram": "https://t.me/+WgMHpki_VXZkYWIy",
-    "telegram_group_id": "-4548923345",
-    "signal": "https://signal.group/#CjQKIOy_pCi_ZxLZJMwHHuu44_UTBli-ZUyKeHyxUPxRXbOjEhCewcjd0LonOnGLHZ1vmaH1"
+    "telegram_group_id": "3687428973"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
@@ -91,16 +90,15 @@
     "orga_webseite": "https://die-libertaeren.de/",
     "tournus": "Erste Woche im Monat",
     "telegram": "https://t.me/+WgMHpki_VXZkYWIy",
-    "telegram_group_id": "-4548923345",
-    "signal": "https://signal.group/#CjQKIOy_pCi_ZxLZJMwHHuu44_UTBli-ZUyKeHyxUPxRXbOjEhCewcjd0LonOnGLHZ1vmaH1"
+    "telegram_group_id": "3687428973"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
-    "beginn": "2026-02-09",
-    "ende": "2026-02-09",
+    "beginn": "2026-02-20",
+    "ende": "2026-02-20",
     "uhrzeit": "19:00",
-    "kw": "KW07",
-    "wochentag": "Monday",
+    "kw": "KW08",
+    "wochentag": "Friday",
     "plz": "60594",
     "kontakt": "Lukas Schroth",
     "e-mail": "lukas.schroth@die-libertaeren.de",
@@ -108,8 +106,7 @@
     "orga_webseite": "https://die-libertaeren.de/",
     "tournus": "Erste Woche im Monat",
     "telegram": "https://t.me/+WgMHpki_VXZkYWIy",
-    "telegram_group_id": "-4548923345",
-    "signal": "https://signal.group/#CjQKIOy_pCi_ZxLZJMwHHuu44_UTBli-ZUyKeHyxUPxRXbOjEhCewcjd0LonOnGLHZ1vmaH1"
+    "telegram_group_id": "3687428973"
   },
   {
     "name": "Libertärer Stammtisch Göppingen/Esslingen",
@@ -215,10 +212,10 @@
   },
   {
     "name": "Libertärer Stammtisch in Balingen / Württemberg",
-    "beginn": "2026-02-12",
-    "ende": "2026-02-12",
+    "beginn": "2026-02-05",
+    "ende": "2026-02-05",
     "uhrzeit": "19:30",
-    "kw": "KW07",
+    "kw": "KW06",
     "wochentag": "Thursday",
     "plz": "72336",
     "kontakt": "Fritz Maulbetsch",
@@ -227,14 +224,18 @@
   },
   {
     "name": "Libertärer Stammtisch Kaiserslautern",
+    "beginn": "2026-02-21",
+    "ende": "2026-02-21",
     "uhrzeit": "19:00",
-    "kw": "KW52",
+    "kw": "KW08",
     "wochentag": "Saturday",
     "plz": "67657",
-    "kontakt": "Tim Leonhardt",
-    "e-mail": "tim.leonhardt@die-libertaeren.de",
+    "kontakt": "Uwe Schmitt",
+    "e-mail": "uwe.schmitt@die-libertaeren.de",
     "orga": "DIE LIBERTÄREN",
-    "orga_webseite": "https://die-libertaeren.de/"
+    "orga_webseite": "https://die-libertaeren.de/",
+    "telegram": "https://t.me/UweSchmitt",
+    "telegram_group_id": "3893662081"
   },
   {
     "name": "Libertärer Stammtisch Magdeburg",
@@ -354,6 +355,71 @@
     "orga_webseite": "https://buendnis-libertaerer.de/"
   },
   {
+    "name": "Libertäres Treffen Dortmund",
+    "beginn": "2026-02-19",
+    "ende": "2026-02-19",
+    "uhrzeit": "19:00",
+    "kw": "KW08",
+    "wochentag": "Thursday",
+    "plz": "44263",
+    "kontakt": "Alexander Expander",
+    "e-mail": "info@buendnis-libertaerer.de",
+    "orga": "Bündnis Libertärer",
+    "orga_webseite": "https://buendnis-libertaerer.de/"
+  },
+  {
+    "name": "Libertäres Treffen Dortmund",
+    "beginn": "2026-03-19",
+    "ende": "2026-03-19",
+    "uhrzeit": "19:00",
+    "kw": "KW12",
+    "wochentag": "Thursday",
+    "plz": "44263",
+    "kontakt": "Alexander Expander",
+    "e-mail": "info@buendnis-libertaerer.de",
+    "orga": "Bündnis Libertärer",
+    "orga_webseite": "https://buendnis-libertaerer.de/"
+  },
+  {
+    "name": "Libertäres Treffen Dortmund",
+    "beginn": "2026-04-16",
+    "ende": "2026-04-16",
+    "uhrzeit": "19:00",
+    "kw": "KW16",
+    "wochentag": "Thursday",
+    "plz": "44263",
+    "kontakt": "Alexander Expander",
+    "e-mail": "info@buendnis-libertaerer.de",
+    "orga": "Bündnis Libertärer",
+    "orga_webseite": "https://buendnis-libertaerer.de/"
+  },
+  {
+    "name": "Libertäres Treffen Dortmund",
+    "beginn": "2026-05-21",
+    "ende": "2026-05-21",
+    "uhrzeit": "19:00",
+    "kw": "KW21",
+    "wochentag": "Thursday",
+    "plz": "44263",
+    "kontakt": "Alexander Expander",
+    "e-mail": "info@buendnis-libertaerer.de",
+    "orga": "Bündnis Libertärer",
+    "orga_webseite": "https://buendnis-libertaerer.de/"
+  },
+  {
+    "name": "Libertäres Treffen Dortmund",
+    "beginn": "2026-06-25",
+    "ende": "2026-06-25",
+    "uhrzeit": "19:00",
+    "kw": "KW26",
+    "wochentag": "Thursday",
+    "plz": "44263",
+    "kontakt": "Alexander Expander",
+    "e-mail": "info@buendnis-libertaerer.de",
+    "orga": "Bündnis Libertärer",
+    "orga_webseite": "https://buendnis-libertaerer.de/"
+  },
+  {
     "name": "Marktradikales Meetup Berlin",
     "beginn": "2025-11-07",
     "ende": "2025-11-07",
@@ -361,10 +427,11 @@
     "kw": "KW02",
     "wochentag": "Wednesday",
     "plz": "10117",
-    "telegram": "https://t.me/marktradikalberlin"
+    "telegram": "https://t.me/marktradikalberlin",
+    "telegram_group_id": "1959751899"
   },
   {
-    "name": "Marktradikales Meetup Grevenbroich",
+    "name": "Libertärer Stammtisch Grevenbroich",
     "beginn": "2025-12-19",
     "ende": "2025-12-19",
     "uhrzeit": "19:00",
@@ -377,7 +444,7 @@
     "orga_webseite": "https://ef-magazin.de/"
   },
   {
-    "name": "Marktradikales Meetup Grevenbroich",
+    "name": "Libertärer Stammtisch Grevenbroich",
     "beginn": "2026-01-16",
     "ende": "2026-01-16",
     "uhrzeit": "19:00",
@@ -390,11 +457,11 @@
     "orga_webseite": "https://ef-magazin.de/"
   },
   {
-    "name": "Marktradikales Meetup Grevenbroich",
-    "beginn": "2026-02-20",
-    "ende": "2026-02-20",
+    "name": "Libertärer Stammtisch Grevenbroich",
+    "beginn": "2026-02-13",
+    "ende": "2026-02-13",
     "uhrzeit": "19:00",
-    "kw": "KW08",
+    "kw": "KW07",
     "wochentag": "Friday",
     "plz": "41515",
     "kontakt": "Martin Moczarski",
@@ -413,7 +480,8 @@
     "kontakt": "Jean-Pierre",
     "orga": "Statenlos",
     "orga_webseite": "https://staatenlos.ch/",
-    "telegram": "https://t.me/+cegpCV1FIdE3ZjA6"
+    "telegram": "https://t.me/+cegpCV1FIdE3ZjA6",
+    "telegram_group_id": "3681519122"
   },
   {
     "name": "Staatenlos Düsseldorf",
@@ -426,7 +494,8 @@
     "kontakt": "Pascal",
     "orga": "Statenlos",
     "orga_webseite": "https://staatenlos.ch/",
-    "telegram": "https://t.me/+rrA7PWQ67lc4NDFi"
+    "telegram": "https://t.me/+rrA7PWQ67lc4NDFi",
+    "telegram_group_id": "4948722715"
   },
   {
     "name": "Staatenlos Neuss",
@@ -439,7 +508,8 @@
     "kontakt": "Svenja",
     "orga": "Statenlos",
     "orga_webseite": "https://staatenlos.ch/",
-    "telegram": "https://t.me/+rGevpBnAjmUzMmRi"
+    "telegram": "https://t.me/+rGevpBnAjmUzMmRi",
+    "telegram_group_id": "2660334500"
   },
   {
     "name": "Staatenlos Neuss",
@@ -452,7 +522,8 @@
     "kontakt": "Svenja",
     "orga": "Statenlos",
     "orga_webseite": "https://staatenlos.ch/",
-    "telegram": "https://t.me/+rGevpBnAjmUzMmRi"
+    "telegram": "https://t.me/+rGevpBnAjmUzMmRi",
+    "telegram_group_id": "2660334500"
   },
   {
     "name": "Milei-Konferenz 2026",
@@ -474,7 +545,8 @@
     "wochentag": "Wednesday",
     "plz": "35396",
     "tournus": "Jeder dritte Mittwoch",
-    "telegram": "https://t.me/+kDTzmac3wJYwMzIy"
+    "telegram": "https://t.me/+kDTzmac3wJYwMzIy",
+    "telegram_group_id": "2218630491"
   },
   {
     "name": "Libertärer Stammtisch Mittelhessen",
@@ -485,7 +557,8 @@
     "wochentag": "Wednesday",
     "plz": "35396",
     "tournus": "Jeder dritte Mittwoch",
-    "telegram": "https://t.me/+kDTzmac3wJYwMzIy"
+    "telegram": "https://t.me/+kDTzmac3wJYwMzIy",
+    "telegram_group_id": "2218630491"
   },
   {
     "name": "Libertärer Stammtisch Mittelhessen",
@@ -496,7 +569,8 @@
     "wochentag": "Wednesday",
     "plz": "35396",
     "tournus": "Jeder dritte Mittwoch",
-    "telegram": "https://t.me/+kDTzmac3wJYwMzIy"
+    "telegram": "https://t.me/+kDTzmac3wJYwMzIy",
+    "telegram_group_id": "2218630491"
   },
   {
     "kw": "KW52",
