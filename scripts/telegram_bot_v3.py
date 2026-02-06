@@ -55,6 +55,8 @@ FSTISCH_APP_TITLE = os.environ.get('FSTISCH_APP_TITLE', 'freiheitliche-stammtisc
 PROD_SHEET = "1-BypxZnsRGFJ8XeuCIFyleF-4OK-ndsUvpaV6_Oi95s"
 TEST_SHEET = "15QeC3F4CPHLNjroghRXHDjO8oBC2wmJBPhTLHF_5XOs"
 
+ADMIN_IDS = {"601316285", "1473328156"}
+
 
 class BotState:
     def __init__(self, sheet_id: str):
@@ -94,6 +96,9 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     if is_active:
         keyboard = [['Bot Info', 'Meine Termine'], ['Termin Erstellen', 'Termin Löschen']]
+        
+        if user_id in ADMIN_IDS:
+            keyboard.append(['Nutzer Aktivieren', 'Nutzer Deaktivieren'])
 
         reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
 
@@ -144,6 +149,8 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await handle_create_event(update, context)
     elif text == "Termin Löschen" or context.user_data.get('state') == 'awaiting_delete_selection':
         await handle_delete_event(update, context)
+    elif user_id in ADMIN_IDS and (text in ("Nutzer Aktivieren", "Nutzer Deaktivieren") or context.user_data.get('state') == 'awaiting_user_selection'):
+        await handle_manage_users(update, context)
 
     else:
         await update.message.reply_text("Ich habe dich nicht verstanden.\nNutze /start.")
@@ -607,6 +614,150 @@ async def handle_delete_event(update: Update, context: ContextTypes.DEFAULT_TYPE
             await update.message.reply_text("Bitte bestätige mit 'Ja' oder nutze 'Abbrechen'.")
 
 
+
+
+
+async def handle_manage_users(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    user_id = str(update.effective_user.id)
+    bot_state: BotState = context.bot_data['state']
+    
+    current_state = context.user_data.get('state')
+    text = (update.message.text if update.message else "").strip()
+
+    def get_main_keyboard():
+        keyboard = [['Bot Info', 'Meine Termine'], ['Termin Erstellen', 'Termin Löschen']]
+        if user_id in ADMIN_IDS:
+            keyboard.append(['Nutzer Aktivieren', 'Nutzer Deaktivieren'])
+        return ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
+
+    async def reset_flow(msg: str):
+        context.user_data['state'] = None
+        context.user_data['manage_candidates'] = None
+        context.user_data['selected_user_data'] = None
+        context.user_data['target_status'] = None
+        await update.message.reply_text(msg, reply_markup=get_main_keyboard())
+
+    if text == "Abbrechen":
+        await reset_flow("Vorgang abgebrochen.")
+        return
+
+    if text in ("Nutzer Aktivieren", "Nutzer Deaktivieren"):
+        # --- Step 1: Fetch and display candidates ---
+        target_status = "Aktiv" if text == "Nutzer Aktivieren" else "Deaktiviert"
+        context.user_data['target_status'] = target_status
+        
+        await context.bot.send_chat_action(chat_id=update.effective_chat.id, action="typing")
+        rows = await asyncio.to_thread(bot_state.sheet.read, "kontakte")
+        
+        candidates = []
+        for i, row in enumerate(rows):
+            current_status = row.get("bot_modus", "").strip()
+            # If activating, show anyone who isn't already "Aktiv"
+            # If deactivating, show anyone who is "Aktiv"
+            if text == "Nutzer Aktivieren" and current_status != "Aktiv":
+                candidates.append((i + 2, row))
+            elif text == "Nutzer Deaktivieren" and current_status == "Aktiv":
+                candidates.append((i + 2, row))
+        
+        if not candidates:
+            await update.message.reply_text(f"Keine Nutzer gefunden, die {text.lower()} werden können.")
+            return
+
+        context.user_data['state'] = 'awaiting_user_selection'
+        context.user_data['manage_candidates'] = candidates
+        
+        keyboard = [['Abbrechen']]
+        for _, row in candidates:
+            name = row.get("name", "Unbekannt")
+            username = row.get("username", "")
+            btn_text = f"{name} (@{username})" if username else name
+            keyboard.append([btn_text])
+            
+        reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True, one_time_keyboard=True)
+        await update.message.reply_text(
+            f"Welchen Nutzer möchten Sie {target_status.lower()}?",
+            reply_markup=reply_markup
+        )
+        return
+
+    if current_state == 'awaiting_user_selection':
+        candidates = context.user_data.get('manage_candidates', [])
+        target_status = context.user_data.get('target_status')
+        
+        match = None
+        for gs_idx, row in candidates:
+            name = row.get("name", "Unbekannt")
+            username = row.get("username", "")
+            btn_text = f"{name} (@{username})" if username else name
+            if text == btn_text:
+                match = (gs_idx, row)
+                break
+        
+        if not match:
+            await update.message.reply_text("Bitte wählen Sie einen Nutzer über die Buttons aus.")
+            return
+        
+        gs_idx, row = match
+        context.user_data['selected_user_data'] = (gs_idx, row)
+        context.user_data['state'] = 'awaiting_user_confirm'
+        
+        summary = (
+            f"Möchten Sie diesen Nutzer wirklich {target_status.lower()}?\n\n"
+            f"👤 Name: {row.get('name')}\n"
+            f"🆔 Telegram ID: {row.get('telegram_id')}\n"
+            f"🏷 Username: @{row.get('username', 'N/A')}\n"
+        )
+        keyboard = [['Abbrechen', 'Ja']]
+        reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True, one_time_keyboard=True)
+        await update.message.reply_text(summary, reply_markup=reply_markup)
+        return
+
+    if current_state == 'awaiting_user_confirm':
+        if text == 'Ja':
+            gs_idx, row = context.user_data.get('selected_user_data')
+            target_status = context.user_data.get('target_status')
+            
+            await update.message.reply_text(f"Setze Status auf '{target_status}' in GSheet...")
+            await context.bot.send_chat_action(chat_id=update.effective_chat.id, action="typing")
+            
+            try:
+                # We need to find the column index for "Bot modus"
+                headers = await asyncio.to_thread(bot_state.sheet._get_headers, "kontakte")
+                col_idx = -1
+                for i, h in enumerate(headers):
+                    if gu._normalize_key(h) == "bot_modus":
+                        col_idx = i
+                        break
+                
+                if col_idx == -1:
+                    # Append header if missing? Better to fail safely
+                    await update.message.reply_text("❌ Fehler: Spalte 'Bot modus' nicht gefunden.")
+                    return
+
+                # Convert col_idx to A, B, C...
+                col_letter = chr(ord('A') + col_idx)
+                range_name = f"{col_letter}{gs_idx}"
+                
+                # Perform update
+                body = {"values": [[target_status]]}
+                bot_state.sheet.service.spreadsheets().values().update(
+                    spreadsheetId=bot_state.sheet.sheet_id,
+                    range=f"kontakte!{range_name}",
+                    valueInputOption="RAW",
+                    body=body
+                ).execute()
+                
+                # Refresh bot state
+                bot_state.sync_users()
+                
+                await update.message.reply_text(f"✅ Nutzer wurde erfolgreich {target_status.lower()}.")
+            except Exception as e:
+                log.error(f"Error updating user status: {e}")
+                await update.message.reply_text("❌ Fehler beim Aktualisieren. Bitte versuche es später erneut.")
+            
+            await reset_flow("Was kann ich sonst für dich tun?")
+        else:
+            await update.message.reply_text("Bitte bestätigen Sie mit 'Ja' oder nutzen Sie 'Abbrechen'.")
 
 
 

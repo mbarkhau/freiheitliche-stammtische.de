@@ -21,10 +21,6 @@
     "plz": "40213"
   },
   {
-    "kw": "KW52",
-    "wochentag": "Saturday"
-  },
-  {
     "name": "Libertäres Grilltreffen bei München",
     "beginn": "2025-09-05",
     "ende": "2025-09-05",
@@ -513,6 +509,22 @@
     "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
     "orga": "DIE LIBERTÄREN",
     "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Libertärer Stammtisch Frankfurt (FFM)",
+    "beginn": "2026-03-13",
+    "ende": "2026-03-13",
+    "uhrzeit": "19:00",
+    "kw": "KW08",
+    "wochentag": "Friday",
+    "plz": "60594",
+    "kontakt": "Manuel Barkhau",
+    "e-mail": "manuel.barkhau@die-libertaeren.de",
+    "orga": "DIE LIBERTÄREN",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Erste Woche im Monat",
+    "telegram": "https://t.me/+WgMHpki_VXZkYWIy",
+    "telegram_group_id": "3687428973"
   },
   {
     "name": "Milei-Konferenz 2026",
