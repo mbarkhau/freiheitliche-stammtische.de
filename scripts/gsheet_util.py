@@ -101,7 +101,7 @@ def find_nearest_city(lat: float, lon: float) -> tuple[dict | None, float]:
 
 @disk_cache.cache(APP_USER_AGENT)
 @rate_limit(min_interval=1.5)
-def geolocate(plz: str) -> tuple[Lat, Lon] | None:
+def geolocate(plz: str) -> tuple[str, str, Lat, Lon] | None:
     geolocator = get_geocoder_for_service("nominatim")(user_agent=APP_USER_AGENT)
     location = geolocator.geocode(f"{plz}, Deutschland", addressdetails=True)
     log.info(f"Geocoded {plz}: {location}")
@@ -117,6 +117,25 @@ def geolocate(plz: str) -> tuple[Lat, Lon] | None:
     return (name, state, location.latitude, location.longitude)
 
 
+class Location(typ.NamedTuple):
+    plz_name: str
+    plz_state: str
+    lat: Lat
+    lon: Lon
+    nearest: dict[str, typ.Any]
+    city_dist: float
+
+
+def plz_location_lookup(plz: str) -> Location | None:
+    plz_location = geolocate(plz)
+    if plz_location:
+        plz_name, plz_state, lat, lon = plz_location
+        nearest, city_dist = find_nearest_city(lat, lon)
+        return Location(plz_name, plz_state, lat, lon, nearest, city_dist)
+    else:
+        return None
+
+
 def _dedent(text: str) -> str:
     """Remove all leading whitespace from every line in `text`."""
     lines = text.splitlines()
@@ -129,42 +148,7 @@ def make_url(sheet_id, sheet_name: str) -> str:
     return base_url + f"/gviz/tq?tqx=out:csv&sheet={_sheet_param}"
 
 
-def download_gsheet(
-    sheet_id: str,
-    sheet_name: str = None,
-    timeout: int = 10,
-) -> list[dict[str, str]]:
-    """
-    Returns the sheet as a list of dicts (first row = headers).
-    Raises informative exceptions on error.
-    """
-    url = make_url(sheet_id, sheet_name)
-    
-    response = requests.get(url, timeout=timeout)
-    
-    if response.status_code != 200:
-        errmsg = f"""
-            Failed to download sheet (status {response.status_code})
-            Make sure the sheet is shared with 'Anyone with the link' or published to web.
-            Response snippet: {response.text[:500]}
-        """
-        raise RuntimeError(_dedent(errmsg))
-
-    # Quick sanity check - Google returns HTML error page if not accessible
-    if "<html" in response.text.lower() and "sorry" in response.text.lower():
-        raise PermissionError("Sheet is not publicly accessible or does not allow export.")
-
-    reader = csv.DictReader(io.StringIO(response.text))
-
-    for entry in reader:
-        yield {
-            key.lower().replace(" ", "_"): val.strip()
-            for key, val in entry.items()
-            if val
-        }
-
-
-def get_sheets_service(creds_path: str | pl.Path | None = None):
+def _get_sheets_service(creds_path: str | pl.Path | None = None):
     """
     Returns an authorized Google Sheets API service object.
     Searches in 'creds/' if no path is provided.
@@ -189,7 +173,7 @@ def get_sheets_service(creds_path: str | pl.Path | None = None):
     return g_discovery.build("sheets", "v4", credentials=creds, cache_discovery=False)
 
 
-def append_gsheet(service, sheet_id: str, sheet_name: str, rows: list[list[typ.Any]]):
+def _append_gsheet(service, sheet_id: str, sheet_name: str, rows: list[list[typ.Any]]):
     """Appends rows to the specified sheet."""
     range_name = f"{sheet_name}!A1"
     body = {"values": rows}
@@ -211,7 +195,7 @@ def append_gsheet(service, sheet_id: str, sheet_name: str, rows: list[list[typ.A
     return result
 
 
-def update_gsheet(service, sheet_id: str, sheet_name: str, range_name: str, rows: list[list[typ.Any]]):
+def _update_gsheet(service, sheet_id: str, sheet_name: str, range_name: str, rows: list[list[typ.Any]]):
     """Updates a specific range in the specified sheet."""
     full_range = f"{sheet_name}!{range_name}"
     body = {"values": rows}
@@ -238,7 +222,7 @@ def _normalize_key(key: str) -> str:
 class GSheet:
     def __init__(self, sheet_id: str, creds_path: str | pl.Path | None = None):
         self.sheet_id = sheet_id
-        self.service = get_sheets_service(creds_path)
+        self.service = _get_sheets_service(creds_path)
         self._headers_cache = {}
 
     def _get_headers(self, sheet_name: str) -> list[str]:
@@ -267,6 +251,14 @@ class GSheet:
                 else:
                     raise
         return self._headers_cache[sheet_name]
+
+    def _get_sheet_id(self, sheet_name: str) -> int:
+        spreadsheet = self.service.spreadsheets().get(spreadsheetId=self.sheet_id).execute()
+        sheets = spreadsheet.get('sheets', [])
+        for s in sheets:
+            if s.get('properties', {}).get('title') == sheet_name:
+                return s.get('properties', {}).get('sheetId')
+        raise ValueError(f"Sheet '{sheet_name}' not found.")
 
     def read(self, sheet_name: str) -> list[dict[str, str]]:
         """Returns the sheet as a list of dicts (first row = headers)."""
@@ -311,7 +303,7 @@ class GSheet:
         
         if new_keys:
             norm_headers.extend(new_keys)
-            update_gsheet(
+            _update_gsheet(
                 service=self.service,
                 sheet_id=self.sheet_id,
                 sheet_name=sheet_name,
@@ -326,7 +318,50 @@ class GSheet:
             row_list = [row_dict.get(h, "") for h in norm_headers]
             row_lists.append(row_list)
 
-        return append_gsheet(self.service, self.sheet_id, sheet_name, row_lists)
+        result = _append_gsheet(self.service, self.sheet_id, sheet_name, row_lists)
+        
+        # 3. Inherit formatting from preceding row
+        try:
+            updates = result.get('updates', {})
+            updated_range = updates.get('updatedRange', '')  # e.g. "Sheet1!A10:Z10"
+            if updated_range and "!" in updated_range:
+                range_part = updated_range.split("!")[1]
+                start_cell = range_part.split(":")[0]
+                # Extract row number from cell like "A10"
+                import re
+                match = re.search(r"(\d+)", start_cell)
+                if match:
+                    start_row_idx = int(match.group(1))
+                    if start_row_idx > 1:
+                        sheet_id = self._get_sheet_id(sheet_name)
+                        num_rows = updates.get('updatedRows', 1)
+                        
+                        # Copy format from start_row_idx - 1 to [start_row_idx, start_row_idx + num_rows - 1]
+                        body = {
+                            "requests": [
+                                {
+                                    "copyPaste": {
+                                        "source": {
+                                            "sheetId": sheet_id,
+                                            "startRowIndex": start_row_idx - 2,
+                                            "endRowIndex": start_row_idx - 1,
+                                        },
+                                        "destination": {
+                                            "sheetId": sheet_id,
+                                            "startRowIndex": start_row_idx - 1,
+                                            "endRowIndex": start_row_idx - 1 + num_rows,
+                                        },
+                                        "pasteType": "PASTE_FORMAT"
+                                    }
+                                }
+                            ]
+                        }
+                        self.service.spreadsheets().batchUpdate(spreadsheetId=self.sheet_id, body=body).execute()
+                        log.info(f"Inherited formatting from row {start_row_idx - 1} for {num_rows} rows.")
+        except Exception as e:
+            log.warning(f"Failed to inherit formatting: {e}")
+
+        return result
 
     def update(self, sheet_name: str, range_name: str, rows: list[dict[str, typ.Any]]):
         """
@@ -343,7 +378,7 @@ class GSheet:
                 row_list.append(row_dict.get(norm_h, ""))
             row_lists.append(row_list)
 
-        return update_gsheet(self.service, self.sheet_id, sheet_name, range_name, row_lists)
+        return _update_gsheet(self.service, self.sheet_id, sheet_name, range_name, row_lists)
 
     def log(self, message: str, level: int = logging.INFO):
         """Writes a message to the 'log' sheet."""
@@ -356,6 +391,30 @@ class GSheet:
             "message": message,
         }
         return self.append("log", [row])
+
+    def delete_row(self, sheet_name: str, row_index: int):
+        """
+        Deletes a row from the specified sheet.
+        row_index: 1-indexed (header is usually 1, first data row is 2).
+        """
+        sheet_id = self._get_sheet_id(sheet_name)
+        
+        body = {
+            "requests": [
+                {
+                    "deleteDimension": {
+                        "range": {
+                            "sheetId": sheet_id,
+                            "dimension": "ROWS",
+                            "startIndex": row_index - 1,
+                            "endIndex": row_index
+                        }
+                    }
+                }
+            ]
+        }
+        return self.service.spreadsheets().batchUpdate(spreadsheetId=self.sheet_id, body=body).execute()
+
 
     def debug(self, message: str, *args, **kwargs):
         return self.log(message, level=logging.DEBUG, *args, **kwargs)
@@ -373,21 +432,60 @@ class GSheet:
         return self.log(message, level=logging.ERROR, *args, **kwargs)
 
 
+def download_gsheet(
+    sheet_id: str,
+    sheet_name: str = None,
+    timeout: int = 10,
+) -> list[dict[str, str]]:
+    """
+    Returns the sheet as a list of dicts (first row = headers).
+    Raises informative exceptions on error.
+    """
+    # first see if it works without authentication
+    url = make_url(sheet_id, sheet_name)
+    response = requests.get(url, timeout=timeout)
+
+    if response.status_code == 200:
+        # Quick sanity check - Google returns HTML error page if not accessible
+        if "<html" in response.text.lower() and "sorry" in response.text.lower():
+            raise PermissionError("Sheet is not publicly accessible or does not allow export.")
+
+        reader = csv.DictReader(io.StringIO(response.text))
+        for entry in reader:
+            yield {
+                _normalize_key(key): val.strip()
+                for key, val in entry.items()
+                if val
+            }
+    else:
+        # fallback to GSheet API which requires authentication
+        sheet = GSheet(sheet_id=sheet_id)
+        sheet_rows = sheet.read(sheet_name)
+        for entry in sheet_rows:
+            yield {key: val for key, val in entry.items() if val}
+
+
 def sync_cmd(args) -> int:
     data_dir = pl.Path("data")
     data_dir.mkdir(exist_ok=True)
 
     log.info(f"Downloading 'termine'...")
     termine = list(download_gsheet(sheet_id=args.sheet_id, sheet_name='termine'))
+    termine.sort(key=lambda termin: termin.get('beginn', "2000-01-01"))
 
+    data_termine = json.dumps(termine, indent=2, ensure_ascii=False)
     with (data_dir / "termine.json").open(mode="w", encoding="utf-8") as fobj:
-        json.dump(termine, fobj, indent=2, ensure_ascii=False)
+        fobj.write(data_termine)
+
     log.info(f"Saved {len(termine)} items to data/termine.json")
 
     www_dir = pl.Path("www")
     www_dir.mkdir(exist_ok=True)
+
+    www_termine = json.dumps(termine, indent=2, ensure_ascii=False)
     with (www_dir / "termine.json").open(mode="w", encoding="utf-8") as fobj:
-        json.dump(termine, fobj, indent=2, ensure_ascii=False)
+        fobj.write(www_termine)
+
     log.info(f"Saved {len(termine)} items to www/termine.json")
 
     # Generate termine.json for the map
@@ -416,20 +514,17 @@ def sync_cmd(args) -> int:
 
         try:
             termin["plz"] = termin["plz"].strip()
-            plz_location = geolocate(termin["plz"])
-            if plz_location is None:
+            location = plz_location_lookup(termin["plz"])
+            if location is None:
                 continue
-
-            plz_name, plz_state, lat, lon = plz_location
-            nearest, city_dist = find_nearest_city(lat, lon)
 
             event_items.append({
                 "name": termin.get("name", termin.get("ort", "Unknown")),
                 "plz": termin["plz"],
-                "state": plz_state,
-                "city": nearest.get("name", "Unknown"),
-                "city_dist": round(city_dist, 1),
-                "coords": [lat, lon],
+                "state": location.plz_state,
+                "city": location.nearest.get("name", "Unknown"),
+                "city_dist": round(location.city_dist, 1),
+                "coords": [location.lat, location.lon],
                 "date": termin['beginn'].split(" ")[0],
                 "dow": EN_DE_WEEKDAYS.get(termin['wochentag'], termin['wochentag']),
                 "time": termin['uhrzeit'],
@@ -480,8 +575,12 @@ def validate_cmd(args) -> int:
     return 0
 
 
+PROD_SHEET = "1-BypxZnsRGFJ8XeuCIFyleF-4OK-ndsUvpaV6_Oi95s"
+TEST_SHEET = "15QeC3F4CPHLNjroghRXHDjO8oBC2wmJBPhTLHF_5XOs"
+
 _cli_defaults = {
-    "--sheet-id"  : "1-BypxZnsRGFJ8XeuCIFyleF-4OK-ndsUvpaV6_Oi95s",
+    "--sheet-id"  : PROD_SHEET,
+    # "--sheet-id"  : TEST_SHEET,
     "--sheet-name": "termine",
 }
 

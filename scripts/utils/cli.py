@@ -185,9 +185,9 @@ if __name__ == "__main__":
 
 
 def init_logging(args: argparse.Namespace) -> None:
-    if args.verbose:
+    if getattr(args, 'verbose', False):
         level = logging.DEBUG
-    elif args.quiet:
+    elif getattr(args, 'quiet', False):
         level = logging.ERROR
     else:
         level = logging.INFO
