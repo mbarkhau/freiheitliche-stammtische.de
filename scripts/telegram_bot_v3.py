@@ -41,6 +41,7 @@ from telethon import TelegramClient
 
 from utils import cli
 import gsheet_util as gu
+from gsheet_util import EN_DE_WEEKDAYS
 
 log = logging.getLogger('telegram_bot_v3')
 
@@ -58,11 +59,24 @@ TEST_SHEET = "15QeC3F4CPHLNjroghRXHDjO8oBC2wmJBPhTLHF_5XOs"
 ADMIN_IDS = {"601316285", "1473328156"}
 
 
+def get_weekday_de(date_str: str) -> str:
+    """Returns the German weekday for a yyyy-mm-dd date string."""
+    try:
+        if not date_str or date_str == "Unbekannt":
+            return ""
+        d = dt.date.fromisoformat(date_str)
+        en_weekday = d.strftime("%A")
+        return EN_DE_WEEKDAYS.get(en_weekday, "")
+    except Exception:
+        return ""
+
+
 class BotState:
     def __init__(self, sheet_id: str):
         self.sheet = gu.GSheet(sheet_id)
         self.users = {}  # telegram_id -> user_data
         self.last_sync = None
+        self.start_time = dt.datetime.now(TZ_BERLIN)
 
     def sync_users(self):
         log.info("Syncing users from GSheet...")
@@ -88,6 +102,129 @@ class BotState:
             return True, "Aktiv"
         return False, user.get("bot_modus", "Inaktiv")
 
+
+async def git_sync_and_push(sheet_id: str, message: str):
+    try:
+        log.info(f"Starting git sync and push: {message}...")
+        # 1. Sync from GSheet to JSON files
+        await asyncio.to_thread(gu.sync_cmd, sheet_id)
+        
+        # 2. Git operations
+        import subprocess
+        def run_git(args):
+            log.info(f"Running git {' '.join(args)}")
+            subprocess.run(["git"] + list(args), check=True, capture_output=True, text=True)
+
+        await asyncio.to_thread(run_git, ["add", "data/termine.json", "www/termine.json"])
+        await asyncio.to_thread(run_git, ["commit", "-m", message])
+        await asyncio.to_thread(run_git, ["push"])
+        
+        log.info("Git sync and push completed successfully.")
+        gu.GSheet(sheet_id).log(f"Git push successful: {message}")
+    except Exception as ex:
+        log.error(f"Error during git sync and push: {ex}")
+        # Note: We don't notify the user here as it's a background operation
+
+
+async def announce_event(event: dict):
+    tg_target = event.get('telegram_group_id')
+    if not tg_target:
+        tg_target = "5186171287"
+        log.info(f"No telegram target found in event data. Using fallback: {tg_target}")
+
+    # Clean up target (basic handling)
+    tg_target = tg_target.strip()
+    if "/" in tg_target: # Handle full URLs
+         tg_target = tg_target.split("/")[-1]
+    
+    # If target looks like an ID (digits, optionally starting with -), convert to int
+    if tg_target.lstrip('-').isdigit():
+        try:
+             tg_target = int(tg_target)
+        except ValueError:
+             pass
+
+    log.info(f"Attempting to announce event to Telegram group: {tg_target}")
+
+    try:
+        client = init_telethon_client()
+        # Ensure we are connected/authorized
+        if not client.is_connected():
+            await client.start(bot_token=FSTISCH_BOT_TOKEN)
+
+        # Check if we can find the entity (which implies membership or public group)
+        try:
+            entity = await client.get_entity(tg_target)
+        except Exception as e:
+            log.warning(f"Could not find entity {tg_target}: {e}")
+            return
+
+        # Construct message
+        name = event.get('name', 'Stammtisch')
+        date_str = event.get('beginn', 'Unbekannt')
+        time = event.get('uhrzeit', '19:00')
+        plz = event.get('plz', '')
+        
+        wd = get_weekday_de(date_str)
+        try:
+           d = dt.date.fromisoformat(date_str)
+           date_display = d.strftime("%d.%m.%Y")
+        except:
+           date_display = date_str
+
+        msg = (
+            f"📢 <b>Neuer Termin: {name}</b>\n\n"
+            f"📅 {wd} {date_display}\n"
+            f"⏰ {time} Uhr\n"
+            f"📍 {plz}"
+        )
+
+        sent_msg = await client.send_message(entity, msg, parse_mode='html')
+        log.info(f"Announcement sent to {tg_target}, message ID: {sent_msg.id}")
+        
+        # Pin the message
+        try:
+            await client.pin_message(entity, sent_msg, notify=True)
+            log.info(f"Announcement pinned in {tg_target}")
+        except Exception as pin_ex:
+            log.warning(f"Could not pin message in {tg_target}: {pin_ex}")
+
+        # Send Poll
+        try:
+            # Import types locally to avoid global dependency if not needed elsewhere
+            from telethon.tl.types import InputMediaPoll, Poll, PollAnswer
+            
+            poll = Poll(
+                id=0, # ID is ignored for new polls
+                question="Wer ist dabei?",
+                answers=[
+                    PollAnswer(text="Ja", option=b'0'),
+                    PollAnswer(text="Ja + 1", option=b'1'),
+                    PollAnswer(text="Vielleicht", option=b'2'),
+                    PollAnswer(text="Zeige Ergebnis", option=b'3'),
+                ],
+                closed=False,
+                public_voters=True,
+                multiple_choice=False,
+                quiz=False,
+            )
+            
+            await client.send_message(entity, file=InputMediaPoll(poll=poll))
+            log.info(f"Poll sent to {tg_target}")
+            
+        except Exception as poll_ex:
+            log.error(f"Could not send poll to {tg_target}: {poll_ex}")
+
+    except Exception as e:
+        log.error(f"Error executing announcement: {e}")
+
+
+WELCOME_MESSAGE = (
+    "Beep, boop 🤖\n\n"
+    "Hallo, ich bin der freiheitliche-stammtische.de Bot!\n"
+    "Ich verwalte Termine auf https://freiheitliche-stammtische.de\n\n"
+)
+
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = str(update.effective_user.id)
     bot_state: BotState = context.bot_data['state']
@@ -103,9 +240,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
 
         await update.message.reply_text(
-            "Beep, boop 🤖\n\n"
-            "Hallo, ich bin der freiheitliche-stammtische.de Bot!\n"
-            "Ich verwalte Termine auf https://freiheitliche-stammtische.de\n\n"
+            WELCOME_MESSAGE +
             "Wie kann ich Ihnen helfen?",
             reply_markup=reply_markup
         )
@@ -133,25 +268,30 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         return
 
     text = update.message.text
-    if text == "Bot Info":
+    state = context.user_data.get('state')
+    log.info(f"handle_message: user_id={user_id}, state={state}, text='{text}'")
+
+    if text.lower() in ("bot info", "botinfo", "info"):
         now = dt.datetime.now(TZ_BERLIN)
+        start_time_str = bot_state.start_time.strftime('%d.%m.%Y %H:%M:%S')
         msg = (
-            "Beep, boop 🤖\n\n"
-            "Hallo, ich bin der freiheitliche-stammtische.de Bot!\n"
-            "Ich verwalte Termine auf https://freiheitliche-stammtische.de\n"
+            WELCOME_MESSAGE +
+            f"Bot gestartet: {start_time_str}\n"
             f"Aktuelle Zeit: {now.strftime('%d.%m.%Y %H:%M:%S')}"
         )
         await update.message.reply_text(msg)
-    elif text == "Meine Termine":
+    elif text.lower() in ("meine termine", "termine"):
         await context.bot.send_chat_action(chat_id=update.effective_chat.id, action="typing")
         await list_my_events(update, context)
-    elif text == "Termin Erstellen" or context.user_data.get('state') == 'awaiting_event_info':
+    elif text in ("Nutzer Aktivieren", "Nutzer Deaktivieren") or str(state).startswith('awaiting_user_'):
+        if user_id in ADMIN_IDS:
+            await handle_manage_users(update, context)
+        else:
+            await update.message.reply_text("Diese Funktion ist nur für Administratoren verfügbar.")
+    elif text.lower() in ("termin erstellen", "erstellen", "neu") or state == 'awaiting_event_info':
         await handle_create_event(update, context)
-    elif text == "Termin Löschen" or context.user_data.get('state') == 'awaiting_delete_selection':
+    elif text.lower() in ("termin löschen", "löschen") or state == 'awaiting_delete_selection':
         await handle_delete_event(update, context)
-    elif user_id in ADMIN_IDS and (text in ("Nutzer Aktivieren", "Nutzer Deaktivieren") or context.user_data.get('state') == 'awaiting_user_selection'):
-        await handle_manage_users(update, context)
-
     else:
         await update.message.reply_text("Ich habe dich nicht verstanden.\nNutze /start.")
 
@@ -178,7 +318,6 @@ async def list_my_events(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Filter by PLZ. Some PLZ might be strings or ints in GSheet.
     matches = []
     for termin in termine:
-        print(termin)
         plz = termin.get('plz')
         if plz and plz in user_plz:
             matches.append(termin)
@@ -191,10 +330,20 @@ async def list_my_events(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     msg = f"Termine für PLZ {user_plz}:\n\n"
     for t in matches:
-        date = t.get("beginn", "Unbekannt")
+        date_str = t.get("beginn", "Unbekannt")
         time = t.get("uhrzeit", "")
         name = t.get("name", "Stammtisch")
-        msg += f"📅 {date} {time}\n📍 {name}\n\n"
+        wd = get_weekday_de(date_str)
+        
+        # Format date for display
+        date_display = date_str
+        if date_str != "Unbekannt":
+            try:
+                d = dt.date.fromisoformat(date_str)
+                date_display = d.strftime("%d.%m.%Y")
+            except: pass
+
+        msg += f"📅 {wd} {date_display} {time}\n📍 {name}\n\n"
     
     await update.message.reply_text(msg)
 
@@ -273,6 +422,13 @@ def parse_event_info(text: str) -> dict | None:
     }
 
 
+def get_main_keyboard(user_id: str):
+    keyboard = [['Bot Info', 'Meine Termine'], ['Termin Erstellen', 'Termin Löschen']]
+    if user_id in ADMIN_IDS:
+        keyboard.append(['Nutzer Aktivieren', 'Nutzer Deaktivieren'])
+    return ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
+
+
 async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = str(update.effective_user.id)
     bot_state: BotState = context.bot_data['state']
@@ -281,19 +437,14 @@ async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE
     current_state = context.user_data.get('state')
     text = (update.message.text if update.message else "").strip()
 
-    def get_main_keyboard():
-        keyboard = [['Bot Info', 'Meine Termine'], ['Termin Erstellen', 'Termin Löschen']]
-        return ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
-
-
     async def reset_flow(msg: str):
         context.user_data['state'] = None
         context.user_data['flow_step'] = None
         context.user_data['new_event'] = None
         context.user_data['prev_event'] = None
-        await update.message.reply_text(msg, reply_markup=get_main_keyboard())
+        await update.message.reply_text(msg, reply_markup=get_main_keyboard(user_id))
 
-    if text == "Abbrechen":
+    if text.lower() == "abbrechen":
         await reset_flow("Vorgang abgebrochen.")
         return
 
@@ -346,7 +497,7 @@ async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE
     new_event = context.user_data.get('new_event', {})
 
     if flow_step == 'ask_name':
-        if text == 'Ja':
+        if text.lower() == 'ja':
             new_event['name'] = prev_event.get('name', 'Stammtisch')
         else:
             new_event['name'] = text
@@ -379,8 +530,9 @@ async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE
                 context.user_data['flow_step'] = 'confirm_date'
                 keyboard = [['Abbrechen', 'Ja']]
                 reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True, one_time_keyboard=True)
+                wd = get_weekday_de(event_date.isoformat())
                 await update.message.reply_text(
-                    f"Der {event_date.strftime('%d.%m.%Y')} wurde erkannt. Korrekt?",
+                    f"Der {wd} {event_date.strftime('%d.%m.%Y')} wurde erkannt. Korrekt?",
                     reply_markup=reply_markup
                 )
             except ValueError:
@@ -389,7 +541,7 @@ async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE
             await update.message.reply_text("Ich konnte das Datum nicht erkennen. Bitte sende es im Format 'TT.MM'.")
 
     elif flow_step == 'confirm_date':
-        if text == 'Ja':
+        if text.lower() == 'ja':
             context.user_data['flow_step'] = 'ask_time'
             prev_time = prev_event.get('uhrzeit', '19:00')
             keyboard = [['Abbrechen', 'Ja']]
@@ -403,7 +555,7 @@ async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE
             await update.message.reply_text("Bitte gib das Datum erneut ein (z.B. '31.12').")
 
     elif flow_step == 'ask_time':
-        if text == 'Ja':
+        if text.lower() == 'ja':
             new_event['uhrzeit'] = prev_event.get('uhrzeit', '19:00')
         else:
             # Try parsing time
@@ -432,7 +584,7 @@ async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE
             await update.message.reply_text("Unter welcher PLZ findet das Treffen statt?", reply_markup=reply_markup)
 
     elif flow_step == 'ask_plz':
-        if text == 'Ja':
+        if text.lower() == 'ja':
             new_event['plz'] = prev_event.get('plz') or user_data.get('plz', '').split(',')[0].strip()
         else:
             plz_match = re.search(r"\b(\d{5})\b", text)
@@ -446,7 +598,7 @@ async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE
         # If user confirmed same Name and PLZ, copy metadata from previous event
         if prev_event and new_event.get('name') == prev_event.get('name') and new_event.get('plz') == prev_event.get('plz'):
             # Copy all fields except those explicitly handled by the bot flow
-            excluded_keys = {'name', 'beginn', 'ende', 'uhrzeit', 'plz', 'kontakt', 'e-mail'}
+            excluded_keys = {'name', 'beginn', 'ende', 'uhrzeit', 'plz', 'kontakt', 'e-mail', 'kw', 'wochentag'}
             for k, v in prev_event.items():
                 if k not in excluded_keys and v:
                     new_event[k] = v
@@ -455,10 +607,18 @@ async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE
         new_event['e-mail'] = user_data.get('e-mail', '')
 
         # --- Final Confirmation Summary ---
+        date_str = new_event['beginn']
+        wd = get_weekday_de(date_str)
+        try:
+            d = dt.date.fromisoformat(date_str)
+            date_display = d.strftime("%d.%m.%Y")
+        except:
+            date_display = date_str
+
         summary = (
             "Erfassten Angaben für den neuen Termin:\n\n"
             f"📍 Name: {new_event['name']}\n"
-            f"📅 Datum: {new_event['beginn']}\n"
+            f"📅 Datum: {wd} {date_display}\n"
             f"⏰ Zeit: {new_event['uhrzeit']}\n"
             f"📮 PLZ: {new_event['plz']}\n"
         )
@@ -468,8 +628,9 @@ async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE
             summary += f"🏢 Orga: {new_event['orga']}\n"
         if new_event.get('orga_webseite'): 
             summary += f"🔗 Web: {new_event['orga_webseite']}\n"
-        if new_event.get('telegram'): 
-            summary += f"📱 Telegram: {new_event['telegram']}\n"
+        tg_val = new_event.get('telegram_group_id') or new_event.get('telegram')
+        if tg_val: 
+            summary += f"📱 Telegram: {tg_val}\n"
 
         summary += f"\nAlles so richtig?\n"
         
@@ -479,7 +640,7 @@ async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE
         await update.message.reply_text(summary, reply_markup=reply_markup)
 
     elif flow_step == 'confirm_save':
-        if text != 'Ja':
+        if text.lower() != 'ja':
             await update.message.reply_text("Bitte bestätige mit 'Ja' oder nutze 'Abbrechen'.")
             return
 
@@ -488,8 +649,19 @@ async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE
         await context.bot.send_chat_action(chat_id=update.effective_chat.id, action="typing")
         
         try:
+            username = update.effective_user.username or "Unknown"
+            bot_state.sheet.log(f"User @{username} ({user_id}) created event: {new_event['name']} on {new_event['beginn']} at {new_event['plz']}")
             await asyncio.to_thread(bot_state.sheet.append, "termine", [new_event])
-            await update.message.reply_text("✅ Termin wurde erfolgreich gespeichert!")
+            
+            success_msg = "✅ Termin wurde erfolgreich gespeichert!"
+            if bot_state.sheet.sheet_id == PROD_SHEET:
+                success_msg += "\nDie Änderungen werden in 1-2 Minuten auf der Webseite sichtbar sein."
+                # Run sync and push in the background
+                plz = str(new_event.get('plz', ''))
+                asyncio.create_task(git_sync_and_push(bot_state.sheet.sheet_id, f"new event for {plz}"))
+
+            asyncio.create_task(announce_event(new_event))
+            await update.message.reply_text(success_msg)
         except Exception as e:
             log.error(f"Error saving event: {e}")
             await update.message.reply_text("❌ Fehler beim Speichern. Bitte versuche es später erneut.")
@@ -505,17 +677,13 @@ async def handle_delete_event(update: Update, context: ContextTypes.DEFAULT_TYPE
     current_state = context.user_data.get('state')
     text = (update.message.text if update.message else "").strip()
 
-    def get_main_keyboard():
-        keyboard = [['Bot Info', 'Meine Termine'], ['Termin Erstellen', 'Termin Löschen']]
-        return ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
-
     async def reset_flow(msg: str):
         context.user_data['state'] = None
         context.user_data['delete_candidates'] = None
         context.user_data['selected_event_idx'] = None
-        await update.message.reply_text(msg, reply_markup=get_main_keyboard())
+        await update.message.reply_text(msg, reply_markup=get_main_keyboard(user_id))
 
-    if text == "Abbrechen":
+    if text.lower() == "abbrechen":
         await reset_flow("Vorgang abgebrochen.")
         return
 
@@ -548,11 +716,19 @@ async def handle_delete_event(update: Update, context: ContextTypes.DEFAULT_TYPE
         
         keyboard = [['Abbrechen']]
         for _, t in top_4:
-            # Button text: "dd.mm.yyyy HH:MM - PLZ"
-            d = t.get('beginn', '?.?.?')
+            # Button text: "wd dd.mm.yyyy HH:MM - PLZ"
+            date_str = t.get('beginn', '?.?.?')
+            wd = get_weekday_de(date_str)
             time = t.get('uhrzeit', '?:?')
             plz = t.get('plz', '?????')
-            keyboard.append([f"{d} {time} - {plz}"])
+            
+            date_display = date_str
+            try:
+                d = dt.date.fromisoformat(date_str)
+                date_display = d.strftime("%d.%m.%Y")
+            except: pass
+
+            keyboard.append([f"{wd} {date_display} {time} - {plz}"])
             
         reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True, one_time_keyboard=True)
         await update.message.reply_text(
@@ -569,10 +745,18 @@ async def handle_delete_event(update: Update, context: ContextTypes.DEFAULT_TYPE
         # User is selecting from buttons
         match = None
         for i, (gs_idx, t) in enumerate(candidates):
-            d = t.get('beginn', '?.?.?')
+            date_str = t.get('beginn', '?.?.?')
+            wd = get_weekday_de(date_str)
             time = t.get('uhrzeit', '?:?')
             plz = t.get('plz', '?????')
-            btn_text = f"{d} {time} - {plz}"
+            
+            date_display = date_str
+            try:
+                d = dt.date.fromisoformat(date_str)
+                date_display = d.strftime("%d.%m.%Y")
+            except: pass
+
+            btn_text = f"{wd} {date_display} {time} - {plz}"
             if text == btn_text:
                 match = (i, gs_idx, t)
                 break
@@ -584,11 +768,19 @@ async def handle_delete_event(update: Update, context: ContextTypes.DEFAULT_TYPE
         i, gs_idx, t = match
         context.user_data['selected_event_idx'] = gs_idx
         
+        date_str = t.get('beginn', '?.?.?')
+        wd = get_weekday_de(date_str)
+        try:
+            d = dt.date.fromisoformat(date_str)
+            date_display = d.strftime("%d.%m.%Y")
+        except:
+            date_display = date_str
+
         # Confirm deletion
         summary = (
             "Diesen Termin wirklich unwiderruflich löschen?\n\n"
             f"📍 {t.get('name')}\n"
-            f"📅 {t.get('beginn')} {t.get('uhrzeit')}\n"
+            f"📅 {wd} {date_display} {t.get('uhrzeit')}\n"
             f"📮 PLZ: {t.get('plz')}\n"
         )
         keyboard = [['Abbrechen', 'Ja']]
@@ -597,14 +789,33 @@ async def handle_delete_event(update: Update, context: ContextTypes.DEFAULT_TYPE
         
     else:
         # User is confirming deletion
-        if text == 'Ja':
+        if text.lower() == 'ja':
             gs_idx = selected_idx
             await update.message.reply_text("Lösche in GSheet...")
             await context.bot.send_chat_action(chat_id=update.effective_chat.id, action="typing")
             
+            # Find the event data for the commit message before deleting
+            target_event = None
+            for idx, ev in context.user_data.get('delete_candidates', []):
+                if idx == gs_idx:
+                    target_event = ev
+                    break
+
             try:
+                if target_event:
+                    username = update.effective_user.username or "Unknown"
+                    bot_state.sheet.log(f"User @{username} ({user_id}) deleted event: {target_event.get('name')} on {target_event.get('beginn')} at {target_event.get('plz')}")
+                
                 await asyncio.to_thread(bot_state.sheet.delete_row, "termine", gs_idx)
-                await update.message.reply_text("✅ Termin wurde gelöscht.")
+                
+                success_msg = "✅ Termin wurde gelöscht."
+                if bot_state.sheet.sheet_id == PROD_SHEET:
+                    success_msg += "\nDie Änderungen werden in 1-2 Minuten auf der Webseite sichtbar sein."
+                    if target_event:
+                        plz = str(target_event.get('plz', ''))
+                        asyncio.create_task(git_sync_and_push(bot_state.sheet.sheet_id, f"delete event for {plz}"))
+
+                await update.message.reply_text(success_msg)
             except Exception as e:
                 log.error(f"Error deleting event: {e}")
                 await update.message.reply_text("❌ Fehler beim Löschen. Bitte versuche es später erneut.")
@@ -623,21 +834,16 @@ async def handle_manage_users(update: Update, context: ContextTypes.DEFAULT_TYPE
     
     current_state = context.user_data.get('state')
     text = (update.message.text if update.message else "").strip()
-
-    def get_main_keyboard():
-        keyboard = [['Bot Info', 'Meine Termine'], ['Termin Erstellen', 'Termin Löschen']]
-        if user_id in ADMIN_IDS:
-            keyboard.append(['Nutzer Aktivieren', 'Nutzer Deaktivieren'])
-        return ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
+    log.info(f"handle_manage_users: state={current_state}, text='{text}'")
 
     async def reset_flow(msg: str):
         context.user_data['state'] = None
         context.user_data['manage_candidates'] = None
         context.user_data['selected_user_data'] = None
         context.user_data['target_status'] = None
-        await update.message.reply_text(msg, reply_markup=get_main_keyboard())
+        await update.message.reply_text(msg, reply_markup=get_main_keyboard(user_id))
 
-    if text == "Abbrechen":
+    if text.lower() == "abbrechen":
         await reset_flow("Vorgang abgebrochen.")
         return
 
@@ -713,7 +919,7 @@ async def handle_manage_users(update: Update, context: ContextTypes.DEFAULT_TYPE
         return
 
     if current_state == 'awaiting_user_confirm':
-        if text == 'Ja':
+        if text.lower() == 'ja':
             gs_idx, row = context.user_data.get('selected_user_data')
             target_status = context.user_data.get('target_status')
             
@@ -747,9 +953,19 @@ async def handle_manage_users(update: Update, context: ContextTypes.DEFAULT_TYPE
                     body=body
                 ).execute()
                 
-                # Refresh bot state
                 bot_state.sync_users()
                 
+                if target_status == "Aktiv":
+                    user_tg_id = row.get("telegram_id")
+                    if user_tg_id:
+                        msg = (
+                            WELCOME_MESSAGE + 
+                            "Ihr Konto wurde aktiviert und Sie können jetzt Termine für Ihren Stammtisch verwalten."
+                        )
+                        await context.bot.send_message(chat_id=user_tg_id, text=msg)
+
+                admin_username = update.effective_user.username or "Unknown"
+                bot_state.sheet.log(f"Admin @{admin_username} ({user_id}) set status of {row.get('telegram_id')} ({row.get('name')}) to {target_status}")
                 await update.message.reply_text(f"✅ Nutzer wurde erfolgreich {target_status.lower()}.")
             except Exception as e:
                 log.error(f"Error updating user status: {e}")
@@ -784,18 +1000,23 @@ async def catch_up():
 
     log.info("Starting Telethon catch-up...")
     client = init_telethon_client()
+    
+    # Ensure correct bot authentication before entering context
+    await client.start(bot_token=FSTISCH_BOT_TOKEN)
+    
     async with client:
-        await client.start(bot_token=FSTISCH_BOT_TOKEN)
         me = await client.get_me()
         log.info(f"Catch-up client initialized as {me.username}")
-        
-        # Example: check for recent messages (simplified)
-        async for dialog in client.iter_dialogs(limit=10):
-            if dialog.unread_count > 0:
-                log.info(f"Unread messages in {dialog.name}: {dialog.unread_count}")
+        # iter_dialogs is not supported for bots (BotMethodInvalidError)
+        # So we skip the recent message check here.
+    
+    # Cleanup: Reset the global _CLIENT so the main loop creates a fresh one.
+    global _CLIENT
+    _CLIENT = None
 
 
 def main():
+    # _cli_defaults = {"--sheet-id": PROD_SHEET}
     _cli_defaults = {"--sheet-id": TEST_SHEET}
     subcmd, args = cli.parse_args(sys.argv[1:], doc=__doc__, defaults=_cli_defaults)
     cli.init_logging(args)
@@ -809,7 +1030,8 @@ def main():
         log.error("FSTISCH_BOT_TOKEN not set!")
         sys.exit(1)
 
-    state = BotState(args.sheet_id)
+    sheet_id = PROD_SHEET if args.sheet_id == 'prod' else args.sheet_id
+    state = BotState(sheet_id)
     state.sync_users()
 
     # Initial catch-up

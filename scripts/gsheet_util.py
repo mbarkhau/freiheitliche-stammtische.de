@@ -40,6 +40,7 @@ import pathlib as pl
 import hashlib as hl
 import argparse
 import typing as typ
+import re
 import datetime as dt
 
 import qrcode
@@ -315,7 +316,9 @@ class GSheet:
         # 2. Build row lists using the (potentially updated) norm_headers
         row_lists = []
         for row_dict in rows:
-            row_list = [row_dict.get(h, "") for h in norm_headers]
+            # Use None for fields not present in row_dict to allow for formula/value inheritance
+            # during the sparse re-application step below.
+            row_list = [row_dict.get(h) for h in norm_headers]
             row_lists.append(row_list)
 
         result = _append_gsheet(self.service, self.sheet_id, sheet_name, row_lists)
@@ -328,7 +331,6 @@ class GSheet:
                 range_part = updated_range.split("!")[1]
                 start_cell = range_part.split(":")[0]
                 # Extract row number from cell like "A10"
-                import re
                 match = re.search(r"(\d+)", start_cell)
                 if match:
                     start_row_idx = int(match.group(1))
@@ -336,7 +338,8 @@ class GSheet:
                         sheet_id = self._get_sheet_id(sheet_name)
                         num_rows = updates.get('updatedRows', 1)
                         
-                        # Copy format from start_row_idx - 1 to [start_row_idx, start_row_idx + num_rows - 1]
+                        # Copy formatting and formulas from start_row_idx - 1 to [start_row_idx, start_row_idx + num_rows - 1]
+                        # PASTE_NORMAL copies everything: formulas, values, formats, etc.
                         body = {
                             "requests": [
                                 {
@@ -351,15 +354,20 @@ class GSheet:
                                             "startRowIndex": start_row_idx - 1,
                                             "endRowIndex": start_row_idx - 1 + num_rows,
                                         },
-                                        "pasteType": "PASTE_FORMAT"
+                                        "pasteType": "PASTE_NORMAL"
                                     }
                                 }
                             ]
                         }
                         self.service.spreadsheets().batchUpdate(spreadsheetId=self.sheet_id, body=body).execute()
-                        log.info(f"Inherited formatting from row {start_row_idx - 1} for {num_rows} rows.")
+                        
+                        # Since PASTE_NORMAL also copies values, we must re-apply the actual data values
+                        # to the static columns while letting formulas remain.
+                        _update_gsheet(self.service, self.sheet_id, sheet_name, range_part, row_lists)
+                        
+                        log.info(f"Inherited formulas and formatting from row {start_row_idx - 1} for {num_rows} rows.")
         except Exception as e:
-            log.warning(f"Failed to inherit formatting: {e}")
+            log.warning(f"Failed to inherit formulas/formatting: {e}")
 
         return result
 
@@ -465,12 +473,12 @@ def download_gsheet(
             yield {key: val for key, val in entry.items() if val}
 
 
-def sync_cmd(args) -> int:
+def sync_cmd(sheet_id: str) -> int:
     data_dir = pl.Path("data")
     data_dir.mkdir(exist_ok=True)
 
-    log.info(f"Downloading 'termine'...")
-    termine = list(download_gsheet(sheet_id=args.sheet_id, sheet_name='termine'))
+    log.info(f"Downloading 'termine' from {sheet_id}...")
+    termine = list(download_gsheet(sheet_id=sheet_id, sheet_name='termine'))
     termine.sort(key=lambda termin: termin.get('beginn', "2000-01-01"))
 
     data_termine = json.dumps(termine, indent=2, ensure_ascii=False)
@@ -546,7 +554,7 @@ def sync_cmd(args) -> int:
     log.info(f"Saved {len(termine)} termine to www/termine.json")
 
     log.info(f"Downloading 'kontakte'...")
-    kontakte = list(download_gsheet(sheet_id=args.sheet_id, sheet_name='kontakte'))
+    kontakte = list(download_gsheet(sheet_id=sheet_id, sheet_name='kontakte'))
     with (data_dir / "kontakte.json").open(mode="w", encoding="utf-8") as fobj:
         json.dump(kontakte, fobj, indent=2, ensure_ascii=False)
     log.info(f"Saved {len(kontakte)} items to data/kontakte.json")
@@ -590,7 +598,7 @@ def main(argv: list[str] = sys.argv[1:]) -> int:
     cli.init_logging(args)
 
     if subcmd in (None, "sync"):
-        return sync_cmd(args)
+        return sync_cmd(args.sheet_id)
     if subcmd == "validate":
         return validate_cmd(args)
     else:
