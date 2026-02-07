@@ -192,16 +192,19 @@ async def announce_event(event: dict):
         # Send Poll
         try:
             # Import types locally to avoid global dependency if not needed elsewhere
-            from telethon.tl.types import InputMediaPoll, Poll, PollAnswer
+            from telethon.tl.types import InputMediaPoll, Poll, PollAnswer, TextWithEntities
+
+            def _twe(text):
+                return TextWithEntities(text=text, entities=[])
             
             poll = Poll(
                 id=0, # ID is ignored for new polls
-                question="Wer ist dabei?",
+                question=_twe("Wer ist dabei?"),
                 answers=[
-                    PollAnswer(text="Ja", option=b'0'),
-                    PollAnswer(text="Ja + 1", option=b'1'),
-                    PollAnswer(text="Vielleicht", option=b'2'),
-                    PollAnswer(text="Zeige Ergebnis", option=b'3'),
+                    PollAnswer(text=_twe("Ja"), option=b'0'),
+                    PollAnswer(text=_twe("Ja + 1"), option=b'1'),
+                    PollAnswer(text=_twe("Vielleicht"), option=b'2'),
+                    PollAnswer(text=_twe("Zeige Ergebnis"), option=b'3'),
                 ],
                 closed=False,
                 public_voters=True,
@@ -255,6 +258,10 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not update.message or not update.message.text:
+        return
+
+    # Ignore messages that are not DMs
+    if update.effective_chat.type != 'private':
         return
 
     user_id = str(update.effective_user.id)
