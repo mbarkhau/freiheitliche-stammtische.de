@@ -1,5 +1,32 @@
 (function () {
 
+	// --- Constants ---
+	const ORGANIZER_LOGOS = {
+		"Unabhängig": "img/logo_256.png",
+		"DIE LIBERTÄREN": "img/logo_die-libertaeren.png",
+		"Hayek Club": "img/logo_hayek-club.png",
+		"Staatenlos": "img/logo_staatenlos.png",
+		"Free Cities Foundation": "img/logo_free-cities.png",
+		"Bündnis Libertärer": "img/logo_blib.png",
+		"Milei Institut": "img/logo_milei-institut.png",
+		"Partei der Vernunft": "img/logo_pdv.png",
+	};
+
+	function getOrgaLogo(orga) {
+		if (!orga) return "img/logo_256.png";
+		// Check for exact match
+		if (ORGANIZER_LOGOS[orga]) {
+			return ORGANIZER_LOGOS[orga];
+		}
+		// Check for partial match (e.g. "Hayek Club Berlin" -> "Hayek Club")
+		for (const [key, value] of Object.entries(ORGANIZER_LOGOS)) {
+			if (orga.includes(key)) {
+				return value;
+			}
+		}
+		return "img/logo_256.png";
+	}
+
 	function stringToHash(str) {
 		let hash = 0;
 		if (str.length === 0) return hash;
@@ -140,6 +167,9 @@
 			<div class="event-detail">
 				<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
 				<span>${t.orga || ''}</span>
+			</div>
+			<div class="orga-logo-card-container">
+				<img src="${getOrgaLogo(t.orga)}" class="orga-logo-card" alt="${t.orga || 'Logo'}">
 			</div>
 		</div>`;
 	}
@@ -292,7 +322,10 @@
 			const relativeDate = getRelativeDateString(termin.date);
 			overlay.innerHTML = `
 	<div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
-	  <h4 style="margin: 0; font-size: 1.1rem;">${termin.name || ''}</h4>
+	  <div style="display: flex; align-items: center; gap: 0.75rem;">
+	  	<img src="${getOrgaLogo(termin.orga)}" class="orga-logo-overlay" alt="${termin.orga || 'Logo'}">
+	  	<h4 style="margin: 0; font-size: 1.1rem;">${termin.name || ''}</h4>
+	  </div>
 	  <button onclick="document.getElementById('selection-overlay').style.display='none'" class="map-overlay-close">✕</button>
 	</div>
 	<div style="font-size: 0.9rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.25rem;">
