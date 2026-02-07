@@ -56,7 +56,10 @@ FSTISCH_APP_TITLE = os.environ.get('FSTISCH_APP_TITLE', 'freiheitliche-stammtisc
 PROD_SHEET = "1-BypxZnsRGFJ8XeuCIFyleF-4OK-ndsUvpaV6_Oi95s"
 TEST_SHEET = "15QeC3F4CPHLNjroghRXHDjO8oBC2wmJBPhTLHF_5XOs"
 
-ADMIN_IDS = {"601316285", "1473328156"}
+ADMIN_IDS = {
+    "601316285",    # Manuel
+    "1473328156",   # Lukas
+}
 
 
 def get_weekday_de(date_str: str) -> str:
@@ -92,6 +95,9 @@ class BotState:
 
     def is_user_active(self, tg_id: str | int) -> tuple[bool, str | None]:
         tg_id = str(tg_id)
+        if tg_id in ADMIN_IDS:
+            return True, "Aktiv"
+
         user = self.users.get(tg_id)
         if not user:
             return False, "Unknown"
@@ -126,10 +132,10 @@ async def git_sync_and_push(sheet_id: str, message: str):
         # Note: We don't notify the user here as it's a background operation
 
 
-async def announce_event(event: dict):
+async def announce_event(bot, event: dict):
     tg_target = event.get('telegram_group_id')
     if not tg_target:
-        tg_target = "5186171287"
+        tg_target = "-1003804237556"
         log.info(f"No telegram target found in event data. Using fallback: {tg_target}")
 
     # Clean up target (basic handling)
@@ -147,18 +153,6 @@ async def announce_event(event: dict):
     log.info(f"Attempting to announce event to Telegram group: {tg_target}")
 
     try:
-        client = init_telethon_client()
-        # Ensure we are connected/authorized
-        if not client.is_connected():
-            await client.start(bot_token=FSTISCH_BOT_TOKEN)
-
-        # Check if we can find the entity (which implies membership or public group)
-        try:
-            entity = await client.get_entity(tg_target)
-        except Exception as e:
-            log.warning(f"Could not find entity {tg_target}: {e}")
-            return
-
         # Construct message
         name = event.get('name', 'Stammtisch')
         date_str = event.get('beginn', 'Unbekannt')
@@ -179,40 +173,63 @@ async def announce_event(event: dict):
             f"📍 {plz}"
         )
 
-        sent_msg = await client.send_message(entity, msg, parse_mode='html')
-        log.info(f"Announcement sent to {tg_target}, message ID: {sent_msg.id}")
+        # Try invalidating cache or different ID formats if "Chat not found"
+        chat_id_candidates = [tg_target]
+        if isinstance(tg_target, int) and tg_target > 0:
+            # Maybe it's a supergroup without the -100 prefix
+            chat_id_candidates.append(int(f"-100{tg_target}"))
+            # Maybe it's a basic group (negative ID)
+            chat_id_candidates.append(-tg_target)
+        
+        sent_msg = None
+        used_chat_id = None
+        
+        for cid in chat_id_candidates:
+            try:
+                sent_msg = await bot.send_message(chat_id=cid, text=msg, parse_mode='HTML')
+                used_chat_id = cid
+                log.info(f"Announcement sent to {cid} (target: {tg_target}), message ID: {sent_msg.message_id}")
+                break
+            except Exception as e:
+                log.warning(f"Failed to send to {cid}: {e}")
+                # Check for "Group migrated to supergroup. New chat id: <id>"
+                migration_match = re.search(r"New chat id: (-?\d+)", str(e))
+                if migration_match:
+                    new_chat_id = int(migration_match.group(1))
+                    log.info(f"Detected group migration. Retrying with new chat id: {new_chat_id}")
+                    try:
+                        sent_msg = await bot.send_message(chat_id=new_chat_id, text=msg, parse_mode='HTML')
+                        used_chat_id = new_chat_id
+                        log.info(f"Announcement sent to {new_chat_id} (target: {tg_target}), message ID: {sent_msg.message_id}")
+                        break
+                    except Exception as e2:
+                        log.warning(f"Failed to send to migrated chat {new_chat_id}: {e2}")
+        
+        if not sent_msg:
+             log.error(f"Could not send announcement to {tg_target} (tried: {chat_id_candidates})")
+             return
+
+        # Update tg_target to the working one for pinning/polling
+        tg_target = used_chat_id
         
         # Pin the message
         try:
-            await client.pin_message(entity, sent_msg, notify=True)
+            await bot.pin_chat_message(chat_id=tg_target, message_id=sent_msg.message_id, disable_notification=False)
             log.info(f"Announcement pinned in {tg_target}")
         except Exception as pin_ex:
             log.warning(f"Could not pin message in {tg_target}: {pin_ex}")
 
         # Send Poll
         try:
-            # Import types locally to avoid global dependency if not needed elsewhere
-            from telethon.tl.types import InputMediaPoll, Poll, PollAnswer, TextWithEntities
-
-            def _twe(text):
-                return TextWithEntities(text=text, entities=[])
-            
-            poll = Poll(
-                id=0, # ID is ignored for new polls
-                question=_twe("Wer ist dabei?"),
-                answers=[
-                    PollAnswer(text=_twe("Ja"), option=b'0'),
-                    PollAnswer(text=_twe("Ja + 1"), option=b'1'),
-                    PollAnswer(text=_twe("Vielleicht"), option=b'2'),
-                    PollAnswer(text=_twe("Zeige Ergebnis"), option=b'3'),
-                ],
-                closed=False,
-                public_voters=True,
-                multiple_choice=False,
-                quiz=False,
+            options = ["Ja", "Ja + 1", "Vielleicht", "Zeige Ergebnis"]
+            await bot.send_poll(
+                chat_id=tg_target,
+                question="Wer ist dabei?",
+                options=options,
+                is_anonymous=False,
+                allows_multiple_answers=False,
+                type='regular'
             )
-            
-            await client.send_message(entity, file=InputMediaPoll(poll=poll))
             log.info(f"Poll sent to {tg_target}")
             
         except Exception as poll_ex:
@@ -255,6 +272,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         pass 
     else:
         await update.message.reply_text("Melde dich bei @ManuelB um dein Konto zu aktivieren")
+
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not update.message or not update.message.text:
@@ -433,6 +451,7 @@ def get_main_keyboard(user_id: str):
     keyboard = [['Bot Info', 'Meine Termine'], ['Termin Erstellen', 'Termin Löschen']]
     if user_id in ADMIN_IDS:
         keyboard.append(['Nutzer Aktivieren', 'Nutzer Deaktivieren'])
+
     return ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
 
 
@@ -667,7 +686,7 @@ async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE
                 plz = str(new_event.get('plz', ''))
                 asyncio.create_task(git_sync_and_push(bot_state.sheet.sheet_id, f"new event for {plz}"))
 
-            asyncio.create_task(announce_event(new_event))
+            asyncio.create_task(announce_event(context.bot, new_event))
             await update.message.reply_text(success_msg)
         except Exception as e:
             log.error(f"Error saving event: {e}")
@@ -926,61 +945,62 @@ async def handle_manage_users(update: Update, context: ContextTypes.DEFAULT_TYPE
         return
 
     if current_state == 'awaiting_user_confirm':
-        if text.lower() == 'ja':
-            gs_idx, row = context.user_data.get('selected_user_data')
-            target_status = context.user_data.get('target_status')
-            
-            await update.message.reply_text(f"Setze Status auf '{target_status}' in GSheet...")
-            await context.bot.send_chat_action(chat_id=update.effective_chat.id, action="typing")
-            
-            try:
-                # We need to find the column index for "Bot modus"
-                headers = await asyncio.to_thread(bot_state.sheet._get_headers, "kontakte")
-                col_idx = -1
-                for i, h in enumerate(headers):
-                    if gu._normalize_key(h) == "bot_modus":
-                        col_idx = i
-                        break
-                
-                if col_idx == -1:
-                    # Append header if missing? Better to fail safely
-                    await update.message.reply_text("❌ Fehler: Spalte 'Bot modus' nicht gefunden.")
-                    return
-
-                # Convert col_idx to A, B, C...
-                col_letter = chr(ord('A') + col_idx)
-                range_name = f"{col_letter}{gs_idx}"
-                
-                # Perform update
-                body = {"values": [[target_status]]}
-                bot_state.sheet.service.spreadsheets().values().update(
-                    spreadsheetId=bot_state.sheet.sheet_id,
-                    range=f"kontakte!{range_name}",
-                    valueInputOption="RAW",
-                    body=body
-                ).execute()
-                
-                bot_state.sync_users()
-                
-                if target_status == "Aktiv":
-                    user_tg_id = row.get("telegram_id")
-                    if user_tg_id:
-                        msg = (
-                            WELCOME_MESSAGE + 
-                            "Ihr Konto wurde aktiviert und Sie können jetzt Termine für Ihren Stammtisch verwalten."
-                        )
-                        await context.bot.send_message(chat_id=user_tg_id, text=msg)
-
-                admin_username = update.effective_user.username or "Unknown"
-                bot_state.sheet.log(f"Admin @{admin_username} ({user_id}) set status of {row.get('telegram_id')} ({row.get('name')}) to {target_status}")
-                await update.message.reply_text(f"✅ Nutzer wurde erfolgreich {target_status.lower()}.")
-            except Exception as e:
-                log.error(f"Error updating user status: {e}")
-                await update.message.reply_text("❌ Fehler beim Aktualisieren. Bitte versuche es später erneut.")
-            
-            await reset_flow("Was kann ich sonst für dich tun?")
-        else:
+        if text.lower() != 'ja':
             await update.message.reply_text("Bitte bestätigen Sie mit 'Ja' oder nutzen Sie 'Abbrechen'.")
+            return
+
+        gs_idx, row = context.user_data.get('selected_user_data')
+        target_status = context.user_data.get('target_status')
+
+        await update.message.reply_text(f"Setze Status auf '{target_status}' in GSheet...")
+        await context.bot.send_chat_action(chat_id=update.effective_chat.id, action="typing")
+
+        try:
+            # We need to find the column index for "Bot modus"
+            headers = await asyncio.to_thread(bot_state.sheet._get_headers, "kontakte")
+            col_idx = -1
+            for i, h in enumerate(headers):
+                if gu._normalize_key(h) == "bot_modus":
+                    col_idx = i
+                    break
+
+            if col_idx == -1:
+                # Append header if missing? Better to fail safely
+                await update.message.reply_text("❌ Fehler: Spalte 'Bot modus' nicht gefunden.")
+                return
+
+            # Convert col_idx to A, B, C...
+            col_letter = chr(ord('A') + col_idx)
+            range_name = f"{col_letter}{gs_idx}"
+
+            # Perform update
+            body = {"values": [[target_status]]}
+            bot_state.sheet.service.spreadsheets().values().update(
+                spreadsheetId=bot_state.sheet.sheet_id,
+                range=f"kontakte!{range_name}",
+                valueInputOption="RAW",
+                body=body
+            ).execute()
+
+            bot_state.sync_users()
+
+            if target_status == "Aktiv":
+                user_tg_id = row.get("telegram_id")
+                if user_tg_id:
+                    msg = (
+                        WELCOME_MESSAGE +
+                        "Ihr Konto wurde aktiviert und Sie können jetzt Termine für Ihren Stammtisch verwalten."
+                    )
+                    await context.bot.send_message(chat_id=user_tg_id, text=msg)
+
+            admin_username = update.effective_user.username or "Unknown"
+            bot_state.sheet.log(f"Admin @{admin_username} ({user_id}) set status of {row.get('telegram_id')} ({row.get('name')}) to {target_status}")
+            await update.message.reply_text(f"✅ Nutzer wurde erfolgreich {target_status.lower()}.")
+        except Exception as e:
+            log.error(f"Error updating user status: {e}")
+            await update.message.reply_text("❌ Fehler beim Aktualisieren. Bitte versuche es später erneut.")
+
+        await reset_flow("Was kann ich sonst für dich tun?")
 
 
 
