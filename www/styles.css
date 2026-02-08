@@ -463,7 +463,6 @@ body {
     right: 1rem;
     width: 44px;
     height: 44px;
-    /* Increased slightly to accommodate padding */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -474,18 +473,13 @@ body {
     height: 100%;
     object-fit: contain;
     background-color: #e6e6e6;
-    /* Light gray background */
     border-radius: 8px;
-    /* Increased rounding */
-    padding: 4px;
-    /* Space inside the background */
 }
 
 
 .orga-logo-overlay-container {
     position: absolute;
     top: 2rem;
-    /* Below the title/close button area roughly */
     right: 0;
     width: 60px;
     height: 60px;
@@ -499,7 +493,6 @@ body {
     height: 100%;
     object-fit: contain;
     border-radius: 8px;
-    padding: 0px;
     background-color: #e6e6e6;
 }
 
