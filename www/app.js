@@ -321,12 +321,12 @@
 			overlay.style.display = 'block';
 			const relativeDate = getRelativeDateString(termin.date);
 			overlay.innerHTML = `
-	<div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
-	  <div style="display: flex; align-items: center; gap: 0.75rem;">
+	<div style="position: relative; margin-bottom: 0.5rem; padding-right: 3rem;">
+	  <h4 style="margin: 0; font-size: 1.1rem;">${termin.name || ''}</h4>
+	  <div class="orga-logo-overlay-container">
 	  	<img src="${getOrgaLogo(termin.orga)}" class="orga-logo-overlay" alt="${termin.orga || 'Logo'}">
-	  	<h4 style="margin: 0; font-size: 1.1rem;">${termin.name || ''}</h4>
 	  </div>
-	  <button onclick="document.getElementById('selection-overlay').style.display='none'" class="map-overlay-close">✕</button>
+	  <button onclick="document.getElementById('selection-overlay').style.display='none'" class="map-overlay-close" style="position: absolute; top: -5px; right: -5px;">✕</button>
 	</div>
 	<div style="font-size: 0.9rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.25rem;">
 	  <div>
@@ -337,9 +337,10 @@
 			  Kalender
 		  </a>
 	  </div>
+	  ${termin.time ? `<div><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> ab ${termin.time}</div>` : ''}
 	  <div><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> <a href="https://maps.google.com/?q=${termin.plz},${cityText(termin)},Deutschland" target="_blank">${termin.plz || ''} ${cityText(termin)}</a></div>
 	  <div><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> ${formatKontakt(termin.kontakt, termin['e-mail'])}</div>
-	  <div style="margin-top: 0.5rem;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg> ${termin.orga_www ? `<a href="${termin.orga_www}" target="_blank">${termin.orga || 'Link'}</a>` : (termin.orga || '')} ${termin.time ? `<span style="margin-left: 8px; opacity: 0.8;">ab ${termin.time}</span>` : ''}</div>
+	  <div><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg> ${termin.orga_www ? `<a href="${termin.orga_www}" target="_blank">${termin.orga || 'Link'}</a>` : (termin.orga || '')}</div>
 	  ${termin.link_qr ? `<div style="margin-top: 0.5rem;">${termin.link ? `<a href="${termin.link}" target="_blank">` : ''}<img src="${termin.link_qr}" alt="QR Code" style="width: 100%; max-width: 150px; border-radius: 4px;">${termin.link ? '</a>' : ''}</div>` : ''}
 	</div>
 	`;
