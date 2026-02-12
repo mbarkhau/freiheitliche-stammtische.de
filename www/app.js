@@ -336,14 +336,16 @@
 	  <div>
 		  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
 		  ${termin.date || ''} (${termin.dow || ''}) — ${relativeDate}
+	  </div>
+	  ${termin.time ? `<div>
+	  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> ab ${termin.time}
 		  <a href="${getCalendarLink(termin)}" target="_blank" style="margin-left: 8px; text-decoration: none; font-size: 0.8rem; background: var(--accent-color); color: var(--accent-contrast); padding: 2px 6px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;">
 			  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
 			  Kalender
 		  </a>
-	  </div>
-	  ${termin.time ? `<div><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> ab ${termin.time}</div>` : ''}
+	  </div>` : ''}
 	  <div><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> <a href="https://maps.google.com/?q=${termin.plz},${cityText(termin)},Deutschland" target="_blank">${termin.plz || ''} ${cityText(termin)}</a></div>
-	  <div><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> ${formatKontakt(termin.kontakt, termin['e-mail'])}</div>
+	  ${(termin.kontakt || termin['e-mail']) ? `<div><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> ${formatKontakt(termin.kontakt, termin['e-mail'])}</div>` : ''}
 	  <div><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg> ${termin.orga_www ? `<a href="${termin.orga_www}" target="_blank">${termin.orga || 'Link'}</a>` : (termin.orga || '')}</div>
 	  ${termin.link_qr ? `<div style="margin-top: 0.5rem;">${termin.link ? `<a href="${termin.link}" target="_blank">` : ''}<img src="${termin.link_qr}" alt="QR Code" style="width: 100%; max-width: 150px; border-radius: 4px;">${termin.link ? '</a>' : ''}</div>` : ''}
 	</div>

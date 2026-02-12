@@ -95,6 +95,7 @@ body {
 .header-right {
     display: flex;
     align-items: center;
+    flex-direction: row-reverse;
     gap: 1rem;
 }
 
@@ -154,6 +155,19 @@ body {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 600;
+    /* Icon button styles */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    transition: background-color 0.2s;
+}
+
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 /* Main Layout */

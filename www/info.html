@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Über Uns - Freiheitliche Stammtische</title>
+    <title>Info und Impressum zu Freiheitliche Stammtische</title>
     <link rel="icon" type="image/png" href="img/logo_64.png">
     <link rel="stylesheet" href="styles.css">
     <style>
+        body {
+            height: auto !important;
+            min-height: 100vh;
+            overflow-y: auto !important;
+        }
+
         .about-container {
             max-width: 800px;
             margin: 2rem auto;
             padding: 2rem;
-            background-color: var(--container-bg);
+            background-color: var(--card-bg);
             border-radius: 8px;
             border: 1px solid var(--border-color);
             transition: background-color 300ms ease, border-color 300ms ease;
@@ -35,11 +41,17 @@
         <div class="header-container">
             <a href="index.html" class="header-left">
                 <img src="img/logo_256.png" alt="Logo" class="site-logo">
-                <h1 class="site-title">Freiheitliche Stammtische</h1>
+                <h1 class="site-title">Freiheitliche<br>Stammtische</h1>
             </a>
             <nav class="header-right">
-                <button id="theme-toggle" aria-label="Toggle Dark Mode">☾</button>
-                <a href="about.html" class="nav-link">About</a>
+                <a href="info.html" class="nav-link" aria-label="Informationen">
+                    <span style="font-family: serif; font-weight: bold; font-size: 1.5rem; line-height: 1;">i</span>
+                </a>
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">✹</button>
+                <div class="filter-panel">
+                    <input class="table-search" placeholder="Suche..." aria-label="Suche">
+                    <button id="clear-filter" aria-label="Suche leeren">✕</button>
+                </div>
             </nav>
         </div>
     </header>
@@ -52,28 +64,98 @@
         </p>
         <p>
             Auf unserer interaktiven Karte finden Sie regelmäßige Treffen, Stammtische und Veranstaltungen in ganz
-            Deutschland. Wir legen Wert auf Eigenverantwortung, Meinungsfreiheit und den konstruktiven Dialog.
+            Deutschland. Wir wünschen viel Erfolg und Freude beim Kennenlernen und Austausch.
         </p>
         <h2>Kontakt & Mitmachen</h2>
         <p>
-            Möchten Sie Ihren eigenen Stammtisch eintragen oder haben Sie Fragen? Nutzen Sie die Kontaktinformationen in
-            der Liste auf der Startseite oder wenden Sie sich an die jeweiligen Veranstalter.
+            Möchten Sie Ihren eigenen Stammtisch eintragen oder haben Sie Fragen? Kontaktieren Sie unseren
+            Bundesstammtischleiter per Telegram <a href="https://t.me/LukasSchroth">https://t.me/LukasSchroth</a>
+            oder E-Mail <a data-obfuaddr="wo:die-libertaeren.de,wer:lukas.schroth,text:ebenda"></a>.
+            <br>
+            Für Korrekturen an der Webseite, kontaktieren Sie bitte unseren Webmaster: <a
+                href="https://t.me/ManuelBTC21">https://t.me/ManuelBTC21</a>
         </p>
-        <div style="margin-top: 2rem;">
-            <a href="index.html" class="nav-link" style="margin-left: 0;">← Zurück zur Karte</a>
-        </div>
+        <h2>Haftungshinweis</h2>
+        <p>
+            Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+        </p>
+        <h2>Impressum</h2>
+        <p>
+            Verantwortlich für dieses Angebot:<br>
+            <strong>DIE LIBERTÄREN e.V.</strong><br>
+            Postfach 75 02 07<br>
+            81332 München
+        </p>
+
+        <p>
+            <strong>Vereinsregister-Nummer</strong><br>
+            VR 209533<br>
+            Amtsgericht München
+        </p>
+
+        <p>
+            <strong>Vertreten durch</strong><br>
+            Dr. Mathias Hummel (Bundesvorsitzender)<br>
+            Florian Handwerker (Bundesgeschäftsführer)
+        </p>
+
+        <p>
+            <strong>Kontakt</strong><br>
+            Telefon: +49 159 06320502<br>
+            E-Mail: <a data-obfuaddr="wo:die-libertaeren.de,wer:info,text:ebenda"></a>
+        </p>
     </main>
 
     <script>
-        function initTheme() {
-            const savedTheme = localStorage.getItem('theme');
-            if (savedTheme === 'light') {
-                document.documentElement.setAttribute('data-theme', 'light');
-            } else {
-                document.documentElement.removeAttribute('data-theme');
+        (function () {
+            function decodeAddr(node) {
+                const data = node.getAttribute("data-obfuaddr");
+                const [wo, wer, text] = data.split(",").map(part => part.split(":")[1]);
+                const addr = wer + "@" + wo;
+                node.setAttribute('href', "mailto:" + addr);
+                node.textContent = text === 'ebenda' ? addr : text;
             }
-        }
-        initTheme();
+            document.querySelectorAll("[data-obfuaddr]").forEach(decodeAddr);
+
+            function toggleTheme() {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+                if (newTheme === 'dark') {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                } else {
+                    document.documentElement.removeAttribute('data-theme');
+                }
+
+                localStorage.setItem('theme', newTheme);
+                const button = document.getElementById('theme-toggle');
+                if (button) button.textContent = newTheme === 'dark' ? '✹' : '☾';
+            }
+
+            function initTheme() {
+                let savedTheme = localStorage.getItem('theme');
+                if (!savedTheme) {
+                    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                        savedTheme = 'dark';
+                    }
+                }
+
+                if (savedTheme === 'dark') {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                } else {
+                    document.documentElement.removeAttribute('data-theme');
+                }
+
+                const button = document.getElementById('theme-toggle');
+                if (button) {
+                    button.textContent = savedTheme === 'dark' ? '✹' : '☾';
+                    button.addEventListener('click', toggleTheme);
+                }
+            }
+
+            // Run immediately
+            initTheme();
+        })();
     </script>
 </body>
 
