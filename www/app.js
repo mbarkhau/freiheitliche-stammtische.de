@@ -480,16 +480,42 @@
 		updateSearch('');
 
 		// Search logic
+		const filterPanel = document.querySelector('.filter-panel');
 		const searchInput = document.querySelector('.filter-panel .table-search');
+		const searchToggle = document.getElementById('search-toggle');
+		const clearButton = document.getElementById('clear-filter');
+
+		if (searchToggle && filterPanel && searchInput) {
+			searchToggle.addEventListener('click', () => {
+				const isActive = filterPanel.classList.toggle('active');
+				if (isActive) {
+					searchInput.focus();
+				} else {
+					updateSearch('');
+				}
+			});
+
+			searchInput.addEventListener('blur', () => {
+				// Delay blur logic to allow click events on the toggle or clear button to process
+				setTimeout(() => {
+					if (searchInput.value.trim() === '') {
+						filterPanel.classList.remove('active');
+					}
+				}, 200);
+			});
+		}
+
 		if (searchInput) {
 			searchInput.addEventListener('input', debounce(function (e) {
 				updateSearch(e.target.value);
 			}, 150));
 		}
 
-		const clearButton = document.getElementById('clear-filter');
 		if (clearButton) {
-			clearButton.addEventListener('click', () => updateSearch(''));
+			clearButton.addEventListener('click', () => {
+				updateSearch('');
+				searchInput.focus();
+			});
 		}
 
 		const themeBtn = document.getElementById('theme-toggle');
