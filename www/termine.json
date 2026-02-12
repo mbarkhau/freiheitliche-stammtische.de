@@ -1,25 +1,5 @@
 [
   {
-    "name": "Hayek Club Magdeburg",
-    "plz": "39104",
-    "state": "DE-ST",
-    "city": "Magdeburg",
-    "city_dist": 1.9,
-    "coords": [
-      52.1151882,
-      11.630882
-    ],
-    "date": "-2026-02-12",
-    "dow": "-2026-02-12",
-    "time": "18:00",
-    "orga": "Hayek Club",
-    "orga_www": "https://hayek-magdeburg.de",
-    "kontakt": "Frank Törmer",
-    "e-mail": "veranstaltung@hayek-magdeburg.de",
-    "link": "https://t.me/hayekclubmd",
-    "link_qr": "img/qr_4d0819809e311973dbee1858e51152f4e8b93540.png"
-  },
-  {
     "name": "Libertäres Grilltreffen bei München",
     "plz": "85276",
     "state": "DE-BY",
@@ -312,7 +292,7 @@
     "date": "2025-12-19",
     "dow": "Fr.",
     "time": "19:00",
-    "orga": "Eigentümlich Frei",
+    "orga": "Unabhängig",
     "orga_www": "https://ef-magazin.de/",
     "kontakt": "Martin Moczarski",
     "e-mail": "moczarski@ef-magazin.de",
@@ -452,12 +432,32 @@
     "date": "2026-01-16",
     "dow": "Fr.",
     "time": "19:00",
-    "orga": "Eigentümlich Frei",
+    "orga": "Unabhängig",
     "orga_www": "https://ef-magazin.de/",
     "kontakt": "Martin Moczarski",
     "e-mail": "moczarski@ef-magazin.de",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Hayek Club Magdeburg",
+    "plz": "39104",
+    "state": "DE-ST",
+    "city": "Magdeburg",
+    "city_dist": 1.9,
+    "coords": [
+      52.1151882,
+      11.630882
+    ],
+    "date": "2026-01-21",
+    "dow": "Mi.",
+    "time": "18:00",
+    "orga": "Hayek Club",
+    "orga_www": "https://hayek-magdeburg.de",
+    "kontakt": "Frank Törmer",
+    "e-mail": "veranstaltung@hayek-magdeburg.de",
+    "link": "https://t.me/hayekclubmd",
+    "link_qr": "img/qr_4d0819809e311973dbee1858e51152f4e8b93540.png"
   },
   {
     "name": "Libertärer Stammtisch Mittelhessen",
@@ -660,6 +660,26 @@
     "link_qr": null
   },
   {
+    "name": "Hayek Club Magdeburg",
+    "plz": "39104",
+    "state": "DE-ST",
+    "city": "Magdeburg",
+    "city_dist": 1.9,
+    "coords": [
+      52.1151882,
+      11.630882
+    ],
+    "date": "2026-02-12",
+    "dow": "Do.",
+    "time": "18:00",
+    "orga": "Hayek Club",
+    "orga_www": "https://hayek-magdeburg.de",
+    "kontakt": "Frank Törmer",
+    "e-mail": "veranstaltung@hayek-magdeburg.de",
+    "link": "https://t.me/hayekclubmd",
+    "link_qr": "img/qr_4d0819809e311973dbee1858e51152f4e8b93540.png"
+  },
+  {
     "name": "Libertärer Stammtisch Grevenbroich",
     "plz": "41515",
     "state": "DE-NW",
@@ -672,7 +692,7 @@
     "date": "2026-02-13",
     "dow": "Fr.",
     "time": "19:00",
-    "orga": "Eigentümlich Frei",
+    "orga": "Unabhängig",
     "orga_www": "https://ef-magazin.de/",
     "kontakt": "Martin Moczarski",
     "e-mail": "moczarski@ef-magazin.de",
