@@ -780,6 +780,26 @@
     "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511.png"
   },
   {
+    "name": "Markus Krall in Eppingen",
+    "plz": "75031",
+    "state": "DE-BW",
+    "city": "Eppingen",
+    "city_dist": 1.5,
+    "coords": [
+      49.1347417,
+      8.8887438
+    ],
+    "date": "2026-02-27",
+    "dow": "Fr.",
+    "time": "18:30",
+    "orga": "Bündnis Deutschland",
+    "orga_www": "https://buendnis-bw.de/veranstaltungen/veranstaltung-in-eppingen/",
+    "kontakt": null,
+    "e-mail": null,
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Meißen",
     "plz": "01662",
     "state": "DE-SN",

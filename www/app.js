@@ -8,6 +8,7 @@
 		"Staatenlos": "img/logo_staatenlos.png",
 		"Free Cities Foundation": "img/logo_free-cities.png",
 		"Bündnis Libertärer": "img/logo_blib.png",
+		"Bündnis Deutschland": "img/logo_bd.png",
 		"Milei Institut": "img/logo_milei-institut.png",
 		"Partei der Vernunft": "img/logo_pdv.png",
 	};
