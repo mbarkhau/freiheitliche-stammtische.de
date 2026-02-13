@@ -31,6 +31,13 @@
     "telegram": "@UweSchmitt"
   },
   {
+    "name": "Stephan Bueckner",
+    "plz": "06108, 06844",
+    "stammtisch": "Libertärer Stammtisch Dessau",
+    "organisation": "DIE LIBERTÄREN",
+    "telegram": "@StephanBueckner"
+  },
+  {
     "name": "Ferdinand Steinhöfel",
     "plz": "20095",
     "stammtisch": "Libertärer Stammtisch Hamburg",
@@ -81,13 +88,17 @@
   {
     "name": "Fritz Maulbetsch",
     "plz": "72336",
+    "bot_modus": "Aktiv",
     "stammtisch": "Libertärer Stammtisch Balingen/Württemberg",
+    "organisation": "Unabhängig",
     "telegram_id": "1437111783",
-    "telegram": "@FreeFritz"
+    "telegram": "@FreeFritz",
+    "e-mail": "lnb@maulbetsch.net"
   },
   {
     "name": "Alexander Expander",
     "plz": "44263",
+    "bot_modus": "Aktiv",
     "stammtisch": "Libertäres Treffen Dortmund",
     "organisation": "Bündnis Libertärer",
     "telegram_id": "1617605672",
@@ -112,10 +123,6 @@
     "name": "Caroline Krause",
     "organisation": "Staatenlos",
     "e-mail": "caroline@staatenlos.ch"
-  },
-  {
-    "stammtisch": "Staatenlos Düsseldorf",
-    "organisation": "Staatenlos"
   },
   {
     "organisation": "Team Freiheit"
