@@ -35,6 +35,7 @@ import logging
 import pathlib as pl
 import datetime as dt
 import zoneinfo as zi
+import subprocess as sp
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 from telethon import TelegramClient
@@ -116,12 +117,11 @@ async def git_sync_and_push(sheet_id: str, message: str):
         await asyncio.to_thread(gu.sync_cmd, sheet_id)
         
         # 2. Git operations
-        import subprocess
         def run_git(args):
             log.info(f"Running git {' '.join(args)}")
-            subprocess.run(["git"] + list(args), check=True, capture_output=True, text=True)
+            sp.run(["git"] + list(args), check=True, capture_output=True, text=True)
 
-        await asyncio.to_thread(run_git, ["add", "data/termine.json", "www/termine.json"])
+        await asyncio.to_thread(run_git, ["add", "data/termine.json", "www/termine.json", "www/img/"])
         await asyncio.to_thread(run_git, ["commit", "-m", message])
         await asyncio.to_thread(run_git, ["push"])
         
@@ -989,7 +989,8 @@ async def handle_manage_users(update: Update, context: ContextTypes.DEFAULT_TYPE
                 if user_tg_id:
                     msg = (
                         WELCOME_MESSAGE +
-                        "Ihr Konto wurde aktiviert und Sie können jetzt Termine für Ihren Stammtisch verwalten."
+                        "Ihr Konto wurde aktiviert und Sie können jetzt Termine für Ihren Stammtisch verwalten.\n\n" +
+                        "Um Befehle zu initiieren, schreibe: /start"
                     )
                     await context.bot.send_message(chat_id=user_tg_id, text=msg)
 
