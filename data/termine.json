@@ -177,6 +177,7 @@
     "orga": "Unabhängig",
     "plz": "35396",
     "telegram_group_id": "2218630491",
+    "kontakt": "Stefan Bosch",
     "tournus": "Jeder dritte Mittwoch",
     "telegram": "https://t.me/+kDTzmac3wJYwMzIy"
   },
@@ -326,6 +327,7 @@
     "orga": "Unabhängig",
     "plz": "35396",
     "telegram_group_id": "2218630491",
+    "kontakt": "Stefan Bosch",
     "tournus": "Jeder dritte Mittwoch",
     "telegram": "https://t.me/+kDTzmac3wJYwMzIy"
   },
@@ -488,6 +490,7 @@
     "orga": "Unabhängig",
     "plz": "35396",
     "telegram_group_id": "2218630491",
+    "kontakt": "Stefan Bosch",
     "tournus": "Jeder dritte Mittwoch",
     "telegram": "https://t.me/+kDTzmac3wJYwMzIy"
   },
@@ -639,6 +642,18 @@
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
     "orga_webseite": "https://buendnis-libertaerer.de/"
+  },
+  {
+    "name": "Libertärer Stammtisch Kaiserslautern",
+    "beginn": "2026-03-21",
+    "ende": "2026-03-21",
+    "uhrzeit": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "67657",
+    "telegram_group_id": "3893662081",
+    "kontakt": "Uwe Schmitt",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "telegram": "https://t.me/UweSchmitt"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
