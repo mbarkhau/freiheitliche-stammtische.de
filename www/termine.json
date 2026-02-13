@@ -776,8 +776,8 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Uwe Schmitt",
     "e-mail": "uwe.schmitt@die-libertaeren.de",
-    "link": "https://t.me/UweSchmitt",
-    "link_qr": "img/qr_992664b74a130040603a82d16ee2cf5bf019cbd5.png"
+    "link": "https://t.me/+za88OLhGTshlNGJi",
+    "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511.png"
   },
   {
     "name": "Libertärer Stammtisch Meißen",
@@ -938,6 +938,26 @@
     "e-mail": "info@buendnis-libertaerer.de",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Kaiserslautern",
+    "plz": "67657",
+    "state": "DE-RP",
+    "city": "Kaiserslautern",
+    "city_dist": 2.7,
+    "coords": [
+      49.4524753,
+      7.8029119
+    ],
+    "date": "2026-03-21",
+    "dow": "Sa.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Uwe Schmitt",
+    "e-mail": null,
+    "link": "https://t.me/+za88OLhGTshlNGJi",
+    "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511.png"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",

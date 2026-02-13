@@ -22,6 +22,15 @@
     "e-mail": "lukas.schroth@die-libertaeren.de"
   },
   {
+    "name": "Uwe Schmitt",
+    "plz": "67657",
+    "bot_modus": "Aktiv",
+    "stammtisch": "Libertärer Stammtisch Kaiserslautern",
+    "organisation": "DIE LIBERTÄREN",
+    "telegram_id": "7285546447",
+    "telegram": "@UweSchmitt"
+  },
+  {
     "name": "Ferdinand Steinhöfel",
     "plz": "20095",
     "stammtisch": "Libertärer Stammtisch Hamburg",
@@ -70,14 +79,6 @@
     "telegram": "Der Irrenarzt"
   },
   {
-    "name": "Uwe Schmitt",
-    "plz": "67657",
-    "stammtisch": "Libertärer Stammtisch Kaiserslautern",
-    "organisation": "DIE LIBERTÄREN",
-    "telegram_id": "7285546447",
-    "telegram": "@UweSchmitt"
-  },
-  {
     "name": "Fritz Maulbetsch",
     "plz": "72336",
     "stammtisch": "Libertärer Stammtisch Balingen/Württemberg",
@@ -99,6 +100,13 @@
     "organisation": "Free Cities",
     "telegram_id": "1271210913",
     "telegram": "@janbertram"
+  },
+  {
+    "name": "Stefan Bosch",
+    "plz": "35396",
+    "stammtisch": "Libertärer Stammtisch Mittelhessen",
+    "telegram_id": "794465730",
+    "telegram": "@Auf_Freigang"
   },
   {
     "name": "Caroline Krause",
