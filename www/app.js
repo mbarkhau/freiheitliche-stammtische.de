@@ -138,7 +138,7 @@
 		if (!kontakt && !email) return '';
 		if (email) {
 			const recipient = kontakt ? `${kontakt.trim()} <${email.trim()}>` : email.trim();
-			return `<a href="mailto:${encodeURIComponent(recipient)}">${kontakt || email}</a>`;
+			return `<a href="mailto:${encodeURIComponent(recipient)}">${kontakt} &lt;${email}&gt;</a>`;
 		}
 		return kontakt || '';
 	}

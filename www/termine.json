@@ -16,6 +16,7 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Florian Handwerker",
     "e-mail": "florian.handwerker@die-libertaeren.de",
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -36,6 +37,7 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Manel Barkhau",
     "e-mail": "manuel.barkhau@die-libertaeren.de",
+    "infotext": null,
     "link": "https://t.me/+WgMHpki_VXZkYWIy",
     "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
   },
@@ -56,6 +58,7 @@
     "orga_www": null,
     "kontakt": null,
     "e-mail": null,
+    "infotext": null,
     "link": "https://t.me/marktradikalberlin",
     "link_qr": "img/qr_fc1dec9239b71c671798da58566d8276a729df26.png"
   },
@@ -76,6 +79,7 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Ferdinand Steinhöfel",
     "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -96,6 +100,7 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Dieter Kirschmann",
     "e-mail": "dieter.kirschmann@die-libertaeren.de",
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -116,6 +121,7 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": "Svenja",
     "e-mail": null,
+    "infotext": null,
     "link": "https://t.me/+rGevpBnAjmUzMmRi",
     "link_qr": "img/qr_04fc92be141d28598b01457941262d0cd63141a1.png"
   },
@@ -136,6 +142,7 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Manel Barkhau",
     "e-mail": "manuel.barkhau@die-libertaeren.de",
+    "infotext": null,
     "link": "https://t.me/+WgMHpki_VXZkYWIy",
     "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
   },
@@ -156,6 +163,7 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Mathias Hummel",
     "e-mail": "events@die-libertaeren.de",
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -176,6 +184,7 @@
     "orga_www": "https://buendnis-libertaerer.de/",
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -196,6 +205,7 @@
     "orga_www": null,
     "kontakt": "Fritz Maulbetsch",
     "e-mail": "lnb@maulbetsch.net",
+    "infotext": null,
     "link": "https://t.me/FreeFritz",
     "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0.png"
   },
@@ -216,6 +226,7 @@
     "orga_www": "https://www.parteidervernunft.de/",
     "kontakt": null,
     "e-mail": "info@parteidervernunft.de",
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -236,6 +247,7 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Dr. Joachim Teske",
     "e-mail": "joachimteske@aol.com",
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -256,6 +268,7 @@
     "orga_www": null,
     "kontakt": "Stefan Bosch",
     "e-mail": null,
+    "infotext": null,
     "link": "https://t.me/+kDTzmac3wJYwMzIy",
     "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9.png"
   },
@@ -276,6 +289,7 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Florian Handwerker",
     "e-mail": "florian.handwerker@die-libertaeren.de",
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -296,6 +310,7 @@
     "orga_www": "https://ef-magazin.de/",
     "kontakt": "Martin Moczarski",
     "e-mail": "moczarski@ef-magazin.de",
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -316,6 +331,7 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Lukas Schroth",
     "e-mail": "lukas.schroth@die-libertaeren.de",
+    "infotext": null,
     "link": "https://t.me/+WgMHpki_VXZkYWIy",
     "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
   },
@@ -336,6 +352,7 @@
     "orga_www": "https://free-cities.org/meet-ups/",
     "kontakt": "Jan Bertram",
     "e-mail": null,
+    "infotext": null,
     "link": "https://t.me/+QYVsjbuNZblmMTVi",
     "link_qr": "img/qr_32fb21a4f2ba8144114132edc0cabd7f1cbcbcab.png"
   },
@@ -356,6 +373,7 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Ferdinand Steinhöfel",
     "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -376,6 +394,7 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Mathias Hummel",
     "e-mail": "events@die-libertaeren.de",
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -396,6 +415,7 @@
     "orga_www": null,
     "kontakt": "Fritz Maulbetsch",
     "e-mail": "lnb@maulbetsch.net",
+    "infotext": null,
     "link": "https://t.me/FreeFritz",
     "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0.png"
   },
@@ -416,6 +436,7 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Dr. Joachim Teske",
     "e-mail": "joachimteske@aol.com",
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -436,6 +457,7 @@
     "orga_www": "https://ef-magazin.de/",
     "kontakt": "Martin Moczarski",
     "e-mail": "moczarski@ef-magazin.de",
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -456,6 +478,7 @@
     "orga_www": null,
     "kontakt": "Stefan Bosch",
     "e-mail": null,
+    "infotext": null,
     "link": "https://t.me/+kDTzmac3wJYwMzIy",
     "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9.png"
   },
@@ -476,6 +499,7 @@
     "orga_www": "https://hayek-magdeburg.de",
     "kontakt": "Frank Törmer",
     "e-mail": "veranstaltung@hayek-magdeburg.de",
+    "infotext": null,
     "link": "https://t.me/hayekclubmd",
     "link_qr": "img/qr_4d0819809e311973dbee1858e51152f4e8b93540.png"
   },
@@ -496,6 +520,7 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": "Pascal",
     "e-mail": null,
+    "infotext": null,
     "link": "https://t.me/+rrA7PWQ67lc4NDFi",
     "link_qr": "img/qr_2effdff9fdd526a9f8965c70f77d7770a02da2d4.png"
   },
@@ -516,6 +541,7 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": "Nicole",
     "e-mail": null,
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -536,6 +562,7 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Ferdinand Steinhöfel",
     "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -556,6 +583,7 @@
     "orga_www": null,
     "kontakt": "Fritz Maulbetsch",
     "e-mail": "lnb@maulbetsch.net",
+    "infotext": null,
     "link": "https://t.me/FreeFritz",
     "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0.png"
   },
@@ -576,6 +604,7 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Dieter Kirschmann",
     "e-mail": "dieter.kirschmann@die-libertaeren.de",
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -596,6 +625,7 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": "Svenja",
     "e-mail": null,
+    "infotext": null,
     "link": "https://t.me/+rGevpBnAjmUzMmRi",
     "link_qr": "img/qr_04fc92be141d28598b01457941262d0cd63141a1.png"
   },
@@ -616,6 +646,7 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": "Jean-Pierre",
     "e-mail": null,
+    "infotext": null,
     "link": "https://t.me/+cegpCV1FIdE3ZjA6",
     "link_qr": "img/qr_4e956e97ac0c32be17255cdda426331625df8b02.png"
   },
@@ -636,6 +667,7 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": "Jean-Pierre",
     "e-mail": null,
+    "infotext": null,
     "link": "https://t.me/+8Lq73tjBTF1iZDIy",
     "link_qr": "img/qr_11a00656e75601d20d88cee0556f565d45d0b196.png"
   },
@@ -656,6 +688,7 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Mathias Hummel",
     "e-mail": "events@die-libertaeren.de",
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -676,6 +709,7 @@
     "orga_www": "https://hayek-magdeburg.de",
     "kontakt": "Frank Törmer",
     "e-mail": "veranstaltung@hayek-magdeburg.de",
+    "infotext": null,
     "link": "https://t.me/hayekclubmd",
     "link_qr": "img/qr_4d0819809e311973dbee1858e51152f4e8b93540.png"
   },
@@ -696,6 +730,7 @@
     "orga_www": "https://ef-magazin.de/",
     "kontakt": "Martin Moczarski",
     "e-mail": "moczarski@ef-magazin.de",
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -716,6 +751,7 @@
     "orga_www": null,
     "kontakt": "Stefan Bosch",
     "e-mail": null,
+    "infotext": null,
     "link": "https://t.me/+kDTzmac3wJYwMzIy",
     "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9.png"
   },
@@ -736,6 +772,7 @@
     "orga_www": "https://buendnis-libertaerer.de/",
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -756,6 +793,7 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Lukas Schroth",
     "e-mail": "lukas.schroth@die-libertaeren.de",
+    "infotext": null,
     "link": "https://t.me/+WgMHpki_VXZkYWIy",
     "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
   },
@@ -776,6 +814,7 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Uwe Schmitt",
     "e-mail": "uwe.schmitt@die-libertaeren.de",
+    "infotext": null,
     "link": "https://t.me/+za88OLhGTshlNGJi",
     "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511.png"
   },
@@ -796,6 +835,7 @@
     "orga_www": "https://buendnis-bw.de/veranstaltungen/veranstaltung-in-eppingen/",
     "kontakt": null,
     "e-mail": null,
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -816,6 +856,7 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Dr. Joachim Teske",
     "e-mail": "joachimteske@aol.com",
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -836,6 +877,7 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Stefan Bückner",
     "e-mail": null,
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -856,6 +898,7 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Ferdinand Steinhöfel",
     "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -876,6 +919,7 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": "Svenja",
     "e-mail": null,
+    "infotext": null,
     "link": "https://t.me/+rGevpBnAjmUzMmRi",
     "link_qr": "img/qr_04fc92be141d28598b01457941262d0cd63141a1.png"
   },
@@ -896,6 +940,7 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": "Ilkay",
     "e-mail": null,
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -916,6 +961,7 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Stefan Bückner",
     "e-mail": null,
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -936,6 +982,7 @@
     "orga_www": null,
     "kontakt": "Fritz Maulbetsch",
     "e-mail": "lnb@maulbetsch.net",
+    "infotext": null,
     "link": "https://t.me/FreeFritz",
     "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0.png"
   },
@@ -956,6 +1003,7 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Lukas Schroth",
     "e-mail": "lukas.schroth@die-libertaeren.de",
+    "infotext": null,
     "link": "https://t.me/+WgMHpki_VXZkYWIy",
     "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
   },
@@ -976,6 +1024,7 @@
     "orga_www": "https://www.milei-institut.de/milei-konferenz-2026/",
     "kontakt": null,
     "e-mail": null,
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -996,6 +1045,7 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": "Jean-Piere",
     "e-mail": null,
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -1016,6 +1066,7 @@
     "orga_www": "https://buendnis-libertaerer.de/",
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -1036,6 +1087,7 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Uwe Schmitt",
     "e-mail": null,
+    "infotext": null,
     "link": "https://t.me/+za88OLhGTshlNGJi",
     "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511.png"
   },
@@ -1056,6 +1108,7 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Lukas Schroth",
     "e-mail": "lukas.schroth@die-libertaeren.de",
+    "infotext": null,
     "link": "https://t.me/+WgMHpki_VXZkYWIy",
     "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
   },
@@ -1076,6 +1129,7 @@
     "orga_www": "https://buendnis-libertaerer.de/",
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -1096,6 +1150,7 @@
     "orga_www": "https://buendnis-libertaerer.de/",
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -1116,6 +1171,7 @@
     "orga_www": "https://buendnis-libertaerer.de/",
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
+    "infotext": null,
     "link": null,
     "link_qr": null
   },
@@ -1136,6 +1192,7 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Lukas Schroth",
     "e-mail": "lukas.schroth@die-libertaeren.de",
+    "infotext": null,
     "link": "https://t.me/+WgMHpki_VXZkYWIy",
     "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
   }
