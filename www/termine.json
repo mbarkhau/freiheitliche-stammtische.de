@@ -140,26 +140,6 @@
     "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
   },
   {
-    "name": "Libertäres Treffen Dortmund",
-    "plz": "44263",
-    "state": "DE-NW",
-    "city": "Dortmund",
-    "city_dist": 3.8,
-    "coords": [
-      51.4865748,
-      7.4974155
-    ],
-    "date": "2025-12-11",
-    "dow": "Do.",
-    "time": "19:00",
-    "orga": "Bündnis Libertärer",
-    "orga_www": "https://buendnis-libertaerer.de/",
-    "kontakt": "Alexander Expander",
-    "e-mail": "info@buendnis-libertaerer.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Libertärer Stammtisch Magdeburg",
     "plz": "39104",
     "state": "DE-ST",
@@ -176,6 +156,26 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Mathias Hummel",
     "e-mail": "events@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertäres Treffen Dortmund",
+    "plz": "44263",
+    "state": "DE-NW",
+    "city": "Dortmund",
+    "city_dist": 3.8,
+    "coords": [
+      51.4865748,
+      7.4974155
+    ],
+    "date": "2025-12-11",
+    "dow": "Do.",
+    "time": "19:00",
+    "orga": "Bündnis Libertärer",
+    "orga_www": "https://buendnis-libertaerer.de/",
+    "kontakt": "Alexander Expander",
+    "e-mail": "info@buendnis-libertaerer.de",
     "link": null,
     "link_qr": null
   },
@@ -320,26 +320,6 @@
     "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
   },
   {
-    "name": "Libertärer Stammtisch Hamburg",
-    "plz": "20095",
-    "state": "DE-HH",
-    "city": "Hamburg",
-    "city_dist": 0.1,
-    "coords": [
-      53.5512868,
-      9.9992216
-    ],
-    "date": "2026-01-07",
-    "dow": "Mi.",
-    "time": "19:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Ferdinand Steinhöfel",
-    "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Free Cities Berlin Meetup",
     "plz": "10969",
     "state": "DE-BE",
@@ -358,6 +338,26 @@
     "e-mail": null,
     "link": "https://t.me/+QYVsjbuNZblmMTVi",
     "link_qr": "img/qr_32fb21a4f2ba8144114132edc0cabd7f1cbcbcab.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Hamburg",
+    "plz": "20095",
+    "state": "DE-HH",
+    "city": "Hamburg",
+    "city_dist": 0.1,
+    "coords": [
+      53.5512868,
+      9.9992216
+    ],
+    "date": "2026-01-07",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Ferdinand Steinhöfel",
+    "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Magdeburg",
@@ -440,26 +440,6 @@
     "link_qr": null
   },
   {
-    "name": "Hayek Club Magdeburg",
-    "plz": "39104",
-    "state": "DE-ST",
-    "city": "Magdeburg",
-    "city_dist": 1.9,
-    "coords": [
-      52.1151882,
-      11.630882
-    ],
-    "date": "2026-01-21",
-    "dow": "Mi.",
-    "time": "18:00",
-    "orga": "Hayek Club",
-    "orga_www": "https://hayek-magdeburg.de",
-    "kontakt": "Frank Törmer",
-    "e-mail": "veranstaltung@hayek-magdeburg.de",
-    "link": "https://t.me/hayekclubmd",
-    "link_qr": "img/qr_4d0819809e311973dbee1858e51152f4e8b93540.png"
-  },
-  {
     "name": "Libertärer Stammtisch Mittelhessen",
     "plz": "35396",
     "state": "DE-HE",
@@ -478,6 +458,26 @@
     "e-mail": null,
     "link": "https://t.me/+kDTzmac3wJYwMzIy",
     "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9.png"
+  },
+  {
+    "name": "Hayek Club Magdeburg",
+    "plz": "39104",
+    "state": "DE-ST",
+    "city": "Magdeburg",
+    "city_dist": 1.9,
+    "coords": [
+      52.1151882,
+      11.630882
+    ],
+    "date": "2026-01-21",
+    "dow": "Mi.",
+    "time": "18:00",
+    "orga": "Hayek Club",
+    "orga_www": "https://hayek-magdeburg.de",
+    "kontakt": "Frank Törmer",
+    "e-mail": "veranstaltung@hayek-magdeburg.de",
+    "link": "https://t.me/hayekclubmd",
+    "link_qr": "img/qr_4d0819809e311973dbee1858e51152f4e8b93540.png"
   },
   {
     "name": "Staatenlos Düsseldorf",
@@ -820,26 +820,6 @@
     "link_qr": null
   },
   {
-    "name": "Libertärer Stammtisch Hamburg",
-    "plz": "20095",
-    "state": "DE-HH",
-    "city": "Hamburg",
-    "city_dist": 0.1,
-    "coords": [
-      53.5512868,
-      9.9992216
-    ],
-    "date": "2026-03-04",
-    "dow": "Mi.",
-    "time": "19:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Ferdinand Steinhöfel",
-    "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Libertärer Stammtisch Dessau",
     "plz": "06844",
     "state": "DE-ST",
@@ -856,6 +836,26 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Stefan Bückner",
     "e-mail": null,
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Hamburg",
+    "plz": "20095",
+    "state": "DE-HH",
+    "city": "Hamburg",
+    "city_dist": 0.1,
+    "coords": [
+      53.5512868,
+      9.9992216
+    ],
+    "date": "2026-03-04",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Ferdinand Steinhöfel",
+    "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
     "link": null,
     "link_qr": null
   },
@@ -933,7 +933,7 @@
     "dow": "Do.",
     "time": "19:30",
     "orga": "Unabhängig",
-    "orga_www": "https://die-libertaeren.de/",
+    "orga_www": null,
     "kontakt": "Fritz Maulbetsch",
     "e-mail": "lnb@maulbetsch.net",
     "link": "https://t.me/FreeFritz",
@@ -954,8 +954,8 @@
     "time": "19:00",
     "orga": "DIE LIBERTÄREN",
     "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Manuel Barkhau",
-    "e-mail": "manuel.barkhau@die-libertaeren.de",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
     "link": "https://t.me/+WgMHpki_VXZkYWIy",
     "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
   },
@@ -1054,8 +1054,8 @@
     "time": "19:00",
     "orga": "DIE LIBERTÄREN",
     "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Manuel Barkhau",
-    "e-mail": "manuel.barkhau@die-libertaeren.de",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
     "link": "https://t.me/+WgMHpki_VXZkYWIy",
     "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
   },
@@ -1078,26 +1078,6 @@
     "e-mail": "info@buendnis-libertaerer.de",
     "link": null,
     "link_qr": null
-  },
-  {
-    "name": "Libertärer Stammtisch Frankfurt (FFM)",
-    "plz": "60594",
-    "state": "DE-HE",
-    "city": "Frankfurt am Main",
-    "city_dist": 1.0,
-    "coords": [
-      50.1028505,
-      8.6881252
-    ],
-    "date": "2026-05-08",
-    "dow": "Fr.",
-    "time": "19:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Manuel Barkhau",
-    "e-mail": "manuel.barkhau@die-libertaeren.de",
-    "link": "https://t.me/+WgMHpki_VXZkYWIy",
-    "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
   },
   {
     "name": "Libertäres Treffen Dortmund",
