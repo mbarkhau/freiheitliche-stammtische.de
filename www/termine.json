@@ -1118,5 +1118,25 @@
     "e-mail": "info@buendnis-libertaerer.de",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Frankfurt (FFM)",
+    "plz": "60594",
+    "state": "DE-HE",
+    "city": "Frankfurt am Main",
+    "city_dist": 1.0,
+    "coords": [
+      50.1028505,
+      8.6881252
+    ],
+    "date": "2026-07-07",
+    "dow": "Di.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+WgMHpki_VXZkYWIy",
+    "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
   }
 ]
