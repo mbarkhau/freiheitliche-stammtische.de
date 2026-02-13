@@ -192,7 +192,7 @@
     "date": "2025-12-11",
     "dow": "Do.",
     "time": "19:30",
-    "orga": "DIE LIBERTÄREN",
+    "orga": "Unabhängig",
     "orga_www": null,
     "kontakt": "Fritz Maulbetsch",
     "e-mail": "liberty@maulbetsch.net",
@@ -392,7 +392,7 @@
     "date": "2026-01-08",
     "dow": "Do.",
     "time": "19:30",
-    "orga": "DIE LIBERTÄREN",
+    "orga": "Unabhängig",
     "orga_www": null,
     "kontakt": "Fritz Maulbetsch",
     "e-mail": "liberty@maulbetsch.net",
@@ -552,7 +552,7 @@
     "date": "2026-02-05",
     "dow": "Do.",
     "time": "19:30",
-    "orga": "DIE LIBERTÄREN",
+    "orga": "Unabhängig",
     "orga_www": null,
     "kontakt": "Fritz Maulbetsch",
     "e-mail": "liberty@maulbetsch.net",
@@ -840,6 +840,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Dessau",
+    "plz": "06844",
+    "state": "DE-ST",
+    "city": "Dessau",
+    "city_dist": 2.9,
+    "coords": [
+      51.8504299,
+      12.270401
+    ],
+    "date": "2026-03-04",
+    "dow": "Mi.",
+    "time": "18:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": null,
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Staatenlos Bergisch Gladbach",
     "plz": "51465",
     "state": "DE-NW",
@@ -878,6 +898,46 @@
     "e-mail": null,
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Halle (Saale)",
+    "plz": "06108",
+    "state": "DE-ST",
+    "city": "Halle (Saale)",
+    "city_dist": 1.1,
+    "coords": [
+      51.4904352,
+      11.9628501
+    ],
+    "date": "2026-03-11",
+    "dow": "Mi.",
+    "time": "18:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": null,
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch in Balingen / Württemberg",
+    "plz": "72336",
+    "state": "DE-BW",
+    "city": "Balingen",
+    "city_dist": 1.0,
+    "coords": [
+      48.2697736,
+      8.8682239
+    ],
+    "date": "2026-03-12",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "Unabhängig",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Fritz Maulbetsch",
+    "e-mail": null,
+    "link": "https://t.me/FreeFritz",
+    "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0.png"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",

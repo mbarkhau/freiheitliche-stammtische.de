@@ -58,7 +58,8 @@
     "plz": "20095",
     "kontakt": "Ferdinand Steinhöfel",
     "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
-    "orga_webseite": "https://die-libertaeren.de/"
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 1. Mittwoch"
   },
   {
     "name": "Libertärer Stammtisch Göppingen/Esslingen",
@@ -136,7 +137,7 @@
     "uhrzeit": "19:30",
     "kw": "KW50",
     "wochentag": "Thursday",
-    "orga": "DIE LIBERTÄREN",
+    "orga": "Unabhängig",
     "plz": "72336",
     "kontakt": "Fritz Maulbetsch",
     "e-mail": "liberty@maulbetsch.net",
@@ -178,7 +179,7 @@
     "plz": "35396",
     "telegram_group_id": "2218630491",
     "kontakt": "Stefan Bosch",
-    "tournus": "Jeder dritte Mittwoch",
+    "tournus": "Jeder 3. Mittwoch",
     "telegram": "https://t.me/+kDTzmac3wJYwMzIy"
   },
   {
@@ -234,7 +235,8 @@
     "plz": "20095",
     "kontakt": "Ferdinand Steinhöfel",
     "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
-    "orga_webseite": "https://die-libertaeren.de/"
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 1. Mittwoch"
   },
   {
     "name": "Free Cities Berlin Meetup",
@@ -270,7 +272,7 @@
     "uhrzeit": "19:30",
     "kw": "KW02",
     "wochentag": "Thursday",
-    "orga": "DIE LIBERTÄREN",
+    "orga": "Unabhängig",
     "plz": "72336",
     "kontakt": "Fritz Maulbetsch",
     "e-mail": "liberty@maulbetsch.net",
@@ -328,7 +330,7 @@
     "plz": "35396",
     "telegram_group_id": "2218630491",
     "kontakt": "Stefan Bosch",
-    "tournus": "Jeder dritte Mittwoch",
+    "tournus": "Jeder 3. Mittwoch",
     "telegram": "https://t.me/+kDTzmac3wJYwMzIy"
   },
   {
@@ -369,7 +371,8 @@
     "plz": "20095",
     "kontakt": "Ferdinand Steinhöfel",
     "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
-    "orga_webseite": "https://die-libertaeren.de/"
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 1. Mittwoch"
   },
   {
     "name": "Libertärer Stammtisch in Balingen / Württemberg",
@@ -378,7 +381,7 @@
     "uhrzeit": "19:30",
     "kw": "KW06",
     "wochentag": "Thursday",
-    "orga": "DIE LIBERTÄREN",
+    "orga": "Unabhängig",
     "plz": "72336",
     "kontakt": "Fritz Maulbetsch",
     "e-mail": "liberty@maulbetsch.net",
@@ -491,7 +494,7 @@
     "plz": "35396",
     "telegram_group_id": "2218630491",
     "kontakt": "Stefan Bosch",
-    "tournus": "Jeder dritte Mittwoch",
+    "tournus": "Jeder 3. Mittwoch",
     "telegram": "https://t.me/+kDTzmac3wJYwMzIy"
   },
   {
@@ -536,7 +539,7 @@
     "kontakt": "Uwe Schmitt",
     "e-mail": "uwe.schmitt@die-libertaeren.de",
     "orga_webseite": "https://die-libertaeren.de/",
-    "tournus": "Jeder dritte Samstag",
+    "tournus": "Jeder 3. Samstag",
     "telegram": "https://t.me/+za88OLhGTshlNGJi"
   },
   {
@@ -574,7 +577,21 @@
     "plz": "20095",
     "kontakt": "Ferdinand Steinhöfel",
     "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
-    "orga_webseite": "https://die-libertaeren.de/"
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 1. Mittwoch"
+  },
+  {
+    "name": "Libertärer Stammtisch Dessau",
+    "beginn": "2026-03-04",
+    "ende": "2026-03-04",
+    "uhrzeit": "18:00",
+    "kw": "KW10",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "06844",
+    "kontakt": "Stefan Bückner",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 1. Mittwoch"
   },
   {
     "name": "Staatenlos Bergisch Gladbach",
@@ -601,6 +618,33 @@
     "plz": "50667",
     "kontakt": "Ilkay",
     "orga_webseite": "https://staatenlos.ch/"
+  },
+  {
+    "name": "Libertärer Stammtisch Halle (Saale)",
+    "beginn": "2026-03-11",
+    "ende": "2026-03-11",
+    "uhrzeit": "18:00",
+    "kw": "KW11",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "06108",
+    "kontakt": "Stefan Bückner",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 2. Mittwoch"
+  },
+  {
+    "name": "Libertärer Stammtisch in Balingen / Württemberg",
+    "beginn": "2026-03-12",
+    "ende": "2026-03-12",
+    "uhrzeit": "19:30",
+    "kw": "KW11",
+    "wochentag": "Thursday",
+    "orga": "Unabhängig",
+    "plz": "72336",
+    "kontakt": "Fritz Maulbetsch",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 2. Mittwoch",
+    "telegram": "https://t.me/FreeFritz"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
@@ -667,7 +711,7 @@
     "telegram_group_id": "3893662081",
     "kontakt": "Uwe Schmitt",
     "orga_webseite": "https://die-libertaeren.de/",
-    "tournus": "Jeder dritte Samstag",
+    "tournus": "Jeder 3. Mittwoch",
     "telegram": "https://t.me/+za88OLhGTshlNGJi"
   },
   {
