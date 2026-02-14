@@ -780,6 +780,26 @@
     "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511.png"
   },
   {
+    "name": "Libertärer Stammtisch München",
+    "plz": "80539",
+    "state": "DE-BY",
+    "city": "München",
+    "city_dist": 0.9,
+    "coords": [
+      48.1443613,
+      11.5810699
+    ],
+    "date": "2026-02-24",
+    "dow": "Di.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Florian Handwerker",
+    "e-mail": "florian.handwerker@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Markus Krall in Eppingen",
     "plz": "75031",
     "state": "DE-BW",
