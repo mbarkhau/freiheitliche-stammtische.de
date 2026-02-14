@@ -49,7 +49,7 @@ import pathlib as pl
 import datetime as dt
 import zoneinfo as zi
 
-from utils import cli
+from lib import cli
 
 # NOTE: we use lazy import to import these modules
 #   telegram, telethon

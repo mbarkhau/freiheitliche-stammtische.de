@@ -31,9 +31,9 @@ import typing as typ
 from geopy.geocoders import get_geocoder_for_service
 # from geopy.distance import geodesic
 
-from utils import cli
-from utils import disk_cache
-from utils import decorators
+from lib import cli
+from lib import disk_cache
+from lib import decorators
 
 log = logging.getLogger(name="update_cities_coords.py")
 

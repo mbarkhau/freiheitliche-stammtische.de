@@ -31,23 +31,24 @@ Options:
 """
 
 import io
+import re
 import sys
 import csv
 import time
 import json
 import logging
+import argparse
 import pathlib as pl
 import hashlib as hl
-import argparse
 import typing as typ
-import re
 import datetime as dt
 
 import qrcode
 import requests
-from utils import disk_cache
-from utils import cli
-from utils.decorators import rate_limit
+from lib import disk_cache
+from lib import cli
+from lib import util
+from lib.decorators import rate_limit
 
 import googleapiclient.discovery as g_discovery
 import google.oauth2.service_account as g_service_account
@@ -59,17 +60,6 @@ from PIL import Image
 
 
 log = logging.getLogger(name="gsheet_util.py")
-
-
-EN_DE_WEEKDAYS = {
-    "Monday"    : "Mo.",
-    "Tuesday"   : "Di.",
-    "Wednesday" : "Mi.",
-    "Thursday"  : "Do.",
-    "Friday"    : "Fr.",
-    "Saturday"  : "Sa.",
-    "Sunday"    : "So.",
-}
 
 
 Lat = typ.TypeVar("Lat", bound=float)
@@ -534,7 +524,7 @@ def sync_cmd(sheet_id: str) -> int:
                 "city_dist": round(location.city_dist, 1),
                 "coords": [location.lat, location.lon],
                 "date": termin['beginn'].split(" ")[0],
-                "dow": EN_DE_WEEKDAYS.get(termin['wochentag'], termin['wochentag']),
+                "dow": util.EN_DE_WEEKDAYS.get(termin['wochentag'], termin['wochentag']),
                 "time": termin['uhrzeit'],
                 "orga": termin.get('orga'),
                 "orga_www": termin.get('orga_webseite'),

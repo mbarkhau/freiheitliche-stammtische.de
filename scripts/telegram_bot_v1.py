@@ -39,7 +39,7 @@ import zoneinfo as zi
 
 TZ_BERLIN = zi.ZoneInfo("Europe/Berlin")
 
-from utils import cli
+from lib import cli
 
 log = logging.getLogger('telegram_bot')
 

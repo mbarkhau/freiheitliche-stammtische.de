@@ -14,7 +14,7 @@ from geopy.geocoders import Nominatim
 import folium
 from folium.plugins import HeatMap
 
-from utils import disk_cache
+from lib import disk_cache
 
 # The list of postal codes from postleitzahlen.txt
 plz_list = [

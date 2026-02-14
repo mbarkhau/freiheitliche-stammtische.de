@@ -35,13 +35,11 @@ import logging
 import pathlib as pl
 import datetime as dt
 import zoneinfo as zi
-import subprocess as sp
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 from telethon import TelegramClient
 
 from lib import cli
-from lib import util
 import gsheet_util as gu
 
 log = logging.getLogger('telegram_bot_v3')
@@ -98,28 +96,6 @@ class BotState:
         return False, user.get("bot_modus", "Inaktiv")
 
 
-async def git_sync_and_push(sheet_id: str, message: str):
-    try:
-        log.info(f"Starting git sync and push: {message}...")
-        # 1. Sync from GSheet to JSON files
-        await asyncio.to_thread(gu.sync_cmd, sheet_id)
-        
-        # 2. Git operations
-        def run_git(args):
-            log.info(f"Running git {' '.join(args)}")
-            sp.run(["git"] + list(args), check=True, capture_output=True, text=True)
-
-        await asyncio.to_thread(run_git, ["add", "data/termine.json", "www/termine.json", "www/img/"])
-        await asyncio.to_thread(run_git, ["commit", "-m", message])
-        await asyncio.to_thread(run_git, ["push"])
-        
-        log.info("Git sync and push completed successfully.")
-        gu.GSheet(sheet_id).log(f"Git push successful: {message}")
-    except Exception as ex:
-        log.error(f"Error during git sync and push: {ex}")
-        # Note: We don't notify the user here as it's a background operation
-
-
 async def announce_event(bot, event: dict):
     tg_target = event.get('telegram_group_id')
     if not tg_target:
@@ -147,7 +123,7 @@ async def announce_event(bot, event: dict):
         time = event.get('uhrzeit', '19:00')
         plz = event.get('plz', '')
         
-        wd = util.get_weekday_de(date_str)
+        wd = gu.get_weekday_de(date_str)
         try:
            d = dt.date.fromisoformat(date_str)
            date_display = d.strftime("%d.%m.%Y")
@@ -346,7 +322,7 @@ async def list_my_events(update: Update, context: ContextTypes.DEFAULT_TYPE):
         date_str = t.get("beginn", "Unbekannt")
         time = t.get("uhrzeit", "")
         name = t.get("name", "Stammtisch")
-        wd = util.get_weekday_de(date_str)
+        wd = gu.get_weekday_de(date_str)
         
         # Format date for display
         date_display = date_str
@@ -470,7 +446,7 @@ async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE
                 context.user_data['flow_step'] = 'confirm_date'
                 keyboard = [['Abbrechen', 'Ja']]
                 reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True, one_time_keyboard=True)
-                wd = util.get_weekday_de(event_date.isoformat())
+                wd = gu.get_weekday_de(event_date.isoformat())
                 await update.message.reply_text(
                     f"Der {wd} {event_date.strftime('%d.%m.%Y')} wurde erkannt. Korrekt?",
                     reply_markup=reply_markup
@@ -548,7 +524,7 @@ async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE
 
         # --- Final Confirmation Summary ---
         date_str = new_event['beginn']
-        wd = util.get_weekday_de(date_str)
+        wd = gu.get_weekday_de(date_str)
         try:
             d = dt.date.fromisoformat(date_str)
             date_display = d.strftime("%d.%m.%Y")
@@ -598,7 +574,11 @@ async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE
                 success_msg += "\nDie Änderungen werden in 1-2 Minuten auf der Webseite sichtbar sein."
                 # Run sync and push in the background
                 plz = str(new_event.get('plz', ''))
-                asyncio.create_task(git_sync_and_push(bot_state.sheet.sheet_id, f"new event for {plz}"))
+                asyncio.create_task(util.git_sync_and_push(
+                    bot_state.sheet.sheet_id,
+                    message=f"new event for {plz}",
+                    repo_paths=["data/termine.json", "www/termine.json", "www/img/"],
+                ))
 
             asyncio.create_task(announce_event(context.bot, new_event))
             await update.message.reply_text(success_msg)
@@ -658,7 +638,7 @@ async def handle_delete_event(update: Update, context: ContextTypes.DEFAULT_TYPE
         for _, t in top_4:
             # Button text: "wd dd.mm.yyyy HH:MM - PLZ"
             date_str = t.get('beginn', '?.?.?')
-            wd = util.get_weekday_de(date_str)
+            wd = gu.get_weekday_de(date_str)
             time = t.get('uhrzeit', '?:?')
             plz = t.get('plz', '?????')
             
@@ -686,7 +666,7 @@ async def handle_delete_event(update: Update, context: ContextTypes.DEFAULT_TYPE
         match = None
         for i, (gs_idx, t) in enumerate(candidates):
             date_str = t.get('beginn', '?.?.?')
-            wd = util.get_weekday_de(date_str)
+            wd = gu.get_weekday_de(date_str)
             time = t.get('uhrzeit', '?:?')
             plz = t.get('plz', '?????')
             
@@ -709,7 +689,7 @@ async def handle_delete_event(update: Update, context: ContextTypes.DEFAULT_TYPE
         context.user_data['selected_event_idx'] = gs_idx
         
         date_str = t.get('beginn', '?.?.?')
-        wd = util.get_weekday_de(date_str)
+        wd = gu.get_weekday_de(date_str)
         try:
             d = dt.date.fromisoformat(date_str)
             date_display = d.strftime("%d.%m.%Y")
@@ -753,7 +733,11 @@ async def handle_delete_event(update: Update, context: ContextTypes.DEFAULT_TYPE
                     success_msg += "\nDie Änderungen werden in 1-2 Minuten auf der Webseite sichtbar sein."
                     if target_event:
                         plz = str(target_event.get('plz', ''))
-                        asyncio.create_task(git_sync_and_push(bot_state.sheet.sheet_id, f"delete event for {plz}"))
+                        asyncio.create_task(util.git_sync_and_push(
+                            bot_state.sheet.sheet_id,
+                            message=f"delete event for {plz}",
+                            repo_paths=["data/termine.json", "www/termine.json", "www/img/"],
+                        ))
 
                 await update.message.reply_text(success_msg)
             except Exception as e:

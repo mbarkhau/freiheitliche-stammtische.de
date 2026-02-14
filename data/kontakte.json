@@ -50,15 +50,9 @@
     "e-mail": "info@buendnis-libertaerer.de"
   },
   {
-    "name": "Stephan Bueckner",
-    "plz": "06108, 06844",
-    "stammtisch": "Libertärer Stammtisch Dessau",
-    "organisation": "DIE LIBERTÄREN",
-    "telegram": "@StephanBueckner"
-  },
-  {
     "name": "Ferdinand Steinhöfel",
     "plz": "20095",
+    "bot_modus": "Aktiv",
     "stammtisch": "Libertärer Stammtisch Hamburg",
     "organisation": "DIE LIBERTÄREN",
     "info": "Mitgliederbeauftragter",
@@ -81,6 +75,7 @@
   {
     "name": "Florian Handwerker",
     "plz": "80539, 85276",
+    "bot_modus": "Aktiv",
     "stammtisch": "Libertärer Stammtisch München",
     "organisation": "DIE LIBERTÄREN",
     "info": "Bundesgeschäftsführer",
@@ -88,6 +83,13 @@
     "telegram": "@FlorianHandwerker",
     "e-mail": "florian.handwerker@die-libertaeren.de",
     "x/twitter": "@Florian Handwerker"
+  },
+  {
+    "name": "Stephan Bueckner",
+    "plz": "06108, 06844",
+    "stammtisch": "Libertärer Stammtisch Dessau",
+    "organisation": "DIE LIBERTÄREN",
+    "telegram": "@StephanBueckner"
   },
   {
     "name": "Dieter Kirschmann",
