@@ -31,6 +31,25 @@
     "telegram": "@UweSchmitt"
   },
   {
+    "name": "Fritz Maulbetsch",
+    "plz": "72336",
+    "bot_modus": "Aktiv",
+    "stammtisch": "Libertärer Stammtisch Balingen/Württemberg",
+    "organisation": "Unabhängig",
+    "telegram_id": "1437111783",
+    "telegram": "@FreeFritz",
+    "e-mail": "lnb@maulbetsch.net"
+  },
+  {
+    "name": "Alexander Expander",
+    "plz": "44263",
+    "bot_modus": "Aktiv",
+    "stammtisch": "Libertäres Treffen Dortmund",
+    "organisation": "Bündnis Libertärer",
+    "telegram_id": "1617605672",
+    "e-mail": "info@buendnis-libertaerer.de"
+  },
+  {
     "name": "Stephan Bueckner",
     "plz": "06108, 06844",
     "stammtisch": "Libertärer Stammtisch Dessau",
@@ -50,6 +69,7 @@
   {
     "name": "Dr. Mathias Hummel",
     "plz": "39104",
+    "bot_modus": "Aktiv",
     "stammtisch": "Libertärer Stammtisch Magdeburg",
     "organisation": "DIE LIBERTÄREN",
     "info": "Bundesvorstand",
@@ -84,25 +104,6 @@
     "organisation": "DIE LIBERTÄREN",
     "telegram_id": "7698777822",
     "telegram": "Der Irrenarzt"
-  },
-  {
-    "name": "Fritz Maulbetsch",
-    "plz": "72336",
-    "bot_modus": "Aktiv",
-    "stammtisch": "Libertärer Stammtisch Balingen/Württemberg",
-    "organisation": "Unabhängig",
-    "telegram_id": "1437111783",
-    "telegram": "@FreeFritz",
-    "e-mail": "lnb@maulbetsch.net"
-  },
-  {
-    "name": "Alexander Expander",
-    "plz": "44263",
-    "bot_modus": "Aktiv",
-    "stammtisch": "Libertäres Treffen Dortmund",
-    "organisation": "Bündnis Libertärer",
-    "telegram_id": "1617605672",
-    "e-mail": "info@buendnis-libertaerer.de"
   },
   {
     "name": "Jan Bertram",
