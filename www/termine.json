@@ -700,6 +700,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Meißen",
+    "plz": "01662",
+    "state": "DE-SN",
+    "city": "Meißen",
+    "city_dist": 1.0,
+    "coords": [
+      51.1615404,
+      13.4838596
+    ],
+    "date": "2026-02-18",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Joachim Teske",
+    "e-mail": "joachimteske@aol.com",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Mittelhessen",
     "plz": "35396",
     "state": "DE-HE",
@@ -816,26 +836,6 @@
     "orga_www": "https://buendnis-bw.de/veranstaltungen/veranstaltung-in-eppingen/",
     "kontakt": null,
     "e-mail": null,
-    "link": null,
-    "link_qr": null
-  },
-  {
-    "name": "Libertärer Stammtisch Meißen",
-    "plz": "01662",
-    "state": "DE-SN",
-    "city": "Meißen",
-    "city_dist": 1.0,
-    "coords": [
-      51.1615404,
-      13.4838596
-    ],
-    "date": "2026-02-28",
-    "dow": "Sa.",
-    "time": "19:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Dr. Joachim Teske",
-    "e-mail": "joachimteske@aol.com",
     "link": null,
     "link_qr": null
   },
@@ -1158,5 +1158,25 @@
     "e-mail": "info@buendnis-libertaerer.de",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Frankfurt (FFM)",
+    "plz": "60594",
+    "state": "DE-HE",
+    "city": "Frankfurt am Main",
+    "city_dist": 1.0,
+    "coords": [
+      50.1028505,
+      8.6881252
+    ],
+    "date": "2026-07-01",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+WgMHpki_VXZkYWIy",
+    "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
   }
 ]
