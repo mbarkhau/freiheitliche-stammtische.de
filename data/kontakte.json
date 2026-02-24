@@ -142,5 +142,15 @@
   {
     "name": "Thorsten Harke",
     "stammtisch": "Hayek Club Düsseldorf"
+  },
+  {
+    "name": "Christoph Berlin",
+    "plz": "10437",
+    "stammtisch": "Staatenlos Berlin",
+    "organisation": "Staatenlos",
+    "telegram": "@docbufo"
+  },
+  {
+    "stammtisch": "."
   }
 ]

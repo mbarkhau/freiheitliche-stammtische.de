@@ -139,11 +139,7 @@ def make_url(sheet_id, sheet_name: str) -> str:
     return base_url + f"/gviz/tq?tqx=out:csv&sheet={_sheet_param}"
 
 
-def _get_sheets_service(creds_path: str | pl.Path | None = None):
-    """
-    Returns an authorized Google Sheets API service object.
-    Searches in 'creds/' if no path is provided.
-    """
+def _resolve_creds_path(creds_path: str | pl.Path | None = None) -> str:
     if creds_path is None:
         creds_dir = pl.Path("creds")
         if creds_dir.exists():
@@ -157,11 +153,32 @@ def _get_sheets_service(creds_path: str | pl.Path | None = None):
         log.error("Please provide --creds <path> or place a JSON key in the 'creds/' directory.")
         sys.exit(1)
 
-    scopes = ["https://www.googleapis.com/auth/spreadsheets"]
-    creds = g_service_account.Credentials.from_service_account_file(
-        str(creds_path), scopes=scopes
-    )
+    return str(creds_path)
+
+
+def _get_sheets_service(creds_path: str | pl.Path | None = None):
+    """
+    Returns an authorized Google Sheets API service object.
+    Searches in 'creds/' if no path is provided.
+    """
+    creds_path_str = _resolve_creds_path(creds_path)
+    creds = g_service_account.Credentials.from_service_account_file(creds_path_str, scopes=[
+        "https://www.googleapis.com/auth/spreadsheets",
+        "https://www.googleapis.com/auth/drive.metadata.readonly",
+    ])
     return g_discovery.build("sheets", "v4", credentials=creds, cache_discovery=False)
+
+
+def _get_drive_service(creds_path: str | pl.Path | None = None):
+    """
+    Returns an authorized Google Drive API service object.
+    Searches in 'creds/' if no path is provided.
+    """
+    creds_path_str = _resolve_creds_path(creds_path)
+    creds = g_service_account.Credentials.from_service_account_file(creds_path_str, scopes=[
+        "https://www.googleapis.com/auth/drive.metadata.readonly"
+    ])
+    return g_discovery.build("drive", "v3", credentials=creds, cache_discovery=False)
 
 
 def _append_gsheet(service, sheet_id: str, sheet_name: str, rows: list[list[typ.Any]]):
@@ -213,8 +230,15 @@ def _normalize_key(key: str) -> str:
 class GSheet:
     def __init__(self, sheet_id: str, creds_path: str | pl.Path | None = None):
         self.sheet_id = sheet_id
-        self.service = _get_sheets_service(creds_path)
+        self.creds_path = creds_path
+        self._service = None
+        self._drive_service = None
         self._headers_cache = {}
+
+    def service(self):
+        if self._service is None:
+            self._service = _get_sheets_service(self.creds_path)
+        return self._service
 
     def _get_headers(self, sheet_name: str) -> list[str]:
         if sheet_name not in self._headers_cache:
@@ -222,7 +246,7 @@ class GSheet:
             range_name = f"{sheet_name}!A1:Z1"
             try:
                 result = (
-                    self.service.spreadsheets()
+                    self.service().spreadsheets()
                     .values()
                     .get(spreadsheetId=self.sheet_id, range=range_name)
                     .execute()
@@ -237,14 +261,14 @@ class GSheet:
                 if "Unable to parse range" in str(ex):
                     log.info(f"Sheet '{sheet_name}' not found. Creating it.")
                     body = {"requests": [{"addSheet": {"properties": {"title": sheet_name}}}]}
-                    self.service.spreadsheets().batchUpdate(spreadsheetId=self.sheet_id, body=body).execute()
+                    self.service().spreadsheets().batchUpdate(spreadsheetId=self.sheet_id, body=body).execute()
                     self._headers_cache[sheet_name] = []
                 else:
                     raise
         return self._headers_cache[sheet_name]
 
     def _get_sheet_id(self, sheet_name: str) -> int:
-        spreadsheet = self.service.spreadsheets().get(spreadsheetId=self.sheet_id).execute()
+        spreadsheet = self.service().spreadsheets().get(spreadsheetId=self.sheet_id).execute()
         sheets = spreadsheet.get('sheets', [])
         for s in sheets:
             if s.get('properties', {}).get('title') == sheet_name:
@@ -255,7 +279,7 @@ class GSheet:
         """Returns the sheet as a list of dicts (first row = headers)."""
         range_name = f"{sheet_name}!A1:Z5000"
         result = (
-            self.service.spreadsheets()
+            self.service().spreadsheets()
             .values()
             .get(spreadsheetId=self.sheet_id, range=range_name)
             .execute()
@@ -295,7 +319,7 @@ class GSheet:
         if new_keys:
             norm_headers.extend(new_keys)
             _update_gsheet(
-                service=self.service,
+                service=self.service(),
                 sheet_id=self.sheet_id,
                 sheet_name=sheet_name,
                 range_name="A1:Z1",
@@ -306,12 +330,11 @@ class GSheet:
         # 2. Build row lists using the (potentially updated) norm_headers
         row_lists = []
         for row_dict in rows:
-            # Use None for fields not present in row_dict to allow for formula/value inheritance
-            # during the sparse re-application step below.
-            row_list = [row_dict.get(h) for h in norm_headers]
-            row_lists.append(row_list)
+            # Use None for fields not present in row_dict.
+            # This enables format/formula inheritance with sparse dicts.
+            row_lists.append([row_dict.get(h) for h in norm_headers])
 
-        result = _append_gsheet(self.service, self.sheet_id, sheet_name, row_lists)
+        result = _append_gsheet(self.service(), self.sheet_id, sheet_name, row_lists)
         
         # 3. Inherit formatting from preceding row
         try:
@@ -327,35 +350,24 @@ class GSheet:
                     if start_row_idx > 1:
                         sheet_id = self._get_sheet_id(sheet_name)
                         num_rows = updates.get('updatedRows', 1)
-                        
-                        # Copy formatting and formulas from start_row_idx - 1 to [start_row_idx, start_row_idx + num_rows - 1]
-                        # PASTE_NORMAL copies everything: formulas, values, formats, etc.
-                        body = {
-                            "requests": [
-                                {
-                                    "copyPaste": {
-                                        "source": {
-                                            "sheetId": sheet_id,
-                                            "startRowIndex": start_row_idx - 2,
-                                            "endRowIndex": start_row_idx - 1,
-                                        },
-                                        "destination": {
-                                            "sheetId": sheet_id,
-                                            "startRowIndex": start_row_idx - 1,
-                                            "endRowIndex": start_row_idx - 1 + num_rows,
-                                        },
-                                        "pasteType": "PASTE_NORMAL"
-                                    }
+                        update = self.service().spreadsheets().batchUpdate(spreadsheetId=self.sheet_id, body={
+                            "requests": [{
+                                "copyPaste": {
+                                    "source": {
+                                        "sheetId": sheet_id,
+                                        "startRowIndex": start_row_idx - 2,
+                                        "endRowIndex": start_row_idx - 1,
+                                    },
+                                    "destination": {
+                                        "sheetId": sheet_id,
+                                        "startRowIndex": start_row_idx - 1,
+                                        "endRowIndex": start_row_idx - 1 + num_rows,
+                                    },
+                                    "pasteType": "PASTE_FORMAT"
                                 }
-                            ]
-                        }
-                        self.service.spreadsheets().batchUpdate(spreadsheetId=self.sheet_id, body=body).execute()
-                        
-                        # Since PASTE_NORMAL also copies values, we must re-apply the actual data values
-                        # to the static columns while letting formulas remain.
-                        _update_gsheet(self.service, self.sheet_id, sheet_name, range_part, row_lists)
-                        
-                        log.info(f"Inherited formulas and formatting from row {start_row_idx - 1} for {num_rows} rows.")
+                            }]
+                        })
+                        update.execute()
         except Exception as e:
             log.warning(f"Failed to inherit formulas/formatting: {e}")
 
@@ -376,7 +388,30 @@ class GSheet:
                 row_list.append(row_dict.get(norm_h, ""))
             row_lists.append(row_list)
 
-        return _update_gsheet(self.service, self.sheet_id, sheet_name, range_name, row_lists)
+        return _update_gsheet(self.service(), self.sheet_id, sheet_name, range_name, row_lists)
+
+    def delete_row(self, sheet_name: str, row_index: int):
+        """
+        Deletes a row from the specified sheet.
+        row_index: 1-indexed (header is usually 1, first data row is 2).
+        """
+        sheet_id = self._get_sheet_id(sheet_name)
+        
+        request = {
+            "deleteDimension": {
+                "range": {
+                    "sheetId": sheet_id,
+                    "dimension": "ROWS",
+                    "startIndex": row_index - 1,
+                    "endIndex": row_index
+                }
+            }
+        }
+        update = self.service().spreadsheets().batchUpdate(
+            spreadsheetId=self.sheet_id,
+            body={"requests": [request]},
+        )
+        return update.execute()
 
     def log(self, message: str, level: int = logging.INFO):
         """Writes a message to the 'log' sheet."""
@@ -389,30 +424,6 @@ class GSheet:
             "message": message,
         }
         return self.append("log", [row])
-
-    def delete_row(self, sheet_name: str, row_index: int):
-        """
-        Deletes a row from the specified sheet.
-        row_index: 1-indexed (header is usually 1, first data row is 2).
-        """
-        sheet_id = self._get_sheet_id(sheet_name)
-        
-        body = {
-            "requests": [
-                {
-                    "deleteDimension": {
-                        "range": {
-                            "sheetId": sheet_id,
-                            "dimension": "ROWS",
-                            "startIndex": row_index - 1,
-                            "endIndex": row_index
-                        }
-                    }
-                }
-            ]
-        }
-        return self.service.spreadsheets().batchUpdate(spreadsheetId=self.sheet_id, body=body).execute()
-
 
     def debug(self, message: str, *args, **kwargs):
         return self.log(message, level=logging.DEBUG, *args, **kwargs)
@@ -429,21 +440,42 @@ class GSheet:
     def error(self, message: str, *args, **kwargs):
         return self.log(message, level=logging.ERROR, *args, **kwargs)
 
+    def get_metadata(self) -> dict[str, str]:
+        """Returns the metadata of the spreadsheet using the Drive API."""
+        if self._drive_service is None:
+            self._drive_service = _get_drive_service(self.creds_path)
+        
+        return self._drive_service.files().get(
+            fileId=self.sheet_id, 
+            fields="kind, id, name, mimeType, size, version, modifiedTime"
+        ).execute()
+    
+    def cache_key(self) -> str:
+        metadata = self.get_metadata()
+        digest = hl.sha256()
+        digest.update(metadata['id'].encode())
+        digest.update(metadata['size'].encode())
+        digest.update(metadata['version'].encode())
+        digest.update(metadata['modifiedTime'].encode())
+        return f"gsheet_{self.sheet_id}_{digest.hexdigest()}"
+    
 
 def download_gsheet(
     sheet_id: str,
     sheet_name: str = None,
     timeout: int = 10,
+    is_public: bool = False,
 ) -> list[dict[str, str]]:
     """
     Returns the sheet as a list of dicts (first row = headers).
     Raises informative exceptions on error.
     """
-    # first see if it works without authentication
-    url = make_url(sheet_id, sheet_name)
-    response = requests.get(url, timeout=timeout)
+    if is_public:
+        url = make_url(sheet_id, sheet_name)
+        response = requests.get(url, timeout=timeout)
+        if response.status_code != 200:
+            raise PermissionError("Sheet is not publicly accessible or does not allow export.")
 
-    if response.status_code == 200:
         # Quick sanity check - Google returns HTML error page if not accessible
         if "<html" in response.text.lower() and "sorry" in response.text.lower():
             raise PermissionError("Sheet is not publicly accessible or does not allow export.")
@@ -458,17 +490,21 @@ def download_gsheet(
     else:
         # fallback to GSheet API which requires authentication
         sheet = GSheet(sheet_id=sheet_id)
+        metadata = sheet.get_metadata()
         sheet_rows = sheet.read(sheet_name)
         for entry in sheet_rows:
             yield {key: val for key, val in entry.items() if val}
 
 
-def sync_cmd(sheet_id: str) -> int:
+def _sync_once(sheet_id: str) -> None:
     data_dir = pl.Path("data")
     data_dir.mkdir(exist_ok=True)
 
+    www_dir = pl.Path("www")
+    www_dir.mkdir(exist_ok=True)
+
     log.info(f"Downloading 'termine' from {sheet_id}...")
-    termine = list(download_gsheet(sheet_id=sheet_id, sheet_name='termine'))
+    termine = list(download_gsheet(sheet_id=sheet_id, sheet_name='termine', is_public=False))
     termine.sort(key=lambda termin: termin.get('beginn', "2000-01-01"))
 
     data_termine = json.dumps(termine, indent=2, ensure_ascii=False)
@@ -476,9 +512,6 @@ def sync_cmd(sheet_id: str) -> int:
         fobj.write(data_termine)
 
     log.info(f"Saved {len(termine)} items to data/termine.json")
-
-    www_dir = pl.Path("www")
-    www_dir.mkdir(exist_ok=True)
 
     www_termine = json.dumps(termine, indent=2, ensure_ascii=False)
     with (www_dir / "termine.json").open(mode="w", encoding="utf-8") as fobj:
@@ -510,6 +543,8 @@ def sync_cmd(sheet_id: str) -> int:
         else:
             link_qr_path = None
 
+        termin["link_qr_path"] = link_qr_path
+
         try:
             termin["plz"] = termin["plz"].strip()
             location = plz_location_lookup(termin["plz"])
@@ -536,24 +571,62 @@ def sync_cmd(sheet_id: str) -> int:
         except KeyError as err:
             log.warning(f"Skipping invalid termin: {termin}")
             log.warning(f"Error: {repr(err)}")
-    
-    www_dir = pl.Path("www")
-    www_dir.mkdir(exist_ok=True)
+
     with (www_dir / "termine.json").open(mode="w", encoding="utf-8") as fobj:
         json.dump(event_items, fobj, indent=2, ensure_ascii=False)
     log.info(f"Saved {len(termine)} termine to www/termine.json")
 
     log.info(f"Downloading 'kontakte'...")
-    kontakte = list(download_gsheet(sheet_id=sheet_id, sheet_name='kontakte'))
+    kontakte = list(download_gsheet(sheet_id=sheet_id, sheet_name='kontakte', is_public=False))
     with (data_dir / "kontakte.json").open(mode="w", encoding="utf-8") as fobj:
         json.dump(kontakte, fobj, indent=2, ensure_ascii=False)
     log.info(f"Saved {len(kontakte)} items to data/kontakte.json")
+    
 
-    return 0
+def sync_cmd(sheet_id: str) -> int:
+    cache_key = None
+    while True:
+        try:
+            sheet = GSheet(sheet_id=sheet_id)
+            new_cache_key = sheet.cache_key()
+            if cache_key == new_cache_key:
+                time.sleep(300)
+                continue
+
+            log.info(f"Cache key changed:")
+            log.info(f"    old: {cache_key}")
+            log.info(f"    new: {new_cache_key}")
+            _sync_once(sheet_id)
+
+            updated = util.git_push(
+                sheet_id,
+                message="update events from sheet",
+                repo_paths=["data/termine.json", "www/termine.json", "www/img/"],
+            )
+            if updated:
+                print("----------------")
+                print(updated)
+                print("----------------")
+                sheet.log(f"Git push successful: update events from sheet")
+                time.sleep(30)
+
+            cache_key = sheet.cache_key()
+        except KeyboardInterrupt:
+            log.info("Sync stopped by user")
+            return 0
+        except (KeyError, NameError, TypeError) as err:
+            raise
+        except Exception as err:
+            log.error(f"Sync failed: {repr(err)}")
+            time.sleep(60)
 
 
 def validate_cmd(args) -> int:
     sheet = GSheet(sheet_id=args.sheet_id)
+    metadata = sheet.get_metadata()
+    mod_time_start = metadata.get("modifiedTime", "unknown")
+    log.info(f"Modification time at start: {mod_time_start}")
+
     sheet.log("Validating sheet...")
     kontakte = sheet.read('kontakte')
     kontakt_names = [k['name'] for k in kontakte if k.get('name')]

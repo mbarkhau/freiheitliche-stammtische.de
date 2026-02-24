@@ -1,4 +1,11 @@
+#!/usr/bin/env -S uv run --script
+# /// script
+# requires-python = ">=3.13"
+# dependencies = ["pudb", "ipython"]
+# ///
+import re
 import asyncio
+import logging as log
 import datetime as dt
 import subprocess as sp
 
@@ -26,23 +33,36 @@ def get_weekday_de(date_str: str) -> str:
 assert get_weekday_de('2020-01-01') == "Mi."
 
 
-async def git_sync_and_push(sheet_id: str, message: str, repo_paths: list[str]) -> None:
+def run_git(*args) -> sp.CompletedProcess:
+    str_args = list(map(str, args))
+    log.info("Running: git " + " ".join(str_args))
+    proc = sp.run(["git"] + str_args, check=True, capture_output=True, text=True)
+    log.info(f"Completed with retcode: {proc.returncode}")
+    return proc
+
+
+def git_push(sheet_id: str, message: str, repo_paths: list[str]) -> list[str]:
     try:
-        log.info(f"Starting git sync and push: {message}...")
-        # 1. Sync from GSheet to JSON files
-        await asyncio.to_thread(gu.sync_cmd, sheet_id)
+        run_git("add", *repo_paths)
 
-        # 2. Git operations
-        def run_git(args):
-            log.info(f"Running git {' '.join(args)}")
-            sp.run(["git"] + list(args), check=True, capture_output=True, text=True)
+        proc = run_git("status")
+        if "Changes to be committed:" not in proc.stdout:
+            log.info(f"No changes to be committed for {repo_paths}")
+            return []
 
-        await asyncio.to_thread(run_git, ["add"] + repo_paths)
-        await asyncio.to_thread(run_git, ["commit", "-m", message])
-        await asyncio.to_thread(run_git, ["push"])
+        git_status_re =  re.compile(r"(Changes to be committed:|Changes not staged for commit:|Untracked files:)", flags=re.MULTILINE)
+        parts = git_status_re.split(proc.stdout)
+        sections = dict(zip(parts[1::2], parts[2::2]))
+        modified_files = [
+            match.group(1)
+            for match in re.finditer(r"modified:\s+(\S+)", sections["Changes to be committed:"])
+        ]
+
+        run_git("commit", "-m", message)
+        run_git("push")
 
         log.info("Git sync and push completed successfully.")
-        gu.GSheet(sheet_id).log(f"Git push successful: {message}")
+        return modified_files
     except Exception as ex:
         log.error(f"Error during git sync and push: {ex}")
         # Note: We don't notify the user here as it's a background operation
