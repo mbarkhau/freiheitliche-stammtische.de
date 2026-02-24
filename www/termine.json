@@ -320,6 +320,26 @@
     "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
   },
   {
+    "name": "Staatenlos Berlin",
+    "plz": "10437",
+    "state": "DE-BE",
+    "city": "Berlin",
+    "city_dist": 3.4,
+    "coords": [
+      52.5461984,
+      13.4109651
+    ],
+    "date": "2026-01-05",
+    "dow": "Di.",
+    "time": "19:00",
+    "orga": "Staatenlos",
+    "orga_www": "https://staatenlos.ch/",
+    "kontakt": "Christoph Berlin",
+    "e-mail": null,
+    "link": "https://t.me/+Qwc6r-bgPehmZjEy",
+    "link_qr": "img/qr_d2b252562a3294530cd5202876becd126632818b.png"
+  },
+  {
     "name": "Free Cities Berlin Meetup",
     "plz": "10969",
     "state": "DE-BE",
@@ -640,6 +660,26 @@
     "link_qr": "img/qr_11a00656e75601d20d88cee0556f565d45d0b196.png"
   },
   {
+    "name": "Staatenlos Berlin",
+    "plz": "10437",
+    "state": "DE-BE",
+    "city": "Berlin",
+    "city_dist": 3.4,
+    "coords": [
+      52.5461984,
+      13.4109651
+    ],
+    "date": "2026-02-09",
+    "dow": "Di.",
+    "time": "19:00",
+    "orga": "Staatenlos",
+    "orga_www": "https://staatenlos.ch/",
+    "kontakt": "Christoph Berlin",
+    "e-mail": null,
+    "link": "https://t.me/+Qwc6r-bgPehmZjEy",
+    "link_qr": "img/qr_d2b252562a3294530cd5202876becd126632818b.png"
+  },
+  {
     "name": "Libertärer Stammtisch Magdeburg",
     "plz": "39104",
     "state": "DE-ST",
@@ -696,6 +736,26 @@
     "orga_www": "https://ef-magazin.de/",
     "kontakt": "Martin Moczarski",
     "e-mail": "moczarski@ef-magazin.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Ansbach",
+    "plz": "91522",
+    "state": "DE-BY",
+    "city": "Lichtenau",
+    "city_dist": 9.1,
+    "coords": [
+      49.2888745,
+      10.5597693
+    ],
+    "date": "2026-02-14",
+    "dow": "Sa.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
     "link": null,
     "link_qr": null
   },
@@ -838,6 +898,26 @@
     "e-mail": null,
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Staatenlos Berlin",
+    "plz": "10437",
+    "state": "DE-BE",
+    "city": "Berlin",
+    "city_dist": 3.4,
+    "coords": [
+      52.5461984,
+      13.4109651
+    ],
+    "date": "2026-03-03",
+    "dow": "Di.",
+    "time": "19:00",
+    "orga": "Staatenlos",
+    "orga_www": "https://staatenlos.ch/",
+    "kontakt": "Christoph Berlin",
+    "e-mail": null,
+    "link": "https://t.me/+Qwc6r-bgPehmZjEy",
+    "link_qr": "img/qr_d2b252562a3294530cd5202876becd126632818b.png"
   },
   {
     "name": "Libertärer Stammtisch Dessau",
@@ -1020,6 +1100,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Ansbach",
+    "plz": "91522",
+    "state": "DE-BY",
+    "city": "Lichtenau",
+    "city_dist": 9.1,
+    "coords": [
+      49.2888745,
+      10.5597693
+    ],
+    "date": "2026-03-14",
+    "dow": "Sa.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
     "state": "DE-NW",
@@ -1098,6 +1198,46 @@
     "e-mail": "lukas.schroth@die-libertaeren.de",
     "link": "https://t.me/+WgMHpki_VXZkYWIy",
     "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Ansbach",
+    "plz": "91522",
+    "state": "DE-BY",
+    "city": "Lichtenau",
+    "city_dist": 9.1,
+    "coords": [
+      49.2888745,
+      10.5597693
+    ],
+    "date": "2026-04-11",
+    "dow": "Sa.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Staatenlos Berlin",
+    "plz": "10437",
+    "state": "DE-BE",
+    "city": "Berlin",
+    "city_dist": 3.4,
+    "coords": [
+      52.5461984,
+      13.4109651
+    ],
+    "date": "2026-04-13",
+    "dow": "Mo.",
+    "time": "19:00",
+    "orga": "Staatenlos",
+    "orga_www": "https://staatenlos.ch/",
+    "kontakt": "Christoph Berlin",
+    "e-mail": null,
+    "link": "https://t.me/+Qwc6r-bgPehmZjEy",
+    "link_qr": "img/qr_d2b252562a3294530cd5202876becd126632818b.png"
   },
   {
     "name": "Libertäres Treffen Dortmund",
