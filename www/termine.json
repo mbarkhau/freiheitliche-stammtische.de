@@ -1300,6 +1300,26 @@
     "link_qr": null
   },
   {
+    "name": "ROLAND BAADER Treffen",
+    "plz": "68753",
+    "state": "DE-BW",
+    "city": "Waghäusel",
+    "city_dist": 2.6,
+    "coords": [
+      49.2292251,
+      8.5357772
+    ],
+    "date": "2026-06-13",
+    "dow": "Sa.",
+    "time": "13:00",
+    "orga": null,
+    "orga_www": "https://rolandbaader-treffen.de/treffen2026/",
+    "kontakt": null,
+    "e-mail": null,
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
     "state": "DE-NW",
