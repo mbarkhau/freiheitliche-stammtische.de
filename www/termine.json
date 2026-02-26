@@ -1060,26 +1060,6 @@
     "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0.png"
   },
   {
-    "name": "Libertärer Stammtisch Frankfurt (FFM)",
-    "plz": "60594",
-    "state": "DE-HE",
-    "city": "Frankfurt am Main",
-    "city_dist": 1.0,
-    "coords": [
-      50.1028505,
-      8.6881252
-    ],
-    "date": "2026-03-13",
-    "dow": "Fr.",
-    "time": "19:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Lukas Schroth",
-    "e-mail": "lukas.schroth@die-libertaeren.de",
-    "link": "https://t.me/+WgMHpki_VXZkYWIy",
-    "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
-  },
-  {
     "name": "Milei-Konferenz 2026",
     "plz": "04435",
     "state": "DE-SN",
@@ -1178,6 +1158,26 @@
     "e-mail": null,
     "link": "https://t.me/+za88OLhGTshlNGJi",
     "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Frankfurt (FFM)",
+    "plz": "60594",
+    "state": "DE-HE",
+    "city": "Frankfurt am Main",
+    "city_dist": 1.0,
+    "coords": [
+      50.1028505,
+      8.6881252
+    ],
+    "date": "2026-03-30",
+    "dow": "Mo.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+WgMHpki_VXZkYWIy",
+    "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
   },
   {
     "name": "Libertärer Stammtisch Hamburg",
