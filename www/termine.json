@@ -900,6 +900,26 @@
     "link_qr": null
   },
   {
+    "name": "Hayek Club Weimar",
+    "plz": "99423",
+    "state": "DE-TH",
+    "city": "Weimar",
+    "city_dist": 0.6,
+    "coords": [
+      50.9829805,
+      11.3235477
+    ],
+    "date": "2026-02-28",
+    "dow": "Sa.",
+    "time": "19:00",
+    "orga": "Hayek Club",
+    "orga_www": null,
+    "kontakt": null,
+    "e-mail": null,
+    "link": "https://t.me/hayek_club_weimar",
+    "link_qr": "img/qr_8b047d1d7ae2d2ae61e94269a09165b75cab3b83.png"
+  },
+  {
     "name": "Staatenlos Berlin",
     "plz": "10437",
     "state": "DE-BE",
