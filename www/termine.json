@@ -920,6 +920,26 @@
     "link_qr": "img/qr_8b047d1d7ae2d2ae61e94269a09165b75cab3b83.png"
   },
   {
+    "name": "Team Freiheit Stammtisch Wiesbaden",
+    "plz": "65189",
+    "state": "DE-HE",
+    "city": "Wiesbaden",
+    "city_dist": 1.7,
+    "coords": [
+      50.0729625,
+      8.261265
+    ],
+    "date": "2026-03-03",
+    "dow": "Di.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": null,
+    "kontakt": null,
+    "e-mail": null,
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Staatenlos Berlin",
     "plz": "10437",
     "state": "DE-BE",
@@ -1216,8 +1236,8 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Dillon Still",
     "e-mail": "dillon.still@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
+    "link": "https://t.me/+bm69tb7eh344MjQy",
+    "link_qr": "img/qr_bd802c047806b533fa07fbfd9e4e2d0a955691d0.png"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",

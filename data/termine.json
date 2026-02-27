@@ -633,6 +633,16 @@
     "telegram": "https://t.me/hayek_club_weimar"
   },
   {
+    "name": "Team Freiheit Stammtisch Wiesbaden",
+    "beginn": "2026-03-03",
+    "ende": "2026-03-03",
+    "uhrzeit": "19:00",
+    "kw": "KW10",
+    "wochentag": "Tuesday",
+    "orga": "Team Freiheit",
+    "plz": "65189"
+  },
+  {
     "name": "Staatenlos Berlin",
     "beginn": "2026-03-03",
     "ende": "2026-03-03",
@@ -827,9 +837,11 @@
     "wochentag": "Friday",
     "orga": "DIE LIBERTÄREN",
     "plz": "86899",
+    "telegram_group_id": "-4603652183",
     "kontakt": "Dillon Still",
     "e-mail": "dillon.still@die-libertaeren.de",
-    "orga_webseite": "https://die-libertaeren.de/"
+    "orga_webseite": "https://die-libertaeren.de/",
+    "telegram": "https://t.me/+bm69tb7eh344MjQy"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
