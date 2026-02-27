@@ -732,6 +732,7 @@
     "uhrzeit": "10:00",
     "kw": "KW11",
     "wochentag": "Saturday",
+    "eintrittspreis": "€100 - €260",
     "orga": "Milei Institut",
     "plz": "04435",
     "orga_webseite": "https://www.milei-institut.de/milei-konferenz-2026/"
@@ -775,6 +776,19 @@
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
     "orga_webseite": "https://buendnis-libertaerer.de/"
+  },
+  {
+    "name": "Libertärer Stammtisch Grevenbroich",
+    "beginn": "2026-03-20",
+    "ende": "2026-03-20",
+    "uhrzeit": "19:00",
+    "kw": "KW12",
+    "wochentag": "Friday",
+    "orga": "Unabhängig",
+    "plz": "41515",
+    "kontakt": "Martin Moczarski",
+    "e-mail": "moczarski@ef-magazin.de",
+    "orga_webseite": "https://ef-magazin.de/"
   },
   {
     "name": "Libertärer Stammtisch Kaiserslautern",
