@@ -1120,14 +1120,14 @@
     "link_qr": null
   },
   {
-    "name": "Libertärer Stammtisch Meißen",
-    "plz": "01662",
+    "name": "Libertärer Stammtisch Dresden",
+    "plz": "01237",
     "state": "DE-SN",
-    "city": "Meißen",
-    "city_dist": 1.0,
+    "city": "Dresden",
+    "city_dist": 5.7,
     "coords": [
-      51.1615404,
-      13.4838596
+      51.0182471,
+      13.8020866
     ],
     "date": "2026-03-18",
     "dow": "Mi.",
@@ -1200,6 +1200,26 @@
     "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511.png"
   },
   {
+    "name": "Freiheitlicher Stammtisch Landsberg am Lech",
+    "plz": "86899",
+    "state": "DE-BY",
+    "city": "Landsberg am Lech",
+    "city_dist": 2.0,
+    "coords": [
+      48.0336819,
+      10.8638784
+    ],
+    "date": "2026-03-27",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dillon Still",
+    "e-mail": "dillon.still@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
     "state": "DE-HE",
@@ -1240,7 +1260,7 @@
     "link_qr": null
   },
   {
-    "name": "Libertärer Stammtisch Bergstraße",
+    "name": "Freiheitlicher Stammtisch Bergstraße",
     "plz": "64625",
     "state": "DE-HE",
     "city": "Lorsch",
