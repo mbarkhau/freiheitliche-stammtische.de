@@ -765,6 +765,19 @@
     "tournus": "Jeder 2. Samstag"
   },
   {
+    "name": "Libertärer Stammtisch Meißen",
+    "beginn": "2026-03-18",
+    "ende": "2026-03-18",
+    "uhrzeit": "18:00",
+    "kw": "KW12",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "01662",
+    "kontakt": "Dr. Joachim Teske",
+    "e-mail": "joachimteske@aol.com",
+    "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "beginn": "2026-03-19",
     "ende": "2026-03-19",
@@ -804,6 +817,14 @@
     "orga_webseite": "https://die-libertaeren.de/",
     "tournus": "Jeder 3. Mittwoch",
     "telegram": "https://t.me/+za88OLhGTshlNGJi"
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Landsberg am Lech",
+    "beginn": "2026-03-27",
+    "ende": "2026-03-27",
+    "uhrzeit": "19:00",
+    "kw": "KW13",
+    "wochentag": "Friday"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
@@ -847,7 +868,8 @@
     "telegram_group_id": "-5205303336",
     "kontakt": "Lukas Schroth",
     "e-mail": "lukas.schroth@die-libertaeren.de",
-    "orga_webseite": "https://die-libertaeren.de/"
+    "orga_webseite": "https://die-libertaeren.de/",
+    "telegram": "https://t.me/+qhX3l_Dn_VpkNmYy"
   },
   {
     "name": "Libertärer Stammtisch Ansbach",
