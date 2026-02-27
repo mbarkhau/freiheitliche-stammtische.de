@@ -920,7 +920,7 @@
     "link_qr": "img/qr_8b047d1d7ae2d2ae61e94269a09165b75cab3b83.png"
   },
   {
-    "name": "Team Freiheit Stammtisch Wiesbaden",
+    "name": "Team Freiheit Clubabend Wiesbaden",
     "plz": "65189",
     "state": "DE-HE",
     "city": "Wiesbaden",
@@ -933,9 +933,9 @@
     "dow": "Di.",
     "time": "19:00",
     "orga": "Team Freiheit",
-    "orga_www": null,
+    "orga_www": "https://www.team-freiheit.de/",
     "kontakt": null,
-    "e-mail": null,
+    "e-mail": "wiesbaden@team-freiheit.de",
     "link": null,
     "link_qr": null
   },
@@ -1000,6 +1000,26 @@
     "link_qr": null
   },
   {
+    "name": "Team Freiheit Clubabend Osnabrück",
+    "plz": "49074",
+    "state": "DE-NI",
+    "city": "Osnabrück",
+    "city_dist": 0.7,
+    "coords": [
+      52.2770776,
+      8.0544842
+    ],
+    "date": "2026-03-06",
+    "dow": "Fr.",
+    "time": "18:30",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/",
+    "kontakt": null,
+    "e-mail": "osnabrueck@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Staatenlos Bergisch Gladbach",
     "plz": "51465",
     "state": "DE-NW",
@@ -1036,6 +1056,26 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": "Ilkay",
     "e-mail": null,
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Team Freiheit Clubabend München",
+    "plz": "80539",
+    "state": "DE-BY",
+    "city": "München",
+    "city_dist": 0.9,
+    "coords": [
+      48.1443613,
+      11.5810699
+    ],
+    "date": "2026-03-10",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "Team Freiheit",
+    "orga_www": null,
+    "kontakt": null,
+    "e-mail": "muenchen@team-freiheit.de",
     "link": null,
     "link_qr": null
   },
