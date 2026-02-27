@@ -731,7 +731,8 @@
     "wochentag": "Tuesday",
     "orga": "Team Freiheit",
     "plz": "80539",
-    "e-mail": "muenchen@team-freiheit.de"
+    "e-mail": "muenchen@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/"
   },
   {
     "name": "Libertärer Stammtisch Halle (Saale)",
@@ -854,6 +855,18 @@
     "telegram": "https://t.me/+za88OLhGTshlNGJi"
   },
   {
+    "name": "Team Freiheit Clubabend Gießen",
+    "beginn": "2026-03-23",
+    "ende": "2026-03-23",
+    "uhrzeit": "19:00",
+    "kw": "KW13",
+    "wochentag": "Monday",
+    "orga": "Team Freiheit",
+    "plz": "35390",
+    "e-mail": "giessen@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/"
+  },
+  {
     "name": "Freiheitlicher Stammtisch Landsberg am Lech",
     "beginn": "2026-03-27",
     "ende": "2026-03-27",
@@ -867,6 +880,18 @@
     "e-mail": "dillon.still@die-libertaeren.de",
     "orga_webseite": "https://die-libertaeren.de/",
     "telegram": "https://t.me/+bm69tb7eh344MjQy"
+  },
+  {
+    "name": "Freiheitlicher Stammtisch im Münsterland",
+    "beginn": "2026-03-28",
+    "ende": "2026-03-28",
+    "uhrzeit": "18:00",
+    "kw": "KW13",
+    "wochentag": "Saturday",
+    "orga": "Team Freiheit",
+    "plz": "48143",
+    "e-mail": "muenster@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
