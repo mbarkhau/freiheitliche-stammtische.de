@@ -1400,6 +1400,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Hettstedt",
+    "plz": "06333",
+    "state": "DE-ST",
+    "city": "Hettstedt",
+    "city_dist": 2.3,
+    "coords": [
+      51.6593388,
+      11.4706294
+    ],
+    "date": "2026-03-27",
+    "dow": "Fr.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "sachsen-anhalt@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Freiheitlicher Stammtisch Landsberg am Lech",
     "plz": "86899",
     "state": "DE-BY",
