@@ -151,10 +151,25 @@
     "telegram": "@docbufo"
   },
   {
+    "name": "Karla Wagner",
     "plz": "99423",
     "stammtisch": "Hayek Club Weimar",
     "organisation": "Hayek Club",
     "e-mail": "hayek.club.weimar@mail.de"
+  },
+  {
+    "name": "Tante Droll",
+    "plz": "91522",
+    "organisation": "Unabhängig",
+    "telegram": "@armenora",
+    "e-mail": "Baader-Bande@proton.me"
+  },
+  {
+    "name": "Sascha Bose",
+    "plz": "24103",
+    "stammtisch": "Libertärer Stammtisch KIel",
+    "organisation": "DIE LIBERTÄREN",
+    "e-mail": "saschabose@yahoo.de"
   },
   {
     "stammtisch": "."

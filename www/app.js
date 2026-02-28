@@ -31,7 +31,7 @@
 		},
 		"Milei Institut": {
 			"logo": "img/logo_milei-institut.png",
-			"bg": "#EEE",
+			"bg": "#d0d0d0",
 		},
 		"Partei der Vernunft": {
 			"logo": "img/logo_pdv.png",
