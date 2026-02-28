@@ -995,7 +995,7 @@
     "orga": "DIE LIBERTÄREN",
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Stefan Bückner",
-    "e-mail": null,
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
     "link": null,
     "link_qr": null
   },
@@ -1135,7 +1135,7 @@
     "orga": "DIE LIBERTÄREN",
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Stefan Bückner",
-    "e-mail": null,
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
     "link": null,
     "link_qr": null
   },
@@ -1376,6 +1376,26 @@
     "orga_www": "https://www.team-freiheit.de/event/clubabend-giessen-23-03-26/",
     "kontakt": null,
     "e-mail": "giessen@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertarer Stammtisch Aschersleben",
+    "plz": "06449",
+    "state": "DE-ST",
+    "city": "Aschersleben",
+    "city_dist": 3.3,
+    "coords": [
+      51.7810358,
+      11.4874926
+    ],
+    "date": "2026-03-25",
+    "dow": "Mi.",
+    "time": "18:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
     "link": null,
     "link_qr": null
   },
