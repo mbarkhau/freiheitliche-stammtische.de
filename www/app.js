@@ -1,32 +1,62 @@
 (function () {
 
-	// --- Constants ---
-	const ORGANIZER_LOGOS = {
-		"Unabhängig": "img/logo_256.png",
-		"DIE LIBERTÄREN": "img/logo_die-libertaeren.png",
-		"Hayek Club": "img/logo_hayek-club.png",
-		"Staatenlos": "img/logo_staatenlos.png",
-		"Free Cities Foundation": "img/logo_free-cities.png",
-		"Bündnis Libertärer": "img/logo_blib.png",
-		"Bündnis Deutschland": "img/logo_bd.png",
-		"Milei Institut": "img/logo_milei-institut.png",
-		"Partei der Vernunft": "img/logo_pdv.png",
-		"Team Freiheit": "img/logo_tf.png",
+	const ORGA_BRANDING = {
+		"Unabhängig": {
+			"logo": "img/logo_256.png",
+			"bg": "#EEE",
+		},
+		"DIE LIBERTÄREN": {
+			"logo": "img/logo_die-libertaeren.png",
+			"bg": "#EEE",
+		},
+		"Hayek Club": {
+			"logo": "img/logo_hayek-club.png",
+			"bg": "#EEE",
+		},
+		"Staatenlos": {
+			"logo": "img/logo_staatenlos.png",
+			"bg": "#FCC920",
+		},
+		"Free Cities Foundation": {
+			"logo": "img/logo_free-cities.png",
+			"bg": "#EEE",
+		},
+		"Bündnis Libertärer": {
+			"logo": "img/logo_blib.png",
+			"bg": "#EEE",
+		},
+		"Bündnis Deutschland": {
+			"logo": "img/logo_bd.png",
+			"bg": "#EEE",
+		},
+		"Milei Institut": {
+			"logo": "img/logo_milei-institut.png",
+			"bg": "#EEE",
+		},
+		"Partei der Vernunft": {
+			"logo": "img/logo_pdv.png",
+			"bg": "#EEE",
+		},
+		"Team Freiheit": {
+			"logo": "img/logo_tf.png",
+			"bg": "#122E76",
+		},
 	};
 
-	function getOrgaLogo(orga) {
-		if (!orga) return "img/logo_256.png";
-		// Check for exact match
-		if (ORGANIZER_LOGOS[orga]) {
-			return ORGANIZER_LOGOS[orga];
-		}
-		// Check for partial match (e.g. "Hayek Club Berlin" -> "Hayek Club")
-		for (const [key, value] of Object.entries(ORGANIZER_LOGOS)) {
-			if (orga.includes(key)) {
-				return value;
+	function getOrgaBranding(orga) {
+		if (!!orga) {
+			// Check for exact match
+			if (ORGA_BRANDING[orga]) {
+				return ORGA_BRANDING[orga];
+			}
+			// Check for partial match (e.g. "Hayek Club Berlin" -> "Hayek Club")
+			for (const [key, value] of Object.entries(ORGA_BRANDING)) {
+				if (orga.includes(key)) {
+					return value;
+				}
 			}
 		}
-		return "img/logo_256.png";
+		return {'logo': "img/logo_256.png", 'bg': "#EEE"};
 	}
 
 	function stringToHash(str) {
@@ -153,6 +183,7 @@
 		// Hidden search content for better search accuracy
 		const searchParts = [t.name, t.city, t.plz, t.state, t.orga, t.kontakt, t['e-mail'], t.date, t.dow]
 		const searchContent = searchParts.join(' ').toLowerCase();
+		const branding = getOrgaBranding(t.orga);
 
 		return `
 		<div class="search-content" style="display: none;">${searchContent}</div>
@@ -176,7 +207,7 @@
 			</div>
 		</div>
 		<div class="orga-logo-card-container">
-			<img src="${getOrgaLogo(t.orga)}" class="orga-logo-card" alt="${t.orga || 'Logo'}">
+			<img src="${branding.logo}" style="background-color: ${branding.bg};" class="orga-logo-card" alt="${t.orga || 'Logo'}">
 		</div>
 		`;
 	}
@@ -333,6 +364,8 @@
 		if (showOverlay) {
 			overlay.style.display = 'block';
 			const relativeDate = getRelativeDateString(termin.date);
+			const branding = getOrgaBranding(termin.orga);
+
 			overlay.innerHTML = `
 	<div class="overlay-header">
 	  <h4 class="overlay-title">${termin.name || ''}</h4>
@@ -356,7 +389,7 @@
 	  ${termin.link_qr ? `<div style="margin-top: 0.5rem;">${termin.link ? `<a href="${termin.link}" target="_blank">` : ''}<img src="${termin.link_qr}" alt="QR Code" style="width: 100%; max-width: 150px; border-radius: 4px;">${termin.link ? '</a>' : ''}</div>` : ''}
 	</div>
 	<div class="orga-logo-overlay-container">
-	  <img src="${getOrgaLogo(termin.orga)}" class="orga-logo-overlay" alt="${termin.orga || 'Logo'}">
+	  <img src="${branding.logo}" style="background-color: ${branding.bg};" class="orga-logo-overlay" alt="${termin.orga || 'Logo'}">
 	</div>
 	`;
 		} else {
