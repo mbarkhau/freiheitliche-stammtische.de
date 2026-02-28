@@ -1200,6 +1200,26 @@
     "link_qr": null
   },
   {
+    "name": "Hayek Club Magdeburg",
+    "plz": "39104",
+    "state": "DE-ST",
+    "city": "Magdeburg",
+    "city_dist": 1.9,
+    "coords": [
+      52.1151882,
+      11.630882
+    ],
+    "date": "2026-03-19",
+    "dow": "Do.",
+    "time": "18:00",
+    "orga": "Hayek Club",
+    "orga_www": "https://hayek-magdeburg.de",
+    "kontakt": "Frank Törmer",
+    "e-mail": "veranstaltung@hayek-magdeburg.de",
+    "link": "https://t.me/hayekclubmd",
+    "link_qr": "img/qr_4d0819809e311973dbee1858e51152f4e8b93540.png"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
     "state": "DE-NW",
