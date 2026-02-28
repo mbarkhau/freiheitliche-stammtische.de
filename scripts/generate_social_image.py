@@ -119,10 +119,10 @@ def generate_image(events, start_date) -> pl.Path:
     kw_year, kw_num, _ = kw_monday.isocalendar()
     # draw.text(text="STAMMTISCH\nTERMINE", xy=(WIDTH - 60, 60), spacing=6, font=headline_font, fill=TEXT_COLOR, anchor="ra", align="right")
     # draw.text(text=f"KW{kw_num:02d}\n{kw_year}", xy=(60, 60), font=kw_font, fill=TEXT_COLOR, anchor="la", align="left")
-    draw.text(text=f"KW{kw_num:02d} {kw_year}", xy=(80, HEIGHT - 120), font=kw_font, fill=(200, 200, 200), anchor="la", align="left")
+    draw.text(text=f"KW{kw_num:02d}\n{kw_year}", xy=(WIDTH - 80, 80), font=kw_font, fill=(200, 200, 200), anchor="ra", align="right")
 
     # Events offset
-    y_offset = 180
+    y_offset = 120
     row_height = 80
     max_events = 8
     
@@ -155,7 +155,7 @@ def generate_image(events, start_date) -> pl.Path:
         short_month = MONTH_MAP[month_name]
         
         day_str = date.strftime("%d")
-        display_date = f"{short_day} {day_str} {short_month}"
+        display_date = f"{short_day} {day_str}. {short_month}"
 
         if display_date == prev_display_date:
             if prev_city == event["city"]:
