@@ -300,26 +300,6 @@
     "link_qr": null
   },
   {
-    "name": "Libertärer Stammtisch Frankfurt (FFM)",
-    "plz": "60594",
-    "state": "DE-HE",
-    "city": "Frankfurt am Main",
-    "city_dist": 1.0,
-    "coords": [
-      50.1028505,
-      8.6881252
-    ],
-    "date": "2026-01-05",
-    "dow": "Mo.",
-    "time": "19:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Lukas Schroth",
-    "e-mail": "lukas.schroth@die-libertaeren.de",
-    "link": "https://t.me/+WgMHpki_VXZkYWIy",
-    "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
-  },
-  {
     "name": "Staatenlos Berlin",
     "plz": "10437",
     "state": "DE-BE",
@@ -338,6 +318,26 @@
     "e-mail": null,
     "link": "https://t.me/+Qwc6r-bgPehmZjEy",
     "link_qr": "img/qr_d2b252562a3294530cd5202876becd126632818b.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Frankfurt (FFM)",
+    "plz": "60594",
+    "state": "DE-HE",
+    "city": "Frankfurt am Main",
+    "city_dist": 1.0,
+    "coords": [
+      50.1028505,
+      8.6881252
+    ],
+    "date": "2026-01-05",
+    "dow": "Mo.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+WgMHpki_VXZkYWIy",
+    "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
   },
   {
     "name": "Free Cities Berlin Meetup",
@@ -920,26 +920,6 @@
     "link_qr": "img/qr_8b047d1d7ae2d2ae61e94269a09165b75cab3b83.png"
   },
   {
-    "name": "Team Freiheit Clubabend Wiesbaden",
-    "plz": "65189",
-    "state": "DE-HE",
-    "city": "Wiesbaden",
-    "city_dist": 1.7,
-    "coords": [
-      50.0729625,
-      8.261265
-    ],
-    "date": "2026-03-03",
-    "dow": "Di.",
-    "time": "19:00",
-    "orga": "Team Freiheit",
-    "orga_www": "https://www.team-freiheit.de/event/clubabend-wiesbaden-03-03-26/",
-    "kontakt": null,
-    "e-mail": "wiesbaden@team-freiheit.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Staatenlos Berlin",
     "plz": "10437",
     "state": "DE-BE",
@@ -958,6 +938,26 @@
     "e-mail": null,
     "link": "https://t.me/+Qwc6r-bgPehmZjEy",
     "link_qr": "img/qr_d2b252562a3294530cd5202876becd126632818b.png"
+  },
+  {
+    "name": "Team Freiheit Clubabend Wiesbaden",
+    "plz": "65189",
+    "state": "DE-HE",
+    "city": "Wiesbaden",
+    "city_dist": 1.7,
+    "coords": [
+      50.0729625,
+      8.261265
+    ],
+    "date": "2026-03-03",
+    "dow": "Di.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-wiesbaden-03-03-26/",
+    "kontakt": null,
+    "e-mail": "wiesbaden@team-freiheit.de",
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Dessau",
@@ -1321,13 +1321,13 @@
   },
   {
     "name": "Team Freiheit Clubabend Münster",
-    "plz": "80539",
-    "state": "DE-BY",
-    "city": "München",
-    "city_dist": 0.9,
+    "plz": "48143",
+    "state": "DE-NW",
+    "city": "Münster",
+    "city_dist": 0.2,
     "coords": [
-      48.1443613,
-      11.5810699
+      51.9604439,
+      7.6262442
     ],
     "date": "2026-03-28",
     "dow": "Sa.",
