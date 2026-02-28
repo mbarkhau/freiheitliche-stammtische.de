@@ -1020,6 +1020,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "plz": "73033",
+    "state": "DE-BW",
+    "city": "Göppingen",
+    "city_dist": 0.6,
+    "coords": [
+      48.7088631,
+      9.6538145
+    ],
+    "date": "2026-03-05",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Team Freiheit Clubabend Osnabrück",
     "plz": "49074",
     "state": "DE-NI",
@@ -1120,6 +1140,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Magdeburg",
+    "plz": "39104",
+    "state": "DE-ST",
+    "city": "Magdeburg",
+    "city_dist": 1.9,
+    "coords": [
+      52.1151882,
+      11.630882
+    ],
+    "date": "2026-03-12",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Mathias Hummel",
+    "e-mail": "events@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch in Balingen / Württemberg",
     "plz": "72336",
     "state": "DE-BW",
@@ -1138,6 +1178,26 @@
     "e-mail": "lnb@maulbetsch.net",
     "link": "https://t.me/FreeFritz",
     "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Grevenbroich",
+    "plz": "41515",
+    "state": "DE-NW",
+    "city": "Grevenbroich",
+    "city_dist": 1.5,
+    "coords": [
+      51.0819233,
+      6.6057095
+    ],
+    "date": "2026-03-13",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": "https://ef-magazin.de/",
+    "kontakt": "Martin Moczarski",
+    "e-mail": "moczarski@ef-magazin.de",
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Milei-Konferenz 2026",
@@ -1220,6 +1280,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtidsch Bernburg (Saale)",
+    "plz": "06406",
+    "state": "DE-ST",
+    "city": "Bernburg",
+    "city_dist": 1.8,
+    "coords": [
+      51.7825763,
+      11.7556064
+    ],
+    "date": "2026-03-19",
+    "dow": "Do.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": null,
+    "kontakt": "Stefan Bückner",
+    "e-mail": null,
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Hayek Club Magdeburg",
     "plz": "39104",
     "state": "DE-ST",
@@ -1256,26 +1336,6 @@
     "orga_www": "https://buendnis-libertaerer.de/",
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
-    "name": "Libertärer Stammtisch Grevenbroich",
-    "plz": "41515",
-    "state": "DE-NW",
-    "city": "Grevenbroich",
-    "city_dist": 1.5,
-    "coords": [
-      51.0819233,
-      6.6057095
-    ],
-    "date": "2026-03-20",
-    "dow": "Fr.",
-    "time": "19:00",
-    "orga": "Unabhängig",
-    "orga_www": "https://ef-magazin.de/",
-    "kontakt": "Martin Moczarski",
-    "e-mail": "moczarski@ef-magazin.de",
     "link": null,
     "link_qr": null
   },

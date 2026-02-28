@@ -9,11 +9,6 @@
     "kontakt": "Thorsten Harke"
   },
   {
-    "name": "Libertärer Stammtisch Göppingen/Esslingen",
-    "kw": "KW52",
-    "wochentag": "Saturday"
-  },
-  {
     "name": "Libertäres Grilltreffen bei München",
     "beginn": "2025-09-05",
     "ende": "2025-09-05",
@@ -708,6 +703,19 @@
     "tournus": "Jeder 1. Mittwoch"
   },
   {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "beginn": "2026-03-05",
+    "ende": "2026-03-05",
+    "uhrzeit": "19:30",
+    "kw": "KW10",
+    "wochentag": "Thursday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "73033",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
     "name": "Team Freiheit Clubabend Osnabrück",
     "beginn": "2026-03-06",
     "ende": "2026-03-06",
@@ -772,6 +780,19 @@
     "tournus": "Jeder 2. Mittwoch"
   },
   {
+    "name": "Libertärer Stammtisch Magdeburg",
+    "beginn": "2026-03-12",
+    "ende": "2026-03-12",
+    "uhrzeit": "19:30",
+    "kw": "KW11",
+    "wochentag": "Thursday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "39104",
+    "kontakt": "Mathias Hummel",
+    "e-mail": "events@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
     "name": "Libertärer Stammtisch in Balingen / Württemberg",
     "beginn": "2026-03-12",
     "ende": "2026-03-12",
@@ -784,6 +805,19 @@
     "e-mail": "lnb@maulbetsch.net",
     "tournus": "Jeder 2. Donnerstag",
     "telegram": "https://t.me/FreeFritz"
+  },
+  {
+    "name": "Libertärer Stammtisch Grevenbroich",
+    "beginn": "2026-03-13",
+    "ende": "2026-03-13",
+    "uhrzeit": "19:00",
+    "kw": "KW11",
+    "wochentag": "Friday",
+    "orga": "Unabhängig",
+    "plz": "41515",
+    "kontakt": "Martin Moczarski",
+    "e-mail": "moczarski@ef-magazin.de",
+    "orga_webseite": "https://ef-magazin.de/"
   },
   {
     "name": "Milei-Konferenz 2026",
@@ -838,6 +872,17 @@
     "orga_webseite": "https://die-libertaeren.de/"
   },
   {
+    "name": "Libertärer Stammtidsch Bernburg (Saale)",
+    "beginn": "2026-03-19",
+    "ende": "2026-03-19",
+    "uhrzeit": "18:30",
+    "kw": "KW12",
+    "wochentag": "Thursday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "06406",
+    "kontakt": "Stefan Bückner"
+  },
+  {
     "name": "Hayek Club Magdeburg",
     "beginn": "2026-03-19",
     "ende": "2026-03-19",
@@ -865,19 +910,6 @@
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
     "orga_webseite": "https://buendnis-libertaerer.de/"
-  },
-  {
-    "name": "Libertärer Stammtisch Grevenbroich",
-    "beginn": "2026-03-20",
-    "ende": "2026-03-20",
-    "uhrzeit": "19:00",
-    "kw": "KW12",
-    "wochentag": "Friday",
-    "orga": "Unabhängig",
-    "plz": "41515",
-    "kontakt": "Martin Moczarski",
-    "e-mail": "moczarski@ef-magazin.de",
-    "orga_webseite": "https://ef-magazin.de/"
   },
   {
     "name": "Libertärer Stammtisch Kaiserslautern",
