@@ -913,9 +913,9 @@
     "dow": "Sa.",
     "time": "19:00",
     "orga": "Hayek Club",
-    "orga_www": null,
-    "kontakt": null,
-    "e-mail": null,
+    "orga_www": "https://hayek.de/",
+    "kontakt": "Karla Wagner",
+    "e-mail": "hayek.club.weimar@mail.de",
     "link": "https://t.me/hayek_club_weimar",
     "link_qr": "img/qr_8b047d1d7ae2d2ae61e94269a09165b75cab3b83.png"
   },
