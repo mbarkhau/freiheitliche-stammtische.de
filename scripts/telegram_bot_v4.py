@@ -32,17 +32,21 @@ import re
 import sys
 import asyncio
 import logging
+import typing as typ
 import pathlib as pl
 import datetime as dt
 import zoneinfo as zi
-from telegram import Update, ReplyKeyboardMarkup
-from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
-from telethon import TelegramClient
+import importlib
+import contextlib
 
 from lib import cli
 import gsheet_util as gu
 
-log = logging.getLogger('telegram_bot_v3')
+import telegram as tg
+import telegram.ext as tg_ext
+
+
+log = logging.getLogger('telegram_bot_v4')
 
 TZ_BERLIN = zi.ZoneInfo("Europe/Berlin")
 
@@ -50,6 +54,8 @@ FSTISCH_API_ID = os.environ.get('FSTISCH_API_ID')
 FSTISCH_API_HASH = os.environ.get('FSTISCH_API_HASH')
 FSTISCH_BOT_TOKEN = os.environ.get('FSTISCH_BOT_TOKEN')
 FSTISCH_APP_TITLE = os.environ.get('FSTISCH_APP_TITLE', 'freiheitliche-stammtische-app')
+
+FSTISCH_BOT_TOKEN = os.environ.get('FSTISCH_TEST_BOT_TOKEN')
 
 
 PROD_SHEET = "1-BypxZnsRGFJ8XeuCIFyleF-4OK-ndsUvpaV6_Oi95s"
@@ -59,6 +65,20 @@ ADMIN_IDS = {
     "601316285",    # Manuel
     "1473328156",   # Lukas
 }
+
+
+User = dict[str, str]
+
+
+def get_user(ctx, tg_id: str) -> User | None:
+    sheet = gu.GSheet(ctx['sheet_id'])
+
+    for row in sheet.read("kontakte"):
+        if row.get("telegram_id") == tg_id:
+            return row
+
+    return None
+
 
 
 class BotState:
@@ -209,36 +229,8 @@ WELCOME_MESSAGE = (
     "Ich verwalte Termine auf https://freiheitliche-stammtische.de\n\n"
 )
 
-async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    user_id = str(update.effective_user.id)
-    bot_state: BotState = context.bot_data['state']
-    
-    is_active, status = bot_state.is_user_active(user_id)
-    
-    if is_active:
-        keyboard = [['Bot Info', 'Meine Termine'], ['Termin Erstellen', 'Termin Löschen']]
-        
-        if user_id in ADMIN_IDS:
-            keyboard.append(['Nutzer Aktivieren', 'Nutzer Deaktivieren'])
 
-        reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
-
-        await update.message.reply_text(
-            WELCOME_MESSAGE +
-            "Wie kann ich Ihnen helfen?",
-            reply_markup=reply_markup
-        )
-    elif status == "Unknown":
-        log.warning(f"Unauthorized access attempt from {user_id} (@{update.effective_user.username})")
-        # Ignore unknown users as per requirements? 
-        # "First the bot should only react to users with a known telegram id."
-        # "if a message is received, ignore it unless there is a kontakt..."
-        pass 
-    else:
-        await update.message.reply_text("Melde dich bei @ManuelB um dein Konto zu aktivieren")
-
-
-async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def handle_message(update: tg.Update, context: tg_ext.ContextTypes.DEFAULT_TYPE):
     if not update.message or not update.message.text:
         return
 
@@ -285,7 +277,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("Ich habe dich nicht verstanden.\nNutze /start.")
 
 
-async def list_my_events(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def list_my_events(update: tg.Update, context: tg_ext.ContextTypes.DEFAULT_TYPE):
     user_id = str(update.effective_user.id)
     bot_state: BotState = context.bot_data['state']
     user_data = bot_state.users.get(user_id)
@@ -342,10 +334,10 @@ def get_main_keyboard(user_id: str):
     if user_id in ADMIN_IDS:
         keyboard.append(['Nutzer Aktivieren', 'Nutzer Deaktivieren'])
 
-    return ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
+    return tg.ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
 
 
-async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def handle_create_event(update: tg.Update, context: tg_ext.ContextTypes.DEFAULT_TYPE):
     user_id = str(update.effective_user.id)
     bot_state: BotState = context.bot_data['state']
     user_data = bot_state.users.get(user_id)
@@ -396,7 +388,7 @@ async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE
             context.user_data['prev_event'] = prev_event
             prev_name = prev_event.get('name', 'Stammtisch')
             keyboard = [['Abbrechen', 'Ja']]
-            reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True, one_time_keyboard=True)
+            reply_markup = tg.ReplyKeyboardMarkup(keyboard, resize_keyboard=True, one_time_keyboard=True)
             await update.message.reply_text(
                 f'Soll der Stammtisch weiterhin "{prev_name}" heißen?',
                 reply_markup=reply_markup
@@ -404,7 +396,7 @@ async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE
         else:
             context.user_data['prev_event'] = {}
             keyboard = [['Abbrechen']]
-            reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
+            reply_markup = tg.ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
             await update.message.reply_text("Wie soll der Stammtisch heißen?", reply_markup=reply_markup)
         return
 
@@ -420,7 +412,7 @@ async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE
         
         context.user_data['flow_step'] = 'ask_date'
         keyboard = [['Abbrechen']]
-        reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
+        reply_markup = tg.ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
         await update.message.reply_text(
             f"Setze Name auf: {new_event['name']}\n\n"
             "An welchem Tag ist der Stammtisch? (z.B. '31.12')",
@@ -445,7 +437,7 @@ async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE
                 
                 context.user_data['flow_step'] = 'confirm_date'
                 keyboard = [['Abbrechen', 'Ja']]
-                reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True, one_time_keyboard=True)
+                reply_markup = tg.ReplyKeyboardMarkup(keyboard, resize_keyboard=True, one_time_keyboard=True)
                 wd = gu.get_weekday_de(event_date.isoformat())
                 await update.message.reply_text(
                     f"Der {wd} {event_date.strftime('%d.%m.%Y')} wurde erkannt. Korrekt?",
@@ -461,7 +453,7 @@ async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE
             context.user_data['flow_step'] = 'ask_time'
             prev_time = prev_event.get('uhrzeit', '19:00')
             keyboard = [['Abbrechen', 'Ja']]
-            reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True, one_time_keyboard=True)
+            reply_markup = tg.ReplyKeyboardMarkup(keyboard, resize_keyboard=True, one_time_keyboard=True)
             await update.message.reply_text(
                 f"Um welche Uhrzeit ist der Stammtisch? Weiterhin um {prev_time} Uhr?",
                 reply_markup=reply_markup
@@ -489,14 +481,14 @@ async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE
         prev_plz = prev_event.get('plz') or user_data.get('plz', '').split(',')[0].strip()
         if prev_plz:
             keyboard = [['Abbrechen', 'Ja']]
-            reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True, one_time_keyboard=True)
+            reply_markup = tg.ReplyKeyboardMarkup(keyboard, resize_keyboard=True, one_time_keyboard=True)
             await update.message.reply_text(
                 f"Unter welcher PLZ findet das Treffen statt? Weiterhin unter {prev_plz}?",
                 reply_markup=reply_markup
             )
         else:
             keyboard = [['Abbrechen']]
-            reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
+            reply_markup = tg.ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
             await update.message.reply_text("Unter welcher PLZ findet das Treffen statt?", reply_markup=reply_markup)
 
     elif flow_step == 'ask_plz':
@@ -552,7 +544,7 @@ async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE
         
         context.user_data['flow_step'] = 'confirm_save'
         keyboard = [['Abbrechen', 'Ja']]
-        reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True, one_time_keyboard=True)
+        reply_markup = tg.ReplyKeyboardMarkup(keyboard, resize_keyboard=True, one_time_keyboard=True)
         await update.message.reply_text(summary, reply_markup=reply_markup)
 
     elif flow_step == 'confirm_save':
@@ -574,11 +566,18 @@ async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE
                 success_msg += "\nDie Änderungen werden in 1-2 Minuten auf der Webseite sichtbar sein."
                 # Run sync and push in the background
                 plz = str(new_event.get('plz', ''))
-                asyncio.create_task(util.git_sync_and_push(
+
+                log.info(f"Starting git sync and push")
+                # 1. Sync from GSheet to JSON files
+                await asyncio.to_thread(gu.sync_cmd, sheet_id)
+
+                await asyncio.to_thread(
+                    util.git_push,
                     bot_state.sheet.sheet_id,
                     message=f"new event for {plz}",
                     repo_paths=["data/termine.json", "www/termine.json", "www/img/"],
-                ))
+                )
+                bot_state.sheet.log(f"Git push successful: new event for {plz}")
 
             asyncio.create_task(announce_event(context.bot, new_event))
             await update.message.reply_text(success_msg)
@@ -589,7 +588,7 @@ async def handle_create_event(update: Update, context: ContextTypes.DEFAULT_TYPE
         await reset_flow("Was kann ich sonst für dich tun?")
 
 
-async def handle_delete_event(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def handle_delete_event(update: tg.Update, context: tg_ext.ContextTypes.DEFAULT_TYPE):
     user_id = str(update.effective_user.id)
     bot_state: BotState = context.bot_data['state']
     user_data = bot_state.users.get(user_id)
@@ -650,7 +649,7 @@ async def handle_delete_event(update: Update, context: ContextTypes.DEFAULT_TYPE
 
             keyboard.append([f"{wd} {date_display} {time} - {plz}"])
             
-        reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True, one_time_keyboard=True)
+        reply_markup = tg.ReplyKeyboardMarkup(keyboard, resize_keyboard=True, one_time_keyboard=True)
         await update.message.reply_text(
             "Welchen Termin möchten Sie löschen?",
             reply_markup=reply_markup
@@ -704,7 +703,7 @@ async def handle_delete_event(update: Update, context: ContextTypes.DEFAULT_TYPE
             f"📮 PLZ: {t.get('plz')}\n"
         )
         keyboard = [['Abbrechen', 'Ja']]
-        reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True, one_time_keyboard=True)
+        reply_markup = tg.ReplyKeyboardMarkup(keyboard, resize_keyboard=True, one_time_keyboard=True)
         await update.message.reply_text(summary, reply_markup=reply_markup)
         
     else:
@@ -733,11 +732,17 @@ async def handle_delete_event(update: Update, context: ContextTypes.DEFAULT_TYPE
                     success_msg += "\nDie Änderungen werden in 1-2 Minuten auf der Webseite sichtbar sein."
                     if target_event:
                         plz = str(target_event.get('plz', ''))
-                        asyncio.create_task(util.git_sync_and_push(
+
+                        # 1. Sync from GSheet to JSON files
+                        await asyncio.to_thread(gu.sync_cmd, bot_state.sheet.sheet_id)
+
+                        await asyncio.to_thread(
+                            util.git_push,
                             bot_state.sheet.sheet_id,
                             message=f"delete event for {plz}",
                             repo_paths=["data/termine.json", "www/termine.json", "www/img/"],
-                        ))
+                        )
+                        bot_state.sheet.log(f"Git push successful: delete event for {plz}")
 
                 await update.message.reply_text(success_msg)
             except Exception as e:
@@ -749,10 +754,7 @@ async def handle_delete_event(update: Update, context: ContextTypes.DEFAULT_TYPE
             await update.message.reply_text("Bitte bestätige mit 'Ja' oder nutze 'Abbrechen'.")
 
 
-
-
-
-async def handle_manage_users(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def handle_manage_users(update: tg.Update, context: tg_ext.ContextTypes.DEFAULT_TYPE):
     user_id = str(update.effective_user.id)
     bot_state: BotState = context.bot_data['state']
     
@@ -803,7 +805,7 @@ async def handle_manage_users(update: Update, context: ContextTypes.DEFAULT_TYPE
             btn_text = f"{name} (@{username})" if username else name
             keyboard.append([btn_text])
             
-        reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True, one_time_keyboard=True)
+        reply_markup = tg.ReplyKeyboardMarkup(keyboard, resize_keyboard=True, one_time_keyboard=True)
         await update.message.reply_text(
             f"Welchen Nutzer möchten Sie {target_status.lower()}?",
             reply_markup=reply_markup
@@ -838,7 +840,7 @@ async def handle_manage_users(update: Update, context: ContextTypes.DEFAULT_TYPE
             f"🏷 Username: @{row.get('username', 'N/A')}\n"
         )
         keyboard = [['Abbrechen', 'Ja']]
-        reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True, one_time_keyboard=True)
+        reply_markup = tg.ReplyKeyboardMarkup(keyboard, resize_keyboard=True, one_time_keyboard=True)
         await update.message.reply_text(summary, reply_markup=reply_markup)
         return
 
@@ -902,46 +904,76 @@ async def handle_manage_users(update: Update, context: ContextTypes.DEFAULT_TYPE
         await reset_flow("Was kann ich sonst für dich tun?")
 
 
+async def handle_start(update: tg.Update, context: tg_ext.ContextTypes.DEFAULT_TYPE) -> None:
+    ctx = context.bot_data['ctx']
+    tg_id = str(update.effective_user.id)
 
-_CLIENT: "telethon.TelegramClient" = None
+    await context.bot.send_chat_action(chat_id=tg_id, action="typing")
+    user = get_user(ctx, tg_id)
 
-
-def init_telethon_client() -> "telethon.TelegramClient":
-    global _CLIENT
-
-    if _CLIENT is None:
-        import telethon
-        _CLIENT = telethon.TelegramClient(FSTISCH_APP_TITLE, FSTISCH_API_ID, FSTISCH_API_HASH)
-    return _CLIENT
-
-
-async def catch_up():
-    log.debug(f"FSTISCH_API_ID: {FSTISCH_API_ID}")
-    log.debug(f"FSTISCH_API_HASH: {'set' if FSTISCH_API_HASH else 'NOT SET'}")
-    log.debug(f"FSTISCH_BOT_TOKEN: {'set' if FSTISCH_BOT_TOKEN else 'NOT SET'}")
-
-    if not all([FSTISCH_API_ID, FSTISCH_API_HASH, FSTISCH_BOT_TOKEN]):
-        log.warning("Telethon environment variables missing, skipping catch-up.")
+    if user is None:
+        # TODO: send notification to admins
+        await update.message.reply_text("Melde dich bei @ManuelBTC21 um dein Konto zu aktivieren")
         return
 
-    log.info("Starting Telethon catch-up...")
-    client = init_telethon_client()
-    
-    # Ensure correct bot authentication before entering context
-    await client.start(bot_token=FSTISCH_BOT_TOKEN)
-    
-    async with client:
-        me = await client.get_me()
-        log.info(f"Catch-up client initialized as {me.username}")
-        # iter_dialogs is not supported for bots (BotMethodInvalidError)
-        # So we skip the recent message check here.
-    
-    # Cleanup: Reset the global _CLIENT so the main loop creates a fresh one.
-    global _CLIENT
-    _CLIENT = None
+    if user['bot_modus'] != "Aktiv":
+        log.warning(f"Unauthorized access attempt from {tg_id} (@{update.effective_user.username})")
+        return
+
+    keyboard = [['Bot Info', 'Meine Termine'], ['Termin Erstellen', 'Termin Löschen']]
+
+    if tg_id in ADMIN_IDS:
+        keyboard.append(['Nutzer Aktivieren', 'Nutzer Deaktivieren'])
+
+    reply_markup = tg.ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
+
+    await update.message.reply_text(
+        WELCOME_MESSAGE +
+        "Wie kann ich Ihnen helfen?",
+        reply_markup=reply_markup
+    )
 
 
-def main():
+async def handle_attachment(update: tg.Update, context: tg_ext.ContextTypes.DEFAULT_TYPE) -> None:
+    ctx = context.bot_data['ctx']
+    tg_id = str(update.effective_user.id)
+    print(update)
+
+
+_CHAT_STATE = {}
+
+
+@contextlib.contextmanager
+def chat_state(tg_id: str) -> typ.Generator[dict, None, None]:
+    # TODO: load persisted state
+    if tg_id not in _CHAT_STATE:
+        _CHAT_STATE[tg_id] = {}
+
+    yield _CHAT_STATE[tg_id]
+    # TODO: persist, so we can restart the bot
+
+
+import telegram_bot_v4_handlers
+
+
+async def dispatch_handler(update: tg.Update, context: tg_ext.ContextTypes.DEFAULT_TYPE) -> None:
+    ctx = context.bot_data['ctx']
+    tg_id = str(update.effective_user.id)
+    user = get_user(ctx, tg_id)
+
+    if user is None:
+        # TODO: send notification to admins
+        await update.message.reply_text("Melde dich bei @ManuelBTC21 um dein Konto zu aktivieren")
+        return
+
+    handlers = importlib.reload(telegram_bot_v4_handlers)
+
+    with chat_state(tg_id):
+        print(update)
+        await update.message.reply_text(handlers._version)
+
+
+def main() -> int:
     # _cli_defaults = {"--sheet-id": PROD_SHEET}
     _cli_defaults = {"--sheet-id": TEST_SHEET}
     subcmd, args = cli.parse_args(sys.argv[1:], doc=__doc__, defaults=_cli_defaults)
@@ -954,23 +986,23 @@ def main():
 
     if not FSTISCH_BOT_TOKEN:
         log.error("FSTISCH_BOT_TOKEN not set!")
-        sys.exit(1)
+        return 1
 
     sheet_id = PROD_SHEET if args.sheet_id == 'prod' else args.sheet_id
-    state = BotState(sheet_id)
-    state.sync_users()
 
-    # Initial catch-up
-    asyncio.run(catch_up())
+    # state = BotState(sheet_id)
+    # state.sync_users()
 
-    application = ApplicationBuilder().token(FSTISCH_BOT_TOKEN).build()
-    application.bot_data['state'] = state
+    app = tg_ext.ApplicationBuilder().token(FSTISCH_BOT_TOKEN).build()
+    app.bot_data['ctx'] = {'sheet_id': sheet_id}
 
-    application.add_handler(CommandHandler("start", start))
-    application.add_handler(MessageHandler(filters.TEXT & (~filters.COMMAND), handle_message))
+    app.add_handler(tg_ext.MessageHandler(tg_ext.filters.TEXT, dispatch_handler))
+    app.add_handler(tg_ext.MessageHandler(tg_ext.filters.ATTACHMENT, dispatch_handler))
 
     log.info("Bot is starting...")
-    application.run_polling()
+    app.run_polling()
+
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
+

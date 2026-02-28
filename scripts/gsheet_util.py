@@ -604,9 +604,6 @@ def sync_cmd(sheet_id: str) -> int:
                 repo_paths=["data/termine.json", "www/termine.json", "www/img/"],
             )
             if updated:
-                print("----------------")
-                print(updated)
-                print("----------------")
                 sheet.log(f"Git push successful: update events from sheet")
                 time.sleep(30)
 

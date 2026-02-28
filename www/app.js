@@ -11,6 +11,7 @@
 		"Bündnis Deutschland": "img/logo_bd.png",
 		"Milei Institut": "img/logo_milei-institut.png",
 		"Partei der Vernunft": "img/logo_pdv.png",
+		"Team Freiheit": "img/logo_tf.png",
 	};
 
 	function getOrgaLogo(orga) {
@@ -138,7 +139,11 @@
 		if (!kontakt && !email) return '';
 		if (email) {
 			const recipient = kontakt ? `${kontakt.trim()} <${email.trim()}>` : email.trim();
-			return `<a href="mailto:${encodeURIComponent(recipient)}">${kontakt} &lt;${email}&gt;</a>`;
+			if (!kontakt) {
+				return `<a href="mailto:${encodeURIComponent(recipient)}">${email}</a>`;
+			} else {
+				return `<a href="mailto:${encodeURIComponent(recipient)}">${kontakt} &lt;${email}&gt;</a>`;
+			}
 		}
 		return kontakt || '';
 	}
