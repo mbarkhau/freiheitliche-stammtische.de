@@ -642,7 +642,7 @@
     "orga": "Team Freiheit",
     "plz": "65189",
     "e-mail": "wiesbaden@team-freiheit.de",
-    "orga_webseite": "https://www.team-freiheit.de/"
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-wiesbaden-03-03-26/"
   },
   {
     "name": "Staatenlos Berlin",
@@ -694,7 +694,7 @@
     "orga": "Team Freiheit",
     "plz": "49074",
     "e-mail": "osnabrueck@team-freiheit.de",
-    "orga_webseite": "https://www.team-freiheit.de/"
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-osnabrueck-06-03-26/"
   },
   {
     "name": "Staatenlos Bergisch Gladbach",
@@ -731,8 +731,9 @@
     "wochentag": "Tuesday",
     "orga": "Team Freiheit",
     "plz": "80539",
+    "kontakt": "Jan Klein-Zirbes und Michael Kraupa",
     "e-mail": "muenchen@team-freiheit.de",
-    "orga_webseite": "https://www.team-freiheit.de/"
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-muenchen-10-03-26/"
   },
   {
     "name": "Libertärer Stammtisch Halle (Saale)",
@@ -864,7 +865,7 @@
     "orga": "Team Freiheit",
     "plz": "35390",
     "e-mail": "giessen@team-freiheit.de",
-    "orga_webseite": "https://www.team-freiheit.de/"
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-giessen-23-03-26/"
   },
   {
     "name": "Freiheitlicher Stammtisch Landsberg am Lech",
@@ -892,6 +893,18 @@
     "plz": "48143",
     "e-mail": "muenster@team-freiheit.de",
     "orga_webseite": "https://www.team-freiheit.de/"
+  },
+  {
+    "name": "Team Freiheit Clubabend Münster",
+    "beginn": "2026-03-28",
+    "ende": "2026-03-28",
+    "uhrzeit": "18:00",
+    "kw": "KW13",
+    "wochentag": "Saturday",
+    "orga": "Team Freiheit",
+    "plz": "80539",
+    "e-mail": "muenster@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-muenster-28-03-26/"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
