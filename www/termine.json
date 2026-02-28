@@ -740,6 +740,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Kiel",
+    "plz": "24103",
+    "state": "DE-SH",
+    "city": "Kiel",
+    "city_dist": 0.0,
+    "coords": [
+      54.3227661,
+      10.136053
+    ],
+    "date": "2026-02-13",
+    "dow": "Fr.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/events/libertaerer-stammtisch-kiel/",
+    "kontakt": "Sascha Bose",
+    "e-mail": "saschabose@yahoo.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Ansbach",
     "plz": "91522",
     "state": "DE-BY",
