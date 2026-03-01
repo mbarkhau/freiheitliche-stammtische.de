@@ -1440,26 +1440,6 @@
     "link_qr": "img/qr_bd802c047806b533fa07fbfd9e4e2d0a955691d0.png"
   },
   {
-    "name": "Freiheitlicher Stammtisch im Münsterland",
-    "plz": "48143",
-    "state": "DE-NW",
-    "city": "Münster",
-    "city_dist": 0.2,
-    "coords": [
-      51.9604439,
-      7.6262442
-    ],
-    "date": "2026-03-28",
-    "dow": "Sa.",
-    "time": "18:00",
-    "orga": "Team Freiheit",
-    "orga_www": "https://www.team-freiheit.de/",
-    "kontakt": null,
-    "e-mail": "muenster@team-freiheit.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Team Freiheit Clubabend Münster",
     "plz": "48143",
     "state": "DE-NW",
