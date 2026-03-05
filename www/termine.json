@@ -994,7 +994,7 @@
     "time": "19:00",
     "orga": "Team Freiheit",
     "orga_www": "https://www.team-freiheit.de/event/clubabend-wiesbaden-03-03-26/",
-    "kontakt": null,
+    "kontakt": "Team Freiheit",
     "e-mail": "wiesbaden@team-freiheit.de",
     "link": null,
     "link_qr": null
@@ -1460,6 +1460,26 @@
     "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511.png"
   },
   {
+    "name": "Team Freiheit Clubabend Nürnberg",
+    "plz": "90471",
+    "state": "DE-BY",
+    "city": "Nürnberg",
+    "city_dist": 5.3,
+    "coords": [
+      49.418213,
+      11.1259398
+    ],
+    "date": "2026-03-21",
+    "dow": "Sa.",
+    "time": "18:30",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-nuernberg-21-03-26/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "nuernberg@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Team Freiheit Clubabend Gießen",
     "plz": "35390",
     "state": "DE-HE",
@@ -1678,6 +1698,26 @@
     "e-mail": null,
     "link": "https://t.me/+Qwc6r-bgPehmZjEy",
     "link_qr": "img/qr_d2b252562a3294530cd5202876becd126632818b.png"
+  },
+  {
+    "name": "Team Freiheit Clubabend Wiesbaden",
+    "plz": "65189",
+    "state": "DE-HE",
+    "city": "Wiesbaden",
+    "city_dist": 1.7,
+    "coords": [
+      50.0729625,
+      8.261265
+    ],
+    "date": "2026-04-14",
+    "dow": "Di.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-wiesbaden-03-03-26/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "wiesbaden@team-freiheit.de",
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertäres Treffen Dortmund",

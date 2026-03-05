@@ -683,6 +683,7 @@
     "wochentag": "Tuesday",
     "orga": "Team Freiheit",
     "plz": "65189",
+    "kontakt": "Team Freiheit",
     "e-mail": "wiesbaden@team-freiheit.de",
     "orga_webseite": "https://www.team-freiheit.de/event/clubabend-wiesbaden-03-03-26/"
   },
@@ -995,6 +996,19 @@
     "telegram": "https://t.me/+za88OLhGTshlNGJi"
   },
   {
+    "name": "Team Freiheit Clubabend Nürnberg",
+    "beginn": "2026-03-21",
+    "ende": "2026-03-21",
+    "uhrzeit": "18:30",
+    "kw": "KW12",
+    "wochentag": "Saturday",
+    "orga": "Team Freiheit",
+    "plz": "90471",
+    "kontakt": "Team Freiheit",
+    "e-mail": "nuernberg@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-nuernberg-21-03-26/"
+  },
+  {
     "name": "Team Freiheit Clubabend Gießen",
     "beginn": "2026-03-23",
     "ende": "2026-03-23",
@@ -1143,6 +1157,19 @@
     "kontakt": "Christoph Berlin",
     "orga_webseite": "https://staatenlos.ch/",
     "telegram": "https://t.me/+Qwc6r-bgPehmZjEy"
+  },
+  {
+    "name": "Team Freiheit Clubabend Wiesbaden",
+    "beginn": "2026-04-14",
+    "ende": "2026-04-14",
+    "uhrzeit": "19:00",
+    "kw": "KW16",
+    "wochentag": "Tuesday",
+    "orga": "Team Freiheit",
+    "plz": "65189",
+    "kontakt": "Team Freiheit",
+    "e-mail": "wiesbaden@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-wiesbaden-03-03-26/"
   },
   {
     "name": "Libertäres Treffen Dortmund",
