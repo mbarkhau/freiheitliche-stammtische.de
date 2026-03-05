@@ -1165,8 +1165,14 @@
     "name": "DEXIT 2026 – Die Auswanderer Konferenz",
     "beginn": "2026-08-07",
     "ende": "2026-08-09",
+    "uhrzeit": "12:00",
     "kw": "KW32",
     "wochentag": "Friday",
-    "orga": "Staatenlos"
+    "eintrittspreis": "€379 - €1497",
+    "orga": "Staatenlos",
+    "plz": "81925",
+    "kontakt": "Caroline Krause",
+    "e-mail": "caroline@staatenlos.ch",
+    "orga_webseite": "https://staatenlos.ch/staatenlos/event/"
   }
 ]

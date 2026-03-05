@@ -1698,5 +1698,25 @@
     "e-mail": "info@buendnis-libertaerer.de",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "DEXIT 2026 – Die Auswanderer Konferenz",
+    "plz": "81925",
+    "state": "DE-BY",
+    "city": "München",
+    "city_dist": 4.4,
+    "coords": [
+      48.1627877,
+      11.6199064
+    ],
+    "date": "2026-08-07",
+    "dow": "Fr.",
+    "time": "12:00",
+    "orga": "Staatenlos",
+    "orga_www": "https://staatenlos.ch/staatenlos/event/",
+    "kontakt": "Caroline Krause",
+    "e-mail": "caroline@staatenlos.ch",
+    "link": null,
+    "link_qr": null
   }
 ]
