@@ -756,6 +756,19 @@
     "telegram": "https://chat.whatsapp.com/CnIMCPzvL8mGP8VFbY6Z3g"
   },
   {
+    "name": "Staatenlos München",
+    "beginn": "2026-03-07",
+    "ende": "2026-03-14",
+    "uhrzeit": "14:00",
+    "kw": "KW10",
+    "wochentag": "Saturday",
+    "orga": "Staatenlos",
+    "plz": "80804",
+    "telegram_group_id": "3636323530",
+    "kontakt": "Nicole",
+    "orga_webseite": "https://staatenlos.ch/"
+  },
+  {
     "name": "Team Freiheit Clubabend München",
     "beginn": "2026-03-10",
     "ende": "2026-03-10",
@@ -833,19 +846,6 @@
     "orga": "Milei Institut",
     "plz": "04435",
     "orga_webseite": "https://www.milei-institut.de/milei-konferenz-2026/"
-  },
-  {
-    "name": "Staatenlos München",
-    "beginn": "2026-03-14",
-    "ende": "2026-03-14",
-    "uhrzeit": "14:00",
-    "kw": "KW11",
-    "wochentag": "Saturday",
-    "orga": "Staatenlos",
-    "plz": "80804",
-    "telegram_group_id": "3636323530",
-    "kontakt": "Jean-Piere",
-    "orga_webseite": "https://staatenlos.ch/"
   },
   {
     "name": "Libertärer Stammtisch Ansbach",

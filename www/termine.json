@@ -1100,6 +1100,26 @@
     "link_qr": "img/qr_801307abb5770e10f83583c7114348893d7b0df2.png"
   },
   {
+    "name": "Staatenlos München",
+    "plz": "80804",
+    "state": "DE-BY",
+    "city": "München",
+    "city_dist": 3.9,
+    "coords": [
+      48.1725232,
+      11.5764023
+    ],
+    "date": "2026-03-07",
+    "dow": "Sa.",
+    "time": "14:00",
+    "orga": "Staatenlos",
+    "orga_www": "https://staatenlos.ch/",
+    "kontakt": "Nicole",
+    "e-mail": null,
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Team Freiheit Clubabend München",
     "plz": "80539",
     "state": "DE-BY",
@@ -1215,26 +1235,6 @@
     "orga": "Milei Institut",
     "orga_www": "https://www.milei-institut.de/milei-konferenz-2026/",
     "kontakt": null,
-    "e-mail": null,
-    "link": null,
-    "link_qr": null
-  },
-  {
-    "name": "Staatenlos München",
-    "plz": "80804",
-    "state": "DE-BY",
-    "city": "München",
-    "city_dist": 3.9,
-    "coords": [
-      48.1725232,
-      11.5764023
-    ],
-    "date": "2026-03-14",
-    "dow": "Sa.",
-    "time": "14:00",
-    "orga": "Staatenlos",
-    "orga_www": "https://staatenlos.ch/",
-    "kontakt": "Jean-Piere",
     "e-mail": null,
     "link": null,
     "link_qr": null
