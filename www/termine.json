@@ -1300,6 +1300,26 @@
     "link_qr": null
   },
   {
+    "name": "Team Freiheit Clubabend Hamburg",
+    "plz": "20095",
+    "state": "DE-HH",
+    "city": "Hamburg",
+    "city_dist": 0.1,
+    "coords": [
+      53.5512868,
+      9.9992216
+    ],
+    "date": "2026-03-17",
+    "dow": "Di.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-hamburg-17-03-26/",
+    "kontakt": "Tem Freiheit",
+    "e-mail": "hamburg@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Dresden",
     "plz": "01237",
     "state": "DE-SN",
@@ -1376,6 +1396,26 @@
     "orga_www": "https://buendnis-libertaerer.de/",
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Team Freiheit Clubabend Rostock",
+    "plz": "18059",
+    "state": "DE-MV",
+    "city": "Rostock",
+    "city_dist": 8.1,
+    "coords": [
+      54.0278805,
+      12.0707327
+    ],
+    "date": "2026-03-20",
+    "dow": "Fr.",
+    "time": "18:30",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-rostock-20-03-26/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "rostock@team-freiheit.de",
     "link": null,
     "link_qr": null
   },
