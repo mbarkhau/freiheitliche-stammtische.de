@@ -1060,6 +1060,26 @@
     "link_qr": null
   },
   {
+    "name": "Leipziger Bierchenrunde/PdV",
+    "plz": "04109",
+    "state": "DE-SN",
+    "city": "Leipzig",
+    "city_dist": 0.8,
+    "coords": [
+      51.3385462,
+      12.3642803
+    ],
+    "date": "2026-03-06",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Partei der Vernunft",
+    "orga_www": "https://parteidervernunft.de/veranstaltungen/leipziger-bierchenrunde",
+    "kontakt": "Thomas Flach",
+    "e-mail": "thomas.flach@parteidervernunft.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Team Freiheit Clubabend Osnabrück",
     "plz": "49074",
     "state": "DE-NI",
