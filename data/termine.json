@@ -371,7 +371,6 @@
     "wochentag": "Saturday",
     "orga": "Staatenlos",
     "plz": "80804",
-    "telegram_group_id": "3636323530",
     "kontakt": "Nicole",
     "orga_webseite": "https://staatenlos.ch/"
   },
@@ -758,13 +757,12 @@
   {
     "name": "Staatenlos München",
     "beginn": "2026-03-07",
-    "ende": "2026-03-14",
+    "ende": "2026-03-07",
     "uhrzeit": "12:00",
     "kw": "KW10",
     "wochentag": "Saturday",
     "orga": "Staatenlos",
     "plz": "80804",
-    "telegram_group_id": "3636323530",
     "kontakt": "Nicole",
     "orga_webseite": "https://staatenlos.ch/",
     "telegram": "https://chat.whatsapp.com/GXH37VgBrgy50AZ35PWw1W?mode=gi_t"
@@ -847,6 +845,18 @@
     "orga": "Milei Institut",
     "plz": "04435",
     "orga_webseite": "https://www.milei-institut.de/milei-konferenz-2026/"
+  },
+  {
+    "name": "Staatenlos München",
+    "beginn": "2026-03-14",
+    "ende": "2026-03-14",
+    "uhrzeit": "14:00",
+    "kw": "KW11",
+    "wochentag": "Saturday",
+    "orga": "Staatenlos",
+    "plz": "80803",
+    "telegram_group_id": "3636323530",
+    "kontakt": "Jean-Pierre"
   },
   {
     "name": "Libertärer Stammtisch Ansbach",

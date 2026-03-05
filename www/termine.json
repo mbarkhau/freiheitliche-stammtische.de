@@ -1240,6 +1240,26 @@
     "link_qr": null
   },
   {
+    "name": "Staatenlos München",
+    "plz": "80803",
+    "state": "DE-BY",
+    "city": "München",
+    "city_dist": 3.1,
+    "coords": [
+      48.1644179,
+      11.5803269
+    ],
+    "date": "2026-03-14",
+    "dow": "Sa.",
+    "time": "14:00",
+    "orga": "Staatenlos",
+    "orga_www": null,
+    "kontakt": "Jean-Pierre",
+    "e-mail": null,
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Ansbach",
     "plz": "91522",
     "state": "DE-BY",
