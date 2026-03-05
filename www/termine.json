@@ -521,13 +521,13 @@
   },
   {
     "name": "Staatenlos München",
-    "plz": "80804",
+    "plz": "80802",
     "state": "DE-BY",
     "city": "München",
-    "city_dist": 3.9,
+    "city_dist": 2.9,
     "coords": [
-      48.1725232,
-      11.5764023
+      48.1600441,
+      11.5930037
     ],
     "date": "2026-01-31",
     "dow": "Sa.",
@@ -1101,13 +1101,13 @@
   },
   {
     "name": "Staatenlos München",
-    "plz": "80804",
+    "plz": "80802",
     "state": "DE-BY",
     "city": "München",
-    "city_dist": 3.9,
+    "city_dist": 2.9,
     "coords": [
-      48.1725232,
-      11.5764023
+      48.1600441,
+      11.5930037
     ],
     "date": "2026-03-07",
     "dow": "Sa.",
@@ -1253,11 +1253,11 @@
     "dow": "Sa.",
     "time": "14:00",
     "orga": "Staatenlos",
-    "orga_www": null,
-    "kontakt": "Jean-Pierre",
+    "orga_www": "https://staatenlos.ch/",
+    "kontakt": "Jean-Piere",
     "e-mail": null,
-    "link": null,
-    "link_qr": null
+    "link": "https://t.me/+qNETmVS0NsVlNTIy",
+    "link_qr": "img/qr_41b8644c9464e386d8f2ef83756b984bd5867dc2.png"
   },
   {
     "name": "Libertärer Stammtisch Ansbach",

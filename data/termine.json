@@ -370,7 +370,7 @@
     "kw": "KW05",
     "wochentag": "Saturday",
     "orga": "Staatenlos",
-    "plz": "80804",
+    "plz": "80802",
     "kontakt": "Nicole",
     "orga_webseite": "https://staatenlos.ch/"
   },
@@ -762,7 +762,7 @@
     "kw": "KW10",
     "wochentag": "Saturday",
     "orga": "Staatenlos",
-    "plz": "80804",
+    "plz": "80802",
     "kontakt": "Nicole",
     "orga_webseite": "https://staatenlos.ch/",
     "telegram": "https://chat.whatsapp.com/GXH37VgBrgy50AZ35PWw1W?mode=gi_t"
@@ -856,7 +856,9 @@
     "orga": "Staatenlos",
     "plz": "80803",
     "telegram_group_id": "3636323530",
-    "kontakt": "Jean-Pierre"
+    "kontakt": "Jean-Piere",
+    "orga_webseite": "https://staatenlos.ch/",
+    "telegram": "https://t.me/+qNETmVS0NsVlNTIy"
   },
   {
     "name": "Libertärer Stammtisch Ansbach",
@@ -1158,5 +1160,13 @@
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
     "orga_webseite": "https://buendnis-libertaerer.de/"
+  },
+  {
+    "name": "DEXIT 2026 – Die Auswanderer Konferenz",
+    "beginn": "2026-08-07",
+    "ende": "2026-08-09",
+    "kw": "KW32",
+    "wochentag": "Friday",
+    "orga": "Staatenlos"
   }
 ]
