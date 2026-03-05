@@ -539,6 +539,18 @@
     "tournus": "Jeder 2. Samstag"
   },
   {
+    "name": "Team Freiheit Clubabend Saarbrücken",
+    "beginn": "2026-02-15",
+    "ende": "2026-02-15",
+    "uhrzeit": "19:00",
+    "kw": "KW07",
+    "wochentag": "Sunday",
+    "orga": "Team Freiheit",
+    "plz": "66111",
+    "kontakt": "Florian Fromm",
+    "orga_webseite": "http://www.team-freiheit.de/events"
+  },
+  {
     "name": "Libertärer Stammtisch Meißen",
     "beginn": "2026-02-18",
     "ende": "2026-02-18",

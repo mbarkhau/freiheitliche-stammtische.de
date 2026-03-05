@@ -780,6 +780,26 @@
     "link_qr": null
   },
   {
+    "name": "Team Freiheit Clubabend Saarbrücken",
+    "plz": "66111",
+    "state": "DE-SL",
+    "city": "Saarbrücken",
+    "city_dist": 0.3,
+    "coords": [
+      49.2360123,
+      6.999016
+    ],
+    "date": "2026-02-15",
+    "dow": "So.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "http://www.team-freiheit.de/events",
+    "kontakt": "Florian Fromm",
+    "e-mail": null,
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Meißen",
     "plz": "01662",
     "state": "DE-SN",
