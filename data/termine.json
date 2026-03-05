@@ -9,11 +9,9 @@
     "kontakt": "Thorsten Harke"
   },
   {
-    "name": "Hayek Club Koblenz",
     "kw": "KW52",
     "wochentag": "Saturday",
-    "orga": "Hayek Club",
-    "plz": "56068"
+    "infotext": "Kinofilm „GOTT“ und der ärztlich assistierte Suizid"
   },
   {
     "name": "Libertäres Grilltreffen bei München",
@@ -1014,6 +1012,20 @@
     "kontakt": "Team Freiheit",
     "e-mail": "nuernberg@team-freiheit.de",
     "orga_webseite": "https://www.team-freiheit.de/event/clubabend-nuernberg-21-03-26/"
+  },
+  {
+    "name": "Hayek Club Koblenz",
+    "beginn": "2026-03-22",
+    "ende": "2026-03-22",
+    "uhrzeit": "Anfrage",
+    "kw": "KW12",
+    "wochentag": "Sunday",
+    "orga": "Hayek Club",
+    "plz": "56068",
+    "kontakt": "Prof. Götz R. Piwinger",
+    "e-mail": "kontakt@hayek-club-koblenz.de",
+    "orga_webseite": "https://www.vereinonline.org/Hayekclubkoblenz/?action=events_kalender",
+    "infotext": "Kinofilm „GOTT“ und der ärztlich assistierte Suizid"
   },
   {
     "name": "Team Freiheit Clubabend Gießen",
