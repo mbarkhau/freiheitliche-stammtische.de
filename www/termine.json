@@ -1491,7 +1491,7 @@
     ],
     "date": "2026-03-22",
     "dow": "So.",
-    "time": "Anfrage",
+    "time": "17:00",
     "orga": "Hayek Club",
     "orga_www": "https://www.vereinonline.org/Hayekclubkoblenz/?action=events_kalender",
     "kontakt": "Prof. Götz R. Piwinger",
@@ -1720,6 +1720,26 @@
     "link_qr": "img/qr_d2b252562a3294530cd5202876becd126632818b.png"
   },
   {
+    "name": "Hayek Club Koblenz",
+    "plz": "56068",
+    "state": "DE-RP",
+    "city": "Koblenz",
+    "city_dist": 0.4,
+    "coords": [
+      50.3494613,
+      7.5947632
+    ],
+    "date": "2026-04-13",
+    "dow": "Mo.",
+    "time": "14:30",
+    "orga": "Hayek Club",
+    "orga_www": "https://www.vereinonline.org/Hayekclubkoblenz/?action=events_kalender",
+    "kontakt": "Prof. Götz R. Piwinger",
+    "e-mail": "kontakt@hayek-club-koblenz.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Team Freiheit Clubabend Wiesbaden",
     "plz": "65189",
     "state": "DE-HE",
@@ -1760,6 +1780,26 @@
     "link_qr": null
   },
   {
+    "name": "Hayek Club Koblenz",
+    "plz": "56068",
+    "state": "DE-RP",
+    "city": "Koblenz",
+    "city_dist": 0.4,
+    "coords": [
+      50.3494613,
+      7.5947632
+    ],
+    "date": "2026-04-26",
+    "dow": "So.",
+    "time": "17:00",
+    "orga": "Hayek Club",
+    "orga_www": "https://www.vereinonline.org/Hayekclubkoblenz/?action=events_kalender",
+    "kontakt": "Prof. Götz R. Piwinger",
+    "e-mail": "kontakt@hayek-club-koblenz.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
     "state": "DE-HE",
@@ -1796,6 +1836,26 @@
     "orga_www": "https://buendnis-libertaerer.de/",
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Hayek Club Koblenz",
+    "plz": "56068",
+    "state": "DE-RP",
+    "city": "Koblenz",
+    "city_dist": 0.4,
+    "coords": [
+      50.3494613,
+      7.5947632
+    ],
+    "date": "2026-05-24",
+    "dow": "So.",
+    "time": "17:00",
+    "orga": "Hayek Club",
+    "orga_www": "https://www.vereinonline.org/Hayekclubkoblenz/?action=events_kalender",
+    "kontakt": "Prof. Götz R. Piwinger",
+    "e-mail": "kontakt@hayek-club-koblenz.de",
     "link": null,
     "link_qr": null
   },

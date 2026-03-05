@@ -9,11 +9,6 @@
     "kontakt": "Thorsten Harke"
   },
   {
-    "kw": "KW52",
-    "wochentag": "Saturday",
-    "infotext": "Kinofilm „GOTT“ und der ärztlich assistierte Suizid"
-  },
-  {
     "name": "Libertäres Grilltreffen bei München",
     "beginn": "2025-09-05",
     "ende": "2025-09-05",
@@ -1017,7 +1012,7 @@
     "name": "Hayek Club Koblenz",
     "beginn": "2026-03-22",
     "ende": "2026-03-22",
-    "uhrzeit": "Anfrage",
+    "uhrzeit": "17:00",
     "kw": "KW12",
     "wochentag": "Sunday",
     "orga": "Hayek Club",
@@ -1025,7 +1020,7 @@
     "kontakt": "Prof. Götz R. Piwinger",
     "e-mail": "kontakt@hayek-club-koblenz.de",
     "orga_webseite": "https://www.vereinonline.org/Hayekclubkoblenz/?action=events_kalender",
-    "infotext": "Kinofilm „GOTT“ und der ärztlich assistierte Suizid"
+    "infotext": "Ralf M. Ruthardt: Im Windschatten der Narrative"
   },
   {
     "name": "Team Freiheit Clubabend Gießen",
@@ -1178,6 +1173,20 @@
     "telegram": "https://t.me/+Qwc6r-bgPehmZjEy"
   },
   {
+    "name": "Hayek Club Koblenz",
+    "beginn": "2026-04-13",
+    "ende": "2026-04-13",
+    "uhrzeit": "14:30",
+    "kw": "KW16",
+    "wochentag": "Monday",
+    "orga": "Hayek Club",
+    "plz": "56068",
+    "kontakt": "Prof. Götz R. Piwinger",
+    "e-mail": "kontakt@hayek-club-koblenz.de",
+    "orga_webseite": "https://www.vereinonline.org/Hayekclubkoblenz/?action=events_kalender",
+    "infotext": "Kinofilm „GOTT“ und der ärztlich assistierte Suizid"
+  },
+  {
     "name": "Team Freiheit Clubabend Wiesbaden",
     "beginn": "2026-04-14",
     "ende": "2026-04-14",
@@ -1202,6 +1211,20 @@
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
     "orga_webseite": "https://buendnis-libertaerer.de/"
+  },
+  {
+    "name": "Hayek Club Koblenz",
+    "beginn": "2026-04-26",
+    "ende": "2026-04-26",
+    "uhrzeit": "17:00",
+    "kw": "KW17",
+    "wochentag": "Sunday",
+    "orga": "Hayek Club",
+    "plz": "56068",
+    "kontakt": "Prof. Götz R. Piwinger",
+    "e-mail": "kontakt@hayek-club-koblenz.de",
+    "orga_webseite": "https://www.vereinonline.org/Hayekclubkoblenz/?action=events_kalender",
+    "infotext": "Prof. Gerd Habermann: Wie eine Bürokratie stirbt. Aktuelle Bemerkungen zum Untergang des Römischen Reiche"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
@@ -1231,6 +1254,20 @@
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
     "orga_webseite": "https://buendnis-libertaerer.de/"
+  },
+  {
+    "name": "Hayek Club Koblenz",
+    "beginn": "2026-05-24",
+    "ende": "2026-05-24",
+    "uhrzeit": "17:00",
+    "kw": "KW21",
+    "wochentag": "Sunday",
+    "orga": "Hayek Club",
+    "plz": "56068",
+    "kontakt": "Prof. Götz R. Piwinger",
+    "e-mail": "kontakt@hayek-club-koblenz.de",
+    "orga_webseite": "https://www.vereinonline.org/Hayekclubkoblenz/?action=events_kalender",
+    "infotext": "Joana Cotar: Inside Bundestag - Wie ich in acht Jahren im Zentrum der Macht das Vertrauen in unsere Demokratie verlor"
   },
   {
     "name": "ROLAND BAADER Treffen",
