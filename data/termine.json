@@ -1023,6 +1023,21 @@
     "orga_webseite": "https://www.team-freiheit.de/event/clubabend-nuernberg-21-03-26/"
   },
   {
+    "name": "Hayek Club Regensburg",
+    "beginn": "2026-03-21",
+    "ende": "2026-03-21",
+    "uhrzeit": "19:30",
+    "kw": "KW12",
+    "wochentag": "Saturday",
+    "eintrittspreis": "5-10€",
+    "orga": "Hayek Club",
+    "plz": "93049",
+    "kontakt": "Martin Hoff & Raphael Ziertarski",
+    "e-mail": "regensburg@hayek.de",
+    "orga_webseite": "https://hayek.de/termine/",
+    "infotext": "Dr. Dr. Rainer Zitelmann - Weltraumkapitalismus"
+  },
+  {
     "name": "Hayek Club Koblenz",
     "beginn": "2026-03-22",
     "ende": "2026-03-22",

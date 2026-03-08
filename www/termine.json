@@ -1500,6 +1500,26 @@
     "link_qr": null
   },
   {
+    "name": "Hayek Club Regensburg",
+    "plz": "93049",
+    "state": "DE-BY",
+    "city": "Regensburg",
+    "city_dist": 2.6,
+    "coords": [
+      49.0181139,
+      12.0615082
+    ],
+    "date": "2026-03-21",
+    "dow": "Sa.",
+    "time": "19:30",
+    "orga": "Hayek Club",
+    "orga_www": "https://hayek.de/termine/",
+    "kontakt": "Martin Hoff & Raphael Ziertarski",
+    "e-mail": "regensburg@hayek.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Hayek Club Koblenz",
     "plz": "56068",
     "state": "DE-RP",
