@@ -1740,26 +1740,6 @@
     "link_qr": null
   },
   {
-    "name": "Freiheitlicher Stammtisch Bergstraße",
-    "plz": "64625",
-    "state": "DE-HE",
-    "city": "Lorsch",
-    "city_dist": 6.2,
-    "coords": [
-      49.6915916,
-      8.6329115
-    ],
-    "date": "2026-04-10",
-    "dow": "Fr.",
-    "time": "19:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Lukas Schroth",
-    "e-mail": "lukas.schroth@die-libertaeren.de",
-    "link": "https://t.me/+qhX3l_Dn_VpkNmYy",
-    "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c.png"
-  },
-  {
     "name": "Libertärer Stammtisch Ansbach",
     "plz": "91522",
     "state": "DE-BY",
@@ -1838,6 +1818,26 @@
     "e-mail": "wiesbaden@team-freiheit.de",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Bergstraße",
+    "plz": "64625",
+    "state": "DE-HE",
+    "city": "Lorsch",
+    "city_dist": 6.2,
+    "coords": [
+      49.6915916,
+      8.6329115
+    ],
+    "date": "2026-04-15",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+qhX3l_Dn_VpkNmYy",
+    "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c.png"
   },
   {
     "name": "Libertäres Treffen Dortmund",

@@ -1186,21 +1186,6 @@
     "orga_webseite": "https://die-libertaeren.de/"
   },
   {
-    "name": "Freiheitlicher Stammtisch Bergstraße",
-    "beginn": "2026-04-10",
-    "ende": "2026-04-10",
-    "uhrzeit": "19:00",
-    "kw": "KW15",
-    "wochentag": "Friday",
-    "orga": "DIE LIBERTÄREN",
-    "plz": "64625",
-    "telegram_group_id": "5205303336",
-    "kontakt": "Lukas Schroth",
-    "e-mail": "lukas.schroth@die-libertaeren.de",
-    "orga_webseite": "https://die-libertaeren.de/",
-    "telegram": "https://t.me/+qhX3l_Dn_VpkNmYy"
-  },
-  {
     "name": "Libertärer Stammtisch Ansbach",
     "beginn": "2026-04-11",
     "ende": "2026-04-11",
@@ -1253,6 +1238,21 @@
     "kontakt": "Team Freiheit",
     "e-mail": "wiesbaden@team-freiheit.de",
     "orga_webseite": "https://www.team-freiheit.de/event/clubabend-wiesbaden-03-03-26/"
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Bergstraße",
+    "beginn": "2026-04-15",
+    "ende": "2026-04-15",
+    "uhrzeit": "19:00",
+    "kw": "KW16",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "64625",
+    "telegram_group_id": "5205303336",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "telegram": "https://t.me/+qhX3l_Dn_VpkNmYy"
   },
   {
     "name": "Libertäres Treffen Dortmund",
