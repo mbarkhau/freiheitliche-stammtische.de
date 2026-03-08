@@ -1821,13 +1821,13 @@
   },
   {
     "name": "Freiheitlicher Stammtisch Bergstraße",
-    "plz": "64625",
+    "plz": "64673",
     "state": "DE-HE",
     "city": "Lorsch",
-    "city_dist": 6.2,
+    "city_dist": 7.8,
     "coords": [
-      49.6915916,
-      8.6329115
+      49.72264,
+      8.5940276
     ],
     "date": "2026-04-15",
     "dow": "Mi.",
