@@ -638,6 +638,19 @@
     "tournus": "Jeder 1. Mittwoch"
   },
   {
+    "name": "Team Freiheit Clubabend Mülheim a.d. Ruhr",
+    "beginn": "2026-02-26",
+    "ende": "2026-02-26",
+    "uhrzeit": "19:00",
+    "kw": "KW09",
+    "wochentag": "Thursday",
+    "orga": "Team Freiheit",
+    "plz": "45479",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muelheim@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-muelheim-26-02-26/"
+  },
+  {
     "name": "Markus Krall in Eppingen",
     "beginn": "2026-02-27",
     "ende": "2026-02-27",

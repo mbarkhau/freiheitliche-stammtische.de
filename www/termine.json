@@ -920,6 +920,26 @@
     "link_qr": null
   },
   {
+    "name": "Team Freiheit Clubabend Mülheim a.d. Ruhr",
+    "plz": "45479",
+    "state": "DE-NW",
+    "city": "Duisburg",
+    "city_dist": 6.0,
+    "coords": [
+      51.408804,
+      6.8345133
+    ],
+    "date": "2026-02-26",
+    "dow": "Do.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-muelheim-26-02-26/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muelheim@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Markus Krall in Eppingen",
     "plz": "75031",
     "state": "DE-BW",
