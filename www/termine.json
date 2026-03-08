@@ -860,6 +860,26 @@
     "link_qr": null
   },
   {
+    "name": "Team Freiheit Clubabend Köln-Bonn",
+    "plz": "50672",
+    "state": "DE-NW",
+    "city": "Köln",
+    "city_dist": 1.8,
+    "coords": [
+      50.9425062,
+      6.9345727
+    ],
+    "date": "2026-02-20",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "koeln@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
     "state": "DE-HE",
