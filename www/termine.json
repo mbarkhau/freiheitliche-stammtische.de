@@ -36,8 +36,8 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Manel Barkhau",
     "e-mail": "manuel.barkhau@die-libertaeren.de",
-    "link": "https://t.me/+WgMHpki_VXZkYWIy",
-    "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Marktradikales Meetup Berlin",
@@ -56,8 +56,8 @@
     "orga_www": null,
     "kontakt": null,
     "e-mail": null,
-    "link": "https://t.me/marktradikalberlin",
-    "link_qr": "img/qr_fc1dec9239b71c671798da58566d8276a729df26.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Hamburg",
@@ -116,8 +116,8 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": "Svenja",
     "e-mail": null,
-    "link": "https://t.me/+rGevpBnAjmUzMmRi",
-    "link_qr": "img/qr_04fc92be141d28598b01457941262d0cd63141a1.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
@@ -136,8 +136,8 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Manel Barkhau",
     "e-mail": "manuel.barkhau@die-libertaeren.de",
-    "link": "https://t.me/+WgMHpki_VXZkYWIy",
-    "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Magdeburg",
@@ -196,8 +196,8 @@
     "orga_www": null,
     "kontakt": "Fritz Maulbetsch",
     "e-mail": "lnb@maulbetsch.net",
-    "link": "https://t.me/FreeFritz",
-    "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Krypto Stammtisch Berlin",
@@ -256,8 +256,8 @@
     "orga_www": null,
     "kontakt": "Stefan Bosch",
     "e-mail": null,
-    "link": "https://t.me/+kDTzmac3wJYwMzIy",
-    "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch München",
@@ -316,8 +316,8 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": "Christoph Berlin",
     "e-mail": null,
-    "link": "https://t.me/+Qwc6r-bgPehmZjEy",
-    "link_qr": "img/qr_d2b252562a3294530cd5202876becd126632818b.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
@@ -336,8 +336,8 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Lukas Schroth",
     "e-mail": "lukas.schroth@die-libertaeren.de",
-    "link": "https://t.me/+WgMHpki_VXZkYWIy",
-    "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Free Cities Berlin Meetup",
@@ -356,8 +356,8 @@
     "orga_www": "https://free-cities.org/meet-ups/",
     "kontakt": "Jan Bertram",
     "e-mail": null,
-    "link": "https://t.me/+QYVsjbuNZblmMTVi",
-    "link_qr": "img/qr_32fb21a4f2ba8144114132edc0cabd7f1cbcbcab.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Hamburg",
@@ -416,8 +416,8 @@
     "orga_www": null,
     "kontakt": "Fritz Maulbetsch",
     "e-mail": "lnb@maulbetsch.net",
-    "link": "https://t.me/FreeFritz",
-    "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Meißen",
@@ -476,8 +476,8 @@
     "orga_www": null,
     "kontakt": "Stefan Bosch",
     "e-mail": null,
-    "link": "https://t.me/+kDTzmac3wJYwMzIy",
-    "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Hayek Club Magdeburg",
@@ -496,8 +496,8 @@
     "orga_www": "https://hayek-magdeburg.de",
     "kontakt": "Frank Törmer",
     "e-mail": "veranstaltung@hayek-magdeburg.de",
-    "link": "https://t.me/hayekclubmd",
-    "link_qr": "img/qr_4d0819809e311973dbee1858e51152f4e8b93540.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Staatenlos Düsseldorf",
@@ -516,8 +516,8 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": "Pascal",
     "e-mail": null,
-    "link": "https://t.me/+rrA7PWQ67lc4NDFi",
-    "link_qr": "img/qr_2effdff9fdd526a9f8965c70f77d7770a02da2d4.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Staatenlos München (Englischer Garten)",
@@ -576,8 +576,8 @@
     "orga_www": null,
     "kontakt": "Fritz Maulbetsch",
     "e-mail": "lnb@maulbetsch.net",
-    "link": "https://t.me/FreeFritz",
-    "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Göppingen/Esslingen",
@@ -616,8 +616,8 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": "Svenja",
     "e-mail": null,
-    "link": "https://t.me/+rGevpBnAjmUzMmRi",
-    "link_qr": "img/qr_04fc92be141d28598b01457941262d0cd63141a1.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Staatenlos Frankfurt",
@@ -636,8 +636,8 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": "Jean-Pierre",
     "e-mail": null,
-    "link": "https://t.me/+cegpCV1FIdE3ZjA6",
-    "link_qr": "img/qr_4e956e97ac0c32be17255cdda426331625df8b02.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Staatenlos Stuttgart",
@@ -656,8 +656,8 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": "Jean-Pierre",
     "e-mail": null,
-    "link": "https://t.me/+8Lq73tjBTF1iZDIy",
-    "link_qr": "img/qr_11a00656e75601d20d88cee0556f565d45d0b196.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Staatenlos Berlin",
@@ -676,8 +676,8 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": "Christoph Berlin",
     "e-mail": null,
-    "link": "https://t.me/+Qwc6r-bgPehmZjEy",
-    "link_qr": "img/qr_d2b252562a3294530cd5202876becd126632818b.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Magdeburg",
@@ -716,8 +716,8 @@
     "orga_www": "https://hayek-magdeburg.de",
     "kontakt": "Frank Törmer",
     "e-mail": "veranstaltung@hayek-magdeburg.de",
-    "link": "https://t.me/hayekclubmd",
-    "link_qr": "img/qr_4d0819809e311973dbee1858e51152f4e8b93540.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Grevenbroich",
@@ -836,8 +836,8 @@
     "orga_www": null,
     "kontakt": "Stefan Bosch",
     "e-mail": null,
-    "link": "https://t.me/+kDTzmac3wJYwMzIy",
-    "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertäres Treffen Dortmund",
@@ -896,8 +896,8 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Lukas Schroth",
     "e-mail": "lukas.schroth@die-libertaeren.de",
-    "link": "https://t.me/+WgMHpki_VXZkYWIy",
-    "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Kaiserslautern",
@@ -916,8 +916,8 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Uwe Schmitt",
     "e-mail": "uwe.schmitt@die-libertaeren.de",
-    "link": "https://t.me/+za88OLhGTshlNGJi",
-    "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch München",
@@ -996,8 +996,8 @@
     "orga_www": "https://hayek.de/",
     "kontakt": "Karla Wagner",
     "e-mail": "hayek.club.weimar@mail.de",
-    "link": "https://t.me/hayek_club_weimar",
-    "link_qr": "img/qr_8b047d1d7ae2d2ae61e94269a09165b75cab3b83.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Staatenlos Berlin",
@@ -1016,8 +1016,8 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": "Christoph Berlin",
     "e-mail": null,
-    "link": "https://t.me/+Qwc6r-bgPehmZjEy",
-    "link_qr": "img/qr_d2b252562a3294530cd5202876becd126632818b.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Team Freiheit Clubabend Wiesbaden",
@@ -1156,8 +1156,8 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": "Svenja",
     "e-mail": null,
-    "link": "https://t.me/+aLRn2FSy7qoyZDI6",
-    "link_qr": "img/qr_ef087f17a9fa9da441aa97662e877464dbbed792.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Staatenlos Köln",
@@ -1176,8 +1176,8 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": null,
     "e-mail": null,
-    "link": "https://chat.whatsapp.com/CnIMCPzvL8mGP8VFbY6Z3g",
-    "link_qr": "img/qr_801307abb5770e10f83583c7114348893d7b0df2.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Staatenlos München (Englischer Garten)",
@@ -1196,8 +1196,8 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": "Nicole",
     "e-mail": null,
-    "link": "https://chat.whatsapp.com/GXH37VgBrgy50AZ35PWw1W?mode=gi_t",
-    "link_qr": "img/qr_8e5c36a572e9dbd6210861c2172fc36cec59e676.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Team Freiheit Clubabend München",
@@ -1276,8 +1276,8 @@
     "orga_www": null,
     "kontakt": "Fritz Maulbetsch",
     "e-mail": "lnb@maulbetsch.net",
-    "link": "https://t.me/FreeFritz",
-    "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Grevenbroich",
@@ -1336,8 +1336,8 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": "Jean-Piere",
     "e-mail": null,
-    "link": "https://t.me/+qNETmVS0NsVlNTIy",
-    "link_qr": "img/qr_41b8644c9464e386d8f2ef83756b984bd5867dc2.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Ansbach",
@@ -1436,8 +1436,8 @@
     "orga_www": "https://hayek-magdeburg.de",
     "kontakt": "Frank Törmer",
     "e-mail": "veranstaltung@hayek-magdeburg.de",
-    "link": "https://t.me/hayekclubmd",
-    "link_qr": "img/qr_4d0819809e311973dbee1858e51152f4e8b93540.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertäres Treffen Dortmund",
@@ -1516,8 +1516,8 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Uwe Schmitt",
     "e-mail": null,
-    "link": "https://t.me/+za88OLhGTshlNGJi",
-    "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Team Freiheit Clubabend Nürnberg",
@@ -1656,8 +1656,8 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Dillon Still",
     "e-mail": "dillon.still@die-libertaeren.de",
-    "link": "https://t.me/+bm69tb7eh344MjQy",
-    "link_qr": "img/qr_bd802c047806b533fa07fbfd9e4e2d0a955691d0.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Team Freiheit Clubabend Münster",
@@ -1696,8 +1696,8 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Lukas Schroth",
     "e-mail": "lukas.schroth@die-libertaeren.de",
-    "link": "https://t.me/+WgMHpki_VXZkYWIy",
-    "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Hamburg",
@@ -1776,8 +1776,8 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": "Christoph Berlin",
     "e-mail": null,
-    "link": "https://t.me/+Qwc6r-bgPehmZjEy",
-    "link_qr": "img/qr_d2b252562a3294530cd5202876becd126632818b.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Hayek Club Koblenz",
@@ -1836,8 +1836,8 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Lukas Schroth",
     "e-mail": "lukas.schroth@die-libertaeren.de",
-    "link": "https://t.me/+qhX3l_Dn_VpkNmYy",
-    "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertäres Treffen Dortmund",
@@ -1896,8 +1896,8 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Lukas Schroth",
     "e-mail": "lukas.schroth@die-libertaeren.de",
-    "link": "https://t.me/+WgMHpki_VXZkYWIy",
-    "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertäres Treffen Dortmund",
