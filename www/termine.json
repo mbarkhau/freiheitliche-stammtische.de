@@ -16,8 +16,8 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Florian Handwerker",
     "e-mail": "florian.handwerker@die-libertaeren.de",
-    "link": "https://t.me/+qNETmVS0NsVlNTIy",
-    "link_qr": "img/qr_41b8644c9464e386d8f2ef83756b984bd5867dc2_v2.png"
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
@@ -536,8 +536,8 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": "Nicole",
     "e-mail": null,
-    "link": null,
-    "link_qr": null
+    "link": "https://chat.whatsapp.com/GXH37VgBrgy50AZ35PWw1W?mode=gi_t",
+    "link_qr": "img/qr_8e5c36a572e9dbd6210861c2172fc36cec59e676_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Hamburg",
@@ -1336,8 +1336,8 @@
     "orga_www": "https://staatenlos.ch/",
     "kontakt": "Jean-Piere",
     "e-mail": null,
-    "link": "https://chat.whatsapp.com/GXH37VgBrgy50AZ35PWw1W?mode=gi_t",
-    "link_qr": "img/qr_8e5c36a572e9dbd6210861c2172fc36cec59e676_v2.png"
+    "link": "https://t.me/+qNETmVS0NsVlNTIy",
+    "link_qr": "img/qr_41b8644c9464e386d8f2ef83756b984bd5867dc2_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Ansbach",
