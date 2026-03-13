@@ -1,14 +1,5 @@
 [
   {
-    "name": "Hayek Club Düsseldorf",
-    "uhrzeit": "19:00",
-    "kw": "KW52",
-    "wochentag": "Saturday",
-    "orga": "Hayek Club",
-    "plz": "40213",
-    "kontakt": "Thorsten Harke"
-  },
-  {
     "name": "Libertäres Grilltreffen bei München",
     "beginn": "2025-09-05",
     "ende": "2025-09-05",
@@ -333,21 +324,6 @@
     "group_link": "https://t.me/+kDTzmac3wJYwMzIy"
   },
   {
-    "name": "Hayek Club Magdeburg",
-    "beginn": "2026-01-21",
-    "ende": "2026-01-21",
-    "uhrzeit": "18:00",
-    "kw": "KW04",
-    "wochentag": "Wednesday",
-    "eintrittspreis": "15€",
-    "orga": "Hayek Club",
-    "plz": "39104",
-    "telegram_group_id": "2086641832",
-    "e-mail": "veranstaltung@hayek-magdeburg.de",
-    "orga_webseite": "https://hayek-magdeburg.de",
-    "group_link": "https://t.me/hayekclubmd"
-  },
-  {
     "name": "Staatenlos Düsseldorf",
     "beginn": "2026-01-29",
     "ende": "2026-01-29",
@@ -481,21 +457,6 @@
     "kontakt": "Mathias Hummel",
     "e-mail": "events@die-libertaeren.de",
     "orga_webseite": "https://die-libertaeren.de/"
-  },
-  {
-    "name": "Hayek Club Magdeburg",
-    "beginn": "2026-02-12",
-    "ende": "2026-02-12",
-    "uhrzeit": "18:00",
-    "kw": "KW07",
-    "wochentag": "Thursday",
-    "eintrittspreis": "15€",
-    "orga": "Hayek Club",
-    "plz": "39104",
-    "telegram_group_id": "2086641832",
-    "e-mail": "veranstaltung@hayek-magdeburg.de",
-    "orga_webseite": "https://hayek-magdeburg.de",
-    "group_link": "https://t.me/hayekclubmd"
   },
   {
     "name": "Libertärer Stammtisch Grevenbroich",
@@ -963,21 +924,6 @@
     "kontakt": "Stefan Bückner",
     "e-mail": "stephan.bueckner@die-libertaeren.de",
     "orga_webseite": "https://die-libertaeren.de/"
-  },
-  {
-    "name": "Hayek Club Magdeburg",
-    "beginn": "2026-03-19",
-    "ende": "2026-03-19",
-    "uhrzeit": "18:00",
-    "kw": "KW12",
-    "wochentag": "Thursday",
-    "eintrittspreis": "15€",
-    "orga": "Hayek Club",
-    "plz": "39104",
-    "telegram_group_id": "2086641832",
-    "e-mail": "veranstaltung@hayek-magdeburg.de",
-    "orga_webseite": "https://hayek-magdeburg.de",
-    "group_link": "https://t.me/hayekclubmd"
   },
   {
     "name": "Libertäres Treffen Dortmund",
