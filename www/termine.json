@@ -940,26 +940,6 @@
     "link_qr": null
   },
   {
-    "name": "Hayek Club Weimar",
-    "plz": "99423",
-    "state": "DE-TH",
-    "city": "Weimar",
-    "city_dist": 0.6,
-    "coords": [
-      50.9829805,
-      11.3235477
-    ],
-    "date": "2026-02-28",
-    "dow": "Sa.",
-    "time": "19:00",
-    "orga": "Hayek Club",
-    "orga_www": "https://hayek.de/",
-    "kontakt": "Karla Wagner",
-    "e-mail": "hayek.club.weimar@mail.de",
-    "link": "https://t.me/hayek_club_weimar",
-    "link_qr": "img/qr_8b047d1d7ae2d2ae61e94269a09165b75cab3b83_v2.png"
-  },
-  {
     "name": "Staatenlos Berlin",
     "plz": "10437",
     "state": "DE-BE",
@@ -1480,46 +1460,6 @@
     "link_qr": null
   },
   {
-    "name": "Hayek Club Regensburg",
-    "plz": "93049",
-    "state": "DE-BY",
-    "city": "Regensburg",
-    "city_dist": 2.6,
-    "coords": [
-      49.0181139,
-      12.0615082
-    ],
-    "date": "2026-03-21",
-    "dow": "Sa.",
-    "time": "19:30",
-    "orga": "Hayek Club",
-    "orga_www": "https://hayek.de/termine/",
-    "kontakt": "Martin Hoff & Raphael Ziertarski",
-    "e-mail": "regensburg@hayek.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
-    "name": "Hayek Club Koblenz",
-    "plz": "56068",
-    "state": "DE-RP",
-    "city": "Koblenz",
-    "city_dist": 0.4,
-    "coords": [
-      50.3494613,
-      7.5947632
-    ],
-    "date": "2026-03-22",
-    "dow": "So.",
-    "time": "17:00",
-    "orga": "Hayek Club",
-    "orga_www": "https://www.vereinonline.org/Hayekclubkoblenz/?action=events_kalender",
-    "kontakt": "Prof. Götz R. Piwinger",
-    "e-mail": "kontakt@hayek-club-koblenz.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Team Freiheit Clubabend Gießen",
     "plz": "35390",
     "state": "DE-HE",
@@ -1720,26 +1660,6 @@
     "link_qr": "img/qr_d2b252562a3294530cd5202876becd126632818b_v2.png"
   },
   {
-    "name": "Hayek Club Koblenz",
-    "plz": "56068",
-    "state": "DE-RP",
-    "city": "Koblenz",
-    "city_dist": 0.4,
-    "coords": [
-      50.3494613,
-      7.5947632
-    ],
-    "date": "2026-04-13",
-    "dow": "Mo.",
-    "time": "14:30",
-    "orga": "Hayek Club",
-    "orga_www": "https://www.vereinonline.org/Hayekclubkoblenz/?action=events_kalender",
-    "kontakt": "Prof. Götz R. Piwinger",
-    "e-mail": "kontakt@hayek-club-koblenz.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Team Freiheit Clubabend Wiesbaden",
     "plz": "65189",
     "state": "DE-HE",
@@ -1800,26 +1720,6 @@
     "link_qr": null
   },
   {
-    "name": "Hayek Club Koblenz",
-    "plz": "56068",
-    "state": "DE-RP",
-    "city": "Koblenz",
-    "city_dist": 0.4,
-    "coords": [
-      50.3494613,
-      7.5947632
-    ],
-    "date": "2026-04-26",
-    "dow": "So.",
-    "time": "17:00",
-    "orga": "Hayek Club",
-    "orga_www": "https://www.vereinonline.org/Hayekclubkoblenz/?action=events_kalender",
-    "kontakt": "Prof. Götz R. Piwinger",
-    "e-mail": "kontakt@hayek-club-koblenz.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
     "state": "DE-HE",
@@ -1856,26 +1756,6 @@
     "orga_www": "https://buendnis-libertaerer.de/",
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
-    "name": "Hayek Club Koblenz",
-    "plz": "56068",
-    "state": "DE-RP",
-    "city": "Koblenz",
-    "city_dist": 0.4,
-    "coords": [
-      50.3494613,
-      7.5947632
-    ],
-    "date": "2026-05-24",
-    "dow": "So.",
-    "time": "17:00",
-    "orga": "Hayek Club",
-    "orga_www": "https://www.vereinonline.org/Hayekclubkoblenz/?action=events_kalender",
-    "kontakt": "Prof. Götz R. Piwinger",
-    "e-mail": "kontakt@hayek-club-koblenz.de",
     "link": null,
     "link_qr": null
   },

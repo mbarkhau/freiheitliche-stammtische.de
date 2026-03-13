@@ -635,20 +635,6 @@
     "orga_webseite": "https://buendnis-bw.de/veranstaltungen/veranstaltung-in-eppingen/"
   },
   {
-    "name": "Hayek Club Weimar",
-    "beginn": "2026-02-28",
-    "ende": "2026-02-28",
-    "uhrzeit": "19:00",
-    "kw": "KW09",
-    "wochentag": "Saturday",
-    "orga": "Hayek Club",
-    "plz": "99423",
-    "kontakt": "Karla Wagner",
-    "e-mail": "hayek.club.weimar@mail.de",
-    "orga_webseite": "https://hayek.de/",
-    "group_link": "https://t.me/hayek_club_weimar"
-  },
-  {
     "name": "Staatenlos Berlin",
     "beginn": "2026-03-03",
     "ende": "2026-03-03",
@@ -993,35 +979,6 @@
     "orga_webseite": "https://www.team-freiheit.de/event/clubabend-nuernberg-21-03-26/"
   },
   {
-    "name": "Hayek Club Regensburg",
-    "beginn": "2026-03-21",
-    "ende": "2026-03-21",
-    "uhrzeit": "19:30",
-    "kw": "KW12",
-    "wochentag": "Saturday",
-    "eintrittspreis": "5-10€",
-    "orga": "Hayek Club",
-    "plz": "93049",
-    "kontakt": "Martin Hoff & Raphael Ziertarski",
-    "e-mail": "regensburg@hayek.de",
-    "orga_webseite": "https://hayek.de/termine/",
-    "infotext": "Dr. Dr. Rainer Zitelmann - Weltraumkapitalismus"
-  },
-  {
-    "name": "Hayek Club Koblenz",
-    "beginn": "2026-03-22",
-    "ende": "2026-03-22",
-    "uhrzeit": "17:00",
-    "kw": "KW12",
-    "wochentag": "Sunday",
-    "orga": "Hayek Club",
-    "plz": "56068",
-    "kontakt": "Prof. Götz R. Piwinger",
-    "e-mail": "kontakt@hayek-club-koblenz.de",
-    "orga_webseite": "https://www.vereinonline.org/Hayekclubkoblenz/?action=events_kalender",
-    "infotext": "Ralf M. Ruthardt: Im Windschatten der Narrative"
-  },
-  {
     "name": "Team Freiheit Clubabend Gießen",
     "beginn": "2026-03-23",
     "ende": "2026-03-23",
@@ -1157,20 +1114,6 @@
     "group_link": "https://t.me/+Qwc6r-bgPehmZjEy"
   },
   {
-    "name": "Hayek Club Koblenz",
-    "beginn": "2026-04-13",
-    "ende": "2026-04-13",
-    "uhrzeit": "14:30",
-    "kw": "KW16",
-    "wochentag": "Monday",
-    "orga": "Hayek Club",
-    "plz": "56068",
-    "kontakt": "Prof. Götz R. Piwinger",
-    "e-mail": "kontakt@hayek-club-koblenz.de",
-    "orga_webseite": "https://www.vereinonline.org/Hayekclubkoblenz/?action=events_kalender",
-    "infotext": "Kinofilm „GOTT“ und der ärztlich assistierte Suizid"
-  },
-  {
     "name": "Team Freiheit Clubabend Wiesbaden",
     "beginn": "2026-04-14",
     "ende": "2026-04-14",
@@ -1212,20 +1155,6 @@
     "orga_webseite": "https://buendnis-libertaerer.de/"
   },
   {
-    "name": "Hayek Club Koblenz",
-    "beginn": "2026-04-26",
-    "ende": "2026-04-26",
-    "uhrzeit": "17:00",
-    "kw": "KW17",
-    "wochentag": "Sunday",
-    "orga": "Hayek Club",
-    "plz": "56068",
-    "kontakt": "Prof. Götz R. Piwinger",
-    "e-mail": "kontakt@hayek-club-koblenz.de",
-    "orga_webseite": "https://www.vereinonline.org/Hayekclubkoblenz/?action=events_kalender",
-    "infotext": "Prof. Gerd Habermann: Wie eine Bürokratie stirbt. Aktuelle Bemerkungen zum Untergang des Römischen Reiche"
-  },
-  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "beginn": "2026-05-11",
     "ende": "2026-05-11",
@@ -1253,20 +1182,6 @@
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
     "orga_webseite": "https://buendnis-libertaerer.de/"
-  },
-  {
-    "name": "Hayek Club Koblenz",
-    "beginn": "2026-05-24",
-    "ende": "2026-05-24",
-    "uhrzeit": "17:00",
-    "kw": "KW21",
-    "wochentag": "Sunday",
-    "orga": "Hayek Club",
-    "plz": "56068",
-    "kontakt": "Prof. Götz R. Piwinger",
-    "e-mail": "kontakt@hayek-club-koblenz.de",
-    "orga_webseite": "https://www.vereinonline.org/Hayekclubkoblenz/?action=events_kalender",
-    "infotext": "Joana Cotar: Inside Bundestag - Wie ich in acht Jahren im Zentrum der Macht das Vertrauen in unsere Demokratie verlor"
   },
   {
     "name": "ROLAND BAADER Treffen",
