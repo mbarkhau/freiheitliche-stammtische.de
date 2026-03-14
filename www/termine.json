@@ -1401,23 +1401,23 @@
   },
   {
     "name": "Libertärer Stammtisch Berlin",
-    "plz": "09112",
-    "state": "DE-SN",
-    "city": "Chemnitz",
-    "city_dist": 1.0,
+    "plz": "10555",
+    "state": "DE-BE",
+    "city": "Berlin",
+    "city_dist": 4.1,
     "coords": [
-      50.830933,
-      12.9053458
+      52.519898,
+      13.3355418
     ],
     "date": "2026-03-20",
     "dow": "Fr.",
     "time": "19:00",
     "orga": "DIE LIBERTÄREN",
-    "orga_www": null,
-    "kontakt": null,
-    "e-mail": null,
-    "link": null,
-    "link_qr": null
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Sven Brajer",
+    "e-mail": "svenbrajer@web.de",
+    "link": "https://t.me/+Xzxvc2UqKuJmNmRi",
+    "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
   },
   {
     "name": "Team Freiheit Clubabend Rostock",
