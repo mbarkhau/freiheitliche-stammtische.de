@@ -1400,6 +1400,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Berlin",
+    "plz": "09112",
+    "state": "DE-SN",
+    "city": "Chemnitz",
+    "city_dist": 1.0,
+    "coords": [
+      50.830933,
+      12.9053458
+    ],
+    "date": "2026-03-20",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": null,
+    "kontakt": null,
+    "e-mail": null,
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Team Freiheit Clubabend Rostock",
     "plz": "18059",
     "state": "DE-MV",
@@ -1456,6 +1476,26 @@
     "orga_www": "https://www.team-freiheit.de/event/clubabend-nuernberg-21-03-26/",
     "kontakt": "Team Freiheit",
     "e-mail": "nuernberg@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Hayek Club Regensburg",
+    "plz": "93047",
+    "state": "DE-BY",
+    "city": "Regensburg",
+    "city_dist": 0.2,
+    "coords": [
+      49.0180393,
+      12.0975732
+    ],
+    "date": "2026-03-21",
+    "dow": "Sa.",
+    "time": "19:30",
+    "orga": "Hayek Club",
+    "orga_www": "https://hayek.de/hayek-clubs/",
+    "kontakt": "Raphael Zietarski & Martin Hoff",
+    "e-mail": "regensburg@hayek.de",
     "link": null,
     "link_qr": null
   },
