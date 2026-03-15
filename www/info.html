@@ -44,10 +44,8 @@
                 <h1 class="site-title">Freiheitliche<br>Stammtische</h1>
             </a>
             <nav class="header-right">
-                <a href="info.html" class="nav-link" aria-label="Informationen">
-                    <span style="font-family: serif; font-weight: bold; font-size: 1.5rem; line-height: 1;">i</span>
-                </a>
-                <button id="theme-toggle" aria-label="Toggle Dark Mode">✹</button>
+                <a id="info-button" href="info.html" class="nav-link" aria-label="Informationen"></a>
+                <button id="theme-toggle" aria-label="Toggle Dark Mode"></button>
             </nav>
         </div>
     </header>
@@ -64,7 +62,8 @@
         </p>
         <h2>Kontakt & Mitmachen</h2>
         <p>
-            Möchten Sie Ihren eigenen Stammtisch eintragen? Haben Sie Fragen oder Verbesserungsvorschläge? Kontaktieren Sie unseren
+            Möchten Sie Ihren eigenen Stammtisch eintragen? Haben Sie Fragen oder Verbesserungsvorschläge? Kontaktieren
+            Sie unseren
             Bundesstammtischleiter per Telegram <a href="https://t.me/LukasSchroth">https://t.me/LukasSchroth</a>
             oder E-Mail <a data-obfuaddr="wo:die-libertaeren.de,wer:lukas.schroth,text:ebenda"></a>.
             <br>
@@ -73,7 +72,8 @@
         </p>
         <h2>Haftungshinweis</h2>
         <p>
-            Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+            Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für
+            den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
         </p>
         <h2>Impressum</h2>
         <p>
@@ -124,8 +124,6 @@
                 }
 
                 localStorage.setItem('theme', newTheme);
-                const button = document.getElementById('theme-toggle');
-                if (button) button.textContent = newTheme === 'dark' ? '✹' : '☾';
             }
 
             function initTheme() {
@@ -144,7 +142,6 @@
 
                 const button = document.getElementById('theme-toggle');
                 if (button) {
-                    button.textContent = savedTheme === 'dark' ? '✹' : '☾';
                     button.addEventListener('click', toggleTheme);
                 }
             }
