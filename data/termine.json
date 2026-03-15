@@ -1033,6 +1033,20 @@
     "infotext": "Weltraumkapitalismus mit Dr. Dr. Rainer Zitelmann"
   },
   {
+    "name": "Hayek Club Koblenz",
+    "beginn": "2026-03-22",
+    "ende": "2026-03-22",
+    "uhrzeit": "17:00",
+    "kw": "KW12",
+    "wochentag": "Sunday",
+    "orga": "Hayek Club",
+    "plz": "56068",
+    "kontakt": "Prof. Ing. Götz Piwinger",
+    "e-mail": "kontakt@hayek-club-koblenz.de",
+    "orga_webseite": "hayek-club-koblenz.de",
+    "infotext": "Ralf M. Ruthardt: Im Windschatten der Narrative"
+  },
+  {
     "name": "Team Freiheit Clubabend Gießen",
     "beginn": "2026-03-23",
     "ende": "2026-03-23",
@@ -1166,6 +1180,20 @@
     "kontakt": "Christoph Berlin",
     "orga_webseite": "https://staatenlos.ch/",
     "group_link": "https://t.me/+Qwc6r-bgPehmZjEy"
+  },
+  {
+    "name": "Hayek Club Koblenz",
+    "beginn": "2026-04-13",
+    "ende": "2026-03-22",
+    "uhrzeit": "17:00",
+    "kw": "KW16",
+    "wochentag": "Monday",
+    "orga": "Hayek Club",
+    "plz": "56068",
+    "kontakt": "Prof. Ing. Götz Piwinger",
+    "e-mail": "kontakt@hayek-club-koblenz.de",
+    "orga_webseite": "hayek-club-koblenz.de",
+    "infotext": "Ralf M. Ruthardt: Im Windschatten der Narrative"
   },
   {
     "name": "Team Freiheit Clubabend Wiesbaden",

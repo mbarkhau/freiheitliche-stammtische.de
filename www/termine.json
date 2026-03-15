@@ -1540,6 +1540,26 @@
     "link_qr": null
   },
   {
+    "name": "Hayek Club Koblenz",
+    "plz": "56068",
+    "state": "DE-RP",
+    "city": "Koblenz",
+    "city_dist": 0.4,
+    "coords": [
+      50.3494613,
+      7.5947632
+    ],
+    "date": "2026-03-22",
+    "dow": "So.",
+    "time": "17:00",
+    "orga": "Hayek Club",
+    "orga_www": "hayek-club-koblenz.de",
+    "kontakt": "Prof. Ing. Götz Piwinger",
+    "e-mail": "kontakt@hayek-club-koblenz.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Team Freiheit Clubabend Gießen",
     "plz": "35390",
     "state": "DE-HE",
@@ -1738,6 +1758,26 @@
     "e-mail": null,
     "link": "https://t.me/+Qwc6r-bgPehmZjEy",
     "link_qr": "img/qr_d2b252562a3294530cd5202876becd126632818b_v2.png"
+  },
+  {
+    "name": "Hayek Club Koblenz",
+    "plz": "56068",
+    "state": "DE-RP",
+    "city": "Koblenz",
+    "city_dist": 0.4,
+    "coords": [
+      50.3494613,
+      7.5947632
+    ],
+    "date": "2026-04-13",
+    "dow": "Mo.",
+    "time": "17:00",
+    "orga": "Hayek Club",
+    "orga_www": "hayek-club-koblenz.de",
+    "kontakt": "Prof. Ing. Götz Piwinger",
+    "e-mail": "kontakt@hayek-club-koblenz.de",
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Team Freiheit Clubabend Wiesbaden",
