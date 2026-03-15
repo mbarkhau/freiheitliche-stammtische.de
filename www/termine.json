@@ -940,6 +940,46 @@
     "link_qr": null
   },
   {
+    "name": "Hayek Club Weimar",
+    "plz": "99425",
+    "state": "DE-TH",
+    "city": "Weimar",
+    "city_dist": 1.9,
+    "coords": [
+      50.9672359,
+      11.348212
+    ],
+    "date": "2026-03-01",
+    "dow": "So.",
+    "time": "19:00",
+    "orga": "Hayek Club",
+    "orga_www": "https://hayek.de/hayek-clubs/",
+    "kontakt": "Karla Wagner",
+    "e-mail": "hayek.club.weimar@mail.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Hayek Club München",
+    "plz": "80539",
+    "state": "DE-BY",
+    "city": "München",
+    "city_dist": 0.9,
+    "coords": [
+      48.1443613,
+      11.5810699
+    ],
+    "date": "2026-03-02",
+    "dow": "Mo.",
+    "time": "18:00",
+    "orga": "Hayek Club",
+    "orga_www": "https://hayek.de/hayek-clubs/",
+    "kontakt": "Florian Handwerker",
+    "e-mail": "muenchen@hayek.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Staatenlos Berlin",
     "plz": "10437",
     "state": "DE-BE",
