@@ -1,25 +1,5 @@
 [
   {
-    "name": "Libertäres Grilltreffen bei München",
-    "plz": "85276",
-    "state": "DE-BY",
-    "city": "Pfaffenhofen an der Ilm",
-    "city_dist": 2.4,
-    "coords": [
-      48.5492744,
-      11.4939959
-    ],
-    "date": "2025-09-05",
-    "dow": "Fr.",
-    "time": "18:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Florian Handwerker",
-    "e-mail": "florian.handwerker@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
     "state": "DE-HE",
