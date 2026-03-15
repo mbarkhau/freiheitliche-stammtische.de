@@ -1380,6 +1380,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Mittelhessen",
+    "plz": "35396",
+    "state": "DE-HE",
+    "city": "Gießen",
+    "city_dist": 3.8,
+    "coords": [
+      50.6141365,
+      8.7052574
+    ],
+    "date": "2026-03-18",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Stefan Bosch",
+    "e-mail": null,
+    "link": "https://t.me/+kDTzmac3wJYwMzIy",
+    "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
+  },
+  {
     "name": "Libertärer Stammtidsch Bernburg (Saale)",
     "plz": "06406",
     "state": "DE-ST",
