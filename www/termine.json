@@ -1771,7 +1771,7 @@
     ],
     "date": "2026-04-13",
     "dow": "Mo.",
-    "time": "17:00",
+    "time": "14:30",
     "orga": "Hayek Club",
     "orga_www": "hayek-club-koblenz.de",
     "kontakt": "Prof. Ing. Götz Piwinger",
@@ -1860,6 +1860,26 @@
     "link_qr": "img/qr_8e5c36a572e9dbd6210861c2172fc36cec59e676_v2.png"
   },
   {
+    "name": "Hayek Club Koblenz",
+    "plz": "56068",
+    "state": "DE-RP",
+    "city": "Koblenz",
+    "city_dist": 0.4,
+    "coords": [
+      50.3494613,
+      7.5947632
+    ],
+    "date": "2026-04-26",
+    "dow": "So.",
+    "time": "17:00",
+    "orga": "Hayek Club",
+    "orga_www": "hayek-club-koblenz.de",
+    "kontakt": "Prof. Ing. Götz Piwinger",
+    "e-mail": "kontakt@hayek-club-koblenz.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
     "state": "DE-HE",
@@ -1896,6 +1916,26 @@
     "orga_www": "https://buendnis-libertaerer.de/",
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Hayek Club Koblenz",
+    "plz": "56068",
+    "state": "DE-RP",
+    "city": "Koblenz",
+    "city_dist": 0.4,
+    "coords": [
+      50.3494613,
+      7.5947632
+    ],
+    "date": "2026-05-24",
+    "dow": "So.",
+    "time": "17:00",
+    "orga": "Hayek Club",
+    "orga_www": "hayek-club-koblenz.de",
+    "kontakt": "Prof. Ing. Götz Piwinger",
+    "e-mail": "kontakt@hayek-club-koblenz.de",
     "link": null,
     "link_qr": null
   },

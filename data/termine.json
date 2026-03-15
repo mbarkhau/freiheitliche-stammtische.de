@@ -1184,8 +1184,8 @@
   {
     "name": "Hayek Club Koblenz",
     "beginn": "2026-04-13",
-    "ende": "2026-03-22",
-    "uhrzeit": "17:00",
+    "ende": "2026-04-13",
+    "uhrzeit": "14:30",
     "kw": "KW16",
     "wochentag": "Monday",
     "orga": "Hayek Club",
@@ -1193,7 +1193,7 @@
     "kontakt": "Prof. Ing. Götz Piwinger",
     "e-mail": "kontakt@hayek-club-koblenz.de",
     "orga_webseite": "hayek-club-koblenz.de",
-    "infotext": "Ralf M. Ruthardt: Im Windschatten der Narrative"
+    "infotext": "Über ein selbstbestimmtes Lebensende: Kinofilm \"GOTT\""
   },
   {
     "name": "Team Freiheit Clubabend Wiesbaden",
@@ -1249,6 +1249,20 @@
     "group_link": "https://chat.whatsapp.com/GXH37VgBrgy50AZ35PWw1W?mode=gi_t"
   },
   {
+    "name": "Hayek Club Koblenz",
+    "beginn": "2026-04-26",
+    "ende": "2026-04-26",
+    "uhrzeit": "17:00",
+    "kw": "KW17",
+    "wochentag": "Sunday",
+    "orga": "Hayek Club",
+    "plz": "56068",
+    "kontakt": "Prof. Ing. Götz Piwinger",
+    "e-mail": "kontakt@hayek-club-koblenz.de",
+    "orga_webseite": "hayek-club-koblenz.de",
+    "infotext": "Prof. Gerd Habermann: Wie eine Bürokratie stirbt. Aktuelle Bemerkungen zum Untergang des Römischen Reiche"
+  },
+  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "beginn": "2026-05-11",
     "ende": "2026-05-11",
@@ -1276,6 +1290,20 @@
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
     "orga_webseite": "https://buendnis-libertaerer.de/"
+  },
+  {
+    "name": "Hayek Club Koblenz",
+    "beginn": "2026-05-24",
+    "ende": "2026-05-24",
+    "uhrzeit": "17:00",
+    "kw": "KW21",
+    "wochentag": "Sunday",
+    "orga": "Hayek Club",
+    "plz": "56068",
+    "kontakt": "Prof. Ing. Götz Piwinger",
+    "e-mail": "kontakt@hayek-club-koblenz.de",
+    "orga_webseite": "hayek-club-koblenz.de",
+    "infotext": "Joana Cotar: Inside Bundestag - Wie ich in acht Jahren im Zentrum der Macht das Vertrauen in unsere Demokratie verlor"
   },
   {
     "name": "ROLAND BAADER Treffen",
