@@ -282,7 +282,7 @@
 					initial: {
 						fill: colors.fill,
 						stroke: colors.stroke,
-						strokeWidth: 0.8
+						strokeWidth: 0.9
 					},
 				},
 				zoomButtons: false,
@@ -461,7 +461,6 @@
 			groups[coordKey].push(t);
 		});
 
-		const markerRadius = window.innerWidth <= 720 ? 10 : 7;
 		const colors = getMapColors();
 
 		const mapMarkers = [];
@@ -497,7 +496,7 @@
 				mapMarkers.push({
 					name: `${displayEvent.name} (${displayEvent.city})`,
 					coords: coords,
-					style: { initial: { fill: markerColor, r: markerRadius, stroke: "#333", strokeWidth: 1 } },
+					style: { initial: { fill: markerColor, r: 5, stroke: "#333", strokeWidth: 1 } },
 					ids: ids
 				});
 			});
