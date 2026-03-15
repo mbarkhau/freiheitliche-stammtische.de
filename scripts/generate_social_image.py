@@ -18,13 +18,19 @@ Options:
 
 import sys
 import json
+import logging
 import textwrap
-import datetime as dt
 import pathlib as pl
+import hashlib as hl
+import datetime as dt
+import contextlib
 
 from lib.cli import parse_args
 
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
+
+log = logging.getLogger(name="gsheet_util.py")
+
 
 # Configuration
 WIDTH, HEIGHT = 1080, 1080
@@ -35,8 +41,10 @@ SECONDARY_TEXT_COLOR = (160, 160, 160)
 URL = "https://freiheitliche-stammtische.de"
 
 DATA_PATH = pl.Path("www/termine.json")
+SOCIAL_IMG_PATH = pl.Path("www/img/social_tile.jpg")
 OUTPUT_DIR = pl.Path("social_images")
 OUTPUT_DIR.mkdir(exist_ok=True)
+MANIFEST_PATH = OUTPUT_DIR / "manifest.json"
 
 
 def get_next_week_start():
@@ -95,7 +103,43 @@ MONTH_MAP = {
 }
 
 
+
+@contextlib.contextmanager
+def images_manifest_ctx() -> dict[str, str]:
+    manifest_data_in = None
+    manifest = {}
+    try:
+        with MANIFEST_PATH.open(mode="r") as fobj:
+            manifest_data_in = fobj.read()
+        manifest = json.loads(manifest_data_in)
+    except:
+        pass
+
+    yield manifest
+
+    manifest_data_out = json.dumps(manifest)
+    if manifest_data_out == manifest_data_in:
+        return
+
+    manifest_tmp_path = MANIFEST_PATH.parent / "manifest.json.tmp"
+    with manifest_tmp_path.open(mode="w") as fobj:
+        fobj.write(manifest_data_out)
+
+    manifest_tmp_path.rename(MANIFEST_PATH)
+
+
 def generate_image(events, start_date) -> pl.Path:
+    kw_monday = start_date + dt.timedelta(days=1)
+    kw_year, kw_num, _ = kw_monday.isocalendar()
+    output_path = OUTPUT_DIR / f"social_events_{kw_year}_KW{kw_num:02d}.jpg"
+
+    events_json = json.dumps(events, sort_keys=True).encode("utf-8")
+    events_hash = hl.sha256(events_json).hexdigest()
+    with images_manifest_ctx() as manifest:
+        if manifest.get(str(output_path.name)) == events_hash:
+            log.info(f"Data unchanged for {output_path.name}")
+            return output_path
+
     bg_path = OUTPUT_DIR / "events_bg.png"
     if bg_path.exists():
         img = Image.open(bg_path).convert("RGB")
@@ -115,8 +159,6 @@ def generate_image(events, start_date) -> pl.Path:
     small_font = ImageFont.truetype("/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf", 28)
 
     # Add timeframe top right
-    kw_monday = start_date + dt.timedelta(days=1)
-    kw_year, kw_num, _ = kw_monday.isocalendar()
     # draw.text(text="STAMMTISCH\nTERMINE", xy=(WIDTH - 60, 60), spacing=6, font=headline_font, fill=TEXT_COLOR, anchor="ra", align="right")
     # draw.text(text=f"KW{kw_num:02d}\n{kw_year}", xy=(60, 60), font=kw_font, fill=TEXT_COLOR, anchor="la", align="left")
     draw.text(text=f"KW{kw_num:02d}\n{kw_year}", xy=(WIDTH - 80, 80), font=kw_font, fill=(200, 200, 200), anchor="ra", align="right")
@@ -198,9 +240,26 @@ def generate_image(events, start_date) -> pl.Path:
     # draw_text(draw, text=footer_text, xy=(x_margin, HEIGHT - 150), font=footer_font, fill=ACCENT_COLOR)
     # draw_text(draw, text="Alle Libertären Treffen auf einen Blick", xy=(x_margin, HEIGHT - 90), font=small_font, fill=SECONDARY_TEXT_COLOR)
 
-    output_path = OUTPUT_DIR / f"social_events_{kw_year}_KW{kw_num:02d}.jpg"
     img.save(output_path, quality=85)
+    output_path.copy(SOCIAL_IMG_PATH)
+
+    with images_manifest_ctx() as manifest:
+        manifest[str(output_path.name)] = events_hash
+
     return output_path
+
+
+def gen_image(start_date: dt.date):
+    with DATA_PATH.open(mode="r") as fobj:
+        events = json.load(fobj)
+
+    filtered = filter_events(events, start_date)
+
+    if filtered:
+        generate_image(filtered, start_date)
+    else:
+        log.warn(f"No events found for week starting {start_date.strftime('%Y-%m-%d')}")
+
 
 
 def main():
@@ -209,9 +268,6 @@ def main():
     if not DATA_PATH.exists():
         print(f"Error: {DATA_PATH} not found.")
         return
-
-    with DATA_PATH.open(mode="r") as fobj:
-        events = json.load(fobj)
 
     if args.kw:
         target_kw = int(args.kw)
@@ -229,15 +285,8 @@ def main():
         start_date = dt.date.fromisocalendar(target_year, target_kw, 1) - dt.timedelta(days=1)
     else:
         start_date = get_next_week_start()
-
-    filtered = filter_events(events, start_date)
-
-    if not filtered:
-        print(f"No events found for week starting {start_date.strftime('%Y-%m-%d')}")
-        return
-
-    output_file = generate_image(filtered, start_date)
-    print(f"Successfully generated image: {output_file}")
+    
+    gen_image(start_date)
 
 if __name__ == "__main__":
     main()

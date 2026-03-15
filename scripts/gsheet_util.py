@@ -58,6 +58,8 @@ from geopy.distance import geodesic
 
 from PIL import Image
 
+import generate_social_image 
+
 
 log = logging.getLogger(name="gsheet_util.py")
 
@@ -601,6 +603,8 @@ def sync_cmd(sheet_id: str) -> int:
     cache_key = None
     while True:
         try:
+            generate_social_image.gen_image(dt.date.today())
+
             sheet = GSheet(sheet_id=sheet_id)
             new_cache_key = sheet.cache_key()
             if cache_key == new_cache_key:
