@@ -18,6 +18,7 @@ Options:
 
 import sys
 import json
+import shutil
 import logging
 import textwrap
 import pathlib as pl
@@ -241,7 +242,7 @@ def generate_image(events, start_date) -> pl.Path:
     # draw_text(draw, text="Alle Libertären Treffen auf einen Blick", xy=(x_margin, HEIGHT - 90), font=small_font, fill=SECONDARY_TEXT_COLOR)
 
     img.save(output_path, quality=85)
-    output_path.copy(SOCIAL_IMG_PATH)
+    shutil.copy(output_path, SOCIAL_IMG_PATH)
 
     with images_manifest_ctx() as manifest:
         manifest[str(output_path.name)] = events_hash
