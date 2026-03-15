@@ -634,6 +634,13 @@
     "orga_webseite": "https://buendnis-bw.de/veranstaltungen/veranstaltung-in-eppingen/"
   },
   {
+    "name": "Hayek Club München",
+    "beginn": "2026-03-02",
+    "ende": "2026-03-02",
+    "kw": "KW10",
+    "wochentag": "Monday"
+  },
+  {
     "name": "Staatenlos Berlin",
     "beginn": "2026-03-03",
     "ende": "2026-03-03",
