@@ -16,4 +16,4 @@ deps:
 .PHONY: serve
 serve:
 	@echo "http://localhost:8085"
-	@python3 -m http.server 8085 -d www
+	@uvx sanic ./www --simple -p 8085 --access-logs

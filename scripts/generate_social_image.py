@@ -122,7 +122,7 @@ def generate_image(events, start_date) -> pl.Path:
     draw.text(text=f"KW{kw_num:02d}\n{kw_year}", xy=(WIDTH - 80, 80), font=kw_font, fill=(200, 200, 200), anchor="ra", align="right")
 
     # Events offset
-    y_offset = 120
+    y_offset = 150
     row_height = 80
     max_events = 8
     
@@ -176,13 +176,12 @@ def generate_image(events, start_date) -> pl.Path:
         
         y_offset += 30
 
-        if y_offset > HEIGHT - 250:
+        if y_offset > HEIGHT - 220:
             break
         
     shadow_layer = shadow_layer.filter(ImageFilter.GaussianBlur(radius=8))
     img.paste(shadow_layer, (0, 0), shadow_layer)
     img.paste(text_layer, (0, 0), text_layer)
-
 
     # QR Code
     # import qrcode
@@ -199,9 +198,10 @@ def generate_image(events, start_date) -> pl.Path:
     # draw_text(draw, text=footer_text, xy=(x_margin, HEIGHT - 150), font=footer_font, fill=ACCENT_COLOR)
     # draw_text(draw, text="Alle Libertären Treffen auf einen Blick", xy=(x_margin, HEIGHT - 90), font=small_font, fill=SECONDARY_TEXT_COLOR)
 
-    output_path = OUTPUT_DIR / f"social_events_{kw_year}_KW{kw_num:02d}.png"
-    img.save(output_path)
+    output_path = OUTPUT_DIR / f"social_events_{kw_year}_KW{kw_num:02d}.jpg"
+    img.save(output_path, quality=85)
     return output_path
+
 
 def main():
     _, args = parse_args(sys.argv[1:], __doc__)

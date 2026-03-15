@@ -72,6 +72,7 @@ _CITIES_DATA = _CITIES_PATH.open(mode="r", encoding="utf-8").read()
 CITIES: list[dict[str, str | int | list[float]]] = json.loads(_CITIES_DATA)
 
 
+@disk_cache.cache(name=APP_USER_AGENT)
 def find_nearest_city(lat: float, lon: float) -> tuple[dict | None, float]:
     nearest_city = None
     nearest_dist = float('inf')
@@ -90,7 +91,7 @@ def find_nearest_city(lat: float, lon: float) -> tuple[dict | None, float]:
         return (None, 0.0)
 
 
-@disk_cache.cache(APP_USER_AGENT)
+@disk_cache.cache(name=APP_USER_AGENT)
 @rate_limit(min_interval=1.5)
 def geolocate(plz: str) -> tuple[str, str, Lat, Lon] | None:
     geolocator = get_geocoder_for_service("nominatim")(user_agent=APP_USER_AGENT)
@@ -496,6 +497,70 @@ def download_gsheet(
             yield {key: val for key, val in entry.items() if val}
 
 
+def _iter_event_items(termine: list) -> typ.Generator[dict, None, None]:
+    import time
+
+    www_dir = pl.Path("www")
+
+    # Generate termine.json for the map
+    for termin in termine:
+        tzero = time.time()
+        group_link = termin.get('group_link')
+        if group_link:
+            qr_digest = hl.sha1(group_link.encode("utf-8")).hexdigest()
+            link_qr_path = www_dir / "img" / ("qr_" + qr_digest + "_v2.png")
+        else:
+            link_qr_path = None
+
+        if link_qr_path and not link_qr_path.exists():
+            box_size = 3
+            img = qrcode.make(group_link, box_size=box_size, version=6, error_correction=qrcode.constants.ERROR_CORRECT_H)
+            if "https://t.me" in group_link:
+                overlay = Image.open(www_dir / "img" / "telegram_128.png")
+            elif "https://chat.whatsapp.com" in group_link:
+                overlay = Image.open(www_dir / "img" / "whatsapp_128.png")
+            elif "https://signal.group" in group_link:
+                overlay = Image.open(www_dir / "img" / "signal_128.png")
+            else:
+                raise ValueError(f"Unknown group_link type: {termin}")
+
+            overlay = overlay.convert("RGBA")
+            overlay = overlay.resize((box_size * 12, box_size * 12))
+            img = img.convert("RGBA")
+            img.paste(overlay, (img.width // 2 - overlay.width // 2, img.height // 2 - overlay.height // 2), overlay)
+            img.save(link_qr_path)
+
+        termin["link_qr_path"] = link_qr_path
+
+        try:
+
+            termin["plz"] = termin["plz"].strip()
+            location = plz_location_lookup(termin["plz"])
+            if location is None:
+                continue
+
+            yield {
+                "name": termin.get("name", termin.get("ort", "Unknown")),
+                "plz": termin["plz"],
+                "state": location.plz_state,
+                "city": location.nearest.get("name", "Unknown"),
+                "city_dist": round(location.city_dist, 1),
+                "coords": [location.lat, location.lon],
+                "date": termin['beginn'].split(" ")[0],
+                "dow": util.EN_DE_WEEKDAYS.get(termin['wochentag'], termin['wochentag']),
+                "time": termin['uhrzeit'],
+                "orga": termin.get('orga'),
+                "orga_www": termin.get('orga_webseite'),
+                "kontakt": termin.get('kontakt'),
+                "e-mail": termin.get('e-mail'),
+                "link": group_link,
+                "link_qr": "img/" + link_qr_path.name if link_qr_path else None,
+            }
+        except KeyError as err:
+            log.warning(f"Skipping invalid termin: {termin}")
+            log.warning(f"Error: {repr(err)}")
+
+
 def _sync_once(sheet_id: str) -> None:
     data_dir = pl.Path("data")
     data_dir.mkdir(exist_ok=True)
@@ -519,58 +584,7 @@ def _sync_once(sheet_id: str) -> None:
 
     log.info(f"Saved {len(termine)} items to www/termine.json")
 
-    # Generate termine.json for the map
-    event_items = []
-    for termin in termine:
-        link = termin.get('telegram') or termin.get('signal')
-        if link:
-            qr_digest = hl.sha1(link.encode("utf-8")).hexdigest()
-            link_qr_path = www_dir / "img" / ("qr_" + qr_digest + ".png")
-            box_size = 3
-            img = qrcode.make(link, box_size=box_size, version=6, error_correction=qrcode.constants.ERROR_CORRECT_H)
-            if termin.get('telegram'):
-                overlay = Image.open(www_dir / "img" / "telegram_128.png")
-            elif termin.get('signal'):
-                overlay = Image.open(www_dir / "img" / "signal_128.png")
-            else:
-                raise ValueError(f"Unknown link type: {termin}")
-
-            overlay = overlay.convert("RGBA")
-            overlay = overlay.resize((box_size * 12, box_size * 12))
-            img = img.convert("RGBA")
-            img.paste(overlay, (img.width // 2 - overlay.width // 2, img.height // 2 - overlay.height // 2), overlay)
-            img.save(link_qr_path)
-        else:
-            link_qr_path = None
-
-        termin["link_qr_path"] = link_qr_path
-
-        try:
-            termin["plz"] = termin["plz"].strip()
-            location = plz_location_lookup(termin["plz"])
-            if location is None:
-                continue
-
-            event_items.append({
-                "name": termin.get("name", termin.get("ort", "Unknown")),
-                "plz": termin["plz"],
-                "state": location.plz_state,
-                "city": location.nearest.get("name", "Unknown"),
-                "city_dist": round(location.city_dist, 1),
-                "coords": [location.lat, location.lon],
-                "date": termin['beginn'].split(" ")[0],
-                "dow": util.EN_DE_WEEKDAYS.get(termin['wochentag'], termin['wochentag']),
-                "time": termin['uhrzeit'],
-                "orga": termin.get('orga'),
-                "orga_www": termin.get('orga_webseite'),
-                "kontakt": termin.get('kontakt'),
-                "e-mail": termin.get('e-mail'),
-                "link": link,
-                "link_qr": "img/" + link_qr_path.name if link_qr_path else None,
-            })
-        except KeyError as err:
-            log.warning(f"Skipping invalid termin: {termin}")
-            log.warning(f"Error: {repr(err)}")
+    event_items = list(_iter_event_items(termine))
 
     with (www_dir / "termine.json").open(mode="w", encoding="utf-8") as fobj:
         json.dump(event_items, fobj, indent=2, ensure_ascii=False)

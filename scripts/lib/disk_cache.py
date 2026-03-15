@@ -81,10 +81,11 @@ def cache_ctx(filename: str) -> typ.Generator[CachedDict, None, None]:
 def cache(name: str = "__sentinel__"):
     def decorator(func: typ.Callable):
         if name == "__sentinel__":
-            fname_txt = __file__ + "::" + func.__name__
-            filename = hl.sha1(fname_txt.encode("ascii")).hexdigest()
+            func_name_txt = __file__ + "::" + func.__name__
         else:
-            filename = hl.sha1(name.encode("utf-8")).hexdigest()
+            func_name_txt = name + "::" + func.__name__
+
+        filename = hl.sha1(func_name_txt.encode("utf-8")).hexdigest()
 
         @ft.wraps(func)
         def dec(*args, **kwargs) -> typ.Any:
