@@ -1860,6 +1860,26 @@
     "link_qr": "img/qr_23274c9fc6cadf29188310825155956e925da24c_v2.png"
   },
   {
+    "name": "Libertärer Stammtisch Dresden",
+    "plz": "01237",
+    "state": "DE-SN",
+    "city": "Dresden",
+    "city_dist": 5.7,
+    "coords": [
+      51.0182471,
+      13.8020866
+    ],
+    "date": "2026-04-24",
+    "dow": "Fr.",
+    "time": "18:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Joachim Teske",
+    "e-mail": "joachim.teske@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Hayek Club Koblenz",
     "plz": "56068",
     "state": "DE-RP",
