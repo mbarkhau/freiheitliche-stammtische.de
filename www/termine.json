@@ -1840,26 +1840,6 @@
     "link_qr": null
   },
   {
-    "name": "Libertärer Stammtisch Ansbach",
-    "plz": "91522",
-    "state": "DE-BY",
-    "city": "Lichtenau",
-    "city_dist": 9.1,
-    "coords": [
-      49.2888745,
-      10.5597693
-    ],
-    "date": "2026-04-11",
-    "dow": "Sa.",
-    "time": "19:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Tante Droll",
-    "e-mail": "Baader-Bande@proton.me",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Staatenlos Berlin",
     "plz": "10437",
     "state": "DE-BE",
@@ -1940,6 +1920,26 @@
     "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
   },
   {
+    "name": "Libertärer Stammtisch Bernburg (Saale)",
+    "plz": "06406",
+    "state": "DE-ST",
+    "city": "Bernburg",
+    "city_dist": 1.8,
+    "coords": [
+      51.7825763,
+      11.7556064
+    ],
+    "date": "2026-04-16",
+    "dow": "Do.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
     "state": "DE-NW",
@@ -1978,6 +1978,26 @@
     "e-mail": null,
     "link": "https://chat.whatsapp.com/GXH37VgBrgy50AZ35PWw1W",
     "link_qr": "img/qr_23274c9fc6cadf29188310825155956e925da24c_v2.png"
+  },
+  {
+    "name": "Libertarer Stammtisch Aschersleben",
+    "plz": "06449",
+    "state": "DE-ST",
+    "city": "Aschersleben",
+    "city_dist": 3.3,
+    "coords": [
+      51.7810358,
+      11.4874926
+    ],
+    "date": "2026-04-22",
+    "dow": "Mi.",
+    "time": "18:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Dresden",
@@ -2060,6 +2080,86 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Dessau",
+    "plz": "06844",
+    "state": "DE-ST",
+    "city": "Dessau",
+    "city_dist": 2.9,
+    "coords": [
+      51.8504299,
+      12.270401
+    ],
+    "date": "2026-05-04",
+    "dow": "Mo.",
+    "time": "18:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Hamburg",
+    "plz": "20095",
+    "state": "DE-HH",
+    "city": "Hamburg",
+    "city_dist": 0.1,
+    "coords": [
+      53.5512868,
+      9.9992216
+    ],
+    "date": "2026-05-06",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Ferdinand Steinhöfel",
+    "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "plz": "73033",
+    "state": "DE-BW",
+    "city": "Göppingen",
+    "city_dist": 0.6,
+    "coords": [
+      48.7088631,
+      9.6538145
+    ],
+    "date": "2026-05-07",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Ansbach",
+    "plz": "91522",
+    "state": "DE-BY",
+    "city": "Lichtenau",
+    "city_dist": 9.1,
+    "coords": [
+      49.2888745,
+      10.5597693
+    ],
+    "date": "2026-05-09",
+    "dow": "Sa.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
     "state": "DE-HE",
@@ -2078,6 +2178,46 @@
     "e-mail": "lukas.schroth@die-libertaeren.de",
     "link": "https://t.me/+WgMHpki_VXZkYWIy",
     "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Halle (Saale)",
+    "plz": "06108",
+    "state": "DE-ST",
+    "city": "Halle (Saale)",
+    "city_dist": 1.1,
+    "coords": [
+      51.4904352,
+      11.9628501
+    ],
+    "date": "2026-05-13",
+    "dow": "Mi.",
+    "time": "18:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Grevenbroich",
+    "plz": "41515",
+    "state": "DE-NW",
+    "city": "Grevenbroich",
+    "city_dist": 1.5,
+    "coords": [
+      51.0819233,
+      6.6057095
+    ],
+    "date": "2026-05-15",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": "https://ef-magazin.de/",
+    "kontakt": "Martin Moczarski",
+    "e-mail": "moczarski@ef-magazin.de",
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertäres Treffen Dortmund",
@@ -2136,6 +2276,26 @@
     "orga_www": "https://rolandbaader-treffen.de/treffen2026/",
     "kontakt": null,
     "e-mail": null,
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Ansbach",
+    "plz": "91522",
+    "state": "DE-BY",
+    "city": "Lichtenau",
+    "city_dist": 9.1,
+    "coords": [
+      49.2888745,
+      10.5597693
+    ],
+    "date": "2026-06-13",
+    "dow": "Sa.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
     "link": null,
     "link_qr": null
   },
