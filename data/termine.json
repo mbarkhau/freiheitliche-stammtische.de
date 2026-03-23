@@ -1,9 +1,5 @@
 [
   {
-    "kw": "KW52",
-    "wochentag": "Saturday"
-  },
-  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "beginn": "2025-11-04",
     "ende": "2025-11-04",
@@ -1486,6 +1482,33 @@
     "tournus": "Jeder 2. Mittwoch"
   },
   {
+    "name": "Libertärer Stammtisch Magdeburg",
+    "beginn": "2026-05-14",
+    "ende": "2026-04-09",
+    "uhrzeit": "19:30",
+    "kw": "KW20",
+    "wochentag": "Thursday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "39104",
+    "kontakt": "Mathias Hummel",
+    "e-mail": "events@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Libertärer Stammtisch in Balingen / Württemberg",
+    "beginn": "2026-05-14",
+    "ende": "2026-05-14",
+    "uhrzeit": "19:30",
+    "kw": "KW20",
+    "wochentag": "Thursday",
+    "orga": "Unabhängig",
+    "plz": "72336",
+    "kontakt": "Fritz Maulbetsch",
+    "e-mail": "lnb@maulbetsch.net",
+    "tournus": "Jeder 2. Donnerstag",
+    "group_link": "https://t.me/FreeFritz"
+  },
+  {
     "name": "Libertärer Stammtisch Grevenbroich",
     "beginn": "2026-05-15",
     "ende": "2026-05-15",
@@ -1497,6 +1520,19 @@
     "kontakt": "Martin Moczarski",
     "e-mail": "moczarski@ef-magazin.de",
     "orga_webseite": "https://ef-magazin.de/"
+  },
+  {
+    "name": "Libertärer Stammtisch Bernburg (Saale)",
+    "beginn": "2026-05-21",
+    "ende": "2026-05-21",
+    "uhrzeit": "18:30",
+    "kw": "KW21",
+    "wochentag": "Thursday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "06406",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/"
   },
   {
     "name": "Libertäres Treffen Dortmund",
