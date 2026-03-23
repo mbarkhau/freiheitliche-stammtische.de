@@ -1880,6 +1880,26 @@
     "link_qr": null
   },
   {
+    "name": "Team Freiheit Clubabend Osnabrück",
+    "plz": "49074",
+    "state": "DE-NI",
+    "city": "Osnabrück",
+    "city_dist": 0.7,
+    "coords": [
+      52.2770776,
+      8.0544842
+    ],
+    "date": "2026-04-24",
+    "dow": "Fr.",
+    "time": "18:30",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-osnabrueck-06-03-26/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "osnabrueck@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Team Freiheit Clubabend Berlin",
     "plz": "10555",
     "state": "DE-BE",
@@ -1893,9 +1913,9 @@
     "dow": "So.",
     "time": "17:00",
     "orga": "Team Freiheit",
-    "orga_www": null,
+    "orga_www": "https://www.team-freiheit.de/events/",
     "kontakt": "Team Freiheit",
-    "e-mail": null,
+    "e-mail": "berlin@team-freiheit.de",
     "link": null,
     "link_qr": null
   },

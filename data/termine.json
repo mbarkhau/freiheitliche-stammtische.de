@@ -1263,6 +1263,19 @@
     "orga_webseite": "https://die-libertaeren.de/"
   },
   {
+    "name": "Team Freiheit Clubabend Osnabrück",
+    "beginn": "2026-04-24",
+    "ende": "2026-04-24",
+    "uhrzeit": "18:30",
+    "kw": "KW17",
+    "wochentag": "Friday",
+    "orga": "Team Freiheit",
+    "plz": "49074",
+    "kontakt": "Team Freiheit",
+    "e-mail": "osnabrueck@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-osnabrueck-06-03-26/"
+  },
+  {
     "name": "Team Freiheit Clubabend Berlin",
     "beginn": "2026-04-26",
     "ende": "2026-04-26",
@@ -1271,7 +1284,9 @@
     "wochentag": "Sunday",
     "orga": "Team Freiheit",
     "plz": "10555",
-    "kontakt": "Team Freiheit"
+    "kontakt": "Team Freiheit",
+    "e-mail": "berlin@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events/"
   },
   {
     "name": "Hayek Club Koblenz",
