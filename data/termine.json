@@ -1290,6 +1290,7 @@
     "kontakt": "Lukas Schroth",
     "e-mail": "lukas.schroth@die-libertaeren.de",
     "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Dritter Mittwoch des Monats",
     "group_link": "https://t.me/+qhX3l_Dn_VpkNmYy"
   },
   {
@@ -1520,6 +1521,22 @@
     "kontakt": "Martin Moczarski",
     "e-mail": "moczarski@ef-magazin.de",
     "orga_webseite": "https://ef-magazin.de/"
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Bergstraße",
+    "beginn": "2026-05-20",
+    "ende": "2026-05-20",
+    "uhrzeit": "19:00",
+    "kw": "KW21",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "64673",
+    "telegram_group_id": "5205303336",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Dritter Mittwoch des Monats",
+    "group_link": "https://t.me/+qhX3l_Dn_VpkNmYy"
   },
   {
     "name": "Libertärer Stammtisch Bernburg (Saale)",
