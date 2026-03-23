@@ -1380,7 +1380,7 @@
     "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
   },
   {
-    "name": "Libertärer Stammtidsch Bernburg (Saale)",
+    "name": "Libertärer Stammtisch Bernburg (Saale)",
     "plz": "06406",
     "state": "DE-ST",
     "city": "Bernburg",
@@ -1876,6 +1876,26 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Dr. Joachim Teske",
     "e-mail": "joachim.teske@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Team Freiheit Clubabend Berlin",
+    "plz": "10555",
+    "state": "DE-BE",
+    "city": "Berlin",
+    "city_dist": 4.1,
+    "coords": [
+      52.519898,
+      13.3355418
+    ],
+    "date": "2026-04-26",
+    "dow": "So.",
+    "time": "17:00",
+    "orga": "Team Freiheit",
+    "orga_www": null,
+    "kontakt": "Team Freiheit",
+    "e-mail": null,
     "link": null,
     "link_qr": null
   },
