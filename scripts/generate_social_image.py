@@ -103,7 +103,28 @@ MONTH_MAP = {
     "December" : "Dez",
 }
 
+ORGA_BRANDING = {
+    "Unabhängig": ("logo_256.png", "#EEEEEE"),
+    "DIE LIBERTÄREN": ("logo_die-libertaeren.png", "#EEEEEE"),
+    "Hayek Club": ("logo_hayek-club.png", "#EEEEEE"),
+    "Staatenlos": ("logo_staatenlos.png", "#FCC920"),
+    "Free Cities Foundation": ("logo_free-cities.png", "#EEEEEE"),
+    "Bündnis Libertärer": ("logo_blib.png", "#EEEEEE"),
+    "Bündnis Deutschland": ("logo_bd.png", "#EEEEEE"),
+    "Milei Institut": ("logo_milei-institut.png", "#d0d0d0"),
+    "Partei der Vernunft": ("logo_pdv.png", "#EEEEEE"),
+    "Team Freiheit": ("logo_tf.png", "#122E76"),
+}
 
+def get_orga_logo(orga: str) -> tuple[str, str]:
+    if not orga:
+        return "logo_256.png", "#EEEEEE"
+    if orga in ORGA_BRANDING:
+        return ORGA_BRANDING[orga]
+    for key, logo_bg in ORGA_BRANDING.items():
+        if key in orga:
+            return logo_bg
+    return "logo_256.png", "#EEEEEE"
 
 @contextlib.contextmanager
 def images_manifest_ctx() -> dict[str, str]:
