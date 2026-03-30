@@ -1,4 +1,4 @@
-#!/usr/bin/env -S uv run --script
+#!/usr/bin/env -S uv run --exclude-newer 2026-02-01 --script
 # /// script
 # requires-python = ">=3.13"
 # dependencies = [
@@ -6,7 +6,7 @@
 #   "requests~=2.32.3",
 #   "geopy~=2.4.1",
 #   "qrcode~=8.2",
-#   "Pillow~=12.1.0",
+#   "Pillow~=11.3.0",
 #   "google-api-python-client~=2.188.0",
 #   "google-auth~=2.38.0",
 # ]
@@ -29,7 +29,6 @@ Options:
     -q, --quiet                Enable quiet logging
     -h, --help                 Show this help message and exit
 """
-
 import io
 import re
 import sys
