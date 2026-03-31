@@ -1120,6 +1120,26 @@
     "link_qr": "img/qr_ef087f17a9fa9da441aa97662e877464dbbed792_v2.png"
   },
   {
+    "name": "Staatenlos Bergisch Gladbach",
+    "plz": "51465",
+    "state": "DE-NW",
+    "city": "Bergisch Gladbach",
+    "city_dist": 1.1,
+    "coords": [
+      50.995022,
+      7.143537
+    ],
+    "date": "2026-03-06",
+    "dow": "Fr.",
+    "time": "17:00",
+    "orga": "Staatenlos",
+    "orga_www": "https://staatenlos.ch/",
+    "kontakt": "Svenja",
+    "e-mail": null,
+    "link": "https://t.me/+aLRn2FSy7qoyZDI6",
+    "link_qr": "img/qr_ef087f17a9fa9da441aa97662e877464dbbed792_v2.png"
+  },
+  {
     "name": "Staatenlos Köln",
     "plz": "50667",
     "state": "DE-NW",
