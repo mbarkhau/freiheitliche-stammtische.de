@@ -145,7 +145,8 @@
     "plz": "01662",
     "kontakt": "Dr. Joachim Teske",
     "e-mail": "joachim.teske@die-libertaeren.de",
-    "orga_webseite": "https://die-libertaeren.de/"
+    "orga_webseite": "https://die-libertaeren.de/",
+    "group_link": "https://t.me/+kXYK3OtoB0AxYTAy"
   },
   {
     "name": "Libertärer Stammtisch Mittelhessen",
@@ -281,7 +282,8 @@
     "plz": "01662",
     "kontakt": "Dr. Joachim Teske",
     "e-mail": "joachim.teske@die-libertaeren.de",
-    "orga_webseite": "https://die-libertaeren.de/"
+    "orga_webseite": "https://die-libertaeren.de/",
+    "group_link": "https://t.me/+kXYK3OtoB0AxYTAy"
   },
   {
     "name": "Libertärer Stammtisch Grevenbroich",
@@ -508,7 +510,8 @@
     "plz": "01662",
     "kontakt": "Dr. Joachim Teske",
     "e-mail": "joachim.teske@die-libertaeren.de",
-    "orga_webseite": "https://die-libertaeren.de/"
+    "orga_webseite": "https://die-libertaeren.de/",
+    "group_link": "https://t.me/+kXYK3OtoB0AxYTAy"
   },
   {
     "name": "Libertärer Stammtisch Mittelhessen",
@@ -753,20 +756,6 @@
     "group_link": "https://t.me/+aLRn2FSy7qoyZDI6"
   },
   {
-    "name": "Staatenlos Bergisch Gladbach",
-    "beginn": "2026-03-06",
-    "ende": "2026-03-06",
-    "uhrzeit": "17:00",
-    "kw": "KW10",
-    "wochentag": "Friday",
-    "orga": "Staatenlos",
-    "plz": "51465",
-    "telegram_group_id": "2660334500",
-    "kontakt": "Svenja",
-    "orga_webseite": "https://staatenlos.ch/",
-    "group_link": "https://t.me/+aLRn2FSy7qoyZDI6"
-  },
-  {
     "name": "Staatenlos Köln",
     "beginn": "2026-03-07",
     "ende": "2026-03-07",
@@ -921,7 +910,8 @@
     "plz": "01237",
     "kontakt": "Dr. Joachim Teske",
     "e-mail": "joachim.teske@die-libertaeren.de",
-    "orga_webseite": "https://die-libertaeren.de/"
+    "orga_webseite": "https://die-libertaeren.de/",
+    "group_link": "https://t.me/+kXYK3OtoB0AxYTAy"
   },
   {
     "name": "Libertärer Stammtisch Mittelhessen",
@@ -1238,6 +1228,20 @@
     "orga_webseite": "https://ef-magazin.de/"
   },
   {
+    "name": "Staatenlos Neuss",
+    "beginn": "2026-04-10",
+    "ende": "2026-04-10",
+    "uhrzeit": "17:00",
+    "kw": "KW15",
+    "wochentag": "Friday",
+    "orga": "Staatenlos",
+    "plz": "41460",
+    "telegram_group_id": "2660334500",
+    "kontakt": "Svenja",
+    "orga_webseite": "https://staatenlos.ch/",
+    "group_link": "https://t.me/+aLRn2FSy7qoyZDI6"
+  },
+  {
     "name": "Libertärer Stammtisch Ansbach",
     "beginn": "2026-04-11",
     "ende": "2026-04-11",
@@ -1369,7 +1373,23 @@
     "plz": "01237",
     "kontakt": "Dr. Joachim Teske",
     "e-mail": "joachim.teske@die-libertaeren.de",
-    "orga_webseite": "https://die-libertaeren.de/"
+    "orga_webseite": "https://die-libertaeren.de/",
+    "group_link": "https://t.me/+kXYK3OtoB0AxYTAy"
+  },
+  {
+    "name": "Libertärer Stammtisch Berlin",
+    "beginn": "2026-04-24",
+    "ende": "2026-04-24",
+    "uhrzeit": "19:00",
+    "kw": "KW17",
+    "wochentag": "Friday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "10555",
+    "telegram_group_id": "2995740483",
+    "kontakt": "Dr. Sven Brajer",
+    "e-mail": "svenbrajer@web.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "group_link": "https://t.me/+Xzxvc2UqKuJmNmRi"
   },
   {
     "name": "Team Freiheit Clubabend Osnabrück",

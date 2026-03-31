@@ -216,8 +216,8 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Dr. Joachim Teske",
     "e-mail": "joachim.teske@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
+    "link": "https://t.me/+kXYK3OtoB0AxYTAy",
+    "link_qr": "img/qr_5565c4d9b4b29ecef348f944574ba5e63942a5bc_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Mittelhessen",
@@ -416,8 +416,8 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Dr. Joachim Teske",
     "e-mail": "joachim.teske@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
+    "link": "https://t.me/+kXYK3OtoB0AxYTAy",
+    "link_qr": "img/qr_5565c4d9b4b29ecef348f944574ba5e63942a5bc_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Grevenbroich",
@@ -756,8 +756,8 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Dr. Joachim Teske",
     "e-mail": "joachim.teske@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
+    "link": "https://t.me/+kXYK3OtoB0AxYTAy",
+    "link_qr": "img/qr_5565c4d9b4b29ecef348f944574ba5e63942a5bc_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Mittelhessen",
@@ -1120,26 +1120,6 @@
     "link_qr": "img/qr_ef087f17a9fa9da441aa97662e877464dbbed792_v2.png"
   },
   {
-    "name": "Staatenlos Bergisch Gladbach",
-    "plz": "51465",
-    "state": "DE-NW",
-    "city": "Bergisch Gladbach",
-    "city_dist": 1.1,
-    "coords": [
-      50.995022,
-      7.143537
-    ],
-    "date": "2026-03-06",
-    "dow": "Fr.",
-    "time": "17:00",
-    "orga": "Staatenlos",
-    "orga_www": "https://staatenlos.ch/",
-    "kontakt": "Svenja",
-    "e-mail": null,
-    "link": "https://t.me/+aLRn2FSy7qoyZDI6",
-    "link_qr": "img/qr_ef087f17a9fa9da441aa97662e877464dbbed792_v2.png"
-  },
-  {
     "name": "Staatenlos Köln",
     "plz": "50667",
     "state": "DE-NW",
@@ -1376,8 +1356,8 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Dr. Joachim Teske",
     "e-mail": "joachim.teske@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
+    "link": "https://t.me/+kXYK3OtoB0AxYTAy",
+    "link_qr": "img/qr_5565c4d9b4b29ecef348f944574ba5e63942a5bc_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Mittelhessen",
@@ -1840,6 +1820,26 @@
     "link_qr": null
   },
   {
+    "name": "Staatenlos Neuss",
+    "plz": "41460",
+    "state": "DE-NW",
+    "city": "Düsseldorf",
+    "city_dist": 5.1,
+    "coords": [
+      51.2074219,
+      6.708413
+    ],
+    "date": "2026-04-10",
+    "dow": "Fr.",
+    "time": "17:00",
+    "orga": "Staatenlos",
+    "orga_www": "https://staatenlos.ch/",
+    "kontakt": "Svenja",
+    "e-mail": null,
+    "link": "https://t.me/+aLRn2FSy7qoyZDI6",
+    "link_qr": "img/qr_ef087f17a9fa9da441aa97662e877464dbbed792_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Ansbach",
     "plz": "91522",
     "state": "DE-BY",
@@ -2036,8 +2036,28 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Dr. Joachim Teske",
     "e-mail": "joachim.teske@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
+    "link": "https://t.me/+kXYK3OtoB0AxYTAy",
+    "link_qr": "img/qr_5565c4d9b4b29ecef348f944574ba5e63942a5bc_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Berlin",
+    "plz": "10555",
+    "state": "DE-BE",
+    "city": "Berlin",
+    "city_dist": 4.1,
+    "coords": [
+      52.519898,
+      13.3355418
+    ],
+    "date": "2026-04-24",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Sven Brajer",
+    "e-mail": "svenbrajer@web.de",
+    "link": "https://t.me/+Xzxvc2UqKuJmNmRi",
+    "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
   },
   {
     "name": "Team Freiheit Clubabend Osnabrück",
