@@ -1147,19 +1147,6 @@
     "tournus": "Jeder 1. Mittwoch"
   },
   {
-    "name": "Libertärer Stammtisch Göppingen/Esslingen",
-    "beginn": "2026-04-02",
-    "ende": "2026-04-02",
-    "uhrzeit": "19:30",
-    "kw": "KW14",
-    "wochentag": "Thursday",
-    "orga": "DIE LIBERTÄREN",
-    "plz": "73033",
-    "kontakt": "Dieter Kirschmann",
-    "e-mail": "dieter.kirschmann@die-libertaeren.de",
-    "orga_webseite": "https://die-libertaeren.de/"
-  },
-  {
     "name": "Libertärer Stammtisch Dessau",
     "beginn": "2026-04-04",
     "ende": "2026-04-04",
@@ -1213,6 +1200,19 @@
     "e-mail": "lnb@maulbetsch.net",
     "tournus": "Jeder 2. Donnerstag",
     "group_link": "https://t.me/FreeFritz"
+  },
+  {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "beginn": "2026-04-09",
+    "ende": "2026-04-09",
+    "uhrzeit": "19:30",
+    "kw": "KW15",
+    "wochentag": "Thursday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "73033",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/"
   },
   {
     "name": "Libertärer Stammtisch Grevenbroich",

@@ -1700,26 +1700,6 @@
     "link_qr": null
   },
   {
-    "name": "Libertärer Stammtisch Göppingen/Esslingen",
-    "plz": "73033",
-    "state": "DE-BW",
-    "city": "Göppingen",
-    "city_dist": 0.6,
-    "coords": [
-      48.7088631,
-      9.6538145
-    ],
-    "date": "2026-04-02",
-    "dow": "Do.",
-    "time": "19:30",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Dieter Kirschmann",
-    "e-mail": "dieter.kirschmann@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Libertärer Stammtisch Dessau",
     "plz": "06844",
     "state": "DE-ST",
@@ -1798,6 +1778,26 @@
     "e-mail": "lnb@maulbetsch.net",
     "link": "https://t.me/FreeFritz",
     "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "plz": "73033",
+    "state": "DE-BW",
+    "city": "Göppingen",
+    "city_dist": 0.6,
+    "coords": [
+      48.7088631,
+      9.6538145
+    ],
+    "date": "2026-04-09",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Grevenbroich",
