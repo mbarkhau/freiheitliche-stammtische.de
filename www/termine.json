@@ -1740,6 +1740,26 @@
     "link_qr": null
   },
   {
+    "name": "Team Freiheit Clubabend Gießen",
+    "plz": "35390",
+    "state": "DE-HE",
+    "city": "Gießen",
+    "city_dist": 1.4,
+    "coords": [
+      50.5879221,
+      8.6766586
+    ],
+    "date": "2026-04-08",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-giessen-23-03-26/",
+    "kontakt": null,
+    "e-mail": "giessen@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Magdeburg",
     "plz": "39104",
     "state": "DE-ST",
@@ -1796,6 +1816,26 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Dieter Kirschmann",
     "e-mail": "dieter.kirschmann@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Team Freiheit Clubabend Chemnitz",
+    "plz": "09112",
+    "state": "DE-SN",
+    "city": "Chemnitz",
+    "city_dist": 1.0,
+    "coords": [
+      50.830933,
+      12.9053458
+    ],
+    "date": "2026-04-10",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-chemnitz-20-03-26/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "chemnitz@team-freiheit.de",
     "link": null,
     "link_qr": null
   },

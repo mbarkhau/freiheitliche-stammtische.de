@@ -1176,6 +1176,18 @@
     "tournus": "Jeder 2. Mittwoch"
   },
   {
+    "name": "Team Freiheit Clubabend Gießen",
+    "beginn": "2026-04-08",
+    "ende": "2026-04-08",
+    "uhrzeit": "19:00",
+    "kw": "KW15",
+    "wochentag": "Wednesday",
+    "orga": "Team Freiheit",
+    "plz": "35390",
+    "e-mail": "giessen@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-giessen-23-03-26/"
+  },
+  {
     "name": "Libertärer Stammtisch Magdeburg",
     "beginn": "2026-04-09",
     "ende": "2026-04-09",
@@ -1214,6 +1226,19 @@
     "kontakt": "Dieter Kirschmann",
     "e-mail": "dieter.kirschmann@die-libertaeren.de",
     "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Team Freiheit Clubabend Chemnitz",
+    "beginn": "2026-04-10",
+    "ende": "2026-04-10",
+    "uhrzeit": "19:00",
+    "kw": "KW15",
+    "wochentag": "Friday",
+    "orga": "Team Freiheit",
+    "plz": "09112",
+    "kontakt": "Team Freiheit",
+    "e-mail": "chemnitz@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-chemnitz-20-03-26/"
   },
   {
     "name": "Libertärer Stammtisch Grevenbroich",
