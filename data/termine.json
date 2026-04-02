@@ -1309,7 +1309,13 @@
     "infotext": "Über ein selbstbestimmtes Lebensende: Kinofilm \"GOTT\""
   },
   {
-    "name": "Team Freiheit Clubabend Wiesbaden",
+    "name": "Team Freiheit Siegen-Wittgenstein",
+    "beginn": "2026-04-14",
+    "kw": "KW16",
+    "wochentag": "Tuesday"
+  },
+  {
+    "name": "Team Freiheit Clubabend Rhein-Main",
     "beginn": "2026-04-14",
     "ende": "2026-04-14",
     "uhrzeit": "19:00",
