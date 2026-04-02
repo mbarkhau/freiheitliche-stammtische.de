@@ -1309,12 +1309,6 @@
     "infotext": "Über ein selbstbestimmtes Lebensende: Kinofilm \"GOTT\""
   },
   {
-    "name": "Team Freiheit Siegen-Wittgenstein",
-    "beginn": "2026-04-14",
-    "kw": "KW16",
-    "wochentag": "Tuesday"
-  },
-  {
     "name": "Team Freiheit Clubabend Rhein-Main",
     "beginn": "2026-04-14",
     "ende": "2026-04-14",
@@ -1368,6 +1362,19 @@
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
     "orga_webseite": "https://buendnis-libertaerer.de/"
+  },
+  {
+    "name": "Team Freiheit Siegen-Wittgenstein",
+    "beginn": "2026-04-16",
+    "ende": "2026-04-16",
+    "uhrzeit": "19:00",
+    "kw": "KW16",
+    "wochentag": "Thursday",
+    "orga": "Team Freiheit",
+    "plz": "57250",
+    "kontakt": "Team Freiheit",
+    "e-mail": "siegen@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events/"
   },
   {
     "name": "Libertärer Stammtisch Kaiserslautern",
@@ -1478,6 +1485,19 @@
     "e-mail": "kontakt@hayek-club-koblenz.de",
     "orga_webseite": "hayek-club-koblenz.de",
     "infotext": "Prof. Gerd Habermann: Wie eine Bürokratie stirbt. Aktuelle Bemerkungen zum Untergang des Römischen Reiche"
+  },
+  {
+    "name": "Team Freiheit Clubabend Köln-Bonn",
+    "beginn": "2026-04-29",
+    "ende": "2026-04-29",
+    "uhrzeit": "19:00",
+    "kw": "KW18",
+    "wochentag": "Wednesday",
+    "orga": "Team Freiheit",
+    "plz": "50672",
+    "kontakt": "Team Freiheit",
+    "e-mail": "koeln@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/"
   },
   {
     "name": "Libertärer Stammtisch Dessau",

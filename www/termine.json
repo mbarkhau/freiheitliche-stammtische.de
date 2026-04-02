@@ -2020,6 +2020,26 @@
     "link_qr": null
   },
   {
+    "name": "Team Freiheit Siegen-Wittgenstein",
+    "plz": "57250",
+    "state": "DE-NW",
+    "city": "Siegen",
+    "city_dist": 10.0,
+    "coords": [
+      50.903483,
+      8.160558
+    ],
+    "date": "2026-04-16",
+    "dow": "Do.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/events/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "siegen@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Kaiserslautern",
     "plz": "67657",
     "state": "DE-RP",
@@ -2176,6 +2196,26 @@
     "orga_www": "hayek-club-koblenz.de",
     "kontakt": "Prof. Ing. Götz Piwinger",
     "e-mail": "kontakt@hayek-club-koblenz.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Team Freiheit Clubabend Köln-Bonn",
+    "plz": "50672",
+    "state": "DE-NW",
+    "city": "Köln",
+    "city_dist": 1.8,
+    "coords": [
+      50.9425062,
+      6.9345727
+    ],
+    "date": "2026-04-29",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "koeln@team-freiheit.de",
     "link": null,
     "link_qr": null
   },
