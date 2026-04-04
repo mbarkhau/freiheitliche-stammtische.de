@@ -2560,6 +2560,26 @@
     "link_qr": null
   },
   {
+    "name": "Afuera Fest 2026",
+    "plz": "06420",
+    "state": "DE-ST",
+    "city": "Bernburg",
+    "city_dist": 12.2,
+    "coords": [
+      51.686855,
+      11.7755229
+    ],
+    "date": "2026-07-24",
+    "dow": "Fr.",
+    "time": "15:00",
+    "orga": "Afuera e.V.",
+    "orga_www": "https://afuerafest.de/",
+    "kontakt": "Afuera e.V.",
+    "e-mail": "info@afuerafest.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "DEXIT 2026 – Die Auswanderer Konferenz",
     "plz": "81925",
     "state": "DE-BY",
