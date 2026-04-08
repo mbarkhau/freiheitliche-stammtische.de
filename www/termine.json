@@ -2040,6 +2040,26 @@
     "link_qr": null
   },
   {
+    "name": "Hayek Club München",
+    "plz": "80539",
+    "state": "DE-BY",
+    "city": "München",
+    "city_dist": 0.9,
+    "coords": [
+      48.1443613,
+      11.5810699
+    ],
+    "date": "2026-04-16",
+    "dow": "Do.",
+    "time": "19:00",
+    "orga": "Hayek Club",
+    "orga_www": "https://hayek.de/hayek-clubs/",
+    "kontakt": "Florian Handwerker",
+    "e-mail": "muenchen@hayek.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Kaiserslautern",
     "plz": "67657",
     "state": "DE-RP",

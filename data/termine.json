@@ -1377,6 +1377,19 @@
     "orga_webseite": "https://www.team-freiheit.de/events/"
   },
   {
+    "name": "Hayek Club München",
+    "beginn": "2026-04-16",
+    "ende": "2026-04-16",
+    "uhrzeit": "19:00",
+    "kw": "KW16",
+    "wochentag": "Thursday",
+    "orga": "Hayek Club",
+    "plz": "80539",
+    "kontakt": "Florian Handwerker",
+    "e-mail": "muenchen@hayek.de",
+    "orga_webseite": "https://hayek.de/hayek-clubs/"
+  },
+  {
     "name": "Libertärer Stammtisch Kaiserslautern",
     "beginn": "2026-04-18",
     "ende": "2026-04-18",
