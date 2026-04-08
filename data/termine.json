@@ -1393,18 +1393,6 @@
     "group_link": "https://t.me/+za88OLhGTshlNGJi"
   },
   {
-    "name": "Freiheit Meetup München",
-    "beginn": "2026-04-19",
-    "ende": "2026-04-19",
-    "uhrzeit": "12:00",
-    "kw": "KW16",
-    "wochentag": "Sunday",
-    "orga": "Unabhängig",
-    "plz": "80802",
-    "kontakt": "Nicole",
-    "group_link": "https://chat.whatsapp.com/GXH37VgBrgy50AZ35PWw1W"
-  },
-  {
     "name": "Libertarer Stammtisch Aschersleben",
     "beginn": "2026-04-22",
     "ende": "2026-04-22",
@@ -1416,6 +1404,18 @@
     "kontakt": "Stefan Bückner",
     "e-mail": "stephan.bueckner@die-libertaeren.de",
     "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Freiheit Meetup München",
+    "beginn": "2026-04-23",
+    "ende": "2026-04-24",
+    "uhrzeit": "12:00",
+    "kw": "KW17",
+    "wochentag": "Thursday",
+    "orga": "Unabhängig",
+    "plz": "80802",
+    "kontakt": "Nicole",
+    "group_link": "https://chat.whatsapp.com/GXH37VgBrgy50AZ35PWw1W"
   },
   {
     "name": "Libertärer Stammtisch Dresden",
