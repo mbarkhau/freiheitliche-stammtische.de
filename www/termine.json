@@ -660,26 +660,6 @@
     "link_qr": null
   },
   {
-    "name": "Libertärer Stammtisch Grevenbroich",
-    "plz": "41515",
-    "state": "DE-NW",
-    "city": "Grevenbroich",
-    "city_dist": 1.5,
-    "coords": [
-      51.0819233,
-      6.6057095
-    ],
-    "date": "2026-02-13",
-    "dow": "Fr.",
-    "time": "19:00",
-    "orga": "Unabhängig",
-    "orga_www": "https://ef-magazin.de/",
-    "kontakt": "Martin Moczarski",
-    "e-mail": "moczarski@ef-magazin.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Libertärer Stammtisch Kiel",
     "plz": "24103",
     "state": "DE-SH",
@@ -696,6 +676,26 @@
     "orga_www": "https://die-libertaeren.de/events/libertaerer-stammtisch-kiel/",
     "kontakt": "Sascha Bose",
     "e-mail": "saschabose@yahoo.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Grevenbroich",
+    "plz": "41515",
+    "state": "DE-NW",
+    "city": "Grevenbroich",
+    "city_dist": 1.5,
+    "coords": [
+      51.0819233,
+      6.6057095
+    ],
+    "date": "2026-02-13",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": "https://ef-magazin.de/",
+    "kontakt": "Martin Moczarski",
+    "e-mail": "moczarski@ef-magazin.de",
     "link": null,
     "link_qr": null
   },
@@ -1840,26 +1840,6 @@
     "link_qr": null
   },
   {
-    "name": "Libertärer Stammtisch Grevenbroich",
-    "plz": "41515",
-    "state": "DE-NW",
-    "city": "Grevenbroich",
-    "city_dist": 1.5,
-    "coords": [
-      51.0819233,
-      6.6057095
-    ],
-    "date": "2026-04-10",
-    "dow": "Fr.",
-    "time": "19:00",
-    "orga": "Unabhängig",
-    "orga_www": "https://ef-magazin.de/",
-    "kontakt": "Martin Moczarski",
-    "e-mail": "moczarski@ef-magazin.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Staatenlos Neuss",
     "plz": "41460",
     "state": "DE-NW",
@@ -1878,6 +1858,26 @@
     "e-mail": null,
     "link": "https://t.me/+aLRn2FSy7qoyZDI6",
     "link_qr": "img/qr_ef087f17a9fa9da441aa97662e877464dbbed792_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Grevenbroich",
+    "plz": "41515",
+    "state": "DE-NW",
+    "city": "Grevenbroich",
+    "city_dist": 1.5,
+    "coords": [
+      51.0819233,
+      6.6057095
+    ],
+    "date": "2026-04-10",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": "https://ef-magazin.de/",
+    "kontakt": "Martin Moczarski",
+    "e-mail": "moczarski@ef-magazin.de",
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Ansbach",

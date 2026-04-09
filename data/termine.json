@@ -447,19 +447,6 @@
     "orga_webseite": "https://die-libertaeren.de/"
   },
   {
-    "name": "Libertärer Stammtisch Grevenbroich",
-    "beginn": "2026-02-13",
-    "ende": "2026-02-13",
-    "uhrzeit": "19:00",
-    "kw": "KW07",
-    "wochentag": "Friday",
-    "orga": "Unabhängig",
-    "plz": "41515",
-    "kontakt": "Martin Moczarski",
-    "e-mail": "moczarski@ef-magazin.de",
-    "orga_webseite": "https://ef-magazin.de/"
-  },
-  {
     "name": "Libertärer Stammtisch Kiel",
     "beginn": "2026-02-13",
     "ende": "2026-02-13",
@@ -471,6 +458,19 @@
     "kontakt": "Sascha Bose",
     "e-mail": "saschabose@yahoo.de",
     "orga_webseite": "https://die-libertaeren.de/events/libertaerer-stammtisch-kiel/"
+  },
+  {
+    "name": "Libertärer Stammtisch Grevenbroich",
+    "beginn": "2026-02-13",
+    "ende": "2026-02-13",
+    "uhrzeit": "19:00",
+    "kw": "KW07",
+    "wochentag": "Friday",
+    "orga": "Unabhängig",
+    "plz": "41515",
+    "kontakt": "Martin Moczarski",
+    "e-mail": "moczarski@ef-magazin.de",
+    "orga_webseite": "https://ef-magazin.de/"
   },
   {
     "name": "Libertärer Stammtisch Ansbach",
@@ -1241,19 +1241,6 @@
     "orga_webseite": "https://www.team-freiheit.de/event/clubabend-chemnitz-20-03-26/"
   },
   {
-    "name": "Libertärer Stammtisch Grevenbroich",
-    "beginn": "2026-04-10",
-    "ende": "2026-04-10",
-    "uhrzeit": "19:00",
-    "kw": "KW15",
-    "wochentag": "Friday",
-    "orga": "Unabhängig",
-    "plz": "41515",
-    "kontakt": "Martin Moczarski",
-    "e-mail": "moczarski@ef-magazin.de",
-    "orga_webseite": "https://ef-magazin.de/"
-  },
-  {
     "name": "Staatenlos Neuss",
     "beginn": "2026-04-10",
     "ende": "2026-04-10",
@@ -1266,6 +1253,19 @@
     "kontakt": "Svenja",
     "orga_webseite": "https://staatenlos.ch/",
     "group_link": "https://t.me/+aLRn2FSy7qoyZDI6"
+  },
+  {
+    "name": "Libertärer Stammtisch Grevenbroich",
+    "beginn": "2026-04-10",
+    "ende": "2026-04-10",
+    "uhrzeit": "19:00",
+    "kw": "KW15",
+    "wochentag": "Friday",
+    "orga": "Unabhängig",
+    "plz": "41515",
+    "kontakt": "Martin Moczarski",
+    "e-mail": "moczarski@ef-magazin.de",
+    "orga_webseite": "https://ef-magazin.de/"
   },
   {
     "name": "Libertärer Stammtisch Ansbach",
