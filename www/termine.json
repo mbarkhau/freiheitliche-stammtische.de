@@ -1820,6 +1820,26 @@
     "link_qr": null
   },
   {
+    "name": "Leipziger Bierchenrunde/PdV",
+    "plz": "04109",
+    "state": "DE-SN",
+    "city": "Leipzig",
+    "city_dist": 0.8,
+    "coords": [
+      51.3385462,
+      12.3642803
+    ],
+    "date": "2026-04-10",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Partei der Vernunft",
+    "orga_www": "https://parteidervernunft.de/veranstaltungen/leipziger-bierchenrunde",
+    "kontakt": "Thomas Flach",
+    "e-mail": "thomas.flach@parteidervernunft.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Team Freiheit Clubabend Chemnitz",
     "plz": "09112",
     "state": "DE-SN",
@@ -2276,6 +2296,26 @@
     "orga_www": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
     "kontakt": "Team Freiheit",
     "e-mail": "koeln@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Krypto Stammtisch Berlin",
+    "plz": "10117",
+    "state": "DE-BE",
+    "city": "Berlin",
+    "city_dist": 0.5,
+    "coords": [
+      52.5175184,
+      13.3877686
+    ],
+    "date": "2026-05-01",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Partei der Vernunft",
+    "orga_www": "https://www.parteidervernunft.de/",
+    "kontakt": null,
+    "e-mail": "info@parteidervernunft.de",
     "link": null,
     "link_qr": null
   },
