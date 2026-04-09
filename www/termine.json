@@ -2180,6 +2180,26 @@
     "link_qr": null
   },
   {
+    "name": "Freiheit Meetup München",
+    "plz": "80802",
+    "state": "DE-BY",
+    "city": "München",
+    "city_dist": 2.9,
+    "coords": [
+      48.1600441,
+      11.5930037
+    ],
+    "date": "2026-04-24",
+    "dow": "Fr.",
+    "time": "12:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Nicole",
+    "e-mail": null,
+    "link": "https://chat.whatsapp.com/GXH37VgBrgy50AZ35PWw1W",
+    "link_qr": "img/qr_23274c9fc6cadf29188310825155956e925da24c_v2.png"
+  },
+  {
     "name": "Team Freiheit Clubabend Berlin",
     "plz": "10555",
     "state": "DE-BE",
