@@ -2600,6 +2600,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertäres Meetup Bad Reichenhall",
+    "plz": "83435",
+    "state": "DE-BY",
+    "city": "Bad Reichenhall",
+    "city_dist": 1.7,
+    "coords": [
+      47.7266717,
+      12.8540813
+    ],
+    "date": "2026-05-22",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Theo",
+    "e-mail": null,
+    "link": "https://t.me/@mountainous42",
+    "link_qr": "img/qr_7652f7d7e1ce13eed7e61d946a87f2a96a46e1e8_v2.png"
+  },
+  {
     "name": "Hayek Club Koblenz",
     "plz": "56068",
     "state": "DE-RP",
