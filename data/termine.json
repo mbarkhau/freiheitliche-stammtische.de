@@ -1,5 +1,14 @@
 [
   {
+    "name": "Libertäres Meetup Bad Reichenhall",
+    "kw": "KW52",
+    "wochentag": "Saturday",
+    "orga": "Unabhängig",
+    "plz": "83435",
+    "kontakt": "Theo",
+    "group_link": "https://t.me/@mountainous42"
+  },
+  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "beginn": "2025-11-04",
     "ende": "2025-11-04",
@@ -1322,6 +1331,20 @@
     "orga_webseite": "https://www.team-freiheit.de/event/clubabend-wiesbaden-03-03-26/"
   },
   {
+    "name": "Libertärer Stammtisch Mittelhessen",
+    "beginn": "2026-04-15",
+    "ende": "2026-04-15",
+    "uhrzeit": "19:00",
+    "kw": "KW16",
+    "wochentag": "Wednesday",
+    "orga": "Unabhängig",
+    "plz": "35396",
+    "telegram_group_id": "2218630491",
+    "kontakt": "Stefan Bosch",
+    "tournus": "Jeder 3. Mittwoch",
+    "group_link": "https://t.me/+kDTzmac3wJYwMzIy"
+  },
+  {
     "name": "Freiheitlicher Stammtisch Bergstraße",
     "beginn": "2026-04-15",
     "ende": "2026-04-15",
@@ -1666,6 +1689,20 @@
     "group_link": "https://t.me/+za88OLhGTshlNGJi"
   },
   {
+    "name": "Libertärer Stammtisch Mittelhessen",
+    "beginn": "2026-05-20",
+    "ende": "2026-04-15",
+    "uhrzeit": "19:00",
+    "kw": "KW21",
+    "wochentag": "Wednesday",
+    "orga": "Unabhängig",
+    "plz": "35396",
+    "telegram_group_id": "2218630491",
+    "kontakt": "Stefan Bosch",
+    "tournus": "Jeder 3. Mittwoch",
+    "group_link": "https://t.me/+kDTzmac3wJYwMzIy"
+  },
+  {
     "name": "Freiheitlicher Stammtisch Bergstraße",
     "beginn": "2026-05-20",
     "ende": "2026-05-20",
@@ -1746,6 +1783,20 @@
     "e-mail": "Baader-Bande@proton.me",
     "orga_webseite": "https://die-libertaeren.de/",
     "tournus": "Jeder 2. Samstag"
+  },
+  {
+    "name": "Libertärer Stammtisch Mittelhessen",
+    "beginn": "2026-06-17",
+    "ende": "2026-06-17",
+    "uhrzeit": "19:00",
+    "kw": "KW25",
+    "wochentag": "Wednesday",
+    "orga": "Unabhängig",
+    "plz": "35396",
+    "telegram_group_id": "2218630491",
+    "kontakt": "Stefan Bosch",
+    "tournus": "Jeder 3. Mittwoch",
+    "group_link": "https://t.me/+kDTzmac3wJYwMzIy"
   },
   {
     "name": "Libertäres Treffen Dortmund",
