@@ -2738,5 +2738,25 @@
     "e-mail": "caroline@staatenlos.ch",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Mises Konferenz 2026",
+    "plz": "80333",
+    "state": "DE-BY",
+    "city": "München",
+    "city_dist": 1.0,
+    "coords": [
+      48.1449493,
+      11.5682377
+    ],
+    "date": "2026-10-17",
+    "dow": "Sa.",
+    "time": "10:00",
+    "orga": "Ludwig von Mises Institut Deutschland",
+    "orga_www": "https://www.misesde.org/2026/04/save-the-date-mises-konferenz-2026/",
+    "kontakt": null,
+    "e-mail": null,
+    "link": null,
+    "link_qr": null
   }
 ]

@@ -1868,7 +1868,11 @@
     "name": "Mises Konferenz 2026",
     "beginn": "2026-10-17",
     "ende": "2026-10-17",
+    "uhrzeit": "10:00",
     "kw": "KW42",
-    "wochentag": "Saturday"
+    "wochentag": "Saturday",
+    "orga": "Ludwig von Mises Institut Deutschland",
+    "plz": "80333",
+    "orga_webseite": "https://www.misesde.org/2026/04/save-the-date-mises-konferenz-2026/"
   }
 ]
