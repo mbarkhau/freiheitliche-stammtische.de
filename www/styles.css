@@ -283,6 +283,8 @@ body {
     padding: 0.7rem;
     border-right: 1px solid var(--border-color);
     background-color: var(--bg-color);
+    scrollbar-color: var(--text-muted) var(--bg-color);
+    scrollbar-width: thin;
 }
 
 #map-view-container {

@@ -41,6 +41,10 @@
 			"logo": "img/logo_tf.png",
 			"bg": "#122E76",
 		},
+		"Ludwig von Mises Institut Deutschland": {
+			"logo": "img/logo_lvmi.png",
+			"bg": "#EEE",
+		}
 	};
 
 	function getOrgaBranding(orga) {
