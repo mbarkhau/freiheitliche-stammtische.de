@@ -2340,6 +2340,26 @@
     "link_qr": null
   },
   {
+    "name": "Team Freiheit Clubabend Würzburg",
+    "plz": "97070",
+    "state": "DE-BY",
+    "city": "Veitshöchheim",
+    "city_dist": 6.2,
+    "coords": [
+      49.7940782,
+      9.935303
+    ],
+    "date": "2026-05-04",
+    "dow": "Mo.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/events/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "wuerzburg@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Hamburg",
     "plz": "20095",
     "state": "DE-HH",
@@ -2640,6 +2660,26 @@
     "link_qr": null
   },
   {
+    "name": "Team Freiheit Clubabend Köln-Bonn",
+    "plz": "50672",
+    "state": "DE-NW",
+    "city": "Köln",
+    "city_dist": 1.8,
+    "coords": [
+      50.9425062,
+      6.9345727
+    ],
+    "date": "2026-05-29",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "koeln@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "ROLAND BAADER Treffen",
     "plz": "68753",
     "state": "DE-BW",
@@ -2720,6 +2760,26 @@
     "link_qr": null
   },
   {
+    "name": "Team Freiheit Clubabend Köln-Bonn",
+    "plz": "50672",
+    "state": "DE-NW",
+    "city": "Köln",
+    "city_dist": 1.8,
+    "coords": [
+      50.9425062,
+      6.9345727
+    ],
+    "date": "2026-06-26",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "koeln@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Afuera Fest 2026",
     "plz": "06420",
     "state": "DE-ST",
@@ -2740,6 +2800,26 @@
     "link_qr": null
   },
   {
+    "name": "Team Freiheit Clubabend Köln-Bonn",
+    "plz": "50672",
+    "state": "DE-NW",
+    "city": "Köln",
+    "city_dist": 1.8,
+    "coords": [
+      50.9425062,
+      6.9345727
+    ],
+    "date": "2026-07-31",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "koeln@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "DEXIT 2026 – Die Auswanderer Konferenz",
     "plz": "81925",
     "state": "DE-BY",
@@ -2756,6 +2836,26 @@
     "orga_www": "https://staatenlos.ch/staatenlos/event/",
     "kontakt": "Caroline Krause",
     "e-mail": "caroline@staatenlos.ch",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Team Freiheit Clubabend Köln-Bonn",
+    "plz": "50672",
+    "state": "DE-NW",
+    "city": "Köln",
+    "city_dist": 1.8,
+    "coords": [
+      50.9425062,
+      6.9345727
+    ],
+    "date": "2026-08-28",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "koeln@team-freiheit.de",
     "link": null,
     "link_qr": null
   },

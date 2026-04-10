@@ -551,7 +551,8 @@
     "plz": "50672",
     "kontakt": "Team Freiheit",
     "e-mail": "koeln@team-freiheit.de",
-    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/"
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
+    "tournus": "Letzter Fr. im Monat"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
@@ -1549,7 +1550,8 @@
     "plz": "50672",
     "kontakt": "Team Freiheit",
     "e-mail": "koeln@team-freiheit.de",
-    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/"
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
+    "tournus": "Letzter Fr. im Monat"
   },
   {
     "name": "Libertärer Krypto Stammtisch Berlin",
@@ -1576,6 +1578,19 @@
     "e-mail": "stephan.bueckner@die-libertaeren.de",
     "orga_webseite": "https://die-libertaeren.de/",
     "tournus": "Jeder 1. Mittwoch"
+  },
+  {
+    "name": "Team Freiheit Clubabend Würzburg",
+    "beginn": "2026-05-04",
+    "ende": "2026-05-04",
+    "uhrzeit": "19:00",
+    "kw": "KW19",
+    "wochentag": "Monday",
+    "orga": "Team Freiheit",
+    "plz": "97070",
+    "kontakt": "Team Freiheit",
+    "e-mail": "wuerzburg@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events/"
   },
   {
     "name": "Libertärer Stammtisch Hamburg",
@@ -1789,6 +1804,20 @@
     "infotext": "Joana Cotar: Inside Bundestag - Wie ich in acht Jahren im Zentrum der Macht das Vertrauen in unsere Demokratie verlor"
   },
   {
+    "name": "Team Freiheit Clubabend Köln-Bonn",
+    "beginn": "2026-05-29",
+    "ende": "2026-05-29",
+    "uhrzeit": "19:00",
+    "kw": "KW22",
+    "wochentag": "Friday",
+    "orga": "Team Freiheit",
+    "plz": "50672",
+    "kontakt": "Team Freiheit",
+    "e-mail": "koeln@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
+    "tournus": "Letzter Fr. im Monat"
+  },
+  {
     "name": "ROLAND BAADER Treffen",
     "beginn": "2026-06-13",
     "ende": "2026-06-13",
@@ -1842,6 +1871,20 @@
     "orga_webseite": "https://buendnis-libertaerer.de/"
   },
   {
+    "name": "Team Freiheit Clubabend Köln-Bonn",
+    "beginn": "2026-06-26",
+    "ende": "2026-06-26",
+    "uhrzeit": "19:00",
+    "kw": "KW26",
+    "wochentag": "Friday",
+    "orga": "Team Freiheit",
+    "plz": "50672",
+    "kontakt": "Team Freiheit",
+    "e-mail": "koeln@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
+    "tournus": "Letzter Fr. im Monat"
+  },
+  {
     "name": "Afuera Fest 2026",
     "beginn": "2026-07-24",
     "ende": "2026-07-26",
@@ -1853,6 +1896,20 @@
     "kontakt": "Afuera Kulturverein e.V.",
     "e-mail": "info@afuerafest.de",
     "orga_webseite": "https://afuerafest.de/"
+  },
+  {
+    "name": "Team Freiheit Clubabend Köln-Bonn",
+    "beginn": "2026-07-31",
+    "ende": "2026-07-31",
+    "uhrzeit": "19:00",
+    "kw": "KW31",
+    "wochentag": "Friday",
+    "orga": "Team Freiheit",
+    "plz": "50672",
+    "kontakt": "Team Freiheit",
+    "e-mail": "koeln@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
+    "tournus": "Letzter Fr. im Monat"
   },
   {
     "name": "DEXIT 2026 – Die Auswanderer Konferenz",
@@ -1867,6 +1924,20 @@
     "kontakt": "Caroline Krause",
     "e-mail": "caroline@staatenlos.ch",
     "orga_webseite": "https://staatenlos.ch/staatenlos/event/"
+  },
+  {
+    "name": "Team Freiheit Clubabend Köln-Bonn",
+    "beginn": "2026-08-28",
+    "ende": "2026-08-28",
+    "uhrzeit": "19:00",
+    "kw": "KW35",
+    "wochentag": "Friday",
+    "orga": "Team Freiheit",
+    "plz": "50672",
+    "kontakt": "Team Freiheit",
+    "e-mail": "koeln@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
+    "tournus": "Letzter Fr. im Monat"
   },
   {
     "name": "Mises Konferenz 2026",
