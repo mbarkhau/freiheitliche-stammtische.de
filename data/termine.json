@@ -1863,5 +1863,12 @@
     "kontakt": "Caroline Krause",
     "e-mail": "caroline@staatenlos.ch",
     "orga_webseite": "https://staatenlos.ch/staatenlos/event/"
+  },
+  {
+    "name": "Mises Konferenz 2026",
+    "beginn": "2026-10-17",
+    "ende": "2026-10-17",
+    "kw": "KW42",
+    "wochentag": "Saturday"
   }
 ]
