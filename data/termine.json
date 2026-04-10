@@ -1459,6 +1459,19 @@
     "group_link": "https://t.me/+kXYK3OtoB0AxYTAy"
   },
   {
+    "name": "Team Freiheit Clubabend Leipzig m. Thomas Kemmerich",
+    "beginn": "2026-04-24",
+    "ende": "2026-04-24",
+    "uhrzeit": "19:00",
+    "kw": "KW17",
+    "wochentag": "Friday",
+    "orga": "Team Freiheit",
+    "plz": "04105",
+    "kontakt": "Team Freiheit",
+    "e-mail": "leipzig@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events/"
+  },
+  {
     "name": "Libertärer Stammtisch Berlin",
     "beginn": "2026-04-24",
     "ende": "2026-04-24",
@@ -1758,6 +1771,7 @@
     "plz": "83435",
     "telegram_group_id": "5127893402",
     "kontakt": "Theo",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
     "group_link": "https://t.me/+wLa_UwnOBV5mZjBi"
   },
   {
