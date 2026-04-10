@@ -1748,7 +1748,7 @@
     "orga_webseite": "https://buendnis-libertaerer.de/"
   },
   {
-    "name": "Libertäres Meetup Bad Reichenhall",
+    "name": "Libertärer Stammtisch Bad Reichenhall",
     "beginn": "2026-05-22",
     "ende": "2026-05-22",
     "uhrzeit": "19:00",
@@ -1756,6 +1756,7 @@
     "wochentag": "Friday",
     "orga": "Unabhängig",
     "plz": "83435",
+    "telegram_group_id": "5127893402",
     "kontakt": "Theo",
     "group_link": "https://t.me/mountainous42"
   },
