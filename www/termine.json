@@ -1920,6 +1920,26 @@
     "link_qr": null
   },
   {
+    "name": "Kundgebung - „FINGER WEG VON MEINEM SPRIT!“",
+    "plz": "39114",
+    "state": "DE-ST",
+    "city": "Magdeburg",
+    "city_dist": 3.3,
+    "coords": [
+      52.1130345,
+      11.6780843
+    ],
+    "date": "2026-04-12",
+    "dow": "So.",
+    "time": "14:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/events/finger-weg-von-meinem-sprit-kundgebung-zur-abschaffung-der-spritsteuern/",
+    "kontakt": "Mathias Hummel",
+    "e-mail": "events@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Staatenlos Berlin",
     "plz": "10437",
     "state": "DE-BE",
