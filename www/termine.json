@@ -940,6 +940,26 @@
     "link_qr": null
   },
   {
+    "name": "Hayek Club Weimar",
+    "plz": "99425",
+    "state": "DE-TH",
+    "city": "Weimar",
+    "city_dist": 1.9,
+    "coords": [
+      50.9672359,
+      11.348212
+    ],
+    "date": "2026-03-01",
+    "dow": "So.",
+    "time": "19:00",
+    "orga": "Hayek Club",
+    "orga_www": "https://hayek.de/hayek-clubs/",
+    "kontakt": "Karla Wagner",
+    "e-mail": "hayek.club.weimar@mail.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Hayek Club München",
     "plz": "80539",
     "state": "DE-BY",
@@ -2856,6 +2876,26 @@
     "orga_www": "https://staatenlos.ch/staatenlos/event/",
     "kontakt": "Caroline Krause",
     "e-mail": "caroline@staatenlos.ch",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Hayek Club Weimar",
+    "plz": "99425",
+    "state": "DE-TH",
+    "city": "Weimar",
+    "city_dist": 1.9,
+    "coords": [
+      50.9672359,
+      11.348212
+    ],
+    "date": "2026-08-15",
+    "dow": "Sa.",
+    "time": "19:00",
+    "orga": "Hayek Club",
+    "orga_www": "https://hayek.de/hayek-clubs/",
+    "kontakt": "Karla Wagner",
+    "e-mail": "hayek.club.weimar@mail.de",
     "link": null,
     "link_qr": null
   },
