@@ -638,19 +638,6 @@
     "orga_webseite": "https://hayek.de/hayek-clubs/"
   },
   {
-    "name": "Hayek Club Weimar",
-    "beginn": "2026-03-01",
-    "ende": "2026-03-01",
-    "uhrzeit": "19:00",
-    "kw": "KW09",
-    "wochentag": "Sunday",
-    "orga": "Hayek Club",
-    "plz": "99425",
-    "kontakt": "Karla Wagner",
-    "e-mail": "hayek.club.weimar@mail.de",
-    "orga_webseite": "https://hayek.de/hayek-clubs/"
-  },
-  {
     "name": "Hayek Club München",
     "beginn": "2026-03-02",
     "ende": "2026-03-02",
@@ -1539,6 +1526,20 @@
     "group_link": "https://chat.whatsapp.com/GXH37VgBrgy50AZ35PWw1W"
   },
   {
+    "name": "Hayek Club Weimar",
+    "beginn": "2026-04-25",
+    "ende": "2026-04-25",
+    "uhrzeit": "19:00",
+    "kw": "KW17",
+    "wochentag": "Saturday",
+    "orga": "Hayek Club",
+    "plz": "99425",
+    "kontakt": "Karla Wagner",
+    "e-mail": "hayek.club.weimar@mail.de",
+    "orga_webseite": "https://hayek.de/hayek-clubs/",
+    "infotext": "Freies Geld für freie Menschen – Währungswettbewerb statt Zwangsmonopol!"
+  },
+  {
     "name": "Team Freiheit Clubabend Berlin",
     "beginn": "2026-04-26",
     "ende": "2026-04-26",
@@ -1646,6 +1647,19 @@
     "orga_webseite": "https://die-libertaeren.de/"
   },
   {
+    "name": "Libertärer Stammtisch Grevenbroich",
+    "beginn": "2026-05-08",
+    "ende": "2026-05-08",
+    "uhrzeit": "19:00",
+    "kw": "KW19",
+    "wochentag": "Friday",
+    "orga": "Unabhängig",
+    "plz": "41515",
+    "kontakt": "Martin Moczarski",
+    "e-mail": "moczarski@ef-magazin.de",
+    "orga_webseite": "https://ef-magazin.de/"
+  },
+  {
     "name": "Libertärer Stammtisch Ansbach",
     "beginn": "2026-05-09",
     "ende": "2026-04-11",
@@ -1715,19 +1729,6 @@
     "e-mail": "lnb@maulbetsch.net",
     "tournus": "Jeder 2. Donnerstag",
     "group_link": "https://t.me/FreeFritz"
-  },
-  {
-    "name": "Libertärer Stammtisch Grevenbroich",
-    "beginn": "2026-05-15",
-    "ende": "2026-05-15",
-    "uhrzeit": "19:00",
-    "kw": "KW20",
-    "wochentag": "Friday",
-    "orga": "Unabhängig",
-    "plz": "41515",
-    "kontakt": "Martin Moczarski",
-    "e-mail": "moczarski@ef-magazin.de",
-    "orga_webseite": "https://ef-magazin.de/"
   },
   {
     "name": "Libertärer Stammtisch Kaiserslautern",

@@ -940,26 +940,6 @@
     "link_qr": null
   },
   {
-    "name": "Hayek Club Weimar",
-    "plz": "99425",
-    "state": "DE-TH",
-    "city": "Weimar",
-    "city_dist": 1.9,
-    "coords": [
-      50.9672359,
-      11.348212
-    ],
-    "date": "2026-03-01",
-    "dow": "So.",
-    "time": "19:00",
-    "orga": "Hayek Club",
-    "orga_www": "https://hayek.de/hayek-clubs/",
-    "kontakt": "Karla Wagner",
-    "e-mail": "hayek.club.weimar@mail.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Hayek Club München",
     "plz": "80539",
     "state": "DE-BY",
@@ -2280,6 +2260,26 @@
     "link_qr": "img/qr_23274c9fc6cadf29188310825155956e925da24c_v2.png"
   },
   {
+    "name": "Hayek Club Weimar",
+    "plz": "99425",
+    "state": "DE-TH",
+    "city": "Weimar",
+    "city_dist": 1.9,
+    "coords": [
+      50.9672359,
+      11.348212
+    ],
+    "date": "2026-04-25",
+    "dow": "Sa.",
+    "time": "19:00",
+    "orga": "Hayek Club",
+    "orga_www": "https://hayek.de/hayek-clubs/",
+    "kontakt": "Karla Wagner",
+    "e-mail": "hayek.club.weimar@mail.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Team Freiheit Clubabend Berlin",
     "plz": "10555",
     "state": "DE-BE",
@@ -2440,6 +2440,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Grevenbroich",
+    "plz": "41515",
+    "state": "DE-NW",
+    "city": "Grevenbroich",
+    "city_dist": 1.5,
+    "coords": [
+      51.0819233,
+      6.6057095
+    ],
+    "date": "2026-05-08",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": "https://ef-magazin.de/",
+    "kontakt": "Martin Moczarski",
+    "e-mail": "moczarski@ef-magazin.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Ansbach",
     "plz": "91522",
     "state": "DE-BY",
@@ -2538,26 +2558,6 @@
     "e-mail": "lnb@maulbetsch.net",
     "link": "https://t.me/FreeFritz",
     "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0_v2.png"
-  },
-  {
-    "name": "Libertärer Stammtisch Grevenbroich",
-    "plz": "41515",
-    "state": "DE-NW",
-    "city": "Grevenbroich",
-    "city_dist": 1.5,
-    "coords": [
-      51.0819233,
-      6.6057095
-    ],
-    "date": "2026-05-15",
-    "dow": "Fr.",
-    "time": "19:00",
-    "orga": "Unabhängig",
-    "orga_www": "https://ef-magazin.de/",
-    "kontakt": "Martin Moczarski",
-    "e-mail": "moczarski@ef-magazin.de",
-    "link": null,
-    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Kaiserslautern",
