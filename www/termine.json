@@ -2480,26 +2480,6 @@
     "link_qr": null
   },
   {
-    "name": "Libertärer Stammtisch Ansbach",
-    "plz": "91522",
-    "state": "DE-BY",
-    "city": "Lichtenau",
-    "city_dist": 9.1,
-    "coords": [
-      49.2888745,
-      10.5597693
-    ],
-    "date": "2026-05-09",
-    "dow": "Sa.",
-    "time": "19:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Tante Droll",
-    "e-mail": "Baader-Bande@proton.me",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Libertärer Stammtisch Halle (Saale)",
     "plz": "06108",
     "state": "DE-ST",
@@ -2516,6 +2496,26 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Stefan Bückner",
     "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Ansbach",
+    "plz": "91522",
+    "state": "DE-BY",
+    "city": "Lichtenau",
+    "city_dist": 9.1,
+    "coords": [
+      49.2888745,
+      10.5597693
+    ],
+    "date": "2026-05-13",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
     "link": null,
     "link_qr": null
   },
@@ -2760,6 +2760,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Ansbach",
+    "plz": "91522",
+    "state": "DE-BY",
+    "city": "Lichtenau",
+    "city_dist": 9.1,
+    "coords": [
+      49.2888745,
+      10.5597693
+    ],
+    "date": "2026-06-10",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "ROLAND BAADER Treffen",
     "plz": "68753",
     "state": "DE-BW",
@@ -2776,26 +2796,6 @@
     "orga_www": "https://rolandbaader-treffen.de/treffen2026/",
     "kontakt": null,
     "e-mail": null,
-    "link": null,
-    "link_qr": null
-  },
-  {
-    "name": "Libertärer Stammtisch Ansbach",
-    "plz": "91522",
-    "state": "DE-BY",
-    "city": "Lichtenau",
-    "city_dist": 9.1,
-    "coords": [
-      49.2888745,
-      10.5597693
-    ],
-    "date": "2026-06-13",
-    "dow": "Sa.",
-    "time": "19:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Tante Droll",
-    "e-mail": "Baader-Bande@proton.me",
     "link": null,
     "link_qr": null
   },
@@ -2880,6 +2880,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Ansbach",
+    "plz": "91522",
+    "state": "DE-BY",
+    "city": "Lichtenau",
+    "city_dist": 9.1,
+    "coords": [
+      49.2888745,
+      10.5597693
+    ],
+    "date": "2026-07-08",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Freiheitlicher Stammtisch Bergstraße",
     "plz": "64673",
     "state": "DE-HE",
@@ -2956,6 +2976,26 @@
     "orga_www": "https://staatenlos.ch/staatenlos/event/",
     "kontakt": "Caroline Krause",
     "e-mail": "caroline@staatenlos.ch",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Ansbach",
+    "plz": "91522",
+    "state": "DE-BY",
+    "city": "Lichtenau",
+    "city_dist": 9.1,
+    "coords": [
+      49.2888745,
+      10.5597693
+    ],
+    "date": "2026-08-12",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
     "link": null,
     "link_qr": null
   },

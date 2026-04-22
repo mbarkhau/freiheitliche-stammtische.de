@@ -1676,20 +1676,6 @@
     "orga_webseite": "https://ef-magazin.de/"
   },
   {
-    "name": "Libertärer Stammtisch Ansbach",
-    "beginn": "2026-05-09",
-    "ende": "2026-04-11",
-    "uhrzeit": "19:00",
-    "kw": "KW19",
-    "wochentag": "Saturday",
-    "orga": "DIE LIBERTÄREN",
-    "plz": "91522",
-    "kontakt": "Tante Droll",
-    "e-mail": "Baader-Bande@proton.me",
-    "orga_webseite": "https://die-libertaeren.de/",
-    "tournus": "Jeder 2. Samstag"
-  },
-  {
     "name": "Libertärer Stammtisch Halle (Saale)",
     "beginn": "2026-05-13",
     "ende": "2026-05-13",
@@ -1702,6 +1688,20 @@
     "e-mail": "stephan.bueckner@die-libertaeren.de",
     "orga_webseite": "https://die-libertaeren.de/",
     "tournus": "Jeder 2. Mittwoch"
+  },
+  {
+    "name": "Libertärer Stammtisch Ansbach",
+    "beginn": "2026-05-13",
+    "ende": "2026-05-13",
+    "uhrzeit": "19:00",
+    "kw": "KW20",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "91522",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 2. Samstag"
   },
   {
     "name": "Libertärer Stammtisch Magdeburg",
@@ -1875,6 +1875,20 @@
     "tournus": "Jeder 1. Mittwoch"
   },
   {
+    "name": "Libertärer Stammtisch Ansbach",
+    "beginn": "2026-06-10",
+    "ende": "2026-06-10",
+    "uhrzeit": "19:00",
+    "kw": "KW24",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "91522",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 2. Samstag"
+  },
+  {
     "name": "ROLAND BAADER Treffen",
     "beginn": "2026-06-13",
     "ende": "2026-06-13",
@@ -1885,20 +1899,6 @@
     "plz": "68753",
     "orga_webseite": "https://rolandbaader-treffen.de/treffen2026/",
     "tournus": "Jährlich"
-  },
-  {
-    "name": "Libertärer Stammtisch Ansbach",
-    "beginn": "2026-06-13",
-    "ende": "2026-04-11",
-    "uhrzeit": "19:00",
-    "kw": "KW24",
-    "wochentag": "Saturday",
-    "orga": "DIE LIBERTÄREN",
-    "plz": "91522",
-    "kontakt": "Tante Droll",
-    "e-mail": "Baader-Bande@proton.me",
-    "orga_webseite": "https://die-libertaeren.de/",
-    "tournus": "Jeder 2. Samstag"
   },
   {
     "name": "Libertärer Stammtisch Mittelhessen",
@@ -1958,6 +1958,20 @@
     "tournus": "Letzter Fr. im Monat"
   },
   {
+    "name": "Libertärer Stammtisch Ansbach",
+    "beginn": "2026-07-08",
+    "ende": "2026-07-08",
+    "uhrzeit": "19:00",
+    "kw": "KW28",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "91522",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 2. Samstag"
+  },
+  {
     "name": "Freiheitlicher Stammtisch Bergstraße",
     "beginn": "2026-07-15",
     "ende": "2026-07-15",
@@ -2013,6 +2027,20 @@
     "kontakt": "Caroline Krause",
     "e-mail": "caroline@staatenlos.ch",
     "orga_webseite": "https://staatenlos.ch/staatenlos/event/"
+  },
+  {
+    "name": "Libertärer Stammtisch Ansbach",
+    "beginn": "2026-08-12",
+    "ende": "2026-08-12",
+    "uhrzeit": "19:00",
+    "kw": "KW33",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "91522",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 2. Samstag"
   },
   {
     "name": "Hayek Club Weimar",
