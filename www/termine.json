@@ -2600,6 +2600,26 @@
     "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
   },
   {
+    "name": "Libertärer Stammtisch Dresden",
+    "plz": "01237",
+    "state": "DE-SN",
+    "city": "Dresden",
+    "city_dist": 5.7,
+    "coords": [
+      51.0182471,
+      13.8020866
+    ],
+    "date": "2026-05-21",
+    "dow": "Do.",
+    "time": "18:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Joachim Teske",
+    "e-mail": "joachim.teske@die-libertaeren.de",
+    "link": "https://t.me/+kXYK3OtoB0AxYTAy",
+    "link_qr": "img/qr_5565c4d9b4b29ecef348f944574ba5e63942a5bc_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Bernburg (Saale)",
     "plz": "06406",
     "state": "DE-ST",
@@ -2760,6 +2780,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Halle (Saale)",
+    "plz": "06108",
+    "state": "DE-ST",
+    "city": "Halle (Saale)",
+    "city_dist": 1.1,
+    "coords": [
+      51.4904352,
+      11.9628501
+    ],
+    "date": "2026-06-10",
+    "dow": "Mi.",
+    "time": "18:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Ansbach",
     "plz": "91522",
     "state": "DE-BY",
@@ -2838,6 +2878,26 @@
     "e-mail": "lukas.schroth@die-libertaeren.de",
     "link": "https://t.me/+qhX3l_Dn_VpkNmYy",
     "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Bernburg (Saale)",
+    "plz": "06406",
+    "state": "DE-ST",
+    "city": "Bernburg",
+    "city_dist": 1.8,
+    "coords": [
+      51.7825763,
+      11.7556064
+    ],
+    "date": "2026-06-18",
+    "dow": "Do.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertäres Treffen Dortmund",
