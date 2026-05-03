@@ -2431,11 +2431,11 @@
     ],
     "date": "2026-05-06",
     "dow": "Mi.",
-    "time": "18:30",
+    "time": "19:00",
     "orga": "Team Freiheit",
-    "orga_www": "https://www.team-freiheit.de/event/clubabend-rostock-20-03-26/",
+    "orga_www": "https://www.team-freiheit.de/events/",
     "kontakt": "Team Freiheit",
-    "e-mail": "rostock@team-freiheit.de",
+    "e-mail": "potsdam@team-freiheit.de",
     "link": null,
     "link_qr": null
   },
@@ -2516,6 +2516,26 @@
     "orga_www": "https://ef-magazin.de/",
     "kontakt": "Martin Moczarski",
     "e-mail": "moczarski@ef-magazin.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Team Freiheit Clubabend Gießen",
+    "plz": "35390",
+    "state": "DE-HE",
+    "city": "Gießen",
+    "city_dist": 1.4,
+    "coords": [
+      50.5879221,
+      8.6766586
+    ],
+    "date": "2026-05-12",
+    "dow": "Di.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-giessen-23-03-26/",
+    "kontakt": null,
+    "e-mail": "giessen@team-freiheit.de",
     "link": null,
     "link_qr": null
   },
@@ -2640,6 +2660,26 @@
     "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
   },
   {
+    "name": "Freiheitlicher Stammtisch Bergstraße",
+    "plz": "64673",
+    "state": "DE-HE",
+    "city": "Lorsch",
+    "city_dist": 7.8,
+    "coords": [
+      49.72264,
+      8.5940276
+    ],
+    "date": "2026-05-20",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+qhX3l_Dn_VpkNmYy",
+    "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Dresden",
     "plz": "01237",
     "state": "DE-SN",
@@ -2676,6 +2716,26 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Stefan Bückner",
     "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Team Freiheit Clubabend Rostock",
+    "plz": "18059",
+    "state": "DE-MV",
+    "city": "Rostock",
+    "city_dist": 8.1,
+    "coords": [
+      54.0278805,
+      12.0707327
+    ],
+    "date": "2026-05-21",
+    "dow": "Do.",
+    "time": "18:30",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-rostock-20-03-26/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "rostock@team-freiheit.de",
     "link": null,
     "link_qr": null
   },
@@ -2738,26 +2798,6 @@
     "e-mail": "kontakt@hayek-club-koblenz.de",
     "link": null,
     "link_qr": null
-  },
-  {
-    "name": "Freiheitlicher Stammtisch Bergstraße",
-    "plz": "64673",
-    "state": "DE-HE",
-    "city": "Lorsch",
-    "city_dist": 7.8,
-    "coords": [
-      49.72264,
-      8.5940276
-    ],
-    "date": "2026-05-27",
-    "dow": "Mi.",
-    "time": "19:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Lukas Schroth",
-    "e-mail": "lukas.schroth@die-libertaeren.de",
-    "link": "https://t.me/+qhX3l_Dn_VpkNmYy",
-    "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
   },
   {
     "name": "Team Freiheit Clubabend Köln-Bonn",
@@ -2936,6 +2976,26 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Stefan Bückner",
     "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Team Freiheit Clubabend Rostock",
+    "plz": "18059",
+    "state": "DE-MV",
+    "city": "Rostock",
+    "city_dist": 8.1,
+    "coords": [
+      54.0278805,
+      12.0707327
+    ],
+    "date": "2026-06-18",
+    "dow": "Do.",
+    "time": "18:30",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-rostock-20-03-26/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "rostock@team-freiheit.de",
     "link": null,
     "link_qr": null
   },

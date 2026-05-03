@@ -1639,14 +1639,14 @@
     "name": "Team Freiheit Clubabend Potsdam",
     "beginn": "2026-05-06",
     "ende": "2026-05-06",
-    "uhrzeit": "18:30",
+    "uhrzeit": "19:00",
     "kw": "KW19",
     "wochentag": "Wednesday",
     "orga": "Team Freiheit",
     "plz": "14469",
     "kontakt": "Team Freiheit",
-    "e-mail": "rostock@team-freiheit.de",
-    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-rostock-20-03-26/"
+    "e-mail": "potsdam@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events/"
   },
   {
     "name": "Libertärer Stammtisch Hamburg",
@@ -1701,6 +1701,18 @@
     "kontakt": "Martin Moczarski",
     "e-mail": "moczarski@ef-magazin.de",
     "orga_webseite": "https://ef-magazin.de/"
+  },
+  {
+    "name": "Team Freiheit Clubabend Gießen",
+    "beginn": "2026-05-12",
+    "ende": "2026-05-12",
+    "uhrzeit": "19:00",
+    "kw": "KW20",
+    "wochentag": "Tuesday",
+    "orga": "Team Freiheit",
+    "plz": "35390",
+    "e-mail": "giessen@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-giessen-23-03-26/"
   },
   {
     "name": "Libertärer Stammtisch Halle (Saale)",
@@ -1788,6 +1800,22 @@
     "group_link": "https://t.me/+kDTzmac3wJYwMzIy"
   },
   {
+    "name": "Freiheitlicher Stammtisch Bergstraße",
+    "beginn": "2026-05-20",
+    "ende": "2026-05-20",
+    "uhrzeit": "19:00",
+    "kw": "KW21",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "64673",
+    "telegram_group_id": "5205303336",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Dritter Mittwoch des Monats",
+    "group_link": "https://t.me/+qhX3l_Dn_VpkNmYy"
+  },
+  {
     "name": "Libertärer Stammtisch Dresden",
     "beginn": "2026-05-21",
     "ende": "2026-05-21",
@@ -1813,6 +1841,19 @@
     "kontakt": "Stefan Bückner",
     "e-mail": "stephan.bueckner@die-libertaeren.de",
     "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Team Freiheit Clubabend Rostock",
+    "beginn": "2026-05-21",
+    "ende": "2026-05-21",
+    "uhrzeit": "18:30",
+    "kw": "KW21",
+    "wochentag": "Thursday",
+    "orga": "Team Freiheit",
+    "plz": "18059",
+    "kontakt": "Team Freiheit",
+    "e-mail": "rostock@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-rostock-20-03-26/"
   },
   {
     "name": "Libertäres Treffen Dortmund",
@@ -1854,22 +1895,6 @@
     "e-mail": "kontakt@hayek-club-koblenz.de",
     "orga_webseite": "hayek-club-koblenz.de",
     "infotext": "Joana Cotar: Inside Bundestag - Wie ich in acht Jahren im Zentrum der Macht das Vertrauen in unsere Demokratie verlor"
-  },
-  {
-    "name": "Freiheitlicher Stammtisch Bergstraße",
-    "beginn": "2026-05-27",
-    "ende": "2026-05-27",
-    "uhrzeit": "19:00",
-    "kw": "KW22",
-    "wochentag": "Wednesday",
-    "orga": "DIE LIBERTÄREN",
-    "plz": "64673",
-    "telegram_group_id": "5205303336",
-    "kontakt": "Lukas Schroth",
-    "e-mail": "lukas.schroth@die-libertaeren.de",
-    "orga_webseite": "https://die-libertaeren.de/",
-    "tournus": "Dritter Mittwoch des Monats",
-    "group_link": "https://t.me/+qhX3l_Dn_VpkNmYy"
   },
   {
     "name": "Team Freiheit Clubabend Köln-Bonn",
@@ -1997,6 +2022,19 @@
     "kontakt": "Stefan Bückner",
     "e-mail": "stephan.bueckner@die-libertaeren.de",
     "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Team Freiheit Clubabend Rostock",
+    "beginn": "2026-06-18",
+    "ende": "2026-06-18",
+    "uhrzeit": "18:30",
+    "kw": "KW25",
+    "wochentag": "Thursday",
+    "orga": "Team Freiheit",
+    "plz": "18059",
+    "kontakt": "Team Freiheit",
+    "e-mail": "rostock@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-rostock-20-03-26/"
   },
   {
     "name": "Libertäres Treffen Dortmund",
