@@ -2420,6 +2420,26 @@
     "link_qr": null
   },
   {
+    "name": "Team Freiheit Clubabend Potsdam",
+    "plz": "14469",
+    "state": "DE-BB",
+    "city": "Potsdam",
+    "city_dist": 3.7,
+    "coords": [
+      52.4271931,
+      13.0265212
+    ],
+    "date": "2026-05-06",
+    "dow": "Mi.",
+    "time": "18:30",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-rostock-20-03-26/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "rostock@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Hamburg",
     "plz": "20095",
     "state": "DE-HH",
