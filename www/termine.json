@@ -3040,6 +3040,26 @@
     "link_qr": null
   },
   {
+    "name": "Hayek Club Weimar",
+    "plz": "99425",
+    "state": "DE-TH",
+    "city": "Weimar",
+    "city_dist": 1.9,
+    "coords": [
+      50.9672359,
+      11.348212
+    ],
+    "date": "2026-06-27",
+    "dow": "Sa.",
+    "time": "19:00",
+    "orga": "Hayek Club",
+    "orga_www": "https://hayek.de/hayek-clubs/",
+    "kontakt": "Karla Wagner",
+    "e-mail": "hayek.club.weimar@mail.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Ansbach",
     "plz": "91522",
     "state": "DE-BY",
@@ -3078,6 +3098,26 @@
     "e-mail": "lukas.schroth@die-libertaeren.de",
     "link": "https://t.me/+qhX3l_Dn_VpkNmYy",
     "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
+  },
+  {
+    "name": "Hayek Club Weimar",
+    "plz": "99425",
+    "state": "DE-TH",
+    "city": "Weimar",
+    "city_dist": 1.9,
+    "coords": [
+      50.9672359,
+      11.348212
+    ],
+    "date": "2026-07-18",
+    "dow": "Sa.",
+    "time": "19:00",
+    "orga": "Hayek Club",
+    "orga_www": "https://hayek.de/hayek-clubs/",
+    "kontakt": "Karla Wagner",
+    "e-mail": "hayek.club.weimar@mail.de",
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Afuera Fest 2026",
