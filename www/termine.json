@@ -2860,6 +2860,26 @@
     "link_qr": null
   },
   {
+    "name": "Freiheitlicher Stammtisch Karlsruhe",
+    "plz": "76137",
+    "state": "DE-BW",
+    "city": "Karlsruhe",
+    "city_dist": 1.1,
+    "coords": [
+      48.9994966,
+      8.4142277
+    ],
+    "date": "2026-06-07",
+    "dow": "So.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": "freiheitliche-stammtische.de",
+    "kontakt": "Marc Götz",
+    "e-mail": "freiheitlicher-stammtisch-karlsruhe@tuta.com",
+    "link": "https://t.me/+SLZCqYAhW443NmEy",
+    "link_qr": "img/qr_604fc8ec6d0be3ed439100b8e34ab37bc14c652a_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Halle (Saale)",
     "plz": "06108",
     "state": "DE-ST",
@@ -3058,26 +3078,6 @@
     "e-mail": "hayek.club.weimar@mail.de",
     "link": null,
     "link_qr": null
-  },
-  {
-    "name": "Freiheitlicher Stammtisch Weingarten",
-    "plz": "75045",
-    "state": "DE-BW",
-    "city": "Karlsruhe",
-    "city_dist": 14.6,
-    "coords": [
-      49.0209228,
-      8.6017716
-    ],
-    "date": "2026-07-07",
-    "dow": "Di.",
-    "time": "19:00",
-    "orga": "Unabhängig",
-    "orga_www": "freiheitliche-stammtische.de",
-    "kontakt": "Marc Götz",
-    "e-mail": "freiheitlicher-stammtisch-karlsruhe@tuta.com",
-    "link": "https://t.me/+SLZCqYAhW443NmEy",
-    "link_qr": "img/qr_604fc8ec6d0be3ed439100b8e34ab37bc14c652a_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Ansbach",
