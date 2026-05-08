@@ -2620,6 +2620,26 @@
     "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0_v2.png"
   },
   {
+    "name": "Freiheit Meetup München",
+    "plz": "80802",
+    "state": "DE-BY",
+    "city": "München",
+    "city_dist": 2.9,
+    "coords": [
+      48.1600441,
+      11.5930037
+    ],
+    "date": "2026-05-14",
+    "dow": "Do.",
+    "time": "12:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Nicole",
+    "e-mail": null,
+    "link": "https://wa.me/4915757843960",
+    "link_qr": "img/qr_182b6af6d9c920e2f49fc7350742247e79527ddf_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Kaiserslautern",
     "plz": "67657",
     "state": "DE-RP",
