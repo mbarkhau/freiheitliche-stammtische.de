@@ -2960,6 +2960,26 @@
     "link_qr": null
   },
   {
+    "name": "Team Freiheit Clubabend Gießen",
+    "plz": "35390",
+    "state": "DE-HE",
+    "city": "Gießen",
+    "city_dist": 1.4,
+    "coords": [
+      50.5879221,
+      8.6766586
+    ],
+    "date": "2026-06-16",
+    "dow": "Di.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-giessen-23-03-26/",
+    "kontakt": null,
+    "e-mail": "giessen@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Mittelhessen",
     "plz": "35396",
     "state": "DE-HE",
