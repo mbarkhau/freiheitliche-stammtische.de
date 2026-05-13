@@ -3160,6 +3160,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Halle (Saale)",
+    "plz": "06108",
+    "state": "DE-ST",
+    "city": "Halle (Saale)",
+    "city_dist": 1.1,
+    "coords": [
+      51.4904352,
+      11.9628501
+    ],
+    "date": "2026-07-08",
+    "dow": "Mi.",
+    "time": "18:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Ansbach",
     "plz": "91522",
     "state": "DE-BY",
