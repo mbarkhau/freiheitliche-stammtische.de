@@ -2880,6 +2880,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Dessau",
+    "plz": "06844",
+    "state": "DE-ST",
+    "city": "Dessau",
+    "city_dist": 2.9,
+    "coords": [
+      51.8504299,
+      12.270401
+    ],
+    "date": "2026-06-04",
+    "dow": "Do.",
+    "time": "18:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Freiheitlicher Stammtisch Karlsruhe",
     "plz": "76137",
     "state": "DE-BW",
@@ -3116,6 +3136,26 @@
     "orga_www": "https://hayek.de/hayek-clubs/",
     "kontakt": "Karla Wagner",
     "e-mail": "hayek.club.weimar@mail.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Hamburg",
+    "plz": "20095",
+    "state": "DE-HH",
+    "city": "Hamburg",
+    "city_dist": 0.1,
+    "coords": [
+      53.5512868,
+      9.9992216
+    ],
+    "date": "2026-07-01",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Ferdinand Steinhöfel",
+    "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
     "link": null,
     "link_qr": null
   },
