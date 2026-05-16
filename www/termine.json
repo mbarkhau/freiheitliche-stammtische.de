@@ -2840,6 +2840,26 @@
     "link_qr": null
   },
   {
+    "name": "Hayek Club Weimar",
+    "plz": "99425",
+    "state": "DE-TH",
+    "city": "Weimar",
+    "city_dist": 1.9,
+    "coords": [
+      50.9672359,
+      11.348212
+    ],
+    "date": "2026-05-30",
+    "dow": "Sa.",
+    "time": "19:00",
+    "orga": "Hayek Club",
+    "orga_www": "https://hayek.de/hayek-clubs/",
+    "kontakt": "Karla Wagner",
+    "e-mail": "hayek.club.weimar@mail.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
     "state": "DE-HE",

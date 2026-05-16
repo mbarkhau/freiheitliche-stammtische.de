@@ -1923,6 +1923,20 @@
     "tournus": "Letzter Fr. im Monat"
   },
   {
+    "name": "Hayek Club Weimar",
+    "beginn": "2026-05-30",
+    "ende": "2026-05-30",
+    "uhrzeit": "19:00",
+    "kw": "KW22",
+    "wochentag": "Saturday",
+    "orga": "Hayek Club",
+    "plz": "99425",
+    "kontakt": "Karla Wagner",
+    "e-mail": "hayek.club.weimar@mail.de",
+    "orga_webseite": "https://hayek.de/hayek-clubs/",
+    "infotext": "10 Jahre Hayek-Club Weimar – Zurück zur Vernunft!"
+  },
+  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "beginn": "2026-06-01",
     "ende": "2026-06-01",
