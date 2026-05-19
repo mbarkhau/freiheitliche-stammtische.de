@@ -2700,26 +2700,6 @@
     "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
   },
   {
-    "name": "Libertärer Stammtisch Dresden",
-    "plz": "01237",
-    "state": "DE-SN",
-    "city": "Dresden",
-    "city_dist": 5.7,
-    "coords": [
-      51.0182471,
-      13.8020866
-    ],
-    "date": "2026-05-21",
-    "dow": "Do.",
-    "time": "18:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Dr. Joachim Teske",
-    "e-mail": "joachim.teske@die-libertaeren.de",
-    "link": "https://t.me/+kXYK3OtoB0AxYTAy",
-    "link_qr": "img/qr_5565c4d9b4b29ecef348f944574ba5e63942a5bc_v2.png"
-  },
-  {
     "name": "Libertärer Stammtisch Bernburg (Saale)",
     "plz": "06406",
     "state": "DE-ST",
@@ -2818,6 +2798,26 @@
     "e-mail": "kontakt@hayek-club-koblenz.de",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Berlin",
+    "plz": "10555",
+    "state": "DE-BE",
+    "city": "Berlin",
+    "city_dist": 4.1,
+    "coords": [
+      52.519898,
+      13.3355418
+    ],
+    "date": "2026-05-29",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Sven Brajer",
+    "e-mail": "svenbrajer@web.de",
+    "link": "https://t.me/+Xzxvc2UqKuJmNmRi",
+    "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
   },
   {
     "name": "Team Freiheit Clubabend Köln-Bonn",
@@ -2938,6 +2938,26 @@
     "e-mail": "freiheitlicher-stammtisch-karlsruhe@tuta.com",
     "link": "https://t.me/+SLZCqYAhW443NmEy",
     "link_qr": "img/qr_604fc8ec6d0be3ed439100b8e34ab37bc14c652a_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Dresden",
+    "plz": "01237",
+    "state": "DE-SN",
+    "city": "Dresden",
+    "city_dist": 5.7,
+    "coords": [
+      51.0182471,
+      13.8020866
+    ],
+    "date": "2026-06-10",
+    "dow": "Mi.",
+    "time": "18:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Joachim Teske",
+    "e-mail": "joachim.teske@die-libertaeren.de",
+    "link": "https://t.me/+kXYK3OtoB0AxYTAy",
+    "link_qr": "img/qr_5565c4d9b4b29ecef348f944574ba5e63942a5bc_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Halle (Saale)",

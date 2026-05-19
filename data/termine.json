@@ -1828,20 +1828,6 @@
     "group_link": "https://t.me/+qhX3l_Dn_VpkNmYy"
   },
   {
-    "name": "Libertärer Stammtisch Dresden",
-    "beginn": "2026-05-21",
-    "ende": "2026-05-21",
-    "uhrzeit": "18:00",
-    "kw": "KW21",
-    "wochentag": "Thursday",
-    "orga": "DIE LIBERTÄREN",
-    "plz": "01237",
-    "kontakt": "Dr. Joachim Teske",
-    "e-mail": "joachim.teske@die-libertaeren.de",
-    "orga_webseite": "https://die-libertaeren.de/",
-    "group_link": "https://t.me/+kXYK3OtoB0AxYTAy"
-  },
-  {
     "name": "Libertärer Stammtisch Bernburg (Saale)",
     "beginn": "2026-05-21",
     "ende": "2026-05-21",
@@ -1907,6 +1893,21 @@
     "e-mail": "kontakt@hayek-club-koblenz.de",
     "orga_webseite": "hayek-club-koblenz.de",
     "infotext": "Joana Cotar: Inside Bundestag - Wie ich in acht Jahren im Zentrum der Macht das Vertrauen in unsere Demokratie verlor"
+  },
+  {
+    "name": "Libertärer Stammtisch Berlin",
+    "beginn": "2026-05-29",
+    "ende": "2026-05-29",
+    "uhrzeit": "19:00",
+    "kw": "KW22",
+    "wochentag": "Friday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "10555",
+    "telegram_group_id": "2995740483",
+    "kontakt": "Dr. Sven Brajer",
+    "e-mail": "svenbrajer@web.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "group_link": "https://t.me/+Xzxvc2UqKuJmNmRi"
   },
   {
     "name": "Team Freiheit Clubabend Köln-Bonn",
@@ -1994,6 +1995,20 @@
     "e-mail": "freiheitlicher-stammtisch-karlsruhe@tuta.com",
     "orga_webseite": "freiheitliche-stammtische.de",
     "group_link": "https://t.me/+SLZCqYAhW443NmEy"
+  },
+  {
+    "name": "Libertärer Stammtisch Dresden",
+    "beginn": "2026-06-10",
+    "ende": "2026-06-10",
+    "uhrzeit": "18:00",
+    "kw": "KW24",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "01237",
+    "kontakt": "Dr. Joachim Teske",
+    "e-mail": "joachim.teske@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "group_link": "https://t.me/+kXYK3OtoB0AxYTAy"
   },
   {
     "name": "Libertärer Stammtisch Halle (Saale)",
