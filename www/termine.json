@@ -1000,26 +1000,6 @@
     "link_qr": null
   },
   {
-    "name": "Libertärer Stammtisch Dessau",
-    "plz": "06844",
-    "state": "DE-ST",
-    "city": "Dessau",
-    "city_dist": 2.9,
-    "coords": [
-      51.8504299,
-      12.270401
-    ],
-    "date": "2026-03-04",
-    "dow": "Mi.",
-    "time": "18:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Stefan Bückner",
-    "e-mail": "stephan.bueckner@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Libertärer Stammtisch Hamburg",
     "plz": "20095",
     "state": "DE-HH",
@@ -1700,26 +1680,6 @@
     "link_qr": null
   },
   {
-    "name": "Libertärer Stammtisch Dessau",
-    "plz": "06844",
-    "state": "DE-ST",
-    "city": "Dessau",
-    "city_dist": 2.9,
-    "coords": [
-      51.8504299,
-      12.270401
-    ],
-    "date": "2026-04-04",
-    "dow": "Sa.",
-    "time": "18:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Stefan Bückner",
-    "e-mail": "stephan.bueckner@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Libertärer Stammtisch Halle (Saale)",
     "plz": "06108",
     "state": "DE-ST",
@@ -2360,26 +2320,6 @@
     "link_qr": null
   },
   {
-    "name": "Libertärer Stammtisch Dessau",
-    "plz": "06844",
-    "state": "DE-ST",
-    "city": "Dessau",
-    "city_dist": 2.9,
-    "coords": [
-      51.8504299,
-      12.270401
-    ],
-    "date": "2026-05-04",
-    "dow": "Mo.",
-    "time": "18:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Stefan Bückner",
-    "e-mail": "stephan.bueckner@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
     "state": "DE-HE",
@@ -2900,26 +2840,6 @@
     "link_qr": null
   },
   {
-    "name": "Libertärer Stammtisch Dessau",
-    "plz": "06844",
-    "state": "DE-ST",
-    "city": "Dessau",
-    "city_dist": 2.9,
-    "coords": [
-      51.8504299,
-      12.270401
-    ],
-    "date": "2026-06-04",
-    "dow": "Do.",
-    "time": "18:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Stefan Bückner",
-    "e-mail": "stephan.bueckner@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Freiheitlicher Stammtisch Karlsruhe",
     "plz": "76137",
     "state": "DE-BW",
@@ -2938,6 +2858,26 @@
     "e-mail": "freiheitlicher-stammtisch-karlsruhe@tuta.com",
     "link": "https://t.me/+SLZCqYAhW443NmEy",
     "link_qr": "img/qr_604fc8ec6d0be3ed439100b8e34ab37bc14c652a_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Bernburg (Saale)",
+    "plz": "06406",
+    "state": "DE-ST",
+    "city": "Bernburg",
+    "city_dist": 1.8,
+    "coords": [
+      51.7825763,
+      11.7556064
+    ],
+    "date": "2026-06-09",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Dresden",
@@ -3100,26 +3040,6 @@
     "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
   },
   {
-    "name": "Libertärer Stammtisch Bernburg (Saale)",
-    "plz": "06406",
-    "state": "DE-ST",
-    "city": "Bernburg",
-    "city_dist": 1.8,
-    "coords": [
-      51.7825763,
-      11.7556064
-    ],
-    "date": "2026-06-18",
-    "dow": "Do.",
-    "time": "18:30",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Stefan Bückner",
-    "e-mail": "stephan.bueckner@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Team Freiheit Clubabend Rostock",
     "plz": "18059",
     "state": "DE-MV",
@@ -3158,6 +3078,26 @@
     "e-mail": "info@buendnis-libertaerer.de",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Landsberg am Lech",
+    "plz": "86899",
+    "state": "DE-BY",
+    "city": "Landsberg am Lech",
+    "city_dist": 2.0,
+    "coords": [
+      48.0336819,
+      10.8638784
+    ],
+    "date": "2026-06-25",
+    "dow": "Do.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dillon Still",
+    "e-mail": "dillon.still@die-libertaeren.de",
+    "link": "https://t.me/+bm69tb7eh344MjQy",
+    "link_qr": "img/qr_bd802c047806b533fa07fbfd9e4e2d0a955691d0_v2.png"
   },
   {
     "name": "Team Freiheit Clubabend Köln-Bonn",
