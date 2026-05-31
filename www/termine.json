@@ -2820,6 +2820,26 @@
     "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba_v2.png"
   },
   {
+    "name": "Team Freiheit Clubabend Würzburg",
+    "plz": "97070",
+    "state": "DE-BY",
+    "city": "Veitshöchheim",
+    "city_dist": 6.2,
+    "coords": [
+      49.7940782,
+      9.935303
+    ],
+    "date": "2026-06-01",
+    "dow": "Mo.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/events/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "wuerzburg@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Hamburg",
     "plz": "20095",
     "state": "DE-HH",
@@ -3020,6 +3040,26 @@
     "link_qr": null
   },
   {
+    "name": "Team Freiheit Clubabend Osnabrück",
+    "plz": "49074",
+    "state": "DE-NI",
+    "city": "Osnabrück",
+    "city_dist": 0.7,
+    "coords": [
+      52.2770776,
+      8.0544842
+    ],
+    "date": "2026-06-12",
+    "dow": "Fr.",
+    "time": "18:30",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-osnabrueck-06-03-26/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "osnabrueck@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "ROLAND BAADER Treffen",
     "plz": "68753",
     "state": "DE-BW",
@@ -3036,6 +3076,26 @@
     "orga_www": "https://rolandbaader-treffen.de/treffen2026/",
     "kontakt": null,
     "e-mail": null,
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Team Freiheit Clubabend Berlin",
+    "plz": "10555",
+    "state": "DE-BE",
+    "city": "Berlin",
+    "city_dist": 4.1,
+    "coords": [
+      52.519898,
+      13.3355418
+    ],
+    "date": "2026-06-14",
+    "dow": "So.",
+    "time": "17:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/events/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "berlin@team-freiheit.de",
     "link": null,
     "link_qr": null
   },
@@ -3058,6 +3118,26 @@
     "e-mail": null,
     "link": "https://wa.me/4915757843960",
     "link_qr": "img/qr_182b6af6d9c920e2f49fc7350742247e79527ddf_v2.png"
+  },
+  {
+    "name": "Team Freiheit Clubabend Hamburg",
+    "plz": "20095",
+    "state": "DE-HH",
+    "city": "Hamburg",
+    "city_dist": 0.1,
+    "coords": [
+      53.5512868,
+      9.9992216
+    ],
+    "date": "2026-06-16",
+    "dow": "Di.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-hamburg-17-03-26/",
+    "kontakt": "Tem Freiheit",
+    "e-mail": "hamburg@team-freiheit.de",
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Team Freiheit Clubabend Gießen",
@@ -3616,6 +3696,26 @@
     "orga_www": "https://buendnis-libertaerer.de/",
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Hayek Club Koblenz",
+    "plz": "56068",
+    "state": "DE-RP",
+    "city": "Koblenz",
+    "city_dist": 0.4,
+    "coords": [
+      50.3494613,
+      7.5947632
+    ],
+    "date": "2026-08-21",
+    "dow": "Fr.",
+    "time": "17:00",
+    "orga": "Hayek Club",
+    "orga_www": "hayek-club-koblenz.de",
+    "kontakt": "Prof. Ing. Götz Piwinger",
+    "e-mail": "kontakt@hayek-club-koblenz.de",
     "link": null,
     "link_qr": null
   },

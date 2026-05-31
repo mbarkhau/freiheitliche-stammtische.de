@@ -1912,6 +1912,19 @@
     "group_link": "https://t.me/+WgMHpki_VXZkYWIy"
   },
   {
+    "name": "Team Freiheit Clubabend Würzburg",
+    "beginn": "2026-06-01",
+    "ende": "2026-06-01",
+    "uhrzeit": "19:00",
+    "kw": "KW23",
+    "wochentag": "Monday",
+    "orga": "Team Freiheit",
+    "plz": "97070",
+    "kontakt": "Team Freiheit",
+    "e-mail": "wuerzburg@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events/"
+  },
+  {
     "name": "Libertärer Stammtisch Hamburg",
     "beginn": "2026-06-03",
     "ende": "2026-06-03",
@@ -2049,6 +2062,19 @@
     "orga_webseite": "https://ef-magazin.de/"
   },
   {
+    "name": "Team Freiheit Clubabend Osnabrück",
+    "beginn": "2026-06-12",
+    "ende": "2026-06-12",
+    "uhrzeit": "18:30",
+    "kw": "KW24",
+    "wochentag": "Friday",
+    "orga": "Team Freiheit",
+    "plz": "49074",
+    "kontakt": "Team Freiheit",
+    "e-mail": "osnabrueck@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-osnabrueck-06-03-26/"
+  },
+  {
     "name": "ROLAND BAADER Treffen",
     "beginn": "2026-06-13",
     "ende": "2026-06-13",
@@ -2061,6 +2087,19 @@
     "tournus": "Jährlich"
   },
   {
+    "name": "Team Freiheit Clubabend Berlin",
+    "beginn": "2026-06-14",
+    "ende": "2026-06-14",
+    "uhrzeit": "17:00",
+    "kw": "KW24",
+    "wochentag": "Sunday",
+    "orga": "Team Freiheit",
+    "plz": "10555",
+    "kontakt": "Team Freiheit",
+    "e-mail": "berlin@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events/"
+  },
+  {
     "name": "Freiheit Meetup München",
     "beginn": "2026-06-14",
     "ende": "2026-06-14",
@@ -2071,6 +2110,19 @@
     "plz": "80802",
     "kontakt": "Nicole",
     "group_link": "https://wa.me/4915757843960"
+  },
+  {
+    "name": "Team Freiheit Clubabend Hamburg",
+    "beginn": "2026-06-16",
+    "ende": "2026-06-16",
+    "uhrzeit": "19:00",
+    "kw": "KW25",
+    "wochentag": "Tuesday",
+    "orga": "Team Freiheit",
+    "plz": "20095",
+    "kontakt": "Tem Freiheit",
+    "e-mail": "hamburg@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-hamburg-17-03-26/"
   },
   {
     "name": "Team Freiheit Clubabend Gießen",
@@ -2455,6 +2507,20 @@
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
     "orga_webseite": "https://buendnis-libertaerer.de/"
+  },
+  {
+    "name": "Hayek Club Koblenz",
+    "beginn": "2026-08-21",
+    "ende": "2026-08-21",
+    "uhrzeit": "17:00",
+    "kw": "KW34",
+    "wochentag": "Friday",
+    "orga": "Hayek Club",
+    "plz": "56068",
+    "kontakt": "Prof. Ing. Götz Piwinger",
+    "e-mail": "kontakt@hayek-club-koblenz.de",
+    "orga_webseite": "hayek-club-koblenz.de",
+    "infotext": "Sommerfest des Hayek Club Koblenz - Wir tanzen den Hayek"
   },
   {
     "name": "Team Freiheit Clubabend Köln-Bonn",
