@@ -1634,19 +1634,6 @@
     "orga_webseite": "https://die-libertaeren.de/"
   },
   {
-    "name": "Libertärer Stammtisch Göppingen/Esslingen",
-    "beginn": "2026-05-07",
-    "ende": "2026-05-07",
-    "uhrzeit": "19:30",
-    "kw": "KW19",
-    "wochentag": "Thursday",
-    "orga": "DIE LIBERTÄREN",
-    "plz": "73033",
-    "kontakt": "Dieter Kirschmann",
-    "e-mail": "dieter.kirschmann@die-libertaeren.de",
-    "orga_webseite": "https://die-libertaeren.de/"
-  },
-  {
     "name": "Staatenlos Neuss",
     "beginn": "2026-05-08",
     "ende": "2026-05-08",
@@ -1925,19 +1912,6 @@
     "group_link": "https://t.me/+WgMHpki_VXZkYWIy"
   },
   {
-    "name": "Libertärer Stammtisch Göppingen/Esslingen",
-    "beginn": "2026-06-02",
-    "ende": "2026-06-02",
-    "uhrzeit": "19:30",
-    "kw": "KW23",
-    "wochentag": "Tuesday",
-    "orga": "DIE LIBERTÄREN",
-    "plz": "73033",
-    "kontakt": "Dieter Kirschmann",
-    "e-mail": "dieter.kirschmann@die-libertaeren.de",
-    "orga_webseite": "https://die-libertaeren.de/"
-  },
-  {
     "name": "Libertärer Stammtisch Hamburg",
     "beginn": "2026-06-03",
     "ende": "2026-06-03",
@@ -1950,6 +1924,19 @@
     "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
     "orga_webseite": "https://die-libertaeren.de/",
     "tournus": "Jeder 1. Mittwoch"
+  },
+  {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "beginn": "2026-06-04",
+    "ende": "2026-06-04",
+    "uhrzeit": "19:30",
+    "kw": "KW23",
+    "wochentag": "Thursday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "73033",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/"
   },
   {
     "name": "Freiheitlicher Stammtisch Karlsruhe",
@@ -2308,6 +2295,19 @@
     "group_link": "https://t.me/+qhX3l_Dn_VpkNmYy"
   },
   {
+    "name": "Libertäres Treffen Dortmund",
+    "beginn": "2026-07-16",
+    "ende": "2026-07-16",
+    "uhrzeit": "19:00",
+    "kw": "KW29",
+    "wochentag": "Thursday",
+    "orga": "Bündnis Libertärer",
+    "plz": "44263",
+    "kontakt": "Alexander Expander",
+    "e-mail": "info@buendnis-libertaerer.de",
+    "orga_webseite": "https://buendnis-libertaerer.de/"
+  },
+  {
     "name": "Hayek Club Weimar",
     "beginn": "2026-07-18",
     "ende": "2026-07-18",
@@ -2347,6 +2347,19 @@
     "e-mail": "koeln@team-freiheit.de",
     "orga_webseite": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
     "tournus": "Letzter Fr. im Monat"
+  },
+  {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "beginn": "2026-08-06",
+    "ende": "2026-08-06",
+    "uhrzeit": "19:30",
+    "kw": "KW32",
+    "wochentag": "Thursday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "73033",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/"
   },
   {
     "name": "DEXIT 2026 – Die Auswanderer Konferenz",
@@ -2429,6 +2442,19 @@
     "e-mail": "hayek.club.weimar@mail.de",
     "orga_webseite": "https://hayek.de/hayek-clubs/",
     "infotext": "10 Jahre Hayek-Club Weimar – Zurück zur Vernunft!"
+  },
+  {
+    "name": "Libertäres Treffen Dortmund",
+    "beginn": "2026-08-20",
+    "ende": "2026-08-20",
+    "uhrzeit": "19:00",
+    "kw": "KW34",
+    "wochentag": "Thursday",
+    "orga": "Bündnis Libertärer",
+    "plz": "44263",
+    "kontakt": "Alexander Expander",
+    "e-mail": "info@buendnis-libertaerer.de",
+    "orga_webseite": "https://buendnis-libertaerer.de/"
   },
   {
     "name": "Team Freiheit Clubabend Köln-Bonn",
