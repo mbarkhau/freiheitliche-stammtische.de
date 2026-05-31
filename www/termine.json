@@ -2540,6 +2540,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Magdeburg",
+    "plz": "39104",
+    "state": "DE-ST",
+    "city": "Magdeburg",
+    "city_dist": 1.9,
+    "coords": [
+      52.1151882,
+      11.630882
+    ],
+    "date": "2026-05-14",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Mathias Hummel",
+    "e-mail": "events@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch in Balingen / Württemberg",
     "plz": "72336",
     "state": "DE-BW",
