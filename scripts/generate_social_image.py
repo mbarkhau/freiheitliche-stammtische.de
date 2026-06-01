@@ -109,6 +109,7 @@ ORGA_BRANDING = {
     "Unabhängig": ("logo_256.png", "#EEEEEE"),
     "DIE LIBERTÄREN": ("logo_die-libertaeren.png", "#EEEEEE"),
     "Hayek Club": ("logo_hayek-club.png", "#EEEEEE"),
+    "Ludwig von Mises Institut Deutschland": ("logo_lvmi.png", "#EEEEEE"),
     "Staatenlos": ("logo_staatenlos.png", "#FCC920"),
     "Free Cities Foundation": ("logo_free-cities.png", "#EEEEEE"),
     "Bündnis Libertärer": ("logo_blib.png", "#EEEEEE"),
@@ -116,6 +117,8 @@ ORGA_BRANDING = {
     "Milei Institut": ("logo_milei-institut.png", "#d0d0d0"),
     "Partei der Vernunft": ("logo_pdv.png", "#EEEEEE"),
     "Team Freiheit": ("logo_tf.png", "#122E76"),
+    "Liberty Rising": ("logo_lr.png", "#222222"),
+    "Libertärer Stammtisch Berlin": ("logo_lsber.png", "#EDC62B"),
 }
 
 def get_orga_logo(orga: str) -> tuple[str, str]:

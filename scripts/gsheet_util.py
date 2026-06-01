@@ -518,6 +518,8 @@ def _iter_event_items(termine: list) -> typ.Generator[dict, None, None]:
             img = qrcode.make(group_link, box_size=box_size, version=6, error_correction=qrcode.constants.ERROR_CORRECT_H)
             if "https://t.me" in group_link:
                 overlay = Image.open(www_dir / "img" / "telegram_128.png")
+            elif "https://wa.me/" in group_link:
+                overlay = Image.open(www_dir / "img" / "whatsapp_128.png")
             elif "https://chat.whatsapp.com" in group_link:
                 overlay = Image.open(www_dir / "img" / "whatsapp_128.png")
             elif "https://signal.group" in group_link:
@@ -602,7 +604,7 @@ def sync_cmd(sheet_id: str) -> int:
     cache_key = None
     while True:
         try:
-            generate_social_image.gen_image(dt.date.today())
+            generate_social_image.gen_image(dt.date.today() + dt.timedelta(days=1))
 
             sheet = GSheet(sheet_id=sheet_id)
             new_cache_key = sheet.cache_key()

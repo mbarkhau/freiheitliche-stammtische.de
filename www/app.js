@@ -44,7 +44,16 @@
 		"Ludwig von Mises Institut Deutschland": {
 			"logo": "img/logo_lvmi.png",
 			"bg": "#EEE",
+		},
+		"Liberty Rising": {
+			"logo": "img/logo_lr.png",
+			"bg": "#222222",
+		},
+		"Libertärer Stammtisch Berlin": {
+			"logo": "img/logo_lsber.png",
+			"bg": "#EDC62B",
 		}
+
 	};
 
 	function getOrgaBranding(orga) {
@@ -556,13 +565,53 @@
 		const themeBtn = document.getElementById('theme-toggle');
 		if (themeBtn) themeBtn.addEventListener('click', toggleTheme);
 
+		const shareBtn = document.getElementById('share-button');
+		const shareDropdown = document.getElementById('share-dropdown');
+		if (shareBtn && shareDropdown) {
+			shareBtn.addEventListener('click', (e) => {
+				e.stopPropagation();
+				shareDropdown.classList.toggle('active');
+			});
+
+			const copyUrlBtn = document.getElementById('share-copy-url');
+			if (copyUrlBtn) {
+				copyUrlBtn.addEventListener('click', async (e) => {
+					e.preventDefault();
+					try {
+						await navigator.clipboard.writeText("https://freiheitliche-stammtische.de/");
+						alert('Link in die Zwischenablage kopiert!');
+					} catch (err) {
+						console.error('Fehler beim Kopieren:', err);
+					}
+					shareDropdown.classList.remove('active');
+				});
+			}
+
+			const shareItems = shareDropdown.querySelectorAll('.share-item');
+			shareItems.forEach(item => {
+				if (item.id !== 'share-copy-url') {
+					item.addEventListener('click', () => {
+						shareDropdown.classList.remove('active');
+					});
+				}
+			});
+		}
+
 		document.addEventListener('keydown', (e) => {
 			if (e.key === 'Escape') {
 				document.getElementById('selection-overlay').style.display = 'none';
+				if (shareDropdown) shareDropdown.classList.remove('active');
 			}
 		});
 
 		document.addEventListener('click', (e) => {
+			if (shareDropdown && shareDropdown.classList.contains('active')) {
+				const isShareContainer = e.target.closest('.share-container');
+				if (!isShareContainer) {
+					shareDropdown.classList.remove('active');
+				}
+			}
+
 			const overlay = document.getElementById('selection-overlay');
 			if (overlay && overlay.style.display === 'block') {
 				const isOverlay = e.target.closest('#selection-overlay');
