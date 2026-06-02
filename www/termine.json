@@ -3280,6 +3280,26 @@
     "link_qr": "img/qr_bd802c047806b533fa07fbfd9e4e2d0a955691d0_v2.png"
   },
   {
+    "name": "Libertärer Stammtisch Berlin",
+    "plz": "10555",
+    "state": "DE-BE",
+    "city": "Berlin",
+    "city_dist": 4.1,
+    "coords": [
+      52.519898,
+      13.3355418
+    ],
+    "date": "2026-06-26",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Libertärer Stammtisch Berlin",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Sven Brajer",
+    "e-mail": "svenbrajer@web.de",
+    "link": "https://t.me/+Xzxvc2UqKuJmNmRi",
+    "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
+  },
+  {
     "name": "Team Freiheit Clubabend Köln-Bonn",
     "plz": "50672",
     "state": "DE-NW",
