@@ -53,7 +53,7 @@
 			"logo": "img/logo_lsber.png",
 			"bg": "#EDC62B",
 		},
-	    "Einundzwanzig": {
+	    "EINUNDZWANZIG": {
 			"logo": "img/logo_einundzwanzig.png",
 			"bg": "#EEE",
 		},
