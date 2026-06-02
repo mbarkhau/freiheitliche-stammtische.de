@@ -2880,6 +2880,26 @@
     "link_qr": "img/qr_604fc8ec6d0be3ed439100b8e34ab37bc14c652a_v2.png"
   },
   {
+    "name": "EINUNDZWANZIG Brandenburg Ost",
+    "plz": "15345",
+    "state": "DE-BB",
+    "city": "Buckow",
+    "city_dist": 11.9,
+    "coords": [
+      52.5941625,
+      13.9068929
+    ],
+    "date": "2026-06-08",
+    "dow": "Mo.",
+    "time": "18:30",
+    "orga": "EINUNDZWANZIG",
+    "orga_www": null,
+    "kontakt": null,
+    "e-mail": null,
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Bernburg (Saale)",
     "plz": "06406",
     "state": "DE-ST",
