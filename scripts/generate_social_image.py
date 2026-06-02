@@ -119,6 +119,7 @@ ORGA_BRANDING = {
     "Team Freiheit": ("logo_tf.png", "#122E76"),
     "Liberty Rising": ("logo_lr.png", "#222222"),
     "Libertärer Stammtisch Berlin": ("logo_lsber.png", "#EDC62B"),
+    "Einundzwanzig": ("logo_einundzwanzig.png", "#EEEEEE"),
 }
 
 def get_orga_logo(orga: str) -> tuple[str, str]:
