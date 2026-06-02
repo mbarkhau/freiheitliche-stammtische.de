@@ -2893,9 +2893,9 @@
     "dow": "Mo.",
     "time": "18:30",
     "orga": "EINUNDZWANZIG",
-    "orga_www": null,
-    "kontakt": null,
-    "e-mail": null,
+    "orga_www": "https://portal.einundzwanzig.space/de/meetup/einundzwanzig-ost-brandenburg",
+    "kontakt": "EINUNDZWANZIG",
+    "e-mail": "meetup@einundzwanzig-brandenburg-ost.de",
     "link": null,
     "link_qr": null
   },
@@ -3480,6 +3480,26 @@
     "link_qr": null
   },
   {
+    "name": "EINUNDZWANZIG Brandenburg Ost",
+    "plz": "15345",
+    "state": "DE-BB",
+    "city": "Buckow",
+    "city_dist": 11.9,
+    "coords": [
+      52.5941625,
+      13.9068929
+    ],
+    "date": "2026-07-13",
+    "dow": "Mo.",
+    "time": "18:30",
+    "orga": "EINUNDZWANZIG",
+    "orga_www": "https://portal.einundzwanzig.space/de/meetup/einundzwanzig-ost-brandenburg",
+    "kontakt": "EINUNDZWANZIG",
+    "e-mail": "meetup@einundzwanzig-brandenburg-ost.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Freiheitlicher Stammtisch Bergstraße",
     "plz": "64673",
     "state": "DE-HE",
@@ -3616,6 +3636,26 @@
     "orga_www": "https://staatenlos.ch/staatenlos/event/",
     "kontakt": "Caroline Krause",
     "e-mail": "caroline@staatenlos.ch",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "EINUNDZWANZIG Brandenburg Ost",
+    "plz": "15345",
+    "state": "DE-BB",
+    "city": "Buckow",
+    "city_dist": 11.9,
+    "coords": [
+      52.5941625,
+      13.9068929
+    ],
+    "date": "2026-08-10",
+    "dow": "Mo.",
+    "time": "18:30",
+    "orga": "EINUNDZWANZIG",
+    "orga_www": "https://portal.einundzwanzig.space/de/meetup/einundzwanzig-ost-brandenburg",
+    "kontakt": "EINUNDZWANZIG",
+    "e-mail": "meetup@einundzwanzig-brandenburg-ost.de",
     "link": null,
     "link_qr": null
   },
@@ -3776,6 +3816,46 @@
     "orga_www": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
     "kontakt": "Team Freiheit",
     "e-mail": "koeln@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "EINUNDZWANZIG Brandenburg Ost",
+    "plz": "15345",
+    "state": "DE-BB",
+    "city": "Buckow",
+    "city_dist": 11.9,
+    "coords": [
+      52.5941625,
+      13.9068929
+    ],
+    "date": "2026-09-14",
+    "dow": "Mo.",
+    "time": "18:30",
+    "orga": "EINUNDZWANZIG",
+    "orga_www": "https://portal.einundzwanzig.space/de/meetup/einundzwanzig-ost-brandenburg",
+    "kontakt": "EINUNDZWANZIG",
+    "e-mail": "meetup@einundzwanzig-brandenburg-ost.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "EINUNDZWANZIG Brandenburg Ost",
+    "plz": "15345",
+    "state": "DE-BB",
+    "city": "Buckow",
+    "city_dist": 11.9,
+    "coords": [
+      52.5941625,
+      13.9068929
+    ],
+    "date": "2026-10-12",
+    "dow": "Mo.",
+    "time": "18:30",
+    "orga": "EINUNDZWANZIG",
+    "orga_www": "https://portal.einundzwanzig.space/de/meetup/einundzwanzig-ost-brandenburg",
+    "kontakt": "EINUNDZWANZIG",
+    "e-mail": "meetup@einundzwanzig-brandenburg-ost.de",
     "link": null,
     "link_qr": null
   },

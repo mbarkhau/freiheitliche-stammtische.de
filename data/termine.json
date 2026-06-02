@@ -1959,6 +1959,11 @@
     "wochentag": "Monday",
     "orga": "EINUNDZWANZIG",
     "plz": "15345",
+    "telegram_group_id": "@einundzwanzig_bbost",
+    "kontakt": "EINUNDZWANZIG",
+    "e-mail": "meetup@einundzwanzig-brandenburg-ost.de",
+    "orga_webseite": "https://portal.einundzwanzig.space/de/meetup/einundzwanzig-ost-brandenburg",
+    "tournus": "2 Montag im Monat",
     "infotext": "Voranstaltungsort: Mühle Altlandsberg"
   },
   {
@@ -2355,6 +2360,22 @@
     "orga_webseite": "https://ef-magazin.de/"
   },
   {
+    "name": "EINUNDZWANZIG Brandenburg Ost",
+    "beginn": "2026-07-13",
+    "ende": "2026-07-13",
+    "uhrzeit": "18:30",
+    "kw": "KW29",
+    "wochentag": "Monday",
+    "orga": "EINUNDZWANZIG",
+    "plz": "15345",
+    "telegram_group_id": "@einundzwanzig_bbost",
+    "kontakt": "EINUNDZWANZIG",
+    "e-mail": "meetup@einundzwanzig-brandenburg-ost.de",
+    "orga_webseite": "https://portal.einundzwanzig.space/de/meetup/einundzwanzig-ost-brandenburg",
+    "tournus": "2 Montag im Monat",
+    "infotext": "Voranstaltungsort: Mühle Altlandsberg"
+  },
+  {
     "name": "Freiheitlicher Stammtisch Bergstraße",
     "beginn": "2026-07-15",
     "ende": "2026-07-15",
@@ -2450,6 +2471,22 @@
     "kontakt": "Caroline Krause",
     "e-mail": "caroline@staatenlos.ch",
     "orga_webseite": "https://staatenlos.ch/staatenlos/event/"
+  },
+  {
+    "name": "EINUNDZWANZIG Brandenburg Ost",
+    "beginn": "2026-08-10",
+    "ende": "2026-08-10",
+    "uhrzeit": "18:30",
+    "kw": "KW33",
+    "wochentag": "Monday",
+    "orga": "EINUNDZWANZIG",
+    "plz": "15345",
+    "telegram_group_id": "@einundzwanzig_bbost",
+    "kontakt": "EINUNDZWANZIG",
+    "e-mail": "meetup@einundzwanzig-brandenburg-ost.de",
+    "orga_webseite": "https://portal.einundzwanzig.space/de/meetup/einundzwanzig-ost-brandenburg",
+    "tournus": "2 Montag im Monat",
+    "infotext": "Voranstaltungsort: Mühle Altlandsberg"
   },
   {
     "name": "Libertärer Stammtisch Ansbach",
@@ -2559,6 +2596,38 @@
     "e-mail": "koeln@team-freiheit.de",
     "orga_webseite": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
     "tournus": "Letzter Fr. im Monat"
+  },
+  {
+    "name": "EINUNDZWANZIG Brandenburg Ost",
+    "beginn": "2026-09-14",
+    "ende": "2026-09-14",
+    "uhrzeit": "18:30",
+    "kw": "KW38",
+    "wochentag": "Monday",
+    "orga": "EINUNDZWANZIG",
+    "plz": "15345",
+    "telegram_group_id": "@einundzwanzig_bbost",
+    "kontakt": "EINUNDZWANZIG",
+    "e-mail": "meetup@einundzwanzig-brandenburg-ost.de",
+    "orga_webseite": "https://portal.einundzwanzig.space/de/meetup/einundzwanzig-ost-brandenburg",
+    "tournus": "2 Montag im Monat",
+    "infotext": "Voranstaltungsort: Mühle Altlandsberg"
+  },
+  {
+    "name": "EINUNDZWANZIG Brandenburg Ost",
+    "beginn": "2026-10-12",
+    "ende": "2026-10-12",
+    "uhrzeit": "18:30",
+    "kw": "KW42",
+    "wochentag": "Monday",
+    "orga": "EINUNDZWANZIG",
+    "plz": "15345",
+    "telegram_group_id": "@einundzwanzig_bbost",
+    "kontakt": "EINUNDZWANZIG",
+    "e-mail": "meetup@einundzwanzig-brandenburg-ost.de",
+    "orga_webseite": "https://portal.einundzwanzig.space/de/meetup/einundzwanzig-ost-brandenburg",
+    "tournus": "2 Montag im Monat",
+    "infotext": "Voranstaltungsort: Mühle Altlandsberg"
   },
   {
     "name": "Mises Konferenz 2026",
