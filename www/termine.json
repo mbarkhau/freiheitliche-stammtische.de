@@ -3240,6 +3240,26 @@
     "link_qr": null
   },
   {
+    "name": "Dresden",
+    "plz": "01157",
+    "state": "DE-SN",
+    "city": "Dresden",
+    "city_dist": 5.2,
+    "coords": [
+      51.0643524,
+      13.6677492
+    ],
+    "date": "2026-06-20",
+    "dow": "Sa.",
+    "time": "15:00",
+    "orga": "Hayek Club",
+    "orga_www": null,
+    "kontakt": "Reinhard Günzel",
+    "e-mail": null,
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Team Freiheit Clubabend Hannover",
     "plz": "30159",
     "state": "DE-NI",
