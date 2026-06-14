@@ -2361,6 +2361,7 @@
     "orga_webseite": "https://buendnis-libertaerer.de/"
   },
   {
+    "name": "Hayek-Vereins Dresden - Sommerfest",
     "beginn": "2026-06-20",
     "ende": "2026-06-20",
     "uhrzeit": "15:00",
@@ -2370,7 +2371,9 @@
     "orga": "Hayek Club",
     "plz": "01157",
     "ort": "Dresden",
-    "kontakt": "Reinhard Günzel"
+    "kontakt": "Reinhard Günzel",
+    "e-mail": "ticket@hayek-verein-dresden.de",
+    "orga_webseite": "https://www.hayek-verein-dresden.de/termine-dresden-einzelanzeige/20260620hayek-sommerfest.html"
   },
   {
     "name": "Team Freiheit Clubabend Hannover",
@@ -2447,6 +2450,20 @@
     "e-mail": "hayek.club.weimar@mail.de",
     "orga_webseite": "https://hayek.de/hayek-clubs/",
     "infotext": "10 Jahre Hayek-Club Weimar – Zurück zur Vernunft!"
+  },
+  {
+    "beginn": "2026-06-29",
+    "ende": "2026-06-29",
+    "uhrzeit": "19",
+    "kw": "KW27",
+    "wochentag": "Monday",
+    "eintrittspreis": "€13",
+    "orga": "Hayek Club",
+    "plz": "01326",
+    "ort": "Dresden",
+    "kontakt": "Reinhard Günzel",
+    "e-mail": "ticket@hayek-verein-dresden.de",
+    "orga_webseite": "https://www.hayek-verein-dresden.de/dresden.html#:~:text=Dresden%20e.V.-,Buchvorstellung%20mit%20Nickolas%20Emrich%3A%20%C2%BBDer%20Preis%20unserer%20Toleranz%C2%AB,-%E2%97%BE%20Montag%2C%2029"
   },
   {
     "name": "Libertärer Stammtisch Hamburg",

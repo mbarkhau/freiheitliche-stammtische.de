@@ -3240,7 +3240,7 @@
     "link_qr": null
   },
   {
-    "name": "Dresden",
+    "name": "Hayek-Vereins Dresden - Sommerfest",
     "plz": "01157",
     "state": "DE-SN",
     "city": "Dresden",
@@ -3253,9 +3253,9 @@
     "dow": "Sa.",
     "time": "15:00",
     "orga": "Hayek Club",
-    "orga_www": null,
+    "orga_www": "https://www.hayek-verein-dresden.de/termine-dresden-einzelanzeige/20260620hayek-sommerfest.html",
     "kontakt": "Reinhard Günzel",
-    "e-mail": null,
+    "e-mail": "ticket@hayek-verein-dresden.de",
     "link": null,
     "link_qr": null
   },
@@ -3356,6 +3356,26 @@
     "orga_www": "https://hayek.de/hayek-clubs/",
     "kontakt": "Karla Wagner",
     "e-mail": "hayek.club.weimar@mail.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Dresden",
+    "plz": "01326",
+    "state": "DE-SN",
+    "city": "Dresden",
+    "city_dist": 8.8,
+    "coords": [
+      51.026068,
+      13.8575878
+    ],
+    "date": "2026-06-29",
+    "dow": "Mo.",
+    "time": "19",
+    "orga": "Hayek Club",
+    "orga_www": "https://www.hayek-verein-dresden.de/dresden.html#:~:text=Dresden%20e.V.-,Buchvorstellung%20mit%20Nickolas%20Emrich%3A%20%C2%BBDer%20Preis%20unserer%20Toleranz%C2%AB,-%E2%97%BE%20Montag%2C%2029",
+    "kontakt": "Reinhard Günzel",
+    "e-mail": "ticket@hayek-verein-dresden.de",
     "link": null,
     "link_qr": null
   },
