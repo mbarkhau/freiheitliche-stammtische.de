@@ -546,7 +546,7 @@ def _iter_event_items(termine: list) -> typ.Generator[dict, None, None]:
                 "name": termin.get("name", termin.get("ort", "Unknown")),
                 "plz": termin["plz"],
                 "state": location.plz_state,
-                "city": location.nearest.get("name", "Unknown"),
+                "city": termin["ort"].strip() or location.nearest.get("name", "Unknown"),
                 "city_dist": round(location.city_dist, 1),
                 "coords": [location.lat, location.lon],
                 "date": termin['beginn'].split(" ")[0],
