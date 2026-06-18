@@ -3220,26 +3220,6 @@
     "link_qr": null
   },
   {
-    "name": "Libertäres Treffen Dortmund",
-    "plz": "44263",
-    "state": "DE-NW",
-    "city": "Dortmund",
-    "city_dist": 3.8,
-    "coords": [
-      51.4865748,
-      7.4974155
-    ],
-    "date": "2026-06-18",
-    "dow": "Do.",
-    "time": "19:00",
-    "orga": "Bündnis Libertärer",
-    "orga_www": "https://buendnis-libertaerer.de/",
-    "kontakt": "Alexander Expander",
-    "e-mail": "info@buendnis-libertaerer.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Libertärer Stammtisch Kaiserslautern",
     "plz": "67657",
     "state": "DE-RP",
@@ -3296,6 +3276,26 @@
     "orga_www": "https://www.team-freiheit.de/events/#clubs",
     "kontakt": "Team Freiheit",
     "e-mail": "hannover@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertäres Treffen Dortmund",
+    "plz": "44263",
+    "state": "DE-NW",
+    "city": "Dortmund",
+    "city_dist": 3.8,
+    "coords": [
+      51.4865748,
+      7.4974155
+    ],
+    "date": "2026-06-25",
+    "dow": "Do.",
+    "time": "19:00",
+    "orga": "Bündnis Libertärer",
+    "orga_www": "https://buendnis-libertaerer.de/",
+    "kontakt": "Alexander Expander",
+    "e-mail": "info@buendnis-libertaerer.de",
     "link": null,
     "link_qr": null
   },
