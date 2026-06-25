@@ -1,5 +1,9 @@
 [
   {
+    "kw": "KW52",
+    "wochentag": "Saturday"
+  },
+  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "beginn": "2025-11-04",
     "ende": "2025-11-04",
@@ -2513,23 +2517,6 @@
     "orga_webseite": "https://die-libertaeren.de/"
   },
   {
-    "name": "Libertärer Stammtisch Frankfurt (FFM)",
-    "beginn": "2026-07-06",
-    "ende": "2026-07-06",
-    "uhrzeit": "19:00",
-    "kw": "KW28",
-    "wochentag": "Monday",
-    "orga": "DIE LIBERTÄREN",
-    "plz": "60594",
-    "ort": "Frankfurt am Main",
-    "telegram_group_id": "3687428973",
-    "kontakt": "Lukas Schroth",
-    "e-mail": "lukas.schroth@die-libertaeren.de",
-    "orga_webseite": "https://die-libertaeren.de/",
-    "tournus": "Erste Woche im Monat",
-    "group_link": "https://t.me/+WgMHpki_VXZkYWIy"
-  },
-  {
     "name": "Libertärer Stammtisch Halle (Saale)",
     "beginn": "2026-07-08",
     "ende": "2026-07-08",
@@ -2622,23 +2609,6 @@
     "infotext": "Voranstaltungsort: Mühle Altlandsberg"
   },
   {
-    "name": "Freiheitlicher Stammtisch Bergstraße",
-    "beginn": "2026-07-15",
-    "ende": "2026-07-15",
-    "uhrzeit": "19:00",
-    "kw": "KW29",
-    "wochentag": "Wednesday",
-    "orga": "DIE LIBERTÄREN",
-    "plz": "64673",
-    "ort": "Bergstraße",
-    "telegram_group_id": "5205303336",
-    "kontakt": "Lukas Schroth",
-    "e-mail": "lukas.schroth@die-libertaeren.de",
-    "orga_webseite": "https://die-libertaeren.de/",
-    "tournus": "Dritter Mittwoch des Monats",
-    "group_link": "https://t.me/+qhX3l_Dn_VpkNmYy"
-  },
-  {
     "name": "Libertäres Treffen Dortmund",
     "beginn": "2026-07-16",
     "ende": "2026-07-16",
@@ -2695,6 +2665,23 @@
     "e-mail": "koeln@team-freiheit.de",
     "orga_webseite": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
     "tournus": "Letzter Fr. im Monat"
+  },
+  {
+    "name": "Libertärer Stammtisch Frankfurt (FFM)",
+    "beginn": "2026-08-03",
+    "ende": "2026-08-03",
+    "uhrzeit": "19:00",
+    "kw": "KW32",
+    "wochentag": "Monday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "60594",
+    "ort": "Frankfurt am Main",
+    "telegram_group_id": "3687428973",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Erste Woche im Monat",
+    "group_link": "https://t.me/+WgMHpki_VXZkYWIy"
   },
   {
     "name": "Libertärer Stammtisch Göppingen/Esslingen",
@@ -2818,6 +2805,23 @@
     "infotext": "10 Jahre Hayek-Club Weimar – Zurück zur Vernunft!"
   },
   {
+    "name": "Freiheitlicher Stammtisch Bergstraße",
+    "beginn": "2026-08-19",
+    "ende": "2026-08-19",
+    "uhrzeit": "19:00",
+    "kw": "KW34",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "64673",
+    "ort": "Bergstraße",
+    "telegram_group_id": "5205303336",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Dritter Mittwoch des Monats",
+    "group_link": "https://t.me/+qhX3l_Dn_VpkNmYy"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "beginn": "2026-08-20",
     "ende": "2026-08-20",
@@ -2860,6 +2864,23 @@
     "e-mail": "koeln@team-freiheit.de",
     "orga_webseite": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
     "tournus": "Letzter Fr. im Monat"
+  },
+  {
+    "name": "Libertärer Stammtisch Frankfurt (FFM)",
+    "beginn": "2026-09-07",
+    "ende": "2026-09-07",
+    "uhrzeit": "19:00",
+    "kw": "KW37",
+    "wochentag": "Monday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "60594",
+    "ort": "Frankfurt am Main",
+    "telegram_group_id": "3687428973",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Erste Woche im Monat",
+    "group_link": "https://t.me/+WgMHpki_VXZkYWIy"
   },
   {
     "name": "EINUNDZWANZIG Brandenburg Ost",

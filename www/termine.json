@@ -3440,26 +3440,6 @@
     "link_qr": null
   },
   {
-    "name": "Libertärer Stammtisch Frankfurt (FFM)",
-    "plz": "60594",
-    "state": "DE-HE",
-    "city": "Frankfurt am Main",
-    "city_dist": 1.0,
-    "coords": [
-      50.1028505,
-      8.6881252
-    ],
-    "date": "2026-07-06",
-    "dow": "Mo.",
-    "time": "19:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Lukas Schroth",
-    "e-mail": "lukas.schroth@die-libertaeren.de",
-    "link": "https://t.me/+WgMHpki_VXZkYWIy",
-    "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba_v2.png"
-  },
-  {
     "name": "Libertärer Stammtisch Halle (Saale)",
     "plz": "06108",
     "state": "DE-ST",
@@ -3580,26 +3560,6 @@
     "link_qr": "img/qr_9bc48ec2ac884a3bb1ca09e2c64f45ec0bda01bb_v2.png"
   },
   {
-    "name": "Freiheitlicher Stammtisch Bergstraße",
-    "plz": "64673",
-    "state": "DE-HE",
-    "city": "Bergstraße",
-    "city_dist": 7.8,
-    "coords": [
-      49.72264,
-      8.5940276
-    ],
-    "date": "2026-07-15",
-    "dow": "Mi.",
-    "time": "19:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Lukas Schroth",
-    "e-mail": "lukas.schroth@die-libertaeren.de",
-    "link": "https://t.me/+qhX3l_Dn_VpkNmYy",
-    "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
-  },
-  {
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
     "state": "DE-NW",
@@ -3678,6 +3638,26 @@
     "e-mail": "koeln@team-freiheit.de",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Frankfurt (FFM)",
+    "plz": "60594",
+    "state": "DE-HE",
+    "city": "Frankfurt am Main",
+    "city_dist": 1.0,
+    "coords": [
+      50.1028505,
+      8.6881252
+    ],
+    "date": "2026-08-03",
+    "dow": "Mo.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+WgMHpki_VXZkYWIy",
+    "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Göppingen/Esslingen",
@@ -3840,6 +3820,26 @@
     "link_qr": null
   },
   {
+    "name": "Freiheitlicher Stammtisch Bergstraße",
+    "plz": "64673",
+    "state": "DE-HE",
+    "city": "Bergstraße",
+    "city_dist": 7.8,
+    "coords": [
+      49.72264,
+      8.5940276
+    ],
+    "date": "2026-08-19",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+qhX3l_Dn_VpkNmYy",
+    "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
     "state": "DE-NW",
@@ -3898,6 +3898,26 @@
     "e-mail": "koeln@team-freiheit.de",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Frankfurt (FFM)",
+    "plz": "60594",
+    "state": "DE-HE",
+    "city": "Frankfurt am Main",
+    "city_dist": 1.0,
+    "coords": [
+      50.1028505,
+      8.6881252
+    ],
+    "date": "2026-09-07",
+    "dow": "Mo.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+WgMHpki_VXZkYWIy",
+    "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba_v2.png"
   },
   {
     "name": "EINUNDZWANZIG Brandenburg Ost",
