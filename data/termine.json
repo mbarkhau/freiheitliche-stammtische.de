@@ -2484,6 +2484,20 @@
     "orga_webseite": "https://www.hayek-verein-dresden.de/dresden.html#:~:text=Dresden%20e.V.-,Buchvorstellung%20mit%20Nickolas%20Emrich%3A%20%C2%BBDer%20Preis%20unserer%20Toleranz%C2%AB,-%E2%97%BE%20Montag%2C%2029"
   },
   {
+    "name": "Team Freiheit Inside Bundestag Event - Grimmen",
+    "beginn": "2026-07-01",
+    "ende": "2026-07-01",
+    "uhrzeit": "19:00",
+    "kw": "KW27",
+    "wochentag": "Wednesday",
+    "orga": "Team Freiheit",
+    "plz": "18507",
+    "ort": "Kulturhaus Treffpunkt Europas, Heinrich-Heine-Straße 1a",
+    "kontakt": "Team Freiheit",
+    "e-mail": "info@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/inside-bundestag-grimmen/"
+  },
+  {
     "name": "Libertärer Stammtisch Hamburg",
     "beginn": "2026-07-01",
     "ende": "2026-07-01",
@@ -2511,6 +2525,20 @@
     "kontakt": "Dieter Kirschmann",
     "e-mail": "dieter.kirschmann@die-libertaeren.de",
     "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Team Freiheit Clubabend Nürnberg mit Thomas L. Kemmerich",
+    "beginn": "2026-07-06",
+    "ende": "2026-07-06",
+    "uhrzeit": "18:00",
+    "kw": "KW28",
+    "wochentag": "Monday",
+    "orga": "Team Freiheit",
+    "plz": "90471",
+    "ort": "Nürnberg",
+    "kontakt": "Team Freiheit",
+    "e-mail": "nuernberg@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-nuernberg-21-03-26/"
   },
   {
     "name": "Libertärer Stammtisch Halle (Saale)",
@@ -2587,6 +2615,20 @@
     "orga_webseite": "https://ef-magazin.de/"
   },
   {
+    "name": "Team Freiheit Clubabend Münster",
+    "beginn": "2026-07-10",
+    "ende": "2026-07-10",
+    "uhrzeit": "19:00",
+    "kw": "KW28",
+    "wochentag": "Friday",
+    "orga": "Team Freiheit",
+    "plz": "48143",
+    "ort": "Münster",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenster@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-muenster-28-03-26/"
+  },
+  {
     "name": "EINUNDZWANZIG Brandenburg Ost",
     "beginn": "2026-07-13",
     "ende": "2026-07-13",
@@ -2605,6 +2647,49 @@
     "infotext": "Voranstaltungsort: Mühle Altlandsberg"
   },
   {
+    "name": "Libertärer Stammtisch Bernburg (Saale)",
+    "beginn": "2026-07-14",
+    "ende": "2026-07-14",
+    "uhrzeit": "18:30",
+    "kw": "KW29",
+    "wochentag": "Tuesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "06406",
+    "ort": "Bernburg (Saale)",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Libertärer Stammtisch Dresden",
+    "beginn": "2026-07-15",
+    "ende": "2026-07-15",
+    "uhrzeit": "18:00",
+    "kw": "KW29",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "01237",
+    "ort": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "kontakt": "Dr. Joachim Teske",
+    "e-mail": "joachim.teske@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "group_link": "https://t.me/+kXYK3OtoB0AxYTAy"
+  },
+  {
+    "name": "Team Freiheit Clubabend Rostock",
+    "beginn": "2026-07-16",
+    "ende": "2026-07-16",
+    "uhrzeit": "18:30",
+    "kw": "KW29",
+    "wochentag": "Thursday",
+    "orga": "Team Freiheit",
+    "plz": "18059",
+    "ort": "Rostock",
+    "kontakt": "Team Freiheit",
+    "e-mail": "rostock@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-rostock-20-03-26/"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "beginn": "2026-07-16",
     "ende": "2026-07-16",
@@ -2617,6 +2702,37 @@
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
     "orga_webseite": "https://buendnis-libertaerer.de/"
+  },
+  {
+    "name": "Libertärer Stammtisch Kaiserslautern",
+    "beginn": "2026-07-17",
+    "ende": "2026-07-17",
+    "uhrzeit": "18:30",
+    "kw": "KW29",
+    "wochentag": "Friday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "67657",
+    "ort": "Kaiserslautern",
+    "telegram_group_id": "3893662081",
+    "kontakt": "Uwe Schmitt",
+    "e-mail": "uwe.schmitt@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 3. Samstag",
+    "group_link": "https://t.me/+za88OLhGTshlNGJi"
+  },
+  {
+    "name": "Team Freiheit Clubabend Hannover",
+    "beginn": "2026-07-18",
+    "ende": "2026-07-18",
+    "uhrzeit": "18:30",
+    "kw": "KW29",
+    "wochentag": "Saturday",
+    "orga": "Team Freiheit",
+    "plz": "30159",
+    "ort": "Hannover",
+    "kontakt": "Team Freiheit",
+    "e-mail": "hannover@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events/#clubs"
   },
   {
     "name": "Hayek Club Weimar",
@@ -2646,6 +2762,35 @@
     "kontakt": "Afuera Kulturverein e.V.",
     "e-mail": "info@afuerafest.de",
     "orga_webseite": "https://afuerafest.de/"
+  },
+  {
+    "name": "Team Freiheit Clubabend Gießen",
+    "beginn": "2026-07-28",
+    "ende": "2026-07-28",
+    "uhrzeit": "19:00",
+    "kw": "KW31",
+    "wochentag": "Tuesday",
+    "orga": "Team Freiheit",
+    "plz": "35390",
+    "ort": "Gießen",
+    "e-mail": "giessen@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-giessen-23-03-26/"
+  },
+  {
+    "name": "Libertärer Stammtisch Berlin",
+    "beginn": "2026-07-31",
+    "ende": "2026-07-31",
+    "uhrzeit": "19:00",
+    "kw": "KW31",
+    "wochentag": "Friday",
+    "orga": "Libertärer Stammtisch Berlin",
+    "plz": "10555",
+    "ort": "Berlin",
+    "telegram_group_id": "2995740483",
+    "kontakt": "Dr. Sven Brajer",
+    "e-mail": "svenbrajer@web.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "group_link": "https://t.me/+Xzxvc2UqKuJmNmRi"
   },
   {
     "name": "Team Freiheit Clubabend Köln-Bonn",
@@ -2678,6 +2823,21 @@
     "orga_webseite": "https://die-libertaeren.de/",
     "tournus": "Erste Woche im Monat",
     "group_link": "https://t.me/+WgMHpki_VXZkYWIy"
+  },
+  {
+    "name": "Libertärer Stammtisch Hamburg",
+    "beginn": "2026-08-05",
+    "ende": "2026-08-05",
+    "uhrzeit": "19:00",
+    "kw": "KW32",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "20095",
+    "ort": "Hamburg",
+    "kontakt": "Ferdinand Steinhöfel",
+    "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 1. Mittwoch"
   },
   {
     "name": "Libertärer Stammtisch Göppingen/Esslingen",
@@ -2727,6 +2887,35 @@
     "infotext": "Voranstaltungsort: Mühle Altlandsberg"
   },
   {
+    "name": "Libertärer Stammtisch Bernburg (Saale)",
+    "beginn": "2026-08-11",
+    "ende": "2026-08-11",
+    "uhrzeit": "18:30",
+    "kw": "KW33",
+    "wochentag": "Tuesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "06406",
+    "ort": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Libertärer Stammtisch Halle (Saale)",
+    "beginn": "2026-08-12",
+    "ende": "2026-08-12",
+    "uhrzeit": "18:00",
+    "kw": "KW33",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "06108",
+    "ort": "Halle (Saale)",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 2. Mittwoch"
+  },
+  {
     "name": "Libertärer Stammtisch Ansbach",
     "beginn": "2026-08-12",
     "ende": "2026-08-12",
@@ -2741,6 +2930,20 @@
     "orga_webseite": "https://die-libertaeren.de/",
     "tournus": "Jeder 2. Samstag",
     "group_link": "https://t.me/armenora"
+  },
+  {
+    "name": "Libertärer Stammtisch Magdeburg",
+    "beginn": "2026-08-13",
+    "ende": "2026-08-13",
+    "uhrzeit": "19:30",
+    "kw": "KW33",
+    "wochentag": "Thursday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "39104",
+    "ort": "Magdeburg",
+    "kontakt": "Dr. Mathias Hummel",
+    "e-mail": "events@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/"
   },
   {
     "name": "Libertärer Stammtisch Magdeburg",
@@ -2818,6 +3021,20 @@
     "group_link": "https://t.me/+qhX3l_Dn_VpkNmYy"
   },
   {
+    "name": "Team Freiheit Clubabend Rostock",
+    "beginn": "2026-08-20",
+    "ende": "2026-08-20",
+    "uhrzeit": "18:30",
+    "kw": "KW34",
+    "wochentag": "Thursday",
+    "orga": "Team Freiheit",
+    "plz": "18059",
+    "ort": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "kontakt": "Team Freiheit",
+    "e-mail": "rostock@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-rostock-20-03-26/"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "beginn": "2026-08-20",
     "ende": "2026-08-20",
@@ -2847,6 +3064,22 @@
     "infotext": "Sommerfest des Hayek Club Koblenz - Wir tanzen den Hayek"
   },
   {
+    "name": "Libertärer Stammtisch Berlin",
+    "beginn": "2026-08-28",
+    "ende": "2026-08-28",
+    "uhrzeit": "19:00",
+    "kw": "KW35",
+    "wochentag": "Friday",
+    "orga": "Libertärer Stammtisch Berlin",
+    "plz": "10555",
+    "ort": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "telegram_group_id": "2995740483",
+    "kontakt": "Dr. Sven Brajer",
+    "e-mail": "svenbrajer@web.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "group_link": "https://t.me/+Xzxvc2UqKuJmNmRi"
+  },
+  {
     "name": "Team Freiheit Clubabend Köln-Bonn",
     "beginn": "2026-08-28",
     "ende": "2026-08-28",
@@ -2860,6 +3093,35 @@
     "e-mail": "koeln@team-freiheit.de",
     "orga_webseite": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
     "tournus": "Letzter Fr. im Monat"
+  },
+  {
+    "name": "Libertärer Stammtisch Hamburg",
+    "beginn": "2026-09-02",
+    "ende": "2026-09-02",
+    "uhrzeit": "19:00",
+    "kw": "KW36",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "20095",
+    "ort": "Hamburg",
+    "kontakt": "Ferdinand Steinhöfel",
+    "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 1. Mittwoch"
+  },
+  {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "beginn": "2026-09-03",
+    "ende": "2026-09-03",
+    "uhrzeit": "19:30",
+    "kw": "KW36",
+    "wochentag": "Thursday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "73033",
+    "ort": "Göppingen",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
@@ -2877,6 +3139,80 @@
     "orga_webseite": "https://die-libertaeren.de/",
     "tournus": "Erste Woche im Monat",
     "group_link": "https://t.me/+WgMHpki_VXZkYWIy"
+  },
+  {
+    "name": "Libertärer Stammtisch Halle (Saale)",
+    "beginn": "2026-09-09",
+    "ende": "2026-09-09",
+    "uhrzeit": "18:00",
+    "kw": "KW37",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "06108",
+    "ort": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 2. Mittwoch"
+  },
+  {
+    "name": "Libertärer Stammtisch Ansbach",
+    "beginn": "2026-09-09",
+    "ende": "2026-09-09",
+    "uhrzeit": "19:00",
+    "kw": "KW37",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "91522",
+    "ort": "Ansbach",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 2. Samstag",
+    "group_link": "https://t.me/armenora"
+  },
+  {
+    "name": "Libertärer Stammtisch Magdeburg",
+    "beginn": "2026-09-10",
+    "ende": "2026-09-10",
+    "uhrzeit": "19:30",
+    "kw": "KW37",
+    "wochentag": "Thursday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "39104",
+    "ort": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "kontakt": "Dr. Mathias Hummel",
+    "e-mail": "events@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Libertärer Stammtisch in Balingen / Württemberg",
+    "beginn": "2026-09-10",
+    "ende": "2026-09-10",
+    "uhrzeit": "19:30",
+    "kw": "KW37",
+    "wochentag": "Thursday",
+    "orga": "Unabhängig",
+    "plz": "72336",
+    "ort": "Balingen",
+    "kontakt": "Fritz Maulbetsch",
+    "e-mail": "lnb@maulbetsch.net",
+    "tournus": "Jeder 2. Donnerstag",
+    "group_link": "https://t.me/FreeFritz"
+  },
+  {
+    "name": "Libertärer Stammtisch Grevenbroich",
+    "beginn": "2026-09-11",
+    "ende": "2026-09-11",
+    "uhrzeit": "19:00",
+    "kw": "KW37",
+    "wochentag": "Friday",
+    "orga": "Unabhängig",
+    "plz": "41515",
+    "ort": "Grevenbroich",
+    "kontakt": "Martin Moczarski",
+    "e-mail": "moczarski@ef-magazin.de",
+    "orga_webseite": "https://ef-magazin.de/"
   },
   {
     "name": "EINUNDZWANZIG Brandenburg Ost",

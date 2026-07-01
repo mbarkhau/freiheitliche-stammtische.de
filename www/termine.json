@@ -3400,6 +3400,26 @@
     "link_qr": null
   },
   {
+    "name": "Team Freiheit Inside Bundestag Event - Grimmen",
+    "plz": "18507",
+    "state": "DE-MV",
+    "city": "Kulturhaus Treffpunkt Europas, Heinrich-Heine-Straße 1a",
+    "city_dist": 0.8,
+    "coords": [
+      54.1190476,
+      13.049652
+    ],
+    "date": "2026-07-01",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/inside-bundestag-grimmen/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "info@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Hamburg",
     "plz": "20095",
     "state": "DE-HH",
@@ -3436,6 +3456,26 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Dieter Kirschmann",
     "e-mail": "dieter.kirschmann@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Team Freiheit Clubabend Nürnberg mit Thomas L. Kemmerich",
+    "plz": "90471",
+    "state": "DE-BY",
+    "city": "Nürnberg",
+    "city_dist": 5.3,
+    "coords": [
+      49.418213,
+      11.1259398
+    ],
+    "date": "2026-07-06",
+    "dow": "Mo.",
+    "time": "18:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-nuernberg-21-03-26/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "nuernberg@team-freiheit.de",
     "link": null,
     "link_qr": null
   },
@@ -3540,6 +3580,26 @@
     "link_qr": null
   },
   {
+    "name": "Team Freiheit Clubabend Münster",
+    "plz": "48143",
+    "state": "DE-NW",
+    "city": "Münster",
+    "city_dist": 0.2,
+    "coords": [
+      51.9604439,
+      7.6262442
+    ],
+    "date": "2026-07-10",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-muenster-28-03-26/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenster@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "EINUNDZWANZIG Brandenburg Ost",
     "plz": "15345",
     "state": "DE-BB",
@@ -3560,6 +3620,66 @@
     "link_qr": "img/qr_9bc48ec2ac884a3bb1ca09e2c64f45ec0bda01bb_v2.png"
   },
   {
+    "name": "Libertärer Stammtisch Bernburg (Saale)",
+    "plz": "06406",
+    "state": "DE-ST",
+    "city": "Bernburg (Saale)",
+    "city_dist": 1.8,
+    "coords": [
+      51.7825763,
+      11.7556064
+    ],
+    "date": "2026-07-14",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Dresden",
+    "plz": "01237",
+    "state": "DE-SN",
+    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "city_dist": 5.7,
+    "coords": [
+      51.0182471,
+      13.8020866
+    ],
+    "date": "2026-07-15",
+    "dow": "Mi.",
+    "time": "18:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Joachim Teske",
+    "e-mail": "joachim.teske@die-libertaeren.de",
+    "link": "https://t.me/+kXYK3OtoB0AxYTAy",
+    "link_qr": "img/qr_5565c4d9b4b29ecef348f944574ba5e63942a5bc_v2.png"
+  },
+  {
+    "name": "Team Freiheit Clubabend Rostock",
+    "plz": "18059",
+    "state": "DE-MV",
+    "city": "Rostock",
+    "city_dist": 8.1,
+    "coords": [
+      54.0278805,
+      12.0707327
+    ],
+    "date": "2026-07-16",
+    "dow": "Do.",
+    "time": "18:30",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-rostock-20-03-26/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "rostock@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
     "state": "DE-NW",
@@ -3576,6 +3696,46 @@
     "orga_www": "https://buendnis-libertaerer.de/",
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Kaiserslautern",
+    "plz": "67657",
+    "state": "DE-RP",
+    "city": "Kaiserslautern",
+    "city_dist": 3.3,
+    "coords": [
+      49.4514437,
+      7.8130571
+    ],
+    "date": "2026-07-17",
+    "dow": "Fr.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Uwe Schmitt",
+    "e-mail": "uwe.schmitt@die-libertaeren.de",
+    "link": "https://t.me/+za88OLhGTshlNGJi",
+    "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511_v2.png"
+  },
+  {
+    "name": "Team Freiheit Clubabend Hannover",
+    "plz": "30159",
+    "state": "DE-NI",
+    "city": "Hannover",
+    "city_dist": 0.0,
+    "coords": [
+      52.3742443,
+      9.7390577
+    ],
+    "date": "2026-07-18",
+    "dow": "Sa.",
+    "time": "18:30",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/events/#clubs",
+    "kontakt": "Team Freiheit",
+    "e-mail": "hannover@team-freiheit.de",
     "link": null,
     "link_qr": null
   },
@@ -3620,6 +3780,46 @@
     "link_qr": null
   },
   {
+    "name": "Team Freiheit Clubabend Gießen",
+    "plz": "35390",
+    "state": "DE-HE",
+    "city": "Gießen",
+    "city_dist": 1.4,
+    "coords": [
+      50.5879221,
+      8.6766586
+    ],
+    "date": "2026-07-28",
+    "dow": "Di.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-giessen-23-03-26/",
+    "kontakt": null,
+    "e-mail": "giessen@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Berlin",
+    "plz": "10555",
+    "state": "DE-BE",
+    "city": "Berlin",
+    "city_dist": 4.1,
+    "coords": [
+      52.519898,
+      13.3355418
+    ],
+    "date": "2026-07-31",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Libertärer Stammtisch Berlin",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Sven Brajer",
+    "e-mail": "svenbrajer@web.de",
+    "link": "https://t.me/+Xzxvc2UqKuJmNmRi",
+    "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
+  },
+  {
     "name": "Team Freiheit Clubabend Köln-Bonn",
     "plz": "50672",
     "state": "DE-NW",
@@ -3658,6 +3858,26 @@
     "e-mail": "lukas.schroth@die-libertaeren.de",
     "link": "https://t.me/+WgMHpki_VXZkYWIy",
     "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Hamburg",
+    "plz": "20095",
+    "state": "DE-HH",
+    "city": "Hamburg",
+    "city_dist": 0.1,
+    "coords": [
+      53.5512868,
+      9.9992216
+    ],
+    "date": "2026-08-05",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Ferdinand Steinhöfel",
+    "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Göppingen/Esslingen",
@@ -3720,6 +3940,46 @@
     "link_qr": "img/qr_9bc48ec2ac884a3bb1ca09e2c64f45ec0bda01bb_v2.png"
   },
   {
+    "name": "Libertärer Stammtisch Bernburg (Saale)",
+    "plz": "06406",
+    "state": "DE-ST",
+    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "city_dist": 1.8,
+    "coords": [
+      51.7825763,
+      11.7556064
+    ],
+    "date": "2026-08-11",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Halle (Saale)",
+    "plz": "06108",
+    "state": "DE-ST",
+    "city": "Halle (Saale)",
+    "city_dist": 1.1,
+    "coords": [
+      51.4904352,
+      11.9628501
+    ],
+    "date": "2026-08-12",
+    "dow": "Mi.",
+    "time": "18:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Ansbach",
     "plz": "91522",
     "state": "DE-BY",
@@ -3738,6 +3998,26 @@
     "e-mail": "Baader-Bande@proton.me",
     "link": "https://t.me/armenora",
     "link_qr": "img/qr_a32ef6d0e5a73980ad0372ffb3828feff231d90e_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Magdeburg",
+    "plz": "39104",
+    "state": "DE-ST",
+    "city": "Magdeburg",
+    "city_dist": 1.9,
+    "coords": [
+      52.1151882,
+      11.630882
+    ],
+    "date": "2026-08-13",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Mathias Hummel",
+    "e-mail": "events@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Magdeburg",
@@ -3840,6 +4120,26 @@
     "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
   },
   {
+    "name": "Team Freiheit Clubabend Rostock",
+    "plz": "18059",
+    "state": "DE-MV",
+    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "city_dist": 8.1,
+    "coords": [
+      54.0278805,
+      12.0707327
+    ],
+    "date": "2026-08-20",
+    "dow": "Do.",
+    "time": "18:30",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-rostock-20-03-26/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "rostock@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
     "state": "DE-NW",
@@ -3880,6 +4180,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Berlin",
+    "plz": "10555",
+    "state": "DE-BE",
+    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "city_dist": 4.1,
+    "coords": [
+      52.519898,
+      13.3355418
+    ],
+    "date": "2026-08-28",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Libertärer Stammtisch Berlin",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Sven Brajer",
+    "e-mail": "svenbrajer@web.de",
+    "link": "https://t.me/+Xzxvc2UqKuJmNmRi",
+    "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
+  },
+  {
     "name": "Team Freiheit Clubabend Köln-Bonn",
     "plz": "50672",
     "state": "DE-NW",
@@ -3896,6 +4216,46 @@
     "orga_www": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
     "kontakt": "Team Freiheit",
     "e-mail": "koeln@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Hamburg",
+    "plz": "20095",
+    "state": "DE-HH",
+    "city": "Hamburg",
+    "city_dist": 0.1,
+    "coords": [
+      53.5512868,
+      9.9992216
+    ],
+    "date": "2026-09-02",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Ferdinand Steinhöfel",
+    "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "plz": "73033",
+    "state": "DE-BW",
+    "city": "Göppingen",
+    "city_dist": 0.6,
+    "coords": [
+      48.7088631,
+      9.6538145
+    ],
+    "date": "2026-09-03",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
     "link": null,
     "link_qr": null
   },
@@ -3918,6 +4278,106 @@
     "e-mail": "lukas.schroth@die-libertaeren.de",
     "link": "https://t.me/+WgMHpki_VXZkYWIy",
     "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Halle (Saale)",
+    "plz": "06108",
+    "state": "DE-ST",
+    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "city_dist": 1.1,
+    "coords": [
+      51.4904352,
+      11.9628501
+    ],
+    "date": "2026-09-09",
+    "dow": "Mi.",
+    "time": "18:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Ansbach",
+    "plz": "91522",
+    "state": "DE-BY",
+    "city": "Ansbach",
+    "city_dist": 9.1,
+    "coords": [
+      49.2888745,
+      10.5597693
+    ],
+    "date": "2026-09-09",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
+    "link": "https://t.me/armenora",
+    "link_qr": "img/qr_a32ef6d0e5a73980ad0372ffb3828feff231d90e_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Magdeburg",
+    "plz": "39104",
+    "state": "DE-ST",
+    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "city_dist": 1.9,
+    "coords": [
+      52.1151882,
+      11.630882
+    ],
+    "date": "2026-09-10",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Mathias Hummel",
+    "e-mail": "events@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch in Balingen / Württemberg",
+    "plz": "72336",
+    "state": "DE-BW",
+    "city": "Balingen",
+    "city_dist": 1.0,
+    "coords": [
+      48.2659024,
+      8.8623776
+    ],
+    "date": "2026-09-10",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Fritz Maulbetsch",
+    "e-mail": "lnb@maulbetsch.net",
+    "link": "https://t.me/FreeFritz",
+    "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Grevenbroich",
+    "plz": "41515",
+    "state": "DE-NW",
+    "city": "Grevenbroich",
+    "city_dist": 1.5,
+    "coords": [
+      51.0819233,
+      6.6057095
+    ],
+    "date": "2026-09-11",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": "https://ef-magazin.de/",
+    "kontakt": "Martin Moczarski",
+    "e-mail": "moczarski@ef-magazin.de",
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "EINUNDZWANZIG Brandenburg Ost",
