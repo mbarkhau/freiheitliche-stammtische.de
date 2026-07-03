@@ -2556,22 +2556,6 @@
     "tournus": "Jeder 2. Mittwoch"
   },
   {
-    "name": "Libertärer Stammtisch Ansbach",
-    "beginn": "2026-07-08",
-    "ende": "2026-07-08",
-    "uhrzeit": "19:00",
-    "kw": "KW28",
-    "wochentag": "Wednesday",
-    "orga": "DIE LIBERTÄREN",
-    "plz": "91522",
-    "ort": "Ansbach",
-    "kontakt": "Tante Droll",
-    "e-mail": "Baader-Bande@proton.me",
-    "orga_webseite": "https://die-libertaeren.de/",
-    "tournus": "Jeder 2. Samstag",
-    "group_link": "https://t.me/armenora"
-  },
-  {
     "name": "Libertärer Stammtisch Magdeburg",
     "beginn": "2026-07-09",
     "ende": "2026-07-09",
@@ -2674,6 +2658,22 @@
     "e-mail": "joachim.teske@die-libertaeren.de",
     "orga_webseite": "https://die-libertaeren.de/",
     "group_link": "https://t.me/+kXYK3OtoB0AxYTAy"
+  },
+  {
+    "name": "Libertärer Stammtisch Ansbach",
+    "beginn": "2026-07-15",
+    "ende": "2026-07-16",
+    "uhrzeit": "19:00",
+    "kw": "KW29",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "91522",
+    "ort": "Ansbach",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 2. Samstag",
+    "group_link": "https://t.me/armenora"
   },
   {
     "name": "Team Freiheit Clubabend Rostock",

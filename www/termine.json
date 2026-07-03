@@ -3500,26 +3500,6 @@
     "link_qr": null
   },
   {
-    "name": "Libertärer Stammtisch Ansbach",
-    "plz": "91522",
-    "state": "DE-BY",
-    "city": "Ansbach",
-    "city_dist": 9.1,
-    "coords": [
-      49.2888745,
-      10.5597693
-    ],
-    "date": "2026-07-08",
-    "dow": "Mi.",
-    "time": "19:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Tante Droll",
-    "e-mail": "Baader-Bande@proton.me",
-    "link": "https://t.me/armenora",
-    "link_qr": "img/qr_a32ef6d0e5a73980ad0372ffb3828feff231d90e_v2.png"
-  },
-  {
     "name": "Libertärer Stammtisch Magdeburg",
     "plz": "39104",
     "state": "DE-ST",
@@ -3658,6 +3638,26 @@
     "e-mail": "joachim.teske@die-libertaeren.de",
     "link": "https://t.me/+kXYK3OtoB0AxYTAy",
     "link_qr": "img/qr_5565c4d9b4b29ecef348f944574ba5e63942a5bc_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Ansbach",
+    "plz": "91522",
+    "state": "DE-BY",
+    "city": "Ansbach",
+    "city_dist": 9.1,
+    "coords": [
+      49.2888745,
+      10.5597693
+    ],
+    "date": "2026-07-15",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
+    "link": "https://t.me/armenora",
+    "link_qr": "img/qr_a32ef6d0e5a73980ad0372ffb3828feff231d90e_v2.png"
   },
   {
     "name": "Team Freiheit Clubabend Rostock",
