@@ -3920,6 +3920,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Bad Reichenhall",
+    "plz": "83435",
+    "state": "DE-BY",
+    "city": "Bad Reichenhall",
+    "city_dist": 1.7,
+    "coords": [
+      47.7266717,
+      12.8540813
+    ],
+    "date": "2026-08-07",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Theo",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+wLa_UwnOBV5mZjBi",
+    "link_qr": "img/qr_2fd308f9eb3802ebc7554d8d5d2423ab2a2dfccc_v2.png"
+  },
+  {
     "name": "EINUNDZWANZIG Brandenburg Ost",
     "plz": "15345",
     "state": "DE-BB",
@@ -4260,6 +4280,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Bad Reichenhall",
+    "plz": "83435",
+    "state": "DE-BY",
+    "city": "Bad Reichenhall",
+    "city_dist": 1.7,
+    "coords": [
+      47.7266717,
+      12.8540813
+    ],
+    "date": "2026-09-04",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Theo",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+wLa_UwnOBV5mZjBi",
+    "link_qr": "img/qr_2fd308f9eb3802ebc7554d8d5d2423ab2a2dfccc_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
     "state": "DE-HE",
@@ -4418,6 +4458,26 @@
     "e-mail": "lukas.schroth@die-libertaeren.de",
     "link": "https://t.me/+qhX3l_Dn_VpkNmYy",
     "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Bad Reichenhall",
+    "plz": "83435",
+    "state": "DE-BY",
+    "city": "Bad Reichenhall",
+    "city_dist": 1.7,
+    "coords": [
+      47.7266717,
+      12.8540813
+    ],
+    "date": "2026-10-02",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Theo",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+wLa_UwnOBV5mZjBi",
+    "link_qr": "img/qr_2fd308f9eb3802ebc7554d8d5d2423ab2a2dfccc_v2.png"
   },
   {
     "name": "EINUNDZWANZIG Brandenburg Ost",
