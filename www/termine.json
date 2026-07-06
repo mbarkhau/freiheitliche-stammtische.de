@@ -3623,7 +3623,7 @@
     "name": "Libertärer Stammtisch Dresden",
     "plz": "01237",
     "state": "DE-SN",
-    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "city": "Dresden",
     "city_dist": 5.7,
     "coords": [
       51.0182471,
@@ -3963,7 +3963,7 @@
     "name": "Libertärer Stammtisch Bernburg (Saale)",
     "plz": "06406",
     "state": "DE-ST",
-    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "city": "Bernburg (Saale)",
     "city_dist": 1.8,
     "coords": [
       51.7825763,
@@ -4143,7 +4143,7 @@
     "name": "Team Freiheit Clubabend Rostock",
     "plz": "18059",
     "state": "DE-MV",
-    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "city": "Rostock",
     "city_dist": 8.1,
     "coords": [
       54.0278805,
@@ -4203,7 +4203,7 @@
     "name": "Libertärer Stammtisch Berlin",
     "plz": "10555",
     "state": "DE-BE",
-    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "city": "Berlin",
     "city_dist": 4.1,
     "coords": [
       52.519898,
@@ -4323,7 +4323,7 @@
     "name": "Libertärer Stammtisch Halle (Saale)",
     "plz": "06108",
     "state": "DE-ST",
-    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "city": "Halle (Saale)",
     "city_dist": 1.1,
     "coords": [
       51.4904352,
@@ -4363,7 +4363,7 @@
     "name": "Libertärer Stammtisch Magdeburg",
     "plz": "39104",
     "state": "DE-ST",
-    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "city": "Magdeburg",
     "city_dist": 1.9,
     "coords": [
       52.1151882,
