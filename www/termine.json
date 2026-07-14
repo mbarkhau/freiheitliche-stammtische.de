@@ -163,7 +163,7 @@
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
     "state": "DE-HE",
-    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "city": "Frankfurt am Main",
     "city_dist": 1.0,
     "coords": [
       50.1028505,
@@ -363,7 +363,7 @@
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
     "state": "DE-HE",
-    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "city": "Frankfurt am Main",
     "city_dist": 1.0,
     "coords": [
       50.1028505,
@@ -883,7 +883,7 @@
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
     "state": "DE-HE",
-    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "city": "Frankfurt am Main",
     "city_dist": 1.0,
     "coords": [
       50.1028505,
@@ -923,7 +923,7 @@
     "name": "Libertärer Stammtisch München",
     "plz": "80539",
     "state": "DE-BY",
-    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "city": "München",
     "city_dist": 0.9,
     "coords": [
       48.1443613,
@@ -1003,7 +1003,7 @@
     "name": "Hayek Club München",
     "plz": "80539",
     "state": "DE-BY",
-    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "city": "München",
     "city_dist": 0.9,
     "coords": [
       48.1443613,
@@ -1183,7 +1183,7 @@
     "name": "Freiheit Meetup München",
     "plz": "80802",
     "state": "DE-BY",
-    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "city": "München",
     "city_dist": 2.9,
     "coords": [
       48.1600441,
@@ -1663,7 +1663,7 @@
     "name": "Freiheitlicher Stammtisch Landsberg am Lech",
     "plz": "86899",
     "state": "DE-BY",
-    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "city": "Landsberg am Lech",
     "city_dist": 2.0,
     "coords": [
       48.0336819,
@@ -2123,7 +2123,7 @@
     "name": "Hayek Club München",
     "plz": "80539",
     "state": "DE-BY",
-    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "city": "München",
     "city_dist": 0.9,
     "coords": [
       48.1443613,
@@ -2263,7 +2263,7 @@
     "name": "Freiheit Meetup München",
     "plz": "80802",
     "state": "DE-BY",
-    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "city": "München",
     "city_dist": 2.9,
     "coords": [
       48.1600441,
@@ -3163,7 +3163,7 @@
     "name": "Freiheit Meetup München",
     "plz": "80802",
     "state": "DE-BY",
-    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "city": "München",
     "city_dist": 2.9,
     "coords": [
       48.1600441,
@@ -3243,7 +3243,7 @@
     "name": "Freiheitlicher Stammtisch Bergstraße",
     "plz": "64673",
     "state": "DE-HE",
-    "city": "Bergstraße",
+    "city": "Zwingenberg",
     "city_dist": 7.8,
     "coords": [
       49.72264,
@@ -3363,7 +3363,7 @@
     "name": "Freiheitlicher Stammtisch Landsberg am Lech",
     "plz": "86899",
     "state": "DE-BY",
-    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "city": "Landsberg am Lech",
     "city_dist": 2.0,
     "coords": [
       48.0336819,
@@ -3523,7 +3523,7 @@
     "name": "Team Freiheit Clubabend Nürnberg mit Thomas L. Kemmerich",
     "plz": "90471",
     "state": "DE-BY",
-    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
+    "city": "Nürnberg",
     "city_dist": 5.3,
     "coords": [
       49.418213,
@@ -4240,6 +4240,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Berlin",
+    "plz": "10555",
+    "state": "DE-BE",
+    "city": "Berlin",
+    "city_dist": 4.1,
+    "coords": [
+      52.519898,
+      13.3355418
+    ],
+    "date": "2026-08-21",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Libertärer Stammtisch Berlin",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Sven Brajer",
+    "e-mail": "svenbrajer@web.de",
+    "link": "https://t.me/+Xzxvc2UqKuJmNmRi",
+    "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
+  },
+  {
     "name": "Hayek Club Koblenz",
     "plz": "56068",
     "state": "DE-RP",
@@ -4258,26 +4278,6 @@
     "e-mail": "kontakt@hayek-club-koblenz.de",
     "link": null,
     "link_qr": null
-  },
-  {
-    "name": "Libertärer Stammtisch Berlin",
-    "plz": "10555",
-    "state": "DE-BE",
-    "city": "Berlin",
-    "city_dist": 4.1,
-    "coords": [
-      52.519898,
-      13.3355418
-    ],
-    "date": "2026-08-28",
-    "dow": "Fr.",
-    "time": "19:00",
-    "orga": "Libertärer Stammtisch Berlin",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Dr. Sven Brajer",
-    "e-mail": "svenbrajer@web.de",
-    "link": "https://t.me/+Xzxvc2UqKuJmNmRi",
-    "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
   },
   {
     "name": "Team Freiheit Clubabend Köln-Bonn",
