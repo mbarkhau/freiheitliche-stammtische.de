@@ -123,7 +123,7 @@
     "name": "Libertärer Stammtisch Göppingen/Esslingen",
     "plz": "73033",
     "state": "DE-BW",
-    "city": "Göppingen",
+    "city": "München",
     "city_dist": 0.6,
     "coords": [
       48.7088631,
@@ -163,7 +163,7 @@
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
     "state": "DE-HE",
-    "city": "Frankfurt am Main",
+    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
     "city_dist": 1.0,
     "coords": [
       50.1028505,
@@ -203,7 +203,7 @@
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
     "state": "DE-NW",
-    "city": "Dortmund",
+    "city": "Münster",
     "city_dist": 3.8,
     "coords": [
       51.4865748,
@@ -223,7 +223,7 @@
     "name": "Libertärer Stammtisch in Balingen / Württemberg",
     "plz": "72336",
     "state": "DE-BW",
-    "city": "Balingen",
+    "city": "Göppingen",
     "city_dist": 1.0,
     "coords": [
       48.2659024,
@@ -363,7 +363,7 @@
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
     "state": "DE-HE",
-    "city": "Frankfurt am Main",
+    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
     "city_dist": 1.0,
     "coords": [
       50.1028505,
@@ -443,7 +443,7 @@
     "name": "Libertärer Stammtisch in Balingen / Württemberg",
     "plz": "72336",
     "state": "DE-BW",
-    "city": "Balingen",
+    "city": "Göppingen",
     "city_dist": 1.0,
     "coords": [
       48.2659024,
@@ -583,7 +583,7 @@
     "name": "Libertärer Stammtisch in Balingen / Württemberg",
     "plz": "72336",
     "state": "DE-BW",
-    "city": "Balingen",
+    "city": "Göppingen",
     "city_dist": 1.0,
     "coords": [
       48.2659024,
@@ -603,7 +603,7 @@
     "name": "Libertärer Stammtisch Göppingen/Esslingen",
     "plz": "73033",
     "state": "DE-BW",
-    "city": "Göppingen",
+    "city": "Karlsruhe",
     "city_dist": 0.6,
     "coords": [
       48.7088631,
@@ -663,7 +663,7 @@
     "name": "Staatenlos Stuttgart",
     "plz": "70174",
     "state": "DE-BW",
-    "city": "Stuttgart",
+    "city": "Balingen",
     "city_dist": 0.9,
     "coords": [
       48.7828893,
@@ -783,7 +783,7 @@
     "name": "Team Freiheit Clubabend Saarbrücken",
     "plz": "66111",
     "state": "DE-SL",
-    "city": "Saarbrücken",
+    "city": "Kaiserslautern",
     "city_dist": 0.3,
     "coords": [
       49.2360123,
@@ -843,7 +843,7 @@
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
     "state": "DE-NW",
-    "city": "Dortmund",
+    "city": "Münster",
     "city_dist": 3.8,
     "coords": [
       51.4865748,
@@ -863,7 +863,7 @@
     "name": "Team Freiheit Clubabend Köln-Bonn",
     "plz": "50672",
     "state": "DE-NW",
-    "city": "Köln",
+    "city": "Koblenz",
     "city_dist": 1.8,
     "coords": [
       50.9425062,
@@ -883,7 +883,7 @@
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
     "state": "DE-HE",
-    "city": "Frankfurt am Main",
+    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
     "city_dist": 1.0,
     "coords": [
       50.1028505,
@@ -903,7 +903,7 @@
     "name": "Libertärer Stammtisch Kaiserslautern",
     "plz": "67657",
     "state": "DE-RP",
-    "city": "Kaiserslautern",
+    "city": "Balingen",
     "city_dist": 3.3,
     "coords": [
       49.4514437,
@@ -923,7 +923,7 @@
     "name": "Libertärer Stammtisch München",
     "plz": "80539",
     "state": "DE-BY",
-    "city": "München",
+    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
     "city_dist": 0.9,
     "coords": [
       48.1443613,
@@ -943,7 +943,7 @@
     "name": "Team Freiheit Clubabend Mülheim a.d. Ruhr",
     "plz": "45479",
     "state": "DE-NW",
-    "city": "Mülheim an der Ruhr",
+    "city": "Osnabrück",
     "city_dist": 6.0,
     "coords": [
       51.408804,
@@ -963,7 +963,7 @@
     "name": "Markus Krall in Eppingen",
     "plz": "75031",
     "state": "DE-BW",
-    "city": "Eppingen",
+    "city": "München",
     "city_dist": 1.5,
     "coords": [
       49.1347417,
@@ -1003,7 +1003,7 @@
     "name": "Hayek Club München",
     "plz": "80539",
     "state": "DE-BY",
-    "city": "München",
+    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
     "city_dist": 0.9,
     "coords": [
       48.1443613,
@@ -1043,7 +1043,7 @@
     "name": "Team Freiheit Clubabend Wiesbaden",
     "plz": "65189",
     "state": "DE-HE",
-    "city": "Wiesbaden",
+    "city": "Kaiserslautern",
     "city_dist": 1.7,
     "coords": [
       50.0729625,
@@ -1083,7 +1083,7 @@
     "name": "Libertärer Stammtisch Göppingen/Esslingen",
     "plz": "73033",
     "state": "DE-BW",
-    "city": "Göppingen",
+    "city": "Eppingen",
     "city_dist": 0.6,
     "coords": [
       48.7088631,
@@ -1123,7 +1123,7 @@
     "name": "Team Freiheit Clubabend Osnabrück",
     "plz": "49074",
     "state": "DE-NI",
-    "city": "Osnabrück",
+    "city": "Köln",
     "city_dist": 0.7,
     "coords": [
       52.2770776,
@@ -1143,7 +1143,7 @@
     "name": "Staatenlos Bergisch Gladbach",
     "plz": "51465",
     "state": "DE-NW",
-    "city": "Bergisch Gladbach",
+    "city": "Koblenz",
     "city_dist": 1.1,
     "coords": [
       50.995022,
@@ -1183,7 +1183,7 @@
     "name": "Freiheit Meetup München",
     "plz": "80802",
     "state": "DE-BY",
-    "city": "München",
+    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
     "city_dist": 2.9,
     "coords": [
       48.1600441,
@@ -1323,7 +1323,7 @@
     "name": "Staatenlos München",
     "plz": "80803",
     "state": "DE-BY",
-    "city": "München",
+    "city": "Bad Reichenhall",
     "city_dist": 3.1,
     "coords": [
       48.1644179,
@@ -1443,7 +1443,7 @@
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
     "state": "DE-NW",
-    "city": "Dortmund",
+    "city": "Mülheim an der Ruhr",
     "city_dist": 3.8,
     "coords": [
       51.4865748,
@@ -1523,7 +1523,7 @@
     "name": "Libertärer Stammtisch Kaiserslautern",
     "plz": "67657",
     "state": "DE-RP",
-    "city": "Kaiserslautern",
+    "city": "Stuttgart",
     "city_dist": 3.3,
     "coords": [
       49.4514437,
@@ -1583,7 +1583,7 @@
     "name": "Hayek Club Koblenz",
     "plz": "56068",
     "state": "DE-RP",
-    "city": "Koblenz",
+    "city": "Frankfurt",
     "city_dist": 0.4,
     "coords": [
       50.3494613,
@@ -1663,7 +1663,7 @@
     "name": "Freiheitlicher Stammtisch Landsberg am Lech",
     "plz": "86899",
     "state": "DE-BY",
-    "city": "Landsberg am Lech",
+    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
     "city_dist": 2.0,
     "coords": [
       48.0336819,
@@ -1683,7 +1683,7 @@
     "name": "Team Freiheit Clubabend Münster",
     "plz": "48143",
     "state": "DE-NW",
-    "city": "Münster",
+    "city": "Osnabrück",
     "city_dist": 0.2,
     "coords": [
       51.9604439,
@@ -1983,7 +1983,7 @@
     "name": "Hayek Club Koblenz",
     "plz": "56068",
     "state": "DE-RP",
-    "city": "Koblenz",
+    "city": "Frankfurt",
     "city_dist": 0.4,
     "coords": [
       50.3494613,
@@ -2003,7 +2003,7 @@
     "name": "Team Freiheit Clubabend Rhein-Main",
     "plz": "65189",
     "state": "DE-HE",
-    "city": "Wiesbaden",
+    "city": "Kaiserslautern",
     "city_dist": 1.7,
     "coords": [
       50.0729625,
@@ -2103,7 +2103,7 @@
     "name": "Team Freiheit Siegen-Wittgenstein",
     "plz": "57250",
     "state": "DE-NW",
-    "city": "Siegen",
+    "city": "Frankfurt (Main)",
     "city_dist": 10.0,
     "coords": [
       50.903483,
@@ -2123,7 +2123,7 @@
     "name": "Hayek Club München",
     "plz": "80539",
     "state": "DE-BY",
-    "city": "München",
+    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
     "city_dist": 0.9,
     "coords": [
       48.1443613,
@@ -2143,7 +2143,7 @@
     "name": "Libertärer Stammtisch Kaiserslautern",
     "plz": "67657",
     "state": "DE-RP",
-    "city": "Kaiserslautern",
+    "city": "Waghäusel",
     "city_dist": 3.3,
     "coords": [
       49.4514437,
@@ -2243,7 +2243,7 @@
     "name": "Team Freiheit Clubabend Osnabrück",
     "plz": "49074",
     "state": "DE-NI",
-    "city": "Osnabrück",
+    "city": "Köln",
     "city_dist": 0.7,
     "coords": [
       52.2770776,
@@ -2263,7 +2263,7 @@
     "name": "Freiheit Meetup München",
     "plz": "80802",
     "state": "DE-BY",
-    "city": "München",
+    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
     "city_dist": 2.9,
     "coords": [
       48.1600441,
@@ -2323,7 +2323,7 @@
     "name": "Hayek Club Koblenz",
     "plz": "56068",
     "state": "DE-RP",
-    "city": "Koblenz",
+    "city": "Siegen",
     "city_dist": 0.4,
     "coords": [
       50.3494613,
@@ -2343,7 +2343,7 @@
     "name": "Team Freiheit Clubabend Köln-Bonn",
     "plz": "50672",
     "state": "DE-NW",
-    "city": "Köln",
+    "city": "Koblenz",
     "city_dist": 1.8,
     "coords": [
       50.9425062,
@@ -2683,7 +2683,7 @@
     "name": "Freiheitlicher Stammtisch Bergstraße",
     "plz": "64673",
     "state": "DE-HE",
-    "city": "Bergstraße",
+    "city": "Wiesbaden",
     "city_dist": 7.8,
     "coords": [
       49.72264,
@@ -2763,7 +2763,7 @@
     "name": "Libertärer Stammtisch Bad Reichenhall",
     "plz": "83435",
     "state": "DE-BY",
-    "city": "Bad Reichenhall",
+    "city": "Nürnberg",
     "city_dist": 1.7,
     "coords": [
       47.7266717,
@@ -2823,7 +2823,7 @@
     "name": "Team Freiheit Clubabend Köln-Bonn",
     "plz": "50672",
     "state": "DE-NW",
-    "city": "Köln",
+    "city": "Bergisch Gladbach",
     "city_dist": 1.8,
     "coords": [
       50.9425062,
@@ -2923,7 +2923,7 @@
     "name": "Freiheitlicher Stammtisch Karlsruhe",
     "plz": "76137",
     "state": "DE-BW",
-    "city": "Karlsruhe",
+    "city": "München",
     "city_dist": 1.1,
     "coords": [
       48.9994966,
@@ -3103,7 +3103,7 @@
     "name": "Team Freiheit Clubabend Osnabrück",
     "plz": "49074",
     "state": "DE-NI",
-    "city": "Osnabrück",
+    "city": "Köln",
     "city_dist": 0.7,
     "coords": [
       52.2770776,
@@ -3123,7 +3123,7 @@
     "name": "ROLAND BAADER Treffen",
     "plz": "68753",
     "state": "DE-BW",
-    "city": "Waghäusel",
+    "city": "Balingen",
     "city_dist": 2.6,
     "coords": [
       49.2292251,
@@ -3163,7 +3163,7 @@
     "name": "Freiheit Meetup München",
     "plz": "80802",
     "state": "DE-BY",
-    "city": "München",
+    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
     "city_dist": 2.9,
     "coords": [
       48.1600441,
@@ -3363,7 +3363,7 @@
     "name": "Freiheitlicher Stammtisch Landsberg am Lech",
     "plz": "86899",
     "state": "DE-BY",
-    "city": "Landsberg am Lech",
+    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
     "city_dist": 2.0,
     "coords": [
       48.0336819,
@@ -3523,7 +3523,7 @@
     "name": "Team Freiheit Clubabend Nürnberg mit Thomas L. Kemmerich",
     "plz": "90471",
     "state": "DE-BY",
-    "city": "Nürnberg",
+    "city": "=AI(\"Fill an appropriate value for this cell based on the table context\")",
     "city_dist": 5.3,
     "coords": [
       49.418213,
@@ -3623,7 +3623,7 @@
     "name": "Team Freiheit Clubabend Münster",
     "plz": "48143",
     "state": "DE-NW",
-    "city": "Münster",
+    "city": "Osnabrück",
     "city_dist": 0.2,
     "coords": [
       51.9604439,
@@ -3740,26 +3740,6 @@
     "link_qr": null
   },
   {
-    "name": "Libertäres Treffen Dortmund",
-    "plz": "44263",
-    "state": "DE-NW",
-    "city": "Dortmund",
-    "city_dist": 3.8,
-    "coords": [
-      51.4865748,
-      7.4974155
-    ],
-    "date": "2026-07-16",
-    "dow": "Do.",
-    "time": "19:00",
-    "orga": "Bündnis Libertärer",
-    "orga_www": "https://buendnis-libertaerer.de/",
-    "kontakt": "Alexander Expander",
-    "e-mail": "info@buendnis-libertaerer.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Team Freiheit Clubabend Hannover",
     "plz": "30159",
     "state": "DE-NI",
@@ -3796,6 +3776,26 @@
     "orga_www": "https://hayek.de/hayek-clubs/",
     "kontakt": "Karla Wagner",
     "e-mail": "hayek.club.weimar@mail.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertäres Treffen Dortmund",
+    "plz": "44263",
+    "state": "DE-NW",
+    "city": "Dortmund",
+    "city_dist": 3.8,
+    "coords": [
+      51.4865748,
+      7.4974155
+    ],
+    "date": "2026-07-23",
+    "dow": "Do.",
+    "time": "19:00",
+    "orga": "Bündnis Libertärer",
+    "orga_www": "https://buendnis-libertaerer.de/",
+    "kontakt": "Alexander Expander",
+    "e-mail": "info@buendnis-libertaerer.de",
     "link": null,
     "link_qr": null
   },
@@ -3963,7 +3963,7 @@
     "name": "DEXIT 2026 – Die Auswanderer Konferenz",
     "plz": "81925",
     "state": "DE-BY",
-    "city": "München",
+    "city": "Bad Reichenhall",
     "city_dist": 4.4,
     "coords": [
       48.1627877,
@@ -3983,7 +3983,7 @@
     "name": "Libertärer Stammtisch Bad Reichenhall",
     "plz": "83435",
     "state": "DE-BY",
-    "city": "Bad Reichenhall",
+    "city": "Landsberg am Lech",
     "city_dist": 1.7,
     "coords": [
       47.7266717,
@@ -4343,7 +4343,7 @@
     "name": "Libertärer Stammtisch Bad Reichenhall",
     "plz": "83435",
     "state": "DE-BY",
-    "city": "Bad Reichenhall",
+    "city": "Landsberg am Lech",
     "city_dist": 1.7,
     "coords": [
       47.7266717,
@@ -4520,6 +4520,26 @@
     "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
   },
   {
+    "name": "Libertäres Treffen Dortmund",
+    "plz": "44263",
+    "state": "DE-NW",
+    "city": "Dortmund",
+    "city_dist": 3.8,
+    "coords": [
+      51.4865748,
+      7.4974155
+    ],
+    "date": "2026-09-17",
+    "dow": "Do.",
+    "time": "19:00",
+    "orga": "Bündnis Libertärer",
+    "orga_www": "https://buendnis-libertaerer.de/",
+    "kontakt": "Alexander Expander",
+    "e-mail": "info@buendnis-libertaerer.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Bad Reichenhall",
     "plz": "83435",
     "state": "DE-BY",
@@ -4576,6 +4596,66 @@
     "orga_www": "https://www.misesde.org/2026/04/save-the-date-mises-konferenz-2026/",
     "kontakt": null,
     "e-mail": null,
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertäres Treffen Dortmund",
+    "plz": "44263",
+    "state": "DE-NW",
+    "city": "Dortmund",
+    "city_dist": 3.8,
+    "coords": [
+      51.4865748,
+      7.4974155
+    ],
+    "date": "2026-10-22",
+    "dow": "Do.",
+    "time": "19:00",
+    "orga": "Bündnis Libertärer",
+    "orga_www": "https://buendnis-libertaerer.de/",
+    "kontakt": "Alexander Expander",
+    "e-mail": "info@buendnis-libertaerer.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertäres Treffen Dortmund",
+    "plz": "44263",
+    "state": "DE-NW",
+    "city": "Dortmund",
+    "city_dist": 3.8,
+    "coords": [
+      51.4865748,
+      7.4974155
+    ],
+    "date": "2026-11-19",
+    "dow": "Do.",
+    "time": "19:00",
+    "orga": "Bündnis Libertärer",
+    "orga_www": "https://buendnis-libertaerer.de/",
+    "kontakt": "Alexander Expander",
+    "e-mail": "info@buendnis-libertaerer.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertäres Treffen Dortmund",
+    "plz": "44263",
+    "state": "DE-NW",
+    "city": "Dortmund",
+    "city_dist": 3.8,
+    "coords": [
+      51.4865748,
+      7.4974155
+    ],
+    "date": "2026-12-17",
+    "dow": "Do.",
+    "time": "19:00",
+    "orga": "Bündnis Libertärer",
+    "orga_www": "https://buendnis-libertaerer.de/",
+    "kontakt": "Alexander Expander",
+    "e-mail": "info@buendnis-libertaerer.de",
     "link": null,
     "link_qr": null
   }
