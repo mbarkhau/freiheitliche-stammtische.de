@@ -1,5 +1,50 @@
 [
   {
+    "name": "Team Freiheit Clubabend München",
+    "beginn": "2025-08-12",
+    "ende": "2025-08-12",
+    "uhrzeit": "18:30",
+    "kw": "KW33",
+    "wochentag": "Tuesday",
+    "orga": "Team Freiheit",
+    "plz": "80469",
+    "ort": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events",
+    "tournus": "Jeder 2. Dienstag im Monat"
+  },
+  {
+    "name": "Team Freiheit Clubabend München",
+    "beginn": "2025-09-09",
+    "ende": "2025-09-09",
+    "uhrzeit": "18:30",
+    "kw": "KW37",
+    "wochentag": "Tuesday",
+    "orga": "Team Freiheit",
+    "plz": "80469",
+    "ort": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events",
+    "tournus": "Jeder 2. Dienstag im Monat"
+  },
+  {
+    "name": "Team Freiheit Clubabend München",
+    "beginn": "2025-10-14",
+    "ende": "2025-10-14",
+    "uhrzeit": "18:30",
+    "kw": "KW42",
+    "wochentag": "Tuesday",
+    "orga": "Team Freiheit",
+    "plz": "80469",
+    "ort": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events",
+    "tournus": "Jeder 2. Dienstag im Monat"
+  },
+  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "beginn": "2025-11-04",
     "ende": "2025-11-04",
@@ -836,7 +881,7 @@
     "ort": "München",
     "kontakt": "Jan Klein-Zirbes und Michael Kraupa",
     "e-mail": "muenchen@team-freiheit.de",
-    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-muenchen-10-03-26/"
+    "orga_webseite": "https://www.team-freiheit.de/events"
   },
   {
     "name": "Libertärer Stammtisch Halle (Saale)",

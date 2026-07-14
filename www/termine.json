@@ -1,5 +1,65 @@
 [
   {
+    "name": "Team Freiheit Clubabend München",
+    "plz": "80469",
+    "state": "DE-BY",
+    "city": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
+    "city_dist": 1.1,
+    "coords": [
+      48.1278437,
+      11.5712275
+    ],
+    "date": "2025-08-12",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/events",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Team Freiheit Clubabend München",
+    "plz": "80469",
+    "state": "DE-BY",
+    "city": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
+    "city_dist": 1.1,
+    "coords": [
+      48.1278437,
+      11.5712275
+    ],
+    "date": "2025-09-09",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/events",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Team Freiheit Clubabend München",
+    "plz": "80469",
+    "state": "DE-BY",
+    "city": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
+    "city_dist": 1.1,
+    "coords": [
+      48.1278437,
+      11.5712275
+    ],
+    "date": "2025-10-14",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/events",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
     "state": "DE-HE",
@@ -1153,7 +1213,7 @@
     "dow": "Di.",
     "time": "18:30",
     "orga": "Team Freiheit",
-    "orga_www": "https://www.team-freiheit.de/event/clubabend-muenchen-10-03-26/",
+    "orga_www": "https://www.team-freiheit.de/events",
     "kontakt": "Jan Klein-Zirbes und Michael Kraupa",
     "e-mail": "muenchen@team-freiheit.de",
     "link": null,
