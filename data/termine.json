@@ -3124,22 +3124,6 @@
     "infotext": "Sommerfest des Hayek Club Koblenz - Wir tanzen den Hayek"
   },
   {
-    "name": "Freiheitlicher Stammtisch Reutlingen",
-    "beginn": "2026-08-21",
-    "ende": "2026-08-21",
-    "uhrzeit": "19:00",
-    "kw": "KW34",
-    "wochentag": "Friday",
-    "orga": "Unabhängig",
-    "plz": "72760",
-    "ort": "Reutlingen",
-    "telegram_group_id": "4331808963",
-    "kontakt": "Markus Pöschl",
-    "e-mail": "markus.rt@proton.me",
-    "orga_webseite": "freiheitliche-stammtische.de",
-    "group_link": "https://t.me/+qsiIUvUG3tYxZWRi"
-  },
-  {
     "name": "Team Freiheit Clubabend Köln-Bonn",
     "beginn": "2026-08-28",
     "ende": "2026-08-28",
@@ -3337,6 +3321,22 @@
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
     "orga_webseite": "https://buendnis-libertaerer.de/"
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Reutlingen",
+    "beginn": "2026-09-24",
+    "ende": "2026-09-24",
+    "uhrzeit": "19:00",
+    "kw": "KW39",
+    "wochentag": "Thursday",
+    "orga": "Unabhängig",
+    "plz": "72760",
+    "ort": "Reutlingen",
+    "telegram_group_id": "4331808963",
+    "kontakt": "Markus Pöschl",
+    "e-mail": "markus.rt@proton.me",
+    "orga_webseite": "freiheitliche-stammtische.de",
+    "group_link": "https://t.me/+qsiIUvUG3tYxZWRi"
   },
   {
     "name": "Libertärer Stammtisch Bad Reichenhall",

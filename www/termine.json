@@ -4260,26 +4260,6 @@
     "link_qr": null
   },
   {
-    "name": "Freiheitlicher Stammtisch Reutlingen",
-    "plz": "72760",
-    "state": "DE-BW",
-    "city": "Reutlingen",
-    "city_dist": 2.2,
-    "coords": [
-      48.5113952,
-      9.20387
-    ],
-    "date": "2026-08-21",
-    "dow": "Fr.",
-    "time": "19:00",
-    "orga": "Unabhängig",
-    "orga_www": "freiheitliche-stammtische.de",
-    "kontakt": "Markus Pöschl",
-    "e-mail": "markus.rt@proton.me",
-    "link": "https://t.me/+qsiIUvUG3tYxZWRi",
-    "link_qr": "img/qr_c62528274506de02b4e0948ad257e1e010b46a0a_v2.png"
-  },
-  {
     "name": "Team Freiheit Clubabend Köln-Bonn",
     "plz": "50672",
     "state": "DE-NW",
@@ -4538,6 +4518,26 @@
     "e-mail": "info@buendnis-libertaerer.de",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Reutlingen",
+    "plz": "72760",
+    "state": "DE-BW",
+    "city": "Reutlingen",
+    "city_dist": 2.2,
+    "coords": [
+      48.5113952,
+      9.20387
+    ],
+    "date": "2026-09-24",
+    "dow": "Do.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": "freiheitliche-stammtische.de",
+    "kontakt": "Markus Pöschl",
+    "e-mail": "markus.rt@proton.me",
+    "link": "https://t.me/+qsiIUvUG3tYxZWRi",
+    "link_qr": "img/qr_c62528274506de02b4e0948ad257e1e010b46a0a_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Bad Reichenhall",
