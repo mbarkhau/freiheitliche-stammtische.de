@@ -4100,26 +4100,6 @@
     "link_qr": null
   },
   {
-    "name": "Libertärer Stammtisch in Balingen / Württemberg",
-    "plz": "72336",
-    "state": "DE-BW",
-    "city": "Balingen",
-    "city_dist": 1.0,
-    "coords": [
-      48.2659024,
-      8.8623776
-    ],
-    "date": "2026-08-13",
-    "dow": "Do.",
-    "time": "19:30",
-    "orga": "Unabhängig",
-    "orga_www": null,
-    "kontakt": "Fritz Maulbetsch",
-    "e-mail": "lnb@maulbetsch.net",
-    "link": "https://t.me/FreeFritz",
-    "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0_v2.png"
-  },
-  {
     "name": "Libertärer Stammtisch Grevenbroich",
     "plz": "41515",
     "state": "DE-NW",
@@ -4220,6 +4200,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch in Balingen / Württemberg",
+    "plz": "72336",
+    "state": "DE-BW",
+    "city": "Balingen",
+    "city_dist": 1.0,
+    "coords": [
+      48.2659024,
+      8.8623776
+    ],
+    "date": "2026-08-20",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Fritz Maulbetsch",
+    "e-mail": "lnb@maulbetsch.net",
+    "link": "https://t.me/FreeFritz",
+    "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0_v2.png"
+  },
+  {
     "name": "Freiheitlicher Stammtisch Reutlingen",
     "plz": "72760",
     "state": "DE-BW",
@@ -4280,6 +4280,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Kaiserslautern",
+    "plz": "67657",
+    "state": "DE-RP",
+    "city": "Kaiserslautern",
+    "city_dist": 3.3,
+    "coords": [
+      49.4514437,
+      7.8130571
+    ],
+    "date": "2026-08-21",
+    "dow": "Fr.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Uwe Schmitt",
+    "e-mail": "uwe.schmitt@die-libertaeren.de",
+    "link": "https://t.me/+za88OLhGTshlNGJi",
+    "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511_v2.png"
+  },
+  {
     "name": "Team Freiheit Clubabend Köln-Bonn",
     "plz": "50672",
     "state": "DE-NW",
@@ -4338,6 +4358,26 @@
     "e-mail": "dieter.kirschmann@die-libertaeren.de",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Staatenlos Neuss",
+    "plz": "41460",
+    "state": "DE-NW",
+    "city": "Neuss",
+    "city_dist": 5.1,
+    "coords": [
+      51.2074219,
+      6.708413
+    ],
+    "date": "2026-09-04",
+    "dow": "Fr.",
+    "time": "17:00",
+    "orga": "Staatenlos",
+    "orga_www": "https://staatenlos.ch/",
+    "kontakt": "Svenja",
+    "e-mail": null,
+    "link": "https://t.me/+aLRn2FSy7qoyZDI6",
+    "link_qr": "img/qr_ef087f17a9fa9da441aa97662e877464dbbed792_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Bad Reichenhall",
