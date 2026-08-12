@@ -2931,20 +2931,6 @@
     "infotext": "Voranstaltungsort: Mühle Altlandsberg"
   },
   {
-    "name": "Libertärer Stammtisch Bernburg (Saale)",
-    "beginn": "2026-08-11",
-    "ende": "2026-08-11",
-    "uhrzeit": "18:30",
-    "kw": "KW33",
-    "wochentag": "Tuesday",
-    "orga": "DIE LIBERTÄREN",
-    "plz": "06406",
-    "ort": "Bernburg (Saale)",
-    "kontakt": "Stefan Bückner",
-    "e-mail": "stephan.bueckner@die-libertaeren.de",
-    "orga_webseite": "https://die-libertaeren.de/"
-  },
-  {
     "name": "Libertärer Stammtisch Halle (Saale)",
     "beginn": "2026-08-12",
     "ende": "2026-08-12",
@@ -3048,6 +3034,21 @@
     "orga_webseite": "https://die-libertaeren.de/",
     "tournus": "Dritter Mittwoch des Monats",
     "group_link": "https://t.me/+qhX3l_Dn_VpkNmYy"
+  },
+  {
+    "name": "Libertärer Stammtisch Dresden",
+    "beginn": "2026-08-20",
+    "ende": "2026-08-20",
+    "uhrzeit": "18:00",
+    "kw": "KW34",
+    "wochentag": "Thursday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "01237",
+    "ort": "Dresden",
+    "kontakt": "Dr. Joachim Teske",
+    "e-mail": "joachim.teske@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "group_link": "https://t.me/+kXYK3OtoB0AxYTAy"
   },
   {
     "name": "Team Freiheit Clubabend Rostock",
@@ -3246,6 +3247,20 @@
     "orga_webseite": "https://die-libertaeren.de/",
     "tournus": "Erste Woche im Monat",
     "group_link": "https://t.me/+WgMHpki_VXZkYWIy"
+  },
+  {
+    "name": "Libertärer Stammtisch Bernburg (Saale)",
+    "beginn": "2026-09-08",
+    "ende": "2026-09-08",
+    "uhrzeit": "18:30",
+    "kw": "KW37",
+    "wochentag": "Tuesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "06406",
+    "ort": "Bernburg (Saale)",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/"
   },
   {
     "name": "Libertärer Stammtisch Halle (Saale)",

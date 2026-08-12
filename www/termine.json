@@ -4000,26 +4000,6 @@
     "link_qr": "img/qr_9bc48ec2ac884a3bb1ca09e2c64f45ec0bda01bb_v2.png"
   },
   {
-    "name": "Libertärer Stammtisch Bernburg (Saale)",
-    "plz": "06406",
-    "state": "DE-ST",
-    "city": "Bernburg (Saale)",
-    "city_dist": 1.8,
-    "coords": [
-      51.7825763,
-      11.7556064
-    ],
-    "date": "2026-08-11",
-    "dow": "Di.",
-    "time": "18:30",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Stefan Bückner",
-    "e-mail": "stephan.bueckner@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Libertärer Stammtisch Halle (Saale)",
     "plz": "06108",
     "state": "DE-ST",
@@ -4158,6 +4138,26 @@
     "e-mail": "lukas.schroth@die-libertaeren.de",
     "link": "https://t.me/+qhX3l_Dn_VpkNmYy",
     "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Dresden",
+    "plz": "01237",
+    "state": "DE-SN",
+    "city": "Dresden",
+    "city_dist": 5.7,
+    "coords": [
+      51.0182471,
+      13.8020866
+    ],
+    "date": "2026-08-20",
+    "dow": "Do.",
+    "time": "18:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Joachim Teske",
+    "e-mail": "joachim.teske@die-libertaeren.de",
+    "link": "https://t.me/+kXYK3OtoB0AxYTAy",
+    "link_qr": "img/qr_5565c4d9b4b29ecef348f944574ba5e63942a5bc_v2.png"
   },
   {
     "name": "Team Freiheit Clubabend Rostock",
@@ -4418,6 +4418,26 @@
     "e-mail": "lukas.schroth@die-libertaeren.de",
     "link": "https://t.me/+WgMHpki_VXZkYWIy",
     "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Bernburg (Saale)",
+    "plz": "06406",
+    "state": "DE-ST",
+    "city": "Bernburg (Saale)",
+    "city_dist": 1.8,
+    "coords": [
+      51.7825763,
+      11.7556064
+    ],
+    "date": "2026-09-08",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Halle (Saale)",
