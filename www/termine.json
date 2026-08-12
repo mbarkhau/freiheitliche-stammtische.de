@@ -29,8 +29,8 @@
       48.1278437,
       11.5712275
     ],
-    "date": "2025-09-09",
-    "dow": "Di.",
+    "date": "2025-09-08",
+    "dow": "Mo.",
     "time": "18:30",
     "orga": "Team Freiheit",
     "orga_www": "https://www.team-freiheit.de/events",
@@ -49,8 +49,8 @@
       48.1278437,
       11.5712275
     ],
-    "date": "2025-10-14",
-    "dow": "Di.",
+    "date": "2025-10-13",
+    "dow": "Mo.",
     "time": "18:30",
     "orga": "Team Freiheit",
     "orga_www": "https://www.team-freiheit.de/events",
@@ -4320,6 +4320,26 @@
     "link_qr": null
   },
   {
+    "name": "Team Freiheit Clubabend Berlin",
+    "plz": "10555",
+    "state": "DE-BE",
+    "city": "Berlin",
+    "city_dist": 4.1,
+    "coords": [
+      52.519898,
+      13.3355418
+    ],
+    "date": "2026-08-30",
+    "dow": "So.",
+    "time": "17:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/events/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "berlin@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Hamburg",
     "plz": "20095",
     "state": "DE-HH",
@@ -4436,6 +4456,26 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Stefan Bückner",
     "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Team Freiheit Clubabend Gießen",
+    "plz": "35390",
+    "state": "DE-HE",
+    "city": "Gießen",
+    "city_dist": 1.4,
+    "coords": [
+      50.5879221,
+      8.6766586
+    ],
+    "date": "2026-09-08",
+    "dow": "Di.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-giessen-23-03-26/",
+    "kontakt": null,
+    "e-mail": "giessen@team-freiheit.de",
     "link": null,
     "link_qr": null
   },
@@ -4580,6 +4620,26 @@
     "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
   },
   {
+    "name": "Team Freiheit Clubabend Rostock",
+    "plz": "18059",
+    "state": "DE-MV",
+    "city": "Rostock",
+    "city_dist": 8.1,
+    "coords": [
+      54.0278805,
+      12.0707327
+    ],
+    "date": "2026-09-17",
+    "dow": "Do.",
+    "time": "18:30",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-rostock-20-03-26/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "rostock@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
     "state": "DE-NW",
@@ -4618,6 +4678,26 @@
     "e-mail": "markus.rt@proton.me",
     "link": "https://t.me/+qsiIUvUG3tYxZWRi",
     "link_qr": "img/qr_c62528274506de02b4e0948ad257e1e010b46a0a_v2.png"
+  },
+  {
+    "name": "Team Freiheit Clubabend Köln-Bonn",
+    "plz": "50672",
+    "state": "DE-NW",
+    "city": "Köln",
+    "city_dist": 1.8,
+    "coords": [
+      50.9425062,
+      6.9345727
+    ],
+    "date": "2026-09-25",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "koeln@team-freiheit.de",
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Bad Reichenhall",

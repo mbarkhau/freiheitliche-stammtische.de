@@ -16,11 +16,11 @@
   },
   {
     "name": "Team Freiheit Clubabend München",
-    "beginn": "2025-09-09",
-    "ende": "2025-09-09",
+    "beginn": "2025-09-08",
+    "ende": "2025-09-08",
     "uhrzeit": "18:30",
     "kw": "KW37",
-    "wochentag": "Tuesday",
+    "wochentag": "Monday",
     "orga": "Team Freiheit",
     "plz": "80469",
     "ort": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
@@ -31,11 +31,11 @@
   },
   {
     "name": "Team Freiheit Clubabend München",
-    "beginn": "2025-10-14",
-    "ende": "2025-10-14",
+    "beginn": "2025-10-13",
+    "ende": "2025-10-13",
     "uhrzeit": "18:30",
     "kw": "KW42",
-    "wochentag": "Tuesday",
+    "wochentag": "Monday",
     "orga": "Team Freiheit",
     "plz": "80469",
     "ort": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
@@ -3173,6 +3173,20 @@
     "tournus": "Letzter Fr. im Monat"
   },
   {
+    "name": "Team Freiheit Clubabend Berlin",
+    "beginn": "2026-08-30",
+    "ende": "2026-08-30",
+    "uhrzeit": "17:00",
+    "kw": "KW35",
+    "wochentag": "Sunday",
+    "orga": "Team Freiheit",
+    "plz": "10555",
+    "ort": "Berlin",
+    "kontakt": "Team Freiheit",
+    "e-mail": "berlin@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events/"
+  },
+  {
     "name": "Libertärer Stammtisch Hamburg",
     "beginn": "2026-09-02",
     "ende": "2026-09-02",
@@ -3261,6 +3275,19 @@
     "kontakt": "Stefan Bückner",
     "e-mail": "stephan.bueckner@die-libertaeren.de",
     "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Team Freiheit Clubabend Gießen",
+    "beginn": "2026-09-08",
+    "ende": "2026-09-08",
+    "uhrzeit": "19:00",
+    "kw": "KW37",
+    "wochentag": "Tuesday",
+    "orga": "Team Freiheit",
+    "plz": "35390",
+    "ort": "Gießen",
+    "e-mail": "giessen@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-giessen-23-03-26/"
   },
   {
     "name": "Libertärer Stammtisch Halle (Saale)",
@@ -3372,6 +3399,20 @@
     "group_link": "https://t.me/+qhX3l_Dn_VpkNmYy"
   },
   {
+    "name": "Team Freiheit Clubabend Rostock",
+    "beginn": "2026-09-17",
+    "ende": "2026-09-17",
+    "uhrzeit": "18:30",
+    "kw": "KW38",
+    "wochentag": "Thursday",
+    "orga": "Team Freiheit",
+    "plz": "18059",
+    "ort": "Rostock",
+    "kontakt": "Team Freiheit",
+    "e-mail": "rostock@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-rostock-20-03-26/"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "beginn": "2026-09-17",
     "ende": "2026-09-17",
@@ -3400,6 +3441,21 @@
     "e-mail": "markus.rt@proton.me",
     "orga_webseite": "freiheitliche-stammtische.de",
     "group_link": "https://t.me/+qsiIUvUG3tYxZWRi"
+  },
+  {
+    "name": "Team Freiheit Clubabend Köln-Bonn",
+    "beginn": "2026-09-25",
+    "ende": "2026-09-25",
+    "uhrzeit": "19:00",
+    "kw": "KW39",
+    "wochentag": "Friday",
+    "orga": "Team Freiheit",
+    "plz": "50672",
+    "ort": "Köln",
+    "kontakt": "Team Freiheit",
+    "e-mail": "koeln@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
+    "tournus": "Letzter Fr. im Monat"
   },
   {
     "name": "Libertärer Stammtisch Bad Reichenhall",
