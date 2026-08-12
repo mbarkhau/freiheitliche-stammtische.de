@@ -1323,7 +1323,7 @@
     "name": "Staatenlos München",
     "plz": "80803",
     "state": "DE-BY",
-    "city": "Bad Reichenhall",
+    "city": "München",
     "city_dist": 3.1,
     "coords": [
       48.1644179,
@@ -2763,7 +2763,7 @@
     "name": "Libertärer Stammtisch Bad Reichenhall",
     "plz": "83435",
     "state": "DE-BY",
-    "city": "Nürnberg",
+    "city": "Bad Reichenhall",
     "city_dist": 1.7,
     "coords": [
       47.7266717,
@@ -3943,7 +3943,7 @@
     "name": "DEXIT 2026 – Die Auswanderer Konferenz",
     "plz": "81925",
     "state": "DE-BY",
-    "city": "Bad Reichenhall",
+    "city": "München",
     "city_dist": 4.4,
     "coords": [
       48.1627877,
@@ -3963,7 +3963,7 @@
     "name": "Libertärer Stammtisch Bad Reichenhall",
     "plz": "83435",
     "state": "DE-BY",
-    "city": "Landsberg am Lech",
+    "city": "Bad Reichenhall",
     "city_dist": 1.7,
     "coords": [
       47.7266717,
@@ -4403,7 +4403,7 @@
     "name": "Libertärer Stammtisch Bad Reichenhall",
     "plz": "83435",
     "state": "DE-BY",
-    "city": "Landsberg am Lech",
+    "city": "Bad Reichenhall",
     "city_dist": 1.7,
     "coords": [
       47.7266717,
