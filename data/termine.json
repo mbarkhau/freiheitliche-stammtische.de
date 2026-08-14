@@ -2977,20 +2977,6 @@
     "orga_webseite": "https://die-libertaeren.de/"
   },
   {
-    "name": "Libertärer Stammtisch Magdeburg",
-    "beginn": "2026-08-13",
-    "ende": "2026-08-13",
-    "uhrzeit": "19:30",
-    "kw": "KW33",
-    "wochentag": "Thursday",
-    "orga": "DIE LIBERTÄREN",
-    "plz": "39104",
-    "ort": "Magdeburg",
-    "kontakt": "Dr. Mathias Hummel",
-    "e-mail": "events@die-libertaeren.de",
-    "orga_webseite": "https://die-libertaeren.de/"
-  },
-  {
     "name": "Libertärer Stammtisch Grevenbroich",
     "beginn": "2026-08-14",
     "ende": "2026-08-14",
@@ -3381,6 +3367,21 @@
     "orga_webseite": "https://www.hayekmuenster.de/"
   },
   {
+    "name": "Libertärer Stammtisch Mittelhessen",
+    "beginn": "2026-09-16",
+    "ende": "2026-09-16",
+    "uhrzeit": "19:00",
+    "kw": "KW38",
+    "wochentag": "Wednesday",
+    "orga": "Unabhängig",
+    "plz": "35396",
+    "ort": "Gießen",
+    "telegram_group_id": "2218630491",
+    "kontakt": "Stefan Bosch",
+    "tournus": "Jeder 3. Mittwoch",
+    "group_link": "https://t.me/+kDTzmac3wJYwMzIy"
+  },
+  {
     "name": "Freiheitlicher Stammtisch Bergstraße",
     "beginn": "2026-09-16",
     "ende": "2026-09-16",
@@ -3504,6 +3505,49 @@
     "group_link": "https://t.me/+wLa_UwnOBV5mZjBi"
   },
   {
+    "name": "Libertärer Stammtisch Hamburg",
+    "beginn": "2026-10-07",
+    "ende": "2026-10-07",
+    "uhrzeit": "19:00",
+    "kw": "KW41",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "20095",
+    "ort": "Hamburg",
+    "kontakt": "Ferdinand Steinhöfel",
+    "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 1. Mittwoch"
+  },
+  {
+    "name": "Libertärer Stammtisch Magdeburg",
+    "beginn": "2026-10-08",
+    "ende": "2026-10-08",
+    "uhrzeit": "19:30",
+    "kw": "KW41",
+    "wochentag": "Thursday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "39104",
+    "ort": "Magdeburg",
+    "kontakt": "Dr. Mathias Hummel",
+    "e-mail": "events@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Libertärer Stammtisch Grevenbroich",
+    "beginn": "2026-10-09",
+    "ende": "2026-10-09",
+    "uhrzeit": "19:00",
+    "kw": "KW41",
+    "wochentag": "Friday",
+    "orga": "Unabhängig",
+    "plz": "41515",
+    "ort": "Grevenbroich",
+    "kontakt": "Martin Moczarski",
+    "e-mail": "moczarski@ef-magazin.de",
+    "orga_webseite": "https://ef-magazin.de/"
+  },
+  {
     "name": "EINUNDZWANZIG Brandenburg Ost",
     "beginn": "2026-10-12",
     "ende": "2026-10-12",
@@ -3579,6 +3623,21 @@
     "orga_webseite": "https://www.misesde.org/2026/04/save-the-date-mises-konferenz-2026/"
   },
   {
+    "name": "Libertärer Stammtisch Mittelhessen",
+    "beginn": "2026-10-21",
+    "ende": "2026-10-21",
+    "uhrzeit": "19:00",
+    "kw": "KW43",
+    "wochentag": "Wednesday",
+    "orga": "Unabhängig",
+    "plz": "35396",
+    "ort": "Gießen",
+    "telegram_group_id": "2218630491",
+    "kontakt": "Stefan Bosch",
+    "tournus": "Jeder 3. Mittwoch",
+    "group_link": "https://t.me/+kDTzmac3wJYwMzIy"
+  },
+  {
     "name": "Libertärer Stammtisch Ansbach",
     "beginn": "2026-10-21",
     "ende": "2026-10-21",
@@ -3609,6 +3668,21 @@
     "orga_webseite": "https://buendnis-libertaerer.de/"
   },
   {
+    "name": "Libertärer Stammtisch Hamburg",
+    "beginn": "2026-11-04",
+    "ende": "2026-11-04",
+    "uhrzeit": "19:00",
+    "kw": "KW45",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "20095",
+    "ort": "Hamburg",
+    "kontakt": "Ferdinand Steinhöfel",
+    "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 1. Mittwoch"
+  },
+  {
     "name": "Libertärer Stammtisch Bernburg (Saale)",
     "beginn": "2026-11-10",
     "ende": "2026-11-10",
@@ -3636,6 +3710,49 @@
     "e-mail": "stephan.bueckner@die-libertaeren.de",
     "orga_webseite": "https://die-libertaeren.de/",
     "tournus": "Jeder 2. Mittwoch"
+  },
+  {
+    "name": "Libertärer Stammtisch Magdeburg",
+    "beginn": "2026-11-12",
+    "ende": "2026-11-12",
+    "uhrzeit": "19:30",
+    "kw": "KW46",
+    "wochentag": "Thursday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "39104",
+    "ort": "Magdeburg",
+    "kontakt": "Dr. Mathias Hummel",
+    "e-mail": "events@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Libertärer Stammtisch Grevenbroich",
+    "beginn": "2026-11-13",
+    "ende": "2026-11-13",
+    "uhrzeit": "19:00",
+    "kw": "KW46",
+    "wochentag": "Friday",
+    "orga": "Unabhängig",
+    "plz": "41515",
+    "ort": "Grevenbroich",
+    "kontakt": "Martin Moczarski",
+    "e-mail": "moczarski@ef-magazin.de",
+    "orga_webseite": "https://ef-magazin.de/"
+  },
+  {
+    "name": "Libertärer Stammtisch Mittelhessen",
+    "beginn": "2026-11-18",
+    "ende": "2026-11-18",
+    "uhrzeit": "19:00",
+    "kw": "KW47",
+    "wochentag": "Wednesday",
+    "orga": "Unabhängig",
+    "plz": "35396",
+    "ort": "Gießen",
+    "telegram_group_id": "2218630491",
+    "kontakt": "Stefan Bosch",
+    "tournus": "Jeder 3. Mittwoch",
+    "group_link": "https://t.me/+kDTzmac3wJYwMzIy"
   },
   {
     "name": "Libertärer Stammtisch Ansbach",
@@ -3684,6 +3801,21 @@
     "group_link": "https://t.me/+Xzxvc2UqKuJmNmRi"
   },
   {
+    "name": "Libertärer Stammtisch Hamburg",
+    "beginn": "2026-12-02",
+    "ende": "2026-12-02",
+    "uhrzeit": "19:00",
+    "kw": "KW49",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "20095",
+    "ort": "Hamburg",
+    "kontakt": "Ferdinand Steinhöfel",
+    "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 1. Mittwoch"
+  },
+  {
     "name": "Libertärer Stammtisch Bernburg (Saale)",
     "beginn": "2026-12-08",
     "ende": "2026-12-08",
@@ -3711,6 +3843,49 @@
     "e-mail": "stephan.bueckner@die-libertaeren.de",
     "orga_webseite": "https://die-libertaeren.de/",
     "tournus": "Jeder 2. Mittwoch"
+  },
+  {
+    "name": "Libertärer Stammtisch Magdeburg",
+    "beginn": "2026-12-10",
+    "ende": "2026-12-10",
+    "uhrzeit": "19:30",
+    "kw": "KW50",
+    "wochentag": "Thursday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "39104",
+    "ort": "Magdeburg",
+    "kontakt": "Dr. Mathias Hummel",
+    "e-mail": "events@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Libertärer Stammtisch Grevenbroich",
+    "beginn": "2026-12-11",
+    "ende": "2026-12-11",
+    "uhrzeit": "19:00",
+    "kw": "KW50",
+    "wochentag": "Friday",
+    "orga": "Unabhängig",
+    "plz": "41515",
+    "ort": "Grevenbroich",
+    "kontakt": "Martin Moczarski",
+    "e-mail": "moczarski@ef-magazin.de",
+    "orga_webseite": "https://ef-magazin.de/"
+  },
+  {
+    "name": "Libertärer Stammtisch Mittelhessen",
+    "beginn": "2026-12-16",
+    "ende": "2026-12-16",
+    "uhrzeit": "19:00",
+    "kw": "KW51",
+    "wochentag": "Wednesday",
+    "orga": "Unabhängig",
+    "plz": "35396",
+    "ort": "Gießen",
+    "telegram_group_id": "2218630491",
+    "kontakt": "Stefan Bosch",
+    "tournus": "Jeder 3. Mittwoch",
+    "group_link": "https://t.me/+kDTzmac3wJYwMzIy"
   },
   {
     "name": "Libertärer Stammtisch Ansbach",
