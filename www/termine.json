@@ -100,6 +100,26 @@
     "link_qr": "img/qr_fc1dec9239b71c671798da58566d8276a729df26_v2.png"
   },
   {
+    "name": "Team Freiheit Clubabend München",
+    "plz": "80469",
+    "state": "DE-BY",
+    "city": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
+    "city_dist": 1.1,
+    "coords": [
+      48.1278437,
+      11.5712275
+    ],
+    "date": "2025-11-10",
+    "dow": "Mo.",
+    "time": "18:30",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/events",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Hamburg",
     "plz": "20095",
     "state": "DE-HH",
@@ -178,6 +198,26 @@
     "e-mail": "manuel.barkhau@die-libertaeren.de",
     "link": "https://t.me/+WgMHpki_VXZkYWIy",
     "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba_v2.png"
+  },
+  {
+    "name": "Team Freiheit Clubabend München",
+    "plz": "80469",
+    "state": "DE-BY",
+    "city": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
+    "city_dist": 1.1,
+    "coords": [
+      48.1278437,
+      11.5712275
+    ],
+    "date": "2025-12-08",
+    "dow": "Mo.",
+    "time": "18:30",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/events",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Magdeburg",

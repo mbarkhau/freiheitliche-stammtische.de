@@ -74,6 +74,21 @@
     "group_link": "https://t.me/marktradikalberlin"
   },
   {
+    "name": "Team Freiheit Clubabend München",
+    "beginn": "2025-11-10",
+    "ende": "2025-11-10",
+    "uhrzeit": "18:30",
+    "kw": "KW46",
+    "wochentag": "Monday",
+    "orga": "Team Freiheit",
+    "plz": "80469",
+    "ort": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events",
+    "tournus": "Jeder 2. Dienstag im Monat"
+  },
+  {
     "name": "Libertärer Stammtisch Hamburg",
     "beginn": "2025-12-03",
     "ende": "2025-12-03",
@@ -133,6 +148,21 @@
     "orga_webseite": "https://die-libertaeren.de/",
     "tournus": "Erste Woche im Monat",
     "group_link": "https://t.me/+WgMHpki_VXZkYWIy"
+  },
+  {
+    "name": "Team Freiheit Clubabend München",
+    "beginn": "2025-12-08",
+    "ende": "2025-12-08",
+    "uhrzeit": "18:30",
+    "kw": "KW50",
+    "wochentag": "Monday",
+    "orga": "Team Freiheit",
+    "plz": "80469",
+    "ort": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events",
+    "tournus": "Jeder 2. Dienstag im Monat"
   },
   {
     "name": "Libertärer Stammtisch Magdeburg",
