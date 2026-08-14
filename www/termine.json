@@ -4760,6 +4760,26 @@
     "link_qr": "img/qr_2fd308f9eb3802ebc7554d8d5d2423ab2a2dfccc_v2.png"
   },
   {
+    "name": "Hayek Club Koblenz",
+    "plz": "56068",
+    "state": "DE-RP",
+    "city": "Koblenz",
+    "city_dist": 0.4,
+    "coords": [
+      50.3494613,
+      7.5947632
+    ],
+    "date": "2026-10-04",
+    "dow": "So.",
+    "time": "17:00",
+    "orga": "Hayek Club",
+    "orga_www": "hayek-club-koblenz.de",
+    "kontakt": "Prof. Ing. Götz Piwinger",
+    "e-mail": "kontakt@hayek-club-koblenz.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Hamburg",
     "plz": "20095",
     "state": "DE-HH",
@@ -4920,6 +4940,26 @@
     "link_qr": null
   },
   {
+    "name": "Hayek Club Koblenz",
+    "plz": "56068",
+    "state": "DE-RP",
+    "city": "Koblenz",
+    "city_dist": 0.4,
+    "coords": [
+      50.3494613,
+      7.5947632
+    ],
+    "date": "2026-10-18",
+    "dow": "So.",
+    "time": "17:00",
+    "orga": "Hayek Club",
+    "orga_www": "hayek-club-koblenz.de",
+    "kontakt": "Prof. Ing. Götz Piwinger",
+    "e-mail": "kontakt@hayek-club-koblenz.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Mittelhessen",
     "plz": "35396",
     "state": "DE-HE",
@@ -4976,6 +5016,26 @@
     "orga_www": "https://buendnis-libertaerer.de/",
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Team Freiheit Clubabend Köln-Bonn",
+    "plz": "50672",
+    "state": "DE-NW",
+    "city": "Köln",
+    "city_dist": 1.8,
+    "coords": [
+      50.9425062,
+      6.9345727
+    ],
+    "date": "2026-10-30",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "koeln@team-freiheit.de",
     "link": null,
     "link_qr": null
   },
@@ -5160,6 +5220,26 @@
     "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
   },
   {
+    "name": "Team Freiheit Clubabend Köln-Bonn",
+    "plz": "50672",
+    "state": "DE-NW",
+    "city": "Köln",
+    "city_dist": 1.8,
+    "coords": [
+      50.9425062,
+      6.9345727
+    ],
+    "date": "2026-11-27",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "koeln@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Hamburg",
     "plz": "20095",
     "state": "DE-HH",
@@ -5176,6 +5256,26 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Ferdinand Steinhöfel",
     "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Hayek Club Koblenz",
+    "plz": "56068",
+    "state": "DE-RP",
+    "city": "Koblenz",
+    "city_dist": 0.4,
+    "coords": [
+      50.3494613,
+      7.5947632
+    ],
+    "date": "2026-12-06",
+    "dow": "So.",
+    "time": "17:00",
+    "orga": "Hayek Club",
+    "orga_www": "hayek-club-koblenz.de",
+    "kontakt": "Prof. Ing. Götz Piwinger",
+    "e-mail": "kontakt@hayek-club-koblenz.de",
     "link": null,
     "link_qr": null
   },
@@ -5338,5 +5438,45 @@
     "e-mail": "svenbrajer@web.de",
     "link": "https://t.me/+Xzxvc2UqKuJmNmRi",
     "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
+  },
+  {
+    "name": "Team Freiheit Clubabend Köln-Bonn",
+    "plz": "50672",
+    "state": "DE-NW",
+    "city": "Köln",
+    "city_dist": 1.8,
+    "coords": [
+      50.9425062,
+      6.9345727
+    ],
+    "date": "2026-12-18",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
+    "kontakt": "Team Freiheit",
+    "e-mail": "koeln@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Hayek Club Koblenz",
+    "plz": "56068",
+    "state": "DE-RP",
+    "city": "Koblenz",
+    "city_dist": 0.4,
+    "coords": [
+      50.3494613,
+      7.5947632
+    ],
+    "date": "2026-12-23",
+    "dow": "Mi.",
+    "time": "17:00",
+    "orga": "Hayek Club",
+    "orga_www": "hayek-club-koblenz.de",
+    "kontakt": "Prof. Ing. Götz Piwinger",
+    "e-mail": "kontakt@hayek-club-koblenz.de",
+    "link": null,
+    "link_qr": null
   }
 ]
