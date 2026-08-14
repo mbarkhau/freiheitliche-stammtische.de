@@ -4700,6 +4700,26 @@
     "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
   },
   {
+    "name": "Libertärer Stammtisch Kaiserslautern",
+    "plz": "67657",
+    "state": "DE-RP",
+    "city": "Kaiserslautern",
+    "city_dist": 3.3,
+    "coords": [
+      49.4514437,
+      7.8130571
+    ],
+    "date": "2026-09-18",
+    "dow": "Fr.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Uwe Schmitt",
+    "e-mail": "uwe.schmitt@die-libertaeren.de",
+    "link": "https://t.me/+za88OLhGTshlNGJi",
+    "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511_v2.png"
+  },
+  {
     "name": "Freiheitlicher Stammtisch Reutlingen",
     "plz": "72760",
     "state": "DE-BW",
@@ -4736,6 +4756,26 @@
     "orga_www": "https://www.team-freiheit.de/event/clubabend-koeln-bonn-20-02-26/",
     "kontakt": "Team Freiheit",
     "e-mail": "koeln@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "plz": "73033",
+    "state": "DE-BW",
+    "city": "Göppingen",
+    "city_dist": 0.6,
+    "coords": [
+      48.7088631,
+      9.6538145
+    ],
+    "date": "2026-10-01",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
     "link": null,
     "link_qr": null
   },
@@ -4780,6 +4820,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Frankfurt (FFM)",
+    "plz": "60594",
+    "state": "DE-HE",
+    "city": "Frankfurt am Main",
+    "city_dist": 1.0,
+    "coords": [
+      50.1028505,
+      8.6881252
+    ],
+    "date": "2026-10-05",
+    "dow": "Mo.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+WgMHpki_VXZkYWIy",
+    "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Hamburg",
     "plz": "20095",
     "state": "DE-HH",
@@ -4818,6 +4878,26 @@
     "e-mail": "events@die-libertaeren.de",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch in Balingen / Württemberg",
+    "plz": "72336",
+    "state": "DE-BW",
+    "city": "Balingen",
+    "city_dist": 1.0,
+    "coords": [
+      48.2659024,
+      8.8623776
+    ],
+    "date": "2026-10-08",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Fritz Maulbetsch",
+    "e-mail": "lnb@maulbetsch.net",
+    "link": "https://t.me/FreeFritz",
+    "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Grevenbroich",
@@ -4920,6 +5000,26 @@
     "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
   },
   {
+    "name": "Libertärer Stammtisch Kaiserslautern",
+    "plz": "67657",
+    "state": "DE-RP",
+    "city": "Kaiserslautern",
+    "city_dist": 3.3,
+    "coords": [
+      49.4514437,
+      7.8130571
+    ],
+    "date": "2026-10-16",
+    "dow": "Fr.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Uwe Schmitt",
+    "e-mail": "uwe.schmitt@die-libertaeren.de",
+    "link": "https://t.me/+za88OLhGTshlNGJi",
+    "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511_v2.png"
+  },
+  {
     "name": "Mises Konferenz 2026",
     "plz": "80333",
     "state": "DE-BY",
@@ -4980,6 +5080,26 @@
     "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
   },
   {
+    "name": "Freiheitlicher Stammtisch Bergstraße",
+    "plz": "64673",
+    "state": "DE-HE",
+    "city": "Bergstraße",
+    "city_dist": 7.8,
+    "coords": [
+      49.72264,
+      8.5940276
+    ],
+    "date": "2026-10-21",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+qhX3l_Dn_VpkNmYy",
+    "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Ansbach",
     "plz": "91522",
     "state": "DE-BY",
@@ -5020,6 +5140,26 @@
     "link_qr": null
   },
   {
+    "name": "Freiheitlicher Stammtisch Reutlingen",
+    "plz": "72760",
+    "state": "DE-BW",
+    "city": "Reutlingen",
+    "city_dist": 2.2,
+    "coords": [
+      48.5113952,
+      9.20387
+    ],
+    "date": "2026-10-22",
+    "dow": "Do.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": "freiheitliche-stammtische.de",
+    "kontakt": "Markus Pöschl",
+    "e-mail": "markus.rt@proton.me",
+    "link": "https://t.me/+qsiIUvUG3tYxZWRi",
+    "link_qr": "img/qr_c62528274506de02b4e0948ad257e1e010b46a0a_v2.png"
+  },
+  {
     "name": "Team Freiheit Clubabend Köln-Bonn",
     "plz": "50672",
     "state": "DE-NW",
@@ -5040,6 +5180,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Frankfurt (FFM)",
+    "plz": "60594",
+    "state": "DE-HE",
+    "city": "Frankfurt am Main",
+    "city_dist": 1.0,
+    "coords": [
+      50.1028505,
+      8.6881252
+    ],
+    "date": "2026-11-02",
+    "dow": "Mo.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+WgMHpki_VXZkYWIy",
+    "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Hamburg",
     "plz": "20095",
     "state": "DE-HH",
@@ -5056,6 +5216,26 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Ferdinand Steinhöfel",
     "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "plz": "73033",
+    "state": "DE-BW",
+    "city": "Göppingen",
+    "city_dist": 0.6,
+    "coords": [
+      48.7088631,
+      9.6538145
+    ],
+    "date": "2026-11-05",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
     "link": null,
     "link_qr": null
   },
@@ -5120,6 +5300,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch in Balingen / Württemberg",
+    "plz": "72336",
+    "state": "DE-BW",
+    "city": "Balingen",
+    "city_dist": 1.0,
+    "coords": [
+      48.2659024,
+      8.8623776
+    ],
+    "date": "2026-11-12",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Fritz Maulbetsch",
+    "e-mail": "lnb@maulbetsch.net",
+    "link": "https://t.me/FreeFritz",
+    "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Grevenbroich",
     "plz": "41515",
     "state": "DE-NW",
@@ -5158,6 +5358,26 @@
     "e-mail": null,
     "link": "https://t.me/+kDTzmac3wJYwMzIy",
     "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Bergstraße",
+    "plz": "64673",
+    "state": "DE-HE",
+    "city": "Bergstraße",
+    "city_dist": 7.8,
+    "coords": [
+      49.72264,
+      8.5940276
+    ],
+    "date": "2026-11-18",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+qhX3l_Dn_VpkNmYy",
+    "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Ansbach",
@@ -5220,6 +5440,26 @@
     "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
   },
   {
+    "name": "Libertärer Stammtisch Kaiserslautern",
+    "plz": "67657",
+    "state": "DE-RP",
+    "city": "Kaiserslautern",
+    "city_dist": 3.3,
+    "coords": [
+      49.4514437,
+      7.8130571
+    ],
+    "date": "2026-11-20",
+    "dow": "Fr.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Uwe Schmitt",
+    "e-mail": "uwe.schmitt@die-libertaeren.de",
+    "link": "https://t.me/+za88OLhGTshlNGJi",
+    "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511_v2.png"
+  },
+  {
     "name": "Team Freiheit Clubabend Köln-Bonn",
     "plz": "50672",
     "state": "DE-NW",
@@ -5260,6 +5500,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "plz": "73033",
+    "state": "DE-BW",
+    "city": "Göppingen",
+    "city_dist": 0.6,
+    "coords": [
+      48.7088631,
+      9.6538145
+    ],
+    "date": "2026-12-03",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Hayek Club Koblenz",
     "plz": "56068",
     "state": "DE-RP",
@@ -5278,6 +5538,26 @@
     "e-mail": "kontakt@hayek-club-koblenz.de",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Frankfurt (FFM)",
+    "plz": "60594",
+    "state": "DE-HE",
+    "city": "Frankfurt am Main",
+    "city_dist": 1.0,
+    "coords": [
+      50.1028505,
+      8.6881252
+    ],
+    "date": "2026-12-07",
+    "dow": "Mo.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+WgMHpki_VXZkYWIy",
+    "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Bernburg (Saale)",
@@ -5340,6 +5620,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch in Balingen / Württemberg",
+    "plz": "72336",
+    "state": "DE-BW",
+    "city": "Balingen",
+    "city_dist": 1.0,
+    "coords": [
+      48.2659024,
+      8.8623776
+    ],
+    "date": "2026-12-10",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Fritz Maulbetsch",
+    "e-mail": "lnb@maulbetsch.net",
+    "link": "https://t.me/FreeFritz",
+    "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Grevenbroich",
     "plz": "41515",
     "state": "DE-NW",
@@ -5378,6 +5678,26 @@
     "e-mail": null,
     "link": "https://t.me/+kDTzmac3wJYwMzIy",
     "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Bergstraße",
+    "plz": "64673",
+    "state": "DE-HE",
+    "city": "Bergstraße",
+    "city_dist": 7.8,
+    "coords": [
+      49.72264,
+      8.5940276
+    ],
+    "date": "2026-12-16",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+qhX3l_Dn_VpkNmYy",
+    "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Ansbach",
@@ -5458,6 +5778,26 @@
     "e-mail": "koeln@team-freiheit.de",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Kaiserslautern",
+    "plz": "67657",
+    "state": "DE-RP",
+    "city": "Kaiserslautern",
+    "city_dist": 3.3,
+    "coords": [
+      49.4514437,
+      7.8130571
+    ],
+    "date": "2026-12-18",
+    "dow": "Fr.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Uwe Schmitt",
+    "e-mail": "uwe.schmitt@die-libertaeren.de",
+    "link": "https://t.me/+za88OLhGTshlNGJi",
+    "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511_v2.png"
   },
   {
     "name": "Hayek Club Koblenz",
