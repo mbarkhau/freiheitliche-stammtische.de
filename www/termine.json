@@ -203,7 +203,7 @@
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
     "state": "DE-NW",
-    "city": "Münster",
+    "city": "Dortmund",
     "city_dist": 3.8,
     "coords": [
       51.4865748,
@@ -843,7 +843,7 @@
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
     "state": "DE-NW",
-    "city": "Münster",
+    "city": "Dortmund",
     "city_dist": 3.8,
     "coords": [
       51.4865748,
@@ -1443,7 +1443,7 @@
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
     "state": "DE-NW",
-    "city": "Mülheim an der Ruhr",
+    "city": "Dortmund",
     "city_dist": 3.8,
     "coords": [
       51.4865748,
@@ -4598,6 +4598,26 @@
     "e-mail": "meetup@einundzwanzig-brandenburg-ost.de",
     "link": "https://t.me/einundzwanzig_bbost",
     "link_qr": "img/qr_9bc48ec2ac884a3bb1ca09e2c64f45ec0bda01bb_v2.png"
+  },
+  {
+    "name": "Hayek Club Münster",
+    "plz": "48143",
+    "state": "DE-NW",
+    "city": "Münster",
+    "city_dist": 0.2,
+    "coords": [
+      51.9604439,
+      7.6262442
+    ],
+    "date": "2026-09-15",
+    "dow": "Di.",
+    "time": "17:00",
+    "orga": "Hayek Club",
+    "orga_www": "https://www.hayekmuenster.de/",
+    "kontakt": null,
+    "e-mail": null,
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Freiheitlicher Stammtisch Bergstraße",

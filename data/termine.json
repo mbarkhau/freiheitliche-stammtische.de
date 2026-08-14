@@ -157,7 +157,7 @@
     "wochentag": "Thursday",
     "orga": "Bündnis Libertärer",
     "plz": "44263",
-    "ort": "Münster",
+    "ort": "Dortmund",
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
     "orga_webseite": "https://buendnis-libertaerer.de/"
@@ -621,7 +621,7 @@
     "wochentag": "Thursday",
     "orga": "Bündnis Libertärer",
     "plz": "44263",
-    "ort": "Münster",
+    "ort": "Dortmund",
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
     "orga_webseite": "https://buendnis-libertaerer.de/"
@@ -1052,7 +1052,7 @@
     "wochentag": "Thursday",
     "orga": "Bündnis Libertärer",
     "plz": "44263",
-    "ort": "Mülheim an der Ruhr",
+    "ort": "Dortmund",
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
     "orga_webseite": "https://buendnis-libertaerer.de/"
@@ -2655,7 +2655,8 @@
     "ort": "Osnabrück",
     "kontakt": "Team Freiheit",
     "e-mail": "muenster@team-freiheit.de",
-    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-muenster-28-03-26/"
+    "orga_webseite": "https://www.team-freiheit.de/event/clubabend-muenster-28-03-26/",
+    "infotext": "„Der Mittelstand in der Krise“ – Freiheit, Eigentum und Verantwortung unter Druck"
   },
   {
     "name": "EINUNDZWANZIG Brandenburg Ost",
@@ -3380,6 +3381,18 @@
     "tournus": "2 Montag im Monat",
     "group_link": "https://t.me/einundzwanzig_bbost",
     "infotext": "Voranstaltungsort: Mühle Altlandsberg"
+  },
+  {
+    "name": "Hayek Club Münster",
+    "beginn": "2026-09-15",
+    "ende": "2026-09-15",
+    "uhrzeit": "17:00",
+    "kw": "KW38",
+    "wochentag": "Tuesday",
+    "orga": "Hayek Club",
+    "plz": "48143",
+    "ort": "Münster",
+    "orga_webseite": "https://www.hayekmuenster.de/"
   },
   {
     "name": "Freiheitlicher Stammtisch Bergstraße",
