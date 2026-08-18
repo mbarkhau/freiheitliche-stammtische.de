@@ -3880,6 +3880,26 @@
     "link_qr": null
   },
   {
+    "name": "Haus der Freiheit Mülheim-Speldorf",
+    "plz": "45478",
+    "state": "DE-NW",
+    "city": "Mülheim-Speldorf",
+    "city_dist": 4.4,
+    "coords": [
+      51.4317765,
+      6.8337995
+    ],
+    "date": "2026-07-30",
+    "dow": "Do.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Stefanie Philipp",
+    "e-mail": null,
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Team Freiheit Clubabend Köln-Bonn",
     "plz": "50672",
     "state": "DE-NW",
