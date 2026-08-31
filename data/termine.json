@@ -3241,7 +3241,7 @@
     "kontakt": "Karla Wagner",
     "e-mail": "hayek.club.weimar@mail.de",
     "orga_webseite": "https://hayek.de/hayek-clubs/",
-    "infotext": "10 Jahre Hayek-Club Weimar – Zurück zur Vernunft!"
+    "infotext": "„Wie Energie und Klima die Gesellschaft spalten“ mit Prof. André D. Thess"
   },
   {
     "name": "Freiheitlicher Stammtisch Bergstraße",
@@ -3457,7 +3457,7 @@
     "name": "Staatenlos Neuss",
     "beginn": "2026-09-04",
     "ende": "2026-09-04",
-    "uhrzeit": "17:00",
+    "uhrzeit": "19:00",
     "kw": "KW36",
     "wochentag": "Friday",
     "orga": "Staatenlos",
@@ -3759,6 +3759,22 @@
     "group_link": "https://t.me/+za88OLhGTshlNGJi"
   },
   {
+    "name": "Hayek Club Weimar",
+    "beginn": "2026-09-19",
+    "ende": "2026-09-19",
+    "uhrzeit": "19:00",
+    "kw": "KW38",
+    "wochentag": "Saturday",
+    "orga": "Hayek Club",
+    "plz": "99425",
+    "land": "DE",
+    "ort": "Weimar",
+    "kontakt": "Karla Wagner",
+    "e-mail": "hayek.club.weimar@mail.de",
+    "orga_webseite": "https://hayek.de/hayek-clubs/",
+    "infotext": "„Wie Energie und Klima die Gesellschaft spalten“ mit Prof. André D. Thess"
+  },
+  {
     "name": "Freiheitlicher Stammtisch Reutlingen",
     "beginn": "2026-09-24",
     "ende": "2026-09-24",
@@ -3821,6 +3837,20 @@
     "kontakt": "Theo",
     "e-mail": "lukas.schroth@die-libertaeren.de",
     "group_link": "https://t.me/+wLa_UwnOBV5mZjBi"
+  },
+  {
+    "name": "Haus der Freiheit Mülheim-Speldorf - Herbstwanderung",
+    "beginn": "2026-10-03",
+    "ende": "2026-10-03",
+    "uhrzeit": "11:00",
+    "kw": "KW40",
+    "wochentag": "Saturday",
+    "orga": "Unabhängig",
+    "plz": "45478",
+    "land": "DE",
+    "ort": "Mülheim-Speldorf",
+    "kontakt": "Stefanie Philipp",
+    "e-mail": "info@stefanie-philipp.com"
   },
   {
     "name": "Hayek Club Koblenz",
