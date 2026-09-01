@@ -1,53 +1,5 @@
 [
   {
-    "name": "Team Freiheit Clubabend München",
-    "beginn": "2025-08-12",
-    "ende": "2025-08-12",
-    "uhrzeit": "18:30",
-    "kw": "KW33",
-    "wochentag": "Tuesday",
-    "orga": "Team Freiheit",
-    "plz": "80469",
-    "land": "DE",
-    "ort": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
-    "kontakt": "Team Freiheit",
-    "e-mail": "muenchen@team-freiheit.de",
-    "orga_webseite": "https://www.team-freiheit.de/events",
-    "tournus": "Jeder 2. Dienstag im Monat"
-  },
-  {
-    "name": "Team Freiheit Clubabend München",
-    "beginn": "2025-09-08",
-    "ende": "2025-09-08",
-    "uhrzeit": "18:30",
-    "kw": "KW37",
-    "wochentag": "Monday",
-    "orga": "Team Freiheit",
-    "plz": "80469",
-    "land": "DE",
-    "ort": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
-    "kontakt": "Team Freiheit",
-    "e-mail": "muenchen@team-freiheit.de",
-    "orga_webseite": "https://www.team-freiheit.de/events",
-    "tournus": "Jeder 2. Dienstag im Monat"
-  },
-  {
-    "name": "Team Freiheit Clubabend München",
-    "beginn": "2025-10-13",
-    "ende": "2025-10-13",
-    "uhrzeit": "18:30",
-    "kw": "KW42",
-    "wochentag": "Monday",
-    "orga": "Team Freiheit",
-    "plz": "80469",
-    "land": "DE",
-    "ort": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
-    "kontakt": "Team Freiheit",
-    "e-mail": "muenchen@team-freiheit.de",
-    "orga_webseite": "https://www.team-freiheit.de/events",
-    "tournus": "Jeder 2. Dienstag im Monat"
-  },
-  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "beginn": "2025-11-04",
     "ende": "2025-11-04",
@@ -77,22 +29,6 @@
     "ort": "Berlin",
     "telegram_group_id": "1959751899",
     "group_link": "https://t.me/marktradikalberlin"
-  },
-  {
-    "name": "Team Freiheit Clubabend München",
-    "beginn": "2025-11-10",
-    "ende": "2025-11-10",
-    "uhrzeit": "18:30",
-    "kw": "KW46",
-    "wochentag": "Monday",
-    "orga": "Team Freiheit",
-    "plz": "80469",
-    "land": "DE",
-    "ort": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
-    "kontakt": "Team Freiheit",
-    "e-mail": "muenchen@team-freiheit.de",
-    "orga_webseite": "https://www.team-freiheit.de/events",
-    "tournus": "Jeder 2. Dienstag im Monat"
   },
   {
     "name": "Libertärer Stammtisch Hamburg",
@@ -158,22 +94,6 @@
     "orga_webseite": "https://die-libertaeren.de/",
     "tournus": "Erste Woche im Monat",
     "group_link": "https://t.me/+WgMHpki_VXZkYWIy"
-  },
-  {
-    "name": "Team Freiheit Clubabend München",
-    "beginn": "2025-12-08",
-    "ende": "2025-12-08",
-    "uhrzeit": "18:30",
-    "kw": "KW50",
-    "wochentag": "Monday",
-    "orga": "Team Freiheit",
-    "plz": "80469",
-    "land": "DE",
-    "ort": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
-    "kontakt": "Team Freiheit",
-    "e-mail": "muenchen@team-freiheit.de",
-    "orga_webseite": "https://www.team-freiheit.de/events",
-    "tournus": "Jeder 2. Dienstag im Monat"
   },
   {
     "name": "Libertärer Stammtisch Magdeburg",
@@ -3197,6 +3117,22 @@
     "tournus": "Jeder 2. Mittwoch"
   },
   {
+    "name": "Team Freiheit Clubabend München",
+    "beginn": "2026-08-12",
+    "ende": "2026-08-12",
+    "uhrzeit": "18:30",
+    "kw": "KW33",
+    "wochentag": "Wednesday",
+    "orga": "Team Freiheit",
+    "plz": "80469",
+    "land": "DE",
+    "ort": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events",
+    "tournus": "Jeder 2. Dienstag im Monat"
+  },
+  {
     "name": "Libertärer Stammtisch Ansbach",
     "beginn": "2026-08-12",
     "ende": "2026-08-12",
@@ -3547,6 +3483,22 @@
     "ort": "Gießen",
     "e-mail": "giessen@team-freiheit.de",
     "orga_webseite": "https://www.team-freiheit.de/event/clubabend-giessen-23-03-26/"
+  },
+  {
+    "name": "Team Freiheit Clubabend München",
+    "beginn": "2026-09-08",
+    "ende": "2026-09-08",
+    "uhrzeit": "18:30",
+    "kw": "KW37",
+    "wochentag": "Tuesday",
+    "orga": "Team Freiheit",
+    "plz": "80469",
+    "land": "DE",
+    "ort": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events",
+    "tournus": "Jeder 2. Dienstag im Monat"
   },
   {
     "name": "Libertärer Stammtisch Halle (Saale)",
@@ -3981,6 +3933,21 @@
     "orga_webseite": "https://ef-magazin.de/"
   },
   {
+    "name": "Team Freiheit Clubabend Hannover",
+    "beginn": "2026-10-10",
+    "ende": "2026-10-10",
+    "uhrzeit": "18:30",
+    "kw": "KW41",
+    "wochentag": "Saturday",
+    "orga": "Team Freiheit",
+    "plz": "30159",
+    "land": "DE",
+    "ort": "Hannover",
+    "kontakt": "Team Freiheit",
+    "e-mail": "hannover@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events/#clubs"
+  },
+  {
     "name": "EINUNDZWANZIG Brandenburg Ost",
     "beginn": "2026-10-12",
     "ende": "2026-10-12",
@@ -4013,6 +3980,22 @@
     "kontakt": "Stefan Bückner",
     "e-mail": "stephan.bueckner@die-libertaeren.de",
     "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Team Freiheit Clubabend München",
+    "beginn": "2026-10-13",
+    "ende": "2026-10-13",
+    "uhrzeit": "18:30",
+    "kw": "KW42",
+    "wochentag": "Tuesday",
+    "orga": "Team Freiheit",
+    "plz": "80469",
+    "land": "DE",
+    "ort": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events",
+    "tournus": "Jeder 2. Dienstag im Monat"
   },
   {
     "name": "Libertärer Stammtisch Halle (Saale)",
@@ -4257,6 +4240,22 @@
     "kontakt": "Stefan Bückner",
     "e-mail": "stephan.bueckner@die-libertaeren.de",
     "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Team Freiheit Clubabend München",
+    "beginn": "2026-11-10",
+    "ende": "2026-11-10",
+    "uhrzeit": "18:30",
+    "kw": "KW46",
+    "wochentag": "Tuesday",
+    "orga": "Team Freiheit",
+    "plz": "80469",
+    "land": "DE",
+    "ort": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events",
+    "tournus": "Jeder 2. Dienstag im Monat"
   },
   {
     "name": "Libertärer Stammtisch Halle (Saale)",
@@ -4518,6 +4517,22 @@
     "orga_webseite": "https://die-libertaeren.de/"
   },
   {
+    "name": "Team Freiheit Clubabend München",
+    "beginn": "2026-12-08",
+    "ende": "2026-12-08",
+    "uhrzeit": "18:30",
+    "kw": "KW50",
+    "wochentag": "Tuesday",
+    "orga": "Team Freiheit",
+    "plz": "80469",
+    "land": "DE",
+    "ort": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events",
+    "tournus": "Jeder 2. Dienstag im Monat"
+  },
+  {
     "name": "Libertärer Stammtisch Halle (Saale)",
     "beginn": "2026-12-09",
     "ende": "2026-12-09",
@@ -4711,5 +4726,21 @@
     "e-mail": "kontakt@hayek-club-koblenz.de",
     "orga_webseite": "hayek-club-koblenz.de",
     "infotext": "Weihnachtliches Vorglühen"
+  },
+  {
+    "name": "Team Freiheit Clubabend München",
+    "beginn": "2027-01-12",
+    "ende": "2027-01-12",
+    "uhrzeit": "18:30",
+    "kw": "KW02",
+    "wochentag": "Tuesday",
+    "orga": "Team Freiheit",
+    "plz": "80469",
+    "land": "DE",
+    "ort": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events",
+    "tournus": "Jeder 2. Dienstag im Monat"
   }
 ]
