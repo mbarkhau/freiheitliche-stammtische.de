@@ -1,9 +1,5 @@
 [
   {
-    "kw": "KW52",
-    "wochentag": "Saturday"
-  },
-  {
     "name": "Team Freiheit Clubabend München",
     "beginn": "2025-08-12",
     "ende": "2025-08-12",
@@ -2590,6 +2586,22 @@
     "kontakt": "Team Freiheit",
     "e-mail": "rostock@team-freiheit.de",
     "orga_webseite": "https://www.team-freiheit.de/event/clubabend-rostock-20-03-26/"
+  },
+  {
+    "name": "Hayek Club Torgau",
+    "beginn": "2026-06-19",
+    "ende": "2026-06-19",
+    "uhrzeit": "18:00",
+    "kw": "KW25",
+    "wochentag": "Friday",
+    "orga": "Hayek Club",
+    "plz": "04860",
+    "land": "DE",
+    "ort": "Torgau",
+    "kontakt": "Günter Suske",
+    "e-mail": "hayek-club-torgau@email.de",
+    "orga_webseite": "https://hayek.de/termine/#termine",
+    "tournus": "1x im Quartal"
   },
   {
     "name": "Libertärer Stammtisch Kaiserslautern",
