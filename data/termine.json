@@ -1827,7 +1827,7 @@
     "orga": "Team Freiheit",
     "plz": "97070",
     "land": "DE",
-    "ort": "Regensburg",
+    "ort": "Würzburg",
     "kontakt": "Team Freiheit",
     "e-mail": "wuerzburg@team-freiheit.de",
     "orga_webseite": "https://www.team-freiheit.de/events/"
@@ -2189,7 +2189,7 @@
     "orga": "Team Freiheit",
     "plz": "97070",
     "land": "DE",
-    "ort": "Regensburg",
+    "ort": "Würzburg",
     "kontakt": "Team Freiheit",
     "e-mail": "wuerzburg@team-freiheit.de",
     "orga_webseite": "https://www.team-freiheit.de/events/"
@@ -3690,6 +3690,23 @@
     "ort": "Mülheim-Speldorf",
     "kontakt": "Stefanie Philipp",
     "e-mail": "info@stefanie-philipp.com"
+  },
+  {
+    "name": "Hayek Club Regensburg",
+    "beginn": "2026-09-17",
+    "ende": "2026-09-17",
+    "uhrzeit": "18:30",
+    "kw": "KW38",
+    "wochentag": "Thursday",
+    "eintrittspreis": "10€",
+    "orga": "Hayek Club",
+    "plz": "93047",
+    "land": "DE",
+    "ort": "Regensburg",
+    "kontakt": "Raphael Zietarski & Martin Hoff",
+    "e-mail": "regensburg@hayek.de",
+    "orga_webseite": "https://hayek.de/hayek-clubs/",
+    "infotext": "Der Preis unserer Toleranz mit Nickolas Emrich"
   },
   {
     "name": "Libertärer Stammtisch Berlin",

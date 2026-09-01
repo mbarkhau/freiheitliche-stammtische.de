@@ -2343,7 +2343,7 @@
     "name": "Team Freiheit Clubabend Würzburg",
     "plz": "97070",
     "state": "DE-BY",
-    "city": "Regensburg",
+    "city": "Würzburg",
     "city_dist": 6.2,
     "coords": [
       49.7940782,
@@ -2803,7 +2803,7 @@
     "name": "Team Freiheit Clubabend Würzburg",
     "plz": "97070",
     "state": "DE-BY",
-    "city": "Regensburg",
+    "city": "Würzburg",
     "city_dist": 6.2,
     "coords": [
       49.7940782,
@@ -4696,6 +4696,26 @@
     "orga_www": null,
     "kontakt": "Stefanie Philipp",
     "e-mail": "info@stefanie-philipp.com",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Hayek Club Regensburg",
+    "plz": "93047",
+    "state": "DE-BY",
+    "city": "Regensburg",
+    "city_dist": 0.2,
+    "coords": [
+      49.0180393,
+      12.0975732
+    ],
+    "date": "2026-09-17",
+    "dow": "Do.",
+    "time": "18:30",
+    "orga": "Hayek Club",
+    "orga_www": "https://hayek.de/hayek-clubs/",
+    "kontakt": "Raphael Zietarski & Martin Hoff",
+    "e-mail": "regensburg@hayek.de",
     "link": null,
     "link_qr": null
   },
