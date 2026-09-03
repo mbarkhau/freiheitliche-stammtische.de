@@ -2861,13 +2861,13 @@
   },
   {
     "name": "Freiheitlicher Stammtisch Karlsruhe",
-    "plz": "76137",
+    "plz": "76133",
     "state": "DE-BW",
     "city": "Karlsruhe",
-    "city_dist": 1.1,
+    "city_dist": 1.2,
     "coords": [
-      48.9994966,
-      8.4142277
+      49.0121068,
+      8.3896193
     ],
     "date": "2026-06-07",
     "dow": "So.",
@@ -4381,13 +4381,13 @@
   },
   {
     "name": "Freiheitlicher Stammtisch Karlsruhe",
-    "plz": "76137",
+    "plz": "76133",
     "state": "DE-BW",
     "city": "Karlsruhe",
-    "city_dist": 1.1,
+    "city_dist": 1.2,
     "coords": [
-      48.9994966,
-      8.4142277
+      49.0121068,
+      8.3896193
     ],
     "date": "2026-09-06",
     "dow": "So.",
@@ -4961,13 +4961,13 @@
   },
   {
     "name": "Freiheitlicher Stammtisch Karlsruhe",
-    "plz": "76137",
+    "plz": "76133",
     "state": "DE-BW",
     "city": "Karlsruhe",
-    "city_dist": 1.1,
+    "city_dist": 1.2,
     "coords": [
-      48.9994966,
-      8.4142277
+      49.0121068,
+      8.3896193
     ],
     "date": "2026-10-04",
     "dow": "So.",
@@ -5361,13 +5361,13 @@
   },
   {
     "name": "Freiheitlicher Stammtisch Karlsruhe",
-    "plz": "76137",
+    "plz": "76133",
     "state": "DE-BW",
     "city": "Karlsruhe",
-    "city_dist": 1.1,
+    "city_dist": 1.2,
     "coords": [
-      48.9994966,
-      8.4142277
+      49.0121068,
+      8.3896193
     ],
     "date": "2026-11-01",
     "dow": "So.",
@@ -5761,13 +5761,13 @@
   },
   {
     "name": "Freiheitlicher Stammtisch Karlsruhe",
-    "plz": "76137",
+    "plz": "76133",
     "state": "DE-BW",
     "city": "Karlsruhe",
-    "city_dist": 1.1,
+    "city_dist": 1.2,
     "coords": [
-      48.9994966,
-      8.4142277
+      49.0121068,
+      8.3896193
     ],
     "date": "2026-12-06",
     "dow": "So.",
