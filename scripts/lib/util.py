@@ -43,6 +43,7 @@ def run_git(*args) -> sp.CompletedProcess:
 
 def git_push(sheet_id: str, message: str, repo_paths: list[str]) -> list[str]:
     try:
+        run_git("pull", "--rebase", *repo_paths)
         run_git("add", *repo_paths)
 
         proc = run_git("status")
