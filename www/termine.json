@@ -3983,7 +3983,7 @@
     "name": "Team Freiheit Clubabend München",
     "plz": "80469",
     "state": "DE-BY",
-    "city": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
+    "city": "München",
     "city_dist": 1.1,
     "coords": [
       48.1278437,
@@ -4463,7 +4463,7 @@
     "name": "Team Freiheit Clubabend München",
     "plz": "80469",
     "state": "DE-BY",
-    "city": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
+    "city": "München",
     "city_dist": 1.1,
     "coords": [
       48.1278437,
@@ -4658,6 +4658,26 @@
     "e-mail": "Baader-Bande@proton.me",
     "link": "https://t.me/armenora",
     "link_qr": "img/qr_a32ef6d0e5a73980ad0372ffb3828feff231d90e_v2.png"
+  },
+  {
+    "name": "Hayek-Verein Dresden - Buchvorstellung",
+    "plz": "01326",
+    "state": "DE-SN",
+    "city": "Dresden",
+    "city_dist": 8.8,
+    "coords": [
+      51.026068,
+      13.8575878
+    ],
+    "date": "2026-09-17",
+    "dow": "Do.",
+    "time": "18:30",
+    "orga": "Hayek Club",
+    "orga_www": "https://www.hayek-verein-dresden.de/dresden.html#:~:text=Dresden%20e.V.-,Buchvorstellung%20mit%20Nickolas%20Emrich%3A%20%C2%BBDer%20Preis%20unserer%20Toleranz%C2%AB,-%E2%97%BE%20Montag%2C%2029",
+    "kontakt": "Reinhard Günzel",
+    "e-mail": "ticket@hayek-verein-dresden.de",
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Team Freiheit Clubabend Rostock",
@@ -4980,6 +5000,26 @@
     "link_qr": "img/qr_604fc8ec6d0be3ed439100b8e34ab37bc14c652a_v2.png"
   },
   {
+    "name": "Libertärer Stammtisch Frankfurt (FFM)",
+    "plz": "60594",
+    "state": "DE-HE",
+    "city": "Frankfurt am Main",
+    "city_dist": 1.0,
+    "coords": [
+      50.1028505,
+      8.6881252
+    ],
+    "date": "2026-10-05",
+    "dow": "Mo.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+WgMHpki_VXZkYWIy",
+    "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Hamburg",
     "plz": "20095",
     "state": "DE-HH",
@@ -5123,7 +5163,7 @@
     "name": "Team Freiheit Clubabend München",
     "plz": "80469",
     "state": "DE-BY",
-    "city": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
+    "city": "München",
     "city_dist": 1.1,
     "coords": [
       48.1278437,
@@ -5463,7 +5503,7 @@
     "name": "Team Freiheit Clubabend München",
     "plz": "80469",
     "state": "DE-BY",
-    "city": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
+    "city": "München",
     "city_dist": 1.1,
     "coords": [
       48.1278437,
@@ -5823,7 +5863,7 @@
     "name": "Team Freiheit Clubabend München",
     "plz": "80469",
     "state": "DE-BY",
-    "city": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
+    "city": "München",
     "city_dist": 1.1,
     "coords": [
       48.1278437,
@@ -6083,7 +6123,7 @@
     "name": "Team Freiheit Clubabend München",
     "plz": "80469",
     "state": "DE-BY",
-    "city": "Fugazi, Wittelsbacherstraße 15, 80469 München, Germany",
+    "city": "München",
     "city_dist": 1.1,
     "coords": [
       48.1278437,
