@@ -4800,6 +4800,26 @@
     "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511_v2.png"
   },
   {
+    "name": "Hayek Club Schleswig-Holstein",
+    "plz": "24837",
+    "state": "DE-SH",
+    "city": "Schleswig",
+    "city_dist": 0.5,
+    "coords": [
+      54.5196907,
+      9.558107
+    ],
+    "date": "2026-09-19",
+    "dow": "Sa.",
+    "time": "18:30",
+    "orga": "Hayek Club",
+    "orga_www": "https://hayek.de/termine/#termine",
+    "kontakt": "Frank Hansen",
+    "e-mail": "schleswig-holstein@hayek.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Hayek Club Weimar",
     "plz": "99425",
     "state": "DE-TH",
@@ -4920,6 +4940,26 @@
     "link_qr": null
   },
   {
+    "name": "Staatenlos Neuss",
+    "plz": "41460",
+    "state": "DE-NW",
+    "city": "Neuss",
+    "city_dist": 5.1,
+    "coords": [
+      51.2074219,
+      6.708413
+    ],
+    "date": "2026-10-02",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Staatenlos",
+    "orga_www": "https://staatenlos.ch/",
+    "kontakt": "Svenja",
+    "e-mail": null,
+    "link": "https://t.me/+aLRn2FSy7qoyZDI6",
+    "link_qr": "img/qr_ef087f17a9fa9da441aa97662e877464dbbed792_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Bad Reichenhall",
     "plz": "83435",
     "state": "DE-BY",
@@ -5036,6 +5076,26 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Ferdinand Steinhöfel",
     "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Bergisches Land",
+    "plz": "42651",
+    "state": "DE-NW",
+    "city": "Solingen",
+    "city_dist": 1.3,
+    "coords": [
+      51.1766323,
+      7.1018953
+    ],
+    "date": "2026-10-07",
+    "dow": "Mi.",
+    "time": "18:30",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Claudia Heipertz",
+    "e-mail": "mailto@claudiaheipertz.de",
     "link": null,
     "link_qr": null
   },
@@ -5380,6 +5440,26 @@
     "link_qr": "img/qr_c62528274506de02b4e0948ad257e1e010b46a0a_v2.png"
   },
   {
+    "name": "Forum Freiheit Hayek Gesellschaft",
+    "plz": "10117",
+    "state": "DE-BE",
+    "city": "Berlin",
+    "city_dist": 0.5,
+    "coords": [
+      52.5175184,
+      13.3877686
+    ],
+    "date": "2026-10-24",
+    "dow": "Sa.",
+    "time": "09:30",
+    "orga": "Hayek Club",
+    "orga_www": "www.hayek.de",
+    "kontakt": "www.hayek.de",
+    "e-mail": "www.hayek.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Team Freiheit Clubabend Köln-Bonn",
     "plz": "50672",
     "state": "DE-NW",
@@ -5538,6 +5618,26 @@
     "e-mail": "stephan.bueckner@die-libertaeren.de",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Friedrichshafen",
+    "plz": "88045",
+    "state": "DE-BW",
+    "city": "Friedrichshafen",
+    "city_dist": 2.3,
+    "coords": [
+      47.6658941,
+      9.4595107
+    ],
+    "date": "2026-11-11",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Sebastian Walser",
+    "e-mail": "sebwalser@gmx.de",
+    "link": "https://t.me/+AhChia7Cxb8yNjky",
+    "link_qr": "img/qr_970fd5c5aafea6182a9ee206ce8c4d991a9f3a77_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Magdeburg",
@@ -6118,6 +6218,26 @@
     "e-mail": "kontakt@hayek-club-koblenz.de",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Friedrichshafen",
+    "plz": "88045",
+    "state": "DE-BW",
+    "city": "Friedrichshafen",
+    "city_dist": 2.3,
+    "coords": [
+      47.6658941,
+      9.4595107
+    ],
+    "date": "2027-01-11",
+    "dow": "Mo.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Sebastian Walser",
+    "e-mail": "sebwalser@gmx.de",
+    "link": "https://t.me/+AhChia7Cxb8yNjky",
+    "link_qr": "img/qr_970fd5c5aafea6182a9ee206ce8c4d991a9f3a77_v2.png"
   },
   {
     "name": "Team Freiheit Clubabend München",

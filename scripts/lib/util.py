@@ -43,7 +43,6 @@ def run_git(*args) -> sp.CompletedProcess:
 
 def git_push(sheet_id: str, message: str, repo_paths: list[str]) -> list[str]:
     try:
-        run_git("pull", "--rebase")
         run_git("add", *repo_paths)
 
         proc = run_git("status")
@@ -60,6 +59,8 @@ def git_push(sheet_id: str, message: str, repo_paths: list[str]) -> list[str]:
         ]
 
         run_git("commit", "-m", message)
+
+        run_git("pull", "--rebase")
         run_git("push")
 
         log.info("Git sync and push completed successfully.")

@@ -3777,6 +3777,21 @@
     "group_link": "https://t.me/+za88OLhGTshlNGJi"
   },
   {
+    "name": "Hayek Club Schleswig-Holstein",
+    "beginn": "2026-09-19",
+    "ende": "2026-09-19",
+    "uhrzeit": "18:30",
+    "kw": "KW38",
+    "wochentag": "Saturday",
+    "orga": "Hayek Club",
+    "plz": "24837",
+    "land": "DE",
+    "ort": "Schleswig",
+    "kontakt": "Frank Hansen",
+    "e-mail": "schleswig-holstein@hayek.de",
+    "orga_webseite": "https://hayek.de/termine/#termine"
+  },
+  {
     "name": "Hayek Club Weimar",
     "beginn": "2026-09-19",
     "ende": "2026-09-19",
@@ -3871,6 +3886,22 @@
     "kontakt": "Dieter Kirschmann",
     "e-mail": "dieter.kirschmann@die-libertaeren.de",
     "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Staatenlos Neuss",
+    "beginn": "2026-10-02",
+    "ende": "2026-10-02",
+    "uhrzeit": "19:00",
+    "kw": "KW40",
+    "wochentag": "Friday",
+    "orga": "Staatenlos",
+    "plz": "41460",
+    "land": "DE",
+    "ort": "Neuss",
+    "telegram_group_id": "2660334500",
+    "kontakt": "Svenja",
+    "orga_webseite": "https://staatenlos.ch/",
+    "group_link": "https://t.me/+aLRn2FSy7qoyZDI6"
   },
   {
     "name": "Libertärer Stammtisch Bad Reichenhall",
@@ -3968,6 +3999,20 @@
     "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
     "orga_webseite": "https://die-libertaeren.de/",
     "tournus": "Jeder 1. Mittwoch"
+  },
+  {
+    "name": "Libertärer Stammtisch Bergisches Land",
+    "beginn": "2026-10-07",
+    "ende": "2026-10-07",
+    "uhrzeit": "18:30",
+    "kw": "KW41",
+    "wochentag": "Wednesday",
+    "orga": "Unabhängig",
+    "plz": "42651",
+    "land": "DE",
+    "ort": "Solingen",
+    "kontakt": "Claudia Heipertz",
+    "e-mail": "mailto@claudiaheipertz.de"
   },
   {
     "name": "Libertärer Stammtisch Magdeburg",
@@ -4245,6 +4290,21 @@
     "group_link": "https://t.me/+qsiIUvUG3tYxZWRi"
   },
   {
+    "name": "Forum Freiheit Hayek Gesellschaft",
+    "beginn": "2026-10-24",
+    "ende": "2026-10-24",
+    "uhrzeit": "09:30",
+    "kw": "KW43",
+    "wochentag": "Saturday",
+    "orga": "Hayek Club",
+    "plz": "10117",
+    "land": "DE",
+    "ort": "Berlin",
+    "kontakt": "www.hayek.de",
+    "e-mail": "www.hayek.de",
+    "orga_webseite": "www.hayek.de"
+  },
+  {
     "name": "Team Freiheit Clubabend Köln-Bonn",
     "beginn": "2026-10-30",
     "ende": "2026-10-30",
@@ -4372,6 +4432,23 @@
     "e-mail": "stephan.bueckner@die-libertaeren.de",
     "orga_webseite": "https://die-libertaeren.de/",
     "tournus": "Jeder 2. Mittwoch"
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Friedrichshafen",
+    "beginn": "2026-11-11",
+    "ende": "2026-11-11",
+    "uhrzeit": "19:00",
+    "kw": "KW46",
+    "wochentag": "Wednesday",
+    "orga": "Unabhängig",
+    "plz": "88045",
+    "land": "DE",
+    "ort": "Friedrichshafen",
+    "telegram_group_id": "5342191801",
+    "kontakt": "Sebastian Walser",
+    "e-mail": "sebwalser@gmx.de",
+    "tournus": "Jeden 2. Monat am 11. Tag",
+    "group_link": "https://t.me/+AhChia7Cxb8yNjky"
   },
   {
     "name": "Libertärer Stammtisch Magdeburg",
@@ -4843,6 +4920,23 @@
     "e-mail": "kontakt@hayek-club-koblenz.de",
     "orga_webseite": "hayek-club-koblenz.de",
     "infotext": "Weihnachtliches Vorglühen"
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Friedrichshafen",
+    "beginn": "2027-01-11",
+    "ende": "2027-01-11",
+    "uhrzeit": "19:00",
+    "kw": "KW02",
+    "wochentag": "Monday",
+    "orga": "Unabhängig",
+    "plz": "88045",
+    "land": "DE",
+    "ort": "Friedrichshafen",
+    "telegram_group_id": "5342191801",
+    "kontakt": "Sebastian Walser",
+    "e-mail": "sebwalser@gmx.de",
+    "tournus": "Jeden 2. Monat am 11. Tag",
+    "group_link": "https://t.me/+AhChia7Cxb8yNjky"
   },
   {
     "name": "Team Freiheit Clubabend München",
