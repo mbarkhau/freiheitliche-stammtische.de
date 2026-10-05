@@ -4860,6 +4860,26 @@
     "link_qr": "img/qr_5565c4d9b4b29ecef348f944574ba5e63942a5bc_v2.png"
   },
   {
+    "name": "Libertärer Stammtisch Dresden",
+    "plz": "01237",
+    "state": "DE-SN",
+    "city": "Dresden",
+    "city_dist": 5.7,
+    "coords": [
+      51.0182471,
+      13.8020866
+    ],
+    "date": "2026-09-24",
+    "dow": "Do.",
+    "time": "18:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Joachim Teske",
+    "e-mail": "joachim.teske@die-libertaeren.de",
+    "link": "https://t.me/+kXYK3OtoB0AxYTAy",
+    "link_qr": "img/qr_5565c4d9b4b29ecef348f944574ba5e63942a5bc_v2.png"
+  },
+  {
     "name": "Freiheitlicher Stammtisch Reutlingen",
     "plz": "72760",
     "state": "DE-BW",
@@ -5260,26 +5280,6 @@
     "link_qr": null
   },
   {
-    "name": "Libertärer Stammtisch Berlin",
-    "plz": "10555",
-    "state": "DE-BE",
-    "city": "Berlin",
-    "city_dist": 4.1,
-    "coords": [
-      52.519898,
-      13.3355418
-    ],
-    "date": "2026-10-16",
-    "dow": "Fr.",
-    "time": "19:00",
-    "orga": "Libertärer Stammtisch Berlin",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Dr. Sven Brajer",
-    "e-mail": "svenbrajer@web.de",
-    "link": "https://t.me/+Xzxvc2UqKuJmNmRi",
-    "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
-  },
-  {
     "name": "Libertärer Stammtisch Kaiserslautern",
     "plz": "67657",
     "state": "DE-RP",
@@ -5438,6 +5438,26 @@
     "e-mail": "markus.rt@proton.me",
     "link": "https://t.me/+qsiIUvUG3tYxZWRi",
     "link_qr": "img/qr_c62528274506de02b4e0948ad257e1e010b46a0a_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Berlin",
+    "plz": "10555",
+    "state": "DE-BE",
+    "city": "Berlin",
+    "city_dist": 4.1,
+    "coords": [
+      52.519898,
+      13.3355418
+    ],
+    "date": "2026-10-23",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Libertärer Stammtisch Berlin",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Sven Brajer",
+    "e-mail": "svenbrajer@web.de",
+    "link": "https://t.me/+Xzxvc2UqKuJmNmRi",
+    "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
   },
   {
     "name": "Forum Freiheit Hayek Gesellschaft",
