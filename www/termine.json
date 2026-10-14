@@ -5560,6 +5560,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Bergisches Land",
+    "plz": "42781",
+    "state": "DE-NW",
+    "city": "Haan",
+    "city_dist": 6.6,
+    "coords": [
+      51.2082284,
+      7.0101273
+    ],
+    "date": "2026-11-04",
+    "dow": "Mi.",
+    "time": "18:30",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Claudia Heipertz",
+    "e-mail": "mailto@claudiaheipertz.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Göppingen/Esslingen",
     "plz": "73033",
     "state": "DE-BW",
