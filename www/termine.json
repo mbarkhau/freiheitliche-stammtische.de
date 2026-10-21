@@ -5640,6 +5640,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Nürnberg",
+    "plz": "90471",
+    "state": "DE-BY",
+    "city": "Nürnberg",
+    "city_dist": 5.3,
+    "coords": [
+      49.418213,
+      11.1259398
+    ],
+    "date": "2026-11-10",
+    "dow": "Di.",
+    "time": "18:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Matthias Heuser",
+    "e-mail": "matthias.heuser87@googlemail.com",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Halle (Saale)",
     "plz": "06108",
     "state": "DE-ST",

@@ -1,13 +1,5 @@
 [
   {
-    "kw": "KW52",
-    "wochentag": "Saturday",
-    "orga": "Unabhängig",
-    "plz": "90471",
-    "land": "DE",
-    "ort": "Nürnberg"
-  },
-  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "beginn": "2025-11-04",
     "ende": "2025-11-04",
@@ -4454,6 +4446,21 @@
     "e-mail": "muenchen@team-freiheit.de",
     "orga_webseite": "https://www.team-freiheit.de/events",
     "tournus": "Jeder 2. Dienstag im Monat"
+  },
+  {
+    "name": "Libertärer Stammtisch Nürnberg",
+    "beginn": "2026-11-10",
+    "ende": "2026-11-10",
+    "uhrzeit": "18:00",
+    "kw": "KW46",
+    "wochentag": "Tuesday",
+    "orga": "Unabhängig",
+    "plz": "90471",
+    "land": "DE",
+    "ort": "Nürnberg",
+    "telegram_group_id": "4876392065",
+    "kontakt": "Matthias Heuser",
+    "e-mail": "matthias.heuser87@googlemail.com"
   },
   {
     "name": "Libertärer Stammtisch Halle (Saale)",
