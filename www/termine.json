@@ -5520,26 +5520,6 @@
     "link_qr": "img/qr_604fc8ec6d0be3ed439100b8e34ab37bc14c652a_v2.png"
   },
   {
-    "name": "Libertärer Stammtisch Frankfurt (FFM)",
-    "plz": "60594",
-    "state": "DE-HE",
-    "city": "Frankfurt am Main",
-    "city_dist": 1.0,
-    "coords": [
-      50.1028505,
-      8.6881252
-    ],
-    "date": "2026-11-02",
-    "dow": "Mo.",
-    "time": "19:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Lukas Schroth",
-    "e-mail": "lukas.schroth@die-libertaeren.de",
-    "link": "https://t.me/+WgMHpki_VXZkYWIy",
-    "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba_v2.png"
-  },
-  {
     "name": "Libertärer Stammtisch Hamburg",
     "plz": "20095",
     "state": "DE-HH",
@@ -5598,6 +5578,46 @@
     "e-mail": "dieter.kirschmann@die-libertaeren.de",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Bad Reichenhall",
+    "plz": "83435",
+    "state": "DE-BY",
+    "city": "Bad Reichenhall",
+    "city_dist": 1.7,
+    "coords": [
+      47.7266717,
+      12.8540813
+    ],
+    "date": "2026-11-06",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Theo",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+wLa_UwnOBV5mZjBi",
+    "link_qr": "img/qr_2fd308f9eb3802ebc7554d8d5d2423ab2a2dfccc_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Frankfurt (FFM)",
+    "plz": "60594",
+    "state": "DE-HE",
+    "city": "Frankfurt am Main",
+    "city_dist": 1.0,
+    "coords": [
+      50.1028505,
+      8.6881252
+    ],
+    "date": "2026-11-09",
+    "dow": "Mo.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+WgMHpki_VXZkYWIy",
+    "link_qr": "img/qr_f8b15cb23766681eadd14f4dc3299691ff1de2ba_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Bernburg (Saale)",
@@ -5938,6 +5958,26 @@
     "e-mail": "dieter.kirschmann@die-libertaeren.de",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Bad Reichenhall",
+    "plz": "83435",
+    "state": "DE-BY",
+    "city": "Bad Reichenhall",
+    "city_dist": 1.7,
+    "coords": [
+      47.7266717,
+      12.8540813
+    ],
+    "date": "2026-12-04",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Theo",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+wLa_UwnOBV5mZjBi",
+    "link_qr": "img/qr_2fd308f9eb3802ebc7554d8d5d2423ab2a2dfccc_v2.png"
   },
   {
     "name": "Hayek Club Koblenz",
