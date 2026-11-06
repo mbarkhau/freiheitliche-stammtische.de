@@ -603,7 +603,7 @@
     "name": "Staatenlos Stuttgart",
     "plz": "70174",
     "state": "DE-BW",
-    "city": "Balingen",
+    "city": "Stuttgart",
     "city_dist": 0.9,
     "coords": [
       48.7828893,
@@ -723,7 +723,7 @@
     "name": "Team Freiheit Clubabend Saarbrücken",
     "plz": "66111",
     "state": "DE-SL",
-    "city": "Kaiserslautern",
+    "city": "Saarbrücken",
     "city_dist": 0.3,
     "coords": [
       49.2360123,
@@ -843,7 +843,7 @@
     "name": "Libertärer Stammtisch Kaiserslautern",
     "plz": "67657",
     "state": "DE-RP",
-    "city": "Balingen",
+    "city": "Kaiserslautern",
     "city_dist": 3.3,
     "coords": [
       49.4514437,
@@ -983,7 +983,7 @@
     "name": "Team Freiheit Clubabend Wiesbaden",
     "plz": "65189",
     "state": "DE-HE",
-    "city": "Kaiserslautern",
+    "city": "Wiesbaden",
     "city_dist": 1.7,
     "coords": [
       50.0729625,
@@ -1463,7 +1463,7 @@
     "name": "Libertärer Stammtisch Kaiserslautern",
     "plz": "67657",
     "state": "DE-RP",
-    "city": "Stuttgart",
+    "city": "Kaiserslautern",
     "city_dist": 3.3,
     "coords": [
       49.4514437,
@@ -1943,7 +1943,7 @@
     "name": "Team Freiheit Clubabend Rhein-Main",
     "plz": "65189",
     "state": "DE-HE",
-    "city": "Kaiserslautern",
+    "city": "Frankfurt am Main",
     "city_dist": 1.7,
     "coords": [
       50.0729625,
@@ -2083,7 +2083,7 @@
     "name": "Libertärer Stammtisch Kaiserslautern",
     "plz": "67657",
     "state": "DE-RP",
-    "city": "Waghäusel",
+    "city": "Kaiserslautern",
     "city_dist": 3.3,
     "coords": [
       49.4514437,
@@ -2623,7 +2623,7 @@
     "name": "Freiheitlicher Stammtisch Bergstraße",
     "plz": "64673",
     "state": "DE-HE",
-    "city": "Wiesbaden",
+    "city": "Zwingenberg",
     "city_dist": 7.8,
     "coords": [
       49.72264,
@@ -3063,7 +3063,7 @@
     "name": "ROLAND BAADER Treffen",
     "plz": "68753",
     "state": "DE-BW",
-    "city": "Balingen",
+    "city": "Waghäusel",
     "city_dist": 2.6,
     "coords": [
       49.2292251,
@@ -5580,6 +5580,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Dresden - 1 Jahr Jubiläum",
+    "plz": "01237",
+    "state": "DE-SN",
+    "city": "Dresden",
+    "city_dist": 5.7,
+    "coords": [
+      51.0182471,
+      13.8020866
+    ],
+    "date": "2026-11-06",
+    "dow": "Fr.",
+    "time": "18:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Joachim Teske",
+    "e-mail": "joachim.teske@die-libertaeren.de",
+    "link": "https://t.me/+kXYK3OtoB0AxYTAy",
+    "link_qr": "img/qr_5565c4d9b4b29ecef348f944574ba5e63942a5bc_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Bad Reichenhall",
     "plz": "83435",
     "state": "DE-BY",
@@ -5598,6 +5618,26 @@
     "e-mail": "lukas.schroth@die-libertaeren.de",
     "link": "https://t.me/+wLa_UwnOBV5mZjBi",
     "link_qr": "img/qr_2fd308f9eb3802ebc7554d8d5d2423ab2a2dfccc_v2.png"
+  },
+  {
+    "name": "Hayek Club Nürnberg",
+    "plz": "90471",
+    "state": "DE-BY",
+    "city": "Nürnberg",
+    "city_dist": 5.3,
+    "coords": [
+      49.418213,
+      11.1259398
+    ],
+    "date": "2026-11-07",
+    "dow": "Sa.",
+    "time": "18:00",
+    "orga": "Unabhängig",
+    "orga_www": "https://hayek.de/veranstaltungen/hayek-club-nuernberg-nickolas-emrich-der-preis-unserer-toleranz-warum-innere-sicherheit-die-neue-soziale-gerechtigkeit-ist/",
+    "kontakt": "Hayek Club",
+    "e-mail": "anmeldung@hayek-nuernberg.de",
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
@@ -5636,6 +5676,26 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Stefan Bückner",
     "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Hayek Club Münster",
+    "plz": "48143",
+    "state": "DE-NW",
+    "city": "Münster",
+    "city_dist": 0.2,
+    "coords": [
+      51.9604439,
+      7.6262442
+    ],
+    "date": "2026-11-10",
+    "dow": "Di.",
+    "time": "17:00",
+    "orga": "Hayek Club",
+    "orga_www": "https://www.hayekmuenster.de/",
+    "kontakt": "Christophe Lüttmann",
+    "e-mail": "hayek@mail.de",
     "link": null,
     "link_qr": null
   },
@@ -5860,6 +5920,26 @@
     "link_qr": null
   },
   {
+    "name": "Freiheitlicher Stammtisch Reutlingen",
+    "plz": "72760",
+    "state": "DE-BW",
+    "city": "Reutlingen",
+    "city_dist": 2.2,
+    "coords": [
+      48.5113952,
+      9.20387
+    ],
+    "date": "2026-11-19",
+    "dow": "Do.",
+    "time": "18:00",
+    "orga": "Unabhängig",
+    "orga_www": "freiheitliche-stammtische.de",
+    "kontakt": "Markus Pöschl",
+    "e-mail": "markus.rt@proton.me",
+    "link": "https://t.me/+qsiIUvUG3tYxZWRi",
+    "link_qr": "img/qr_c62528274506de02b4e0948ad257e1e010b46a0a_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Berlin",
     "plz": "10555",
     "state": "DE-BE",
@@ -5898,6 +5978,26 @@
     "e-mail": "uwe.schmitt@die-libertaeren.de",
     "link": "https://t.me/+za88OLhGTshlNGJi",
     "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511_v2.png"
+  },
+  {
+    "name": "HAYEK-VEREIN DRESDEN e.V.",
+    "plz": "01326",
+    "state": "DE-SN",
+    "city": "Dresden",
+    "city_dist": 8.8,
+    "coords": [
+      51.026068,
+      13.8575878
+    ],
+    "date": "2026-11-27",
+    "dow": "Fr.",
+    "time": "19:30",
+    "orga": "Hayek Club",
+    "orga_www": "https://www.hayek-verein-dresden.de",
+    "kontakt": "Reinhard Günzel",
+    "e-mail": "ticket@hayek-verein-dresden.de",
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Team Freiheit Clubabend Köln-Bonn",
@@ -6238,6 +6338,26 @@
     "e-mail": "info@buendnis-libertaerer.de",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Reutlingen",
+    "plz": "72760",
+    "state": "DE-BW",
+    "city": "Reutlingen",
+    "city_dist": 2.2,
+    "coords": [
+      48.5113952,
+      9.20387
+    ],
+    "date": "2026-12-17",
+    "dow": "Do.",
+    "time": "18:00",
+    "orga": "Unabhängig",
+    "orga_www": "freiheitliche-stammtische.de",
+    "kontakt": "Markus Pöschl",
+    "e-mail": "markus.rt@proton.me",
+    "link": "https://t.me/+qsiIUvUG3tYxZWRi",
+    "link_qr": "img/qr_c62528274506de02b4e0948ad257e1e010b46a0a_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Berlin",
