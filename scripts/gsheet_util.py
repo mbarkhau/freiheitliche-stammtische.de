@@ -425,7 +425,46 @@ class GSheet:
             "level": level_name,
             "message": message,
         }
-        return self.append("log", [row])
+        result = self.append("log", [row])
+        try:
+            self.purge_log()
+        except Exception as ex:
+            log.warning(f"Failed to purge log: {ex}")
+        return result
+
+    def purge_log(self, max_entries: int = 500, purge_count: int = 50):
+        """Deletes the oldest log entries if there are more than max_entries.
+
+        Entries are appended at the bottom, so the oldest entries are directly
+        below the header row. Deleting rows shifts the newer rows upward.
+        """
+        result = (
+            self.service().spreadsheets()
+            .values()
+            .get(spreadsheetId=self.sheet_id, range="log!A2:A")
+            .execute()
+        )
+        num_entries = len(result.get("values", []))
+        if num_entries <= max_entries:
+            return None
+
+        log.info(f"Purging {purge_count} of {num_entries} log entries")
+        sheet_id = self._get_sheet_id("log")
+        request = {
+            "deleteDimension": {
+                "range": {
+                    "sheetId": sheet_id,
+                    "dimension": "ROWS",
+                    "startIndex": 1,
+                    "endIndex": 1 + purge_count,
+                }
+            }
+        }
+        update = self.service().spreadsheets().batchUpdate(
+            spreadsheetId=self.sheet_id,
+            body={"requests": [request]},
+        )
+        return update.execute()
 
     def debug(self, message: str, *args, **kwargs):
         return self.log(message, level=logging.DEBUG, *args, **kwargs)
@@ -602,11 +641,19 @@ def _sync_once(sheet_id: str) -> None:
 
 def sync_cmd(sheet_id: str) -> int:
     cache_key = None
+    last_log_date = None
     while True:
         try:
             generate_social_image.gen_image(dt.date.today() + dt.timedelta(days=1))
 
             sheet = GSheet(sheet_id=sheet_id)
+
+            # Heartbeat for monitoring: at least one log entry per day.
+            # NOTE: This changes the cache key, so it also triggers one sync per day.
+            if last_log_date != dt.date.today():
+                sheet.log("Heartbeat: sync is running")
+                last_log_date = dt.date.today()
+
             new_cache_key = sheet.cache_key()
             if cache_key == new_cache_key:
                 time.sleep(300)
@@ -624,6 +671,7 @@ def sync_cmd(sheet_id: str) -> int:
             )
             if updated:
                 sheet.log(f"Git push successful: update events from sheet")
+                last_log_date = dt.date.today()
                 time.sleep(30)
 
             cache_key = sheet.cache_key()
