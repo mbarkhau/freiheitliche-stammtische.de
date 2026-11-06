@@ -5980,6 +5980,46 @@
     "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511_v2.png"
   },
   {
+    "name": "Hayek Club Düsseldorf",
+    "plz": "40216",
+    "state": "DE-BY",
+    "city": "Düsseldorf",
+    "city_dist": 11.3,
+    "coords": [
+      48.1509296,
+      11.7255972
+    ],
+    "date": "2026-11-26",
+    "dow": "Do.",
+    "time": "19:00",
+    "orga": "Hayek Club",
+    "orga_www": "https://hayek.de/termine/",
+    "kontakt": "Stefanie Philipp",
+    "e-mail": "duesseldorf@hayek.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Haus der Freiheit Mülheim-Speldorf",
+    "plz": "45478",
+    "state": "DE-NW",
+    "city": "Mülheim-Speldorf",
+    "city_dist": 4.4,
+    "coords": [
+      51.4317765,
+      6.8337995
+    ],
+    "date": "2026-11-26",
+    "dow": "Do.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Stefanie Philipp",
+    "e-mail": "info@stefanie-philipp.com",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "HAYEK-VEREIN DRESDEN e.V.",
     "plz": "01326",
     "state": "DE-SN",
@@ -6340,6 +6380,26 @@
     "link_qr": null
   },
   {
+    "name": "Haus der Freiheit Mülheim-Speldorf",
+    "plz": "45478",
+    "state": "DE-NW",
+    "city": "Mülheim-Speldorf",
+    "city_dist": 4.4,
+    "coords": [
+      51.4317765,
+      6.8337995
+    ],
+    "date": "2026-12-17",
+    "dow": "Do.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Stefanie Philipp",
+    "e-mail": "info@stefanie-philipp.com",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Freiheitlicher Stammtisch Reutlingen",
     "plz": "72760",
     "state": "DE-BW",
@@ -6476,6 +6536,26 @@
     "orga_www": "https://www.team-freiheit.de/events",
     "kontakt": "Team Freiheit",
     "e-mail": "muenchen@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Hayek Club Düsseldorf",
+    "plz": "40216",
+    "state": "DE-BY",
+    "city": "Düsseldorf",
+    "city_dist": 11.3,
+    "coords": [
+      48.1509296,
+      11.7255972
+    ],
+    "date": "2027-01-28",
+    "dow": "Do.",
+    "time": "19:00",
+    "orga": "Hayek Club",
+    "orga_www": "https://hayek.de/termine/",
+    "kontakt": "Stefanie Philipp",
+    "e-mail": "duesseldorf@hayek.de",
     "link": null,
     "link_qr": null
   }

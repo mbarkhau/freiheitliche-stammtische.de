@@ -4724,6 +4724,34 @@
     "group_link": "https://t.me/+za88OLhGTshlNGJi"
   },
   {
+    "name": "Hayek Club Düsseldorf",
+    "beginn": "2026-11-26",
+    "ende": "2026-11-26",
+    "uhrzeit": "19:00",
+    "kw": "KW48",
+    "wochentag": "Thursday",
+    "orga": "Hayek Club",
+    "plz": "40216",
+    "ort": "Düsseldorf",
+    "kontakt": "Stefanie Philipp",
+    "e-mail": "duesseldorf@hayek.de",
+    "orga_webseite": "https://hayek.de/termine/"
+  },
+  {
+    "name": "Haus der Freiheit Mülheim-Speldorf",
+    "beginn": "2026-11-26",
+    "ende": "2026-11-26",
+    "uhrzeit": "19:00",
+    "kw": "KW48",
+    "wochentag": "Thursday",
+    "orga": "Unabhängig",
+    "plz": "45478",
+    "land": "DE",
+    "ort": "Mülheim-Speldorf",
+    "kontakt": "Stefanie Philipp",
+    "e-mail": "info@stefanie-philipp.com"
+  },
+  {
     "name": "HAYEK-VEREIN DRESDEN e.V.",
     "beginn": "2026-11-27",
     "ende": "2026-11-27",
@@ -5013,6 +5041,20 @@
     "orga_webseite": "https://buendnis-libertaerer.de/"
   },
   {
+    "name": "Haus der Freiheit Mülheim-Speldorf",
+    "beginn": "2026-12-17",
+    "ende": "2026-12-17",
+    "uhrzeit": "19:00",
+    "kw": "KW51",
+    "wochentag": "Thursday",
+    "orga": "Unabhängig",
+    "plz": "45478",
+    "land": "DE",
+    "ort": "Mülheim-Speldorf",
+    "kontakt": "Stefanie Philipp",
+    "e-mail": "info@stefanie-philipp.com"
+  },
+  {
     "name": "Freiheitlicher Stammtisch Reutlingen",
     "beginn": "2026-12-17",
     "ende": "2026-12-17",
@@ -5128,5 +5170,19 @@
     "e-mail": "muenchen@team-freiheit.de",
     "orga_webseite": "https://www.team-freiheit.de/events",
     "tournus": "Jeder 2. Dienstag im Monat"
+  },
+  {
+    "name": "Hayek Club Düsseldorf",
+    "beginn": "2027-01-28",
+    "ende": "2027-01-28",
+    "uhrzeit": "19:00",
+    "kw": "KW04",
+    "wochentag": "Thursday",
+    "orga": "Hayek Club",
+    "plz": "40216",
+    "ort": "Düsseldorf",
+    "kontakt": "Stefanie Philipp",
+    "e-mail": "duesseldorf@hayek.de",
+    "orga_webseite": "https://hayek.de/termine/"
   }
 ]
