@@ -17,7 +17,7 @@
  */
 (function () {
 	const LL = {
-		relay: "wss://relay.nori.club",
+		relay: "wss://relay.libertaer-leben.de",
 		pubkey: "3e3dde45aa2bf064047244aab62370639d555e151c5a0f0014c01a8a175d785a",
 		slug: "libertaer-leben",
 		site: "https://libertaer-leben.de",

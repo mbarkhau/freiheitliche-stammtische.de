@@ -58,7 +58,7 @@
 			"bg": "#EEE",
 		},
 		"Libertär Leben": {
-			"logo": "https://blossom.sovr.social/f263dcb72a8da2e8cd367ade2a8fe998ea7eb0f7be267c62159cac979746ff15.png",
+			"logo": "https://blossom.libertaer-leben.de/f263dcb72a8da2e8cd367ade2a8fe998ea7eb0f7be267c62159cac979746ff15.png",
 			"bg": "#F5F6FA",
 		},
 	};
