@@ -707,7 +707,7 @@ body {
 .qr-link-text:hover {
     opacity: 1;
 }
-/* Libertär Leben events with guest registration (see nori.js) */
+/* Libertär Leben events with guest registration (see libertaer-leben.js) */
 a.register-link,
 .map-overlay a.register-link {
     display: inline-block;

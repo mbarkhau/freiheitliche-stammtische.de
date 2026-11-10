@@ -196,7 +196,7 @@
 		// Hidden search content for better search accuracy
 		const searchParts = [t.name, t.city, t.plz, t.state, t.orga, t.kontakt, t['e-mail'], t.date, t.dow]
 		const searchContent = searchParts.join(' ').toLowerCase();
-		const branding = getOrgaBranding(t.orga);
+		const branding = t.branding || getOrgaBranding(t.orga);
 
 		return `
 		<div class="search-content" style="display: none;">${searchContent}</div>
@@ -378,7 +378,7 @@
 		if (showOverlay) {
 			overlay.style.display = 'block';
 			const relativeDate = getRelativeDateString(termin.date);
-			const branding = getOrgaBranding(termin.orga);
+			const branding = termin.branding || getOrgaBranding(termin.orga);
 
 			overlay.innerHTML = `
 	<div class="overlay-header">
@@ -467,7 +467,7 @@
 		initTheme();
 		const response = await fetch('termine.json');
 		let termine = await response.json();
-		if (window.mergeNoriTermine) termine = await window.mergeNoriTermine(termine);
+		if (window.mergeLibertaerLebenTermine) termine = await window.mergeLibertaerLebenTermine(termine);
 		const today = new Date().toISOString().split('T')[0];
 
 		// Map original index to all events for reliable lookup
