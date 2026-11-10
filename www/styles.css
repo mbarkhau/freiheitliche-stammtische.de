@@ -707,3 +707,23 @@ body {
 .qr-link-text:hover {
     opacity: 1;
 }
+/* Libertär Leben events with guest registration (see nori.js) */
+a.register-link,
+.map-overlay a.register-link {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: 6px;
+    padding: 3px 10px;
+    border-radius: 4px;
+    background: var(--accent-color);
+    color: var(--accent-contrast);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a.register-link:hover,
+.map-overlay a.register-link:hover {
+    color: var(--accent-contrast);
+    filter: brightness(1.1);
+}
