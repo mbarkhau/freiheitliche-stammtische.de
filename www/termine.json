@@ -1840,26 +1840,6 @@
     "link_qr": "img/qr_a32ef6d0e5a73980ad0372ffb3828feff231d90e_v2.png"
   },
   {
-    "name": "Kundgebung - „FINGER WEG VON MEINEM SPRIT!“",
-    "plz": "39114",
-    "state": "DE-ST",
-    "city": "Magdeburg",
-    "city_dist": 3.3,
-    "coords": [
-      52.1130345,
-      11.6780843
-    ],
-    "date": "2026-04-12",
-    "dow": "So.",
-    "time": "14:30",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/events/finger-weg-von-meinem-sprit-kundgebung-zur-abschaffung-der-spritsteuern/",
-    "kontakt": "Dr. Mathias Hummel",
-    "e-mail": "events@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Staatenlos Berlin",
     "plz": "10437",
     "state": "DE-BE",
@@ -5400,6 +5380,86 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Bergisches Land",
+    "plz": "42781",
+    "state": "DE-NW",
+    "city": "Haan",
+    "city_dist": 6.6,
+    "coords": [
+      51.2082284,
+      7.0101273
+    ],
+    "date": "2026-11-04",
+    "dow": "Mi.",
+    "time": "18:30",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Claudia Heipertz",
+    "e-mail": "mailto@claudiaheipertz.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Bergisches Land",
+    "plz": "42781",
+    "state": "DE-NW",
+    "city": "Haan",
+    "city_dist": 6.6,
+    "coords": [
+      51.2082284,
+      7.0101273
+    ],
+    "date": "2026-11-04",
+    "dow": "Mi.",
+    "time": "18:30",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Claudia Heipertz",
+    "e-mail": "mailto@claudiaheipertz.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Bergisches Land",
+    "plz": "42781",
+    "state": "DE-NW",
+    "city": "Haan",
+    "city_dist": 6.6,
+    "coords": [
+      51.2082284,
+      7.0101273
+    ],
+    "date": "2026-11-04",
+    "dow": "Mi.",
+    "time": "18:30",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Claudia Heipertz",
+    "e-mail": "mailto@claudiaheipertz.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Bergisches Land",
+    "plz": "42781",
+    "state": "DE-NW",
+    "city": "Haan",
+    "city_dist": 6.6,
+    "coords": [
+      51.2082284,
+      7.0101273
+    ],
+    "date": "2026-11-04",
+    "dow": "Mi.",
+    "time": "18:30",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Claudia Heipertz",
+    "e-mail": "mailto@claudiaheipertz.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Göppingen/Esslingen",
     "plz": "73033",
     "state": "DE-BW",
@@ -5920,6 +5980,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Bergisches Land",
+    "plz": "42781",
+    "state": "DE-NW",
+    "city": "Haan",
+    "city_dist": 6.6,
+    "coords": [
+      51.2082284,
+      7.0101273
+    ],
+    "date": "2026-12-02",
+    "dow": "Mi.",
+    "time": "18:30",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Claudia Heipertz",
+    "e-mail": "mailto@claudiaheipertz.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Göppingen/Esslingen",
     "plz": "73033",
     "state": "DE-BW",
@@ -6120,126 +6200,6 @@
     "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0_v2.png"
   },
   {
-    "name": "Libertärer Stammtisch Grevenbroich",
-    "plz": "41515",
-    "state": "DE-NW",
-    "city": "Grevenbroich",
-    "city_dist": 1.5,
-    "coords": [
-      51.0819233,
-      6.6057095
-    ],
-    "date": "2026-12-11",
-    "dow": "Fr.",
-    "time": "19:00",
-    "orga": "Unabhängig",
-    "orga_www": "https://ef-magazin.de/",
-    "kontakt": "Martin Moczarski",
-    "e-mail": "moczarski@ef-magazin.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
-    "name": "Libertärer Stammtisch Mittelhessen",
-    "plz": "35396",
-    "state": "DE-HE",
-    "city": "Gießen",
-    "city_dist": 3.8,
-    "coords": [
-      50.6141365,
-      8.7052574
-    ],
-    "date": "2026-12-16",
-    "dow": "Mi.",
-    "time": "19:00",
-    "orga": "Unabhängig",
-    "orga_www": null,
-    "kontakt": "Stefan Bosch",
-    "e-mail": null,
-    "link": "https://t.me/+kDTzmac3wJYwMzIy",
-    "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
-  },
-  {
-    "name": "Libertärer Stammtisch Mittelhessen",
-    "plz": "35396",
-    "state": "DE-HE",
-    "city": "Gießen",
-    "city_dist": 3.8,
-    "coords": [
-      50.6141365,
-      8.7052574
-    ],
-    "date": "2026-12-16",
-    "dow": "Mi.",
-    "time": "19:00",
-    "orga": "Unabhängig",
-    "orga_www": null,
-    "kontakt": "Stefan Bosch",
-    "e-mail": null,
-    "link": "https://t.me/+kDTzmac3wJYwMzIy",
-    "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
-  },
-  {
-    "name": "Libertärer Stammtisch Mittelhessen",
-    "plz": "35396",
-    "state": "DE-HE",
-    "city": "Gießen",
-    "city_dist": 3.8,
-    "coords": [
-      50.6141365,
-      8.7052574
-    ],
-    "date": "2026-12-16",
-    "dow": "Mi.",
-    "time": "19:00",
-    "orga": "Unabhängig",
-    "orga_www": null,
-    "kontakt": "Stefan Bosch",
-    "e-mail": null,
-    "link": "https://t.me/+kDTzmac3wJYwMzIy",
-    "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
-  },
-  {
-    "name": "Libertärer Stammtisch Mittelhessen",
-    "plz": "35396",
-    "state": "DE-HE",
-    "city": "Gießen",
-    "city_dist": 3.8,
-    "coords": [
-      50.6141365,
-      8.7052574
-    ],
-    "date": "2026-12-16",
-    "dow": "Mi.",
-    "time": "19:00",
-    "orga": "Unabhängig",
-    "orga_www": null,
-    "kontakt": "Stefan Bosch",
-    "e-mail": null,
-    "link": "https://t.me/+kDTzmac3wJYwMzIy",
-    "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
-  },
-  {
-    "name": "Libertärer Stammtisch Mittelhessen",
-    "plz": "35396",
-    "state": "DE-HE",
-    "city": "Gießen",
-    "city_dist": 3.8,
-    "coords": [
-      50.6141365,
-      8.7052574
-    ],
-    "date": "2026-12-16",
-    "dow": "Mi.",
-    "time": "19:00",
-    "orga": "Unabhängig",
-    "orga_www": null,
-    "kontakt": "Stefan Bosch",
-    "e-mail": null,
-    "link": "https://t.me/+kDTzmac3wJYwMzIy",
-    "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
-  },
-  {
     "name": "Libertärer Stammtisch Mittelhessen",
     "plz": "35396",
     "state": "DE-HE",
@@ -6380,6 +6340,26 @@
     "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
   },
   {
+    "name": "Libertärer Stammtisch Grevenbroich",
+    "plz": "41515",
+    "state": "DE-NW",
+    "city": "Grevenbroich",
+    "city_dist": 1.5,
+    "coords": [
+      51.0819233,
+      6.6057095
+    ],
+    "date": "2026-12-18",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": "https://ef-magazin.de/",
+    "kontakt": "Martin Moczarski",
+    "e-mail": "moczarski@ef-magazin.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Team Freiheit Clubabend Köln-Bonn",
     "plz": "50672",
     "state": "DE-NW",
@@ -6460,6 +6440,46 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Bergisches Land",
+    "plz": "42781",
+    "state": "DE-NW",
+    "city": "Haan",
+    "city_dist": 6.6,
+    "coords": [
+      51.2082284,
+      7.0101273
+    ],
+    "date": "2027-01-06",
+    "dow": "Mi.",
+    "time": "18:30",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Claudia Heipertz",
+    "e-mail": "mailto@claudiaheipertz.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Grevenbroich",
+    "plz": "41515",
+    "state": "DE-NW",
+    "city": "Grevenbroich",
+    "city_dist": 1.5,
+    "coords": [
+      51.0819233,
+      6.6057095
+    ],
+    "date": "2027-01-08",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": "https://ef-magazin.de/",
+    "kontakt": "Martin Moczarski",
+    "e-mail": "moczarski@ef-magazin.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Freiheitlicher Stammtisch Friedrichshafen",
     "plz": "88045",
     "state": "DE-BW",
@@ -6516,6 +6536,26 @@
     "orga_www": "https://www.team-freiheit.de/events",
     "kontakt": "Team Freiheit",
     "e-mail": "muenchen@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Magdeburg",
+    "plz": "39104",
+    "state": "DE-ST",
+    "city": "Magdeburg",
+    "city_dist": 1.9,
+    "coords": [
+      52.1151882,
+      11.630882
+    ],
+    "date": "2027-01-14",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Mathias Hummel",
+    "e-mail": "events@die-libertaeren.de",
     "link": null,
     "link_qr": null
   },
@@ -6620,6 +6660,66 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Magdeburg",
+    "plz": "39104",
+    "state": "DE-ST",
+    "city": "Magdeburg",
+    "city_dist": 1.9,
+    "coords": [
+      52.1151882,
+      11.630882
+    ],
+    "date": "2027-02-11",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Mathias Hummel",
+    "e-mail": "events@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Grevenbroich",
+    "plz": "41515",
+    "state": "DE-NW",
+    "city": "Grevenbroich",
+    "city_dist": 1.5,
+    "coords": [
+      51.0819233,
+      6.6057095
+    ],
+    "date": "2027-02-12",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": "https://ef-magazin.de/",
+    "kontakt": "Martin Moczarski",
+    "e-mail": "moczarski@ef-magazin.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Mittelhessen",
+    "plz": "35396",
+    "state": "DE-HE",
+    "city": "Gießen",
+    "city_dist": 3.8,
+    "coords": [
+      50.6141365,
+      8.7052574
+    ],
+    "date": "2027-02-17",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Stefan Bosch",
+    "e-mail": null,
+    "link": "https://t.me/+kDTzmac3wJYwMzIy",
+    "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Berlin",
     "plz": "10555",
     "state": "DE-BE",
@@ -6680,6 +6780,66 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Magdeburg",
+    "plz": "39104",
+    "state": "DE-ST",
+    "city": "Magdeburg",
+    "city_dist": 1.9,
+    "coords": [
+      52.1151882,
+      11.630882
+    ],
+    "date": "2027-03-11",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Mathias Hummel",
+    "e-mail": "events@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Grevenbroich",
+    "plz": "41515",
+    "state": "DE-NW",
+    "city": "Grevenbroich",
+    "city_dist": 1.5,
+    "coords": [
+      51.0819233,
+      6.6057095
+    ],
+    "date": "2027-03-12",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": "https://ef-magazin.de/",
+    "kontakt": "Martin Moczarski",
+    "e-mail": "moczarski@ef-magazin.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Mittelhessen",
+    "plz": "35396",
+    "state": "DE-HE",
+    "city": "Gießen",
+    "city_dist": 3.8,
+    "coords": [
+      50.6141365,
+      8.7052574
+    ],
+    "date": "2027-03-17",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Stefan Bosch",
+    "e-mail": null,
+    "link": "https://t.me/+kDTzmac3wJYwMzIy",
+    "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Berlin",
     "plz": "10555",
     "state": "DE-BE",
@@ -6716,6 +6876,46 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Ferdinand Steinhöfel",
     "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Magdeburg",
+    "plz": "39104",
+    "state": "DE-ST",
+    "city": "Magdeburg",
+    "city_dist": 1.9,
+    "coords": [
+      52.1151882,
+      11.630882
+    ],
+    "date": "2027-04-08",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Mathias Hummel",
+    "e-mail": "events@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Grevenbroich",
+    "plz": "41515",
+    "state": "DE-NW",
+    "city": "Grevenbroich",
+    "city_dist": 1.5,
+    "coords": [
+      51.0819233,
+      6.6057095
+    ],
+    "date": "2027-04-09",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": "https://ef-magazin.de/",
+    "kontakt": "Martin Moczarski",
+    "e-mail": "moczarski@ef-magazin.de",
     "link": null,
     "link_qr": null
   },
@@ -6760,6 +6960,26 @@
     "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
   },
   {
+    "name": "Libertärer Stammtisch Mittelhessen",
+    "plz": "35396",
+    "state": "DE-HE",
+    "city": "Gießen",
+    "city_dist": 3.8,
+    "coords": [
+      50.6141365,
+      8.7052574
+    ],
+    "date": "2027-04-21",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Stefan Bosch",
+    "e-mail": null,
+    "link": "https://t.me/+kDTzmac3wJYwMzIy",
+    "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Hamburg",
     "plz": "20095",
     "state": "DE-HH",
@@ -6798,6 +7018,66 @@
     "e-mail": "stephan.bueckner@die-libertaeren.de",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Magdeburg",
+    "plz": "39104",
+    "state": "DE-ST",
+    "city": "Magdeburg",
+    "city_dist": 1.9,
+    "coords": [
+      52.1151882,
+      11.630882
+    ],
+    "date": "2027-05-13",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Mathias Hummel",
+    "e-mail": "events@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Grevenbroich",
+    "plz": "41515",
+    "state": "DE-NW",
+    "city": "Grevenbroich",
+    "city_dist": 1.5,
+    "coords": [
+      51.0819233,
+      6.6057095
+    ],
+    "date": "2027-05-14",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": "https://ef-magazin.de/",
+    "kontakt": "Martin Moczarski",
+    "e-mail": "moczarski@ef-magazin.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Mittelhessen",
+    "plz": "35396",
+    "state": "DE-HE",
+    "city": "Gießen",
+    "city_dist": 3.8,
+    "coords": [
+      50.6141365,
+      8.7052574
+    ],
+    "date": "2027-05-19",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Stefan Bosch",
+    "e-mail": null,
+    "link": "https://t.me/+kDTzmac3wJYwMzIy",
+    "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Berlin",
@@ -6860,6 +7140,66 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Magdeburg",
+    "plz": "39104",
+    "state": "DE-ST",
+    "city": "Magdeburg",
+    "city_dist": 1.9,
+    "coords": [
+      52.1151882,
+      11.630882
+    ],
+    "date": "2027-06-10",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Mathias Hummel",
+    "e-mail": "events@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Grevenbroich",
+    "plz": "41515",
+    "state": "DE-NW",
+    "city": "Grevenbroich",
+    "city_dist": 1.5,
+    "coords": [
+      51.0819233,
+      6.6057095
+    ],
+    "date": "2027-06-11",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": "https://ef-magazin.de/",
+    "kontakt": "Martin Moczarski",
+    "e-mail": "moczarski@ef-magazin.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Mittelhessen",
+    "plz": "35396",
+    "state": "DE-HE",
+    "city": "Gießen",
+    "city_dist": 3.8,
+    "coords": [
+      50.6141365,
+      8.7052574
+    ],
+    "date": "2027-06-16",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Stefan Bosch",
+    "e-mail": null,
+    "link": "https://t.me/+kDTzmac3wJYwMzIy",
+    "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Berlin",
     "plz": "10555",
     "state": "DE-BE",
@@ -6878,5 +7218,25 @@
     "e-mail": "svenbrajer@web.de",
     "link": "https://t.me/+Xzxvc2UqKuJmNmRi",
     "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Magdeburg",
+    "plz": "39104",
+    "state": "DE-ST",
+    "city": "Magdeburg",
+    "city_dist": 1.9,
+    "coords": [
+      52.1151882,
+      11.630882
+    ],
+    "date": "2027-07-08",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Mathias Hummel",
+    "e-mail": "events@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
   }
 ]
