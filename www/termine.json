@@ -6080,6 +6080,26 @@
     "link_qr": null
   },
   {
+    "name": "Freiheitlicher Stammtisch Bergstraße",
+    "plz": "64673",
+    "state": "DE-HE",
+    "city": "Bergstraße",
+    "city_dist": 7.8,
+    "coords": [
+      49.72264,
+      8.5940276
+    ],
+    "date": "2026-12-09",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+qhX3l_Dn_VpkNmYy",
+    "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Magdeburg",
     "plz": "39104",
     "state": "DE-ST",
@@ -6138,26 +6158,6 @@
     "e-mail": null,
     "link": "https://t.me/+kDTzmac3wJYwMzIy",
     "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
-  },
-  {
-    "name": "Freiheitlicher Stammtisch Bergstraße",
-    "plz": "64673",
-    "state": "DE-HE",
-    "city": "Bergstraße",
-    "city_dist": 7.8,
-    "coords": [
-      49.72264,
-      8.5940276
-    ],
-    "date": "2026-12-16",
-    "dow": "Mi.",
-    "time": "19:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Lukas Schroth",
-    "e-mail": "lukas.schroth@die-libertaeren.de",
-    "link": "https://t.me/+qhX3l_Dn_VpkNmYy",
-    "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Ansbach",
@@ -6500,6 +6500,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch in Balingen / Württemberg",
+    "plz": "72336",
+    "state": "DE-BW",
+    "city": "Balingen",
+    "city_dist": 1.0,
+    "coords": [
+      48.2659024,
+      8.8623776
+    ],
+    "date": "2027-01-14",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Fritz Maulbetsch",
+    "e-mail": "lnb@maulbetsch.net",
+    "link": "https://t.me/FreeFritz",
+    "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Berlin",
     "plz": "10555",
     "state": "DE-BE",
@@ -6518,6 +6538,26 @@
     "e-mail": "svenbrajer@web.de",
     "link": "https://t.me/+Xzxvc2UqKuJmNmRi",
     "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Kaiserslautern",
+    "plz": "67657",
+    "state": "DE-RP",
+    "city": "Kaiserslautern",
+    "city_dist": 3.3,
+    "coords": [
+      49.4514437,
+      7.8130571
+    ],
+    "date": "2027-01-15",
+    "dow": "Fr.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Uwe Schmitt",
+    "e-mail": "uwe.schmitt@die-libertaeren.de",
+    "link": "https://t.me/+za88OLhGTshlNGJi",
+    "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Mittelhessen",
@@ -6540,6 +6580,26 @@
     "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
   },
   {
+    "name": "Freiheitlicher Stammtisch Bergstraße",
+    "plz": "64673",
+    "state": "DE-HE",
+    "city": "Bergstraße",
+    "city_dist": 7.8,
+    "coords": [
+      49.72264,
+      8.5940276
+    ],
+    "date": "2027-01-20",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+qhX3l_Dn_VpkNmYy",
+    "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
     "state": "DE-NW",
@@ -6558,6 +6618,26 @@
     "e-mail": "info@buendnis-libertaerer.de",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Reutlingen",
+    "plz": "72760",
+    "state": "DE-BW",
+    "city": "Reutlingen",
+    "city_dist": 2.2,
+    "coords": [
+      48.5113952,
+      9.20387
+    ],
+    "date": "2027-01-21",
+    "dow": "Do.",
+    "time": "18:00",
+    "orga": "Unabhängig",
+    "orga_www": "freiheitliche-stammtische.de",
+    "kontakt": "Markus Pöschl",
+    "e-mail": "markus.rt@proton.me",
+    "link": "https://t.me/+qsiIUvUG3tYxZWRi",
+    "link_qr": "img/qr_c62528274506de02b4e0948ad257e1e010b46a0a_v2.png"
   },
   {
     "name": "Hayek Club Düsseldorf",
@@ -6680,6 +6760,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch in Balingen / Württemberg",
+    "plz": "72336",
+    "state": "DE-BW",
+    "city": "Balingen",
+    "city_dist": 1.0,
+    "coords": [
+      48.2659024,
+      8.8623776
+    ],
+    "date": "2027-02-11",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Fritz Maulbetsch",
+    "e-mail": "lnb@maulbetsch.net",
+    "link": "https://t.me/FreeFritz",
+    "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Grevenbroich",
     "plz": "41515",
     "state": "DE-NW",
@@ -6720,6 +6820,26 @@
     "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
   },
   {
+    "name": "Freiheitlicher Stammtisch Bergstraße",
+    "plz": "64673",
+    "state": "DE-HE",
+    "city": "Bergstraße",
+    "city_dist": 7.8,
+    "coords": [
+      49.72264,
+      8.5940276
+    ],
+    "date": "2027-02-17",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+qhX3l_Dn_VpkNmYy",
+    "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
     "state": "DE-NW",
@@ -6740,6 +6860,26 @@
     "link_qr": null
   },
   {
+    "name": "Freiheitlicher Stammtisch Reutlingen",
+    "plz": "72760",
+    "state": "DE-BW",
+    "city": "Reutlingen",
+    "city_dist": 2.2,
+    "coords": [
+      48.5113952,
+      9.20387
+    ],
+    "date": "2027-02-18",
+    "dow": "Do.",
+    "time": "18:00",
+    "orga": "Unabhängig",
+    "orga_www": "freiheitliche-stammtische.de",
+    "kontakt": "Markus Pöschl",
+    "e-mail": "markus.rt@proton.me",
+    "link": "https://t.me/+qsiIUvUG3tYxZWRi",
+    "link_qr": "img/qr_c62528274506de02b4e0948ad257e1e010b46a0a_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Berlin",
     "plz": "10555",
     "state": "DE-BE",
@@ -6758,6 +6898,26 @@
     "e-mail": "svenbrajer@web.de",
     "link": "https://t.me/+Xzxvc2UqKuJmNmRi",
     "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Kaiserslautern",
+    "plz": "67657",
+    "state": "DE-RP",
+    "city": "Kaiserslautern",
+    "city_dist": 3.3,
+    "coords": [
+      49.4514437,
+      7.8130571
+    ],
+    "date": "2027-02-19",
+    "dow": "Fr.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Uwe Schmitt",
+    "e-mail": "uwe.schmitt@die-libertaeren.de",
+    "link": "https://t.me/+za88OLhGTshlNGJi",
+    "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
@@ -6860,6 +7020,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch in Balingen / Württemberg",
+    "plz": "72336",
+    "state": "DE-BW",
+    "city": "Balingen",
+    "city_dist": 1.0,
+    "coords": [
+      48.2659024,
+      8.8623776
+    ],
+    "date": "2027-03-11",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Fritz Maulbetsch",
+    "e-mail": "lnb@maulbetsch.net",
+    "link": "https://t.me/FreeFritz",
+    "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Grevenbroich",
     "plz": "41515",
     "state": "DE-NW",
@@ -6900,6 +7080,26 @@
     "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
   },
   {
+    "name": "Freiheitlicher Stammtisch Bergstraße",
+    "plz": "64673",
+    "state": "DE-HE",
+    "city": "Bergstraße",
+    "city_dist": 7.8,
+    "coords": [
+      49.72264,
+      8.5940276
+    ],
+    "date": "2027-03-17",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+qhX3l_Dn_VpkNmYy",
+    "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
     "state": "DE-NW",
@@ -6920,6 +7120,26 @@
     "link_qr": null
   },
   {
+    "name": "Freiheitlicher Stammtisch Reutlingen",
+    "plz": "72760",
+    "state": "DE-BW",
+    "city": "Reutlingen",
+    "city_dist": 2.2,
+    "coords": [
+      48.5113952,
+      9.20387
+    ],
+    "date": "2027-03-18",
+    "dow": "Do.",
+    "time": "18:00",
+    "orga": "Unabhängig",
+    "orga_www": "freiheitliche-stammtische.de",
+    "kontakt": "Markus Pöschl",
+    "e-mail": "markus.rt@proton.me",
+    "link": "https://t.me/+qsiIUvUG3tYxZWRi",
+    "link_qr": "img/qr_c62528274506de02b4e0948ad257e1e010b46a0a_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Berlin",
     "plz": "10555",
     "state": "DE-BE",
@@ -6938,6 +7158,26 @@
     "e-mail": "svenbrajer@web.de",
     "link": "https://t.me/+Xzxvc2UqKuJmNmRi",
     "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Kaiserslautern",
+    "plz": "67657",
+    "state": "DE-RP",
+    "city": "Kaiserslautern",
+    "city_dist": 3.3,
+    "coords": [
+      49.4514437,
+      7.8130571
+    ],
+    "date": "2027-03-19",
+    "dow": "Fr.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Uwe Schmitt",
+    "e-mail": "uwe.schmitt@die-libertaeren.de",
+    "link": "https://t.me/+za88OLhGTshlNGJi",
+    "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
@@ -7020,6 +7260,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch in Balingen / Württemberg",
+    "plz": "72336",
+    "state": "DE-BW",
+    "city": "Balingen",
+    "city_dist": 1.0,
+    "coords": [
+      48.2659024,
+      8.8623776
+    ],
+    "date": "2027-04-08",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Fritz Maulbetsch",
+    "e-mail": "lnb@maulbetsch.net",
+    "link": "https://t.me/FreeFritz",
+    "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Grevenbroich",
     "plz": "41515",
     "state": "DE-NW",
@@ -7080,6 +7340,26 @@
     "link_qr": null
   },
   {
+    "name": "Freiheitlicher Stammtisch Reutlingen",
+    "plz": "72760",
+    "state": "DE-BW",
+    "city": "Reutlingen",
+    "city_dist": 2.2,
+    "coords": [
+      48.5113952,
+      9.20387
+    ],
+    "date": "2027-04-15",
+    "dow": "Do.",
+    "time": "18:00",
+    "orga": "Unabhängig",
+    "orga_www": "freiheitliche-stammtische.de",
+    "kontakt": "Markus Pöschl",
+    "e-mail": "markus.rt@proton.me",
+    "link": "https://t.me/+qsiIUvUG3tYxZWRi",
+    "link_qr": "img/qr_c62528274506de02b4e0948ad257e1e010b46a0a_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Berlin",
     "plz": "10555",
     "state": "DE-BE",
@@ -7100,6 +7380,26 @@
     "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
   },
   {
+    "name": "Libertärer Stammtisch Kaiserslautern",
+    "plz": "67657",
+    "state": "DE-RP",
+    "city": "Kaiserslautern",
+    "city_dist": 3.3,
+    "coords": [
+      49.4514437,
+      7.8130571
+    ],
+    "date": "2027-04-16",
+    "dow": "Fr.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Uwe Schmitt",
+    "e-mail": "uwe.schmitt@die-libertaeren.de",
+    "link": "https://t.me/+za88OLhGTshlNGJi",
+    "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Mittelhessen",
     "plz": "35396",
     "state": "DE-HE",
@@ -7118,6 +7418,26 @@
     "e-mail": null,
     "link": "https://t.me/+kDTzmac3wJYwMzIy",
     "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Bergstraße",
+    "plz": "64673",
+    "state": "DE-HE",
+    "city": "Bergstraße",
+    "city_dist": 7.8,
+    "coords": [
+      49.72264,
+      8.5940276
+    ],
+    "date": "2027-04-21",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+qhX3l_Dn_VpkNmYy",
+    "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
@@ -7220,6 +7540,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch in Balingen / Württemberg",
+    "plz": "72336",
+    "state": "DE-BW",
+    "city": "Balingen",
+    "city_dist": 1.0,
+    "coords": [
+      48.2659024,
+      8.8623776
+    ],
+    "date": "2027-05-13",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Fritz Maulbetsch",
+    "e-mail": "lnb@maulbetsch.net",
+    "link": "https://t.me/FreeFritz",
+    "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Grevenbroich",
     "plz": "41515",
     "state": "DE-NW",
@@ -7260,6 +7600,26 @@
     "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
   },
   {
+    "name": "Freiheitlicher Stammtisch Bergstraße",
+    "plz": "64673",
+    "state": "DE-HE",
+    "city": "Bergstraße",
+    "city_dist": 7.8,
+    "coords": [
+      49.72264,
+      8.5940276
+    ],
+    "date": "2027-05-19",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+qhX3l_Dn_VpkNmYy",
+    "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
     "state": "DE-NW",
@@ -7280,6 +7640,26 @@
     "link_qr": null
   },
   {
+    "name": "Freiheitlicher Stammtisch Reutlingen",
+    "plz": "72760",
+    "state": "DE-BW",
+    "city": "Reutlingen",
+    "city_dist": 2.2,
+    "coords": [
+      48.5113952,
+      9.20387
+    ],
+    "date": "2027-05-20",
+    "dow": "Do.",
+    "time": "18:00",
+    "orga": "Unabhängig",
+    "orga_www": "freiheitliche-stammtische.de",
+    "kontakt": "Markus Pöschl",
+    "e-mail": "markus.rt@proton.me",
+    "link": "https://t.me/+qsiIUvUG3tYxZWRi",
+    "link_qr": "img/qr_c62528274506de02b4e0948ad257e1e010b46a0a_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Berlin",
     "plz": "10555",
     "state": "DE-BE",
@@ -7298,6 +7678,26 @@
     "e-mail": "svenbrajer@web.de",
     "link": "https://t.me/+Xzxvc2UqKuJmNmRi",
     "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Kaiserslautern",
+    "plz": "67657",
+    "state": "DE-RP",
+    "city": "Kaiserslautern",
+    "city_dist": 3.3,
+    "coords": [
+      49.4514437,
+      7.8130571
+    ],
+    "date": "2027-05-21",
+    "dow": "Fr.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Uwe Schmitt",
+    "e-mail": "uwe.schmitt@die-libertaeren.de",
+    "link": "https://t.me/+za88OLhGTshlNGJi",
+    "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Hamburg",
@@ -7400,6 +7800,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch in Balingen / Württemberg",
+    "plz": "72336",
+    "state": "DE-BW",
+    "city": "Balingen",
+    "city_dist": 1.0,
+    "coords": [
+      48.2659024,
+      8.8623776
+    ],
+    "date": "2027-06-10",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Fritz Maulbetsch",
+    "e-mail": "lnb@maulbetsch.net",
+    "link": "https://t.me/FreeFritz",
+    "link_qr": "img/qr_527df4bd7d52679b58d8ef96bff71b8216d954a0_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Grevenbroich",
     "plz": "41515",
     "state": "DE-NW",
@@ -7440,6 +7860,26 @@
     "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
   },
   {
+    "name": "Freiheitlicher Stammtisch Bergstraße",
+    "plz": "64673",
+    "state": "DE-HE",
+    "city": "Bergstraße",
+    "city_dist": 7.8,
+    "coords": [
+      49.72264,
+      8.5940276
+    ],
+    "date": "2027-06-16",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "link": "https://t.me/+qhX3l_Dn_VpkNmYy",
+    "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
     "state": "DE-NW",
@@ -7460,6 +7900,26 @@
     "link_qr": null
   },
   {
+    "name": "Freiheitlicher Stammtisch Reutlingen",
+    "plz": "72760",
+    "state": "DE-BW",
+    "city": "Reutlingen",
+    "city_dist": 2.2,
+    "coords": [
+      48.5113952,
+      9.20387
+    ],
+    "date": "2027-06-17",
+    "dow": "Do.",
+    "time": "18:00",
+    "orga": "Unabhängig",
+    "orga_www": "freiheitliche-stammtische.de",
+    "kontakt": "Markus Pöschl",
+    "e-mail": "markus.rt@proton.me",
+    "link": "https://t.me/+qsiIUvUG3tYxZWRi",
+    "link_qr": "img/qr_c62528274506de02b4e0948ad257e1e010b46a0a_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Berlin",
     "plz": "10555",
     "state": "DE-BE",
@@ -7478,6 +7938,26 @@
     "e-mail": "svenbrajer@web.de",
     "link": "https://t.me/+Xzxvc2UqKuJmNmRi",
     "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Kaiserslautern",
+    "plz": "67657",
+    "state": "DE-RP",
+    "city": "Kaiserslautern",
+    "city_dist": 3.3,
+    "coords": [
+      49.4514437,
+      7.8130571
+    ],
+    "date": "2027-06-18",
+    "dow": "Fr.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Uwe Schmitt",
+    "e-mail": "uwe.schmitt@die-libertaeren.de",
+    "link": "https://t.me/+za88OLhGTshlNGJi",
+    "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Magdeburg",

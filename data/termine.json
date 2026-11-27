@@ -1,5 +1,9 @@
 [
   {
+    "kw": "KW52",
+    "wochentag": "Saturday"
+  },
+  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "beginn": "2025-11-04",
     "ende": "2025-11-04",
@@ -4800,6 +4804,24 @@
     "tournus": "Jeder 2. Dienstag im Monat"
   },
   {
+    "name": "Freiheitlicher Stammtisch Bergstraße",
+    "beginn": "2026-12-09",
+    "ende": "2026-12-09",
+    "uhrzeit": "19:00",
+    "kw": "KW50",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "64673",
+    "land": "DE",
+    "ort": "Bergstraße",
+    "telegram_group_id": "5205303336",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Dritter Mittwoch des Monats",
+    "group_link": "https://t.me/+qhX3l_Dn_VpkNmYy"
+  },
+  {
     "name": "Libertärer Stammtisch Magdeburg",
     "beginn": "2026-12-10",
     "ende": "2026-12-10",
@@ -4845,24 +4867,6 @@
     "kontakt": "Stefan Bosch",
     "tournus": "Jeder 3. Mittwoch",
     "group_link": "https://t.me/+kDTzmac3wJYwMzIy"
-  },
-  {
-    "name": "Freiheitlicher Stammtisch Bergstraße",
-    "beginn": "2026-12-16",
-    "ende": "2026-12-16",
-    "uhrzeit": "19:00",
-    "kw": "KW51",
-    "wochentag": "Wednesday",
-    "orga": "DIE LIBERTÄREN",
-    "plz": "64673",
-    "land": "DE",
-    "ort": "Bergstraße",
-    "telegram_group_id": "5205303336",
-    "kontakt": "Lukas Schroth",
-    "e-mail": "lukas.schroth@die-libertaeren.de",
-    "orga_webseite": "https://die-libertaeren.de/",
-    "tournus": "Dritter Mittwoch des Monats",
-    "group_link": "https://t.me/+qhX3l_Dn_VpkNmYy"
   },
   {
     "name": "Libertärer Stammtisch Ansbach",
@@ -5136,6 +5140,22 @@
     "orga_webseite": "https://die-libertaeren.de/"
   },
   {
+    "name": "Libertärer Stammtisch in Balingen / Württemberg",
+    "beginn": "2027-01-14",
+    "ende": "2027-01-14",
+    "uhrzeit": "19:30",
+    "kw": "KW02",
+    "wochentag": "Thursday",
+    "orga": "Unabhängig",
+    "plz": "72336",
+    "land": "DE",
+    "ort": "Balingen",
+    "kontakt": "Fritz Maulbetsch",
+    "e-mail": "lnb@maulbetsch.net",
+    "tournus": "Jeder 2. Donnerstag",
+    "group_link": "https://t.me/FreeFritz"
+  },
+  {
     "name": "Libertärer Stammtisch Berlin",
     "beginn": "2027-01-15",
     "ende": "2027-01-15",
@@ -5151,6 +5171,24 @@
     "e-mail": "svenbrajer@web.de",
     "orga_webseite": "https://die-libertaeren.de/",
     "group_link": "https://t.me/+Xzxvc2UqKuJmNmRi"
+  },
+  {
+    "name": "Libertärer Stammtisch Kaiserslautern",
+    "beginn": "2027-01-15",
+    "ende": "2027-01-15",
+    "uhrzeit": "18:30",
+    "kw": "KW02",
+    "wochentag": "Friday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "67657",
+    "land": "DE",
+    "ort": "Kaiserslautern",
+    "telegram_group_id": "3893662081",
+    "kontakt": "Uwe Schmitt",
+    "e-mail": "uwe.schmitt@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 3. Samstag",
+    "group_link": "https://t.me/+za88OLhGTshlNGJi"
   },
   {
     "name": "Libertärer Stammtisch Mittelhessen",
@@ -5169,6 +5207,24 @@
     "group_link": "https://t.me/+kDTzmac3wJYwMzIy"
   },
   {
+    "name": "Freiheitlicher Stammtisch Bergstraße",
+    "beginn": "2027-01-20",
+    "ende": "2027-01-20",
+    "uhrzeit": "19:00",
+    "kw": "KW03",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "64673",
+    "land": "DE",
+    "ort": "Bergstraße",
+    "telegram_group_id": "5205303336",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Dritter Mittwoch des Monats",
+    "group_link": "https://t.me/+qhX3l_Dn_VpkNmYy"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "beginn": "2027-01-21",
     "ende": "2027-01-21",
@@ -5182,6 +5238,23 @@
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
     "orga_webseite": "https://buendnis-libertaerer.de/"
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Reutlingen",
+    "beginn": "2027-01-21",
+    "ende": "2027-01-21",
+    "uhrzeit": "18:00",
+    "kw": "KW03",
+    "wochentag": "Thursday",
+    "orga": "Unabhängig",
+    "plz": "72760",
+    "land": "DE",
+    "ort": "Reutlingen",
+    "telegram_group_id": "4331808963",
+    "kontakt": "Markus Pöschl",
+    "e-mail": "markus.rt@proton.me",
+    "orga_webseite": "freiheitliche-stammtische.de",
+    "group_link": "https://t.me/+qsiIUvUG3tYxZWRi"
   },
   {
     "name": "Hayek Club Düsseldorf",
@@ -5276,6 +5349,22 @@
     "orga_webseite": "https://die-libertaeren.de/"
   },
   {
+    "name": "Libertärer Stammtisch in Balingen / Württemberg",
+    "beginn": "2027-02-11",
+    "ende": "2027-02-11",
+    "uhrzeit": "19:30",
+    "kw": "KW06",
+    "wochentag": "Thursday",
+    "orga": "Unabhängig",
+    "plz": "72336",
+    "land": "DE",
+    "ort": "Balingen",
+    "kontakt": "Fritz Maulbetsch",
+    "e-mail": "lnb@maulbetsch.net",
+    "tournus": "Jeder 2. Donnerstag",
+    "group_link": "https://t.me/FreeFritz"
+  },
+  {
     "name": "Libertärer Stammtisch Grevenbroich",
     "beginn": "2027-02-12",
     "ende": "2027-02-12",
@@ -5307,6 +5396,24 @@
     "group_link": "https://t.me/+kDTzmac3wJYwMzIy"
   },
   {
+    "name": "Freiheitlicher Stammtisch Bergstraße",
+    "beginn": "2027-02-17",
+    "ende": "2027-02-17",
+    "uhrzeit": "19:00",
+    "kw": "KW07",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "64673",
+    "land": "DE",
+    "ort": "Bergstraße",
+    "telegram_group_id": "5205303336",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Dritter Mittwoch des Monats",
+    "group_link": "https://t.me/+qhX3l_Dn_VpkNmYy"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "beginn": "2027-02-18",
     "ende": "2027-02-18",
@@ -5320,6 +5427,23 @@
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
     "orga_webseite": "https://buendnis-libertaerer.de/"
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Reutlingen",
+    "beginn": "2027-02-18",
+    "ende": "2027-02-18",
+    "uhrzeit": "18:00",
+    "kw": "KW07",
+    "wochentag": "Thursday",
+    "orga": "Unabhängig",
+    "plz": "72760",
+    "land": "DE",
+    "ort": "Reutlingen",
+    "telegram_group_id": "4331808963",
+    "kontakt": "Markus Pöschl",
+    "e-mail": "markus.rt@proton.me",
+    "orga_webseite": "freiheitliche-stammtische.de",
+    "group_link": "https://t.me/+qsiIUvUG3tYxZWRi"
   },
   {
     "name": "Libertärer Stammtisch Berlin",
@@ -5337,6 +5461,24 @@
     "e-mail": "svenbrajer@web.de",
     "orga_webseite": "https://die-libertaeren.de/",
     "group_link": "https://t.me/+Xzxvc2UqKuJmNmRi"
+  },
+  {
+    "name": "Libertärer Stammtisch Kaiserslautern",
+    "beginn": "2027-02-19",
+    "ende": "2027-02-19",
+    "uhrzeit": "18:30",
+    "kw": "KW07",
+    "wochentag": "Friday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "67657",
+    "land": "DE",
+    "ort": "Kaiserslautern",
+    "telegram_group_id": "3893662081",
+    "kontakt": "Uwe Schmitt",
+    "e-mail": "uwe.schmitt@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 3. Samstag",
+    "group_link": "https://t.me/+za88OLhGTshlNGJi"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
@@ -5417,6 +5559,22 @@
     "orga_webseite": "https://die-libertaeren.de/"
   },
   {
+    "name": "Libertärer Stammtisch in Balingen / Württemberg",
+    "beginn": "2027-03-11",
+    "ende": "2027-03-11",
+    "uhrzeit": "19:30",
+    "kw": "KW10",
+    "wochentag": "Thursday",
+    "orga": "Unabhängig",
+    "plz": "72336",
+    "land": "DE",
+    "ort": "Balingen",
+    "kontakt": "Fritz Maulbetsch",
+    "e-mail": "lnb@maulbetsch.net",
+    "tournus": "Jeder 2. Donnerstag",
+    "group_link": "https://t.me/FreeFritz"
+  },
+  {
     "name": "Libertärer Stammtisch Grevenbroich",
     "beginn": "2027-03-12",
     "ende": "2027-03-12",
@@ -5448,6 +5606,24 @@
     "group_link": "https://t.me/+kDTzmac3wJYwMzIy"
   },
   {
+    "name": "Freiheitlicher Stammtisch Bergstraße",
+    "beginn": "2027-03-17",
+    "ende": "2027-03-17",
+    "uhrzeit": "19:00",
+    "kw": "KW11",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "64673",
+    "land": "DE",
+    "ort": "Bergstraße",
+    "telegram_group_id": "5205303336",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Dritter Mittwoch des Monats",
+    "group_link": "https://t.me/+qhX3l_Dn_VpkNmYy"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "beginn": "2027-03-18",
     "ende": "2027-03-18",
@@ -5461,6 +5637,23 @@
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
     "orga_webseite": "https://buendnis-libertaerer.de/"
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Reutlingen",
+    "beginn": "2027-03-18",
+    "ende": "2027-03-18",
+    "uhrzeit": "18:00",
+    "kw": "KW11",
+    "wochentag": "Thursday",
+    "orga": "Unabhängig",
+    "plz": "72760",
+    "land": "DE",
+    "ort": "Reutlingen",
+    "telegram_group_id": "4331808963",
+    "kontakt": "Markus Pöschl",
+    "e-mail": "markus.rt@proton.me",
+    "orga_webseite": "freiheitliche-stammtische.de",
+    "group_link": "https://t.me/+qsiIUvUG3tYxZWRi"
   },
   {
     "name": "Libertärer Stammtisch Berlin",
@@ -5478,6 +5671,24 @@
     "e-mail": "svenbrajer@web.de",
     "orga_webseite": "https://die-libertaeren.de/",
     "group_link": "https://t.me/+Xzxvc2UqKuJmNmRi"
+  },
+  {
+    "name": "Libertärer Stammtisch Kaiserslautern",
+    "beginn": "2027-03-19",
+    "ende": "2027-03-19",
+    "uhrzeit": "18:30",
+    "kw": "KW11",
+    "wochentag": "Friday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "67657",
+    "land": "DE",
+    "ort": "Kaiserslautern",
+    "telegram_group_id": "3893662081",
+    "kontakt": "Uwe Schmitt",
+    "e-mail": "uwe.schmitt@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 3. Samstag",
+    "group_link": "https://t.me/+za88OLhGTshlNGJi"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
@@ -5543,6 +5754,22 @@
     "orga_webseite": "https://die-libertaeren.de/"
   },
   {
+    "name": "Libertärer Stammtisch in Balingen / Württemberg",
+    "beginn": "2027-04-08",
+    "ende": "2027-04-08",
+    "uhrzeit": "19:30",
+    "kw": "KW14",
+    "wochentag": "Thursday",
+    "orga": "Unabhängig",
+    "plz": "72336",
+    "land": "DE",
+    "ort": "Balingen",
+    "kontakt": "Fritz Maulbetsch",
+    "e-mail": "lnb@maulbetsch.net",
+    "tournus": "Jeder 2. Donnerstag",
+    "group_link": "https://t.me/FreeFritz"
+  },
+  {
     "name": "Libertärer Stammtisch Grevenbroich",
     "beginn": "2027-04-09",
     "ende": "2027-04-09",
@@ -5588,6 +5815,23 @@
     "orga_webseite": "https://buendnis-libertaerer.de/"
   },
   {
+    "name": "Freiheitlicher Stammtisch Reutlingen",
+    "beginn": "2027-04-15",
+    "ende": "2027-04-15",
+    "uhrzeit": "18:00",
+    "kw": "KW15",
+    "wochentag": "Thursday",
+    "orga": "Unabhängig",
+    "plz": "72760",
+    "land": "DE",
+    "ort": "Reutlingen",
+    "telegram_group_id": "4331808963",
+    "kontakt": "Markus Pöschl",
+    "e-mail": "markus.rt@proton.me",
+    "orga_webseite": "freiheitliche-stammtische.de",
+    "group_link": "https://t.me/+qsiIUvUG3tYxZWRi"
+  },
+  {
     "name": "Libertärer Stammtisch Berlin",
     "beginn": "2027-04-16",
     "ende": "2027-04-16",
@@ -5605,6 +5849,24 @@
     "group_link": "https://t.me/+Xzxvc2UqKuJmNmRi"
   },
   {
+    "name": "Libertärer Stammtisch Kaiserslautern",
+    "beginn": "2027-04-16",
+    "ende": "2027-04-16",
+    "uhrzeit": "18:30",
+    "kw": "KW15",
+    "wochentag": "Friday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "67657",
+    "land": "DE",
+    "ort": "Kaiserslautern",
+    "telegram_group_id": "3893662081",
+    "kontakt": "Uwe Schmitt",
+    "e-mail": "uwe.schmitt@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 3. Samstag",
+    "group_link": "https://t.me/+za88OLhGTshlNGJi"
+  },
+  {
     "name": "Libertärer Stammtisch Mittelhessen",
     "beginn": "2027-04-21",
     "ende": "2027-04-21",
@@ -5619,6 +5881,24 @@
     "kontakt": "Stefan Bosch",
     "tournus": "Jeder 3. Mittwoch",
     "group_link": "https://t.me/+kDTzmac3wJYwMzIy"
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Bergstraße",
+    "beginn": "2027-04-21",
+    "ende": "2027-04-21",
+    "uhrzeit": "19:00",
+    "kw": "KW16",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "64673",
+    "land": "DE",
+    "ort": "Bergstraße",
+    "telegram_group_id": "5205303336",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Dritter Mittwoch des Monats",
+    "group_link": "https://t.me/+qhX3l_Dn_VpkNmYy"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
@@ -5699,6 +5979,22 @@
     "orga_webseite": "https://die-libertaeren.de/"
   },
   {
+    "name": "Libertärer Stammtisch in Balingen / Württemberg",
+    "beginn": "2027-05-13",
+    "ende": "2027-05-13",
+    "uhrzeit": "19:30",
+    "kw": "KW19",
+    "wochentag": "Thursday",
+    "orga": "Unabhängig",
+    "plz": "72336",
+    "land": "DE",
+    "ort": "Balingen",
+    "kontakt": "Fritz Maulbetsch",
+    "e-mail": "lnb@maulbetsch.net",
+    "tournus": "Jeder 2. Donnerstag",
+    "group_link": "https://t.me/FreeFritz"
+  },
+  {
     "name": "Libertärer Stammtisch Grevenbroich",
     "beginn": "2027-05-14",
     "ende": "2027-05-14",
@@ -5730,6 +6026,24 @@
     "group_link": "https://t.me/+kDTzmac3wJYwMzIy"
   },
   {
+    "name": "Freiheitlicher Stammtisch Bergstraße",
+    "beginn": "2027-05-19",
+    "ende": "2027-05-19",
+    "uhrzeit": "19:00",
+    "kw": "KW20",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "64673",
+    "land": "DE",
+    "ort": "Bergstraße",
+    "telegram_group_id": "5205303336",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Dritter Mittwoch des Monats",
+    "group_link": "https://t.me/+qhX3l_Dn_VpkNmYy"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "beginn": "2027-05-20",
     "ende": "2027-05-20",
@@ -5743,6 +6057,23 @@
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
     "orga_webseite": "https://buendnis-libertaerer.de/"
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Reutlingen",
+    "beginn": "2027-05-20",
+    "ende": "2027-05-20",
+    "uhrzeit": "18:00",
+    "kw": "KW20",
+    "wochentag": "Thursday",
+    "orga": "Unabhängig",
+    "plz": "72760",
+    "land": "DE",
+    "ort": "Reutlingen",
+    "telegram_group_id": "4331808963",
+    "kontakt": "Markus Pöschl",
+    "e-mail": "markus.rt@proton.me",
+    "orga_webseite": "freiheitliche-stammtische.de",
+    "group_link": "https://t.me/+qsiIUvUG3tYxZWRi"
   },
   {
     "name": "Libertärer Stammtisch Berlin",
@@ -5760,6 +6091,24 @@
     "e-mail": "svenbrajer@web.de",
     "orga_webseite": "https://die-libertaeren.de/",
     "group_link": "https://t.me/+Xzxvc2UqKuJmNmRi"
+  },
+  {
+    "name": "Libertärer Stammtisch Kaiserslautern",
+    "beginn": "2027-05-21",
+    "ende": "2027-05-21",
+    "uhrzeit": "18:30",
+    "kw": "KW20",
+    "wochentag": "Friday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "67657",
+    "land": "DE",
+    "ort": "Kaiserslautern",
+    "telegram_group_id": "3893662081",
+    "kontakt": "Uwe Schmitt",
+    "e-mail": "uwe.schmitt@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 3. Samstag",
+    "group_link": "https://t.me/+za88OLhGTshlNGJi"
   },
   {
     "name": "Libertärer Stammtisch Hamburg",
@@ -5840,6 +6189,22 @@
     "orga_webseite": "https://die-libertaeren.de/"
   },
   {
+    "name": "Libertärer Stammtisch in Balingen / Württemberg",
+    "beginn": "2027-06-10",
+    "ende": "2027-06-10",
+    "uhrzeit": "19:30",
+    "kw": "KW23",
+    "wochentag": "Thursday",
+    "orga": "Unabhängig",
+    "plz": "72336",
+    "land": "DE",
+    "ort": "Balingen",
+    "kontakt": "Fritz Maulbetsch",
+    "e-mail": "lnb@maulbetsch.net",
+    "tournus": "Jeder 2. Donnerstag",
+    "group_link": "https://t.me/FreeFritz"
+  },
+  {
     "name": "Libertärer Stammtisch Grevenbroich",
     "beginn": "2027-06-11",
     "ende": "2027-06-11",
@@ -5871,6 +6236,24 @@
     "group_link": "https://t.me/+kDTzmac3wJYwMzIy"
   },
   {
+    "name": "Freiheitlicher Stammtisch Bergstraße",
+    "beginn": "2027-06-16",
+    "ende": "2027-06-16",
+    "uhrzeit": "19:00",
+    "kw": "KW24",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "64673",
+    "land": "DE",
+    "ort": "Bergstraße",
+    "telegram_group_id": "5205303336",
+    "kontakt": "Lukas Schroth",
+    "e-mail": "lukas.schroth@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Dritter Mittwoch des Monats",
+    "group_link": "https://t.me/+qhX3l_Dn_VpkNmYy"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "beginn": "2027-06-17",
     "ende": "2027-06-17",
@@ -5884,6 +6267,23 @@
     "kontakt": "Alexander Expander",
     "e-mail": "info@buendnis-libertaerer.de",
     "orga_webseite": "https://buendnis-libertaerer.de/"
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Reutlingen",
+    "beginn": "2027-06-17",
+    "ende": "2027-06-17",
+    "uhrzeit": "18:00",
+    "kw": "KW24",
+    "wochentag": "Thursday",
+    "orga": "Unabhängig",
+    "plz": "72760",
+    "land": "DE",
+    "ort": "Reutlingen",
+    "telegram_group_id": "4331808963",
+    "kontakt": "Markus Pöschl",
+    "e-mail": "markus.rt@proton.me",
+    "orga_webseite": "freiheitliche-stammtische.de",
+    "group_link": "https://t.me/+qsiIUvUG3tYxZWRi"
   },
   {
     "name": "Libertärer Stammtisch Berlin",
@@ -5901,6 +6301,24 @@
     "e-mail": "svenbrajer@web.de",
     "orga_webseite": "https://die-libertaeren.de/",
     "group_link": "https://t.me/+Xzxvc2UqKuJmNmRi"
+  },
+  {
+    "name": "Libertärer Stammtisch Kaiserslautern",
+    "beginn": "2027-06-18",
+    "ende": "2027-06-18",
+    "uhrzeit": "18:30",
+    "kw": "KW24",
+    "wochentag": "Friday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "67657",
+    "land": "DE",
+    "ort": "Kaiserslautern",
+    "telegram_group_id": "3893662081",
+    "kontakt": "Uwe Schmitt",
+    "e-mail": "uwe.schmitt@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 3. Samstag",
+    "group_link": "https://t.me/+za88OLhGTshlNGJi"
   },
   {
     "name": "Libertärer Stammtisch Magdeburg",
