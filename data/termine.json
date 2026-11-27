@@ -4699,7 +4699,7 @@
     "kontakt": "Karla Wagner",
     "e-mail": "hayek.club.weimar@mail.de",
     "orga_webseite": "https://hayek.de/hayek-clubs/",
-    "infotext": "Ralf Ruthardt stellt sein Buch: „Im Windschatten der Narrative“"
+    "infotext": "Weihnachtsfeier"
   },
   {
     "name": "Hayek Club Koblenz",
@@ -5411,6 +5411,22 @@
     "orga_webseite": "https://die-libertaeren.de/"
   },
   {
+    "name": "Team Freiheit Clubabend München",
+    "beginn": "2027-02-09",
+    "ende": "2027-02-09",
+    "uhrzeit": "18:30",
+    "kw": "KW06",
+    "wochentag": "Tuesday",
+    "orga": "Team Freiheit",
+    "plz": "80469",
+    "land": "DE",
+    "ort": "München",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events",
+    "tournus": "Jeder 2. Dienstag im Monat"
+  },
+  {
     "name": "Libertärer Stammtisch Magdeburg",
     "beginn": "2027-02-11",
     "ende": "2027-02-11",
@@ -5668,6 +5684,22 @@
     "kontakt": "Stefan Bückner",
     "e-mail": "stephan.bueckner@die-libertaeren.de",
     "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Team Freiheit Clubabend München",
+    "beginn": "2027-03-09",
+    "ende": "2027-03-09",
+    "uhrzeit": "18:30",
+    "kw": "KW10",
+    "wochentag": "Tuesday",
+    "orga": "Team Freiheit",
+    "plz": "80469",
+    "land": "DE",
+    "ort": "München",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events",
+    "tournus": "Jeder 2. Dienstag im Monat"
   },
   {
     "name": "Libertärer Stammtisch Magdeburg",
@@ -5975,6 +6007,22 @@
     "orga_webseite": "https://die-libertaeren.de/"
   },
   {
+    "name": "Team Freiheit Clubabend München",
+    "beginn": "2027-04-13",
+    "ende": "2027-04-13",
+    "uhrzeit": "18:30",
+    "kw": "KW15",
+    "wochentag": "Tuesday",
+    "orga": "Team Freiheit",
+    "plz": "80469",
+    "land": "DE",
+    "ort": "München",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events",
+    "tournus": "Jeder 2. Dienstag im Monat"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "beginn": "2027-04-15",
     "ende": "2027-04-15",
@@ -6186,6 +6234,22 @@
     "kontakt": "Stefan Bückner",
     "e-mail": "stephan.bueckner@die-libertaeren.de",
     "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Team Freiheit Clubabend München",
+    "beginn": "2027-05-11",
+    "ende": "2027-05-11",
+    "uhrzeit": "18:30",
+    "kw": "KW19",
+    "wochentag": "Tuesday",
+    "orga": "Team Freiheit",
+    "plz": "80469",
+    "land": "DE",
+    "ort": "München",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events",
+    "tournus": "Jeder 2. Dienstag im Monat"
   },
   {
     "name": "Libertärer Stammtisch Magdeburg",
@@ -6447,6 +6511,22 @@
     "orga_webseite": "https://die-libertaeren.de/"
   },
   {
+    "name": "Team Freiheit Clubabend München",
+    "beginn": "2027-06-08",
+    "ende": "2027-06-08",
+    "uhrzeit": "18:30",
+    "kw": "KW23",
+    "wochentag": "Tuesday",
+    "orga": "Team Freiheit",
+    "plz": "80469",
+    "land": "DE",
+    "ort": "München",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events",
+    "tournus": "Jeder 2. Dienstag im Monat"
+  },
+  {
     "name": "Libertärer Stammtisch Magdeburg",
     "beginn": "2027-06-10",
     "ende": "2027-06-10",
@@ -6639,5 +6719,21 @@
     "kontakt": "Dr. Mathias Hummel",
     "e-mail": "events@die-libertaeren.de",
     "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Team Freiheit Clubabend München",
+    "beginn": "2027-07-13",
+    "ende": "2027-07-13",
+    "uhrzeit": "18:30",
+    "kw": "KW28",
+    "wochentag": "Tuesday",
+    "orga": "Team Freiheit",
+    "plz": "80469",
+    "land": "DE",
+    "ort": "München",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
+    "orga_webseite": "https://www.team-freiheit.de/events",
+    "tournus": "Jeder 2. Dienstag im Monat"
   }
 ]

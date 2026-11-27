@@ -6840,6 +6840,26 @@
     "link_qr": null
   },
   {
+    "name": "Team Freiheit Clubabend München",
+    "plz": "80469",
+    "state": "DE-BY",
+    "city": "München",
+    "city_dist": 1.1,
+    "coords": [
+      48.1278437,
+      11.5712275
+    ],
+    "date": "2027-02-09",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/events",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Magdeburg",
     "plz": "39104",
     "state": "DE-ST",
@@ -7156,6 +7176,26 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Stefan Bückner",
     "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Team Freiheit Clubabend München",
+    "plz": "80469",
+    "state": "DE-BY",
+    "city": "München",
+    "city_dist": 1.1,
+    "coords": [
+      48.1278437,
+      11.5712275
+    ],
+    "date": "2027-03-09",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/events",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
     "link": null,
     "link_qr": null
   },
@@ -7540,6 +7580,26 @@
     "link_qr": null
   },
   {
+    "name": "Team Freiheit Clubabend München",
+    "plz": "80469",
+    "state": "DE-BY",
+    "city": "München",
+    "city_dist": 1.1,
+    "coords": [
+      48.1278437,
+      11.5712275
+    ],
+    "date": "2027-04-13",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/events",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
     "state": "DE-NW",
@@ -7796,6 +7856,26 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Stefan Bückner",
     "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Team Freiheit Clubabend München",
+    "plz": "80469",
+    "state": "DE-BY",
+    "city": "München",
+    "city_dist": 1.1,
+    "coords": [
+      48.1278437,
+      11.5712275
+    ],
+    "date": "2027-05-11",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/events",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
     "link": null,
     "link_qr": null
   },
@@ -8120,6 +8200,26 @@
     "link_qr": null
   },
   {
+    "name": "Team Freiheit Clubabend München",
+    "plz": "80469",
+    "state": "DE-BY",
+    "city": "München",
+    "city_dist": 1.1,
+    "coords": [
+      48.1278437,
+      11.5712275
+    ],
+    "date": "2027-06-08",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/events",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Libertärer Stammtisch Magdeburg",
     "plz": "39104",
     "state": "DE-ST",
@@ -8356,6 +8456,26 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Dr. Mathias Hummel",
     "e-mail": "events@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Team Freiheit Clubabend München",
+    "plz": "80469",
+    "state": "DE-BY",
+    "city": "München",
+    "city_dist": 1.1,
+    "coords": [
+      48.1278437,
+      11.5712275
+    ],
+    "date": "2027-07-13",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "Team Freiheit",
+    "orga_www": "https://www.team-freiheit.de/events",
+    "kontakt": "Team Freiheit",
+    "e-mail": "muenchen@team-freiheit.de",
     "link": null,
     "link_qr": null
   }
