@@ -1,9 +1,5 @@
 [
   {
-    "kw": "KW52",
-    "wochentag": "Saturday"
-  },
-  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "beginn": "2025-11-04",
     "ende": "2025-11-04",
@@ -4690,20 +4686,20 @@
     "orga_webseite": "https://die-libertaeren.de/"
   },
   {
-    "name": "Libertärer Stammtisch Bad Reichenhall",
-    "beginn": "2026-12-04",
-    "ende": "2026-12-04",
-    "uhrzeit": "19:00",
+    "name": "Hayek Club Weimar",
+    "beginn": "2026-12-05",
+    "ende": "2026-12-05",
+    "uhrzeit": "15:00",
     "kw": "KW49",
-    "wochentag": "Friday",
-    "orga": "Unabhängig",
-    "plz": "83435",
+    "wochentag": "Saturday",
+    "orga": "Hayek Club",
+    "plz": "99425",
     "land": "DE",
-    "ort": "Bad Reichenhall",
-    "telegram_group_id": "5127893402",
-    "kontakt": "Theo",
-    "e-mail": "lukas.schroth@die-libertaeren.de",
-    "group_link": "https://t.me/+wLa_UwnOBV5mZjBi"
+    "ort": "Weimar",
+    "kontakt": "Karla Wagner",
+    "e-mail": "hayek.club.weimar@mail.de",
+    "orga_webseite": "https://hayek.de/hayek-clubs/",
+    "infotext": "Ralf Ruthardt stellt sein Buch: „Im Windschatten der Narrative“"
   },
   {
     "name": "Hayek Club Koblenz",
@@ -5014,6 +5010,23 @@
     "infotext": "Weihnachtliches Vorglühen"
   },
   {
+    "name": "Freiheitlicher Stammtisch Karlsruhe",
+    "beginn": "2027-01-03",
+    "ende": "2027-01-03",
+    "uhrzeit": "19:00",
+    "kw": "KW53",
+    "wochentag": "Sunday",
+    "orga": "Unabhängig",
+    "plz": "76133",
+    "land": "DE",
+    "ort": "Karlsruhe",
+    "telegram_group_id": "3971253339",
+    "kontakt": "Marc Götz",
+    "e-mail": "freiheitlicher-stammtisch-karlsruhe@tuta.com",
+    "orga_webseite": "freiheitliche-stammtische.de",
+    "group_link": "https://t.me/+SLZCqYAhW443NmEy"
+  },
+  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "beginn": "2027-01-04",
     "ende": "2027-01-04",
@@ -5060,6 +5073,21 @@
     "ort": "Haan",
     "kontakt": "Claudia Heipertz",
     "e-mail": "mailto@claudiaheipertz.de"
+  },
+  {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "beginn": "2027-01-07",
+    "ende": "2027-01-07",
+    "uhrzeit": "19:30",
+    "kw": "KW01",
+    "wochentag": "Thursday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "73033",
+    "land": "DE",
+    "ort": "Göppingen",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/"
   },
   {
     "name": "Libertärer Stammtisch Grevenbroich",
@@ -5225,6 +5253,23 @@
     "group_link": "https://t.me/+qhX3l_Dn_VpkNmYy"
   },
   {
+    "name": "Libertärer Stammtisch Ansbach",
+    "beginn": "2027-01-20",
+    "ende": "2027-01-20",
+    "uhrzeit": "19:00",
+    "kw": "KW03",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "91522",
+    "land": "DE",
+    "ort": "Ansbach",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 2. Samstag",
+    "group_link": "https://t.me/armenora"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "beginn": "2027-01-21",
     "ende": "2027-01-21",
@@ -5317,6 +5362,38 @@
     "ort": "Haan",
     "kontakt": "Claudia Heipertz",
     "e-mail": "mailto@claudiaheipertz.de"
+  },
+  {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "beginn": "2027-02-04",
+    "ende": "2027-02-04",
+    "uhrzeit": "19:30",
+    "kw": "KW05",
+    "wochentag": "Thursday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "73033",
+    "land": "DE",
+    "ort": "Göppingen",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Karlsruhe",
+    "beginn": "2027-02-07",
+    "ende": "2027-02-07",
+    "uhrzeit": "19:00",
+    "kw": "KW05",
+    "wochentag": "Sunday",
+    "orga": "Unabhängig",
+    "plz": "76133",
+    "land": "DE",
+    "ort": "Karlsruhe",
+    "telegram_group_id": "3971253339",
+    "kontakt": "Marc Götz",
+    "e-mail": "freiheitlicher-stammtisch-karlsruhe@tuta.com",
+    "orga_webseite": "freiheitliche-stammtische.de",
+    "group_link": "https://t.me/+SLZCqYAhW443NmEy"
   },
   {
     "name": "Libertärer Stammtisch Bernburg (Saale)",
@@ -5412,6 +5489,23 @@
     "orga_webseite": "https://die-libertaeren.de/",
     "tournus": "Dritter Mittwoch des Monats",
     "group_link": "https://t.me/+qhX3l_Dn_VpkNmYy"
+  },
+  {
+    "name": "Libertärer Stammtisch Ansbach",
+    "beginn": "2027-02-17",
+    "ende": "2027-02-17",
+    "uhrzeit": "19:00",
+    "kw": "KW07",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "91522",
+    "land": "DE",
+    "ort": "Ansbach",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 2. Samstag",
+    "group_link": "https://t.me/armenora"
   },
   {
     "name": "Libertäres Treffen Dortmund",
@@ -5529,6 +5623,38 @@
     "e-mail": "mailto@claudiaheipertz.de"
   },
   {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "beginn": "2027-03-04",
+    "ende": "2027-03-04",
+    "uhrzeit": "19:30",
+    "kw": "KW09",
+    "wochentag": "Thursday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "73033",
+    "land": "DE",
+    "ort": "Göppingen",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Karlsruhe",
+    "beginn": "2027-03-07",
+    "ende": "2027-03-07",
+    "uhrzeit": "19:00",
+    "kw": "KW09",
+    "wochentag": "Sunday",
+    "orga": "Unabhängig",
+    "plz": "76133",
+    "land": "DE",
+    "ort": "Karlsruhe",
+    "telegram_group_id": "3971253339",
+    "kontakt": "Marc Götz",
+    "e-mail": "freiheitlicher-stammtisch-karlsruhe@tuta.com",
+    "orga_webseite": "freiheitliche-stammtische.de",
+    "group_link": "https://t.me/+SLZCqYAhW443NmEy"
+  },
+  {
     "name": "Libertärer Stammtisch Bernburg (Saale)",
     "beginn": "2027-03-09",
     "ende": "2027-03-09",
@@ -5624,6 +5750,23 @@
     "group_link": "https://t.me/+qhX3l_Dn_VpkNmYy"
   },
   {
+    "name": "Libertärer Stammtisch Ansbach",
+    "beginn": "2027-03-17",
+    "ende": "2027-03-17",
+    "uhrzeit": "19:00",
+    "kw": "KW11",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "91522",
+    "land": "DE",
+    "ort": "Ansbach",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 2. Samstag",
+    "group_link": "https://t.me/armenora"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "beginn": "2027-03-18",
     "ende": "2027-03-18",
@@ -5689,6 +5832,38 @@
     "orga_webseite": "https://die-libertaeren.de/",
     "tournus": "Jeder 3. Samstag",
     "group_link": "https://t.me/+za88OLhGTshlNGJi"
+  },
+  {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "beginn": "2027-04-01",
+    "ende": "2027-04-01",
+    "uhrzeit": "19:30",
+    "kw": "KW13",
+    "wochentag": "Thursday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "73033",
+    "land": "DE",
+    "ort": "Göppingen",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Karlsruhe",
+    "beginn": "2027-04-04",
+    "ende": "2027-04-04",
+    "uhrzeit": "19:00",
+    "kw": "KW13",
+    "wochentag": "Sunday",
+    "orga": "Unabhängig",
+    "plz": "76133",
+    "land": "DE",
+    "ort": "Karlsruhe",
+    "telegram_group_id": "3971253339",
+    "kontakt": "Marc Götz",
+    "e-mail": "freiheitlicher-stammtisch-karlsruhe@tuta.com",
+    "orga_webseite": "freiheitliche-stammtische.de",
+    "group_link": "https://t.me/+SLZCqYAhW443NmEy"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
@@ -5901,6 +6076,40 @@
     "group_link": "https://t.me/+qhX3l_Dn_VpkNmYy"
   },
   {
+    "name": "Libertärer Stammtisch Ansbach",
+    "beginn": "2027-04-21",
+    "ende": "2027-04-21",
+    "uhrzeit": "19:00",
+    "kw": "KW16",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "91522",
+    "land": "DE",
+    "ort": "Ansbach",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 2. Samstag",
+    "group_link": "https://t.me/armenora"
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Karlsruhe",
+    "beginn": "2027-05-02",
+    "ende": "2027-05-02",
+    "uhrzeit": "19:00",
+    "kw": "KW17",
+    "wochentag": "Sunday",
+    "orga": "Unabhängig",
+    "plz": "76133",
+    "land": "DE",
+    "ort": "Karlsruhe",
+    "telegram_group_id": "3971253339",
+    "kontakt": "Marc Götz",
+    "e-mail": "freiheitlicher-stammtisch-karlsruhe@tuta.com",
+    "orga_webseite": "freiheitliche-stammtische.de",
+    "group_link": "https://t.me/+SLZCqYAhW443NmEy"
+  },
+  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "beginn": "2027-05-03",
     "ende": "2027-05-03",
@@ -5947,6 +6156,21 @@
     "ort": "Haan",
     "kontakt": "Claudia Heipertz",
     "e-mail": "mailto@claudiaheipertz.de"
+  },
+  {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "beginn": "2027-05-06",
+    "ende": "2027-05-06",
+    "uhrzeit": "19:30",
+    "kw": "KW18",
+    "wochentag": "Thursday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "73033",
+    "land": "DE",
+    "ort": "Göppingen",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/"
   },
   {
     "name": "Libertärer Stammtisch Bernburg (Saale)",
@@ -6044,6 +6268,23 @@
     "group_link": "https://t.me/+qhX3l_Dn_VpkNmYy"
   },
   {
+    "name": "Libertärer Stammtisch Ansbach",
+    "beginn": "2027-05-19",
+    "ende": "2027-05-19",
+    "uhrzeit": "19:00",
+    "kw": "KW20",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "91522",
+    "land": "DE",
+    "ort": "Ansbach",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 2. Samstag",
+    "group_link": "https://t.me/armenora"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "beginn": "2027-05-20",
     "ende": "2027-05-20",
@@ -6139,6 +6380,38 @@
     "ort": "Haan",
     "kontakt": "Claudia Heipertz",
     "e-mail": "mailto@claudiaheipertz.de"
+  },
+  {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "beginn": "2027-06-03",
+    "ende": "2027-06-03",
+    "uhrzeit": "19:30",
+    "kw": "KW22",
+    "wochentag": "Thursday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "73033",
+    "land": "DE",
+    "ort": "Göppingen",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/"
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Karlsruhe",
+    "beginn": "2027-06-06",
+    "ende": "2027-06-06",
+    "uhrzeit": "19:00",
+    "kw": "KW22",
+    "wochentag": "Sunday",
+    "orga": "Unabhängig",
+    "plz": "76133",
+    "land": "DE",
+    "ort": "Karlsruhe",
+    "telegram_group_id": "3971253339",
+    "kontakt": "Marc Götz",
+    "e-mail": "freiheitlicher-stammtisch-karlsruhe@tuta.com",
+    "orga_webseite": "freiheitliche-stammtische.de",
+    "group_link": "https://t.me/+SLZCqYAhW443NmEy"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
@@ -6254,6 +6527,23 @@
     "group_link": "https://t.me/+qhX3l_Dn_VpkNmYy"
   },
   {
+    "name": "Libertärer Stammtisch Ansbach",
+    "beginn": "2027-06-16",
+    "ende": "2027-06-16",
+    "uhrzeit": "19:00",
+    "kw": "KW24",
+    "wochentag": "Wednesday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "91522",
+    "land": "DE",
+    "ort": "Ansbach",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
+    "orga_webseite": "https://die-libertaeren.de/",
+    "tournus": "Jeder 2. Samstag",
+    "group_link": "https://t.me/armenora"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "beginn": "2027-06-17",
     "ende": "2027-06-17",
@@ -6319,6 +6609,21 @@
     "orga_webseite": "https://die-libertaeren.de/",
     "tournus": "Jeder 3. Samstag",
     "group_link": "https://t.me/+za88OLhGTshlNGJi"
+  },
+  {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "beginn": "2027-07-01",
+    "ende": "2027-07-01",
+    "uhrzeit": "19:30",
+    "kw": "KW26",
+    "wochentag": "Thursday",
+    "orga": "DIE LIBERTÄREN",
+    "plz": "73033",
+    "land": "DE",
+    "ort": "Göppingen",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
+    "orga_webseite": "https://die-libertaeren.de/"
   },
   {
     "name": "Libertärer Stammtisch Magdeburg",

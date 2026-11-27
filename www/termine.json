@@ -5940,24 +5940,24 @@
     "link_qr": null
   },
   {
-    "name": "Libertärer Stammtisch Bad Reichenhall",
-    "plz": "83435",
-    "state": "DE-BY",
-    "city": "Bad Reichenhall",
-    "city_dist": 1.7,
+    "name": "Hayek Club Weimar",
+    "plz": "99425",
+    "state": "DE-TH",
+    "city": "Weimar",
+    "city_dist": 1.9,
     "coords": [
-      47.7266717,
-      12.8540813
+      50.9672359,
+      11.348212
     ],
-    "date": "2026-12-04",
-    "dow": "Fr.",
-    "time": "19:00",
-    "orga": "Unabhängig",
-    "orga_www": null,
-    "kontakt": "Theo",
-    "e-mail": "lukas.schroth@die-libertaeren.de",
-    "link": "https://t.me/+wLa_UwnOBV5mZjBi",
-    "link_qr": "img/qr_2fd308f9eb3802ebc7554d8d5d2423ab2a2dfccc_v2.png"
+    "date": "2026-12-05",
+    "dow": "Sa.",
+    "time": "15:00",
+    "orga": "Hayek Club",
+    "orga_www": "https://hayek.de/hayek-clubs/",
+    "kontakt": "Karla Wagner",
+    "e-mail": "hayek.club.weimar@mail.de",
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Hayek Club Koblenz",
@@ -6340,6 +6340,26 @@
     "link_qr": null
   },
   {
+    "name": "Freiheitlicher Stammtisch Karlsruhe",
+    "plz": "76133",
+    "state": "DE-BW",
+    "city": "Karlsruhe",
+    "city_dist": 1.2,
+    "coords": [
+      49.0121068,
+      8.3896193
+    ],
+    "date": "2027-01-03",
+    "dow": "So.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": "freiheitliche-stammtische.de",
+    "kontakt": "Marc Götz",
+    "e-mail": "freiheitlicher-stammtisch-karlsruhe@tuta.com",
+    "link": "https://t.me/+SLZCqYAhW443NmEy",
+    "link_qr": "img/qr_604fc8ec6d0be3ed439100b8e34ab37bc14c652a_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
     "state": "DE-HE",
@@ -6396,6 +6416,26 @@
     "orga_www": null,
     "kontakt": "Claudia Heipertz",
     "e-mail": "mailto@claudiaheipertz.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "plz": "73033",
+    "state": "DE-BW",
+    "city": "Göppingen",
+    "city_dist": 0.6,
+    "coords": [
+      48.7088631,
+      9.6538145
+    ],
+    "date": "2027-01-07",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
     "link": null,
     "link_qr": null
   },
@@ -6600,6 +6640,26 @@
     "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
   },
   {
+    "name": "Libertärer Stammtisch Ansbach",
+    "plz": "91522",
+    "state": "DE-BY",
+    "city": "Ansbach",
+    "city_dist": 9.1,
+    "coords": [
+      49.2888745,
+      10.5597693
+    ],
+    "date": "2027-01-20",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
+    "link": "https://t.me/armenora",
+    "link_qr": "img/qr_a32ef6d0e5a73980ad0372ffb3828feff231d90e_v2.png"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
     "state": "DE-NW",
@@ -6720,6 +6780,46 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "plz": "73033",
+    "state": "DE-BW",
+    "city": "Göppingen",
+    "city_dist": 0.6,
+    "coords": [
+      48.7088631,
+      9.6538145
+    ],
+    "date": "2027-02-04",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Karlsruhe",
+    "plz": "76133",
+    "state": "DE-BW",
+    "city": "Karlsruhe",
+    "city_dist": 1.2,
+    "coords": [
+      49.0121068,
+      8.3896193
+    ],
+    "date": "2027-02-07",
+    "dow": "So.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": "freiheitliche-stammtische.de",
+    "kontakt": "Marc Götz",
+    "e-mail": "freiheitlicher-stammtisch-karlsruhe@tuta.com",
+    "link": "https://t.me/+SLZCqYAhW443NmEy",
+    "link_qr": "img/qr_604fc8ec6d0be3ed439100b8e34ab37bc14c652a_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Bernburg (Saale)",
     "plz": "06406",
     "state": "DE-ST",
@@ -6838,6 +6938,26 @@
     "e-mail": "lukas.schroth@die-libertaeren.de",
     "link": "https://t.me/+qhX3l_Dn_VpkNmYy",
     "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Ansbach",
+    "plz": "91522",
+    "state": "DE-BY",
+    "city": "Ansbach",
+    "city_dist": 9.1,
+    "coords": [
+      49.2888745,
+      10.5597693
+    ],
+    "date": "2027-02-17",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
+    "link": "https://t.me/armenora",
+    "link_qr": "img/qr_a32ef6d0e5a73980ad0372ffb3828feff231d90e_v2.png"
   },
   {
     "name": "Libertäres Treffen Dortmund",
@@ -6980,6 +7100,46 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "plz": "73033",
+    "state": "DE-BW",
+    "city": "Göppingen",
+    "city_dist": 0.6,
+    "coords": [
+      48.7088631,
+      9.6538145
+    ],
+    "date": "2027-03-04",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Karlsruhe",
+    "plz": "76133",
+    "state": "DE-BW",
+    "city": "Karlsruhe",
+    "city_dist": 1.2,
+    "coords": [
+      49.0121068,
+      8.3896193
+    ],
+    "date": "2027-03-07",
+    "dow": "So.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": "freiheitliche-stammtische.de",
+    "kontakt": "Marc Götz",
+    "e-mail": "freiheitlicher-stammtisch-karlsruhe@tuta.com",
+    "link": "https://t.me/+SLZCqYAhW443NmEy",
+    "link_qr": "img/qr_604fc8ec6d0be3ed439100b8e34ab37bc14c652a_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Bernburg (Saale)",
     "plz": "06406",
     "state": "DE-ST",
@@ -7100,6 +7260,26 @@
     "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
   },
   {
+    "name": "Libertärer Stammtisch Ansbach",
+    "plz": "91522",
+    "state": "DE-BY",
+    "city": "Ansbach",
+    "city_dist": 9.1,
+    "coords": [
+      49.2888745,
+      10.5597693
+    ],
+    "date": "2027-03-17",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
+    "link": "https://t.me/armenora",
+    "link_qr": "img/qr_a32ef6d0e5a73980ad0372ffb3828feff231d90e_v2.png"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
     "state": "DE-NW",
@@ -7178,6 +7358,46 @@
     "e-mail": "uwe.schmitt@die-libertaeren.de",
     "link": "https://t.me/+za88OLhGTshlNGJi",
     "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "plz": "73033",
+    "state": "DE-BW",
+    "city": "Göppingen",
+    "city_dist": 0.6,
+    "coords": [
+      48.7088631,
+      9.6538145
+    ],
+    "date": "2027-04-01",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Karlsruhe",
+    "plz": "76133",
+    "state": "DE-BW",
+    "city": "Karlsruhe",
+    "city_dist": 1.2,
+    "coords": [
+      49.0121068,
+      8.3896193
+    ],
+    "date": "2027-04-04",
+    "dow": "So.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": "freiheitliche-stammtische.de",
+    "kontakt": "Marc Götz",
+    "e-mail": "freiheitlicher-stammtisch-karlsruhe@tuta.com",
+    "link": "https://t.me/+SLZCqYAhW443NmEy",
+    "link_qr": "img/qr_604fc8ec6d0be3ed439100b8e34ab37bc14c652a_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
@@ -7440,6 +7660,46 @@
     "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
   },
   {
+    "name": "Libertärer Stammtisch Ansbach",
+    "plz": "91522",
+    "state": "DE-BY",
+    "city": "Ansbach",
+    "city_dist": 9.1,
+    "coords": [
+      49.2888745,
+      10.5597693
+    ],
+    "date": "2027-04-21",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
+    "link": "https://t.me/armenora",
+    "link_qr": "img/qr_a32ef6d0e5a73980ad0372ffb3828feff231d90e_v2.png"
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Karlsruhe",
+    "plz": "76133",
+    "state": "DE-BW",
+    "city": "Karlsruhe",
+    "city_dist": 1.2,
+    "coords": [
+      49.0121068,
+      8.3896193
+    ],
+    "date": "2027-05-02",
+    "dow": "So.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": "freiheitliche-stammtische.de",
+    "kontakt": "Marc Götz",
+    "e-mail": "freiheitlicher-stammtisch-karlsruhe@tuta.com",
+    "link": "https://t.me/+SLZCqYAhW443NmEy",
+    "link_qr": "img/qr_604fc8ec6d0be3ed439100b8e34ab37bc14c652a_v2.png"
+  },
+  {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
     "plz": "60594",
     "state": "DE-HE",
@@ -7496,6 +7756,26 @@
     "orga_www": null,
     "kontakt": "Claudia Heipertz",
     "e-mail": "mailto@claudiaheipertz.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "plz": "73033",
+    "state": "DE-BW",
+    "city": "Göppingen",
+    "city_dist": 0.6,
+    "coords": [
+      48.7088631,
+      9.6538145
+    ],
+    "date": "2027-05-06",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
     "link": null,
     "link_qr": null
   },
@@ -7620,6 +7900,26 @@
     "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
   },
   {
+    "name": "Libertärer Stammtisch Ansbach",
+    "plz": "91522",
+    "state": "DE-BY",
+    "city": "Ansbach",
+    "city_dist": 9.1,
+    "coords": [
+      49.2888745,
+      10.5597693
+    ],
+    "date": "2027-05-19",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
+    "link": "https://t.me/armenora",
+    "link_qr": "img/qr_a32ef6d0e5a73980ad0372ffb3828feff231d90e_v2.png"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
     "state": "DE-NW",
@@ -7738,6 +8038,46 @@
     "e-mail": "mailto@claudiaheipertz.de",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "plz": "73033",
+    "state": "DE-BW",
+    "city": "Göppingen",
+    "city_dist": 0.6,
+    "coords": [
+      48.7088631,
+      9.6538145
+    ],
+    "date": "2027-06-03",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Freiheitlicher Stammtisch Karlsruhe",
+    "plz": "76133",
+    "state": "DE-BW",
+    "city": "Karlsruhe",
+    "city_dist": 1.2,
+    "coords": [
+      49.0121068,
+      8.3896193
+    ],
+    "date": "2027-06-06",
+    "dow": "So.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": "freiheitliche-stammtische.de",
+    "kontakt": "Marc Götz",
+    "e-mail": "freiheitlicher-stammtisch-karlsruhe@tuta.com",
+    "link": "https://t.me/+SLZCqYAhW443NmEy",
+    "link_qr": "img/qr_604fc8ec6d0be3ed439100b8e34ab37bc14c652a_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Frankfurt (FFM)",
@@ -7880,6 +8220,26 @@
     "link_qr": "img/qr_938565d3a5addf52858d8a82d37bbdde19a35c7c_v2.png"
   },
   {
+    "name": "Libertärer Stammtisch Ansbach",
+    "plz": "91522",
+    "state": "DE-BY",
+    "city": "Ansbach",
+    "city_dist": 9.1,
+    "coords": [
+      49.2888745,
+      10.5597693
+    ],
+    "date": "2027-06-16",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Tante Droll",
+    "e-mail": "Baader-Bande@proton.me",
+    "link": "https://t.me/armenora",
+    "link_qr": "img/qr_a32ef6d0e5a73980ad0372ffb3828feff231d90e_v2.png"
+  },
+  {
     "name": "Libertäres Treffen Dortmund",
     "plz": "44263",
     "state": "DE-NW",
@@ -7958,6 +8318,26 @@
     "e-mail": "uwe.schmitt@die-libertaeren.de",
     "link": "https://t.me/+za88OLhGTshlNGJi",
     "link_qr": "img/qr_ddce0836c22eb137e61a8bb2f76593b9107c5511_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Göppingen/Esslingen",
+    "plz": "73033",
+    "state": "DE-BW",
+    "city": "Göppingen",
+    "city_dist": 0.6,
+    "coords": [
+      48.7088631,
+      9.6538145
+    ],
+    "date": "2027-07-01",
+    "dow": "Do.",
+    "time": "19:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dieter Kirschmann",
+    "e-mail": "dieter.kirschmann@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Magdeburg",
