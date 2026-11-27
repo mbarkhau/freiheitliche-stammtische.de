@@ -1160,26 +1160,6 @@
     "link_qr": null
   },
   {
-    "name": "Libertärer Stammtisch Halle (Saale)",
-    "plz": "06108",
-    "state": "DE-ST",
-    "city": "Halle (Saale)",
-    "city_dist": 1.1,
-    "coords": [
-      51.4904352,
-      11.9628501
-    ],
-    "date": "2026-03-11",
-    "dow": "Mi.",
-    "time": "18:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Stefan Bückner",
-    "e-mail": "stephan.bueckner@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Libertärer Stammtisch Magdeburg",
     "plz": "39104",
     "state": "DE-ST",
@@ -1676,26 +1656,6 @@
     "orga_www": "https://die-libertaeren.de/",
     "kontakt": "Ferdinand Steinhöfel",
     "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
-    "name": "Libertärer Stammtisch Halle (Saale)",
-    "plz": "06108",
-    "state": "DE-ST",
-    "city": "Halle (Saale)",
-    "city_dist": 1.1,
-    "coords": [
-      51.4904352,
-      11.9628501
-    ],
-    "date": "2026-04-08",
-    "dow": "Mi.",
-    "time": "18:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Stefan Bückner",
-    "e-mail": "stephan.bueckner@die-libertaeren.de",
     "link": null,
     "link_qr": null
   },
@@ -2480,26 +2440,6 @@
     "link_qr": null
   },
   {
-    "name": "Libertärer Stammtisch Halle (Saale)",
-    "plz": "06108",
-    "state": "DE-ST",
-    "city": "Halle (Saale)",
-    "city_dist": 1.1,
-    "coords": [
-      51.4904352,
-      11.9628501
-    ],
-    "date": "2026-05-13",
-    "dow": "Mi.",
-    "time": "18:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Stefan Bückner",
-    "e-mail": "stephan.bueckner@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Libertärer Stammtisch Ansbach",
     "plz": "91522",
     "state": "DE-BY",
@@ -2938,26 +2878,6 @@
     "e-mail": "joachim.teske@die-libertaeren.de",
     "link": "https://t.me/+kXYK3OtoB0AxYTAy",
     "link_qr": "img/qr_5565c4d9b4b29ecef348f944574ba5e63942a5bc_v2.png"
-  },
-  {
-    "name": "Libertärer Stammtisch Halle (Saale)",
-    "plz": "06108",
-    "state": "DE-ST",
-    "city": "Halle (Saale)",
-    "city_dist": 1.1,
-    "coords": [
-      51.4904352,
-      11.9628501
-    ],
-    "date": "2026-06-10",
-    "dow": "Mi.",
-    "time": "18:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Stefan Bückner",
-    "e-mail": "stephan.bueckner@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
   },
   {
     "name": "Libertärer Stammtisch Ansbach",
@@ -3500,26 +3420,6 @@
     "link_qr": null
   },
   {
-    "name": "Libertärer Stammtisch Halle (Saale)",
-    "plz": "06108",
-    "state": "DE-ST",
-    "city": "Halle (Saale)",
-    "city_dist": 1.1,
-    "coords": [
-      51.4904352,
-      11.9628501
-    ],
-    "date": "2026-07-08",
-    "dow": "Mi.",
-    "time": "18:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Stefan Bückner",
-    "e-mail": "stephan.bueckner@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Libertärer Stammtisch Magdeburg",
     "plz": "39104",
     "state": "DE-ST",
@@ -3958,26 +3858,6 @@
     "e-mail": "meetup@einundzwanzig-brandenburg-ost.de",
     "link": "https://t.me/einundzwanzig_bbost",
     "link_qr": "img/qr_9bc48ec2ac884a3bb1ca09e2c64f45ec0bda01bb_v2.png"
-  },
-  {
-    "name": "Libertärer Stammtisch Halle (Saale)",
-    "plz": "06108",
-    "state": "DE-ST",
-    "city": "Halle (Saale)",
-    "city_dist": 1.1,
-    "coords": [
-      51.4904352,
-      11.9628501
-    ],
-    "date": "2026-08-12",
-    "dow": "Mi.",
-    "time": "18:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Stefan Bückner",
-    "e-mail": "stephan.bueckner@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
   },
   {
     "name": "Team Freiheit Clubabend München",
@@ -4476,26 +4356,6 @@
     "orga_www": "https://www.team-freiheit.de/events",
     "kontakt": "Team Freiheit",
     "e-mail": "muenchen@team-freiheit.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
-    "name": "Libertärer Stammtisch Halle (Saale)",
-    "plz": "06108",
-    "state": "DE-ST",
-    "city": "Halle (Saale)",
-    "city_dist": 1.1,
-    "coords": [
-      51.4904352,
-      11.9628501
-    ],
-    "date": "2026-09-09",
-    "dow": "Mi.",
-    "time": "18:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Stefan Bückner",
-    "e-mail": "stephan.bueckner@die-libertaeren.de",
     "link": null,
     "link_qr": null
   },
@@ -5240,26 +5100,6 @@
     "link_qr": null
   },
   {
-    "name": "Libertärer Stammtisch Halle (Saale)",
-    "plz": "06108",
-    "state": "DE-ST",
-    "city": "Halle (Saale)",
-    "city_dist": 1.1,
-    "coords": [
-      51.4904352,
-      11.9628501
-    ],
-    "date": "2026-10-14",
-    "dow": "Mi.",
-    "time": "18:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Stefan Bückner",
-    "e-mail": "stephan.bueckner@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Libertärer Stammtisch Dresden",
     "plz": "01237",
     "state": "DE-SN",
@@ -5736,26 +5576,6 @@
     "orga_www": null,
     "kontakt": "Matthias Heuser",
     "e-mail": "matthias.heuser87@googlemail.com",
-    "link": null,
-    "link_qr": null
-  },
-  {
-    "name": "Libertärer Stammtisch Halle (Saale)",
-    "plz": "06108",
-    "state": "DE-ST",
-    "city": "Halle (Saale)",
-    "city_dist": 1.1,
-    "coords": [
-      51.4904352,
-      11.9628501
-    ],
-    "date": "2026-11-11",
-    "dow": "Mi.",
-    "time": "18:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Stefan Bückner",
-    "e-mail": "stephan.bueckner@die-libertaeren.de",
     "link": null,
     "link_qr": null
   },
@@ -6240,6 +6060,126 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Bernburg (Saale)",
+    "plz": "06406",
+    "state": "DE-ST",
+    "city": "Bernburg (Saale)",
+    "city_dist": 1.8,
+    "coords": [
+      51.7825763,
+      11.7556064
+    ],
+    "date": "2026-12-08",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Bernburg (Saale)",
+    "plz": "06406",
+    "state": "DE-ST",
+    "city": "Bernburg (Saale)",
+    "city_dist": 1.8,
+    "coords": [
+      51.7825763,
+      11.7556064
+    ],
+    "date": "2026-12-08",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Bernburg (Saale)",
+    "plz": "06406",
+    "state": "DE-ST",
+    "city": "Bernburg (Saale)",
+    "city_dist": 1.8,
+    "coords": [
+      51.7825763,
+      11.7556064
+    ],
+    "date": "2026-12-08",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Bernburg (Saale)",
+    "plz": "06406",
+    "state": "DE-ST",
+    "city": "Bernburg (Saale)",
+    "city_dist": 1.8,
+    "coords": [
+      51.7825763,
+      11.7556064
+    ],
+    "date": "2026-12-08",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Bernburg (Saale)",
+    "plz": "06406",
+    "state": "DE-ST",
+    "city": "Bernburg (Saale)",
+    "city_dist": 1.8,
+    "coords": [
+      51.7825763,
+      11.7556064
+    ],
+    "date": "2026-12-08",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Bernburg (Saale)",
+    "plz": "06406",
+    "state": "DE-ST",
+    "city": "Bernburg (Saale)",
+    "city_dist": 1.8,
+    "coords": [
+      51.7825763,
+      11.7556064
+    ],
+    "date": "2026-12-08",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Team Freiheit Clubabend München",
     "plz": "80469",
     "state": "DE-BY",
@@ -6256,26 +6196,6 @@
     "orga_www": "https://www.team-freiheit.de/events",
     "kontakt": "Team Freiheit",
     "e-mail": "muenchen@team-freiheit.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
-    "name": "Libertärer Stammtisch Halle (Saale)",
-    "plz": "06108",
-    "state": "DE-ST",
-    "city": "Halle (Saale)",
-    "city_dist": 1.1,
-    "coords": [
-      51.4904352,
-      11.9628501
-    ],
-    "date": "2026-12-09",
-    "dow": "Mi.",
-    "time": "18:00",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Stefan Bückner",
-    "e-mail": "stephan.bueckner@die-libertaeren.de",
     "link": null,
     "link_qr": null
   },
