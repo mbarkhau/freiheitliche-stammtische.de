@@ -6060,126 +6060,6 @@
     "link_qr": null
   },
   {
-    "name": "Libertärer Stammtisch Bernburg (Saale)",
-    "plz": "06406",
-    "state": "DE-ST",
-    "city": "Bernburg (Saale)",
-    "city_dist": 1.8,
-    "coords": [
-      51.7825763,
-      11.7556064
-    ],
-    "date": "2026-12-08",
-    "dow": "Di.",
-    "time": "18:30",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Stefan Bückner",
-    "e-mail": "stephan.bueckner@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
-    "name": "Libertärer Stammtisch Bernburg (Saale)",
-    "plz": "06406",
-    "state": "DE-ST",
-    "city": "Bernburg (Saale)",
-    "city_dist": 1.8,
-    "coords": [
-      51.7825763,
-      11.7556064
-    ],
-    "date": "2026-12-08",
-    "dow": "Di.",
-    "time": "18:30",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Stefan Bückner",
-    "e-mail": "stephan.bueckner@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
-    "name": "Libertärer Stammtisch Bernburg (Saale)",
-    "plz": "06406",
-    "state": "DE-ST",
-    "city": "Bernburg (Saale)",
-    "city_dist": 1.8,
-    "coords": [
-      51.7825763,
-      11.7556064
-    ],
-    "date": "2026-12-08",
-    "dow": "Di.",
-    "time": "18:30",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Stefan Bückner",
-    "e-mail": "stephan.bueckner@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
-    "name": "Libertärer Stammtisch Bernburg (Saale)",
-    "plz": "06406",
-    "state": "DE-ST",
-    "city": "Bernburg (Saale)",
-    "city_dist": 1.8,
-    "coords": [
-      51.7825763,
-      11.7556064
-    ],
-    "date": "2026-12-08",
-    "dow": "Di.",
-    "time": "18:30",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Stefan Bückner",
-    "e-mail": "stephan.bueckner@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
-    "name": "Libertärer Stammtisch Bernburg (Saale)",
-    "plz": "06406",
-    "state": "DE-ST",
-    "city": "Bernburg (Saale)",
-    "city_dist": 1.8,
-    "coords": [
-      51.7825763,
-      11.7556064
-    ],
-    "date": "2026-12-08",
-    "dow": "Di.",
-    "time": "18:30",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Stefan Bückner",
-    "e-mail": "stephan.bueckner@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
-    "name": "Libertärer Stammtisch Bernburg (Saale)",
-    "plz": "06406",
-    "state": "DE-ST",
-    "city": "Bernburg (Saale)",
-    "city_dist": 1.8,
-    "coords": [
-      51.7825763,
-      11.7556064
-    ],
-    "date": "2026-12-08",
-    "dow": "Di.",
-    "time": "18:30",
-    "orga": "DIE LIBERTÄREN",
-    "orga_www": "https://die-libertaeren.de/",
-    "kontakt": "Stefan Bückner",
-    "e-mail": "stephan.bueckner@die-libertaeren.de",
-    "link": null,
-    "link_qr": null
-  },
-  {
     "name": "Team Freiheit Clubabend München",
     "plz": "80469",
     "state": "DE-BY",
@@ -6258,6 +6138,106 @@
     "e-mail": "moczarski@ef-magazin.de",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Mittelhessen",
+    "plz": "35396",
+    "state": "DE-HE",
+    "city": "Gießen",
+    "city_dist": 3.8,
+    "coords": [
+      50.6141365,
+      8.7052574
+    ],
+    "date": "2026-12-16",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Stefan Bosch",
+    "e-mail": null,
+    "link": "https://t.me/+kDTzmac3wJYwMzIy",
+    "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Mittelhessen",
+    "plz": "35396",
+    "state": "DE-HE",
+    "city": "Gießen",
+    "city_dist": 3.8,
+    "coords": [
+      50.6141365,
+      8.7052574
+    ],
+    "date": "2026-12-16",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Stefan Bosch",
+    "e-mail": null,
+    "link": "https://t.me/+kDTzmac3wJYwMzIy",
+    "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Mittelhessen",
+    "plz": "35396",
+    "state": "DE-HE",
+    "city": "Gießen",
+    "city_dist": 3.8,
+    "coords": [
+      50.6141365,
+      8.7052574
+    ],
+    "date": "2026-12-16",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Stefan Bosch",
+    "e-mail": null,
+    "link": "https://t.me/+kDTzmac3wJYwMzIy",
+    "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Mittelhessen",
+    "plz": "35396",
+    "state": "DE-HE",
+    "city": "Gießen",
+    "city_dist": 3.8,
+    "coords": [
+      50.6141365,
+      8.7052574
+    ],
+    "date": "2026-12-16",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Stefan Bosch",
+    "e-mail": null,
+    "link": "https://t.me/+kDTzmac3wJYwMzIy",
+    "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Mittelhessen",
+    "plz": "35396",
+    "state": "DE-HE",
+    "city": "Gießen",
+    "city_dist": 3.8,
+    "coords": [
+      50.6141365,
+      8.7052574
+    ],
+    "date": "2026-12-16",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Stefan Bosch",
+    "e-mail": null,
+    "link": "https://t.me/+kDTzmac3wJYwMzIy",
+    "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
   },
   {
     "name": "Libertärer Stammtisch Mittelhessen",
@@ -6460,6 +6440,26 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Hamburg",
+    "plz": "20095",
+    "state": "DE-HH",
+    "city": "Hamburg",
+    "city_dist": 0.1,
+    "coords": [
+      53.5512868,
+      9.9992216
+    ],
+    "date": "2027-01-06",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Ferdinand Steinhöfel",
+    "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
     "name": "Freiheitlicher Stammtisch Friedrichshafen",
     "plz": "88045",
     "state": "DE-BW",
@@ -6478,6 +6478,26 @@
     "e-mail": "sebwalser@gmx.de",
     "link": "https://t.me/+AhChia7Cxb8yNjky",
     "link_qr": "img/qr_970fd5c5aafea6182a9ee206ce8c4d991a9f3a77_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Bernburg (Saale)",
+    "plz": "06406",
+    "state": "DE-ST",
+    "city": "Bernburg (Saale)",
+    "city_dist": 1.8,
+    "coords": [
+      51.7825763,
+      11.7556064
+    ],
+    "date": "2027-01-12",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
   },
   {
     "name": "Team Freiheit Clubabend München",
@@ -6500,6 +6520,46 @@
     "link_qr": null
   },
   {
+    "name": "Libertärer Stammtisch Berlin",
+    "plz": "10555",
+    "state": "DE-BE",
+    "city": "Berlin",
+    "city_dist": 4.1,
+    "coords": [
+      52.519898,
+      13.3355418
+    ],
+    "date": "2027-01-15",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Libertärer Stammtisch Berlin",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Sven Brajer",
+    "e-mail": "svenbrajer@web.de",
+    "link": "https://t.me/+Xzxvc2UqKuJmNmRi",
+    "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Mittelhessen",
+    "plz": "35396",
+    "state": "DE-HE",
+    "city": "Gießen",
+    "city_dist": 3.8,
+    "coords": [
+      50.6141365,
+      8.7052574
+    ],
+    "date": "2027-01-20",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "Unabhängig",
+    "orga_www": null,
+    "kontakt": "Stefan Bosch",
+    "e-mail": null,
+    "link": "https://t.me/+kDTzmac3wJYwMzIy",
+    "link_qr": "img/qr_730b0bf9d6642fb6ce0d26ba162958c4824981b9_v2.png"
+  },
+  {
     "name": "Hayek Club Düsseldorf",
     "plz": "40216",
     "state": "DE-BY",
@@ -6518,5 +6578,305 @@
     "e-mail": "duesseldorf@hayek.de",
     "link": null,
     "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Hamburg",
+    "plz": "20095",
+    "state": "DE-HH",
+    "city": "Hamburg",
+    "city_dist": 0.1,
+    "coords": [
+      53.5512868,
+      9.9992216
+    ],
+    "date": "2027-02-03",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Ferdinand Steinhöfel",
+    "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Bernburg (Saale)",
+    "plz": "06406",
+    "state": "DE-ST",
+    "city": "Bernburg (Saale)",
+    "city_dist": 1.8,
+    "coords": [
+      51.7825763,
+      11.7556064
+    ],
+    "date": "2027-02-09",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Berlin",
+    "plz": "10555",
+    "state": "DE-BE",
+    "city": "Berlin",
+    "city_dist": 4.1,
+    "coords": [
+      52.519898,
+      13.3355418
+    ],
+    "date": "2027-02-19",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Libertärer Stammtisch Berlin",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Sven Brajer",
+    "e-mail": "svenbrajer@web.de",
+    "link": "https://t.me/+Xzxvc2UqKuJmNmRi",
+    "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Hamburg",
+    "plz": "20095",
+    "state": "DE-HH",
+    "city": "Hamburg",
+    "city_dist": 0.1,
+    "coords": [
+      53.5512868,
+      9.9992216
+    ],
+    "date": "2027-03-03",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Ferdinand Steinhöfel",
+    "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Bernburg (Saale)",
+    "plz": "06406",
+    "state": "DE-ST",
+    "city": "Bernburg (Saale)",
+    "city_dist": 1.8,
+    "coords": [
+      51.7825763,
+      11.7556064
+    ],
+    "date": "2027-03-09",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Berlin",
+    "plz": "10555",
+    "state": "DE-BE",
+    "city": "Berlin",
+    "city_dist": 4.1,
+    "coords": [
+      52.519898,
+      13.3355418
+    ],
+    "date": "2027-03-19",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Libertärer Stammtisch Berlin",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Sven Brajer",
+    "e-mail": "svenbrajer@web.de",
+    "link": "https://t.me/+Xzxvc2UqKuJmNmRi",
+    "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Hamburg",
+    "plz": "20095",
+    "state": "DE-HH",
+    "city": "Hamburg",
+    "city_dist": 0.1,
+    "coords": [
+      53.5512868,
+      9.9992216
+    ],
+    "date": "2027-04-07",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Ferdinand Steinhöfel",
+    "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Bernburg (Saale)",
+    "plz": "06406",
+    "state": "DE-ST",
+    "city": "Bernburg (Saale)",
+    "city_dist": 1.8,
+    "coords": [
+      51.7825763,
+      11.7556064
+    ],
+    "date": "2027-04-13",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Berlin",
+    "plz": "10555",
+    "state": "DE-BE",
+    "city": "Berlin",
+    "city_dist": 4.1,
+    "coords": [
+      52.519898,
+      13.3355418
+    ],
+    "date": "2027-04-16",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Libertärer Stammtisch Berlin",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Sven Brajer",
+    "e-mail": "svenbrajer@web.de",
+    "link": "https://t.me/+Xzxvc2UqKuJmNmRi",
+    "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Hamburg",
+    "plz": "20095",
+    "state": "DE-HH",
+    "city": "Hamburg",
+    "city_dist": 0.1,
+    "coords": [
+      53.5512868,
+      9.9992216
+    ],
+    "date": "2027-05-05",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Ferdinand Steinhöfel",
+    "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Bernburg (Saale)",
+    "plz": "06406",
+    "state": "DE-ST",
+    "city": "Bernburg (Saale)",
+    "city_dist": 1.8,
+    "coords": [
+      51.7825763,
+      11.7556064
+    ],
+    "date": "2027-05-11",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Berlin",
+    "plz": "10555",
+    "state": "DE-BE",
+    "city": "Berlin",
+    "city_dist": 4.1,
+    "coords": [
+      52.519898,
+      13.3355418
+    ],
+    "date": "2027-05-21",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Libertärer Stammtisch Berlin",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Sven Brajer",
+    "e-mail": "svenbrajer@web.de",
+    "link": "https://t.me/+Xzxvc2UqKuJmNmRi",
+    "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
+  },
+  {
+    "name": "Libertärer Stammtisch Hamburg",
+    "plz": "20095",
+    "state": "DE-HH",
+    "city": "Hamburg",
+    "city_dist": 0.1,
+    "coords": [
+      53.5512868,
+      9.9992216
+    ],
+    "date": "2027-06-02",
+    "dow": "Mi.",
+    "time": "19:00",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Ferdinand Steinhöfel",
+    "e-mail": "ferdinand.steinhoefel@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Bernburg (Saale)",
+    "plz": "06406",
+    "state": "DE-ST",
+    "city": "Bernburg (Saale)",
+    "city_dist": 1.8,
+    "coords": [
+      51.7825763,
+      11.7556064
+    ],
+    "date": "2027-06-08",
+    "dow": "Di.",
+    "time": "18:30",
+    "orga": "DIE LIBERTÄREN",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Stefan Bückner",
+    "e-mail": "stephan.bueckner@die-libertaeren.de",
+    "link": null,
+    "link_qr": null
+  },
+  {
+    "name": "Libertärer Stammtisch Berlin",
+    "plz": "10555",
+    "state": "DE-BE",
+    "city": "Berlin",
+    "city_dist": 4.1,
+    "coords": [
+      52.519898,
+      13.3355418
+    ],
+    "date": "2027-06-18",
+    "dow": "Fr.",
+    "time": "19:00",
+    "orga": "Libertärer Stammtisch Berlin",
+    "orga_www": "https://die-libertaeren.de/",
+    "kontakt": "Dr. Sven Brajer",
+    "e-mail": "svenbrajer@web.de",
+    "link": "https://t.me/+Xzxvc2UqKuJmNmRi",
+    "link_qr": "img/qr_c1c08a9df9efbccb0da9eb13973721894b991a22_v2.png"
   }
 ]
