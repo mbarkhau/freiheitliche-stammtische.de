@@ -57,6 +57,10 @@
 			"logo": "img/logo_einundzwanzig.png",
 			"bg": "#EEE",
 		},
+		"Libertär Leben": {
+			"logo": "https://blossom.libertaer-leben.de/f263dcb72a8da2e8cd367ade2a8fe998ea7eb0f7be267c62159cac979746ff15.png",
+			"bg": "#F5F6FA",
+		},
 	};
 
 	function getOrgaBranding(orga) {
@@ -192,7 +196,7 @@
 		// Hidden search content for better search accuracy
 		const searchParts = [t.name, t.city, t.plz, t.state, t.orga, t.kontakt, t['e-mail'], t.date, t.dow]
 		const searchContent = searchParts.join(' ').toLowerCase();
-		const branding = getOrgaBranding(t.orga);
+		const branding = t.branding || getOrgaBranding(t.orga);
 
 		return `
 		<div class="search-content" style="display: none;">${searchContent}</div>
@@ -214,6 +218,7 @@
 				<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
 				<span>${t.orga || ''}</span>
 			</div>
+			${t.register ? `<a class="register-link" href="${t.register}" target="_blank" onclick="event.stopPropagation()">Anmelden →</a>` : ''}
 		</div>
 		<div class="orga-logo-card-container">
 			<img src="${branding.logo}" style="background-color: ${branding.bg};" class="orga-logo-card" alt="${t.orga || 'Logo'}">
@@ -373,7 +378,7 @@
 		if (showOverlay) {
 			overlay.style.display = 'block';
 			const relativeDate = getRelativeDateString(termin.date);
-			const branding = getOrgaBranding(termin.orga);
+			const branding = termin.branding || getOrgaBranding(termin.orga);
 
 			overlay.innerHTML = `
 	<div class="overlay-header">
@@ -395,6 +400,7 @@
 	  <div><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> <a href="https://maps.google.com/?q=${termin.plz},${cityText(termin)},Deutschland" target="_blank">${termin.plz || ''} ${cityText(termin)}</a></div>
 	  ${(termin.kontakt || termin['e-mail']) ? `<div><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> ${formatKontakt(termin.kontakt, termin['e-mail'])}</div>` : ''}
 	  <div><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 4px;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg> ${termin.orga_www ? `<a href="${termin.orga_www}" target="_blank">${termin.orga || 'Link'}</a>` : (termin.orga || '')}</div>
+	  ${termin.register ? `<div><a class="register-link" href="${termin.register}" target="_blank">Jetzt anmelden →</a></div>` : ''}
 	  ${termin.link_qr ? `<div class="qr-link-container"><a href="${termin.link}" target="_blank" class="qr-image-link"><img src="${termin.link_qr}" alt="QR Code" class="qr-code-img"></a><a href="${termin.link}" target="_blank" class="qr-link-text">${termin.link.slice(0, 25)}...</a></div>` : ''}
 	</div>
 	<div class="orga-logo-overlay-container">
@@ -461,6 +467,7 @@
 		initTheme();
 		const response = await fetch('termine.json');
 		let termine = await response.json();
+		if (window.mergeLibertaerLebenTermine) termine = await window.mergeLibertaerLebenTermine(termine);
 		const today = new Date().toISOString().split('T')[0];
 
 		// Map original index to all events for reliable lookup
