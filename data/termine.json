@@ -4687,20 +4687,6 @@
     "tournus": "Jeder 1. Mittwoch"
   },
   {
-    "name": "Libertärer Stammtisch Bergisches Land",
-    "beginn": "2026-12-02",
-    "ende": "2026-12-02",
-    "uhrzeit": "18:30",
-    "kw": "KW49",
-    "wochentag": "Wednesday",
-    "orga": "Unabhängig",
-    "plz": "42781",
-    "land": "DE",
-    "ort": "Haan",
-    "kontakt": "Claudia Heipertz",
-    "e-mail": "mailto@claudiaheipertz.de"
-  },
-  {
     "name": "Libertärer Stammtisch Göppingen/Esslingen",
     "beginn": "2026-12-03",
     "ende": "2026-12-03",
@@ -4828,6 +4814,20 @@
     "e-mail": "muenchen@team-freiheit.de",
     "orga_webseite": "https://www.team-freiheit.de/events",
     "tournus": "Jeder 2. Dienstag im Monat"
+  },
+  {
+    "name": "Libertärer Stammtisch Bergisches Land",
+    "beginn": "2026-12-09",
+    "ende": "2026-12-09",
+    "uhrzeit": "18:30",
+    "kw": "KW50",
+    "wochentag": "Wednesday",
+    "orga": "Unabhängig",
+    "plz": "42781",
+    "land": "DE",
+    "ort": "Haan",
+    "kontakt": "Claudia Heipertz",
+    "e-mail": "mailto@claudiaheipertz.de"
   },
   {
     "name": "Freiheitlicher Stammtisch Bergstraße",
